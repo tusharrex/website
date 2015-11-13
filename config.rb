@@ -1,3 +1,4 @@
+require "extensions/middleman-typekit"
 require 'slim'
 
 ###
@@ -40,6 +41,11 @@ require 'slim'
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+end
+
+# Activate Typekit extension
+activate :typekit do |t|
+  t.kit_id = 'ldx0uor'
 end
 
 # Methods defined in the helpers block are available in templates
