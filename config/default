@@ -1,0 +1,13 @@
+server {
+    listen 80 default_server backlog=2048;
+
+    root /srv/www/build;
+    index index.html;
+
+    # Make site accessible from http://0.0.0.0/
+    server_name 0.0.0.0;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
