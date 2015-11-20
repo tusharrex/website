@@ -2,13 +2,13 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'middleman', '~>3.4.0'
-gem 'slim', '>= 2.0'
-gem 'middleman-blog', '~> 3.5.3'
-gem 'middleman-livereload', '~> 3.1.0'
+gem 'middleman'
+gem 'slim'
+gem 'middleman-blog'
+gem 'middleman-livereload'
 
 group :development do
-  gem 'codeguard', '~> 0.2.0'
-  gem 'rspec', '~> 3.4'
-  gem 'capybara', '~> 2.4.4'
+  gem 'codeguard'
+  gem 'rspec'
+  gem 'capybara'
 end
