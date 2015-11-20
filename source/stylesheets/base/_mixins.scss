@@ -56,3 +56,34 @@ $base-font-size: 12px;
   -o-animation: #{$str};
   animation: #{$str};
 }
+
+@mixin font-face($style-name, $file, $family, $category:'') {
+  $filepath: '../fonts/' + $family + '/' + $file;
+  font-family: "#{$style-name}";
+  src: asset-url($filepath + '.eot');
+  src: asset-url($filepath + '.eot?#iefix') format('embedded-opentype'),
+  asset-url($filepath + '.woff') format('woff'),
+  asset-url($filepath + '.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+
+  %#{$style-name} {
+    font: {
+      @if $category != '' {
+        family: "#{$style-name}", #{$category};
+      } @else {
+        family: "#{$style-name}";
+        weight: normal;
+      }
+    }
+  }
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
