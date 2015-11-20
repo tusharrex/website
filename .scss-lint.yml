@@ -2,7 +2,6 @@
 
 scss_files: "**/*.scss"
 plugin_directories: ['.scss-linters']
-exclude: 'source/stylesheets/base/_mixins.scss'
 
 # List of gem names to load custom linters from (make sure they are already
 # installed)
