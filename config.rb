@@ -1,5 +1,5 @@
-require "extensions/middleman-typekit"
 require 'slim'
+require 'lib/custom_helpers'
 
 ###
 # Blog settings
@@ -72,11 +72,6 @@ configure :development do
   activate :livereload
 end
 
-# Activate Typekit extension
-activate :typekit do |t|
-  t.kit_id = 'ldx0uor'
-end
-
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -102,3 +97,5 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+helpers CustomHelpers
