@@ -1,3 +1,4 @@
+// scss-lint:disable DuplicateProperty
 @mixin stroke(
   $stroke: $martinique-dark,
   $width: 4,
@@ -73,6 +74,34 @@ $base-font-size: 12px;
         family: "#{$style-name}";
         weight: normal;
       }
+    }
+  };
+};
+
+@mixin button($base-color: $damask-red,
+              $supplementary-color: $maroon-red,
+              $shadow-color: '') {
+  position: relative;
+  display: inline-block;
+  background-color: $white;
+  border-radius: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 11px 40px;
+  color: $base-color;
+  border: 4px solid $base-color;
+
+  &:hover {
+    background-color: $base-color;
+    color: $white;
+  }
+
+  &:active {
+    color: $supplementary-color;
+    @if $shadow-color != '' {
+      box-shadow: 0 -4px $shadow-color;
+    } @else {
+      box-shadow: 0 -4px $supplementary-color;
     }
   }
 }

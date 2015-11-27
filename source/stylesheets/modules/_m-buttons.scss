@@ -1,0 +1,15 @@
+.btn {
+  @include button;
+
+  &.maroon-red {
+    @include button($maroon-red, $merlot-red);
+  }
+
+  &.green {
+    @include button($deep-sea-green, $martinique-dark);
+  }
+
+  &.martinique {
+    @include button($martinique-dark, $santas-gray, $mirage-dark);
+  }
+}
