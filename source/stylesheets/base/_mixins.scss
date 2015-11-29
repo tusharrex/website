@@ -1,0 +1,23 @@
+@mixin stroke(
+  $stroke: $martinique-dark,
+  $width: 4,
+  $miterlimit: 10,
+  $linecap: null,
+  $linejoin: null) {
+  stroke: $stroke;
+  stroke-width: $width;
+  stroke-miterlimit: $miterlimit;
+  stroke-linecap: $linecap;
+  stroke-linejoin: $linejoin;
+}
+
+$letters-width: 1146.4;
+$letters-height: 168.9;
+
+@mixin place-svg($width, $height, $left, $bottom) {
+  position: absolute;
+  left: $left * 1%;
+  bottom: $bottom * 1%;
+  width: calc-percent($width, $letters-width);
+  height: calc-percent($height, $letters-height);
+}
