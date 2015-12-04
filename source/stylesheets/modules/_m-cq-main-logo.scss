@@ -85,19 +85,19 @@
 }
 
 .m-cq-main-logo__plant1 {
-  @include place-svg(46, 54, 19.8, 0);
+  @include place-svg(46, 54, 19.8, 1);
 }
 
 .m-cq-main-logo__plant2 {
-  @include place-svg(39.9, 108, 51, 0);
+  @include place-svg(39.9, 108, 51, 1);
 }
 
 .m-cq-main-logo__plant3 {
-  @include place-svg(46, 54, 63.4, 0);
+  @include place-svg(46, 54, 63.4, 1);
 }
 
 .m-cq-main-logo__plant4 {
-  @include place-svg(42, 108.3, 76.5, -1);
+  @include place-svg(42, 108.3, 76.5, 1);
 }
 
 .m-cq-main-logo__computer {
@@ -105,7 +105,7 @@
 }
 
 .m-cq-main-logo__ufo {
-  @include place-svg(71.1, 56.8, 34.2, 0);
+  @include place-svg(71.1, 56.8, 34.2, 1);
 }
 
 .m-cq-main-logo__ruby {
@@ -113,11 +113,11 @@
 }
 
 .m-cq-main-logo__server {
-  @include place-svg(37.5, 46.5, 71.1, 0);
+  @include place-svg(37.5, 46.5, 71.1, 1);
 }
 
 .m-cq-main-logo__station {
-  @include place-svg(131.4, 94.9, 89.2, 0);
+  @include place-svg(131.4, 94.9, 89.2, 1);
 }
 
 .m-cq-main-logo__water1 {
