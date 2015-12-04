@@ -1,0 +1,366 @@
+// scss-lint:disable SelectorFormat
+
+.is-martinique-dark {
+  fill: $martinique-dark;
+}
+
+.st-mobile-0 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-mobile-1 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-mobile-3 {
+  @include stroke();
+  fill: $indian-yellow;
+}
+
+.st-gopher-0 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-gopher-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-gopher-2 {
+  @include stroke($width: 8);
+  fill: $aquamarine-blue;
+}
+
+.st-gopher-3 {
+  fill: $sand-yellow;
+}
+
+.st-gopher-4 {
+  fill: $aquamarine-blue;
+}
+
+.st-gopher-5 {
+  fill: $gray;
+}
+
+.st-fish_in_c-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $breaker-bay-green;
+}
+
+.st-fish_in_c-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-bubbles1-0 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-bubbles1-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-bubles2-0 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-bubles2-1 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-fish-0 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-fish-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-fish-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-fish-3 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $damask-red;
+}
+
+.st-fish-5 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $indian-yellow;
+}
+
+.st-fish2-0 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-fish2-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-fish2-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-fish2-3 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $breaker-bay-green;
+}
+
+.st-fish2-5 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $indian-yellow;
+}
+
+.st-fish-in-u-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $damask-red;
+}
+
+.st-fish-in-u-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-octopus-0 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-octopus-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-octopus-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $breaker-bay-green;
+}
+
+.st-octopus2-0 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-octopus2-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-octopus2-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $damask-red;
+}
+
+.st-whale-0 {
+  @include stroke();
+  fill: $valencia-red;
+}
+
+.st-whale-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-whale-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $damask-red;
+}
+
+.st-submarine-1 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-submarine-2 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-submarine-3 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $deep-sea-green;
+}
+
+.st-submarine-4 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $breaker-bay-green;
+}
+
+.st-submarine-5 {
+  @include stroke();
+  fill: $indian-yellow;
+}
+
+.st-submarine-6 {
+  fill: $deep-sea-green;
+}
+
+.st-submarine-7 {
+  fill: $breaker-bay-green;
+}
+
+.st-shark-0 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-shark-1 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-shark-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $valencia-red;
+}
+
+.st-shark-3 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $breaker-bay-green;
+}
+
+.st-apple-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $deep-sea-green;
+}
+
+.st-starfish-0 {
+  fill: $indian-yellow;
+}
+
+.st-starfish2-0 {
+  fill: $damask-red;
+}
+
+.st-plant1-0 {
+  fill: $deep-sea-green;
+}
+
+.st-plant1-2 {
+  fill: $indian-yellow;
+}
+
+.st-plant2-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $indian-yellow;
+}
+
+.st-plant2-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $breaker-bay-green;
+}
+
+.st-plant3-0 {
+  fill: $damask-red;
+}
+
+.st-plant3-2 {
+  fill: $breaker-bay-green;
+}
+
+.st-plant4-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $damask-red;
+}
+
+.st-plant4-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $sand-yellow;
+}
+
+.st-computer-0 {
+  @include stroke();
+  fill: $indian-yellow;
+}
+
+.st-computer-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-computer-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $sand-yellow;
+}
+
+.st-ufo-0 {
+  @include stroke($linecap: round);
+  fill: $breaker-bay-green;
+}
+
+.st-ufo-1 {
+  @include stroke();
+  fill: $sand-yellow;
+}
+
+.st-ufo-2 {
+  @include stroke();
+  fill: none;
+}
+
+.st-ruby-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $maroon-red;
+}
+
+.st-server-0 {
+  fill: $breaker-bay-green;
+}
+
+.st-server-2 {
+  @include stroke();
+  fill: $damask-red;
+}
+
+.st-server-3 {
+  fill: $deep-sea-green;
+}
+
+.st-station-0 {
+  @include stroke();
+  fill: $indian-yellow;
+}
+
+.st-station-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $indian-yellow;
+}
+
+.st-station-3 {
+  @include stroke();
+  fill: $valencia-red;
+}
+
+.st-station-4 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-docker-0 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-docker-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-docker-2 {
+  fill: $docker-blue;
+}

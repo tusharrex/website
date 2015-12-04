@@ -1,0 +1,31 @@
+// scss-lint:disable SelectorFormat
+
+html,
+body {
+  height: 100%;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+.l-landing-page__upper-part {
+  background-color: $light-gray;
+  height: 60%;
+  position: relative;
+  z-index: 200;
+}
+
+.l-landing-page__lower-part {
+  background-color: $martinique-dark;
+  height: 40%;
+  position: relative;
+}
+
+.l-landing-page-cq-logo-wrapper {
+  bottom: -5px;
+  left: 6%;
+  position: absolute;
+  right: 6%;
+}

@@ -1,6 +1,9 @@
 @import 'base/colors';
 @import 'base/config';
+@import 'base/functions';
+@import 'base/mixins';
 
 @import 'layouts/l-landing-page';
 
+@import 'modules/m-cq-main-logo';
 @import 'modules/m-buttons';
