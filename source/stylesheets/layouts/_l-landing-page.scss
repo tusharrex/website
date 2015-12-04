@@ -37,3 +37,22 @@ h1 {
   text-align: center;
   top: 9%;
 }
+
+.hello-mail {
+  @include font-size(26px);
+  color: $martinique-dark;
+  font-family: $alega-bld;
+  font-size: 1.72vw;
+  left: 2.2%;
+  position: absolute;
+  text-decoration: none;
+  top: 8.15%;
+
+  &:hover {
+    color: $damask-red;
+  }
+
+  &:active {
+    color: $martinique-dark;
+  }
+}
