@@ -71,15 +71,16 @@ $base-font-size: 12px;
               $shadow-color: '') {
   position: relative;
   display: inline-block;
-  background-color: $white;
-  border-radius: 10px;
-  font-size: 30px;
-  text-decoration: none;
-  padding: 15px 40px;
   color: $base-color;
+  background-color: $white;
   border: 4px solid $base-color;
+  border-radius: 10px;
+  padding: 15px 40px;
+  width: 232px;
+  font-size: 30px;
   font-family: AlegaWeb, 'sans-serif';
-  margin: 10px;
+  text-align: center;
+  text-decoration: none;
 
   &:hover {
     background-color: $base-color;

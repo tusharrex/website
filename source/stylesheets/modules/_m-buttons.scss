@@ -12,4 +12,8 @@
   &.martinique {
     @include button($martinique-dark, $santas-gray, $mirage-dark);
   }
+
+  &.small {
+    width: 130px;
+  }
 }
