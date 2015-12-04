@@ -1,12 +1,5 @@
 // scss-lint:disable SelectorFormat
 
-.m-cq-main-logo {
-  svg {
-    height: 100%;
-    width: 100%;
-  }
-}
-
 .m-cq-main-logo__letters--wrapper {
   width: 100%;
 }
@@ -14,10 +7,6 @@
 .m-cq-main-logo__letters {
   margin: 0 auto;
   width: 88%;
-
-  svg {
-    height: 100%;
-  }
 }
 
 .m-cq-main-logo__mobile {
