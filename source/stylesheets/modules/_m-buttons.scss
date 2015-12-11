@@ -19,12 +19,14 @@
 }
 .three-states-button {
   float: right;
-  .three-states-button__hover-state, .three-states-button__clicked-state {
+  .three-states-button__hover-state,
+  .three-states-button__clicked-state {
     display: none;
   }
 }
 .three-states-button:hover {
-  .three-states-button__normal-state, .three-states-button__clicked-state {
+  .three-states-button__normal-state,
+  .three-states-button__clicked-state {
     display: none;
   }
   .three-states-button__hover-state {
@@ -32,7 +34,8 @@
   }
 }
 .three-states-button:active {
-  .three-states-button__normal-state, .three-states-button__hover-state {
+  .three-states-button__normal-state,
+  .three-states-button__hover-state {
     display: none;
   }
   .three-states-button__clicked-state {
