@@ -75,7 +75,7 @@ $base-font-size: 12px;
   border: 4px solid $base-color;
   border-radius: 10px;
   padding: 15px 40px;
-  width: 232px;
+  width: 320px;
   font-size: 30px;
   font-family: $alega;
   text-align: center;
@@ -88,10 +88,21 @@ $base-font-size: 12px;
 
   &:active {
     color: $supplementary-color;
+    border-top-width: 0;
     @if $shadow-color != '' {
       box-shadow: 0 -4px $shadow-color;
+      border-top-color: $shadow-color;
     } @else {
       box-shadow: 0 -4px $supplementary-color;
+      border-top-color: $supplementary-color;
     }
   }
+}
+@mixin flip-horizontal() {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }

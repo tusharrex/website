@@ -1,6 +1,7 @@
 .l-landing-page__upper-part
+  = mail_to 'hello@codequest.com', nil, class: 'hello-mail'
   .l-landing-page-cq-logo-wrapper
-    = partial 'main_logo'
+    = partial 'partials/main_logo'
 .l-landing-page__lower-part
   .l-landing-page-signature-wrapper
-    = partial 'main_signature'
+    = partial 'partials/main_signature'
