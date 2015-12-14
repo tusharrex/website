@@ -3,6 +3,8 @@ require 'lib/custom_helpers'
 
 activate :directory_indexes
 
+#TODO - remove blog (is it used anywhere now?)
+#TODO - remove comments
 ###
 # Blog settings
 ###
