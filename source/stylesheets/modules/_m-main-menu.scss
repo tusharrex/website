@@ -1,30 +1,36 @@
-body {width: 100%; overflow-x: hidden;}
+// scss-lint:disable SelectorFormat
+
 .main-menu {
   bottom: 0;
   max-width: 100%;
+  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
   width: 550px;
   z-index: 201;
 }
+
 .main-menu__button {
   float: right;
   height: 39px;
   margin: 23px 44px 0 0;
   width: 52px;
 }
+
 .main-menu__button__clicked-state {
   height: 4px;
   margin: 10px 0 0 12px;
   width: 4px;
 }
+
 .main-menu__button__hover-state {
   height: 28px;
   width: 38px;
 }
+
 .main-menu__nav {
-  background: rgba(43, 48, 75, .9);
+  background: $main-menu-bg;
   bottom: 0;
   float: right;
   max-width: 100%;
@@ -34,26 +40,32 @@ body {width: 100%; overflow-x: hidden;}
   top: 0;
   transition: right 1s ease-in-out;
   width: 550px;
+
+  &.opened {
+    right: 0;
+  }
 }
-.main-menu__nav.opened {
-  right: 0;
-}
+
 .main-menu__list {
   float: right;
   margin-bottom: 6px;
 }
+
 .main-menu__list__item {
   list-style: none;
   margin-bottom: 36px;
   padding-right: 40px;
   position: relative;
 }
+
 .main-menu__list__item:hover .main-menu__list__item__arrow {
   display: block;
 }
+
 .main-menu__list__item__link:active + .main-menu__list__item__arrow {
   display: none;
 }
+
 .main-menu__list__item__arrow {
   display: none;
   height: 28px;
@@ -62,8 +74,9 @@ body {width: 100%; overflow-x: hidden;}
   top: 9px;
   width: 37px;
 }
+
 .main-menu__list__item__link {
-  color: white;
+  color: $white;
   display: block;
   font-family: $alega-bld;
   font-size: 57px;
@@ -72,25 +85,31 @@ body {width: 100%; overflow-x: hidden;}
   text-align: right;
   text-decoration: none;
   text-transform: capitalize;
+
   &:active {
     opacity: .7;
   }
 }
+
 .main-menu__nav__button {
   float: left;
   height: 28px;
   margin: 21px 0 0 52px;
   width: 28px;
 }
+
 .main-menu__nav__button__normal-state {
   height: 28px;
   width: 28px;
 }
+
 .main-menu__nav__button__hover-state {
+
   svg {
     @include flip-horizontal();
     height: 28px;
     width: 37px;
+
     * {
       fill: $white;
     }
@@ -98,10 +117,12 @@ body {width: 100%; overflow-x: hidden;}
 }
 
 .main-menu__nav__button__clicked-state {
+
   svg {
     height: 4px;
     margin: 24px 0 0 21px;
     width: 4px;
+
     * {
       fill: $white;
     }
