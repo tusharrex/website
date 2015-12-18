@@ -6,4 +6,3 @@
 - :rubocop
 - :coffeelint
 - :scss_lint
-- :jshint
