@@ -1,56 +1,63 @@
-// here should be the main styles of the project
 .twitter-link {
-
   svg {
     fill: $white;
     height: 33px;
     width: 41px;
   }
+
   &:hover {
     svg {
       fill: $aquamarine-blue;
     }
   }
+
   &:active {
     svg {
       fill: $fountain-blue;
     }
   }
 }
+
 .github-link {
   svg {
     fill: $white;
     height: 41px;
     width: 41px;
   }
+
   &:hover {
     svg {
       fill: $indian-yellow;
     }
   }
+
   &:active {
     svg {
       fill: $damask-red;
     }
   }
 }
+
 .facebook-link {
   svg {
     fill: $white;
     height: 41px;
     width: 41px;
   }
+
   &:hover {
     svg {
       fill: $breaker-bay-green;
     }
   }
+
   &:active {
     svg {
       fill: $deep-sea-green;
     }
   }
 }
+
 .fill-white {
   fill: $white;
 }
