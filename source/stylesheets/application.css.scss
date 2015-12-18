@@ -4,10 +4,12 @@
 @import 'base/mixins';
 @import 'base/fonts';
 @import 'base/main';
+@import 'base/devices';
 
 @import 'layouts/l-landing-page';
 
 @import 'modules/m-cq-main-logo';
+@import 'modules/m-cq-mobile-logo';
 @import 'modules/m-main-signature';
 @import 'modules/m-buttons';
 @import 'modules/m-main-menu';

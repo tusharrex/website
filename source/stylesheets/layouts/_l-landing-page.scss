@@ -15,12 +15,20 @@ h1 {
   height: 60%;
   position: relative;
   z-index: 200;
+
+  @media #{$mobile} {
+    height: 57.6%;
+  }
 }
 
 .l-landing-page__lower-part {
   background-color: $martinique-dark;
   height: 40%;
   position: relative;
+
+  @media #{$mobile} {
+    height: 42.4%;
+  }
 }
 
 .l-landing-page-cq-logo-wrapper {
@@ -28,6 +36,22 @@ h1 {
   left: 6%;
   position: absolute;
   right: 6%;
+
+  @media #{$mobile} {
+    display: none;
+  }
+}
+
+.l-landing-page-cq-mobile-logo-wrapper {
+  bottom: -1%;
+  display: none;
+  left: 4.7%;
+  position: absolute;
+  right: 4.7%;
+
+  @media #{$mobile} {
+    display: block;
+  }
 }
 
 .l-landing-page-signature-wrapper {
@@ -36,6 +60,10 @@ h1 {
   right: 6%;
   text-align: center;
   top: 9%;
+
+  @media #{$mobile} {
+    display: none;
+  }
 }
 
 .hello-mail {

@@ -1,0 +1,37 @@
+// scss-lint:disable SelectorFormat
+
+.m-cq-mobile-logo__logo_mobile {
+  margin: 0 auto;
+  position: relative;
+  width: 47vw;
+}
+
+.m-cq-mobile-logo__gopher {
+  @include place-mobile-svg(48.39, 108.5, 105, 39);
+}
+
+.m-cq-mobile-logo__fish {
+  @include place-mobile-svg(64.2, 76.3, 56.5, 101.5);
+}
+
+.m-cq-mobile-logo__ufo {
+  @include place-mobile-svg(71.1, 56.8, 94.5, 0);
+}
+
+.m-cq-mobile-logo__ruby {
+  @include place-mobile-svg(56.5, 66.4, -33, -3);
+}
+
+.m-cq-mobile-logo__plant {
+  @include place-mobile-svg(39.9, 108, 26.5, -.7);
+}
+
+.m-cq-mobile-logo__submarine {
+  @include place-mobile-svg(104.27, 96.19, -46.5, 81.5);
+}
+
+.m-cq-mobile-logo__bubles {
+  @include place-mobile-svg(31.5, 38.5, 48, 45);
+}
+
+@import '../states/s-cq-mobile-logo';

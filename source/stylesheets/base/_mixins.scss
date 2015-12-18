@@ -24,6 +24,17 @@ $letters-height: 168.9;
   height: calc-percent($height, $letters-height);
 }
 
+$logo-width: 150.39;
+$logo-height: 172;
+
+@mixin place-mobile-svg($width, $height, $left, $bottom) {
+  position: absolute;
+  left: $left * 1%;
+  bottom: $bottom * 1%;
+  width: calc-percent($width, $logo-width);
+  height: calc-percent($height, $logo-height);
+}
+
 $base-font-size: 12px;
 
 @mixin font-size($font-size) {
@@ -87,22 +98,23 @@ $base-font-size: 12px;
   }
 
   &:active {
-    color: $supplementary-color;
     border-top-width: 0;
+    color: $supplementary-color;
     @if $shadow-color != '' {
-      box-shadow: 0 -4px $shadow-color;
       border-top-color: $shadow-color;
+      box-shadow: 0 -4px $shadow-color;
     } @else {
-      box-shadow: 0 -4px $supplementary-color;
       border-top-color: $supplementary-color;
+      box-shadow: 0 -4px $supplementary-color;
     }
   }
 }
+
 @mixin flip-horizontal() {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   filter: FlipH;
-  -ms-filter: "FlipH";
+  -ms-filter: 'FlipH';
 }
