@@ -72,7 +72,8 @@ $base-font-size: 12px;
   $filepath: '/stylesheets/fonts/' + $file;
   @font-face {
     font-family: "#{$style-name}";
-    src: url($filepath + '.woff') format('woff');
+    src: url($filepath + '.woff') format('woff'),
+    url($filepath + '.ttf') format('ttf') ;
   };
 }
 
