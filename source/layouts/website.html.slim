@@ -14,5 +14,7 @@ html
     = javascript_include_tag 'application'
 
   body class=page_classes
+    .main-menu
+      = partial('partials/menu', locals: { modifier: 'from_header'})
     = yield
     = partial 'partials/footer'

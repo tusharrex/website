@@ -5,6 +5,22 @@
   margin: 0 auto;
   position: relative;
   width: 47vw;
+
+  &.from_header {
+    color: $white;
+    display: block;
+    height: 45px;
+    margin-left: 25px;
+    margin-top: 7px;
+    width: 45px;
+
+    @media #{$mobile} {
+      height: 30px;
+      margin-left: 13px;
+      margin-top: 25px;
+      width: 30px;
+    }
+  }
 }
 
 .m-cq-mobile-logo__gopher {
