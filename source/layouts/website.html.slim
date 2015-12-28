@@ -16,5 +16,6 @@ html
   body class=page_classes
     .main-menu
       = partial('partials/menu', locals: { modifier: 'from_header'})
+    = partial 'partials/website_header'
     = yield
     = partial 'partials/footer'
