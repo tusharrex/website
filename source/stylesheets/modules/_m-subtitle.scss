@@ -1,0 +1,15 @@
+.m-subtitle {
+  @include font-size(40px);
+  color: $martinique-dark;
+  font-family: $alega-bold;
+  font-size: 2.64vw;
+  margin: .9vw 2vw;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+
+  @media #{$mobile} {
+    font-size: 20px;
+    margin-top: 7px;
+  }
+}
