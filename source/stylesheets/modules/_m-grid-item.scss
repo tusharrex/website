@@ -5,62 +5,63 @@
   width: 360px;
 
   @media #{$mobile} {
-    width: 320px;
     margin: 9px auto;
+    width: 320px;
   }
 }
 
 .m-grid-item__date {
-  font-size: 18px;
+  border-radius: 60px;
   font-family: $alega-bold;
+  font-size: 18px;
   padding: 11px;
   width: 370px;
-  border-radius: 60px;
 
   &:hover {
     background-color: $damask-red;
   }
 
   @media #{$mobile} {
-    width: 295px;
     font-size: 12px;
-    padding: 13px  0 10px 0;
+    padding: 7px  0;
+    width: 295px;
   }
 }
 
 .m-grid-item__title {
-  font-size: 40px;
-  margin: 7px 14px;
   color: $damask-red;
+  font-size: 40px;
+  line-height: 118%;
+  margin: 4px 14px;
 
   @media #{$mobile} {
     font-size: 30px;
+    line-height: 122%;
     margin: 0;
-    line-height: 118%;
   }
 }
 
 .m-grid-item__tags {
-  font-size: 18px;
-  margin: 18px 12px;
   color: $damask-red;
+  font-size: 18px;
+  margin: 20px 12px;
 
   @media #{$mobile} {
-    margin: 16px 0 10px 0;
     font-size: 16px;
+    margin: 12px 0 10px;
   }
 }
 
 .m-grid-item__summary {
-  font-family: $alega-light;
-  font-size: 19px;
-  margin: 25px 12px;
+  font-family: $baskerville;
+  font-size: 20px;
+  line-height: 160%;
+  margin: 20px 12px;
 
   @media #{$mobile} {
-    margin: 17px 0;
-    font-family: $courier;
     font-size: 12px;
-    line-height: 185%;
+    line-height: 180%;
+    margin: 12px 0;
   }
 }
 
