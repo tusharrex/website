@@ -4,7 +4,11 @@
 .m-grid-collection
   - blog.articles.each do |article|
     .m-grid-item
-      = article.date.strftime('%b %e %Y')
-      h2 = article.title
-      = article.tags.join(',')
-      = article.summary
+      .m-grid-item__date
+        = article.date.strftime('%B %e, %Y')
+      h2.m-grid-item__title
+        = article.title
+      .m-grid-item__tags
+        = article.tags.map{|tag| "##{tag}"}.join(' ')
+      .m-grid-item__summary
+        = article.summary(600)
