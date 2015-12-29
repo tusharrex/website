@@ -9,6 +9,6 @@
       h2.m-grid-item__title
         = article.title
       .m-grid-item__tags
-        = article.tags.map{|tag| "##{tag}"}.join(' ')
+        = article.tags.map { |tag| "##{tag}" }.join(' ')
       .m-grid-item__summary
         = article.summary(400)
