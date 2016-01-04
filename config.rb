@@ -2,12 +2,17 @@ require 'slim'
 require 'lib/custom_helpers'
 
 activate :directory_indexes
+activate :blog do |blog|
+  blog.permalink = 'blog/{title}.html'
+  blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
+end
 
 page '/index.html', layout: :landing_page
 activate :contact
 
 with_layout :website do
   page '/about.html'
+  page '/blog.html'
   page '/contact.html'
 end
 

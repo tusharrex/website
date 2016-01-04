@@ -17,6 +17,16 @@
   height: 39px;
   margin: 23px 44px 0 0;
   width: 52px;
+
+  &.from_header {
+    color: $white;
+
+    @media #{$mobile} {
+      height: 50px;
+      margin-right: 3px;
+      width: 43px;
+    }
+  }
 }
 
 .main-menu__button__clicked-state {
