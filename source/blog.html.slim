@@ -1,3 +1,9 @@
 = partial 'partials/website_header'
 .m-content
   .m-content__title
+- blog.articles.each do |article|
+  = article.date.strftime('%b %e %Y')
+  h2
+    = article.title
+  = article.tags.join(',')
+  = article.summary
