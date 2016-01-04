@@ -4,9 +4,11 @@ require 'lib/custom_helpers'
 activate :directory_indexes
 
 page '/index.html', layout: :landing_page
+activate :contact
 
 with_layout :website do
   page '/about.html'
+  page '/contact.html'
 end
 
 # Reload the browser automatically whenever files change
