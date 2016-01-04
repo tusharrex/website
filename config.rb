@@ -8,7 +8,6 @@ activate :blog do |blog|
 end
 
 page '/index.html', layout: :landing_page
-activate :contact
 
 with_layout :website do
   page '/about.html'
