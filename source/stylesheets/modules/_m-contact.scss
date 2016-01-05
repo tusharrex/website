@@ -9,6 +9,9 @@
   @media #{$mobile} {
     font-size: 16px;
     line-height: 22px;
+    .break-display-none {
+      display: none;
+    }
   }
 
   .wrapper {
