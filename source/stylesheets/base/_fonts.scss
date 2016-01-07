@@ -1,13 +1,13 @@
 @include font-face('AlegaWeb', 'AlegaWeb');
 @include font-face('AlegaWeb-Bold', 'AlegaWeb-Bold');
 @include font-face('AlegaWeb-Light', 'AlegaWeb-Light');
-@include font-face('Courier_Prime', 'CourierPrime');
-@include font-face('Courier_Prime_Bold', 'CourierPrime-Bold');
-@include font-face('Courier_Prime_Italic', 'CourierPrime-Italic');
-@include font-face('Courier_Prime_Bold_Italic', 'CourierPrime-Italic-Bold');
-@include font-face('b064013t', 'Baskerville');
-@include font-face('b064016t', 'Baskerville-Bold');
-@include font-face('b064236t', 'Baskerville-Italic-Bold');
+@include font-face('CourierPrime', 'CourierPrime');
+@include font-face('CourierPrime-Bold', 'CourierPrime-Bold');
+@include font-face('CourierPrime-Italic', 'CourierPrime-Italic');
+@include font-face('CourierPrime-Bold-Italic', 'CourierPrime-Italic-Bold');
+@include font-face('Baskerville', 'Baskerville');
+@include font-face('Baskerville-Bold', 'Baskerville-Bold');
+@include font-face('Baskerville-Italic-Bold', 'Baskerville-Italic-Bold');
 
 $alega: 'AlegaWeb', sans-serif;
 $alega-bold: 'AlegaWeb-Bold', sans-serif;
@@ -16,8 +16,8 @@ $alega-light: 'AlegaWeb-Light', sans-serif;
 $courier: 'CourierPrime', serif;
 $courier-bold: 'CourierPrime-Bold', serif;
 $courier-italic: 'CourierPrime-Italic', serif;
-$courier-italic-bold: 'CourierPrime-Italic-Bold', serif;
+$courier-italic-bold: 'CourierPrime-Bold-Italic', serif;
 
-$baskerville: 'b064013t', sans-serif;
-$baskerville-bold: 'b064016t', sans-serif;
-$baskerville-italic-bold: 'b064236t', sans-serif;
+$baskerville: 'Baskerville', sans-serif;
+$baskerville-bold: 'Baskerville-Bold', sans-serif;
+$baskerville-italic-bold: 'Baskerville-Italic-Bold', sans-serif;

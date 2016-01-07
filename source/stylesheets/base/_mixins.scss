@@ -73,7 +73,7 @@ $base-font-size: 12px;
   @font-face {
     font-family: "#{$style-name}";
     src: url($filepath + '.woff') format('woff'),
-    url($filepath + '.ttf') format('ttf') ;
+    url($filepath + '.ttf') format('truetype');
   };
 }
 
