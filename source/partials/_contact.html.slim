@@ -5,35 +5,41 @@
     | chat, and a coffee, to see how we can add value to your business.
     ul.contact-offices
       li
-        = partial 'svg/contact/warsaw'
-        h3 Warsaw Office
-        address
-          | KEN 55/64
-          br
-          | 02-797, Warszawa
-          br
-          | POLAND
-        a.contact-show-map-btn(href="https://goo.gl/8RShUJ" target="_blank" rel="nofollow")
-          i.icon.icon-pin-map
-          | Show on Map
+        .office-img
+          = partial 'svg/contact/warsaw'
+        .description
+          h3 Warsaw Office
+          address
+            | KEN 55/64
+            br
+            | 02-797, Warszawa
+            br
+            | POLAND
+          a.contact-show-map-btn(href="https://goo.gl/8RShUJ" target="_blank" rel="nofollow")
+            i.icon.icon-pin-map
+            .btn-text Show on Map
       li
-        = partial 'svg/contact/bialystok'
-        h3 Białystok Office
-        address
-          | Sukienna 4/49
-          br
-          | 15-881, Białystok
-          br
-          |Poland
-        a.contact-show-map-btn(href="https://goo.gl/kuMR0v" target="_blank" rel="nofollow")
-          i.icon.icon-pin-map
-          | Show on Map
+        .office-img
+          = partial 'svg/contact/bialystok'
+        .description
+          h3 Białystok Office
+          address
+            | Sukienna 4/49
+            br
+            | 15-881, Białystok
+            br
+            |Poland
+          a.contact-show-map-btn(href="https://goo.gl/kuMR0v" target="_blank" rel="nofollow")
+            i.icon.icon-pin-map
+            .btn-text Show on Map
       li
-        = partial 'svg/contact/poznan'
-        h3 Poznań Office
-        p
-          | Alex i Marta
-          br
-          | nie dorobili się biura :P ale zapraszają do kawiarni
+        .office-img
+          = partial 'svg/contact/poznan'
+        .description
+          h3 Poznań Office
+          p
+            | Alex i Marta
+            br
+            | nie dorobili się biura :P ale zapraszają do kawiarni
 
 
