@@ -1,4 +1,7 @@
 $desktop: 'screen and (min-width: 997px) and (max-width: 1200px)';
+
+$tablet-1: 'screen and (max-width: 996px)';
 $tablet: 'screen and (min-width: 768px) and (max-width: 996px)';
-$mobile: 'screen and (min-width: 0px) and (max-width: 767px)';
+
 $mobile-1: 'screen and (min-width: 480px) and (max-width: 767px)';
+$mobile: 'screen and (min-width: 0px) and (max-width: 767px)';

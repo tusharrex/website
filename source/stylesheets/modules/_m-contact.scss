@@ -9,6 +9,9 @@
   @media #{$mobile} {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  @media #{$tablet-1} {
     .break-display-none {
       display: none;
     }
