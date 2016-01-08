@@ -1,6 +1,22 @@
+openMainMenu = ->
+  $('.main-menu').addClass('opened')
+
+closeMainMenu = ->
+  $('.main-menu').removeClass('opened')
+
 $ ->
+  doc = document.getElementsByTagName('body')[0]
+  cqm = new Hammer(doc)
+
+  menuNav = document.getElementsByClassName('main-menu__nav')[0]
+  menu = new Hammer(menuNav)
+
   $('.main-menu__button').click ->
-    $('.main-menu__nav').addClass('opened')
+    openMainMenu()
 
   $('.main-menu__nav__button').click ->
-    $('.main-menu__nav').removeClass('opened')
+    closeMainMenu()
+
+  cqm.on 'swipeleft', openMainMenu
+
+  menu.on 'swiperight', closeMainMenu
