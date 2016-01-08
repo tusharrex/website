@@ -11,7 +11,7 @@
     line-height: 22px;
   }
 
-  @media #{$tablet-1} {
+  @media #{$tablet-large} {
     .break-display-none {
       display: none;
     }
@@ -39,7 +39,7 @@
         max-width: 220px;
         margin: 0 10px;
       }
-      @media #{$mobile-1} {
+      @media #{$only-mobile-large} {
         max-width: 100%;
       }
       @media #{$mobile} {
@@ -47,7 +47,7 @@
         margin: 0 auto 72px auto;
       }
       .office-img {
-        @media #{$mobile-1} {
+        @media #{$only-mobile-large} {
           display: inline-block;
           width: 45%;
           vertical-align: middle;
@@ -117,7 +117,7 @@
       @media #{$mobile} {
         width: 74%;
       }
-      @media #{$mobile-1} {
+      @media #{$only-mobile-large} {
         display: inline-block;
         width: 55%;
         padding-left: 10%;
