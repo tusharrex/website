@@ -30,12 +30,12 @@
 
 .st-bialystok-6 {
   @include stroke($linecap: round, $linejoin: round);
-  fill:none;
+  fill: none;
 }
 
 .st-poznan-0 {
   @include stroke();
-  fill:none;
+  fill: none;
 }
 
 .st-poznan-1 {
@@ -88,6 +88,7 @@
 .st-warsaw-5 {
   fill: $light-gray;
 }
+
 .st-warsaw-6 {
   @include stroke($linecap: round, $linejoin: round);
   fill: $santas-gray;
