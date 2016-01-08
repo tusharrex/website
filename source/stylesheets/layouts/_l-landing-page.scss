@@ -62,12 +62,22 @@ h1 {
   top: 9%;
 
   @media #{$mobile} {
-    display: none;
+    left: 5%;
+    right: 5%;
+    top: 12%;
   }
 }
 
+.l-landing-page__bottom-logo {
+  bottom: 10.8%;
+  color: $santas-gray;
+  left: 26.4%;
+  position: absolute;
+  right: 10%;
+  width: 47%;
+}
+
 .hello-mail {
-  @include font-size(26px);
   color: $martinique-dark;
   font-family: $alega-bold;
   font-size: 1.72vw;
@@ -82,5 +92,11 @@ h1 {
 
   &:active {
     color: $martinique-dark;
+  }
+
+  @media #{$mobile} {
+    font-size: 6.10vw;
+    left: 5%;
+    top: 11%;
   }
 }
