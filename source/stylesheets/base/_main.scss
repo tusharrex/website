@@ -1,8 +1,12 @@
+// here should be the main styles of the project
 .twitter-link {
+  display: inline-block;
+  max-height: 33px;
+  max-width: 41px;
+  overflow: hidden;
+
   svg {
     fill: $white;
-    height: 33px;
-    width: 41px;
   }
 
   &:hover {
@@ -19,10 +23,13 @@
 }
 
 .github-link {
+  display: inline-block;
+  max-height: 41px;
+  max-width: 41px;
+  overflow: hidden;
+
   svg {
     fill: $white;
-    height: 41px;
-    width: 41px;
   }
 
   &:hover {
@@ -39,10 +46,13 @@
 }
 
 .facebook-link {
+  display: inline-block;
+  max-height: 41px;
+  max-width: 41px;
+  overflow: hidden;
+
   svg {
     fill: $white;
-    height: 41px;
-    width: 41px;
   }
 
   &:hover {
