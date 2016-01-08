@@ -1,3 +1,4 @@
+#= require_tree .
 #= require 'lib/jquery.min'
 #= require 'lib/hammer.min'
 
