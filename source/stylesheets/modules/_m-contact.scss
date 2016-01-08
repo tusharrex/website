@@ -17,114 +17,113 @@
     }
   }
 
-  .contact-offices {
-    margin: 112px 0 0;
-    padding: 0;
+}
 
-    @media #{$mobile} {
-      margin-top: 50px;
-    }
-    li {
-      display: inline-block;
-      vertical-align: top;
-      max-width: 324px;
-      padding: 0 10px;
-      margin: 0 27px;
+.contact-offices {
+  margin: 112px 0 0;
+  padding: 0;
 
-      @media #{$desktop} {
-        max-width: 300px;
-        margin: 0 10px;
-      }
-      @media #{$tablet} {
-        max-width: 220px;
-        margin: 0 10px;
-      }
-      @media #{$only-mobile-large} {
-        max-width: 100%;
-      }
-      @media #{$mobile} {
-        display: block;
-        margin: 0 auto 72px auto;
-      }
-      .office-img {
-        @media #{$only-mobile-large} {
-          display: inline-block;
-          width: 45%;
-          vertical-align: middle;
-          padding-left: 10%;
-        }
-      }
-    }
-    h3 {
-      font-size: 30px;
-      font-family: $alega-bold;
-      color: $valencia-red;
-      margin: 21px 0 17px 0;
-
-      @media #{$mobile} {
-        margin: 10px 0 30px 0;
-      }
-    }
-    address, p {
-      font-size: 19px;
-      line-height: 27px;
-      font-style: normal;
-
-      @media #{$mobile} {
-      line-height: 25px;
-      }
-    }
-
-    .contact-show-map-btn {
-      font-size: 18px;
-      text-transform: capitalize;
-      text-decoration: none;
-      color: $deep-sea-green;
-      font-family: $alega-bold;
-      margin-top: 10px;
-      display: inline-block;
-
-      @media #{$mobile} {
-        margin-top: 15px;
-      }
-      svg {
-        width: 21px;
-        margin-right: 10px;
-      }
-    }
-
-    .icon-pin-map,
-    .btn-text {
-      display: table-cell;
-      vertical-align: middle;
-    }
-
-    .icon-pin-map {
-      padding-right: 10px;
-    }
-
-    .description {
-      text-align: left;
-      width: 64%;
-      margin: 0 auto;
-
-      @media #{$desktop} {
-        width: 70%;
-      }
-      @media #{$tablet} {
-        width: 97%;
-      }
-      @media #{$mobile} {
-        width: 74%;
-      }
-      @media #{$only-mobile-large} {
-        display: inline-block;
-        width: 55%;
-        padding-left: 10%;
-        vertical-align: middle;
-      }
-    }
-
+  @media #{$mobile} {
+    margin-top: 50px;
   }
 
+  .icon-pin-map,
+  .btn-text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .icon-pin-map {
+    padding-right: 10px;
+  }
+
+}
+
+.contact-offices-element {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 324px;
+  padding: 0 10px;
+  margin: 0 27px;
+
+  @media #{$desktop} {
+    max-width: 300px;
+    margin: 0 10px;
+  }
+  @media #{$tablet} {
+    max-width: 220px;
+    margin: 0 10px;
+  }
+  @media #{$only-mobile-large} {
+    max-width: 100%;
+  }
+  @media #{$mobile} {
+    display: block;
+    margin: 0 auto 72px auto;
+  }
+}
+
+.contact-office-name {
+  font-size: 30px;
+  font-family: $alega-bold;
+  color: $valencia-red;
+  margin: 21px 0 17px 0;
+
+  @media #{$mobile} {
+    margin: 10px 0 30px 0;
+  }
+}
+
+.contact-address {
+  font-size: 19px;
+  line-height: 27px;
+  font-style: normal;
+
+  @media #{$mobile} {
+    line-height: 25px;
+  }
+}
+
+.contact-show-map-btn {
+  margin-top: 10px;
+  display: inline-block;
+
+  @media #{$mobile} {
+    margin-top: 15px;
+  }
+  svg {
+    width: 21px;
+    margin-right: 10px;
+  }
+}
+
+.contact-office-img {
+  @media #{$only-mobile-large} {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+    padding-left: 10%;
+  }
+}
+
+.contact-description {
+  text-align: left;
+  width: 64%;
+  margin: 0 auto;
+
+  @media #{$desktop} {
+    width: 70%;
+  }
+  @media #{$tablet} {
+    width: 97%;
+  }
+  @media #{$mobile} {
+    width: 74%;
+  }
+  @media #{$only-mobile-large} {
+    display: inline-block;
+    width: 55%;
+    padding-left: 10%;
+    vertical-align: middle;
+  }
 }

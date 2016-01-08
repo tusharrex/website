@@ -17,6 +17,7 @@
     width: 218px;
   }
 }
+
 .three-states-button {
   float: right;
   .three-states-button__hover-state,
@@ -24,6 +25,7 @@
     display: none;
   }
 }
+
 .three-states-button:hover {
   .three-states-button__normal-state,
   .three-states-button__clicked-state {
@@ -33,6 +35,7 @@
     display: block;
   }
 }
+
 .three-states-button:active {
   .three-states-button__normal-state,
   .three-states-button__hover-state {
@@ -42,8 +45,17 @@
     display: block;
   }
 }
+
 .no-button {
   border: none;
   background: transparent;
   outline: none;
+}
+
+.green-link-btn {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: $deep-sea-green;
+  font-family: $alega-bold;
 }
