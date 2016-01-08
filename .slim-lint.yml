@@ -29,6 +29,7 @@ linters:
 
   RuboCop:
     enabled: true
+    exclude: 'source/blog.html.slim'
     # These cops are incredibly noisy since the Ruby we extract from Slim
     # templates isn't well-formatted, so we ignore them.
     ignored_cops:
