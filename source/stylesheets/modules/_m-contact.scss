@@ -64,7 +64,7 @@
   margin: 0 auto;
 }
 
-@media all and (min-width: 480px) {
+@media #{$breakpoint-mobile-landscape} {
   .contact-offices-element {
     max-width: 100%;
   }
@@ -88,7 +88,7 @@
 
 }
 
-@media only screen and (min-width: 768px) {
+@media #{$breakpoint-tablet} {
   .m-contact {
     font-size: 20px;
     line-height: 30px;
@@ -123,7 +123,7 @@
 
 }
 
-@media only screen and (min-width: 997px) {
+@media #{$breakpoint-desktop} {
   .m-contact {
 
     .break-display-none {
@@ -142,7 +142,7 @@
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media #{$breakpoint-desktop-large} {
   .contact-offices-element {
     margin: 0 27px;
     max-width: 324px;
