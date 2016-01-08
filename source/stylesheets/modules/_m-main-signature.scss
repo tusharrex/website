@@ -1,10 +1,13 @@
 // scss-lint:disable SelectorFormat
 
 .m-main-signature {
-  @include font-size(36px);
   color: $white;
   font-family: 'Courier New';
   font-size: 2.45vw;
+
+  @media #{$mobile} {
+    font-size: 8.1vw;
+  }
 }
 
 .m-main-signature--is-underlined {
@@ -22,6 +25,10 @@
     to {
       stroke-dashoffset: 0;
     }
+  }
+
+  @media #{$mobile} {
+    display: none;
   }
 }
 
