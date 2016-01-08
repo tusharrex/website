@@ -1,8 +1,8 @@
 openMainMenu = ->
-  $('.main-menu__nav').addClass('opened')
+  $('.main-menu').addClass('opened')
 
 closeMainMenu = ->
-  $('.main-menu__nav').removeClass('opened')
+  $('.main-menu').removeClass('opened')
 
 
 $ ->
