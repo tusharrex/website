@@ -71,10 +71,15 @@ h1 {
 .l-landing-page__bottom-logo {
   bottom: 10.8%;
   color: $santas-gray;
+  display: none;
   left: 26.4%;
   position: absolute;
   right: 10%;
   width: 47%;
+
+  @media #{$mobile} {
+    display: block;
+  }
 }
 
 .hello-mail {
