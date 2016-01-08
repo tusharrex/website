@@ -5,6 +5,7 @@ activate :directory_indexes
 activate :blog do |blog|
   blog.permalink = 'blog/{title}.html'
   blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
+  blog.layout = 'layouts/website.html.slim'
 end
 
 page '/index.html', layout: :landing_page

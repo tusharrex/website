@@ -119,3 +119,15 @@ $base-font-size: 12px;
   filter: FlipH;
   -ms-filter: 'FlipH';
 }
+
+@mixin flex($direction, $wrap) {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  -ms-flex-direction: $direction;
+  -ms-flex-wrap: $wrap;
+  -webkit-flex-direction: $direction;
+  -webkit-flex-wrap: $wrap;
+}
