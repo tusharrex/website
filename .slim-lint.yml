@@ -24,6 +24,8 @@ linters:
   LineLength:
     enabled: true
     max: 80
+    exclude:
+      - 'source/svg/**/*.slim'
 
   RuboCop:
     enabled: true
