@@ -1,7 +1,5 @@
-$colors: $breaker-bay-green, $valencia-red, $indian_yellow, $deep-sea-green;
-
 .m-header {
-  background-color: nth($colors, random(length($colors)));
+  background-color: $martinique-dark;
   height: 16.125vw;
   min-height: 160px;
   padding: 5px 5px 5px 0;
