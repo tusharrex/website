@@ -4,7 +4,6 @@ openMainMenu = ->
 closeMainMenu = ->
   $('.main-menu').removeClass('opened')
 
-
 $ ->
   doc = document.getElementsByTagName('body')[0]
   cqm = new Hammer(doc)
