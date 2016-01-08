@@ -22,7 +22,7 @@
   }
 }
 
-  .github-link {
+.github-link {
   display: inline-block;
   max-height: 41px;
   max-width: 41px;
@@ -50,6 +50,7 @@
   max-height: 41px;
   max-width: 41px;
   overflow: hidden;
+
   svg {
     fill: $white;
   }
