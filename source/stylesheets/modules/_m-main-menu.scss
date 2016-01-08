@@ -2,13 +2,24 @@
 
 .main-menu {
   bottom: 0;
+  height: 60px;
   max-width: 100%;
   overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
+  transition: 3s height 0s linear; // this gives the delay before decreasing haight
   width: 550px;
   z-index: 201;
+
+  &.opened {
+    height: 100%;
+    transition: height 0s linear; // this overrides transition and removes delay for height change
+
+    .main-menu__nav {
+      right: 0;
+    }
+  }
 }
 
 .main-menu__button {
@@ -51,10 +62,13 @@
   top: 0;
   transition: right 1s ease-in-out;
   width: 550px;
+}
 
-  &.opened {
-    right: 0;
-  }
+.main-menu__nav__wrapper {
+  height: 753px;
+  max-height: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .main-menu__list {
