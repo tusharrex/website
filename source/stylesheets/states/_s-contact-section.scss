@@ -164,3 +164,8 @@
   @include stroke($linejoin: round);
   fill: $indian-yellow-2;
 }
+
+.st-ruby-small-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $maroon-red;
+}

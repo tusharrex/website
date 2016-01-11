@@ -1,5 +1,9 @@
 .m-start-project {
   background: $indian-yellow;
+  font-family: $courier;
+  text-align: center;
+  color: $light-gray;
+  padding: 34px 0 44px;
 }
 
 .start-project-gofer {
@@ -7,10 +11,36 @@
 }
 
 .start-project-laptop {
+  display: none;
   height: 94px;
 }
 
 .start-project-ruby {
   display: none;
   height: 66px;
+}
+
+.start-project-ruby-small {
+  height: 25px;
+}
+
+.start-project-title {
+  font-family: $alega-bold;
+  color: $martinique-dark;
+  font-size: 46px;
+  line-height: 52px;
+  margin-bottom: 26px;
+  span {
+    font-size: 20px;
+  }
+}
+
+.start-project-description {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 74px;
+}
+
+.start-project-btn {
+   margin-bottom: 36px;
 }

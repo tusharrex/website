@@ -2,9 +2,10 @@
   color: $martinique-dark;
   font-family: $courier;
   text-align: center;
+  line-height: 22px;
   padding: 142px 0 114px 0;
   font-size: 16px;
-  line-height: 22px;
+  background: $light-gray;
 
   .break-display-none {
     display: none;

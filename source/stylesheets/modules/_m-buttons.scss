@@ -13,9 +13,20 @@
     @include button($martinique-dark, $santas-gray, $mirage-dark);
   }
 
+  &.yellow-bcg {
+    background-color: $indian-yellow;
+  }
+
   &.small {
     width: 218px;
   }
+
+  &.mobile-size {
+    width: 290px;
+    font-size: 25px;
+    padding: 20px 40px;
+  }
+
 }
 
 .three-states-button {
