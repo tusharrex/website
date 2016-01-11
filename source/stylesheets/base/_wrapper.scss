@@ -1,5 +1,8 @@
 .wrapper {
-  max-width: 1254px;
+  max-width: 1248px;
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 15px;
+  @media #{$breakpoint-desktop} {
+    padding: 0;
+  }
 }

@@ -4,6 +4,7 @@
   text-align: center;
   color: $light-gray;
   padding: 34px 0 44px;
+  position: relative;
 }
 
 .start-project-gofer {
@@ -41,6 +42,72 @@
   margin-bottom: 74px;
 }
 
-.start-project-btn {
-   margin-bottom: 36px;
+.btn.start-project-btn {
+  margin-bottom: 36px;
+  width: 290px;
+  font-size: 25px;
+  padding: 20px 40px;
+}
+
+@media #{$breakpoint-tablet} {
+
+  .m-start-project {
+    padding: 176px 0 143px;
+  }
+
+  // TO DO REFACTOR:
+  .start-project-laptop,
+  .start-project-ruby,
+  .start-project-gofer {
+    display: block;
+    position: absolute;
+  }
+
+  .start-project-laptop {
+    right: 11.5%;
+    bottom: 0;
+    height: 11%;
+    width: 16%;
+  }
+
+  .start-project-ruby {
+    top: 15.5%;
+    left: 77.8%;
+    bottom: 70.5%;
+    width: 4.0656%;
+    height: 21.08052%;
+  }
+
+  .start-project-gofer {
+    top: 1.5%;
+    left: 16%;
+    width: 12.0656%;
+    height: 26.08052%;
+  }
+
+  .start-project-ruby-small {
+    display: none;
+  }
+
+  .start-project-title {
+    font-size: 8.5vw;
+    line-height: 3.5vw;
+    margin-bottom: 74px;
+    span {
+      font-size: 2vw;
+      display: block;
+    }
+  }
+
+  .start-project-description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 65px;
+  }
+
+  .btn.start-project-btn {
+    width: 320px;
+    font-size: 28px;
+  }
+
 }
