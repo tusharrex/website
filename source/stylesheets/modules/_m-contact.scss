@@ -63,6 +63,7 @@
 .contact-description {
   margin: 0 auto;
   text-align: left;
+  width: 74%;
 }
 
 @media #{$breakpoint-mobile-landscape} {
@@ -122,6 +123,7 @@
 
   .contact-description {
     padding-left: 10%;
+    width: 100%;
   }
 
 }
