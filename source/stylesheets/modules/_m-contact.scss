@@ -1,11 +1,11 @@
 .m-contact {
+  background: $light-gray;
   color: $martinique-dark;
   font-family: $courier;
-  text-align: center;
-  line-height: 22px;
-  padding: 142px 0 114px 0;
   font-size: 16px;
-  background: $light-gray;
+  line-height: 22px;
+  padding: 142px 0 114px;
+  text-align: center;
 
   .break-display-none {
     display: none;
@@ -31,38 +31,39 @@
 
 .contact-offices-element {
   display: block;
-  vertical-align: top;
+  margin: 0 auto 72px;
   padding: 0 10px;
-  margin: 0 auto 72px auto;
+  vertical-align: top;
+  width: 100%;
 }
 
 .contact-office-name {
-  font-size: 30px;
-  font-family: $alega-bold;
   color: $valencia-red;
-  margin: 10px 0 30px 0;
+  font-family: $alega-bold;
+  font-size: 30px;
+  margin: 10px 0 30px;
 }
 
 .contact-address {
   font-size: 19px;
-  line-height: 25px;
   font-style: normal;
+  line-height: 25px;
 }
 
 .contact-show-map-btn {
-  margin-top: 15px;
   display: inline-block;
+  margin-top: 15px;
 
   svg {
-    width: 21px;
     margin-right: 10px;
+    width: 21px;
   }
 }
 
 .contact-description {
+  margin: 0 auto;
   text-align: left;
   width: 74%;
-  margin: 0 auto;
 }
 
 @media #{$breakpoint-mobile-landscape} {
@@ -75,16 +76,16 @@
 
   .contact-office-img {
     display: inline-block;
-    width: 45%;
-    vertical-align: middle;
     padding-left: 10%;
+    vertical-align: middle;
+    width: 45%;
   }
 
   .contact-description {
     display: inline-block;
-    width: 55%;
     padding-left: 10%;
     vertical-align: middle;
+    width: 55%;
   }
 
 }
@@ -102,12 +103,12 @@
 
   .contact-offices-element {
     display: inline-block;
-    max-width: 220px;
     margin: 0 10px;
+    max-width: 220px;
   }
 
   .contact-office-name {
-    margin: 21px 0 17px 0;
+    margin: 21px 0 17px;
   }
 
   .contact-address {
@@ -132,9 +133,10 @@
     }
 
   }
+
   .contact-offices-element {
-    max-width: 300px;
     margin: 0 10px;
+    max-width: 300px;
   }
 
   .contact-description {

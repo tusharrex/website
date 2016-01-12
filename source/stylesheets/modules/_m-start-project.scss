@@ -1,10 +1,15 @@
 .m-start-project {
   background: $indian-yellow;
-  font-family: $courier;
-  text-align: center;
   color: $light-gray;
+  font-family: $courier;
   padding: 34px 0 44px;
   position: relative;
+  text-align: center;
+}
+
+.start-project-laptop,
+.start-project-ruby {
+  display: none;
 }
 
 .start-project-gofer {
@@ -12,12 +17,10 @@
 }
 
 .start-project-laptop {
-  display: none;
   height: 94px;
 }
 
 .start-project-ruby {
-  display: none;
   height: 66px;
 }
 
@@ -26,14 +29,16 @@
 }
 
 .start-project-title {
-  font-family: $alega-bold;
   color: $martinique-dark;
+  font-family: $alega-bold;
   font-size: 46px;
   line-height: 52px;
   margin-bottom: 26px;
+
   span {
     font-size: 20px;
   }
+
 }
 
 .start-project-description {
@@ -43,46 +48,37 @@
 }
 
 .btn.start-project-btn {
-  margin-bottom: 36px;
-  width: 290px;
   font-size: 25px;
+  margin-bottom: 36px;
   padding: 20px 40px;
+  width: 290px;
 }
 
 @media #{$breakpoint-tablet} {
 
   .m-start-project {
-    padding: 176px 0 143px;
+    padding: 175px 0 138px;
   }
 
-  // TO DO REFACTOR:
   .start-project-laptop,
-  .start-project-ruby,
-  .start-project-gofer {
+  .start-project-ruby {
     display: block;
-    position: absolute;
   }
 
   .start-project-laptop {
-    right: 11.5%;
+    //@include place-svg(90, 20, 76, 0);
     bottom: 0;
     height: 11%;
-    width: 16%;
+    left: 72%;
+    position: absolute;
   }
 
   .start-project-ruby {
-    top: 15.5%;
-    left: 77.8%;
-    bottom: 70.5%;
-    width: 4.0656%;
-    height: 21.08052%;
+    @include place-svg(49, 69, 77.3, 53);
   }
 
   .start-project-gofer {
-    top: 1.5%;
-    left: 16%;
-    width: 12.0656%;
-    height: 26.08052%;
+    @include place-svg(76, 46, 18.5, 71);
   }
 
   .start-project-ruby-small {
@@ -93,21 +89,32 @@
     font-size: 8.5vw;
     line-height: 3.5vw;
     margin-bottom: 74px;
+
     span {
-      font-size: 2vw;
       display: block;
+      font-size: 2vw;
     }
+
   }
 
   .start-project-description {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 22px;
     margin-bottom: 65px;
   }
 
   .btn.start-project-btn {
-    width: 320px;
     font-size: 28px;
+    width: 320px;
+  }
+
+}
+
+@media #{$breakpoint-desktop} {
+
+  .start-project-description {
+    font-size: 20px;
+    line-height: 30px;
   }
 
 }
