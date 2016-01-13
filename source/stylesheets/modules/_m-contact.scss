@@ -9,7 +9,6 @@
   .break-display-none {
     display: none;
   }
-
 }
 
 .contact-offices {
@@ -25,7 +24,6 @@
   .icon-pin-map {
     padding-right: 10px;
   }
-
 }
 
 .contact-offices-element {
@@ -86,7 +84,6 @@
     vertical-align: middle;
     width: 55%;
   }
-
 }
 
 @media #{$breakpoint-tablet} {
@@ -124,7 +121,6 @@
     padding-left: 10%;
     width: 100%;
   }
-
 }
 
 @media #{$breakpoint-desktop} {
@@ -144,7 +140,6 @@
   .contact-description {
     padding-left: 15%;
   }
-
 }
 
 @media #{$breakpoint-desktop-large} {
@@ -160,5 +155,4 @@
   .contact-address {
     font-size: 19px;
   }
-
 }
