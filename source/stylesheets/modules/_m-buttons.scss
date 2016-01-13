@@ -13,10 +13,16 @@
     @include button($martinique-dark, $santas-gray, $mirage-dark);
   }
 
+  &.yellow-bcg {
+    background-color: $indian-yellow;
+  }
+
   &.small {
     width: 218px;
   }
+
 }
+
 .three-states-button {
   float: right;
   .three-states-button__hover-state,
@@ -24,6 +30,7 @@
     display: none;
   }
 }
+
 .three-states-button:hover {
   .three-states-button__normal-state,
   .three-states-button__clicked-state {
@@ -33,6 +40,7 @@
     display: block;
   }
 }
+
 .three-states-button:active {
   .three-states-button__normal-state,
   .three-states-button__hover-state {
@@ -42,8 +50,13 @@
     display: block;
   }
 }
+
 .no-button {
   border: none;
   background: transparent;
   outline: none;
+}
+
+.green-link-btn {
+  @include link-button(18px, capitalize, none, $deep-sea-green, $alega-bold);
 }

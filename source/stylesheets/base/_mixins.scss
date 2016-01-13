@@ -73,7 +73,7 @@ $base-font-size: 12px;
   @font-face {
     font-family: "#{$style-name}";
     src: url($filepath + '.woff') format('woff'),
-    url($filepath + '.ttf') format('ttf') ;
+    url($filepath + '.ttf') format('truetype');
   };
 }
 
@@ -109,6 +109,15 @@ $base-font-size: 12px;
       box-shadow: 0 -4px $supplementary-color;
     }
   }
+}
+
+@mixin link-button($font-size, $text-transform,
+                   $text-decoration, $color, $font-family) {
+  font-size: $font-size;
+  text-transform: $text-transform;
+  text-decoration: $text-decoration;
+  color: $color;
+  font-family: $font-family;
 }
 
 @mixin flip-horizontal() {

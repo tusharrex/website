@@ -5,6 +5,8 @@
 @import 'base/fonts';
 @import 'base/main';
 @import 'base/devices';
+@import 'base/icons';
+@import 'base/wrapper';
 
 @import 'layouts/l-landing-page';
 @import 'layouts/l-website';
@@ -19,3 +21,7 @@
 @import 'modules/m-grid-collection';
 @import 'modules/m-grid-item';
 @import 'modules/m-subtitle';
+@import 'modules/m-contact';
+@import 'modules/m-start-project';
+
+@import 'states/s-contact-section';

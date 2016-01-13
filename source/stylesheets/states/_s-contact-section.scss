@@ -1,0 +1,167 @@
+.st-bialystok-0 {
+  @include stroke();
+  fill: none;
+}
+
+.st-bialystok-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $light-gray;
+}
+
+.st-bialystok-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $breaker-bay-green;
+}
+
+.st-bialystok-3 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $deep-sea-green;
+}
+
+.st-bialystok-4 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $damask-red;
+}
+
+.st-bialystok-5 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $valencia-red;
+}
+
+.st-bialystok-6 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-poznan-0 {
+  @include stroke();
+  fill: none;
+}
+
+.st-poznan-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $deep-sea-green;
+}
+
+.st-poznan-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $light-gray;
+}
+
+.st-poznan-3 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $indian-yellow-2;
+}
+
+.st-poznan-4 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $indian-yellow;
+}
+
+.st-poznan-5 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-warsaw-0 {
+  @include stroke();
+  fill: none;
+}
+
+.st-warsaw-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-warsaw-2 {
+  fill: $indian-yellow;
+}
+
+.st-warsaw-3 {
+  fill: $deep-sea-green;
+}
+
+.st-warsaw-4 {
+  fill: $light-gray;
+}
+
+.st-warsaw-5 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $santas-gray;
+}
+
+.st-warsaw-6 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $light-gray;
+}
+
+.st-warsaw-7 {
+  fill: $santas-gray;
+}
+
+.st-warsaw-8 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $deep-sea-green;
+}
+
+.st-gofer-0 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-gofer-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-gofer-2 {
+  @include stroke();
+  fill: $damask-red;
+}
+
+.st-gofer-3 {
+  fill: $sand-yellow;
+}
+
+.st-gofer-4 {
+  fill: $aquamarine-blue;
+}
+
+.st-gofer-5 {
+  fill: $martinique-dark;
+}
+
+.st-gofer-6 {
+  @include stroke();
+  fill: $light-gray;
+}
+
+.st-gofer-7 {
+  @include stroke();
+  fill: $martinique-dark;
+}
+
+.st-gofer-8 {
+  @include stroke();
+  fill: $sand-yellow;
+}
+
+.st-laptop-0 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-laptop-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-laptop-2 {
+  @include stroke($linejoin: round);
+  fill: $indian-yellow-2;
+}
+
+.st-ruby-small-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $maroon-red;
+}
