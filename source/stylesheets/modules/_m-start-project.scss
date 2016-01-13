@@ -66,10 +66,7 @@
   }
 
   .start-project-laptop {
-    bottom: 0;
-    height: 11%;
-    left: 72%;
-    position: absolute;
+    @include place-svg(150, 20, 76, 0);
   }
 
   .start-project-ruby {
