@@ -78,32 +78,28 @@
 }
 
 .st-warsaw-3 {
-  fill: $martinique-dark;
-}
-
-.st-warsaw-4 {
   fill: $deep-sea-green;
 }
 
-.st-warsaw-5 {
+.st-warsaw-4 {
   fill: $light-gray;
+}
+
+.st-warsaw-5 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $santas-gray;
 }
 
 .st-warsaw-6 {
   @include stroke($linecap: round, $linejoin: round);
-  fill: $santas-gray;
-}
-
-.st-warsaw-7 {
-  @include stroke($linecap: round, $linejoin: round);
   fill: $light-gray;
 }
 
-.st-warsaw-8 {
+.st-warsaw-7 {
   fill: $santas-gray;
 }
 
-.st-warsaw-9 {
+.st-warsaw-8 {
   @include stroke($linecap: round, $linejoin: round);
   fill: $deep-sea-green;
 }
