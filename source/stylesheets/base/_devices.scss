@@ -1,1 +1,13 @@
+$desktop: 'screen and (min-width: 997px) and (max-width: 1200px)';
+
+$tablet: 'screen and (min-width: 768px) and (max-width: 996px)';
+
+$only-mobile-large: 'screen and (min-width: 480px) and (max-width: 767px)';
 $mobile: 'screen and (min-width: 0px) and (max-width: 767px)';
+
+// MOBILE FIRST
+
+$breakpoint-mobile-landscape: 'all and (min-width: 480px)';
+$breakpoint-tablet: 'only screen and (min-width: 768px)';
+$breakpoint-desktop: 'only screen and (min-width: 997px)';
+$breakpoint-desktop-large: 'only screen and (min-width: 1200px)';

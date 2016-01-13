@@ -4,12 +4,13 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
+  background-color: $light-gray;
   font-size: 1rem;
 }
 
