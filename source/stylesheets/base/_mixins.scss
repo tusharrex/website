@@ -111,6 +111,15 @@ $base-font-size: 12px;
   }
 }
 
+@mixin link-button($font-size, $text-transform,
+                   $text-decoration, $color, $font-family) {
+  font-size: $font-size;
+  text-transform: $text-transform;
+  text-decoration: $text-decoration;
+  color: $color;
+  font-family: $font-family;
+}
+
 @mixin flip-horizontal() {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);

@@ -58,9 +58,5 @@
 }
 
 .green-link-btn {
-  font-size: 18px;
-  text-transform: capitalize;
-  text-decoration: none;
-  color: $deep-sea-green;
-  font-family: $alega-bold;
+  @include link-button(18px, capitalize, none, $deep-sea-green, $alega-bold);
 }
