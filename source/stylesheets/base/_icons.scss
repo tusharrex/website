@@ -1,11 +1,10 @@
 .icon {
-  width: 20px;
   display: inline-block;
+  width: 20px;
 
   &.icon-pin-map {
-    &:before {
+    &::before {
       content: url('/stylesheets/icons/pin_map.svg');
     }
   }
-
 }

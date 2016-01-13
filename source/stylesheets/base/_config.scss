@@ -4,14 +4,14 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
-  font-size: 1rem;
   background-color: $light-gray;
+  font-size: 1rem;
 }
 
 svg {

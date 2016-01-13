@@ -1,3 +1,5 @@
+// scss-lint:disable SelectorFormat
+
 .btn {
   @include button;
 
@@ -25,6 +27,7 @@
 
 .three-states-button {
   float: right;
+
   .three-states-button__hover-state,
   .three-states-button__clicked-state {
     display: none;
@@ -36,6 +39,7 @@
   .three-states-button__clicked-state {
     display: none;
   }
+
   .three-states-button__hover-state {
     display: block;
   }
@@ -46,14 +50,15 @@
   .three-states-button__hover-state {
     display: none;
   }
+
   .three-states-button__clicked-state {
     display: block;
   }
 }
 
 .no-button {
-  border: none;
   background: transparent;
+  border: 0;
   outline: none;
 }
 
