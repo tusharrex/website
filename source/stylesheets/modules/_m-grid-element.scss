@@ -1,0 +1,39 @@
+.m-grid-element {
+  height: 100vw;
+  width: 100vw;
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-grid-element {
+    height: 50vw;
+    width: 50vw;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-grid-element {
+    height: 33.3vw;
+
+    &.small {
+      width: 33.3vw;
+    }
+
+    &.large {
+      width: 66.7vw;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-grid-element {
+    height: 416px;
+
+    &.small {
+      width: 416px;
+    }
+
+    &.large {
+      width: 832px;
+    }
+  }
+}

@@ -3,6 +3,10 @@
   max-width: 1248px;
   padding: 0 15px;
 
+  &.padding-none {
+    padding: 0;
+  }
+
   @media #{$breakpoint-desktop} {
     padding: 0;
   }
