@@ -12,14 +12,14 @@
 
 @media #{$breakpoint-tablet} {
   .m-grid-element {
-    height: 30vw;
+    height: 33.3vw;
 
     &.small {
-      width: 30vw;
+      width: 33.3vw;
     }
 
     &.large {
-      width: 70vw;
+      width: 66.7vw;
     }
   }
 }
