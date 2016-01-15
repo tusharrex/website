@@ -1,5 +1,9 @@
 // scss-lint:disable SelectorFormat
 
+
+// as soon as we use this variable only here we don't need to include it to the _devices.css
+$smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height: 753px)';
+
 .main-menu {
   bottom: 0;
   height: 60px;
@@ -75,7 +79,7 @@
   padding-right: 40px;
   position: relative;
 
-  @media #{$main-menu-special} {
+  @media #{$smaller--than-main-menu} {
     margin-bottom: 4vmin;
   }
 }
@@ -96,7 +100,7 @@
   top: 9px;
   width: 37px;
 
-  @media #{$main-menu-special} {
+  @media #{$smaller--than-main-menu} {
     bottom: 0;
     height: 5vmin;
     margin: auto 0;
@@ -121,7 +125,7 @@
     opacity: .7;
   }
 
-  @media #{$main-menu-special} {
+  @media #{$smaller--than-main-menu} {
     font-size: 8vmin;
     padding-right: 10vmin;
   }
@@ -134,7 +138,7 @@
   padding: 0;
   width: 28px;
 
-  @media #{$main-menu-special} {
+  @media #{$smaller--than-main-menu} {
     left: 5vmin;
     margin: 0;
     position: absolute;
@@ -177,7 +181,7 @@
   clear: both;
   margin: 0 118px 0 0;
 
-  @media #{$main-menu-special} {
+  @media #{$smaller--than-main-menu} {
     margin: 0 16vmin 0 0;
   }
 }
@@ -187,7 +191,7 @@
   float: right;
   margin-left: 50px;
 
-  @media #{$main-menu-special} {
+  @media #{$smaller--than-main-menu} {
     margin-left: 10%;
   }
 }
