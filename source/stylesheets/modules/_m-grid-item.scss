@@ -1,12 +1,16 @@
 .m-grid-item {
   font-family: $alega;
   height: 470px;
-  margin: 54px auto 0;
+  margin-top: 54px;
   width: 360px;
 
+  &.no-content {
+    height: 0;
+  }
+
   @media #{$mobile} {
-    margin: 9px auto;
     height: 300px;
+    margin: 9px 0;
     width: 320px;
   }
 }
@@ -25,7 +29,7 @@
   }
 }
 
-.m-grid-item:hover .m-grid-item__date{
+.m-grid-item:hover .m-grid-item__date {
   background-color: $damask-red;
 }
 

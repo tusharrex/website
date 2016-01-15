@@ -15,3 +15,5 @@ pageable: true
         = article.tags.map { |tag| "##{tag}" }.join(' ')
       .m-grid-item__summary
         = article.summary(500)
+  - 10.times do
+    .m-grid-item.no-content
