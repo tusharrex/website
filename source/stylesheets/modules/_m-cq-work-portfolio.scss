@@ -1,3 +1,81 @@
-.m-cq-work-portfolio.m-grid-collection {
-  margin: 0;
+.m-cq-work-portfolio {
+  &.m-grid-collection {
+    margin: 0;
+  }
+
+  .portfolio-hover {
+    font-family: $baskerville;
+    color: $light-gray;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 30vw;
+  }
+
+  .portfolio-description {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer {
+    font-family: $alega;
+    position: absolute;
+    bottom: 1.6vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .soothe {
+    @include background($damask-red);
+  }
+
+  .dawanda {
+    @include background($valencia-red);
+  }
+
+  .foundersuite {
+    @include background($indian-yellow-2);
+  }
+
+  .eqipia {
+    @include background($aquamarine-blue);
+  }
+
+  .soal {
+    @include background($indian-yellow);
+  }
+
+  .sports-lion {
+    @include background($breaker-bay-green);
+  }
+
+  .selecthub {
+    @include background($valencia-red);
+  }
+
+  .taptera {
+    @include background($martinique-dark);
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-cq-work-portfolio {
+    .portfolio-hover {
+      padding-top: 4.5vw;
+    }
+
+    .portfolio-description {
+      width: 200px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-cq-work-portfolio {
+    .portfolio-description {
+      width: 324px;
+    }
+  }
 }

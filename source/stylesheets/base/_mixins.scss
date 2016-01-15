@@ -140,3 +140,10 @@ $base-font-size: 12px;
   -webkit-flex-direction: $direction;
   -webkit-flex-wrap: $wrap;
 }
+
+@mixin background($background-hover, $background: none) {
+  background: $background;
+  &:hover {
+    background: $background-hover;
+  }
+}
