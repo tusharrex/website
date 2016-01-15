@@ -1,5 +1,9 @@
 // scss-lint:disable SelectorFormat
 
+
+// as soon as we use this variable only here we don't need to include it to the _devices.css
+$smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height: 753px)';
+
 .main-menu {
   bottom: 0;
   height: 60px;
@@ -64,13 +68,6 @@
   width: 550px;
 }
 
-.main-menu__nav__wrapper {
-  height: 753px;
-  max-height: 100%;
-  position: relative;
-  width: 100%;
-}
-
 .main-menu__list {
   float: right;
   margin-bottom: 6px;
@@ -81,6 +78,10 @@
   margin-bottom: 36px;
   padding-right: 40px;
   position: relative;
+
+  @media #{$smaller--than-main-menu} {
+    margin-bottom: 4vmin;
+  }
 }
 
 .main-menu__list__item:hover .main-menu__list__item__arrow {
@@ -95,9 +96,18 @@
   display: none;
   height: 28px;
   position: absolute;
-  right: 52px;
+  right: 10vmin;
   top: 9px;
   width: 37px;
+
+  @media #{$smaller--than-main-menu} {
+    bottom: 0;
+    height: 5vmin;
+    margin: auto 0;
+    right: 52px;
+    top: 0;
+    width: 6vmin;
+  }
 }
 
 .main-menu__list__item__link {
@@ -114,13 +124,26 @@
   &:active {
     opacity: .7;
   }
+
+  @media #{$smaller--than-main-menu} {
+    font-size: 8vmin;
+    padding-right: 10vmin;
+  }
 }
 
 .main-menu__nav__button {
   float: left;
   height: 28px;
   margin: 21px 0 0 52px;
+  padding: 0;
   width: 28px;
+
+  @media #{$smaller--than-main-menu} {
+    left: 5vmin;
+    margin: 0;
+    position: absolute;
+    top: 15vmin;
+  }
 }
 
 .main-menu__nav__button__normal-state {
@@ -157,10 +180,18 @@
 .main-menu__social-links {
   clear: both;
   margin: 0 118px 0 0;
+
+  @media #{$smaller--than-main-menu} {
+    margin: 0 16vmin 0 0;
+  }
 }
 
 .main-menu__social-links__item {
   display: inline-block;
   float: right;
   margin-left: 50px;
+
+  @media #{$smaller--than-main-menu} {
+    margin-left: 10%;
+  }
 }
