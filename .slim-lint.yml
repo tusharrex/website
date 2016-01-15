@@ -5,7 +5,7 @@
 
 # Whether to ignore frontmatter at the beginning of Slim documents for
 # frameworks such as Jekyll/Middleman
-skip_frontmatter: false
+skip_frontmatter: true
 
 linters:
   CommentControlStatement:
