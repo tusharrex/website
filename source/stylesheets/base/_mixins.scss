@@ -143,6 +143,7 @@ $base-font-size: 12px;
 
 @mixin background($background-hover, $background: none) {
   background: $background;
+
   &:hover {
     background: $background-hover;
   }
