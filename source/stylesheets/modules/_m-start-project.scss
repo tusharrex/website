@@ -110,3 +110,9 @@
     line-height: 30px;
   }
 }
+
+@media #{$breakpoint-desktop-retina} {
+  .start-project-title {
+    font-size: 6.7vw;
+  }
+}
