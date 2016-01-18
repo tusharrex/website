@@ -12,7 +12,7 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
   position: absolute;
   right: 0;
   top: 0;
-  transition: 3s height 0s linear; // this gives the delay before decreasing haight
+  transition: 5s height 5s linear; // this gives the delay before decreasing height
   width: 550px;
   z-index: 201;
 

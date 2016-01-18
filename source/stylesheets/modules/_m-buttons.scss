@@ -27,6 +27,13 @@
 
 .three-states-button {
   float: right;
+  position: relative;
+  z-index: 203;
+
+  > div {
+    position: relative;
+    z-index: -1;
+  }
 
   .three-states-button__hover-state,
   .three-states-button__clicked-state {

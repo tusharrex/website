@@ -8,4 +8,5 @@ $ ->
     '#d74138',
     '#b92745']
   random_color = colors[Math.floor(Math.random() * colors.length)]
-  $('.m-header').css('background-color', random_color)
+  $('[data-js=random-background-color]').css('background-color', random_color)
+  $('[data-js=random-text-color]').css('color', random_color)
