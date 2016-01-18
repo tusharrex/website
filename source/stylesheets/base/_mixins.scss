@@ -129,7 +129,7 @@ $base-font-size: 12px;
   -ms-filter: 'FlipH';
 }
 
-@mixin flex($direction, $wrap) {
+@mixin flex-flow($direction, $wrap) {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -140,6 +140,16 @@ $base-font-size: 12px;
   -ms-flex-wrap: $wrap;
   -webkit-flex-direction: $direction;
   -webkit-flex-wrap: $wrap;
+}
+
+@mixin flex-justify-content($alignment) {
+  justify-content: $alignment;
+  -moz-box-pack: $alignment;
+  -moz-justify-content: $alignment;
+  -ms-flex-pack: $alignment;
+  -webkit-box-pack: $alignment;
+  -webkit-justify-content: $alignment;
+
 }
 
 @mixin background($background-hover, $background: none) {
