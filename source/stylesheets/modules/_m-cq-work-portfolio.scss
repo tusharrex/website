@@ -59,10 +59,10 @@
   }
 
   .testimonial {
+    color: $martinique-dark;
     font-family: $baskerville-italic-bold;
     font-size: 18px;
     line-height: 28px;
-    color: $martinique-dark;
     text-indent: 20px;
 
     &.light-grey-bcg {
@@ -81,8 +81,8 @@
     text-align: right;
 
     span {
-      font-family: $alega;
       color: $martinique-dark;
+      font-family: $alega;
     }
   }
 
@@ -98,8 +98,8 @@
     }
 
     .testimonial {
-      font-size: 3vw;
-      line-height: 4vw;
+      font-size: 2.8vw;
+      line-height: 3.8vw;
     }
 
     blockquote {
@@ -107,7 +107,26 @@
     }
 
     .quote-author {
-      font-size: 2.7vw;
+      font-size: 2vw;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-cq-work-portfolio {
+    .testimonial {
+      font-size: 2vw;
+      line-height: 3.5vw;
+
+      .table {
+        border-spacing: 0;
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .quote-author {
+      font-size: 2vw;
     }
   }
 }
@@ -116,6 +135,23 @@
   .m-cq-work-portfolio {
     .portfolio-description {
       width: 324px;
+    }
+
+    .testimonial .table {
+      width: 65%;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-cq-work-portfolio {
+    .testimonial {
+      font-size: 28px;
+      line-height: 44px;
+    }
+
+    .quote-author {
+      font-size: 1vw;
     }
   }
 }
