@@ -83,7 +83,7 @@ $base-font-size: 12px;
   position: relative;
   display: inline-block;
   color: $base-color;
-  background-color: $white;
+  background-color: $light-gray;
   border: 4px solid $base-color;
   border-radius: 10px;
   padding: 15px 40px;
@@ -95,7 +95,7 @@ $base-font-size: 12px;
 
   &:hover {
     background-color: $base-color;
-    color: $white;
+    color: $light-gray;
   }
 
   &:active {
@@ -133,6 +133,7 @@ $base-font-size: 12px;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  justify-content: space-around;
   flex-direction: $direction;
   flex-wrap: $wrap;
   -ms-flex-direction: $direction;

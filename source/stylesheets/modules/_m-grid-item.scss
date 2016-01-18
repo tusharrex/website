@@ -1,25 +1,61 @@
+$color: $breaker-bay-green;
+
 .m-grid-item {
   font-family: $alega;
   height: 470px;
-  margin: 54px auto 0;
+  margin-top: 54px;
   width: 360px;
 
+  &.no-content {
+    height: 0;
+  }
+
+  &:nth-of-type(4n) {
+    color: $deep-sea-green;
+
+    &:hover .m-grid-item__date {
+      background-color: $deep-sea-green;
+    }
+  }
+
+  &:nth-of-type(4n+1) {
+    color: $valencia-red;
+
+    &:hover .m-grid-item__date {
+      background-color: $valencia-red;
+    }
+  }
+
+  &:nth-of-type(4n+2) {
+    color: $breaker-bay-green;
+
+    &:hover .m-grid-item__date {
+      background-color: $breaker-bay-green;
+    }
+  }
+
+  &:nth-of-type(4n+3) {
+    color: $indian-yellow;
+
+    &:hover .m-grid-item__date {
+      background-color: $indian-yellow;
+    }
+  }
+
   @media #{$mobile} {
-    margin: 9px auto;
+    height: 300px;
+    margin: 9px 0;
     width: 320px;
   }
 }
 
 .m-grid-item__date {
   border-radius: 60px;
+  color: $martinique-dark;
   font-family: $alega-bold;
   font-size: 18px;
   padding: 11px;
   width: 370px;
-
-  &:hover {
-    background-color: $damask-red;
-  }
 
   @media #{$mobile} {
     font-size: 12px;
@@ -29,7 +65,7 @@
 }
 
 .m-grid-item__title {
-  color: $damask-red;
+  color: currentColor;
   font-size: 40px;
   line-height: 118%;
   margin: 4px 14px;
@@ -42,7 +78,7 @@
 }
 
 .m-grid-item__tags {
-  color: $damask-red;
+  color: currentColor;
   font-size: 18px;
   margin: 20px 12px;
 
@@ -53,6 +89,7 @@
 }
 
 .m-grid-item__summary {
+  color: $martinique-dark;
   font-family: $baskerville;
   font-size: 20px;
   line-height: 160%;
