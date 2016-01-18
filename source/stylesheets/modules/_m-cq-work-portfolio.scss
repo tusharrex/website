@@ -8,7 +8,6 @@
     font-family: $baskerville;
     font-size: 18px;
     line-height: 30px;
-    padding-top: 30vw;
     text-align: center;
     text-decoration: none;
   }
@@ -58,16 +57,57 @@
   .taptera {
     @include background($martinique-dark);
   }
+
+  .testimonial {
+    font-family: $baskerville-italic-bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: $martinique-dark;
+    text-indent: 20px;
+
+    &.light-grey-bcg {
+      background: $light-gray-2;
+    }
+
+    .table {
+      border-spacing: 15px;
+    }
+  }
+
+  .quote-author {
+    color: $damask-red;
+    font-family: $alega-bold;
+    font-size: 16px;
+    text-align: right;
+
+    span {
+      font-family: $alega;
+      color: $martinique-dark;
+    }
+  }
+
+  blockquote {
+    margin: 0 auto 28px;
+  }
 }
 
 @media #{$breakpoint-mobile-landscape} {
   .m-cq-work-portfolio {
-    .portfolio-hover {
-      padding-top: 4.5vw;
-    }
-
     .portfolio-description {
       width: 200px;
+    }
+
+    .testimonial {
+      font-size: 3vw;
+      line-height: 4vw;
+    }
+
+    blockquote {
+      margin-bottom: 22px;
+    }
+
+    .quote-author {
+      font-size: 2.7vw;
     }
   }
 }
