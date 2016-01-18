@@ -1,6 +1,18 @@
 .m-grid-element {
   height: 100vw;
+  position: relative;
   width: 100vw;
+
+  .grid-hover {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &:hover .grid-hover {
+    display: block;
+  }
 }
 
 @media #{$breakpoint-mobile-landscape} {
