@@ -1,0 +1,42 @@
+.m-codebeat {
+  @include flex-flow(row, wrap);
+  @include flex-justify-content(center);
+
+  .codebeat-logo {
+    background: url('/images/codebeat_logo.svg') no-repeat;
+    background-size: contain;
+    height: 68px;
+    max-width: 410px;
+    width: 94%;
+  }
+
+  .codebeat-slogan {
+    color: $docker-blue;
+    font-family: $alega-bold;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 26px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .codebeat-description {
+    color: $martinique-dark;
+    font-family: $courier;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-left: 2px;
+    text-align: justify;
+    text-indent: 23px;
+  }
+
+  .codebeat-dashboard {
+    background: url('/images/codebeat_dashboard.png') no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 40px;
+    max-width: 630px;
+    width: 100%;
+  }
+}
