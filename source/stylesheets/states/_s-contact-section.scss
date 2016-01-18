@@ -115,7 +115,7 @@
 }
 
 .st-gofer-2 {
-  @include stroke();
+  @include stroke($martinique-dark, 8, 10);
   fill: $damask-red;
 }
 
@@ -132,17 +132,17 @@
 }
 
 .st-gofer-6 {
-  @include stroke();
+  @include stroke($martinique-dark, 2, 10);
   fill: $light-gray;
 }
 
 .st-gofer-7 {
-  @include stroke();
+  @include stroke($martinique-dark, 2, 10);
   fill: $martinique-dark;
 }
 
 .st-gofer-8 {
-  @include stroke();
+  @include stroke($martinique-dark, 2, 10);
   fill: $sand-yellow;
 }
 
