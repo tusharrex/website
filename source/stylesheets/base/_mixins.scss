@@ -159,3 +159,10 @@ $base-font-size: 12px;
     background: $background-hover;
   }
 }
+
+@mixin position($top, $right, $bottom, $left) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

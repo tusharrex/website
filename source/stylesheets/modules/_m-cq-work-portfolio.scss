@@ -61,8 +61,8 @@
   .testimonial {
     color: $martinique-dark;
     font-family: $baskerville-italic-bold;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 5.8vw;
+    line-height: 9vw;
     text-indent: 20px;
 
     &.light-grey-bcg {
@@ -70,7 +70,9 @@
     }
 
     .table {
-      border-spacing: 15px;
+      margin: 0 auto;
+      padding-top: 34px;
+      width: 80%;
     }
   }
 
@@ -87,7 +89,26 @@
   }
 
   blockquote {
-    margin: 0 auto 28px;
+    margin: 0 auto 5px;
+    position: relative;
+
+    &::before,
+    &::after {
+      background: url('/stylesheets/svg/quote.svg') no-repeat;
+      content: '';
+      height: 38px;
+      position: absolute;
+      width: 50px;
+      z-index: -1;
+    }
+
+    &::before {
+      @include position(-5px, auto, auto, -9px);
+    }
+
+    &::after {
+      @include position(auto, 27px, -10px, auto);
+    }
   }
 }
 
@@ -104,6 +125,14 @@
 
     blockquote {
       margin-bottom: 22px;
+
+      &::before {
+        @include position(-12px, auto, auto, auto);
+      }
+
+      &::after {
+        @include position(auto, -5px, -20px, auto);
+      }
     }
 
     .quote-author {
@@ -119,14 +148,23 @@
       line-height: 3.5vw;
 
       .table {
-        border-spacing: 0;
-        margin: 0 auto;
-        width: 90%;
+        padding-top: 44px;
+        width: 75%;
       }
     }
 
     .quote-author {
       font-size: 2vw;
+    }
+
+    blockquote {
+      &::before {
+        @include position(-8px, auto, auto, auto);
+      }
+
+      &::after {
+        @include position(auto, -12px, -8px, auto);
+      }
     }
   }
 }
@@ -137,8 +175,14 @@
       width: 324px;
     }
 
-    .testimonial .table {
-      width: 65%;
+    .testimonial {
+      text-indent: 44px;
+    }
+
+    blockquote {
+      &::before {
+        @include position(auto, auto, auto, 4px);
+      }
     }
   }
 }
@@ -148,10 +192,20 @@
     .testimonial {
       font-size: 28px;
       line-height: 44px;
+
+      .table {
+        width: 70%;
+      }
     }
 
     .quote-author {
-      font-size: 1vw;
+      font-size: 18px;
+    }
+
+    blockquote {
+      &::after {
+        @include position(auto, 27px, 12px, auto);
+      }
     }
   }
 }
