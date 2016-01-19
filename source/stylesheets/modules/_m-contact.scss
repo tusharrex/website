@@ -38,7 +38,7 @@
   color: $valencia-red;
   font-family: $alega-bold;
   font-size: 30px;
-  margin: 10px 0 30px;
+  margin: 20px 0 30px;
 }
 
 .contact-address {
@@ -57,10 +57,15 @@
   }
 }
 
+.contact-office-img,
+.contact-description {
+  margin: 0 auto;
+  width: 200px;
+}
+
 .contact-description {
   margin: 0 auto;
   text-align: left;
-  width: 74%;
 }
 
 @media #{$breakpoint-mobile-landscape} {
