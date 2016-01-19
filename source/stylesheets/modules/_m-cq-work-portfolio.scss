@@ -69,6 +69,18 @@
       background: $light-gray-2;
     }
 
+    &.damask-red-bcg {
+      background: $damask-red;
+    }
+
+    &.breaker-bay-green-bcg {
+      background: $breaker-bay-green;
+    }
+
+    &.font-light-grey {
+      color: $light-gray;
+    }
+
     .table {
       margin: 0 auto;
       padding-top: 34px;
@@ -79,17 +91,26 @@
   .quote-author {
     color: $damask-red;
     font-family: $alega-bold;
-    font-size: 16px;
+    font-size: 4vw;
+    line-height: 5.5vw;
     text-align: right;
 
-    span {
+    &.font-martinique-dark {
       color: $martinique-dark;
-      font-family: $alega;
+    }
+  }
+
+  .quote-author-sign {
+    color: $martinique-dark;
+    font-family: $alega;
+
+    &.light-grey {
+      color: $light-gray;
     }
   }
 
   blockquote {
-    margin: 0 auto 5px;
+    margin: 0 auto 10px;
     position: relative;
 
     &::before,
@@ -109,6 +130,10 @@
     &::after {
       @include position(auto, 27px, -10px, auto);
     }
+  }
+
+  .display {
+    display: block;
   }
 }
 
@@ -137,6 +162,7 @@
 
     .quote-author {
       font-size: 2vw;
+      line-height: 2.5vw;
     }
   }
 }
@@ -154,7 +180,7 @@
     }
 
     .quote-author {
-      font-size: 2vw;
+      font-size: 1.8vw;
     }
 
     blockquote {
@@ -165,6 +191,10 @@
       &::after {
         @include position(auto, -12px, -8px, auto);
       }
+    }
+
+    .display {
+      display: inline;
     }
   }
 }
