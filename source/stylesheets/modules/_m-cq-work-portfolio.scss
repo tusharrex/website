@@ -69,6 +69,18 @@
       background: $light-gray-2;
     }
 
+    &.damask-red-bcg {
+      background: $damask-red;
+    }
+
+    &.breaker-bay-green-bcg {
+      background: $breaker-bay-green;
+    }
+
+    &.font-light-grey {
+      color: $light-gray;
+    }
+
     .table {
       margin: 0 auto;
       padding-top: 34px;
@@ -79,36 +91,44 @@
   .quote-author {
     color: $damask-red;
     font-family: $alega-bold;
-    font-size: 16px;
+    font-size: 4vw;
+    line-height: 5.5vw;
     text-align: right;
 
-    span {
+    &.font-martinique-dark {
       color: $martinique-dark;
-      font-family: $alega;
+    }
+  }
+
+  .quote-author-sign {
+    color: $martinique-dark;
+    font-family: $alega;
+
+    &.light-grey {
+      color: $light-gray;
     }
   }
 
   blockquote {
-    margin: 0 auto 5px;
+    margin: 0 auto 10px;
     position: relative;
+  }
 
-    &::before,
-    &::after {
-      background: url('/stylesheets/svg/quote.svg') no-repeat;
-      content: '';
-      height: 38px;
-      position: absolute;
-      width: 50px;
-      z-index: -1;
-    }
+  .m-quote {
+    position: absolute;
+    z-index: -1;
+  }
 
-    &::before {
-      @include position(-5px, auto, auto, -9px);
-    }
+  .quote-start {
+    @include position(-8px, auto, auto, -9%);
+  }
 
-    &::after {
-      @include position(auto, 27px, -10px, auto);
-    }
+  .quote-end {
+    @include position(auto, 20px, -8px, auto);
+  }
+
+  .display {
+    display: block;
   }
 }
 
@@ -125,18 +145,19 @@
 
     blockquote {
       margin-bottom: 22px;
+    }
 
-      &::before {
-        @include position(-12px, auto, auto, auto);
-      }
+    .quote-start {
+      @include position(-14px, auto, auto, -13%);
+    }
 
-      &::after {
-        @include position(auto, -5px, -20px, auto);
-      }
+    .quote-end {
+      @include position(auto, 16px, -18px, auto);
     }
 
     .quote-author {
       font-size: 2vw;
+      line-height: 2.5vw;
     }
   }
 }
@@ -154,17 +175,19 @@
     }
 
     .quote-author {
-      font-size: 2vw;
+      font-size: 1.8vw;
     }
 
-    blockquote {
-      &::before {
-        @include position(-8px, auto, auto, auto);
-      }
+    .quote-start {
+      @include position(-10px, auto, auto, -6%);
+    }
 
-      &::after {
-        @include position(auto, -12px, -8px, auto);
-      }
+    .quote-end {
+      @include position(auto, 6%, -25px, auto);
+    }
+
+    .display {
+      display: inline;
     }
   }
 }
@@ -179,10 +202,8 @@
       text-indent: 44px;
     }
 
-    blockquote {
-      &::before {
-        @include position(auto, auto, auto, 4px);
-      }
+    .m-quote {
+      width: 48px;
     }
   }
 }
@@ -202,10 +223,12 @@
       font-size: 18px;
     }
 
-    blockquote {
-      &::after {
-        @include position(auto, 27px, 12px, auto);
-      }
+    .quote-start {
+      @include position(-4px, auto, auto, -7%);
+    }
+
+    .quote-end {
+      @include position(auto, 44px, 0, auto);
     }
   }
 }
