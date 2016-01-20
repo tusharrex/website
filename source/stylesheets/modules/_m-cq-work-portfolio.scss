@@ -114,10 +114,8 @@
     position: relative;
   }
 
-  .quote {
-    height: 36px;
+  .m-quote {
     position: absolute;
-    width: 40px;
     z-index: -1;
   }
 
@@ -126,7 +124,7 @@
   }
 
   .quote-end {
-    @include position(auto, 20px, 0, auto);
+    @include position(auto, 20px, -8px, auto);
   }
 
   .display {
@@ -184,6 +182,10 @@
       @include position(-10px, auto, auto, -6%);
     }
 
+    .quote-end {
+      @include position(auto, 6%, -25px, auto);
+    }
+
     .display {
       display: inline;
     }
@@ -200,7 +202,7 @@
       text-indent: 44px;
     }
 
-    .quote {
+    .m-quote {
       width: 48px;
     }
   }
