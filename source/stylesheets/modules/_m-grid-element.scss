@@ -4,10 +4,6 @@
   width: 100vw;
   z-index: 0;
 
-  &.full-mobile-width {
-    width: 100vw;
-  }
-
   .grid-hover {
     display: none;
     height: 100%;
@@ -42,6 +38,14 @@
   .cell {
     display: table-cell;
     vertical-align: middle;
+  }
+}
+
+@media #{$mobile} {
+  .m-grid-element {
+    &:last-child:nth-child(odd) {
+      width: 100vw;
+    }
   }
 }
 
