@@ -8,7 +8,6 @@
     font-family: $baskerville;
     font-size: 18px;
     line-height: 30px;
-    padding-top: 30vw;
     text-align: center;
     text-decoration: none;
   }
@@ -58,16 +57,114 @@
   .taptera {
     @include background($martinique-dark);
   }
+
+  .testimonial {
+    color: $martinique-dark;
+    font-family: $baskerville-italic-bold;
+    font-size: 5.8vw;
+    line-height: 9vw;
+    text-indent: 20px;
+
+    &.light-grey-bcg {
+      background: $light-gray-2;
+    }
+
+    .table {
+      margin: 0 auto;
+      padding-top: 34px;
+      width: 80%;
+    }
+  }
+
+  .quote-author {
+    color: $damask-red;
+    font-family: $alega-bold;
+    font-size: 16px;
+    text-align: right;
+
+    span {
+      color: $martinique-dark;
+      font-family: $alega;
+    }
+  }
+
+  blockquote {
+    margin: 0 auto 5px;
+    position: relative;
+
+    &::before,
+    &::after {
+      background: url('/stylesheets/svg/quote.svg') no-repeat;
+      content: '';
+      height: 38px;
+      position: absolute;
+      width: 50px;
+      z-index: -1;
+    }
+
+    &::before {
+      @include position(-5px, auto, auto, -9px);
+    }
+
+    &::after {
+      @include position(auto, 27px, -10px, auto);
+    }
+  }
 }
 
 @media #{$breakpoint-mobile-landscape} {
   .m-cq-work-portfolio {
-    .portfolio-hover {
-      padding-top: 4.5vw;
-    }
-
     .portfolio-description {
       width: 200px;
+    }
+
+    .testimonial {
+      font-size: 2.8vw;
+      line-height: 3.8vw;
+    }
+
+    blockquote {
+      margin-bottom: 22px;
+
+      &::before {
+        @include position(-12px, auto, auto, auto);
+      }
+
+      &::after {
+        @include position(auto, -5px, -20px, auto);
+      }
+    }
+
+    .quote-author {
+      font-size: 2vw;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-cq-work-portfolio {
+    .testimonial {
+      font-size: 2vw;
+      line-height: 3.5vw;
+
+      .table {
+        padding-top: 44px;
+        width: 75%;
+      }
+    }
+
+    .quote-author {
+      font-size: 2vw;
+    }
+
+    blockquote {
+      &::before {
+        @include position(-8px, auto, auto, auto);
+      }
+
+      &::after {
+        @include position(auto, -12px, -8px, auto);
+      }
     }
   }
 }
@@ -76,6 +173,39 @@
   .m-cq-work-portfolio {
     .portfolio-description {
       width: 324px;
+    }
+
+    .testimonial {
+      text-indent: 44px;
+    }
+
+    blockquote {
+      &::before {
+        @include position(auto, auto, auto, 4px);
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-cq-work-portfolio {
+    .testimonial {
+      font-size: 28px;
+      line-height: 44px;
+
+      .table {
+        width: 70%;
+      }
+    }
+
+    .quote-author {
+      font-size: 18px;
+    }
+
+    blockquote {
+      &::after {
+        @include position(auto, 27px, 12px, auto);
+      }
     }
   }
 }
