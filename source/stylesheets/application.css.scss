@@ -1,3 +1,5 @@
+@import 'compass/utilities/sprites';
+
 @import 'base/colors';
 @import 'base/config';
 @import 'base/functions';
@@ -30,3 +32,5 @@
 
 @import 'states/s-contact-section';
 @import 'states/s-work';
+
+@import '../images/logos/*.png';
