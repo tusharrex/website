@@ -152,11 +152,11 @@ $base-font-size: 12px;
 
 }
 
-@mixin background($background-hover, $background: none) {
-  background: $background;
+@mixin background($bcg-hover, $bcg-size:cover) {
+  background-size: $bcg-size;
 
   &:hover {
-    background: $background-hover;
+    background: $bcg-hover;
   }
 }
 
