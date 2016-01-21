@@ -160,6 +160,16 @@ $base-font-size: 12px;
   }
 }
 
+$images: dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera;
+
+@mixin bcg-images {
+  @each $image in $images {
+    .bcg-#{$image} {
+      background: image-url('../images/companies/#{$image}.png') no-repeat;
+    }
+  }
+}
+
 @mixin position($top, $right, $bottom, $left) {
   top: $top;
   right: $right;
