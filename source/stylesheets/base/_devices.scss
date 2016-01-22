@@ -12,3 +12,8 @@ $breakpoint-tablet: 'only screen and (min-width: 768px)';
 $breakpoint-desktop: 'only screen and (min-width: 997px)';
 $breakpoint-desktop-large: 'only screen and (min-width: 1248px)';
 $breakpoint-desktop-retina: 'only screen and (min-width: 2042px)';
+
+// iPhones
+$iphone5: 'screen and (device-aspect-ratio: 40/71)';
+$iphone6: 'screen and (device-aspect-ratio: 375/667)';
+$iphone6-plus: 'screen and (device-aspect-ratio: 16/9)';
