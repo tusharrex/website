@@ -3,16 +3,21 @@
 .m-main-signature {
   color: $white;
   font-family: 'Courier New';
-  font-size: 2.45vw;
+  font-size: 5.3vw;
 
-  @media #{$mobile} {
-    font-size: 8.1vw;
+
+  @media #{$breakpoint-tablet} {
+    font-size: 2.45vw;
   }
 }
 
 .m-main-signature--is-underlined {
-  display: inline-block;
+  display: block;
   position: relative;
+
+  @media #{$breakpoint-tablet} {
+    display: inline-block;
+  }
 }
 
 .m-main-structure__line {
