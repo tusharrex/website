@@ -31,6 +31,7 @@
 
   .menu {
     @include flex-flow(column, wrap);
+    @include align-content(space-between);
     max-height: 20px;
   }
 
