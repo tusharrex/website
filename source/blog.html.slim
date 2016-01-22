@@ -6,7 +6,7 @@ pageable: true
   {subtitle: data.blog.subtitle}
 .m-grid-collection
   - page_articles.each do |article|
-    .m-grid-item
+    a.m-grid-item(href = '#')
       .date
         = article.date.strftime('%B %e, %Y')
       h2.title
