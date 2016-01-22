@@ -4,7 +4,8 @@ $color: $breaker-bay-green;
   font-family: $alega;
   height: 470px;
   margin-top: 54px;
-  width: 360px;
+  padding: 0 5px;
+  width: 370px;
 
   &.no-content {
     height: 0;
@@ -46,21 +47,20 @@ $color: $breaker-bay-green;
     height: 300px;
     margin: 9px 0;
     width: 320px;
+    padding: 0 10px;
   }
 }
 
 .m-grid-item__date {
   border-radius: 60px;
   color: $martinique-dark;
-  font-family: $alega-bold;
+  font-family: $alega;
   font-size: 18px;
   padding: 11px;
-  width: 370px;
 
   @media #{$mobile} {
     font-size: 12px;
     padding: 7px 0;
-    width: 295px;
   }
 }
 
@@ -94,9 +94,10 @@ $color: $breaker-bay-green;
   font-size: 20px;
   line-height: 160%;
   margin: 20px 12px;
+  text-align: justify;
 
   @media #{$mobile} {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 180%;
     margin: 12px 0;
   }
