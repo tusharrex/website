@@ -3,6 +3,12 @@
     margin: 0;
   }
 
+  .m-grid-element {
+    &:hover .logo {
+      display: none;
+    }
+  }
+
   .portfolio-hover {
     color: $light-gray;
     font-family: $baskerville;
