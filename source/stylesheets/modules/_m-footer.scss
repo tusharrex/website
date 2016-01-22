@@ -1,12 +1,11 @@
 .m-footer {
-  @include flex-flow(row, wrap);
-  @include flex-justify-content(space-between);
   background-color: $martinique-dark;
   color: $light-gray;
   font-family: $alega-light;
   font-size: 18px;
   padding: 20px;
   width: 100%;
+
 
   a {
     color: inherit;
@@ -22,28 +21,20 @@
     list-style: none;
   }
 
-  .nav {
-    .header,
-    .arrow {
-      display: none;
-    }
-  }
-
-  .menu {
-    @include flex-flow(column, wrap);
-    @include align-content(space-between);
-    max-height: 20px;
+  .address {
+    font-style: normal;
+    margin-bottom: 15px;
   }
 
   .element {
     line-height: 1.5;
     margin-bottom: 40px;
-    width: 100%;
+    //width: 100%;
   }
 
-  .address {
-    font-style: normal;
-    margin-bottom: 15px;
+  .elements-group {
+    @include flex-flow(column, wrap);
+    @include flex-align-content(space-between);
   }
 
   .header {
@@ -52,15 +43,29 @@
     margin-bottom: 10px;
   }
 
-  .social-links {
-    @include flex-flow(column, wrap);
-    max-height: 30px;
-    max-width: 210px;
+  .menu {
+    @include flex-flow(row, wrap);
+    @include flex-justify-content(space-between);
+  }
+
+  .nav {
+    .header,
+    .arrow {
+      display: none;
+    }
   }
 
   .social-link {
     max-width: 30px;
   }
+
+  .social-links {
+    @include flex-flow(column, wrap);
+    margin-top: 30px;
+    max-height: 30px;
+    max-width: 210px;
+  }
+
 }
 
 .colors {
@@ -70,10 +75,6 @@
     display: inline-block;
     height: 10px;
     width: 25%;
-
-    &.yellow {
-      background-color: $indian-yellow;
-    }
 
     &.green {
       background-color: $breaker-bay-green;
@@ -86,5 +87,38 @@
     &.red {
       background-color: $valencia-red;
     }
+
+    &.yellow {
+      background-color: $indian-yellow;
+    }
+  }
+}
+
+
+@media #{$breakpoint-tablet} {
+  .m-footer {
+    @include flex-flow(column, wrap);
+    font-size: 26px;
+    padding: 40px 60px;
+
+    .menu {
+      max-height: 220px;
+    }
+
+    .nav {
+      .arrow {
+        display: inline-block;
+      }
+
+      .header {
+        display: block;
+        font-size: 30px;
+      }
+    }
+
+    .social-links {
+      max-height: 160px;
+    }
+
   }
 }

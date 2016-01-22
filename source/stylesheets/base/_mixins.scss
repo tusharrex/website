@@ -151,7 +151,7 @@ $base-font-size: 12px;
 
 }
 
-@mixin align-content($alignment) {
+@mixin flex-align-content($alignment) {
   align-content: $alignment;
   -webkit-align-content: $alignment;
 }
