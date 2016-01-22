@@ -32,12 +32,13 @@ h1 {
 }
 
 .cq-logo-wrapper {
+  @include position(initial, 10vw, -3px, 10vw);
+  @include fix-logo-alignment();
   display: none;
+  position: absolute;
 
   @media #{$breakpoint-tablet} {
-    @include position(initial, 10vw, -5px, 10vw);
     display: block;
-    position: absolute;
   }
 }
 
