@@ -1,20 +1,20 @@
 openMainMenu = ->
-  $('.main-menu').addClass('opened')
+  $('.main-menu').removeClass('bouncedOut').addClass('bouncedIn')
 
 closeMainMenu = ->
-  $('.main-menu').removeClass('opened')
+  $('.main-menu').removeClass('bouncedIn').addClass('bouncedOut')
 
 $ ->
   doc = document.getElementsByTagName('body')[0]
   cqm = new Hammer(doc)
 
-  menuNav = document.getElementsByClassName('main-menu__nav')[0]
+  menuNav = document.getElementsByClassName('main-menu')[0]
   menu = new Hammer(menuNav)
 
-  $('.main-menu__button').click ->
+  $('.main-menu-open-button').click ->
     openMainMenu()
 
-  $('.main-menu__nav__button').click ->
+  $('.main-menu-close-button, .overlay').click ->
     closeMainMenu()
 
   cqm.on 'swipeleft', openMainMenu
