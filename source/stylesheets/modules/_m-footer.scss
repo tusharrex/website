@@ -101,7 +101,19 @@
     font-size: 26px;
     padding: 40px 60px;
 
+    .addresses {
+      @include flex-flow(row, wrap);
+      @include flex-justify-content(space-between);
+      max-width: 500px;
+    }
+
+    .elements-group {
+      @include flex-flow(row, wrap);
+      @include flex-justify-content(space-between);
+    }
+
     .menu {
+      @include flex-flow(column, wrap);
       max-height: 220px;
     }
 
