@@ -26,7 +26,6 @@ h1 {
 
   .cq-logo-wrapper {
     @include position(initial, 10vw, -3px, 10vw);
-    @include fix-desktop-logo-alignment;
     display: none;
     position: absolute;
   }
@@ -114,6 +113,16 @@ h1 {
     .hello-mail {
       @include position(8.15%, initial, initial, 2.2%);
       font-size: 26px;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  @media only screen and (min-width: 768px + ($i * 150px)) {
+    .l-landing-page {
+      .cq-logo-wrapper {
+        bottom: -3px - ($i * .5px);
+      }
     }
   }
 }

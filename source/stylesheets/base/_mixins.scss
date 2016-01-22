@@ -35,14 +35,6 @@ $logo-height: 172;
   height: calc-percent($height, $logo-height);
 }
 
-@mixin fix-logo-alignment() {
-  @for $i from 0 through 10 {
-    @media only screen and (min-width: 768px + ($i * 150px)) {
-      bottom: -3px - ($i * .5px);
-    }
-  }
-}
-
 $base-font-size: 12px;
 
 @mixin font-size($font-size) {
