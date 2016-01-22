@@ -10,86 +10,74 @@ h1 {
   margin: 0;
 }
 
-.l-landing-page__upper-part {
+.l-landing-page-upper-part {
   background-color: $light-gray;
-  height: 60%;
+  height: 57.6%;
   position: relative;
   z-index: 200;
 
-  @media #{$mobile} {
-    height: 57.6%;
+  @media #{$breakpoint-tablet} {
+    height: 60%;
   }
 }
 
-.l-landing-page__lower-part {
+.l-landing-page-lower-part {
   background-color: $martinique-dark;
-  height: 40%;
+  height: 42.4%;
   position: relative;
 
-  @media #{$mobile} {
-    height: 42.4%;
+  @media #{$breakpoint-tablet} {
+    height: 40%;
   }
 }
 
-.l-landing-page-cq-logo-wrapper {
-  bottom: -5px;
-  left: 10vw;
-  position: absolute;
-  right: 10vw;
+.cq-logo-wrapper {
+  display: none;
 
-  @media #{$mobile} {
+  @media #{$breakpoint-tablet} {
+    @include position(initial, 10vw, -5px, 10vw);
+    display: block;
+    position: absolute;
+  }
+}
+
+.cq-mobile-logo-wrapper {
+  @include position(initial, 4.7%, -1%, 4.7%);
+  position: absolute;
+
+  @media #{$breakpoint-tablet} {
     display: none;
   }
 }
 
-.l-landing-page-cq-mobile-logo-wrapper {
-  bottom: -1%;
-  display: none;
-  left: 4.7%;
+.signature-wrapper {
+  @include position(12%, 5%, 0, 5%);
   position: absolute;
-  right: 4.7%;
-
-  @media #{$mobile} {
-    display: block;
-  }
-}
-
-.l-landing-page-signature-wrapper {
-  left: 6%;
-  position: absolute;
-  right: 6%;
   text-align: center;
-  top: 9%;
 
-  @media #{$mobile} {
-    left: 5%;
-    right: 5%;
-    top: 12%;
+  @media #{$breakpoint-tablet} {
+    @include position(9%, 6%, 0, 6%);
   }
 }
 
-.l-landing-page__bottom-logo {
-  bottom: 10.8%;
+.bottom-logo-wrapper {
+  @include position(initial, 10%, 10.8%, 26.4%);
   color: $santas-gray;
-  display: none;
-  left: 26.4%;
   position: absolute;
-  right: 10%;
   width: 47%;
 
-  @media #{$mobile} {
-    display: block;
+  @media #{$breakpoint-tablet} {
+    display: none;
   }
 }
 
 .hello-mail {
+  @include position(11%, initial, initial, 5%);
   color: $martinique-dark;
   font-family: $alega-bold;
-  font-size: 1.72vw;
-  left: 2.2%;
+  font-size: 6.10vw;
   position: absolute;
   text-decoration: none;
-  top: 8.15%;
 
   &:hover {
     color: $damask-red;
@@ -99,9 +87,8 @@ h1 {
     color: $martinique-dark;
   }
 
-  @media #{$mobile} {
-    font-size: 6.10vw;
-    left: 5%;
-    top: 11%;
+  @media #{$breakpoint-tablet} {
+    @include position(8.15%, initial, initial, 2.2%);
+    font-size: 1.72vw;
   }
 }
