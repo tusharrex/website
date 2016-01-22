@@ -176,3 +176,9 @@ $images: dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera;
   bottom: $bottom;
   left: $left;
 }
+
+@mixin transform($transformation) {
+  -webkit-transform: $transformation;
+  -ms-transform: $transformation;
+  transform: $transformation;
+}
