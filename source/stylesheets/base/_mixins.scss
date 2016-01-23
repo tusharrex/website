@@ -130,30 +130,36 @@ $base-font-size: 12px;
 }
 
 @mixin flex-flow($direction, $wrap) {
+  -ms-flex-direction: $direction;
+  -ms-flex-wrap: $wrap;
+  -webkit-flex-direction: $direction;
+  -webkit-flex-wrap: $wrap;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
   flex-direction: $direction;
   flex-wrap: $wrap;
-  -ms-flex-direction: $direction;
-  -ms-flex-wrap: $wrap;
-  -webkit-flex-direction: $direction;
-  -webkit-flex-wrap: $wrap;
 }
 
 @mixin flex-justify-content($alignment) {
-  justify-content: $alignment;
   -moz-box-pack: $alignment;
   -moz-justify-content: $alignment;
   -ms-flex-pack: $alignment;
   -webkit-box-pack: $alignment;
   -webkit-justify-content: $alignment;
-
+  justify-content: $alignment;
 }
 
 @mixin flex-align-content($alignment) {
   align-content: $alignment;
   -webkit-align-content: $alignment;
+}
+
+@mixin flex-flex($grow, $shrink, $base) {
+  -webkit-box-flex: $grow $shrink $base;
+  -webkit-flex: $grow $shrink $base;
+  -ms-flex: $grow $shrink $base;
+  flex: $grow $shrink $base;
 }
 
 @mixin background($bcg-hover, $bcg-size:cover) {

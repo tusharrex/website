@@ -139,12 +139,15 @@
     padding: 100px 80px;
 
     .coffee-and-address {
-      width: 42%;
+      @include flex-flex(3, 0, 0)
     }
 
-    .get-in-touch,
+    .get-in-touch {
+      @include flex-flex(2, 0, 0)
+    }
+
     .nav {
-      width: 23%;
+      @include flex-flex(1.5, 0, 0)
     }
 
     .header {
