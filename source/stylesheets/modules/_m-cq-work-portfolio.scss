@@ -1,5 +1,6 @@
 .m-cq-work-portfolio {
   &.m-grid-collection {
+    @include flex-justify-content(flex-start);
     margin: 0;
   }
 
