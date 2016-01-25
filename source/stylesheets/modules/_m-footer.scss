@@ -57,7 +57,11 @@
     @include flex-justify-content(space-between);
     margin-top: 30px;
     max-height: 30px;
-    max-width: 210px;
+    width: 210px;
+
+    li {
+      margin-left: 0;
+    }
   }
 
 }
@@ -152,6 +156,10 @@
 
     .header {
       margin-bottom: 30px;
+    }
+
+    .social-links {
+      @include flex-flow(column, wrap);
     }
   }
 }
