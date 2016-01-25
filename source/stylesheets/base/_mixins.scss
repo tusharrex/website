@@ -130,26 +130,36 @@ $base-font-size: 12px;
 }
 
 @mixin flex-flow($direction, $wrap) {
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  justify-content: space-around;
-  flex-direction: $direction;
-  flex-wrap: $wrap;
   -ms-flex-direction: $direction;
   -ms-flex-wrap: $wrap;
   -webkit-flex-direction: $direction;
   -webkit-flex-wrap: $wrap;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
 }
 
 @mixin flex-justify-content($alignment) {
-  justify-content: $alignment;
   -moz-box-pack: $alignment;
   -moz-justify-content: $alignment;
   -ms-flex-pack: $alignment;
   -webkit-box-pack: $alignment;
   -webkit-justify-content: $alignment;
+  justify-content: $alignment;
+}
 
+@mixin flex-align-content($alignment) {
+  align-content: $alignment;
+  -webkit-align-content: $alignment;
+}
+
+@mixin flex-flex($grow, $shrink, $base) {
+  -webkit-box-flex: $grow $shrink $base;
+  -webkit-flex: $grow $shrink $base;
+  -ms-flex: $grow $shrink $base;
+  flex: $grow $shrink $base;
 }
 
 @mixin background($bcg-hover, $bcg-size:cover) {
@@ -160,7 +170,8 @@ $base-font-size: 12px;
   }
 }
 
-$images: dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera;
+$images:
+  dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera, soal;
 
 @mixin bcg-images {
   @each $image in $images {
@@ -175,4 +186,10 @@ $images: dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera;
   right: $right;
   bottom: $bottom;
   left: $left;
+}
+
+@mixin transform($transformation) {
+  -webkit-transform: $transformation;
+  -ms-transform: $transformation;
+  transform: $transformation;
 }

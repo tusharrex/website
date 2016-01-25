@@ -1,4 +1,5 @@
 .m-grid-collection {
   @include flex-flow(row, wrap);
+  @include flex-justify-content(space-around);
   margin: 15px 25px;
 }
