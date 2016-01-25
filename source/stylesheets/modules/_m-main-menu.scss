@@ -190,14 +190,11 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
 }
 
 .overlay {
+  @include position(0, 0, 0, 0);
   background: $main-menu-bg;
-  bottom: 0;
   display: none;
-  left: 0;
   opacity: .2;
   position: fixed;
-  right: 0;
-  top: 0;
   z-index: 201;
 }
 
