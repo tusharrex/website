@@ -160,7 +160,7 @@ $base-font-size: 12px;
   }
 }
 
-$images: dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera;
+$images: dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera, soal;
 
 @mixin bcg-images {
   @each $image in $images {
