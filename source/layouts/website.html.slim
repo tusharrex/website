@@ -12,6 +12,8 @@ html
 
 
     = stylesheet_link_tag 'normalize', 'application'
+    / It is only to recognize touch events:
+    = javascript_include_tag 'lib/modernizr-custom'
     = javascript_include_tag 'application'
 
   body class=page_classes
