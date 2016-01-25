@@ -3,6 +3,12 @@
     margin: 0;
   }
 
+  .m-grid-element {
+    &:hover .logo {
+      display: none;
+    }
+  }
+
   .portfolio-hover {
     color: $light-gray;
     font-family: $baskerville;
@@ -127,6 +133,32 @@
     @include position(auto, 20px, -8px, auto);
   }
 
+  .logo {
+    @include position(0, 0, 0, 0);
+    margin: 0 auto;
+    position: absolute;
+
+    &.x-small {
+      width: 44%;
+    }
+
+    &.small {
+      width: 58%;
+    }
+
+    &.medium {
+      width: 50%;
+    }
+
+    &.large {
+      width: 83%;
+    }
+
+    &.to-top {
+      top: -15%;
+    }
+  }
+
   .display {
     display: block;
   }
@@ -184,6 +216,16 @@
 
     .quote-end {
       @include position(auto, 6%, -25px, auto);
+    }
+
+    .logo {
+      &.tablet-small {
+        width: 57%;
+      }
+
+      &.tablet-x-small {
+        width: 35%;
+      }
     }
 
     .display {

@@ -1,10 +1,17 @@
 .m-start-project {
-  background: $indian-yellow;
   color: $light-gray;
   font-family: $courier;
   padding: 34px 0 44px;
   position: relative;
   text-align: center;
+
+  &.indian-yellow {
+    background: $indian-yellow;
+  }
+
+  &.damask-red {
+    background: $damask-red;
+  }
 }
 
 .start-project-laptop,

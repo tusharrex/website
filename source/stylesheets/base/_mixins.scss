@@ -175,7 +175,7 @@ $images: dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera;
 @mixin bcg-images {
   @each $image in $images {
     .bcg-#{$image} {
-      background: image-url('../images/companies/#{$image}.png') no-repeat;
+      background: image-url('companies/#{$image}.png') no-repeat;
     }
   }
 }
