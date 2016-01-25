@@ -11,10 +11,6 @@
     width: 100%;
   }
 
-  &:hover .grid-hover {
-    display: block;
-  }
-
   &::before {
     content: '';
     display: block;

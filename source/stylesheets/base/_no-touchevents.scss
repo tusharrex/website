@@ -1,0 +1,47 @@
+// Styles here apply to non-touchscreen devices only.
+
+.no-touchevents {
+
+  .m-cq-work-portfolio {
+
+    .soothe {
+      @include background($damask-red);
+    }
+
+    .dawanda {
+      @include background($valencia-red);
+    }
+
+    .foundersuite {
+      @include background($indian-yellow-2);
+    }
+
+    .eqipia {
+      @include background($aquamarine-blue);
+    }
+
+    .soal {
+      @include background($indian-yellow);
+    }
+
+    .sports-lion {
+      @include background($breaker-bay-green);
+    }
+
+    .selecthub {
+      @include background($valencia-red);
+    }
+
+    .taptera {
+      @include background($martinique-dark);
+    }
+  }
+
+  .m-grid-element:hover .logo {
+    display: none;
+  }
+
+  .m-grid-element:hover .grid-hover {
+    display: block;
+  }
+}
