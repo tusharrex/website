@@ -28,37 +28,37 @@
 .three-states-button {
   float: right;
   position: relative;
-  z-index: 203;
+  z-index: 201;
 
   > div {
     position: relative;
     z-index: -1;
   }
 
-  .three-states-button__hover-state,
-  .three-states-button__clicked-state {
+  .hover-state,
+  .clicked-state {
     display: none;
   }
 }
 
 .three-states-button:hover {
-  .three-states-button__normal-state,
-  .three-states-button__clicked-state {
+  .normal-state,
+  .clicked-state {
     display: none;
   }
 
-  .three-states-button__hover-state {
+  .hover-state {
     display: block;
   }
 }
 
 .three-states-button:active {
-  .three-states-button__normal-state,
-  .three-states-button__hover-state {
+  .normal-state,
+  .hover-state {
     display: none;
   }
 
-  .three-states-button__clicked-state {
+  .clicked-state {
     display: block;
   }
 }
