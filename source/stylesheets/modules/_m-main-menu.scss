@@ -21,6 +21,11 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
     }
   }
 
+  .normal-state {
+    height: 37px;
+    width: 40px;
+  }
+
   .clicked-state {
     height: 4px;
     margin: 10px 0 0 12px;
