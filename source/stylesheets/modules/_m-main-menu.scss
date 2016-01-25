@@ -94,6 +94,54 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
     @include animation(mainMenuBounceOut .5s both);
   }
 
+  .list {
+    float: right;
+    margin-bottom: 6px;
+
+    li {
+      list-style: none;
+      margin-bottom: 36px;
+      padding-right: 40px;
+      position: relative;
+    }
+  }
+
+  .item {
+    .arrow {
+      display: none;
+      height: 28px;
+      position: absolute;
+      right: 52px;
+      top: 9px;
+      width: 37px;
+    }
+  }
+
+  .item:hover {
+    .arrow {
+      display: block;
+    }
+  }
+
+  .link {
+    color: $white;
+    display: block;
+    font-family: $alega-bold;
+    font-size: 57px;
+    letter-spacing: 1px;
+    padding-right: 78px;
+    text-align: right;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  .link:active {
+    opacity: .7;
+
+    + .arrow {
+      display: none;
+    }
+  }
 }
 
 .main-menu-close-button {
@@ -130,56 +178,6 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
   }
 }
 
-
-.navs-list {
-  float: right;
-  margin-bottom: 6px;
-
-  li {
-    list-style: none;
-    margin-bottom: 36px;
-    padding-right: 40px;
-    position: relative;
-  }
-}
-
-.navs-list__item {
-  .arrow {
-    display: none;
-    height: 28px;
-    position: absolute;
-    right: 52px;
-    top: 9px;
-    width: 37px;
-  }
-
-  &:hover {
-    .arrow {
-      display: block;
-    }
-  }
-}
-
-.navs-list__link {
-  color: $white;
-  display: block;
-  font-family: $alega-bold;
-  font-size: 57px;
-  letter-spacing: 1px;
-  padding-right: 78px;
-  text-align: right;
-  text-decoration: none;
-  text-transform: capitalize;
-
-  &:active {
-    opacity: .7;
-
-    + .arrow {
-      display: none;
-    }
-  }
-}
-
 .social-links {
   clear: both;
   margin: 0 118px 0 0;
@@ -190,7 +188,6 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
     margin-left: 50px;
   }
 }
-
 
 .overlay {
   background: $main-menu-bg;
@@ -205,38 +202,31 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
 }
 
 @media #{$smaller--than-main-menu} {
-  .navs-list {
-    li {
+  .main-menu {
+    .list .item {
       margin-bottom: 4vmin;
+    }
 
-      a {
-        font-size: 8vmin;
-        padding-right: 10vmin;
-      }
+    .link {
+      font-size: 8vmin;
+      padding-right: 10vmin;
+    }
 
-      .arrow {
-        bottom: 0;
-        height: 5vmin;
-        margin: auto 0;
-        right: 10vmin;
-        top: 0;
-        width: 6vmin;
+    .arrow {
+      bottom: 0;
+      height: 5vmin;
+      margin: auto 0;
+      right: 10vmin;
+      top: 0;
+      width: 6vmin;
+    }
+
+    .social-links {
+      margin: 0 16vmin 0 0;
+
+      li {
+        margin-left: 10%;
       }
     }
-  }
-
-  .social-links {
-    margin: 0 16vmin 0 0;
-
-    li {
-      margin-left: 10%;
-    }
-  }
-
-  .main-menu-close-button {
-    left: 5vmin;
-    margin: 0;
-    position: absolute;
-    top: 15vmin;
   }
 }
