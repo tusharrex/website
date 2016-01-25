@@ -17,6 +17,7 @@ with_layout :website do
   page '/blog.html'
   page '/contact.html'
   page '/work.html'
+  page '/join-our-crew'
 end
 
 # Reload the browser automatically whenever files change
