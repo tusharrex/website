@@ -1,0 +1,9 @@
+.m-join-us {
+  padding-top: 35px;
+}
+
+@media #{$breakpoint-tablet} {
+  .m-join-us {
+    padding-top: 76px;
+  }
+}
