@@ -173,7 +173,6 @@ $images:
 @mixin bcg-images {
   @each $image in $images {
     .bcg-#{$image} {
-      @include background-size(cover);
       background: image-url('companies/#{$image}.png') center center, no-repeat;
     }
   }
