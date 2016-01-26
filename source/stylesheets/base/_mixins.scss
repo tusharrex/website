@@ -1,5 +1,4 @@
 // scss-lint:disable DuplicateProperty, VendorPrefix, TrailingSemicolon
-
 @mixin stroke(
   $stroke: $martinique-dark,
   $width: 4,
@@ -162,9 +161,7 @@ $base-font-size: 12px;
   flex: $grow $shrink $base;
 }
 
-@mixin background($bcg-hover, $bcg-size:cover) {
-  background-size: $bcg-size;
-
+@mixin background-hover($bcg-hover) {
   &:hover {
     background: $bcg-hover;
   }
@@ -176,7 +173,8 @@ $images:
 @mixin bcg-images {
   @each $image in $images {
     .bcg-#{$image} {
-      background: image-url('companies/#{$image}.png') no-repeat;
+      @include background-size(cover);
+      background: image-url('companies/#{$image}.png') center center, no-repeat;
     }
   }
 }
