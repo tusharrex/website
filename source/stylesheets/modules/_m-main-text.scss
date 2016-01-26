@@ -1,0 +1,16 @@
+.m-main-text {
+  color: $martinique-dark;
+  font-family: $courier;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+@media #{$breakpoint-tablet} {
+  .m-main-text {
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 92px;
+  }
+}

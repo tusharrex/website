@@ -2,23 +2,8 @@
   padding-top: 35px;
 }
 
-.cq-work-description {
-  color: $martinique-dark;
-  font-family: $courier;
-  font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 36px;
-  text-align: center;
-}
-
 @media #{$breakpoint-tablet} {
   .m-cq-work {
     padding: 76px 0 115px;
-  }
-
-  .cq-work-description {
-    font-size: 22px;
-    line-height: 29px;
-    margin-bottom: 92px;
   }
 }
