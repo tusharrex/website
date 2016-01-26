@@ -111,6 +111,23 @@ $base-font-size: 12px;
   }
 }
 
+@mixin button-grey($base-color,
+                  $color: $light-gray,
+                  $border: 4px solid $light-gray) {
+  background-color: $base-color;
+  color: $color;
+  border: $border;
+
+  &:hover {
+    background-color: $color;
+    color: $base-color;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
 @mixin link-button($font-size, $text-transform,
                    $text-decoration, $color, $font-family) {
   font-size: $font-size;

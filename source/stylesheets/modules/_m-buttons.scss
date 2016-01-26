@@ -15,6 +15,22 @@
     @include button($martinique-dark, $santas-gray, $mirage-dark);
   }
 
+  &.btn-grey-sea-green {
+    @include button-grey($deep-sea-green);
+  }
+
+  &.btn-maroon-red {
+    @include button-grey($maroon-red);
+  }
+
+  &.btn-indian-yellow {
+    @include button-grey($indian-yellow-2);
+  }
+
+  &.btn-breaker-bay-green {
+    @include button-grey($breaker-bay-green);
+  }
+
   &.yellow-bcg {
     background-color: $indian-yellow;
   }
