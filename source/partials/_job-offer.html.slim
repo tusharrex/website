@@ -1,0 +1,10 @@
+.m-grid-element.m-job-offer-element class=grid_class
+  a(href='#')
+    .container
+      .table
+        .cell
+          .job-position
+            h4 = locals[:title]
+            .hash-tag class=hash_class = locals[:hashTag]
+          .job-apply
+            .btn.small class=btn_class Apply Now
