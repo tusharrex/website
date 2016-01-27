@@ -5,6 +5,12 @@
   line-height: 20px;
   margin-bottom: 36px;
   text-align: center;
+
+  h3 {
+    font-family: $alega-bold;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
 }
 
 @media #{$breakpoint-tablet} {
