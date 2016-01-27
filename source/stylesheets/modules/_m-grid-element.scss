@@ -35,6 +35,10 @@
     display: table-cell;
     vertical-align: middle;
   }
+
+  .row {
+    display: table-row;
+  }
 }
 
 @media #{$mobile} {

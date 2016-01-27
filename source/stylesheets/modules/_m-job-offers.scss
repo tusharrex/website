@@ -16,3 +16,15 @@
     }
   }
 }
+
+@media #{$breakpoint-tablet} {
+  .m-job-offers {
+    &.m-grid-collection {
+      justify-content: space-between;
+    }
+
+    .m-grid-element {
+      height: 292px;
+    }
+  }
+}

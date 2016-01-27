@@ -23,22 +23,14 @@
     background: $breaker-bay-green;
   }
 
-  .job-position,
-  .job-apply {
-    height: 50vw;
-  }
-
-  .job-apply {
+  .btn-apply {
     margin-top: 22px;
-  }
-
-  .job-position {
-    padding-top: 18vw;
   }
 
   .job-title {
     font-size: 26px;
     margin: 0 0 30px;
+    padding-top: 18vw;
   }
 
   .hash-tag {
@@ -63,15 +55,38 @@
     .job-position,
     .job-apply {
       height: auto;
-    }
-
-    .job-position {
-      padding-top: 0;
+      margin-top: 0;
     }
 
     .job-title {
       font-size: 4.6vw;
       margin-bottom: 10px;
+      padding-top: 10vw;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-job-offer-element {
+    margin-bottom: 2%;
+    width: 49%;
+
+    .job-apply {
+      background: $white;
+    }
+
+    .job-title {
+      font-size: 30px;
+      margin-bottom: 23px;
+      padding-top: 58px;
+    }
+
+    .hash-tag {
+      font-size: 21px;
+    }
+
+    .btn-apply {
+      margin: 36px 0 28px;
     }
   }
 }
