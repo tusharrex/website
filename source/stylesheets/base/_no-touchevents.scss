@@ -5,35 +5,35 @@
   .m-cq-work-portfolio {
 
     .soothe {
-      @include background($damask-red);
+      @include background-hover($damask-red);
     }
 
     .dawanda {
-      @include background($valencia-red);
+      @include background-hover($valencia-red);
     }
 
     .foundersuite {
-      @include background($indian-yellow-2);
+      @include background-hover($indian-yellow-2);
     }
 
     .eqipia {
-      @include background($aquamarine-blue);
+      @include background-hover($aquamarine-blue);
     }
 
     .soal {
-      @include background($indian-yellow);
+      @include background-hover($indian-yellow);
     }
 
     .sports-lion {
-      @include background($breaker-bay-green);
+      @include background-hover($breaker-bay-green);
     }
 
     .selecthub {
-      @include background($valencia-red);
+      @include background-hover($valencia-red);
     }
 
     .taptera {
-      @include background($martinique-dark);
+      @include background-hover($martinique-dark);
     }
   }
 

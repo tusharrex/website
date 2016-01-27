@@ -4,6 +4,12 @@
 
 @media #{$breakpoint-tablet} {
   .m-cq-work {
-    padding: 76px 0 115px;
+    padding: 76px 0 0;
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-cq-work {
+    padding-bottom: 115px;
   }
 }

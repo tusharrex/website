@@ -4,6 +4,10 @@
     margin: 0;
   }
 
+  .m-grid-element {
+    @include background-size(cover);
+  }
+
   .portfolio-hover {
     color: $light-gray;
     font-family: $baskerville;
