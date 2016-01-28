@@ -86,7 +86,9 @@
     }
 
     .btn-apply {
-      margin: 36px 0 28px;
+      @include button();
+      background-color: $white;
+      width: 218px;
     }
   }
 }
