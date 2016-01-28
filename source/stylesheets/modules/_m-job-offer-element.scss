@@ -86,7 +86,17 @@
     }
 
     .btn-apply {
+      background: $white;
+      border-color: $damask-red;
+      color: $damask-red;
       margin: 36px 0 28px;
+
+      &:hover,
+      &:active {
+        background: $damask-red;
+        color: $white;
+      }
+
     }
   }
 }
