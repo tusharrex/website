@@ -47,12 +47,6 @@
   }
 }
 
-.start-project-description {
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 74px;
-}
-
 .btn.start-project-btn {
   font-size: 25px;
   margin-bottom: 36px;
@@ -61,7 +55,6 @@
 }
 
 @media #{$breakpoint-tablet} {
-
   .m-start-project {
     padding: 175px 0 138px;
   }
@@ -98,23 +91,9 @@
     }
   }
 
-  .start-project-description {
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 65px;
-  }
-
   .btn.start-project-btn {
     font-size: 28px;
     width: 320px;
-  }
-}
-
-@media #{$breakpoint-desktop} {
-
-  .start-project-description {
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 

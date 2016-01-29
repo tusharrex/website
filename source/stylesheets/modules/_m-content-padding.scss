@@ -1,0 +1,10 @@
+.m-content-padding {
+  padding-top: 35px;
+}
+
+@media #{$breakpoint-tablet} {
+  .m-content-padding {
+    padding-top: 76px;
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,15 @@
+.m-paragraph {
+  color: inherit;
+  font-family: $courier;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+@media #{$breakpoint-tablet} {
+  .m-paragraph {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
