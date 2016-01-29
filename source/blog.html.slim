@@ -1,14 +1,19 @@
+---
+pageable: true
+---
 = partial 'partials/website_header', locals: {title: 'Posts &amp; Thoughts'}
 = partial 'partials/header_subtitle', locals: \
   {subtitle: 'We write about clean code, project management and startups'}
 .m-grid-collection
-  - blog.articles.each do |article|
+  - page_articles.each do |article|
     .m-grid-item
-      .m-grid-item__date
+      .date
         = article.date.strftime('%B %e, %Y')
-      h2.m-grid-item__title
+      h2.title
         = article.title
-      .m-grid-item__tags
+      .tags
         = article.tags.map { |tag| "##{tag}" }.join(' ')
-      .m-grid-item__summary
-        = article.summary(400)
+      .summary
+        = article.summary(500)
+  - 10.times do
+    .m-grid-item.no-content

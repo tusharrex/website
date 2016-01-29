@@ -15,6 +15,22 @@
     @include button($martinique-dark, $santas-gray, $mirage-dark);
   }
 
+  &.btn-grey-sea-green {
+    @include button-grey($deep-sea-green);
+  }
+
+  &.btn-maroon-red {
+    @include button-grey($maroon-red);
+  }
+
+  &.btn-indian-yellow {
+    @include button-grey($indian-yellow-2);
+  }
+
+  &.btn-breaker-bay-green {
+    @include button-grey($breaker-bay-green);
+  }
+
   &.yellow-bcg {
     background-color: $indian-yellow;
   }
@@ -27,31 +43,38 @@
 
 .three-states-button {
   float: right;
+  position: relative;
+  z-index: 201;
 
-  .three-states-button__hover-state,
-  .three-states-button__clicked-state {
+  > div {
+    position: relative;
+    z-index: -1;
+  }
+
+  .hover-state,
+  .clicked-state {
     display: none;
   }
 }
 
 .three-states-button:hover {
-  .three-states-button__normal-state,
-  .three-states-button__clicked-state {
+  .normal-state,
+  .clicked-state {
     display: none;
   }
 
-  .three-states-button__hover-state {
+  .hover-state {
     display: block;
   }
 }
 
 .three-states-button:active {
-  .three-states-button__normal-state,
-  .three-states-button__hover-state {
+  .normal-state,
+  .hover-state {
     display: none;
   }
 
-  .three-states-button__clicked-state {
+  .clicked-state {
     display: block;
   }
 }

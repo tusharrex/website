@@ -1,0 +1,94 @@
+.m-job-offer-element {
+  text-align: center;
+
+  a {
+    color: $light-gray;
+    font-family: $alega;
+    text-decoration: none;
+  }
+
+  &.bcg-maroon-red {
+    background: $maroon-red;
+  }
+
+  &.bcg-deep-sea-green {
+    background: $deep-sea-green;
+  }
+
+  &.bcg-indian-yellow-2 {
+    background: $indian-yellow-2;
+  }
+
+  &.bcg-breaker-bay-green {
+    background: $breaker-bay-green;
+  }
+
+  .btn-apply {
+    margin-top: 22px;
+  }
+
+  .job-title {
+    font-size: 26px;
+    margin: 0 0 30px;
+    padding-top: 18vw;
+  }
+
+  .hash-tag {
+    font-size: 16px;
+
+    &.damask-red {
+      color: $damask-red;
+    }
+
+    &.breaker-bay-green {
+      color: $breaker-bay-green;
+    }
+
+    &.deep-sea-green {
+      color: $deep-sea-green;
+    }
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-job-offer-element {
+    .job-position,
+    .job-apply {
+      height: auto;
+      margin-top: 0;
+    }
+
+    .job-title {
+      font-size: 4.6vw;
+      margin-bottom: 10px;
+      padding-top: 10vw;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-job-offer-element {
+    margin-bottom: 2%;
+    width: 49%;
+
+    .job-apply {
+      background: $white;
+    }
+
+    .job-title {
+      font-size: 30px;
+      margin-bottom: 23px;
+      padding-top: 58px;
+    }
+
+    .hash-tag {
+      font-size: 21px;
+    }
+
+    .btn-apply {
+      @include button();
+      background-color: $white;
+      width: 218px;
+    }
+  }
+}

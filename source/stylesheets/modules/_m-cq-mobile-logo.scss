@@ -1,13 +1,13 @@
 // scss-lint:disable SelectorFormat
 
-.m-cq-mobile-logo__logo_mobile {
+.m-cq-mobile-logo {
   color: $martinique-dark;
   margin: 0 auto;
   position: relative;
   width: 47vw;
 
   &.from_header {
-    color: $white;
+    color: $light-gray;
     display: block;
     height: 45px;
     margin-left: 26px;
@@ -25,34 +25,68 @@
       width: 30px;
     }
   }
+
+  .gopher {
+    @include place-mobile-svg(48.39, 108.5, 105, 39);
+  }
+
+  .fish {
+    @include place-mobile-svg(64.2, 76.3, 56.5, 101.5);
+  }
+
+  .ufo {
+    @include place-mobile-svg(71.1, 56.8, 94.5, 0);
+  }
+
+  .ruby {
+    @include place-mobile-svg(56.5, 66.4, -33, -3);
+  }
+
+  .plant {
+    @include place-mobile-svg(39.9, 108, 26.5, -.7);
+  }
+
+  .submarine {
+    @include place-mobile-svg(104.27, 96.19, -46.5, 81.5);
+  }
+
+  .bubles {
+    @include place-mobile-svg(31.5, 38.5, 48, 45);
+  }
 }
 
-.m-cq-mobile-logo__gopher {
-  @include place-mobile-svg(48.39, 108.5, 105, 39);
-}
+@media #{$only-mobile-large} {
+  .m-cq-mobile-logo {
+    width: 39.6vw;
 
-.m-cq-mobile-logo__fish {
-  @include place-mobile-svg(64.2, 76.3, 56.5, 101.5);
-}
+    .gopher {
+      @include place-mobile-svg(48.39, 108.5, 122, 59);
+    }
 
-.m-cq-mobile-logo__ufo {
-  @include place-mobile-svg(71.1, 56.8, 94.5, 0);
-}
+    .fish {
+      @include place-mobile-svg(64.2, 76.3, 62.5, 100.5);
+    }
 
-.m-cq-mobile-logo__ruby {
-  @include place-mobile-svg(56.5, 66.4, -33, -3);
-}
+    .ufo {
+      @include place-mobile-svg(71.1, 56.8, 94.5, .5);
+    }
 
-.m-cq-mobile-logo__plant {
-  @include place-mobile-svg(39.9, 108, 26.5, -.7);
-}
+    .ruby {
+      @include place-mobile-svg(56.5, 66.4, -33.5, -2);
+    }
 
-.m-cq-mobile-logo__submarine {
-  @include place-mobile-svg(104.27, 96.19, -46.5, 81.5);
-}
+    .plant {
+      @include place-mobile-svg(39.9, 108, 26.5, .7);
+    }
 
-.m-cq-mobile-logo__bubles {
-  @include place-mobile-svg(31.5, 38.5, 48, 45);
+    .submarine {
+      @include place-mobile-svg(104.27, 96.19, -62, 86);
+    }
+
+    .bubles {
+      @include place-mobile-svg(31.5, 38.5, 47, 46);
+    }
+  }
 }
 
 @import '../states/s-cq-mobile-logo';

@@ -6,6 +6,8 @@ activate :blog do |blog|
   blog.permalink = 'blog/{title}.html'
   blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
   blog.layout = 'layouts/website.html.slim'
+  blog.paginate = true
+  blog.per_page = 30
 end
 
 page '/index.html', layout: :landing_page
@@ -14,6 +16,7 @@ with_layout :website do
   page '/about.html'
   page '/blog.html'
   page '/contact.html'
+  page '/join-our-crew.html'
   page '/work.html'
 end
 

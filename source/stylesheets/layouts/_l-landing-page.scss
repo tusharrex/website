@@ -10,98 +10,128 @@ h1 {
   margin: 0;
 }
 
-.l-landing-page__upper-part {
-  background-color: $light-gray;
-  height: 60%;
-  position: relative;
-  z-index: 200;
-
-  @media #{$mobile} {
+.l-landing-page {
+  &.upper-part {
+    background-color: $light-gray;
     height: 57.6%;
+    position: relative;
+    z-index: 200;
   }
-}
 
-.l-landing-page__lower-part {
-  background-color: $martinique-dark;
-  height: 40%;
-  position: relative;
-
-  @media #{$mobile} {
+  &.lower-part {
+    background-color: $martinique-dark;
     height: 42.4%;
+    position: relative;
   }
-}
 
-.l-landing-page-cq-logo-wrapper {
-  bottom: -5px;
-  left: 6%;
-  position: absolute;
-  right: 6%;
-
-  @media #{$mobile} {
+  .cq-logo-wrapper {
+    @include position(initial, 10vw, -3px, 10vw);
     display: none;
-  }
-}
-
-.l-landing-page-cq-mobile-logo-wrapper {
-  bottom: -1%;
-  display: none;
-  left: 4.7%;
-  position: absolute;
-  right: 4.7%;
-
-  @media #{$mobile} {
-    display: block;
-  }
-}
-
-.l-landing-page-signature-wrapper {
-  left: 6%;
-  position: absolute;
-  right: 6%;
-  text-align: center;
-  top: 9%;
-
-  @media #{$mobile} {
-    left: 5%;
-    right: 5%;
-    top: 12%;
-  }
-}
-
-.l-landing-page__bottom-logo {
-  bottom: 10.8%;
-  color: $santas-gray;
-  display: none;
-  left: 26.4%;
-  position: absolute;
-  right: 10%;
-  width: 47%;
-
-  @media #{$mobile} {
-    display: block;
-  }
-}
-
-.hello-mail {
-  color: $martinique-dark;
-  font-family: $alega-bold;
-  font-size: 1.72vw;
-  left: 2.2%;
-  position: absolute;
-  text-decoration: none;
-  top: 8.15%;
-
-  &:hover {
-    color: $damask-red;
+    position: absolute;
   }
 
-  &:active {
+  .cq-mobile-logo-wrapper {
+    @include position(initial, 4.7%, -1.1%, 4.7%);
+    position: absolute;
+  }
+
+  .signature-wrapper {
+    @include position(12%, 5%, 0, 5%);
+    position: absolute;
+    text-align: center;
+  }
+
+  .bottom-logo-wrapper {
+    @include position(initial, 10%, 10.8%, 26.4%);
+    color: $santas-gray;
+    position: absolute;
+    width: 47%;
+  }
+
+  .hello-mail {
+    @include position(11%, initial, initial, 5%);
     color: $martinique-dark;
-  }
+    font-family: $alega-bold;
+    font-size: 19px;
+    position: absolute;
+    text-decoration: none;
 
-  @media #{$mobile} {
-    font-size: 6.10vw;
-    left: 5%;
-    top: 11%;
+    &:hover {
+      color: $damask-red;
+    }
+
+    &:active {
+      color: $martinique-dark;
+    }
+  }
+}
+
+@media #{$only-mobile-large} {
+  .l-landing-page {
+    &.upper-part {
+      height: 63.6%;
+    }
+
+    &.lower-part {
+      height: 36.4%;
+    }
+
+    .cq-mobile-logo-wrapper {
+      @include position(initial, 3%, -1.3%, 4.7%);
+    }
+
+    .signature-wrapper {
+      @include position(8.5%, 12%, 0, 12%);
+      line-height: 4.8vh;
+    }
+
+    .bottom-logo-wrapper {
+      @include position(initial, 0, 12.8%, 33%);
+      width: 34%;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .l-landing-page {
+    &.upper-part {
+      height: 60%;
+    }
+
+    &.lower-part {
+      height: 40%;
+    }
+
+    .cq-logo-wrapper {
+      display: block;
+    }
+
+    .cq-mobile-logo-wrapper {
+      display: none;
+    }
+
+    .signature-wrapper {
+      @include position(9%, 6%, 0, 6%);
+      line-height: initial;
+    }
+
+    .bottom-logo-wrapper {
+      display: none;
+    }
+
+    .hello-mail {
+      @include position(8.15%, initial, initial, 2.2%);
+      font-size: 26px;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  @media only screen and (min-width: 768px + ($i * 150px)) {
+    .l-landing-page {
+      .cq-logo-wrapper {
+        bottom: -3px - ($i * .5px);
+      }
+    }
   }
 }

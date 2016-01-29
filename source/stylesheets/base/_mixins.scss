@@ -1,5 +1,4 @@
 // scss-lint:disable DuplicateProperty, VendorPrefix, TrailingSemicolon
-
 @mixin stroke(
   $stroke: $martinique-dark,
   $width: 4,
@@ -83,7 +82,7 @@ $base-font-size: 12px;
   position: relative;
   display: inline-block;
   color: $base-color;
-  background-color: $white;
+  background-color: $light-gray;
   border: 4px solid $base-color;
   border-radius: 10px;
   padding: 15px 40px;
@@ -95,7 +94,7 @@ $base-font-size: 12px;
 
   &:hover {
     background-color: $base-color;
-    color: $white;
+    color: $light-gray;
   }
 
   &:active {
@@ -108,6 +107,23 @@ $base-font-size: 12px;
       border-top-color: $supplementary-color;
       box-shadow: 0 -4px $supplementary-color;
     }
+  }
+}
+
+@mixin button-grey($base-color,
+                  $color: $light-gray,
+                  $border: 4px solid $light-gray) {
+  background-color: $base-color;
+  color: $color;
+  border: $border;
+
+  &:hover {
+    background-color: $color;
+    color: $base-color;
+  }
+
+  &:active {
+    box-shadow: none;
   }
 }
 
@@ -129,14 +145,65 @@ $base-font-size: 12px;
   -ms-filter: 'FlipH';
 }
 
-@mixin flex($direction, $wrap) {
+@mixin flex-flow($direction, $wrap) {
+  -ms-flex-direction: $direction;
+  -ms-flex-wrap: $wrap;
+  -webkit-flex-direction: $direction;
+  -webkit-flex-wrap: $wrap;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
   flex-direction: $direction;
   flex-wrap: $wrap;
-  -ms-flex-direction: $direction;
-  -ms-flex-wrap: $wrap;
-  -webkit-flex-direction: $direction;
-  -webkit-flex-wrap: $wrap;
+}
+
+@mixin flex-justify-content($alignment) {
+  -moz-box-pack: $alignment;
+  -moz-justify-content: $alignment;
+  -ms-flex-pack: $alignment;
+  -webkit-box-pack: $alignment;
+  -webkit-justify-content: $alignment;
+  justify-content: $alignment;
+}
+
+@mixin flex-align-content($alignment) {
+  align-content: $alignment;
+  -webkit-align-content: $alignment;
+}
+
+@mixin flex-flex($grow, $shrink, $base) {
+  -webkit-box-flex: $grow $shrink $base;
+  -webkit-flex: $grow $shrink $base;
+  -ms-flex: $grow $shrink $base;
+  flex: $grow $shrink $base;
+}
+
+@mixin background-hover($bcg-hover) {
+  &:hover {
+    background: $bcg-hover;
+  }
+}
+
+$images:
+  dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera, soal;
+
+@mixin bcg-images {
+  @each $image in $images {
+    .bcg-#{$image} {
+      background: image-url('companies/#{$image}.png') center center, no-repeat;
+    }
+  }
+}
+
+@mixin position($top, $right, $bottom, $left) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin transform($transformation) {
+  -webkit-transform: $transformation;
+  -ms-transform: $transformation;
+  transform: $transformation;
 }

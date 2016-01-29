@@ -3,7 +3,7 @@
   font-family: $courier;
   font-size: 16px;
   line-height: 22px;
-  padding: 142px 0 114px;
+  padding: 35px 0 114px;
   text-align: center;
 
   .break-display-none {
@@ -38,7 +38,7 @@
   color: $valencia-red;
   font-family: $alega-bold;
   font-size: 30px;
-  margin: 10px 0 30px;
+  margin: 20px 0 30px;
 }
 
 .contact-address {
@@ -57,10 +57,15 @@
   }
 }
 
+.contact-office-img,
+.contact-description {
+  margin: 0 auto;
+  width: 200px;
+}
+
 .contact-description {
   margin: 0 auto;
   text-align: left;
-  width: 74%;
 }
 
 @media #{$breakpoint-mobile-landscape} {
@@ -90,6 +95,7 @@
   .m-contact {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 73px;
   }
 
   .contact-offices {
@@ -120,6 +126,10 @@
   .contact-description {
     padding-left: 10%;
     width: 100%;
+  }
+
+  .contact-office-img {
+    width: auto;
   }
 }
 

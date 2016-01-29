@@ -1,3 +1,243 @@
-.m-cq-work-portfolio.m-grid-collection {
-  margin: 0;
+.m-cq-work-portfolio {
+  &.m-grid-collection {
+    @include flex-justify-content(flex-start);
+    margin: 0;
+  }
+
+  .m-grid-element {
+    @include background-size(cover);
+  }
+
+  .portfolio-hover {
+    color: $light-gray;
+    font-family: $baskerville;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .portfolio-description {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  footer {
+    bottom: 1.6vw;
+    font-family: $alega;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+  }
+
+  .testimonial {
+    color: $martinique-dark;
+    font-family: $baskerville-italic-bold;
+    font-size: 5.8vw;
+    line-height: 9vw;
+    text-indent: 20px;
+
+    &.light-grey-bcg {
+      background: $light-gray-2;
+    }
+
+    &.damask-red-bcg {
+      background: $damask-red;
+    }
+
+    &.breaker-bay-green-bcg {
+      background: $breaker-bay-green;
+    }
+
+    &.font-light-grey {
+      color: $light-gray;
+    }
+
+    .table {
+      margin: 0 auto;
+      padding-top: 34px;
+      width: 80%;
+    }
+  }
+
+  .quote-author {
+    color: $damask-red;
+    font-family: $alega-bold;
+    font-size: 4vw;
+    line-height: 5.5vw;
+    text-align: right;
+
+    &.font-martinique-dark {
+      color: $martinique-dark;
+    }
+  }
+
+  .quote-author-sign {
+    color: $martinique-dark;
+    font-family: $alega;
+
+    &.light-grey {
+      color: $light-gray;
+    }
+  }
+
+  blockquote {
+    margin: 0 auto 10px;
+    position: relative;
+  }
+
+  .m-quote {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .quote-start {
+    @include position(-8px, auto, auto, -9%);
+  }
+
+  .quote-end {
+    @include position(auto, 20px, -8px, auto);
+  }
+
+  .logo {
+    @include position(0, 0, 0, 0);
+    margin: 0 auto;
+    position: absolute;
+
+    &.x-small {
+      width: 44%;
+    }
+
+    &.small {
+      width: 58%;
+    }
+
+    &.medium {
+      width: 50%;
+    }
+
+    &.large {
+      width: 83%;
+    }
+
+    &.to-top {
+      top: -15%;
+    }
+  }
+
+  .display {
+    display: block;
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-cq-work-portfolio {
+    .portfolio-description {
+      width: 200px;
+    }
+
+    .testimonial {
+      font-size: 2.8vw;
+      line-height: 3.8vw;
+    }
+
+    blockquote {
+      margin-bottom: 22px;
+    }
+
+    .quote-start {
+      @include position(-14px, auto, auto, -13%);
+    }
+
+    .quote-end {
+      @include position(auto, 16px, -18px, auto);
+    }
+
+    .quote-author {
+      font-size: 2vw;
+      line-height: 2.5vw;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-cq-work-portfolio {
+    .testimonial {
+      font-size: 2vw;
+      line-height: 3.5vw;
+
+      .table {
+        padding-top: 44px;
+        width: 75%;
+      }
+    }
+
+    .quote-author {
+      font-size: 1.8vw;
+    }
+
+    .quote-start {
+      @include position(-10px, auto, auto, -6%);
+    }
+
+    .quote-end {
+      @include position(auto, 6%, -25px, auto);
+    }
+
+    .logo {
+      &.tablet-small {
+        width: 57%;
+      }
+
+      &.tablet-x-small {
+        width: 35%;
+      }
+    }
+
+    .display {
+      display: inline;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-cq-work-portfolio {
+    .portfolio-description {
+      width: 324px;
+    }
+
+    .testimonial {
+      text-indent: 44px;
+    }
+
+    .m-quote {
+      width: 48px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-cq-work-portfolio {
+    .testimonial {
+      font-size: 28px;
+      line-height: 44px;
+
+      .table {
+        width: 70%;
+      }
+    }
+
+    .quote-author {
+      font-size: 18px;
+    }
+
+    .quote-start {
+      @include position(-4px, auto, auto, -7%);
+    }
+
+    .quote-end {
+      @include position(auto, 44px, 0, auto);
+    }
+  }
 }

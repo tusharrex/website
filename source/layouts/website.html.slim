@@ -12,10 +12,11 @@ html
 
 
     = stylesheet_link_tag 'normalize', 'application'
+    / It is only to recognize touch events:
+    = javascript_include_tag 'lib/modernizr-custom'
     = javascript_include_tag 'application'
 
   body class=page_classes
-    nav.main-menu
-      = partial('partials/menu', locals: {modifier: 'from_header'})
+    = partial('partials/menu', locals: {modifier: 'from_header'})
     = yield
     = partial 'partials/footer'

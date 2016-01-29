@@ -1,67 +1,114 @@
+$color: $breaker-bay-green;
+
 .m-grid-item {
   font-family: $alega;
-  height: 470px;
-  margin: 54px auto 0;
-  width: 360px;
+  height: 300px;
+  margin: 9px 0;
+  padding: 0 10px;
+  width: 320px;
 
-  @media #{$mobile} {
-    margin: 9px auto;
-    width: 320px;
-  }
-}
-
-.m-grid-item__date {
-  border-radius: 60px;
-  font-family: $alega-bold;
-  font-size: 18px;
-  padding: 11px;
-  width: 370px;
-
-  &:hover {
-    background-color: $damask-red;
+  &:nth-of-type(4n) {
+    color: $deep-sea-green;
   }
 
-  @media #{$mobile} {
+  &:nth-of-type(4n+1) {
+    color: $valencia-red;
+  }
+
+  &:nth-of-type(4n+2) {
+    color: $breaker-bay-green;
+  }
+
+  &:nth-of-type(4n+3) {
+    color: $indian-yellow;
+  }
+
+  .date {
+    border-radius: 60px;
+    color: $martinique-dark;
+    font-family: $alega;
     font-size: 12px;
     padding: 7px 0;
-    width: 295px;
   }
-}
 
-.m-grid-item__title {
-  color: $damask-red;
-  font-size: 40px;
-  line-height: 118%;
-  margin: 4px 14px;
-
-  @media #{$mobile} {
+  .title {
+    color: currentColor;
     font-size: 30px;
     line-height: 122%;
     margin: 0;
   }
-}
 
-.m-grid-item__tags {
-  color: $damask-red;
-  font-size: 18px;
-  margin: 20px 12px;
-
-  @media #{$mobile} {
+  .tags {
+    color: currentColor;
     font-size: 16px;
     margin: 12px 0 10px;
   }
-}
 
-.m-grid-item__summary {
-  font-family: $baskerville;
-  font-size: 20px;
-  line-height: 160%;
-  margin: 20px 12px;
-
-  @media #{$mobile} {
-    font-size: 12px;
+  .summary {
+    color: $martinique-dark;
+    font-family: $baskerville;
+    font-size: 15px;
     line-height: 180%;
     margin: 12px 0;
+    text-align: justify;
   }
 }
 
+@media #{$breakpoint-tablet} {
+  .m-grid-item {
+    height: 470px;
+    margin-top: 54px;
+    padding: 0 5px;
+    width: 370px;
+
+    &.no-content {
+      height: 0;
+    }
+
+    &:nth-of-type(4n) {
+      &:hover .date {
+        background-color: $deep-sea-green;
+      }
+    }
+
+    &:nth-of-type(4n+1) {
+      &:hover .date {
+        background-color: $valencia-red;
+      }
+    }
+
+    &:nth-of-type(4n+2) {
+      &:hover .date {
+        background-color: $breaker-bay-green;
+      }
+    }
+
+    &:nth-of-type(4n+3) {
+      &:hover .date {
+        background-color: $indian-yellow;
+      }
+    }
+
+    .date {
+      font-size: 16px;
+      padding: 11px;
+    }
+
+    .title {
+      font-size: 40px;
+      line-height: 118%;
+      margin: 4px 14px;
+    }
+
+    .tags {
+      font-size: 18px;
+      margin: 20px 12px;
+    }
+
+    .summary {
+      font-size: 20px;
+      line-height: 160%;
+      margin: 20px 12px;
+    }
+  }
+}
