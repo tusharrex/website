@@ -3,7 +3,8 @@
   color: $light-gray;
   font-family: $alega-light;
   font-size: 18px;
-  padding: 20px;
+  padding-bottom: 20px;
+  padding-top: 30px;
   width: 100%;
 
   a {
@@ -63,7 +64,6 @@
       margin-left: 0;
     }
   }
-
 }
 
 .colors {
@@ -94,10 +94,13 @@
 
 @media #{$breakpoint-tablet} {
   .m-footer {
-    @include flex-flow(row, wrap);
-    @include flex-justify-content(space-between);
     font-size: 24px;
-    padding: 40px 60px;
+    padding-top: 50px;
+
+    .wrapper {
+      @include flex-flow(row, wrap);
+      @include flex-justify-content(space-between);
+    }
 
     .address {
       line-height: 1.3;
@@ -117,19 +120,18 @@
       line-height: 1.7;
     }
 
+    .header {
+      font-family: $alega;
+      font-size: 26px;
+    }
+
     .menu {
       @include flex-flow(column, wrap);
       max-height: 220px;
     }
 
-    .header,
     .nav .header {
       display: block;
-    }
-
-    .header {
-      font-family: $alega;
-      font-size: 26px;
     }
 
     .social-links {
@@ -140,7 +142,8 @@
 
 @media #{$breakpoint-desktop} {
   .m-footer {
-    padding: 100px 80px;
+    padding-bottom: 50px;
+    padding-top: 100px;
 
     .coffee-and-address {
       @include flex-flex(3, 0, 0)
@@ -150,13 +153,27 @@
       @include flex-flex(2, 0, 0)
     }
 
-    .nav {
-      @include flex-flex(1.5, 0, 0)
-    }
-
     .header {
       margin-bottom: 30px;
     }
+
+    .nav {
+      @include flex-flex(1.5, 0, 0);
+
+      .arrow {
+        float: right;
+        width: 20px;
+      }
+
+      .menu {
+        width: 120px;
+      }
+    }
+
+    .menu-item:hover .arrow {
+      display: inline-block;
+    }
+
 
     .social-links {
       @include flex-flow(column, wrap);
