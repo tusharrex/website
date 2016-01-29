@@ -83,7 +83,6 @@ $base-font-size: 12px;
     src: url($filepath + '.woff') format('woff'),
     url($filepath + '.ttf') format('truetype');
   }
-;
 }
 
 @mixin button {
@@ -196,7 +195,8 @@ $base-font-size: 12px;
   }
 }
 
-$images: dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera, soal;
+$images: 
+  dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera, soal;
 
 @mixin bcg-images {
   @each $image in $images {
