@@ -1,0 +1,168 @@
+.m-thank-you {
+  color: $martinique-dark;
+  font-family: $courier;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 35px 0 114px;
+  text-align: center;
+
+  .break-display-none {
+    display: none;
+  }
+}
+
+.faces {
+  margin-top: 50px;
+  padding: 0;
+
+  .icon-pin-map,
+  .btn-text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .icon-pin-map {
+    padding-right: 10px;
+  }
+}
+
+.contact-offices-element {
+  display: block;
+  margin: 0 auto 72px;
+  padding: 0 10px;
+  vertical-align: top;
+  width: 100%;
+}
+
+.contact-office-name {
+  color: $valencia-red;
+  font-family: $alega-bold;
+  font-size: 30px;
+  margin: 20px 0 30px;
+}
+
+.contact-address {
+  font-size: 19px;
+  font-style: normal;
+  line-height: 25px;
+}
+
+.contact-show-map-btn {
+  display: inline-block;
+  margin-top: 15px;
+
+  svg {
+    margin-right: 10px;
+    width: 21px;
+  }
+}
+
+.contact-office-img,
+.contact-description {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.contact-description {
+  margin: 0 auto;
+  text-align: left;
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .contact-offices-element {
+    max-width: 100%;
+  }
+}
+
+@media #{$only-mobile-large} {
+
+  .contact-office-img {
+    display: inline-block;
+    padding-left: 10%;
+    vertical-align: middle;
+    width: 45%;
+  }
+
+  .contact-description {
+    display: inline-block;
+    padding-left: 10%;
+    vertical-align: middle;
+    width: 55%;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-contact {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 73px;
+  }
+
+  .contact-offices {
+    margin: 112px 0 0;
+    padding: 0;
+  }
+
+  .contact-offices-element {
+    display: inline-block;
+    margin: 0 10px;
+    max-width: 220px;
+  }
+
+  .contact-office-name {
+    font-size: 26px;
+    margin: 21px 0 17px;
+  }
+
+  .contact-address {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .contact-show-map-btn {
+    margin-top: 10px;
+  }
+
+  .contact-description {
+    padding-left: 10%;
+    width: 100%;
+  }
+
+  .contact-office-img {
+    width: auto;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-contact {
+
+    .break-display-none {
+      display: block;
+    }
+
+  }
+
+  .contact-offices-element {
+    margin: 0 10px;
+    max-width: 300px;
+  }
+
+  .contact-description {
+    padding-left: 15%;
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .contact-offices-element {
+    margin: 0 27px;
+    max-width: 324px;
+  }
+
+  .contact-office-name {
+    font-size: 30px;
+  }
+
+  .contact-address {
+    font-size: 19px;
+  }
+}

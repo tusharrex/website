@@ -17,6 +17,7 @@ with_layout :website do
   page '/blog.html'
   page '/contact.html'
   page '/join-our-crew.html'
+  page '/thank-you.html'
   page '/work.html'
 end
 
