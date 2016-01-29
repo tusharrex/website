@@ -3,47 +3,56 @@
 .m-main-signature {
   color: $white;
   font-family: 'Courier New';
-  font-size: 5.3vw;
+  // font-size: 8.1vw;
+  font-size: 26px;
 
-
-  @media #{$breakpoint-tablet} {
-    font-size: 2.45vw;
-  }
-}
-
-.m-main-signature--is-underlined {
-  display: block;
-  position: relative;
-
-  @media #{$breakpoint-tablet} {
-    display: inline-block;
-  }
-}
-
-.m-main-structure__line {
-  height: 100%;
-  position: absolute;
-  top: 77%;
-  width: 100%;
-
-  @include keyframes(dash) {
-    to {
-      stroke-dashoffset: 0;
-    }
+  .underlined-words {
+    display: block;
+    position: relative;
   }
 
-  @media #{$mobile} {
+  .line-wrapper {
     display: none;
   }
 }
 
-.is-underlined {
-  @include animation(dash 1s cubic-bezier(.60, .25, .25, .9) forwards);
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
+@media #{$only-mobile-large} {
+  .m-main-signature {
+    font-size: 5.3vw;
+  }
 }
 
-.st-line {
-  @include stroke($light-gray, $linecap: round, $linejoin: round);
-  fill: none;
+@media #{$breakpoint-tablet} {
+  .m-main-signature {
+    font-size: 2.45vw;
+
+    .underlined-words {
+      display: inline-block;
+    }
+
+    .line-wrapper {
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 77%;
+      width: 100%;
+
+      @include keyframes(dash) {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    }
+
+    .is-underlined {
+      @include animation(dash 1s cubic-bezier(.60, .25, .25, .9) forwards);
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+    }
+
+    .st-line {
+      @include stroke($light-gray, $linecap: round, $linejoin: round);
+      fill: none;
+    }
+  }
 }
