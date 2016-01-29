@@ -1,0 +1,25 @@
+.m-join-us {
+  padding-top: 35px;
+
+  .join-us-img {
+    margin: 54px auto 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-join-us {
+    padding: 76px 0 70px;
+
+    .join-us-img {
+      max-width: 800px;
+    }
+
+    .m-main-text {
+      margin-bottom: 66px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.wrapper.small
+  .m-job-offers.m-grid-collection
+
+    = partial 'partials/job-offer', locals: \
+      {title: 'Ruby on Rails Developer',
+      hash_tags: '#ruby #rails #rspec',
+      grid_class: 'bcg-maroon-red',
+      hash_class: 'damask-red',
+      btn_class: 'btn-maroon-red'}
+
+    = partial 'partials/job-offer', locals: \
+      {title: 'Frontend Developer',
+      hash_tags: '#html5 #css3 #coffeescript #sass',
+      grid_class: 'bcg-deep-sea-green',
+      hash_class: 'breaker-bay-green',
+      btn_class: 'btn-grey-sea-green'}
+
+    = partial 'partials/job-offer', locals: \
+      {title: 'iOS Developer',
+      hash_tags: '#swift #tdd',
+      grid_class: 'bcg-indian-yellow-2',
+      hash_class: 'damask-red',
+      btn_class: 'btn-indian-yellow'}
+
+    = partial 'partials/job-offer', locals: \
+      {title: 'Go Developer',
+      hash_tags: '#go #go #go',
+      grid_class: 'bcg-breaker-bay-green',
+      hash_class: 'deep-sea-green',
+      btn_class: 'btn-breaker-bay-green'}

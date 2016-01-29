@@ -1,0 +1,30 @@
+.m-job-offers {
+  &.m-grid-collection {
+    margin: 0;
+    max-width: 1248px;
+  }
+
+  .m-grid-element {
+    height: 90vw;
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-job-offers {
+    .m-grid-element {
+      height: 50vw;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-job-offers {
+    &.m-grid-collection {
+      justify-content: space-between;
+    }
+
+    .m-grid-element {
+      height: 292px;
+    }
+  }
+}

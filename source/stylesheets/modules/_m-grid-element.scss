@@ -11,10 +11,6 @@
     width: 100%;
   }
 
-  &:hover .grid-hover {
-    display: block;
-  }
-
   &::before {
     content: '';
     display: block;
@@ -38,6 +34,10 @@
   .cell {
     display: table-cell;
     vertical-align: middle;
+  }
+
+  .row {
+    display: table-row;
   }
 }
 

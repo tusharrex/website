@@ -1,52 +1,55 @@
-button.no-button.three-states-button.main-menu__button(
+button.no-button.three-states-button.main-menu-open-button(
   class="#{locals[:modifier] if locals}")
-  .three-states-button__normal-state
+  .normal-state
     = partial 'svg/main_menu/humburgerbutton'
-  .three-states-button__hover-state.main-menu__button__hover-state
+  .hover-state
     = partial 'svg/main_menu/humburgerbutton_arrow'
-  .three-states-button__clicked-state.main-menu__button__clicked-state
+  .clicked-state
     = partial 'svg/main_menu/humburgerbutton_dot'
-.main-menu__nav
-  button.main-menu__nav__button.three-states-button.no-button
-    .three-states-button__normal-state.main-menu__nav__button__normal-state
+nav.main-menu
+  button.main-menu-close-button.three-states-button.no-button
+    .normal-state
       = partial 'svg/main_menu/main_menu_close_button'
-    .three-states-button__hover-state.main-menu__nav__button__hover-state
+    .hover-state
       = partial 'svg/main_menu/humburgerbutton_arrow'
-    .three-states-button__clicked-state.main-menu__nav__button__clicked-state
+    .clicked-state
       = partial 'svg/main_menu/humburgerbutton_dot'
-  ul.main-menu__list
-    li.main-menu__list__item
-      a.main-menu__list__item__link(href='') Client Work
-      .main-menu__list__item__arrow
+  ul.list
+    li.item
+      a.link(href='/work') Client Work
+      .arrow
         = partial 'svg/main_menu/main_menu_arrow'
-    li.main-menu__list__item
-      a.main-menu__list__item__link(href='') Ventures
-      .main-menu__list__item__arrow
+    li.item
+      a.link(href='#') Ventures
+      .arrow
         = partial 'svg/main_menu/main_menu_arrow'
-    li.main-menu__list__item
-      a.main-menu__list__item__link(href='') Our Crew
-      .main-menu__list__item__arrow
+    li.item
+      a.link(href='#') Our Crew
+      .arrow
         = partial 'svg/main_menu/main_menu_arrow'
-    li.main-menu__list__item
-      a.main-menu__list__item__link(href='') Join Us
-      .main-menu__list__item__arrow
+    li.item
+      a.link(href='#') Join Us
+      .arrow
         = partial 'svg/main_menu/main_menu_arrow'
-    li.main-menu__list__item
-      a.main-menu__list__item__link(href='') Blog
-      .main-menu__list__item__arrow
+    li.item
+      a.link(href='/blog') Blog
+      .arrow
         = partial 'svg/main_menu/main_menu_arrow'
-    li.main-menu__list__item
-      a.main-menu__list__item__link(href='') Contact
-      .main-menu__list__item__arrow
+    li.item
+      a.link(href='/contact') Contact
+      .arrow
         = partial 'svg/main_menu/main_menu_arrow'
-  ul.main-menu__social-links
-    li.main-menu__social-links__item
-      a.facebook-link(href='https://www.facebook.com/codequest.eu',
-        target='_blank')
+  ul.social-links
+    li
+      a.facebook-link(href='https://www.facebook.com/codequest.eu'
+       target='_blank' rel='nofollow')
         = partial 'svg/main_menu/facebook_icon'
-    li.main-menu__social-links__item
-      a.github-link(href='https://github.com/codequest-eu', target='_blank')
+    li
+      a.github-link(href='https://github.com/codequest-eu'
+        target='_blank' rel='nofollow')
         = partial 'svg/main_menu/github_icon'
-    li.main-menu__social-links__item
-      a.twitter-link(href='https://twitter.com/codequest', target='_blank')
+    li
+      a.twitter-link(href='https://twitter.com/codequest'
+       target='_blank' rel='nofollow')
         = partial 'svg/main_menu/twitter_icon'
+.overlay
