@@ -6,7 +6,7 @@ closeMainMenu = ->
 
 $ ->
   doc = document.getElementsByTagName('body')[0]
-  cqm = new Hammer(doc)
+  cqm = new Hammer(doc, cssProps: userSelect: true)
 
   menuNav = document.getElementsByClassName('main-menu')[0]
   menu = new Hammer(menuNav)
