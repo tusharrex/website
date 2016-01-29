@@ -72,11 +72,5 @@
     .hash-tag {
       font-size: 21px;
     }
-
-    .btn-apply {
-      @include button();
-      background-color: $white;
-      width: 218px;
-    }
   }
 }

@@ -3,18 +3,6 @@
 .btn {
   @include button;
 
-  &.maroon-red {
-    @include button($maroon-red, $merlot-red);
-  }
-
-  &.green {
-    @include button($deep-sea-green, $martinique-dark);
-  }
-
-  &.martinique {
-    @include button($martinique-dark, $santas-gray, $mirage-dark);
-  }
-
   &.btn-grey-sea-green {
     @include button-grey($deep-sea-green);
   }
@@ -39,7 +27,23 @@
     width: 218px;
   }
 
+  @media #{$breakpoint-tablet} {
+    @include button-states;
+
+    &.maroon-red {
+      @include button-states($maroon-red, $merlot-red);
+    }
+
+    &.green {
+      @include button-states($deep-sea-green, $martinique-dark);
+    }
+
+    &.martinique {
+      @include button-states($martinique-dark, $santas-gray, $mirage-dark);
+    }
+  }
 }
+
 
 .three-states-button {
   float: right;
