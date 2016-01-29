@@ -26,22 +26,6 @@
   &.small {
     width: 218px;
   }
-
-  @media #{$breakpoint-tablet} {
-    @include button-states;
-
-    &.maroon-red {
-      @include button-states($maroon-red, $merlot-red);
-    }
-
-    &.green {
-      @include button-states($deep-sea-green, $martinique-dark);
-    }
-
-    &.martinique {
-      @include button-states($martinique-dark, $santas-gray, $mirage-dark);
-    }
-  }
 }
 
 
