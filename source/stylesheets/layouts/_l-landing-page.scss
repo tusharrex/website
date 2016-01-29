@@ -13,14 +13,14 @@ h1 {
 .l-landing-page {
   &.upper-part {
     background-color: $light-gray;
-    height: 63.6%;
+    height: 57.6%;
     position: relative;
     z-index: 200;
   }
 
   &.lower-part {
     background-color: $martinique-dark;
-    height: 36.4%;
+    height: 42.4%;
     position: relative;
   }
 
@@ -31,22 +31,21 @@ h1 {
   }
 
   .cq-mobile-logo-wrapper {
-    @include position(initial, 3%, -1.3%, 4.7%);
+    @include position(initial, 4.7%, -1.1%, 4.7%);
     position: absolute;
   }
 
   .signature-wrapper {
-    @include position(8.5%, 12%, 0, 12%);
-    line-height: 4.8vh;
+    @include position(12%, 5%, 0, 5%);
     position: absolute;
     text-align: center;
   }
 
   .bottom-logo-wrapper {
-    @include position(initial, 0, 12.8%, 33%);
+    @include position(initial, 10%, 10.8%, 26.4%);
     color: $santas-gray;
     position: absolute;
-    width: 34%;
+    width: 47%;
   }
 
   .hello-mail {
@@ -67,18 +66,28 @@ h1 {
   }
 }
 
-@media #{iphone5} {
+@media #{$only-mobile-large} {
   .l-landing-page {
-    .cq-mobile-logo-wrapper {
-      bottom: -1%;
+    &.upper-part {
+      height: 63.6%;
     }
-  }
-}
 
-@media #{iphone6-plus} {
-  .l-landing-page {
+    &.lower-part {
+      height: 36.4%;
+    }
+
     .cq-mobile-logo-wrapper {
-      bottom: -1.1%;
+      @include position(initial, 3%, -1.3%, 4.7%);
+    }
+
+    .signature-wrapper {
+      @include position(8.5%, 12%, 0, 12%);
+      line-height: 4.8vh;
+    }
+
+    .bottom-logo-wrapper {
+      @include position(initial, 0, 12.8%, 33%);
+      width: 34%;
     }
   }
 }
