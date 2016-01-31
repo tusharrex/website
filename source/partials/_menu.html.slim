@@ -1,7 +1,10 @@
 button.no-button.three-states-button.main-menu-open-button(
   class="#{locals[:modifier] if locals}")
   .normal-state
-    = partial 'svg/main_menu/humburgerbutton'
+    .normal
+      = partial 'svg/main_menu/humburgerbutton'
+    .small
+      = partial 'svg/main_menu/humburgerbutton_mobile'
   .hover-state
     = partial 'svg/main_menu/humburgerbutton_arrow'
   .clicked-state
