@@ -11,19 +11,13 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
   margin: 23px 44px 0 0;
   width: 52px;
 
-  &.from_header {
-    color: $white;
-
-    @media #{$mobile} {
-      height: 50px;
-      margin-right: 3px;
-      width: 43px;
-    }
-  }
-
   .normal-state {
     height: 37px;
     width: 40px;
+
+    .small {
+      display: none;
+    }
   }
 
   .clicked-state {
@@ -203,8 +197,77 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
   z-index: 201;
 }
 
+@include keyframes(mainMenuBounceInMobile) {
+  0% {
+    @include transform(translateX(0));
+  }
+
+  50% {
+    @include transform(translateX(calc(-100%)));
+  }
+
+  75% {
+    @include transform(translateX(calc(30px - 100%)));
+  }
+
+  100% {
+    @include transform(translateX(calc(-100% + 20px)));
+  }
+}
+
+@include keyframes(mainMenuBounceOutMobile) {
+  0% {
+    @include transform(translateX(0));
+  }
+
+  20% {
+    @include transform(translateX(-20px));
+  }
+
+  100% {
+    @include transform(translateX(100%));
+  }
+}
+
 @media #{$smaller--than-main-menu} {
+  .main-menu-open-button {
+    height: 30px;
+    margin: 15px 10px 0 0;
+    width: 40px;
+
+    .normal-state .normal {
+      display: none;
+    }
+
+    .normal-state .small {
+      display: block;
+    }
+
+    .clicked-state {
+      margin: 4px 0 0 12px;
+    }
+
+    .hover-state {
+      width: 27px;
+    }
+  }
+
   .main-menu {
+    max-width: calc(100% + 20px);
+    padding-right: 20px;
+    right: calc(-100% - 20px);
+    width: calc(100% + 20px);
+
+    &.bouncedIn {
+      @include animation(mainMenuBounceInMobile .5s both);
+    }
+
+    &.bouncedOut {
+      @include animation(mainMenuBounceOutMobile .5s both);
+      max-width: 150%;
+      right: -20px;
+    }
+
     .list .item {
       margin-bottom: 4vmin;
     }
@@ -214,7 +277,7 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
       padding-right: 10vmin;
     }
 
-    .arrow {
+    .item .arrow {
       bottom: 0;
       height: 5vmin;
       margin: auto 0;
