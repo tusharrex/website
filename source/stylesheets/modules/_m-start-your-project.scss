@@ -1,0 +1,9 @@
+.m-star-your-project {
+  padding-top: 35px;
+}
+
+@media #{$breakpoint-tablet} {
+  .m-star-your-project {
+    padding-top: 86px;
+  }
+}
