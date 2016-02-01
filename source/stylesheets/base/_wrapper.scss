@@ -1,6 +1,6 @@
 .wrapper {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1300px;
   padding: 0 15px;
 
   &.padding-none {
@@ -13,14 +13,10 @@
   }
 }
 
-@media #{$breakpoint-desktop} {
-  .wrapper {
-    padding: 0;
-  }
-}
-
 @media #{$breakpoint-tablet} {
   .wrapper {
+    padding: 0 26px;
+
     &.small {
       padding: 0 15px;
     }
