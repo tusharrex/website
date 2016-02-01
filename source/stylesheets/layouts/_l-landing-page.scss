@@ -21,6 +21,7 @@ h1 {
   &.lower-part {
     background-color: $martinique-dark;
     height: 42.4%;
+    min-height: 203px;
     position: relative;
   }
 
@@ -88,6 +89,21 @@ h1 {
     .bottom-logo-wrapper {
       @include position(initial, 0, 12.8%, 33%);
       width: 34%;
+    }
+
+    .hello-mail {
+      font-size: 25px;
+      left: 3.9%;
+      letter-spacing: .2px;
+      top: 4.5%;
+    }
+  }
+}
+
+@media #{$mobile-landscape} {
+  .l-landing-page {
+    .signature-wrapper {
+      line-height: initial;
     }
   }
 }
