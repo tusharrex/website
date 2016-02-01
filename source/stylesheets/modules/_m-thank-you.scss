@@ -1,13 +1,18 @@
 .m-thank-you {
-  color: $martinique-dark;
-  font-family: $courier;
-  font-size: 16px;
-  line-height: 22px;
-  padding: 35px 0 114px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   text-align: center;
 
   .boss-face {
     border: solid 4px $damask-red;
     border-radius: 50%;
+  }
+
+  .job-title {
+    color: $santas-gray;
+    font-family: $alega-bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 }
