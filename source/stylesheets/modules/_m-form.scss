@@ -1,0 +1,57 @@
+.m-form {
+  color: $martinique-dark;
+  font-family: $alega-bold;
+  font-size: 18px;
+
+  .form-fieldset {
+    border: 0;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .form-input,
+  .form-textarea {
+    background: $light-gray;
+    border: 4px solid $martinique-dark;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .form-input {
+    padding: 22px 12px;
+  }
+
+  .form-textarea {
+    height: 205px;
+    padding: 15px 12px;
+  }
+
+  .form-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .form-legend,
+  .subtitle {
+    text-align: center;
+  }
+
+  .form-legend {
+    font-size: 44px;
+    margin-bottom: 26px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 10px;
+    text-align: left;
+  }
+}
