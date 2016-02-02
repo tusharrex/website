@@ -8,7 +8,7 @@
         commodo consequat.
     .m-form
       fieldset.form-fieldset
-        legend.form-legend About You
+        .form-legend About You
         label.form-label Name:
         input.form-input type='text' placeholder='Type your name here.'
         label.form-label Email address:
@@ -16,16 +16,28 @@
                                                   We promise!'
 
       fieldset.form-fieldset
-        legend.form-legend
+        .form-legend
           | Description:
           .subtitle Describe the project, requirements and objectives.
         textarea.form-textarea type='textarea' placeholder='Share with us any \
                     information that might help us to respond to your request.'
 
       fieldset.form-fieldset
-        legend.form-legend
+        .form-legend
           | Budget:
           .subtitle Providing a budget will help us ensure expectations are met.
+        .amount-inputs
+          input.form-input type='text' placeholder='$2,000'
+          .dash
+          input.form-input type='text' placeholder='$70,000'
+        .slider
+          .slider-axis
+            .slider-circle-small.left
+            .slider-circle-small.middle
+            .slider-circle-small.right
+            .slider-amount.left $0
+            .slider-amount.middle $50,000
+            .slider-amount.right $100,000
 
       fieldset.form-fieldset
         button.btn.form-button Start Your Project

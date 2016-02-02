@@ -3,6 +3,15 @@
   font-family: $alega-bold;
   font-size: 18px;
 
+  .form-input:focus,
+  .form-textarea:focus {
+    @include input-placeholder{
+      color: transparent;
+    };
+    outline: none;
+    border-color: $deep-sea-green;
+  }
+
   .form-fieldset {
     border: 0;
     margin: 0 0 16px;
@@ -53,5 +62,108 @@
     line-height: 28px;
     margin-top: 10px;
     text-align: left;
+  }
+
+  .amount-inputs {
+    font-size: 18px;
+    color: $damask-red;
+    margin: -12px 0 12px;
+
+    .form-input {
+      text-align: center;
+      color: $damask-red;
+      margin: 0;
+      @include input-placeholder {
+        color: $damask-red;
+        text-align: center;
+      };
+    }
+  }
+
+  .dash {
+    width: 8px;
+    height: 4px;
+    background: $damask-red;
+    margin: 26px auto;
+    border-radius: 4px;
+  }
+
+  .slider {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 0 200px;
+  }
+
+  .slider-title {
+    text-align: center;
+    font-size: 24px;
+    color: $damask-red;
+  }
+
+  .slider-axis {
+    width: 100%;
+    height: 4px;
+    background: $martinique-dark;
+    position: relative;
+  }
+
+  .slider-circle-small {
+    width: 10px;
+    height: 10px;
+    background: $breaker-bay-green;
+    border-radius: 50%;
+    border: 4px solid $martinique-dark;
+    position: absolute;
+    top: -3px;
+  }
+
+  .slider-amount {
+    position: absolute;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-form {
+    max-width: 805px;
+    margin: 0 auto;
+
+    .amount-inputs {
+      .form-input,
+      .dash {
+        display: inline-block;
+      }
+
+      .form-input {
+        width: 47%;
+      }
+
+      .dash {
+        margin: 0 2%;
+      }
+    }
+
+    .form-legend {
+      font-size: 74px;
+      margin-bottom: 15px;
+    }
+
+    .form-fieldset {
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      margin-top: 3px;
+    }
+
+    .amount-inputs {
+      margin: 0 0 100px;
+    }
+
+    .slider {
+      display: block;
+      width: 696px;
+      padding-bottom: 132px;
+    }
   }
 }
