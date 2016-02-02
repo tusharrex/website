@@ -1,0 +1,27 @@
+.m-thank-you {
+  .boss-face {
+    background: image-url('thank-you/tomek.png');
+    border: solid 4px $damask-red;
+    border-radius: 50%;
+    height: 250px;
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .job-title {
+    color: $santas-gray;
+    font-family: $alega-bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media #{$breakpoint-desktop-retina} {
+  .m-thank-you {
+    .boss-face {
+      background: image-url('thank-you/tomek@2x.png');
+      background-size: contain;
+    }
+  }
+}
