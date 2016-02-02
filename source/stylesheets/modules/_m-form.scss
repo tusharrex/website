@@ -5,11 +5,12 @@
 
   .form-input:focus,
   .form-textarea:focus {
-    @include input-placeholder{
+    border-color: $deep-sea-green;
+    outline: none;
+
+    @include input-placeholder {
       color: transparent;
     };
-    outline: none;
-    border-color: $deep-sea-green;
   }
 
   .form-fieldset {
@@ -65,14 +66,15 @@
   }
 
   .amount-inputs {
-    font-size: 18px;
     color: $damask-red;
+    font-size: 18px;
     margin: -12px 0 12px;
 
     .form-input {
-      text-align: center;
       color: $damask-red;
       margin: 0;
+      text-align: center;
+
       @include input-placeholder {
         color: $damask-red;
         text-align: center;
@@ -81,41 +83,41 @@
   }
 
   .dash {
-    width: 8px;
-    height: 4px;
     background: $damask-red;
-    margin: 26px auto;
     border-radius: 4px;
+    height: 4px;
+    margin: 26px auto;
+    width: 8px;
   }
 
   .slider {
     display: none;
-    width: 100%;
     margin: 0 auto;
     padding: 24px 0 200px;
+    width: 100%;
   }
 
   .slider-title {
-    text-align: center;
-    font-size: 24px;
     color: $damask-red;
+    font-size: 24px;
+    text-align: center;
   }
 
   .slider-axis {
-    width: 100%;
-    height: 4px;
     background: $martinique-dark;
+    height: 4px;
     position: relative;
+    width: 100%;
   }
 
   .slider-circle-small {
-    width: 10px;
-    height: 10px;
     background: $breaker-bay-green;
-    border-radius: 50%;
     border: 4px solid $martinique-dark;
+    border-radius: 50%;
+    height: 10px;
     position: absolute;
     top: -3px;
+    width: 10px;
   }
 
   .slider-amount {
@@ -125,10 +127,12 @@
 
 @media #{$breakpoint-tablet} {
   .m-form {
-    max-width: 805px;
     margin: 0 auto;
+    max-width: 805px;
 
     .amount-inputs {
+      margin: 0 0 100px;
+
       .form-input,
       .dash {
         display: inline-block;
@@ -156,14 +160,10 @@
       margin-top: 3px;
     }
 
-    .amount-inputs {
-      margin: 0 0 100px;
-    }
-
     .slider {
       display: block;
-      width: 696px;
       padding-bottom: 132px;
+      width: 696px;
     }
   }
 }
