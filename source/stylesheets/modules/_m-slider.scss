@@ -70,10 +70,23 @@
   }
 }
 
+// Styles here apply to non-touchscreen devices only.
+.no-touchevents {
+  .m-slider {
+    display: none;
+  }
+}
 
 @media #{$breakpoint-tablet} {
   .m-slider {
     display: none;
     padding-bottom: 132px;
+  }
+
+  // Styles here apply to non-touchscreen devices only.
+  .no-touchevents {
+    .m-slider {
+      display: block;
+    }
   }
 }
