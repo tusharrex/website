@@ -45,19 +45,15 @@
     display: block;
   }
 
-  .m-form {
-    .slider {
-      display: none;
-    }
+  .m-slider {
+    display: none;
   }
 }
 
 @media #{$breakpoint-tablet} {
   .no-touchevents {
-    .m-form {
-      .slider {
-        display: block;
-      }
+    .m-slider {
+      display: block;
     }
   }
 }
