@@ -74,16 +74,17 @@
       color: $damask-red;
       margin: 0;
       text-align: center;
+
       @include input-placeholder {
         color: $damask-red;
       }
+    }
 
-      &:focus {
-        @include input-placeholder {
-          color: transparent;
-          text-align: center;
-        };
-      }
+    .form-input:focus {
+      @include input-placeholder {
+        color: transparent;
+        text-align: center;
+      };
     }
   }
 
@@ -200,10 +201,10 @@
   }
 
   .slider-move {
-    width: 44px;
     display: inline-block;
     position: relative;
     top: 38px;
+    width: 44px;
   }
 }
 
