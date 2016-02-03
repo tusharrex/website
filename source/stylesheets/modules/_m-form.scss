@@ -112,92 +112,53 @@
   .slider-axis {
     background: $martinique-dark;
     height: 4px;
+    margin: 0 auto;
     position: relative;
-    width: 100%;
+    width: 688px;
+  }
+
+  .slider-points-container {
+    @include flex-flow(row, wrap);
+    @include flex-justify-content(space-around);
+
+    margin: 0 auto;
+    position: relative;
+    top: -7px;
+    width: 765px;
+  }
+
+  .slider-point {
+    @include flex-flow(column, wrap);
+    @include flex-justify-content(space-between);
+
+    text-align: center;
+    width: 60px;
   }
 
   .slider-circle {
     background: $breaker-bay-green;
     border: 4px solid $martinique-dark;
     border-radius: 50%;
-    position: absolute;
+    margin: 0 auto;
+    position: relative;
   }
 
   .slider-circle-small {
     @include size(10px, 10px);
-    top: -3px;
   }
 
   .slider-circle-medium {
     @include size(14px, 14px);
-    top: -6px;
+    top: -2px;
   }
 
   .slider-circle-large {
     @include size(18px, 18px);
-    top: -8px;
-  }
-
-  .range-1 {
-    left: 12.5%;
-  }
-
-  .range-2 {
-    left: 25%;
-  }
-
-  .range-3 {
-    left: 37.5%;
-  }
-
-  .range-5 {
-    left: 62.5%;
-  }
-
-  .range-6 {
-    left: 75%;
-  }
-
-  .range-7 {
-    left: 87.5%;
+    top: -4px;
   }
 
   .slider-amount {
     font-size: 16px;
-    position: absolute;
-    top: 14px;
-  }
-
-  .amount-1 {
-    left: 10%;
-  }
-
-  .amount-2 {
-    left: 22.5%;
-  }
-
-  .amount-3 {
-    left: 35.5%;
-  }
-
-  .amount-4 {
-    left: 46%;
-  }
-
-  .amount-5 {
-    left: 59.5%;
-  }
-
-  .amount-6 {
-    left: 72.5%;
-  }
-
-  .amount-7 {
-    left: 85%;
-  }
-
-  .amount-8 {
-    left: 95%;
   }
 
   .slider-move {
@@ -246,7 +207,6 @@
     .slider {
       display: none;
       padding-bottom: 132px;
-      width: 688px;
     }
   }
 }
