@@ -44,4 +44,20 @@
   .m-grid-element:hover .grid-hover {
     display: block;
   }
+
+  .m-form {
+    .slider {
+      display: none;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .no-touchevents {
+    .m-form {
+      .slider {
+        display: block;
+      }
+    }
+  }
 }

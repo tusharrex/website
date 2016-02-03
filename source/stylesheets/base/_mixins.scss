@@ -206,6 +206,11 @@ $images:
   left: $left;
 }
 
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
 @mixin transform($transformation) {
   -webkit-transform: $transformation;
   -ms-transform: $transformation;

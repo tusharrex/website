@@ -74,11 +74,16 @@
       color: $damask-red;
       margin: 0;
       text-align: center;
-
       @include input-placeholder {
         color: $damask-red;
-        text-align: center;
-      };
+      }
+
+      &:focus {
+        @include input-placeholder {
+          color: transparent;
+          text-align: center;
+        };
+      }
     }
   }
 
@@ -110,18 +115,95 @@
     width: 100%;
   }
 
-  .slider-circle-small {
+  .slider-circle {
     background: $breaker-bay-green;
     border: 4px solid $martinique-dark;
     border-radius: 50%;
-    height: 10px;
     position: absolute;
+  }
+
+  .slider-circle-small {
+    @include size(10px, 10px);
     top: -3px;
-    width: 10px;
+  }
+
+  .slider-circle-medium {
+    @include size(14px, 14px);
+    top: -6px;
+  }
+
+  .slider-circle-large {
+    @include size(18px, 18px);
+    top: -8px;
+  }
+
+  .range-1 {
+    left: 12.5%;
+  }
+
+  .range-2 {
+    left: 25%;
+  }
+
+  .range-3 {
+    left: 37.5%;
+  }
+
+  .range-5 {
+    left: 62.5%;
+  }
+
+  .range-6 {
+    left: 75%;
+  }
+
+  .range-7 {
+    left: 87.5%;
   }
 
   .slider-amount {
+    font-size: 16px;
     position: absolute;
+    top: 14px;
+  }
+
+  .amount-1 {
+    left: 10%;
+  }
+
+  .amount-2 {
+    left: 22.5%;
+  }
+
+  .amount-3 {
+    left: 35.5%;
+  }
+
+  .amount-4 {
+    left: 46%;
+  }
+
+  .amount-5 {
+    left: 59.5%;
+  }
+
+  .amount-6 {
+    left: 72.5%;
+  }
+
+  .amount-7 {
+    left: 85%;
+  }
+
+  .amount-8 {
+    left: 95%;
+  }
+
+  .slider-move {
+    width: 44px;
+    display: inline-block;
+    position: relative;
+    top: 38px;
   }
 }
 
@@ -161,9 +243,9 @@
     }
 
     .slider {
-      display: block;
+      display: none;
       padding-bottom: 132px;
-      width: 696px;
+      width: 688px;
     }
   }
 }
