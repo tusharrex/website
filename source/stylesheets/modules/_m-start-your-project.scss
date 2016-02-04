@@ -14,6 +14,10 @@
     @include place-svg(137, 169, 87, 47);
     width: 33px;
   }
+
+  .m-cq-main-logo__submarine {
+    display: none;
+  }
 }
 
 @media #{$breakpoint-tablet} {
@@ -23,6 +27,11 @@
     .paper-plane {
       display: block;
     }
+
+    .m-cq-main-logo__submarine {
+      @include place-svg(184, 169, 0, 21.7);
+      display: block;
+    }
   }
 }
 
@@ -30,6 +39,18 @@
   .m-star-your-project {
     .m-cq-main-logo__octopus2 {
       @include place-svg(57.3, 169, 103, 41);
+    }
+
+    .m-cq-main-logo__submarine {
+      @include place-svg(265, 169, -12, 22.7);
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-star-your-project {
+    .m-cq-main-logo__submarine {
+      @include place-svg(265, 169, -16, 22.7);
     }
   }
 }
