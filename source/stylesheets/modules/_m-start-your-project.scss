@@ -1,5 +1,5 @@
 .m-star-your-project {
-  padding: 35px 0 132px;
+  padding: 35px 0 0;
 
   .paper-plane {
     @include place-svg-normal(26vw, 71%, 37.7%);
@@ -26,18 +26,23 @@
       fill: $breaker-bay-green;
     }
   }
+
+  .station {
+    bottom: -5px;
+    position: absolute;
+  }
 }
 
 @media #{$breakpoint-tablet} {
   .m-star-your-project {
-    padding-top: 86px;
+    padding: 86px 0 0;
 
     .paper-plane {
       display: block;
     }
 
     .submarine {
-      @include place-svg-normal(144px, 0, 68.7%);
+      @include place-svg-normal(144px, 0, 72.7%);
 
       display: block;
     }
@@ -53,6 +58,10 @@
 
       display: block;
     }
+
+    .station {
+      left: 5%;
+    }
   }
 }
 
@@ -63,7 +72,7 @@
     }
 
     .submarine {
-      @include place-svg-normal(164px, -79px, 68.7%);
+      @include place-svg-normal(164px, -79px, 72.7%);
     }
   }
 }
@@ -71,7 +80,7 @@
 @media #{$breakpoint-desktop-large} {
   .m-star-your-project {
     .submarine {
-      @include place-svg-normal(184px, -129px, 68.7%);
+      @include place-svg-normal(184px, -129px, 72.7%);
     }
   }
 }
