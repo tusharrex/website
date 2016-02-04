@@ -20,6 +20,7 @@ with_layout :website do
   page '/thank-you.html'
   page '/work.html'
   page '/start-your-project.html'
+  page '/ventures.html'
 end
 
 # Reload the browser automatically whenever files change
