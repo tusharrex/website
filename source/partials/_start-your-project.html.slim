@@ -7,9 +7,9 @@
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
     .m-form.relative
-      .m-cq-main-logo__octopus2
+      .octopus-bubble
         = partial 'svg/octopus2'
-      .m-cq-main-logo__submarine
+      .submarine
         = partial 'svg/submarine'
 
       fieldset.form-fieldset
@@ -35,7 +35,7 @@
           input.form-input type='text' placeholder='$2,000'
           .dash
           input.form-input type='text' placeholder='$70,000'
-        .m-slider
+        .m-slider.relative
           .slider-axis
           .slider-points-container
             .slider-point
@@ -70,6 +70,9 @@
             = partial 'svg/start_project/slider_move'
           .slider-move
             = partial 'svg/start_project/slider_move'
+
+          .octopus
+            = partial 'svg/octopus3'
 
       fieldset.form-fieldset.relative
         button.btn.form-button Start Your Project

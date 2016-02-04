@@ -10,12 +10,16 @@
     z-index: -1;
   }
 
-  .m-cq-main-logo__octopus2 {
+  .octopus-bubble {
     @include place-svg(137, 169, 87, 47);
     width: 33px;
   }
 
-  .m-cq-main-logo__submarine {
+  .submarine {
+    display: none;
+  }
+
+  .octopus {
     display: none;
   }
 }
@@ -28,8 +32,13 @@
       display: block;
     }
 
-    .m-cq-main-logo__submarine {
+    .submarine {
       @include place-svg(184, 169, 0, 21.7);
+      display: block;
+    }
+
+    .octopus {
+      @include place-svg(58, 169, 47.7, 66);
       display: block;
     }
   }
@@ -37,11 +46,11 @@
 
 @media #{$breakpoint-desktop} {
   .m-star-your-project {
-    .m-cq-main-logo__octopus2 {
+    .octopus-bubble {
       @include place-svg(57.3, 169, 103, 41);
     }
 
-    .m-cq-main-logo__submarine {
+    .submarine {
       @include place-svg(265, 169, -12, 22.7);
     }
   }
@@ -49,7 +58,7 @@
 
 @media #{$breakpoint-desktop-large} {
   .m-star-your-project {
-    .m-cq-main-logo__submarine {
+    .submarine {
       @include place-svg(265, 169, -16, 22.7);
     }
   }
