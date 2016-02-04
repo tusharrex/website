@@ -2,3 +2,31 @@
   @include stroke();
   fill: $deep-sea-green;
 }
+
+.st-paper-plane-0 {
+  fill: $breaker-bay-green;
+}
+
+.st-paper-plane-1 {
+  fill: $martinique-dark;
+}
+
+.st-paper-plane-2 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-paper-plane-3 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $breaker-bay-green;
+}
+
+.st-paper-plane-4 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-paper-plane-5 {
+  @include stroke($linecap: round, $linejoin: round, $dasharray: 16.1135 16.1135);
+  fill: none;
+}

@@ -4,12 +4,14 @@
   $width: 4,
   $miterlimit: 10,
   $linecap: null,
-  $linejoin: null) {
+  $linejoin: null,
+  $dasharray: null) {
   stroke: $stroke;
   stroke-width: $width;
   stroke-miterlimit: $miterlimit;
   stroke-linecap: $linecap;
   stroke-linejoin: $linejoin;
+  stroke-dasharray: $dasharray;
 }
 
 $letters-width: 1146.4;

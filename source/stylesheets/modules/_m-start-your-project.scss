@@ -1,9 +1,22 @@
 .m-star-your-project {
   padding: 35px 0 132px;
+
+  .paper-plane {
+    bottom: 36.7%;
+    display: none;
+    left: 71%;
+    position: absolute;
+    width: 26vw;
+    z-index: -1;
+  }
 }
 
 @media #{$breakpoint-tablet} {
   .m-star-your-project {
     padding-top: 86px;
+
+    .paper-plane {
+      display: block;
+    }
   }
 }
