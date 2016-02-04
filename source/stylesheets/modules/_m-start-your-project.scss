@@ -3,6 +3,7 @@
 
   .paper-plane {
     @include place-svg-normal(26vw, 71%, 37.7%);
+
     display: none;
     z-index: -1;
   }
