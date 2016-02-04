@@ -36,6 +36,13 @@ $logo-height: 172;
   height: calc-percent($height, $logo-height);
 }
 
+@mixin place-svg-normal($width, $left, $bottom) {
+  position: absolute;
+  width: $width;
+  left: $left;
+  bottom: $bottom;
+}
+
 $base-font-size: 12px;
 
 @mixin font-size($font-size) {

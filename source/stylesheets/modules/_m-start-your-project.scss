@@ -2,17 +2,13 @@
   padding: 35px 0 132px;
 
   .paper-plane {
-    bottom: 36.7%;
+    @include place-svg-normal(26vw, 71%, 37.7%);
     display: none;
-    left: 71%;
-    position: absolute;
-    width: 26vw;
     z-index: -1;
   }
 
   .octopus-bubble {
-    @include place-svg(137, 169, 87, 47);
-    width: 33px;
+    @include place-svg-normal(38px, 86%, 91.7%);
   }
 
   .submarine {
@@ -21,6 +17,14 @@
 
   .octopus {
     display: none;
+  }
+
+  .fish {
+    display: none;
+
+    .st-fish-in-u-0 {
+      fill: $breaker-bay-green;
+    }
   }
 }
 
@@ -33,12 +37,20 @@
     }
 
     .submarine {
-      @include place-svg(184, 169, 0, 21.7);
+      @include place-svg-normal(144px, 0, 68.7%);
+
       display: block;
     }
 
     .octopus {
-      @include place-svg(58, 169, 47.7, 66);
+      @include place-svg-normal(39px, 47.4%, 94.7%);
+
+      display: block;
+    }
+
+    .fish {
+      @include place-svg-normal(32px, -1%, 92.7%);
+
       display: block;
     }
   }
@@ -47,11 +59,11 @@
 @media #{$breakpoint-desktop} {
   .m-star-your-project {
     .octopus-bubble {
-      @include place-svg(57.3, 169, 103, 41);
+      @include place-svg-normal(38px, 104%, 88%);
     }
 
     .submarine {
-      @include place-svg(265, 169, -12, 22.7);
+      @include place-svg-normal(164px, -79px, 68.7%);
     }
   }
 }
@@ -59,7 +71,7 @@
 @media #{$breakpoint-desktop-large} {
   .m-star-your-project {
     .submarine {
-      @include place-svg(265, 169, -16, 22.7);
+      @include place-svg-normal(184px, -129px, 68.7%);
     }
   }
 }
