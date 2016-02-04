@@ -9,7 +9,6 @@
 @import 'base/devices';
 @import 'base/icons';
 @import 'base/wrapper';
-@import 'base/no-touchevents';
 @import 'base/backgrounds';
 
 @import 'layouts/l-landing-page';
@@ -40,6 +39,8 @@
 @import 'modules/m-start-your-project';
 @import 'modules/m-form';
 @import 'modules/m-thank-you';
+@import 'modules/m-slider';
 
 @import 'states/s-contact-section';
 @import 'states/s-work';
+@import 'states/s-start-your-project';
