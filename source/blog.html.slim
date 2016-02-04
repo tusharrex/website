@@ -1,9 +1,9 @@
 ---
 pageable: true
 ---
-= partial 'partials/website_header', locals: {title: 'Posts &amp; Thoughts'}
+= partial 'partials/website_header', locals: {title: data.blog.title}
 = partial 'partials/header_subtitle', locals: \
-  {subtitle: 'We write about clean code, project management and startups'}
+  {subtitle: data.blog.subtitle}
 .m-grid-collection
   - page_articles.each do |article|
     .m-grid-item
