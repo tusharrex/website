@@ -31,6 +31,10 @@
     bottom: -5px;
     position: absolute;
   }
+
+  .whale {
+    display: none;
+  }
 }
 
 @media #{$breakpoint-tablet} {
@@ -61,6 +65,13 @@
 
     .station {
       left: 5%;
+    }
+
+    .whale {
+      @include place-svg-normal(84px, 94%, -11px);
+      @include transform(scaleX(-1));
+
+      display: block;
     }
   }
 }
