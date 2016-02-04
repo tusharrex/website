@@ -9,6 +9,11 @@
     width: 26vw;
     z-index: -1;
   }
+
+  .m-cq-main-logo__octopus2 {
+    @include place-svg(137, 169, 87, 47);
+    width: 33px;
+  }
 }
 
 @media #{$breakpoint-tablet} {
@@ -17,6 +22,14 @@
 
     .paper-plane {
       display: block;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-star-your-project {
+    .m-cq-main-logo__octopus2 {
+      @include place-svg(57.3, 169, 103, 41);
     }
   }
 }
