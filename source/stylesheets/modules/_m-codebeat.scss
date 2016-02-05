@@ -33,10 +33,27 @@
 
   .codebeat-dashboard {
     background: url('/images/codebeat_dashboard.png') no-repeat;
+    background-position: 0 15px;
     background-size: cover;
     height: 300px;
     margin-top: 40px;
     max-width: 630px;
     width: 100%;
+  }
+}
+
+@media #{$only-mobile-large} {
+  .m-codebeat {
+    .codebeat-dashboard {
+      background-position: 0 20px;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-codebeat {
+    .codebeat-dashboard {
+      background-position: 0 27px;
+    }
   }
 }
