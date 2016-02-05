@@ -78,7 +78,13 @@
             = partial 'svg/start_project/slider_move'
 
       fieldset.form-fieldset.relative
-        button.btn.form-button Start Your Project
+        input.btn.form-button.permanent_color(
+          data-js='submit' type='submit'
+          value='Start Your Project')
+        input type='hidden' name='_next' value='/thank-you'
+        input(type='hidden' name='_subject'
+          value='Start project with codequest!')
+        input.hidden type='text' name='_gotcha'
         .paper-plane
           = partial 'svg/start_project/paper_plane'
 
