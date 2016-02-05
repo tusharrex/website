@@ -1,0 +1,86 @@
+.m-star-your-project
+  .wrapper
+    .m-paragraph
+      |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+    form.m-form.relative
+      .octopus-bubble
+        = partial 'svg/octopus2'
+      .submarine
+        = partial 'svg/submarine'
+
+      fieldset.form-fieldset
+        .form-legend About You
+        label.form-label Name:
+        input.form-input type='text' placeholder='Type your name here.'
+        label.form-label Email address:
+        input.form-input type='text' placeholder='We will keep it safe. \
+                                                  We promise!'
+
+      fieldset.form-fieldset
+        .form-legend
+          | Description:
+          .subtitle Describe the project, requirements and objectives.
+        textarea.form-textarea type='textarea' placeholder='Share with us any \
+                    information that might help us to respond to your request.'
+
+      fieldset.form-fieldset
+        .form-legend
+          | Budget:
+          .subtitle Providing a budget will help us ensure expectations are met.
+        .amount-inputs
+          input.form-input type='text' placeholder='$2,000'
+          .dash
+          input.form-input type='text' placeholder='$70,000'
+        .m-slider.relative
+          .slider-axis
+            .fish
+              = partial 'svg/fish_in_u'
+            .octopus
+              = partial 'svg/octopus3'
+            .whale
+              = partial 'svg/whale'
+          .slider-points-container
+            .slider-point
+              .slider-circle.slider-circle-small
+              .slider-amount $0
+            .slider-point
+              .slider-circle.slider-circle-small
+              .slider-amount $2,000
+            .slider-point
+              .slider-circle.slider-circle-medium
+              .slider-amount $5,000
+            .slider-point
+              .slider-circle.slider-circle-large
+              .slider-amount $8,000
+            .slider-point
+              .slider-circle.slider-circle-small
+              .slider-amount $10,000
+            .slider-point
+              .slider-circle.slider-circle-small
+              .slider-amount $20,000
+            .slider-point
+              .slider-circle.slider-circle-medium
+              .slider-amount $50,000
+            .slider-point
+              .slider-circle.slider-circle-large
+              .slider-amount $80,000
+            .slider-point
+              .slider-circle.slider-circle-small
+              .slider-amount $100,000
+
+          .slider-move
+            = partial 'svg/start_project/slider_move'
+          .slider-move
+            = partial 'svg/start_project/slider_move'
+
+      fieldset.form-fieldset.relative
+        button.btn.form-button Start Your Project
+        .paper-plane
+          = partial 'svg/start_project/paper_plane'
+
+      .station
+        = partial 'svg/station'

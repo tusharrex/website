@@ -1,0 +1,92 @@
+.m-slider {
+  display: none;
+  margin: 0 auto;
+  padding: 24px 0 200px;
+  width: 100%;
+
+  .slider-title {
+    color: $damask-red;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .slider-axis {
+    background: $martinique-dark;
+    height: 4px;
+    margin: 0 auto;
+    position: relative;
+    width: 644px;
+  }
+
+  .slider-points-container {
+    @include flex-flow(row, wrap);
+    @include flex-justify-content(space-around);
+
+    margin: 0 auto;
+    position: relative;
+    top: -7px;
+    width: 730px;
+  }
+
+  .slider-point {
+    @include flex-flow(column, wrap);
+    @include flex-justify-content(space-between);
+
+    text-align: center;
+    width: 60px;
+  }
+
+  .slider-circle {
+    background: $breaker-bay-green;
+    border: 4px solid $martinique-dark;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .slider-circle-small {
+    @include size(10px, 10px);
+  }
+
+  .slider-circle-medium {
+    @include size(14px, 14px);
+    top: -2px;
+  }
+
+  .slider-circle-large {
+    @include size(18px, 18px);
+    top: -4px;
+  }
+
+  .slider-amount {
+    font-size: 16px;
+  }
+
+  .slider-move {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    width: 44px;
+  }
+}
+
+// Styles here apply to non-touchscreen devices only.
+.no-touchevents {
+  .m-slider {
+    display: none;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-slider {
+    display: none;
+    padding-bottom: 167px;
+  }
+
+  // Styles here apply to non-touchscreen devices only.
+  .no-touchevents {
+    .m-slider {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.m-form {
+  color: $martinique-dark;
+  font-family: $alega-bold;
+  font-size: 18px;
+  padding-bottom: 132px;
+
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: $deep-sea-green;
+    outline: none;
+
+    @include input-placeholder {
+      color: transparent;
+    };
+  }
+
+  .form-fieldset {
+    border: 0;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .form-input,
+  .form-textarea {
+    background: $light-gray;
+    border: 4px solid $martinique-dark;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .form-input {
+    padding: 22px 12px;
+  }
+
+  .form-textarea {
+    height: 205px;
+    padding: 15px 12px;
+  }
+
+  .form-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .form-legend,
+  .subtitle {
+    text-align: center;
+  }
+
+  .form-legend {
+    font-size: 44px;
+    margin-bottom: 26px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .amount-inputs {
+    color: $damask-red;
+    font-size: 18px;
+    margin: -12px 0 12px;
+
+    .form-input {
+      color: $damask-red;
+      margin: 0;
+      text-align: center;
+
+      @include input-placeholder {
+        color: $damask-red;
+      }
+    }
+
+    .form-input:focus {
+      @include input-placeholder {
+        color: transparent;
+        text-align: center;
+      };
+    }
+  }
+
+  .dash {
+    background: $damask-red;
+    border-radius: 4px;
+    height: 4px;
+    margin: 26px auto;
+    width: 8px;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-form {
+    margin: 0 auto;
+    max-width: 805px;
+    padding-bottom: 185px;
+
+    .amount-inputs {
+      margin: 0 0 100px;
+
+      .form-input,
+      .dash {
+        display: inline-block;
+      }
+
+      .form-input {
+        width: 47%;
+      }
+
+      .dash {
+        margin: 0 2%;
+      }
+    }
+
+    .form-legend {
+      font-size: 74px;
+      margin-bottom: 15px;
+    }
+
+    .form-fieldset {
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      margin-top: 3px;
+    }
+  }
+}

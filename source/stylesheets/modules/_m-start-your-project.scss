@@ -1,0 +1,98 @@
+.m-star-your-project {
+  padding: 35px 0 0;
+
+  .paper-plane {
+    @include place-svg-normal(26vw, 71%, 37.7%);
+
+    display: none;
+    z-index: -1;
+  }
+
+  .octopus-bubble {
+    @include place-svg-normal(38px, 86%, 91.7%);
+  }
+
+  .submarine {
+    display: none;
+  }
+
+  .octopus {
+    display: none;
+  }
+
+  .fish {
+    display: none;
+
+    .st-fish-in-u-0 {
+      fill: $breaker-bay-green;
+    }
+  }
+
+  .station {
+    bottom: -5px;
+    position: absolute;
+  }
+
+  .whale {
+    display: none;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-star-your-project {
+    padding: 86px 0 0;
+
+    .paper-plane {
+      display: block;
+    }
+
+    .submarine {
+      @include place-svg-normal(144px, 0, 72.7%);
+
+      display: block;
+    }
+
+    .octopus {
+      @include place-svg-normal(39px, 47.4%, 94.7%);
+
+      display: block;
+    }
+
+    .fish {
+      @include place-svg-normal(32px, -1%, 92.7%);
+
+      display: block;
+    }
+
+    .station {
+      left: 5%;
+    }
+
+    .whale {
+      @include place-svg-normal(84px, 94%, -11px);
+      @include transform(scaleX(-1));
+
+      display: block;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-star-your-project {
+    .octopus-bubble {
+      @include place-svg-normal(38px, 104%, 88%);
+    }
+
+    .submarine {
+      @include place-svg-normal(164px, -79px, 72.7%);
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-star-your-project {
+    .submarine {
+      @include place-svg-normal(184px, -129px, 72.7%);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.m-content-heading {
+  font-family: $alega-bold;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  &.smaller-margin {
+    margin-bottom: 5px;
+  }
+}

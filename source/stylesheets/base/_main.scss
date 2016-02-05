@@ -77,3 +77,21 @@
 .is-current-color {
   fill: currentColor;
 }
+
+.relative {
+  position: relative;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.middle {
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+}
