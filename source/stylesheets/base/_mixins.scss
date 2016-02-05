@@ -4,7 +4,7 @@
   $width: 4,
   $miterlimit: 10,
   $linecap: null,
-  $linejoin: null,
+  $linejoin: null, 
   $dasharray: null) {
   stroke: $stroke;
   stroke-width: $width;
@@ -92,11 +92,11 @@ $base-font-size: 12px;
   display: inline-block;
   font-size: 30px;
   font-family: $alega;
-  padding: 15px 40px;
+  padding: 15px 5px;
   position: relative;
   text-align: center;
   text-decoration: none;
-  width: 320px;
+  width: 290px;
 }
 
 @mixin button-hover($base-color,

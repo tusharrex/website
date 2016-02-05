@@ -17,6 +17,32 @@
       @include button-with-color;
     }
   }
+
+  // Styles here apply to non-touchscreen devices only.
+  .no-touchevents {
+
+    &.btn-grey-sea-green {
+      @include button-hover($deep-sea-green);
+    }
+
+    &.btn-maroon-red {
+      @include button-hover($maroon-red);
+    }
+
+    &.btn-indian-yellow {
+      @include button-hover($indian-yellow-2);
+    }
+
+    &.btn-breaker-bay-green {
+      @include button-hover($breaker-bay-green);
+    }
+
+    @media #{$breakpoint-tablet} {
+      &.with_color {
+        @include button-with-color-states;
+      }
+    }
+  }
 }
 
 
