@@ -1,4 +1,5 @@
-= partial 'partials/website_header', locals: {title: 'Join Our Crew'}
+= partial 'partials/website_header', locals: \
+  {title: data.join_our_crew.title}
 = partial 'partials/header_subtitle', locals: \
-  {subtitle: 'Great team beats with one heart'}
+  {subtitle: data.join_our_crew.subtitle}
 = partial 'partials/join_our_crew_content'

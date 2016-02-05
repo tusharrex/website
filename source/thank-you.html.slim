@@ -1,4 +1,4 @@
-= partial 'partials/website_header', locals: {title: 'Thank You'}
+= partial 'partials/website_header', locals: {title: data.thank_you.title}
 = partial 'partials/header_subtitle', locals: \
-  {subtitle: 'We\'ve received your inquiry. You rock!'}
+  {subtitle: data.thank_you.subtitle}
 = partial 'partials/thank_you'

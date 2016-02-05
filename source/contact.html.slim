@@ -1,6 +1,5 @@
-= partial 'partials/website_header', locals: {title: 'Say hello'}
-= partial 'partials/header_subtitle', locals: \
-  {subtitle: 'Hey, come in for a coffee.'}
+= partial 'partials/website_header', locals: {title: data.contact.title}
+= partial 'partials/header_subtitle', locals: {subtitle: data.contact.subtitle}
 = partial 'partials/contact'
 .m-start-project.indian-yellow
   = partial 'partials/start_project'
