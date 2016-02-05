@@ -6,7 +6,12 @@
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
-    .m-form
+    form.m-form.relative
+      .octopus-bubble
+        = partial 'svg/octopus2'
+      .submarine
+        = partial 'svg/submarine'
+
       fieldset.form-fieldset
         .form-legend About You
         label.form-label Name:
@@ -30,8 +35,14 @@
           input.form-input type='text' placeholder='$2,000'
           .dash
           input.form-input type='text' placeholder='$70,000'
-        .m-slider
+        .m-slider.relative
           .slider-axis
+            .fish
+              = partial 'svg/fish_in_u'
+            .octopus
+              = partial 'svg/octopus3'
+            .whale
+              = partial 'svg/whale'
           .slider-points-container
             .slider-point
               .slider-circle.slider-circle-small
@@ -66,5 +77,10 @@
           .slider-move
             = partial 'svg/start_project/slider_move'
 
-      fieldset.form-fieldset
+      fieldset.form-fieldset.relative
         button.btn.form-button Start Your Project
+        .paper-plane
+          = partial 'svg/start_project/paper_plane'
+
+      .station
+        = partial 'svg/station'

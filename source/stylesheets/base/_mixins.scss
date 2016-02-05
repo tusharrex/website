@@ -4,12 +4,14 @@
   $width: 4,
   $miterlimit: 10,
   $linecap: null,
-  $linejoin: null) {
+  $linejoin: null,
+  $dasharray: null) {
   stroke: $stroke;
   stroke-width: $width;
   stroke-miterlimit: $miterlimit;
   stroke-linecap: $linecap;
   stroke-linejoin: $linejoin;
+  stroke-dasharray: $dasharray;
 }
 
 $letters-width: 1146.4;
@@ -32,6 +34,13 @@ $logo-height: 172;
   bottom: $bottom * 1%;
   width: calc-percent($width, $logo-width);
   height: calc-percent($height, $logo-height);
+}
+
+@mixin place-svg-normal($width, $left, $bottom) {
+  position: absolute;
+  width: $width;
+  left: $left;
+  bottom: $bottom;
 }
 
 $base-font-size: 12px;
