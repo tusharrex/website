@@ -132,10 +132,6 @@ $base-font-size: 12px;
       box-shadow: 0 -4px $supplementary-color;
     }
   }
-
-  @media #{$breakpoint-tablet} {
-    width: 320px;
-  }
 }
 
 @mixin link-button($font-size, $text-transform,

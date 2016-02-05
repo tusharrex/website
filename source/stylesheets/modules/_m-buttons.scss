@@ -17,10 +17,12 @@
       @include button-with-color;
     }
   }
+}
 
-  // Styles here apply to non-touchscreen devices only.
-  .no-touchevents {
+// Styles here apply to non-touchscreen devices only.
+.no-touchevents {
 
+  .btn {
     &.btn-grey-sea-green {
       @include button-hover($deep-sea-green);
     }
