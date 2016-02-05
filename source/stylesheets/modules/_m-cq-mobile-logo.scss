@@ -3,6 +3,7 @@
 .m-cq-mobile-logo {
   color: $martinique-dark;
   margin: 0 auto;
+  max-width: 27vh;
   position: relative;
   width: 47vw;
 
@@ -55,8 +56,15 @@
   }
 }
 
+@media #{$mobile-landscape} {
+  .m-cq-mobile-logo {
+    max-width: 31vh;
+  }
+}
+
 @media #{$only-mobile-large} {
   .m-cq-mobile-logo {
+    max-width: 31vh;
     width: 39.6vw;
 
     .gopher {

@@ -1,0 +1,94 @@
+.m-codebeat {
+  .column-left,
+  .column-right {
+    @include flex-flow(column, wrap);
+    align-items: center;
+  }
+
+  .codebeat-logo {
+    background: url('/images/codebeat_logo.svg') no-repeat;
+    background-size: contain;
+    height: 68px;
+    width: 272.6px;
+  }
+
+  .codebeat-slogan {
+    color: $docker-blue;
+    font-family: $alega-bold;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 26px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .codebeat-description {
+    color: $martinique-dark;
+    font-family: $courier;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-left: 2px;
+    text-align: justify;
+    text-indent: 23px;
+  }
+
+  .codebeat-dashboard {
+    background: url('/images/codebeat_dashboard.png') no-repeat;
+    background-position: 0 15px;
+    background-size: cover;
+    height: 300px;
+    margin-top: 40px;
+    max-width: 630px;
+    width: 100%;
+  }
+}
+
+@media #{$only-mobile-large} {
+  .m-codebeat {
+    .codebeat-dashboard {
+      background-position: 0 20px;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-codebeat {
+    @include flex-flow(row, wrap);
+
+    .column-left,
+    .column-right {
+      align-items: flex-start;
+      width: 50%;
+    }
+
+    .codebeat-logo {
+      max-width: 410px;
+      width: 88%;
+    }
+
+    .codebeat-slogan {
+      font-size: 26px;
+      padding-top: 42px;
+      text-align: initial;
+    }
+
+    .codebeat-description {
+      font-size: 19px;
+      letter-spacing: .5px;
+      line-height: 29px;
+      padding-left: 0;
+      width: 88%;
+
+      &:first-of-type {
+        padding-top: 20px;
+      }
+    }
+
+    .codebeat-dashboard {
+      background-position: 0 27px;
+      flex: 1;
+      margin: 0;
+    }
+  }
+}

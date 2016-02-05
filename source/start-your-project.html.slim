@@ -1,4 +1,5 @@
-= partial 'partials/website_header', locals: {title: 'Start Your Project'}
+= partial 'partials/website_header', locals: \
+  {title: data.start_your_project.title}
 = partial 'partials/header_subtitle', locals: \
-  {subtitle: 'We craft exquisite products'}
+  {subtitle: data.start_your_project.subtitle}
 = partial 'partials/start-your-project'

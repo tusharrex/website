@@ -4,6 +4,7 @@ $tablet: 'screen and (min-width: 768px) and (max-width: 996px)';
 
 $only-mobile-large: 'screen and (min-width: 480px) and (max-width: 767px)';
 $mobile: 'screen and (min-width: 0px) and (max-width: 767px)';
+$mobile-landscape: 'only screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape)';
 
 // MOBILE FIRST
 
