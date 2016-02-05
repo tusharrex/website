@@ -54,12 +54,41 @@
 
 @media #{$breakpoint-tablet} {
   .m-codebeat {
+    @include flex-flow(row, wrap);
+
+    .column-left,
+    .column-right {
+      align-items: flex-start;
+      width: 50%;
+    }
+
     .codebeat-logo {
-      width: 410px;
+      max-width: 410px;
+      width: 88%;
+    }
+
+    .codebeat-slogan {
+      font-size: 26px;
+      padding-top: 42px;
+      text-align: initial;
+    }
+
+    .codebeat-description {
+      font-size: 19px;
+      letter-spacing: .5px;
+      line-height: 29px;
+      padding-left: 0;
+      width: 88%;
+
+      &:first-of-type {
+        padding-top: 20px;
+      }
     }
 
     .codebeat-dashboard {
       background-position: 0 27px;
+      flex: 1;
+      margin: 0;
     }
   }
 }
