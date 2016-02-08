@@ -38,8 +38,9 @@
         .form-legend
           | Budget
           .subtitle Providing a budget will help us ensure expectations are met.
+        .amount $5000 - $20000
         .amount-inputs
-          select.form-input.form-select(type='text' name='budget-min'
+          select.form-input.form-select(data-js='select-min' type='text' name='budget-min'
           placeholder='$2,000')
             option $0
             option $2,000
@@ -97,9 +98,6 @@
               .slider-circle.slider-circle-small
               .slider-amount $100,000
 
-          p
-            label for="amount"  Price range:
-            input#amount readonly="" style=("border:0; color:#f6931f; font-weight:bold;") type="text" /
           #slider-range.slider-range
 
       fieldset.form-fieldset.relative

@@ -11,8 +11,16 @@ $ ->
     ]
 
     slide: (event, ui) ->
-      $('#amount').val '$' + PRICES[ui.values[0]] + \
-          ' - $' + PRICES[ui.values[1]]
+      $('.amount').html('$' + PRICES[ui.values[0]] + \
+          ' - $' + PRICES[ui.values[1]]);
+
+      sliderMin = '$' + PRICES[ui.values[0]]
+      sliderMax = '$' + PRICES[ui.values[1]]
+      selectMin = $('[data-js=select-min]').val()
+      console.log selectMin
+      console.log sliderMin
+      console.log sliderMax
+
       return
 
   return
