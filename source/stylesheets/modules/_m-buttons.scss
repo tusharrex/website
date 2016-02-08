@@ -12,6 +12,10 @@
     width: 218px;
   }
 
+  &.permanent_color {
+    @include button-with-color;
+  }
+
   @media #{$breakpoint-tablet} {
     &.with_color {
       @include button-with-color;
@@ -40,7 +44,8 @@
     }
 
     @media #{$breakpoint-tablet} {
-      &.with_color {
+      &.with_color,
+      &.permanent_color {
         @include button-with-color-states;
       }
     }
