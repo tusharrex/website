@@ -4,6 +4,24 @@
   font-size: 18px;
   padding-bottom: 132px;
 
+  .form-input {
+    padding: 22px 12px;
+
+    &.error {
+      border-color: $damask-red;
+    }
+
+    &.error:focus {
+      border-color: $damask-red;
+    }
+  }
+
+  .error-msg {
+    bottom: -24px;
+    color: $damask-red;
+    position: absolute;
+  }
+
   .form-input:focus,
   .form-textarea:focus {
     border-color: $deep-sea-green;
@@ -33,10 +51,6 @@
     display: block;
     margin-bottom: 32px;
     width: 100%;
-  }
-
-  .form-input {
-    padding: 22px 12px;
   }
 
   .form-textarea {
@@ -69,12 +83,14 @@
 
   .amount-inputs {
     color: $damask-red;
-    font-size: 18px;
+    font-size: 30px;
     margin: -12px 0 12px;
 
     .form-input {
+      @include appearance(none);
       color: $damask-red;
       margin: 0;
+      padding: 15px 0;
       text-align: center;
 
       @include input-placeholder {
@@ -133,6 +149,7 @@
 
     .subtitle {
       margin-top: 3px;
+      text-align: center;
     }
   }
 }
