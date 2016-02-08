@@ -87,6 +87,7 @@
 
   .amount {
     color: $damask-red;
+    display: none;
     font-size: 24px;
     padding: 30px 0 54px;
     text-align: center;
@@ -130,7 +131,10 @@
 .no-touchevents {
   .m-form {
     .amount-inputs {
-      //TO DO: CHANGE NONE
+      display: none;
+    }
+
+    .amount {
       display: block;
     }
   }
