@@ -62,11 +62,26 @@
     font-size: 16px;
   }
 
-  .slider-move {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    width: 44px;
+  .slider-range {
+    margin: 0 auto;
+    width: 672px;
+  }
+
+  .ui-slider-handle.ui-state-default.ui-corner-all {
+    background: url('./icons/slider_move.svg') no-repeat;
+    border: 0;
+    height: 50px;
+    width: 45px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .ui-widget-header,
+  .ui-widget-content {
+    background: 0;
+    border: 0;
   }
 }
 

@@ -7,7 +7,7 @@
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
     form#contact-form.m-form.relative(
-      action='//formspree.io/adam.mankowski@codequest.com' method='POST')
+      action='//formspree.io/beata@codequest.com' method='POST')
       .octopus-bubble
         = partial 'svg/octopus2'
       .submarine
@@ -39,7 +39,8 @@
           | Budget
           .subtitle Providing a budget will help us ensure expectations are met.
         .amount-inputs
-          select.form-input.form-select type='text' name='budget-min' placeholder='$2,000'
+          select.form-input.form-select(type='text' name='budget-min'
+          placeholder='$2,000')
             option $0
             option $2,000
             option $5,000
@@ -49,7 +50,8 @@
             option $50,000
             option $80,000
           .dash
-          select.form-input.form-select type='text' name='budget-max' placeholder='$70,000'
+          select.form-input.form-select(type='text' name='budget-max'
+          placeholder='$70,000')
             option $2,000
             option $5,000
             option $8,000
@@ -95,10 +97,10 @@
               .slider-circle.slider-circle-small
               .slider-amount $100,000
 
-          .slider-move
-            = partial 'svg/start_project/slider_move'
-          .slider-move
-            = partial 'svg/start_project/slider_move'
+          p
+            label for="amount"  Price range:
+            input#amount readonly="" style=("border:0; color:#f6931f; font-weight:bold;") type="text" /
+          #slider-range.slider-range
 
       fieldset.form-fieldset.relative
         input.btn.form-button(data-js='submit' type='submit'
