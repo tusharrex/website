@@ -6,7 +6,8 @@
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
-    form.m-form.relative
+    form#contact-form.m-form.relative(
+      action='//formspree.io/adam.mankowski@codequest.com' method='POST')
       .octopus-bubble
         = partial 'svg/octopus2'
       .submarine
@@ -14,27 +15,49 @@
 
       fieldset.form-fieldset
         .form-legend About You
-        label.form-label Name:
-        input.form-input type='text' placeholder='Type your name here.'
-        label.form-label Email address:
-        input.form-input type='text' placeholder='We will keep it safe. \
-                                                  We promise!'
+        .relative
+          label.form-label Name:
+          input.form-input(data-js='name' type='text'
+            name='name' placeholder='Type your name here.')
+          .error-msg.hidden Name is invalid.
+        .relative
+          label.form-label Email address:
+          input.form-input(data-js='email' type='text' name='_reply_to'
+            placeholder='We will keep it safe.We promise!')
+          .error-msg.hidden Email is invalid.
 
       fieldset.form-fieldset
         .form-legend
-          | Description:
+          | Description
           .subtitle Describe the project, requirements and objectives.
-        textarea.form-textarea type='textarea' placeholder='Share with us any \
-                    information that might help us to respond to your request.'
+        textarea.form-textarea(type='textarea' name='description'
+          placeholder='Share with us any information that might help us to \
+          respond to your request.')
 
       fieldset.form-fieldset
         .form-legend
-          | Budget:
+          | Budget
           .subtitle Providing a budget will help us ensure expectations are met.
         .amount-inputs
-          input.form-input type='text' placeholder='$2,000'
+          select.form-input type='text' name='budget-min' placeholder='$2,000'
+            option $0
+            option $2,000
+            option $5,000
+            option $8,000
+            option $10,000
+            option $20,000
+            option $50,000
+            option $80,000
           .dash
-          input.form-input type='text' placeholder='$70,000'
+          select.form-input type='text' name='budget-max' placeholder='$70,000'
+            option $2,000
+            option $5,000
+            option $8,000
+            option $10,000
+            option $20,000
+            option $50,000
+            option $80,000
+            option $100,000
         .m-slider.relative
           .slider-axis
             .fish
@@ -78,7 +101,12 @@
             = partial 'svg/start_project/slider_move'
 
       fieldset.form-fieldset.relative
-        button.btn.form-button Start Your Project
+        input.btn.form-button(data-js='submit' type='submit'
+          value='Start Your Project')
+        input type='hidden' name='_next' value='/thank-you'
+        input(type='hidden' name='_subject'
+          value='Start project with codequest!')
+        input.hidden type='text' name='_gotcha'
         .paper-plane
           = partial 'svg/start_project/paper_plane'
 
