@@ -41,6 +41,6 @@ $ ->
     validName()
 
   $('#contact-form').submit (e) ->
-    unless formValid()
-      e.preventDefault()
-      $('.error')[0].focus()
+    return if formValid()
+    e.preventDefault()
+    $('.error')[0].focus()
