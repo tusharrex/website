@@ -63,8 +63,10 @@
   }
 
   .slider-range {
-    margin: 0 auto;
-    width: 672px;
+    left: 28px;
+    position: absolute;
+    top: 46px;
+    width: 652px;
   }
 
   .ui-slider-handle.ui-state-default.ui-corner-all {
