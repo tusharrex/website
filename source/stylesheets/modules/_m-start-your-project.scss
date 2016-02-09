@@ -47,7 +47,7 @@
     }
 
     .submarine {
-      @include place-svg-normal(144px, 0, 71.7%);
+      @include place-svg-normal(144px, 0, 69.7%);
 
       display: block;
     }
@@ -84,7 +84,7 @@
     }
 
     .submarine {
-      @include place-svg-normal(164px, -79px, 71%);
+      @include place-svg-normal(164px, -79px, 69%);
     }
   }
 }
