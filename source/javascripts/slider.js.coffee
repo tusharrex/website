@@ -5,10 +5,7 @@ $ ->
     range: true
     min: 0
     max: 8
-    values: [
-      2
-      5
-    ]
+    values: [2, 5]
 
     slide: (event, ui) ->
       sliderMin = PRICES[ui.values[0]]
