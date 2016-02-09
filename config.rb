@@ -21,6 +21,7 @@ with_layout :website do
   page '/work.html'
   page '/start-your-project.html'
   page '/ventures.html'
+  page '/team.html'
 end
 
 # Reload the browser automatically whenever files change
