@@ -20,7 +20,5 @@ $ ->
           ']').attr('selected', 'selected')
       $('[data-js=select-max] option[value=' + sliderMax +
           ']').attr('selected', 'selected')
-
       return
-
   return
