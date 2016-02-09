@@ -33,7 +33,7 @@
     @include flex-justify-content(space-between);
 
     text-align: center;
-    width: 60px;
+    width: 11%;
   }
 
   .slider-circle {
@@ -62,11 +62,28 @@
     font-size: 16px;
   }
 
-  .slider-move {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    width: 44px;
+  .slider-range {
+    left: 28px;
+    position: absolute;
+    top: 46px;
+    width: 652px;
+  }
+
+  .ui-slider-handle.ui-state-default.ui-corner-all {
+    background: url('./icons/slider_move.svg') no-repeat;
+    border: 0;
+    height: 50px;
+    width: 45px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .ui-widget-header,
+  .ui-widget-content {
+    background: 0;
+    border: 0;
   }
 }
 

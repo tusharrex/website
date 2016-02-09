@@ -38,26 +38,29 @@
         .form-legend
           | Budget
           .subtitle Providing a budget will help us ensure expectations are met.
+        .amount $5000 - $20000
         .amount-inputs
-          select.form-input type='text' name='budget-min' placeholder='$2,000'
-            option $0
-            option $2,000
-            option $5,000
-            option $8,000
-            option $10,000
-            option $20,000
-            option $50,000
-            option $80,000
+          select.form-input.form-select(data-js='select-min' type='text'
+          name='budget-min' placeholder='$2,000')
+            option value='0' $0
+            option value='2000' $2,000
+            option value='5000' $5,000
+            option value='8000' $8,000
+            option value='10000' $10,000
+            option value='20000' $20,000
+            option value='50000' $50,000
+            option value='80000' $80,000
           .dash
-          select.form-input type='text' name='budget-max' placeholder='$70,000'
-            option $2,000
-            option $5,000
-            option $8,000
-            option $10,000
-            option $20,000
-            option $50,000
-            option $80,000
-            option $100,000
+          select.form-input.form-select(data-js='select-max' type='text'
+          name='budget-max' placeholder='$70,000')
+            option value='2000' $2,000
+            option value='5000' $5,000
+            option value='8000' $8,000
+            option value='10000' $10,000
+            option value='20000' $20,000
+            option value='50000' $50,000
+            option value='80000' $80,000
+            option value='100000' $100,000
         .m-slider.relative
           .slider-axis
             .fish
@@ -94,11 +97,7 @@
             .slider-point
               .slider-circle.slider-circle-small
               .slider-amount $100,000
-
-          .slider-move
-            = partial 'svg/start_project/slider_move'
-          .slider-move
-            = partial 'svg/start_project/slider_move'
+            #slider-range.slider-range
 
       fieldset.form-fieldset.relative
         input.btn.form-button.permanent_color(

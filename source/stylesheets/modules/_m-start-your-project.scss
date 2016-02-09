@@ -2,8 +2,7 @@
   padding: 35px 0 0;
 
   .paper-plane {
-    @include place-svg-normal(26vw, 71%, 37.7%);
-
+    @include place-svg-normal(150px, 70%, 37.7%);
     display: none;
     z-index: -1;
   }
@@ -29,6 +28,8 @@
   }
 
   .station {
+    @include size(100px, 132px);
+
     bottom: -5px;
     position: absolute;
   }
@@ -47,7 +48,7 @@
     }
 
     .submarine {
-      @include place-svg-normal(144px, 0, 71.7%);
+      @include place-svg-normal(144px, 0, 69.7%);
 
       display: block;
     }
@@ -56,12 +57,14 @@
       @include place-svg-normal(39px, 47.4%, 94.7%);
 
       display: block;
+      height: 130px;
     }
 
     .fish {
       @include place-svg-normal(32px, -1%, 92.7%);
 
       display: block;
+      height: 42px;
     }
 
     .station {
@@ -73,6 +76,7 @@
       @include transform(scaleX(-1));
 
       display: block;
+      height: 138px;
     }
   }
 }
@@ -84,13 +88,17 @@
     }
 
     .submarine {
-      @include place-svg-normal(164px, -79px, 71%);
+      @include place-svg-normal(164px, -79px, 69%);
     }
   }
 }
 
 @media #{$breakpoint-desktop-large} {
   .m-star-your-project {
+    .paper-plane {
+      @include place-svg-normal(26vw, 71%, 37.7%);
+    }
+
     .submarine {
       @include place-svg-normal(184px, -129px, 72.7%);
     }
