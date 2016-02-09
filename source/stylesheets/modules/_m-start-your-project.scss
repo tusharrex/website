@@ -28,6 +28,8 @@
   }
 
   .station {
+    @include size(100px, 132px);
+
     bottom: -5px;
     position: absolute;
   }
