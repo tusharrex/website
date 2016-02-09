@@ -18,7 +18,7 @@ $ ->
       formatedMaxRange = addDelimeter(sliderMax)
       formatedMinRange = addDelimeter(sliderMin)
 
-      $('.amount').html('$' + formatedMinRange + ' - $' + formatedMaxRange)
+      $('.amount').html("$#{formatedMinRange} - $#{formatedMaxRange}")
 
       $("[data-js=select-min] option[value=#{sliderMin}]").attr(
         "selected", "selected")
