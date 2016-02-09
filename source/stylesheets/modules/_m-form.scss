@@ -128,18 +128,6 @@
   }
 }
 
-.no-touchevents {
-  .m-form {
-    .amount-inputs {
-      display: none;
-    }
-
-    .amount {
-      display: block;
-    }
-  }
-}
-
 @media #{$breakpoint-tablet} {
   .m-form {
     margin: 0 auto;
@@ -175,6 +163,20 @@
     .subtitle {
       margin-top: 3px;
       text-align: center;
+    }
+  }
+
+  .m-form {
+    .amount-inputs {
+      display: none;
+    }
+  }
+
+  .no-touchevents {
+    .m-form {
+      .amount {
+        display: block;
+      }
     }
   }
 }
