@@ -13,9 +13,9 @@ $ ->
 
       $('.amount').html('$' + sliderMin + ' - $' + sliderMax)
 
-      $('[data-js=select-min] option[value=' + sliderMin +
-          ']').attr('selected', 'selected')
-      $('[data-js=select-max] option[value=' + sliderMax +
-          ']').attr('selected', 'selected')
+      $("[data-js=select-min] option[value=#{sliderMin}]").attr(
+        "selected", "selected")
+      $("[data-js=select-max] option[value=#{sliderMax}]").attr(
+        "selected", "selected")
       return
   return
