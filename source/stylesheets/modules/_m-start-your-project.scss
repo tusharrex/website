@@ -2,8 +2,7 @@
   padding: 35px 0 0;
 
   .paper-plane {
-    @include place-svg-normal(26vw, 71%, 37.7%);
-
+    @include place-svg-normal(150px, 70%, 37.7%);
     display: none;
     z-index: -1;
   }
@@ -91,6 +90,10 @@
 
 @media #{$breakpoint-desktop-large} {
   .m-star-your-project {
+    .paper-plane {
+      @include place-svg-normal(26vw, 71%, 37.7%);
+    }
+
     .submarine {
       @include place-svg-normal(184px, -129px, 72.7%);
     }
