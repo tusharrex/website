@@ -2,51 +2,19 @@
   .wrapper
     .m-paragraph = data.team.description
     .m-team.m-grid-collection
-      .team-element
-        figure
-          .team-member.bcg-team-kotel
-          figcaption
-            .name Tomasz
-            .position Founder & CEO
-      .team-element
-        figure
-          .team-member.bcg-team-kotel
-          figcaption
-            .name Koteł
-            .position Kłakolub
-      .team-element
-        figure
-          .team-member.bcg-team-kotel
-          figcaption
-            .name Tomasz
-            .position Founder & CEO
-      .team-element
-        figure
-          .team-member.bcg-team-kotel
-          figcaption
-            .name Koteł
-            .position Kłakolub
-      .team-element
-        figure
-          .team-member.bcg-team-kotel
-          figcaption
-            .name Koteł
-            .position Kłakolub
-      .team-element
-        figure
-          .team-member.bcg-team-kotel
-          figcaption
-            .name Koteł
-            .position Kłakolub
-      .team-element
-        figure
-          .team-member.bcg-team-kotel
-          figcaption
-            .name Koteł
-            .position Kłakolub
-      .team-element
-        figure
-          .team-member.bcg-team-kotel
-          figcaption
-            .name Koteł
-            .position Kłakolub
+      = partial 'partials/team_element', locals: \
+        {bcg_class: 'bcg-team-kotel', name: 'Tomek', position: 'Founder & CEO'}
+      = partial 'partials/team_element', locals: \
+        {bcg_class: 'bcg-team-kotel', name: 'Tomek', position: 'Founder & CEO'}
+      = partial 'partials/team_element', locals: \
+        {bcg_class: 'bcg-team-kotel', name: 'Tomek', position: 'Founder & CEO'}
+      = partial 'partials/team_element', locals: \
+        {bcg_class: 'bcg-team-kotel', name: 'Tomek', position: 'Founder & CEO'}
+      = partial 'partials/team_element', locals: \
+        {bcg_class: 'bcg-team-kotel', name: 'Tomek', position: 'Founder & CEO'}
+      = partial 'partials/team_element', locals: \
+        {bcg_class: 'bcg-team-kotel', name: 'Tomek', position: 'Founder & CEO'}
+      = partial 'partials/team_element', locals: \
+        {bcg_class: 'bcg-team-kotel', name: 'Tomek', position: 'Founder & CEO'}
+      = partial 'partials/team_element', locals: \
+        {bcg_class: 'bcg-team-kotel', name: 'Tomek', position: 'Founder & CEO'}
