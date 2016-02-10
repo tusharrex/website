@@ -1,0 +1,33 @@
+@media #{$breakpoint-tablet} {
+  // Styles here apply to non-touchscreen devices only.
+  .no-touchevents {
+    .m-flipping {
+      perspective: 1000;
+
+      &:hover .flipping-container {
+        transform: rotateY(180deg);
+      }
+
+      .flipping-container {
+        transform-style: preserve-3d;
+        transition: .75s;
+      }
+
+      .flipping-front,
+      .flipping-back {
+        backface-visibility: hidden;
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+
+      .flipping-front {
+        z-index: 2;
+      }
+
+      .flipping-back {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
