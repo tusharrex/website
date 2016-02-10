@@ -4,7 +4,7 @@
   $width: 4,
   $miterlimit: 10,
   $linecap: null,
-  $linejoin: null, 
+  $linejoin: null,
   $dasharray: null) {
   stroke: $stroke;
   stroke-width: $width;
@@ -191,13 +191,18 @@ $base-font-size: 12px;
   }
 }
 
-$images: 
-  dawanda, eqipia, foundersuite, selecthub, soothe, sportslion, taptera, soal;
+$images:
+  dawanda, eqipia, foundersuite, selecthub,
+  soothe, sportslion, taptera, soal, kotel;
+
+$folder-name: companies, team;
 
 @mixin bcg-images {
-  @each $image in $images {
-    .bcg-#{$image} {
-      background: image-url('companies/#{$image}.png') center center, no-repeat;
+  @each $folder in $folder-name {
+    @each $image in $images {
+      .bcg-#{$folder}-#{$image} {
+        background: image-url('#{$folder}/#{$image}.png') center center, no-repeat;
+      }
     }
   }
 }
