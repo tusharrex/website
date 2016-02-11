@@ -1,0 +1,67 @@
+members:
+  -
+    name: Tomasz
+    color: indian-yellow-2
+    description: mój Booże..
+    position: mój Booże..
+    image: kotel
+  -
+    name: Bartosz
+    color: valencia-red
+    description: niemiec
+    position: niemiec
+    image: kotel
+  -
+    name: Magda
+    color: breaker-bay-green
+    description: malinozbieracz
+    position: malinozbieracz
+    image: kotel
+  -
+    name: Andrzej
+    color: fountain-blue
+    description: Andrzej
+    position: Andrzej
+    image: kotel
+  -
+    name: Mikołaj
+    color: maroon-red
+    description: loczek koczek
+    position: loczek koczek
+    image: kotel
+  -
+    name: Łukasz
+    color: indian-yellow
+    description: chomiczek
+    position: chomiczek
+    image: kotel
+  -
+    name: Filip
+    color: aquamarine-blue
+    description: ktos od czegos
+    position: ktos od czegos
+    image: kotel
+  -
+    name: Piotrek
+    color: deep-sea-green
+    description: schabowy <3
+    position: schabowy <3
+    image: kotel
+  -
+    name: Patryk
+    color: damask-red
+    description: gosc malinowy
+    position: gosc malinowy
+    image: kotel
+  -
+    name: Michał
+    color: indian-yellow-2
+    description: daj mi chwilkę
+    position: daj mi chwilkę
+    image: kotel
+  -
+    name: Ania
+    color: martinique-dark
+    description: gifciarz
+    position: gifciarz
+    image: kotel

@@ -2,9 +2,10 @@
   figure
     .m-flipping
       .flipping-container
-        .team-member.flipping-front class=bcg_class class=border_class
-        .team-member-back.flipping-back class=back_class
-          .description = description
+        .team-member.flipping-front(class="bcg-team-#{member.image}"
+                                    class="color-#{member.color}")
+        .team-member-back.flipping-back class="bcg-#{member.color}"
+          .description = member.description
     figcaption
-      .name = name
-      .position = position
+      .name = member.name
+      .position = member.position
