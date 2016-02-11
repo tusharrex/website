@@ -4,3 +4,6 @@
     .m-team.m-grid-collection
       - data.team_members.members.each do |m|
         = partial 'partials/team_element', locals: {member: m}
+      a.join-us-link(href='/join-our-crew')
+        - data.team_join_us.join_us.each do |m|
+          = partial 'partials/team_element', locals: {member: m}

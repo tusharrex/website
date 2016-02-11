@@ -1,4 +1,4 @@
-.team-element
+.team-element class=member.element
   figure
     .m-flipping
       .flipping-container
@@ -7,5 +7,5 @@
         .team-member-back.flipping-back class="bcg-#{member.color}"
           .description = member.description
     figcaption
-      .name = member.name
+      .caption class="color-#{member.caption_color}" = member.name
       .position = member.position
