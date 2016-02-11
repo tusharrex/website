@@ -3,4 +3,4 @@
     .m-paragraph = data.team.description
     .m-team.m-grid-collection
       - data.team_members.members.each do |m|
-        = partial 'partials/team_element', locals: { member: m }
+        = partial 'partials/team_element', locals: {member: m}
