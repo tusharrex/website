@@ -90,6 +90,10 @@
     .position {
       display: none;
     }
+
+    .description {
+      font-size: 3vw;
+    }
   }
 
   // Styles here apply to non-touchscreen devices only.
@@ -109,6 +113,10 @@
     .flipping-back {
       @include size(20vw, 20vw);
     }
+
+    .description {
+      font-size: 2vw;
+    }
   }
 }
 
@@ -118,6 +126,10 @@
     .flipping-front ,
     .flipping-back {
       @include size(250px, 250px);
+    }
+
+    .description {
+      font-size: 28px;
     }
   }
 }
