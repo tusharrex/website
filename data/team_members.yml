@@ -59,9 +59,9 @@ members:
     description: daj mi chwilkę
     position: daj mi chwilkę
     image: kotel
-  -
-    name: Ania
-    color: martinique-dark
-    description: gifciarz
-    position: gifciarz
-    image: kotel
+#  -
+#    name: Ania
+#    color: martinique-dark
+#    description: gifciarz
+#    position: gifciarz
+#    image: kotel

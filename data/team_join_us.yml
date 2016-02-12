@@ -1,7 +1,5 @@
-join_us:
-  -
-    name: Want to join us?
-    color: damask-red
-    description: Dawaj do nas!
-    element: join-us-element
-    caption_color: damask-red
+name: Want to join us?
+color: damask-red
+description: Dawaj do nas!
+type: join-us-element
+caption_color: damask-red

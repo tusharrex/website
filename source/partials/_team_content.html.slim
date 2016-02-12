@@ -3,7 +3,8 @@
     .m-paragraph = data.team.description
     .m-team.m-grid-collection
       - data.team_members.members.each do |m|
-        = partial 'partials/team_element', locals: {member: m}
+        = partial 'partials/team_element', locals: {element: m}
       a.join-us-link(href='/join-our-crew')
-        - data.team_join_us.join_us.each do |m|
-          = partial 'partials/team_element', locals: {member: m}
+        = partial 'partials/team_element', locals: {element: data.team_join_us}
+      - 4.times do
+        .team-element.no-content
