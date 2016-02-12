@@ -9,12 +9,17 @@
 
   .icon-pin-map,
   .btn-text {
-    display: table-cell;
-    vertical-align: middle;
+    display: inline-block;
+    float: left;
   }
 
   .icon-pin-map {
-    padding-right: 10px;
+    @include size(30px, 20px);
+    margin-right: 5px;
+  }
+
+  .btn-text {
+    padding-top: 9px;
   }
 }
 
@@ -44,9 +49,17 @@
   display: inline-block;
   margin-top: 15px;
 
-  svg {
-    margin-right: 10px;
-    width: 21px;
+  &:hover,
+  &:active, {
+    .st-pin-map-0 {
+      fill: $brick-red;
+    }
+  }
+
+  &:focus {
+    .st-pin-map-0 {
+      fill: $crown-of-thorns;
+    }
   }
 }
 
