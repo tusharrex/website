@@ -7,11 +7,6 @@ $color: $breaker-bay-green;
   padding: 0 10px;
   width: 320px;
 
-  &.no-content {
-    height: 0;
-    margin: 0;
-  }
-
   &:nth-of-type(4n) {
     color: $deep-sea-green;
   }
