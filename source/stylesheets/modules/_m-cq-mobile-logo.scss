@@ -7,26 +7,6 @@
   position: relative;
   width: 47vw;
 
-  &.from_header {
-    color: $light-gray;
-    display: block;
-    height: 45px;
-    margin-left: 26px;
-    margin-top: 6px;
-    width: 45px;
-
-    &:hover {
-      opacity: .8;
-    }
-
-    @media #{$mobile} {
-      height: 30px;
-      margin-left: 13px;
-      margin-top: 13px;
-      width: 30px;
-    }
-  }
-
   .gopher {
     @include place-mobile-svg(48.39, 108.5, 105, 39);
   }

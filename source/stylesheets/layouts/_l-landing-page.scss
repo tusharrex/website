@@ -48,22 +48,6 @@ h1 {
     width: 47%;
   }
 
-  .hello-mail {
-    @include position(11%, initial, initial, 5%);
-    color: $martinique-dark;
-    font-family: $alega-bold;
-    font-size: 19px;
-    position: absolute;
-    text-decoration: none;
-
-    &:hover {
-      color: $damask-red;
-    }
-
-    &:active {
-      color: $martinique-dark;
-    }
-  }
 }
 
 @media #{$only-mobile-large} {
@@ -88,13 +72,6 @@ h1 {
     .bottom-logo-wrapper {
       @include position(initial, 0, 12.8%, 33%);
       width: 34%;
-    }
-
-    .hello-mail {
-      font-size: 25px;
-      left: 3.9%;
-      letter-spacing: .2px;
-      top: 4.5%;
     }
   }
 }
@@ -132,11 +109,6 @@ h1 {
 
     .bottom-logo-wrapper {
       display: none;
-    }
-
-    .hello-mail {
-      @include position(8.15%, initial, initial, 2.2%);
-      font-size: 26px;
     }
   }
 }
