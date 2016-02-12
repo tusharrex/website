@@ -10,3 +10,4 @@ $ ->
   random_color = colors[Math.floor(Math.random() * colors.length)]
   $('[data-js=random-background-color]').css('background-color', random_color)
   $('[data-js=random-text-color]').css('color', random_color)
+  $('[data-js=random-border-color]').css('border-color', random_color)
