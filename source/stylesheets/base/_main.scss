@@ -1,6 +1,18 @@
 // here should be the main styles of the project
 @include bcg-images;
 
+.landing-page {
+  .three-states-button {
+    color: $martinique-dark;
+  }
+}
+
+.website-page {
+  .three-states-button {
+    color: $light-gray;
+  }
+}
+
 .twitter-link {
   display: inline-block;
   max-height: 33px;
