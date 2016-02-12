@@ -177,12 +177,14 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
 }
 
 .social-links {
+  @include align-items(flex-end);
+  @include flex-flow(row, nowrap);
+  @include justify-content(flex-end);
   clear: both;
   margin: 0 118px 0 0;
 
-  li {
+  .social-link {
     display: inline-block;
-    float: right;
     margin-left: 50px;
   }
 }
@@ -288,7 +290,7 @@ $smaller--than-main-menu: 'screen and (max-width: 549px), screen and (max-height
     .social-links {
       margin: 0 16vmin 0 0;
 
-      li {
+      .social-link {
         margin-left: 10%;
       }
     }
