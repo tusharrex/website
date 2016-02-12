@@ -97,6 +97,11 @@
   outline: none;
 }
 
-.green-link-btn {
-  @include link-button(18px, capitalize, none, $deep-sea-green, $alega-bold);
+.link-btn {
+  @include link-button(18px, capitalize, none, $alega-bold);
+
+  &.red {
+    @include link-states($brick-red, $crown-of-thorns, $brick-red);
+    color: $valencia;
+  }
 }
