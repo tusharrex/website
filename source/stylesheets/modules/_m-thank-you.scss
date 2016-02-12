@@ -1,11 +1,28 @@
 .m-thank-you {
-  .boss-face {
-    background: image-url('thank-you/tomek.png');
+  .face {
     border: solid 4px;
     border-radius: 50%;
     height: 250px;
     margin: 0 auto;
     width: 250px;
+
+    &.boss-face {
+      background: image-url('thank-you/tomek.png');
+    }
+
+    &.cat-face {
+      background: image-url('thank-you/kotel.png');
+
+    }
+  }
+
+  .faces {
+    @include flex-flow(row, wrap);
+    @include justify-content(center);
+  }
+
+  .face-container {
+    margin: 0 60px;
   }
 
   .job-title {
@@ -19,9 +36,16 @@
 
 @media #{$breakpoint-desktop-retina} {
   .m-thank-you {
-    .boss-face {
-      background: image-url('thank-you/tomek@2x.png');
+    .face {
       background-size: contain;
+
+      &.boss-face {
+        background: image-url('thank-you/tomek@2x.png');
+      }
+
+      &.cat-face {
+        background: image-url('thank-you/kotel@2x.png');
+      }
     }
   }
 }
