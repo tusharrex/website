@@ -1,8 +1,77 @@
 .m-header {
   background-color: $martinique-dark;
+  font-family: $alega;
   height: 15.125vw;
   min-height: 120px;
   padding: 5px 5px 5px 0;
   position: relative;
   width: 100%;
+
+  &.blog {
+    background-color: $valencia-red;
+    color: $martinique-dark;
+    height: 24vw;
+    min-height: 246px;
+  }
+
+  .details {
+    bottom: 1vw;
+    font-family: $alega;
+    left: 0;
+    margin: 1vw auto;
+    position: absolute;
+    right: 0;
+    width: 90%;
+  }
+
+  .title {
+    border-bottom: 1px solid $martinique-dark;
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 5px 0;
+    padding-bottom: 10px;
+  }
+
+  .tags {
+    font-size: 12px;
+  }
+
+  .info {
+    margin-top: 12px;
+  }
+
+  .author {
+    display: inline-block;
+  }
+
+  .date {
+    display: inline-block;
+    float: right;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-header {
+
+    .details {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .tags {
+      font-size: 1.3vw;
+    }
+
+    .title {
+      font-size: 3.8vw;
+      margin: 6px auto;
+      padding: 36px 0;
+    }
+
+    .info {
+      font-size: 1.3vw;
+      margin-top: 18px;
+    }
+  }
+
 }

@@ -1,7 +1,11 @@
 .m-header-elements {
   @include flex-flow(row, nowrap);
   @include justify-content(space-between);
-  margin: 20px 20px 0;
+  left: 0;
+  padding: 20px 20px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 
   .hello-mail {
     color: $martinique-dark;
