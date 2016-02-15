@@ -1,21 +1,4 @@
 .m-thank-you {
-  .face {
-    border: solid 4px;
-    border-radius: 50%;
-    height: 250px;
-    margin: 0 auto;
-    width: 250px;
-
-    &.boss-face {
-      background: image-url('thank-you/tomek.png');
-    }
-
-    &.cat-face {
-      background: image-url('thank-you/kotel.png');
-
-    }
-  }
-
   .faces {
     @include flex-flow(row, wrap);
     @include justify-content(center);
@@ -31,21 +14,5 @@
     font-size: 18px;
     margin-bottom: 20px;
     text-align: center;
-  }
-}
-
-@media #{$breakpoint-desktop-retina} {
-  .m-thank-you {
-    .face {
-      background-size: contain;
-
-      &.boss-face {
-        background: image-url('thank-you/tomek@2x.png');
-      }
-
-      &.cat-face {
-        background: image-url('thank-you/kotel@2x.png');
-      }
-    }
   }
 }
