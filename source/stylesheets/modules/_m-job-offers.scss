@@ -1,6 +1,6 @@
 .m-job-offers {
   &.m-grid-collection {
-    margin: 0;
+    margin: 54px 0 0;
     max-width: 1248px;
   }
 
@@ -21,6 +21,7 @@
   .m-job-offers {
     &.m-grid-collection {
       justify-content: space-between;
+      margin-top: 80px;
     }
 
     .m-grid-element {
