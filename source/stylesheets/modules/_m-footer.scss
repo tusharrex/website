@@ -42,6 +42,10 @@
     @include flex-justify-content(space-between);
   }
 
+  .menu-item {
+    margin-right: 10px;
+  }
+
   .nav {
     .header,
     .arrow {
@@ -127,7 +131,10 @@
 
     .menu {
       @include flex-flow(column, wrap);
-      max-height: 220px;
+    }
+
+    .menu-item {
+      margin-right: 0;
     }
 
     .nav .header {
@@ -166,7 +173,7 @@
       }
 
       .menu {
-        width: 120px;
+        width: 140px;
       }
     }
 
