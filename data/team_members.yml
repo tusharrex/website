@@ -10,25 +10,25 @@ members:
     color: valencia-red
     description: niemiec
     position: niemiec
-    image: kotel
+    image: adam1
   -
     name: Magda
     color: breaker-bay-green
     description: malinozbieracz
     position: malinozbieracz
-    image: kotel
+    image: adam2
   -
     name: Andrzej
     color: fountain-blue
     description: Andrzej
     position: Andrzej
-    image: kotel
+    image: adam3
   -
     name: Mikołaj
     color: maroon-red
     description: loczek koczek
     position: loczek koczek
-    image: kotel
+    image: adam4
   -
     name: Łukasz
     color: indian-yellow

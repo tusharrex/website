@@ -14,6 +14,7 @@
     .flipping-front {
       background: image-url('svg/guy.svg') no-repeat 52% 66%;
       background-size: 63%;
+      border: 4px solid
     }
 
     .caption {
@@ -38,8 +39,6 @@
 
   .team-member {
     @include background-size(cover);
-
-    border: 3px solid;
     border-radius: 50%;
   }
 
