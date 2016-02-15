@@ -135,12 +135,25 @@ $base-font-size: 12px;
 }
 
 @mixin link-button($font-size, $text-transform,
-                   $text-decoration, $color, $font-family) {
+                   $text-decoration, $font-family) {
   font-size: $font-size;
   text-transform: $text-transform;
   text-decoration: $text-decoration;
-  color: $color;
   font-family: $font-family;
+}
+
+@mixin link-states($hover, $focus, $active) {
+  &:hover {
+    color: $hover;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  &:focus {
+    color: $focus;
+  }
 }
 
 @mixin flip-horizontal() {
