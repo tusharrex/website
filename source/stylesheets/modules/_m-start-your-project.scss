@@ -1,5 +1,5 @@
 .m-star-your-project {
-  padding: 35px 0 0;
+  padding-bottom: 0;
 
   .paper-plane {
     @include place-svg-normal(150px, 70%, 37.7%);
@@ -41,7 +41,6 @@
 
 @media #{$breakpoint-tablet} {
   .m-star-your-project {
-    padding: 86px 0 0;
 
     .paper-plane {
       display: block;

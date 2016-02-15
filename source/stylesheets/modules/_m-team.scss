@@ -10,6 +10,25 @@
     text-align: center;
   }
 
+  .join-us-element {
+    .flipping-front {
+      background: image-url('svg/team/guy.svg') no-repeat 52% 66%;
+      background-size: 63%;
+    }
+
+    .caption {
+      font-size: 19px;
+    }
+
+    .description {
+      border: 0;
+    }
+  }
+
+  .join-us-link {
+    text-decoration: none;
+  }
+
   .m-flipping,
   .flipping-front ,
   .flipping-back {
@@ -39,7 +58,7 @@
     width: 75%;
   }
 
-  .name {
+  .caption {
     margin-top: 8px;
   }
 
@@ -64,6 +83,12 @@
     .flipping-back {
       @include size(44vw, 44vw);
     }
+
+    .join-us-element {
+      .caption {
+        font-size: 30px;
+      }
+    }
   }
 }
 
@@ -83,7 +108,7 @@
       border-width: 4px;
     }
 
-    .name {
+    .caption {
       margin-top: 20px;
     }
 
@@ -93,6 +118,13 @@
 
     .description {
       font-size: 3vw;
+    }
+
+    .join-us-element {
+      .description {
+        font-size: 4vw;
+        line-height: 4.3vw;
+      }
     }
   }
 
@@ -117,6 +149,13 @@
     .description {
       font-size: 2vw;
     }
+
+    .join-us-element {
+      .description {
+        font-size: 3vw;
+        line-height: 3.3vw;
+      }
+    }
   }
 }
 
@@ -130,6 +169,13 @@
 
     .description {
       font-size: 28px;
+    }
+
+    .join-us-element {
+      .description {
+        font-size: 40px;
+        line-height: 44px;
+      }
     }
   }
 }
