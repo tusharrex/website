@@ -1,10 +1,17 @@
 .m-job-offer-element {
+  color: $light-gray;
+  font-family: $alega;
   text-align: center;
+  text-decoration: none;
 
-  a {
-    color: $light-gray;
-    font-family: $alega;
-    text-decoration: none;
+  // This class define temporary styles for blocks.
+  // Remove this when pages with job offers will be ready.
+  &.temporary-styles {
+    height: 45vw;
+
+    .job-apply {
+      display: none;
+    }
   }
 
   .btn-apply {
@@ -36,6 +43,13 @@
 
 @media #{$breakpoint-mobile-landscape} {
   .m-job-offer-element {
+
+    // This class define temporary styles for blocks.
+    // Remove this when pages with job offers will be ready.
+    &.temporary-styles {
+      height: 28vw;
+    }
+
     .job-position,
     .job-apply {
       height: auto;
@@ -54,6 +68,12 @@
   .m-job-offer-element {
     margin-bottom: 2%;
     width: 49%;
+
+    // This class define temporary styles for blocks.
+    // Remove this when pages with job offers will be ready.
+    &.temporary-styles {
+      height: 146px;
+    }
 
     &.m-grid-element {
       background: none;
