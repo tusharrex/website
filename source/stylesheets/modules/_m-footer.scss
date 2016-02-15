@@ -26,6 +26,10 @@
     margin-bottom: 15px;
   }
 
+    .contact-link:hover {
+    color: $damask-red;
+  }
+
   .element {
     line-height: 1.5;
     margin-bottom: 40px;
@@ -51,10 +55,6 @@
     .arrow {
       display: none;
     }
-  }
-
-  .contact-link:hover {
-    color: $damask-red;
   }
 
   .social-link {
