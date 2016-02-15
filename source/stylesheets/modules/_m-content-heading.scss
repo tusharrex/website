@@ -7,4 +7,16 @@
   &.smaller-margin {
     margin-bottom: 5px;
   }
+
+  &.large {
+    font-size: 24px;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-content-heading {
+    &.large {
+      font-size: 36px;
+    }
+  }
 }

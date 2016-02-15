@@ -6,10 +6,23 @@
       width: 100%;
     }
   }
+
+  .apply-link {
+    @include link-button(24px, none, none, $alega-bold);
+
+    display: block;
+    text-align: center;
+  }
 }
 
 @media #{$breakpoint-tablet} {
-  .m-join-us .join-us-img {
-    max-width: 800px;
+  .m-join-us {
+    .join-us-img {
+      max-width: 800px;
+    }
+
+    .apply-link {
+      font-size: 36px;
+    }
   }
 }
