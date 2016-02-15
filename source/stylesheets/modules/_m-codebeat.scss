@@ -6,7 +6,7 @@
   }
 
   .codebeat-logo {
-    background: url('/images/codebeat_logo.svg') no-repeat;
+    background: url('/images/ventures/codebeat_logo.svg') no-repeat;
     background-size: contain;
     height: 68px;
     width: 272.6px;
@@ -14,7 +14,7 @@
 
   .codebeat-slogan {
     color: $docker-blue;
-    font-family: $alega-bold;
+    font-family: $alega;
     font-size: 18px;
     line-height: 20px;
     padding-bottom: 26px;
@@ -29,16 +29,15 @@
     font-weight: 700;
     line-height: 22px;
     padding-left: 2px;
-    text-align: justify;
-    text-indent: 23px;
   }
 
   .codebeat-dashboard {
-    background: url('/images/codebeat_dashboard.png') no-repeat;
+    background: url('/images/ventures/codebeat_dashboard.png') no-repeat;
     background-position: 0 15px;
     background-size: cover;
     height: 300px;
     margin-top: 40px;
+    max-height: 440px;
     max-width: 630px;
     width: 100%;
   }
@@ -69,6 +68,7 @@
 
     .codebeat-slogan {
       font-size: 26px;
+      line-height: 26px;
       padding-top: 42px;
       text-align: initial;
     }
@@ -78,6 +78,7 @@
       letter-spacing: .5px;
       line-height: 29px;
       padding-left: 0;
+      text-indent: 23px;
       width: 88%;
 
       &:first-of-type {
@@ -89,6 +90,14 @@
       background-position: 0 27px;
       flex: 1;
       margin: 0;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-codebeat {
+    .codebeat-description {
+      text-align: justify;
     }
   }
 }
