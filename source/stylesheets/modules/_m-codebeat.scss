@@ -1,11 +1,5 @@
 .m-codebeat {
-  .column-left{
-    @include flex-flow(column, wrap);
-    align-items: center;
-    padding-bottom: 100px;  
-  }
-
-
+  .column-left,
   .column-right {
     @include flex-flow(column, wrap);
     align-items: center;
@@ -35,6 +29,7 @@
     font-weight: 700;
     line-height: 22px;
     padding-left: 2px;
+    text-align: center;
   }
 
   .codebeat-dashboard {
@@ -67,6 +62,10 @@
       width: 50%;
     }
 
+    .column-left {
+      padding-bottom: 100px;  
+    }
+
     .codebeat-logo {
       max-width: 410px;
       width: 88%;
@@ -86,6 +85,7 @@
       padding-left: 0;
       text-indent: 23px;
       width: 88%;
+      text-align: left;  
 
       &:first-of-type {
         padding-top: 20px;
