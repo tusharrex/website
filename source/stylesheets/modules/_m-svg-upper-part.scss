@@ -3,6 +3,14 @@
     @include place-svg(700, 168, 21, 0);
   }
 
+  .cloud-diver {
+    display: none;
+  }
+
+  .cloud-ruby {
+    @include place-svg(330, 62, 48, 76);
+  }
+
   .wave-1 {
     @include place-svg(270, 20, -8, 74);
   }
@@ -13,5 +21,34 @@
 
   .wave-3 {
     @include place-svg(270, 20, 4, 10);
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-svg-upper-part {
+    .diver {
+      @include place-svg(240, 143, 41, 4);
+    }
+
+    .cloud-diver {
+      @include place-svg(80, 52, 12.5, 56);
+      display: block;
+    }
+
+    .cloud-ruby {
+      @include place-svg(77, 52, 51.5, 69);
+    }
+
+    .wave-1 {
+      @include place-svg(90, 20, 31.5, 66);
+    }
+
+    .wave-2 {
+      @include place-svg(90, 20, 59.5, 57);
+    }
+
+    .wave-3 {
+      @include place-svg(90, 20, 35.5, 10);
+    }
   }
 }

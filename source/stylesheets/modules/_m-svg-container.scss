@@ -7,3 +7,10 @@
     position: absolute;
   }
 }
+
+@media #{$breakpoint-tablet} {
+  .m-svg-container {
+    height: 18.4vw;
+    max-width: 100%;
+  }
+}

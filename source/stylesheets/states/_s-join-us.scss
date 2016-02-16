@@ -42,3 +42,46 @@
 .st-wave-3 {
   fill: $martinique-dark;
 }
+
+.st-cloud-diver-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $light-gray;
+}
+
+.st-cloud-diver-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-cloud-diver-2 {
+  @include stroke();
+  fill: $light-gray;
+}
+
+.st-cloud-diver-3 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-cloud-diver-4 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $deep-sea-green;
+}
+
+.st-cloud-diver-5 {
+  fill: $martinique-dark;
+}
+
+.st-cloud-ruby-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $light-gray;
+}
+
+.st-cloud-ruby-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $maroon-red;
+}
+
+.st-cloud-ruby-2 {
+  fill: $martinique-dark;
+}
