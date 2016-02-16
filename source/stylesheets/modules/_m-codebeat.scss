@@ -1,5 +1,11 @@
 .m-codebeat {
-  .column-left,
+  .column-left{
+    @include flex-flow(column, wrap);
+    align-items: center;
+    padding-bottom: 100px;  
+  }
+
+
   .column-right {
     @include flex-flow(column, wrap);
     align-items: center;
@@ -37,7 +43,7 @@
     background-size: cover;
     height: 300px;
     margin-top: 40px;
-    max-height: 440px;
+    max-height: 819px;
     max-width: 630px;
     width: 100%;
   }
