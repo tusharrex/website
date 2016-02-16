@@ -26,6 +26,10 @@
     margin-bottom: 15px;
   }
 
+  .contact-link:hover {
+    color: $damask-red;
+  }
+
   .element {
     line-height: 1.5;
     margin-bottom: 40px;
@@ -52,6 +56,7 @@
       display: none;
     }
   }
+
 
   .social-link {
     max-width: 30px;
