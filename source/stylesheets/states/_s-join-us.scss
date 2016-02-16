@@ -103,6 +103,25 @@
   fill: $indian-yellow;
 }
 
+.st-octopus-sm-0 {
+  @include stroke();
+  fill: $deep-sea-green;
+}
+
+.st-octopus-sm-1 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-octopus-sm-2 {
+  fill: $martinique-dark;
+}
+
+.st-octopus-sm-3 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $damask-red;
+}
+
 .st-wave-1 {
   fill: $martinique-dark;
 }
