@@ -1,0 +1,44 @@
+.st-diver-0 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $breaker-bay-green;
+}
+
+.st-diver-1 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: $deep-sea-green;
+}
+
+.st-diver-2 {
+  fill: $breaker-bay-green;
+}
+
+.st-diver-3 {
+  fill: $martinique-dark;
+}
+
+.st-diver-4 {
+  @include stroke();
+  fill: $breaker-bay-green;
+}
+
+.st-diver-5 {
+  @include stroke();
+  fill: $light-gray;
+}
+
+.st-diver-6 {
+  @include stroke($linecap: round, $linejoin: round);
+  fill: none;
+}
+
+.st-wave-1 {
+  fill: $martinique-dark;
+}
+
+.st-wave-2 {
+  fill: $martinique-dark;
+}
+
+.st-wave-3 {
+  fill: $martinique-dark;
+}
