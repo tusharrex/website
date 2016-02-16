@@ -99,3 +99,13 @@
 .hidden {
   display: none;
 }
+
+.hidden-on-mobile {
+  display: none;
+}
+
+@media #{$breakpoint-tablet} {
+  .hidden-on-mobile {
+    display: block;
+  }
+}

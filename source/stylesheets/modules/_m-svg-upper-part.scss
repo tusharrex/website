@@ -3,10 +3,6 @@
     @include place-svg(700, 168, 21, 0);
   }
 
-  .cloud-diver {
-    display: none;
-  }
-
   .cloud-ruby {
     @include place-svg(330, 62, 48, 76);
   }
@@ -31,12 +27,15 @@
     }
 
     .cloud-diver {
-      @include place-svg(80, 52, 12.5, 56);
-      display: block;
+      @include place-svg(80, 52, 13, 56);
     }
 
     .cloud-ruby {
       @include place-svg(77, 52, 51.5, 69);
+    }
+
+    .gopher {
+      @include place-svg(112, 104, 18.5, 29);
     }
 
     .wave-1 {
@@ -49,6 +48,18 @@
 
     .wave-3 {
       @include place-svg(90, 20, 35.5, 10);
+    }
+
+    .wave-4 {
+      @include place-svg(90, 20, 7, 41.5);
+    }
+
+    .wave-5 {
+      @include place-svg(90, 20, 72.5, 8);
+    }
+
+    .wave-6 {
+      @include place-svg(90, 20, 80, 64);
     }
   }
 }
