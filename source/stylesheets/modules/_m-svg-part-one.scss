@@ -1,0 +1,17 @@
+.m-svg-upper-part {
+  .diver {
+    @include place-svg(700, 168, 21, 0);
+  }
+
+  .wave-1 {
+    @include place-svg(270, 20, -8, 74);
+  }
+
+  .wave-2 {
+    @include place-svg(270, 20, 75, 64);
+  }
+
+  .wave-3 {
+    @include place-svg(270, 20, 4, 10);
+  }
+}

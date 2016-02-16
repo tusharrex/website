@@ -1,12 +1,4 @@
 .m-join-us {
-  .join-us-img {
-    margin: 54px auto 40px;
-
-    img {
-      width: 100%;
-    }
-  }
-
   .apply-link {
     @include link-button(24px, none, none, $alega-bold);
 
@@ -17,10 +9,6 @@
 
 @media #{$breakpoint-tablet} {
   .m-join-us {
-    .join-us-img {
-      max-width: 800px;
-    }
-
     .apply-link {
       font-size: 36px;
     }
