@@ -4,6 +4,11 @@
   text-align: center;
   text-decoration: none;
 
+  &:hover {
+    @include transition(opacity .2s ease-in-out);
+    opacity: .8;
+  }
+
   // This class define temporary styles for blocks.
   // Remove this when pages with job offers will be ready.
   &.temporary-styles {
