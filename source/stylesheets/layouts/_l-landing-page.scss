@@ -49,7 +49,7 @@ h1 {
   }
 
   .hello-mail {
-    @include position(11%, initial, initial, 5%);
+    @include position(6%, initial, initial, 5%);
     color: $martinique-dark;
     font-family: $alega-bold;
     font-size: 19px;
