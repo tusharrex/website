@@ -12,6 +12,10 @@
     width: 218px;
   }
 
+  &.martinique_dark {
+    @include button-with-color($martinique_dark);
+   }
+
   &.permanent_color {
     @include button-with-color;
   }
@@ -48,6 +52,9 @@
       &.permanent_color {
         @include button-with-color-states;
       }
+      &.martinique_dark {
+        @include button-with-color-states($martinique_dark);
+      }      
     }
   }
 }
