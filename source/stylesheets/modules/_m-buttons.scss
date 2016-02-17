@@ -21,8 +21,8 @@
   }
 
   @media #{$breakpoint-tablet} {
-    &.with_color {
-      @include button-with-color;
+    &.damask_red {
+      @include button-with-color($damask-red);
     }
   }
 }
@@ -48,9 +48,9 @@
     }
 
     @media #{$breakpoint-tablet} {
-      &.with_color,
+      &.damask_red ,
       &.permanent_color {
-        @include button-with-color-states;
+        @include button-with-color-states($damask-red);
       }
       &.martinique_dark {
         @include button-with-color-states($martinique_dark);
