@@ -38,6 +38,7 @@
 }
 
 .contact-address {
+  color: $martinique-dark;
   font-family: $courier;
   font-size: 19px;
   font-style: normal;
@@ -52,12 +53,6 @@
   &:active, {
     .st-pin-map-0 {
       fill: $brick-red;
-    }
-  }
-
-  &:focus {
-    .st-pin-map-0 {
-      fill: $crown-of-thorns;
     }
   }
 }
