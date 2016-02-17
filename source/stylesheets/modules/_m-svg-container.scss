@@ -1,0 +1,16 @@
+.m-svg-container {
+  height: 205px;
+  margin: 0 auto;
+  max-width: 320px;
+
+  .svg {
+    position: absolute;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-svg-container {
+    height: 18.4vw;
+    max-width: 100%;
+  }
+}
