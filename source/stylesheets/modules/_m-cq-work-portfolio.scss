@@ -126,6 +126,11 @@
     }
   }
 
+  .see-more-btn {
+    margin-top: 8%;
+    width: 80%;
+  }
+
   .display {
     display: block;
   }
@@ -174,6 +179,11 @@
   .m-cq-work-portfolio {
     .portfolio-description {
       width: 200px;
+    }
+
+    .portfolio-hover {
+      font-size: 14px;
+      line-height: 19px;
     }
 
     .testimonial {
@@ -234,6 +244,10 @@
       }
     }
 
+    .see-more-btn {
+      width: 230px;
+    }
+
     .display {
       display: inline;
     }
@@ -242,6 +256,11 @@
 
 @media #{$breakpoint-desktop} {
   .m-cq-work-portfolio {
+    .portfolio-hover {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
     .portfolio-description {
       width: 324px;
     }
@@ -252,6 +271,10 @@
 
     .m-quote {
       width: 48px;
+    }
+
+    .see-more-btn {
+      width: 290px;
     }
   }
 }
