@@ -1,10 +1,6 @@
 .container.grid-hover.portfolio-hover
   .table
     .cell
-      header.portfolio-description
-        | Where talent and companies meet.
-        br
-        | BuddyBroker is the next generation of job board with spice.
+      header.portfolio-description = description
       a.btn.see-more-btn(href='#{link}' rel='nofollow') See More
-    footer.portfolio-footer
-      | &#35;responsive &#35;design &#35;UX
+    footer.portfolio-footer = footer
