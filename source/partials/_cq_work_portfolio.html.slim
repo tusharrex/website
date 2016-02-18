@@ -3,13 +3,9 @@
 
     .m-grid-element.small.foundersuite.bcg-companies-foundersuite
       .logo.large
-        = partial 'svg/work_logos/foundersuite'
       = partial 'partials/cq_work_portfolio_content', locals: \
-        {link: '',
-         description: "Founder Suite is a navigation system for startup \
-         founders, it will guide Your company to be more efficient and \
-         effective",
-         footer: 'From Scratch Design Frontend Backend'}
+        {element: data.foundersuite}
+        = partial 'svg/work_logos/foundersuite'
 
     .m-grid-element.large.testimonial.light-grey-bcg
       = partial 'partials/cq_work_portfolio_testimonial', locals: \
@@ -23,19 +19,13 @@
       .logo.large.tablet-small
         = partial 'svg/work_logos/dawanda'
       = partial 'partials/cq_work_portfolio_content', locals: \
-      {link: '',
-       description: "Dawanda is a great platform to buy unique items. Lately \
-       they also became no. 1 do it yourself platform. That was our job there.",
-       footer: 'CMS Front and Back'}
+        {element: data.dawanda}
 
     .m-grid-element.small.eqipia.bcg-companies-eqipia
       .logo.x-small.tablet-x-small
         = partial 'svg/work_logos/eqipia'
       = partial 'partials/cq_work_portfolio_content', locals: \
-      {link: '',
-       description: "Where talent and companies meet, BuddyBroker is the next \
-       generation of job board with spice.",
-       footer: 'UX UI Frontend Backend'}
+          {element: data.eqipia}
 
     .m-grid-element.large.testimonial.damask-red-bcg.font-light-grey
       = partial 'partials/cq_work_portfolio_testimonial', locals: \
@@ -53,50 +43,31 @@
       .logo.medium
         = partial 'svg/work_logos/selecthub'
       = partial 'partials/cq_work_portfolio_content', locals: \
-      {link: '',
-       description: "Select hub is a awsome way for You to find IT software \
-       that your company needs. From CRM to ERP Select hub will evaluate \
-       thousand possible softwares and fund just the one for You.",
-       footer: 'RoR Backend Frontend UX WebApp'}
+          {element: data.selecthub}
 
     .m-grid-element.small.soal.bcg-companies-soal
       .logo.small
         = partial 'svg/work_logos/soal'
       = partial 'partials/cq_work_portfolio_content', locals: \
-      {link: '',
-       description: "There has never been a good way to actually HEAR the \
-       story behind photos -- until now! SOAL is an audio archiving app that \
-       let's you attach your voice to a photo.",
-       footer: 'iOS Design Frontend'}
+          {element: data.soal}
 
     .m-grid-element.small.soothe.bcg-companies-soothe
       .logo.medium
         = partial 'svg/work_logos/soothe'
       = partial 'partials/cq_work_portfolio_content', locals: \
-      {link: '',
-       description: "Soothe empowers you to relax on your own schedule at your \
-       own home, while helping the best massage therapists earn extra income.",
-       footer: 'WebApp Backend RoR Frontend'}
+          {element: data.soothe}
 
     .m-grid-element.small.taptera.bcg-companies-taptera
       .logo.medium.tablet-x-small
         = partial 'svg/work_logos/taptera'
       = partial 'partials/cq_work_portfolio_content', locals: \
-      {link: '',
-       description: "With Lifthero You can effortlesly arrage a \
-       drive for You or Your loved ones, additionally all Lifthero drivers are \
-       medically trained to ensure safty of your passangers.",
-       footer: 'WebApp Back and Front Ruby on Rails'}
+          {element: data.lifthero}
 
     .m-grid-element.small.sports-lion.bcg-companies-sportslion
       .logo.medium
         = partial 'svg/work_logos/sportslion'
       = partial 'partials/cq_work_portfolio_content', locals: \
-      {link: '',
-       description: "Sports Lion is a platform to bet with Your \
-       friends on sports. It's a fun a social way to enjoy your favourite game \
-       even more.",
-       footer: 'WebApp Backend Frontend RoR'}
+          {element: data.sportslion}
 
     .m-grid-element.large.testimonial.breaker-bay-green-bcg.font-light-grey
       = partial 'partials/cq_work_portfolio_testimonial', locals: \
