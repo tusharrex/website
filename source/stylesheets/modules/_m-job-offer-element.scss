@@ -1,8 +1,9 @@
 .m-job-offer-element {
-  color: $light-gray;
-  font-family: $alega;
-  text-align: center;
-  text-decoration: none;
+
+  &:hover {
+    @include transition(opacity .2s ease-in-out);
+    opacity: .8;
+  }
 
   // This class define temporary styles for blocks.
   // Remove this when pages with job offers will be ready.
@@ -12,6 +13,13 @@
     .job-apply {
       display: none;
     }
+  }
+
+  .send-mail-link {
+    color: $light-gray;
+    font-family: $alega;
+    text-align: center;
+    text-decoration: none;
   }
 
   .btn-apply {

@@ -13,7 +13,7 @@
   }
 
   &.martinique_dark {
-    @include button-with-color($martinique_dark);
+    @include button-with-color($martinique-dark);
    }
 
   &.permanent_color {
@@ -52,9 +52,10 @@
       &.permanent_color {
         @include button-with-color-states($damask-red);
       }
+
       &.martinique_dark {
-        @include button-with-color-states($martinique_dark);
-      }      
+        @include button-with-color-states($martinique-dark);
+      }
     }
   }
 }
