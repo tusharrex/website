@@ -36,10 +36,10 @@
   }
 
   .portfolio-hover {
+    @include font(18px, 30px);
+
     color: $light-gray;
     font-family: $baskerville;
-    font-size: 18px;
-    line-height: 30px;
     text-align: center;
     text-decoration: none;
   }
@@ -64,10 +64,10 @@
   }
 
   .testimonial {
+    @include font(5.8vw, 9vw);
+
     color: $martinique-dark;
     font-family: $baskerville-italic-bold;
-    font-size: 5.8vw;
-    line-height: 9vw;
     text-indent: 20px;
 
     &.light-grey-bcg {
@@ -99,10 +99,10 @@
   }
 
   .quote-author {
+    @include font(4vw, 5.5vw);
+
     color: $damask-red;
     font-family: $alega-bold;
-    font-size: 4vw;
-    line-height: 5.5vw;
     text-align: right;
 
     &.font-martinique-dark {
@@ -179,18 +179,15 @@
     }
 
     .portfolio-hover {
-      font-size: 14px;
-      line-height: 19px;
+      @include font(14px, 19px);
     }
 
     .testimonial {
-      font-size: 2.8vw;
-      line-height: 3.8vw;
+      @include font(2.8vw, 3.8vw);
     }
 
     .quote-author {
-      font-size: 2vw;
-      line-height: 2.5vw;
+      @include font(2vw, 2.5vw);
     }
 
     .quote-end {
@@ -216,8 +213,7 @@
     }
 
     .testimonial {
-      font-size: 2vw;
-      line-height: 3.5vw;
+      @include font(2vw, 3.5vw);
 
       .table {
         padding-top: 44px;
@@ -254,8 +250,7 @@
     }
 
     .portfolio-hover {
-      font-size: 18px;
-      line-height: 30px;
+      @include font(18px, 30px);
     }
 
     .portfolio-description {
@@ -275,8 +270,7 @@
 @media #{$breakpoint-desktop-large} {
   .m-cq-work-portfolio {
     .testimonial {
-      font-size: 28px;
-      line-height: 44px;
+      @include font(28px, 44px);
 
       .table {
         width: 70%;

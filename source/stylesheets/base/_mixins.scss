@@ -247,3 +247,8 @@ $folder-name: companies, team;
   -o-user-select: $select;
   user-select: $select;
 }
+
+@mixin font($size, $lineheight) {
+  font-size: $size;
+  line-height: $lineheight;
+}
