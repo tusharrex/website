@@ -1,14 +1,14 @@
 .m-content-padding {
   padding-top: 35px;
-
-  &.padding-bottom-sm {
-    padding-bottom: 0;
-  }
 }
 
 @media #{$breakpoint-tablet} {
   .m-content-padding {
     padding: 50px 0 70px;
+
+    &.padding-bottom-sm {
+      padding-bottom: 0;
+    }
   }
 }
 
