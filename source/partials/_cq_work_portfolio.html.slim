@@ -1,9 +1,9 @@
 .wrapper.padding-none
   .m-cq-work-portfolio.m-grid-collection
 
-    .m-grid-element.small.soothe.bcg-companies-soothe
-      .logo.medium
-        = partial 'svg/work_logos/soothe'
+    .m-grid-element.small.foundersuite.bcg-companies-foundersuite
+      .logo.large
+        = partial 'svg/work_logos/foundersuite'
       = partial 'partials/cq_work_portfolio_content', locals: {link: ''}
 
     .m-grid-element.large.testimonial.light-grey-bcg
@@ -52,16 +52,6 @@
               | Nathan Brakke,
               span.quote-author-sign.light-grey &nbsp;soalmate
 
-    .m-grid-element.small.foundersuite.bcg-companies-foundersuite
-      .logo.large
-        = partial 'svg/work_logos/foundersuite'
-      = partial 'partials/cq_work_portfolio_content', locals: {link: ''}
-
-    .m-grid-element.small.sports-lion.bcg-companies-sportslion
-      .logo.medium
-        = partial 'svg/work_logos/sportslion'
-      = partial 'partials/cq_work_portfolio_content', locals: {link: ''}
-
     .m-grid-element.small.selecthub.bcg-companies-selecthub
       .logo.medium
         = partial 'svg/work_logos/selecthub'
@@ -72,9 +62,19 @@
         = partial 'svg/work_logos/soal'
       = partial 'partials/cq_work_portfolio_content', locals: {link: ''}
 
+    .m-grid-element.small.soothe.bcg-companies-soothe
+      .logo.medium
+        = partial 'svg/work_logos/soothe'
+      = partial 'partials/cq_work_portfolio_content', locals: {link: ''}
+
     .m-grid-element.small.taptera.bcg-companies-taptera
       .logo.medium.tablet-x-small
         = partial 'svg/work_logos/taptera'
+      = partial 'partials/cq_work_portfolio_content', locals: {link: ''}
+
+    .m-grid-element.small.sports-lion.bcg-companies-sportslion
+      .logo.medium
+        = partial 'svg/work_logos/sportslion'
       = partial 'partials/cq_work_portfolio_content', locals: {link: ''}
 
     .m-grid-element.large.testimonial.breaker-bay-green-bcg.font-light-grey
