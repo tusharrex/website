@@ -1,9 +1,21 @@
 .m-content-padding {
   padding-top: 35px;
+
+  &.padding-bottom-none {
+    padding-bottom: 0;
+  }
 }
 
 @media #{$breakpoint-tablet} {
   .m-content-padding {
     padding: 50px 0 70px;
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-content-padding {
+    &.padding-bottom-none {
+      padding-bottom: 50px;
+    }
   }
 }
