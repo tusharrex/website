@@ -2,12 +2,12 @@
   .table
     .cell
       blockquote.portfolio-blockquote
-        .m-quote.quote-start class=quote_color
+        .m-quote.quote-start class=element.quote_color
           = partial 'svg/work/quote'
-        p = quote
-        .m-quote.quote-end class=quote_color
+        p = element.quote
+        .m-quote.quote-end class=element.quote_color
           = partial 'svg/work/quote'
-      .quote-author class=author_color
-        = name
-        span.quote-author-sign class=position_color
-          = position
+      .quote-author class=element.author_color
+        = element.name
+        span.quote-author-sign class=element.position_color
+          = element.position
