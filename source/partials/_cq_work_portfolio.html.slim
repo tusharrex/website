@@ -12,23 +12,12 @@
          footer: 'From Scratch Design Frontend Backend'}
 
     .m-grid-element.large.testimonial.light-grey-bcg
-      .container
-        .table
-          .cell
-            blockquote.portfolio-blockquote
-              .m-quote.quote-start
-                = partial 'svg/work/quote'
-              p
-                |
-                  code quest is a true foundational partner of Foundersuite.
-                  We couldn't have achieved the success we've had without them.
-              p We look forward to many more years of working together.
-              .m-quote.quote-end
-                = partial 'svg/work/quote'
-            .quote-author
-              | Nathan Beckord,
-              span.quote-author-sign.display
-                | &nbsp;Co-founder and CEO at Foundersuite
+      = partial 'partials/cq_work_portfolio_testimonial', locals: \
+      {quote: "We couldn't have achieved the success we've had without them. \
+       <p>We look forward to many more years of working together.</p>",
+       name: 'Nathan Beckord,',
+       position: '&nbsp;Co-founder and CEO at Foundersuite',
+       quote_color: '', author_color: '', position_color: ''}
 
     .m-grid-element.large.dawanda.bcg-companies-dawanda
       .logo.large.tablet-small
@@ -49,24 +38,16 @@
        footer: 'UX UI Frontend Backend'}
 
     .m-grid-element.large.testimonial.damask-red-bcg.font-light-grey
-      .container
-        .table
-          .cell
-            blockquote.portfolio-blockquote
-              .m-quote.quote-start.valencia-red
-                = partial 'svg/work/quote'
-              p
-                |
-                  Professionalism and enthusiasm are the main qualities of code
-                  quest engineers. They have been up to the challenge and have
-                  worked with our team shoulder to shoulder to ensure the
-                  success of our project.
-              .m-quote.quote-end.valencia-red
-                = partial 'svg/work/quote'
-            .quote-author.font-martinique-dark
-              | Luis Hernando Blanco,
-              span.quote-author-sign.light-grey.display
-                | &nbsp;Co-founder and VP at SelectHub
+      = partial 'partials/cq_work_portfolio_testimonial', locals: \
+       {quote: "Professionalism and enthusiasm are the main qualities of code \
+        quest engineers. They have been up to the challenge and have \
+        worked with our team shoulder to shoulder to ensure the \
+        success of our project.",
+        name: 'Luis Hernando Blanco,',
+        position: '&nbsp;Co-founder and VP at SelectHub',
+        quote_color: 'valencia-red',
+        author_color: 'font-martinique-dark',
+        position_color: 'light-grey'}
 
     .m-grid-element.small.selecthub.bcg-companies-selecthub
       .logo.medium
@@ -118,21 +99,13 @@
        footer: 'WebApp Backend Frontend RoR'}
 
     .m-grid-element.large.testimonial.breaker-bay-green-bcg.font-light-grey
-      .container
-        .table
-          .cell
-            blockquote.portfolio-blockquote
-              .m-quote.quote-start.deep-sea-green
-                = partial 'svg/work/quote'
-              p
-                |
-                  Working with code quest is like being part of a world-class
-                  hockey team - they are a smooth, fast-paced operation with
-                  discipline. The team is also very smart and creative, and
-                  they will block shots and skate the extra mile for you.
-              .m-quote.quote-end.deep-sea-green
-                = partial 'svg/work/quote'
-            .quote-author.font-martinique-dark
-              | Liinus Hietaniemi,
-              span.quote-author-sign.light-grey.display
-                | &nbsp;Founder at Sports Lion
+      = partial 'partials/cq_work_portfolio_testimonial', locals: \
+       {quote: "Working with code quest is like being part of a world-class \
+        hockey team - they are a smooth, fast-paced operation with \
+        discipline. The team is also very smart and creative, and \
+        they will block shots and skate the extra mile for you.",
+        name: 'Liinus Hietaniemi,',
+        position: '&nbsp;Founder at Sports Lion',
+        quote_color: 'deep-sea-green',
+        author_color: 'font-martinique-dark',
+        position_color: 'light-grey'}

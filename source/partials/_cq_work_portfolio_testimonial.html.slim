@@ -1,0 +1,13 @@
+.container
+  .table
+    .cell
+      blockquote.portfolio-blockquote
+        .m-quote.quote-start class=quote_color
+          = partial 'svg/work/quote'
+        p = quote
+        .m-quote.quote-end class=quote_color
+          = partial 'svg/work/quote'
+      .quote-author class=author_color
+        = name
+        span.quote-author-sign.display class=position_color
+          = position
