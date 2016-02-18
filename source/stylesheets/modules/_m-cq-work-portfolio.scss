@@ -4,8 +4,43 @@
     margin: 0;
   }
 
+  .display {
+    display: block;
+  }
+
+  .logo {
+    @include position(0, 0, 0, 0);
+    margin: 0 auto;
+    position: absolute;
+
+    &.x-small {
+      width: 44%;
+    }
+
+    &.small {
+      width: 58%;
+    }
+
+    &.medium {
+      width: 50%;
+    }
+
+    &.large {
+      width: 83%;
+    }
+
+    &.to-top {
+      top: -15%;
+    }
+  }
+
   .m-grid-element {
     @include background-size(cover);
+  }
+
+  .m-quote {
+    position: absolute;
+    z-index: -1;
   }
 
   .portfolio-hover {
@@ -17,12 +52,17 @@
     text-decoration: none;
   }
 
+  .portfolio-blockquote {
+    margin: 0 auto 10px;
+    position: relative;
+  }
+
   .portfolio-description {
     margin: 0 auto;
     width: 80%;
   }
 
-  footer {
+  .portfolio-footer {
     bottom: 1.6vw;
     font-family: $alega;
     left: 0;
@@ -61,6 +101,11 @@
     }
   }
 
+  .see-more-btn {
+    margin-top: 8%;
+    width: 80%;
+  }
+
   .quote-author {
     color: $damask-red;
     font-family: $alega-bold;
@@ -73,6 +118,10 @@
     }
   }
 
+  .quote-end {
+    @include position(auto, 20px, -8px, auto);
+  }
+
   .quote-author-sign {
     color: $martinique-dark;
     font-family: $alega;
@@ -82,57 +131,8 @@
     }
   }
 
-  blockquote {
-    margin: 0 auto 10px;
-    position: relative;
-  }
-
-  .m-quote {
-    position: absolute;
-    z-index: -1;
-  }
-
   .quote-start {
     @include position(-8px, auto, auto, -9%);
-  }
-
-  .quote-end {
-    @include position(auto, 20px, -8px, auto);
-  }
-
-  .logo {
-    @include position(0, 0, 0, 0);
-    margin: 0 auto;
-    position: absolute;
-
-    &.x-small {
-      width: 44%;
-    }
-
-    &.small {
-      width: 58%;
-    }
-
-    &.medium {
-      width: 50%;
-    }
-
-    &.large {
-      width: 83%;
-    }
-
-    &.to-top {
-      top: -15%;
-    }
-  }
-
-  .see-more-btn {
-    margin-top: 8%;
-    width: 80%;
-  }
-
-  .display {
-    display: block;
   }
 }
 
@@ -141,32 +141,32 @@
 
   .m-cq-work-portfolio {
 
-    .soothe {
-      @include background-hover($damask-red);
-    }
-
     .dawanda {
       @include background-hover($valencia-red);
-    }
-
-    .foundersuite {
-      @include background-hover($indian-yellow-2);
     }
 
     .eqipia {
       @include background-hover($aquamarine-blue);
     }
 
-    .soal {
-      @include background-hover($indian-yellow);
-    }
-
-    .sports-lion {
-      @include background-hover($breaker-bay-green);
+    .foundersuite {
+      @include background-hover($indian-yellow-2);
     }
 
     .selecthub {
       @include background-hover($valencia-red);
+    }
+
+    .soal {
+      @include background-hover($indian-yellow);
+    }
+
+    .soothe {
+      @include background-hover($damask-red);
+    }
+
+    .sports-lion {
+      @include background-hover($breaker-bay-green);
     }
 
     .taptera {
@@ -177,6 +177,10 @@
 
 @media #{$breakpoint-mobile-landscape} {
   .m-cq-work-portfolio {
+    .portfolio-blockquote {
+      margin-bottom: 22px;
+    }
+
     .portfolio-description {
       width: 200px;
     }
@@ -191,47 +195,25 @@
       line-height: 3.8vw;
     }
 
-    blockquote {
-      margin-bottom: 22px;
-    }
-
-    .quote-start {
-      @include position(-14px, auto, auto, -13%);
+    .quote-author {
+      font-size: 2vw;
+      line-height: 2.5vw;
     }
 
     .quote-end {
       @include position(auto, 16px, -18px, auto);
     }
 
-    .quote-author {
-      font-size: 2vw;
-      line-height: 2.5vw;
+    .quote-start {
+      @include position(-14px, auto, auto, -13%);
     }
   }
 }
 
 @media #{$breakpoint-tablet} {
   .m-cq-work-portfolio {
-    .testimonial {
-      font-size: 2vw;
-      line-height: 3.5vw;
-
-      .table {
-        padding-top: 44px;
-        width: 75%;
-      }
-    }
-
-    .quote-author {
-      font-size: 1.8vw;
-    }
-
-    .quote-start {
-      @include position(-10px, auto, auto, -6%);
-    }
-
-    .quote-end {
-      @include position(auto, 6%, -25px, auto);
+    .display {
+      display: inline;
     }
 
     .logo {
@@ -244,18 +226,40 @@
       }
     }
 
+    .testimonial {
+      font-size: 2vw;
+      line-height: 3.5vw;
+
+      .table {
+        padding-top: 44px;
+        width: 75%;
+      }
+    }
+
     .see-more-btn {
       width: 230px;
     }
 
-    .display {
-      display: inline;
+    .quote-author {
+      font-size: 1.8vw;
+    }
+
+    .quote-end {
+      @include position(auto, 6%, -25px, auto);
+    }
+
+    .quote-start {
+      @include position(-10px, auto, auto, -6%);
     }
   }
 }
 
 @media #{$breakpoint-desktop} {
   .m-cq-work-portfolio {
+    .m-quote {
+      width: 48px;
+    }
+
     .portfolio-hover {
       font-size: 18px;
       line-height: 30px;
@@ -265,16 +269,12 @@
       width: 324px;
     }
 
-    .testimonial {
-      text-indent: 44px;
-    }
-
-    .m-quote {
-      width: 48px;
-    }
-
     .see-more-btn {
       width: 290px;
+    }
+
+    .testimonial {
+      text-indent: 44px;
     }
   }
 }
@@ -294,12 +294,12 @@
       font-size: 18px;
     }
 
-    .quote-start {
-      @include position(-4px, auto, auto, -7%);
-    }
-
     .quote-end {
       @include position(auto, 44px, 0, auto);
+    }
+
+    .quote-start {
+      @include position(-4px, auto, auto, -7%);
     }
   }
 }
