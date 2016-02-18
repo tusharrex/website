@@ -4,10 +4,6 @@
     margin: 0;
   }
 
-  .display {
-    display: block;
-  }
-
   .logo {
     @include position(0, 0, 0, 0);
     margin: 0 auto;
@@ -120,6 +116,7 @@
 
   .quote-author-sign {
     color: $martinique-dark;
+    display: block;
     font-family: $alega;
 
     &.light-grey {
@@ -208,10 +205,6 @@
 
 @media #{$breakpoint-tablet} {
   .m-cq-work-portfolio {
-    .display {
-      display: inline;
-    }
-
     .logo {
       &.tablet-small {
         width: 57%;
@@ -238,6 +231,10 @@
 
     .quote-author {
       font-size: 1.8vw;
+    }
+
+    .quote-author-sign {
+      display: inline;
     }
 
     .quote-end {
