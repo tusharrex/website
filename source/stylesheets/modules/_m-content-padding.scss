@@ -1,7 +1,7 @@
 .m-content-padding {
   padding-top: 35px;
 
-  &.padding-bottom-none {
+  &.padding-bottom-sm {
     padding-bottom: 0;
   }
 }
@@ -14,7 +14,7 @@
 
 @media #{$breakpoint-desktop-large} {
   .m-content-padding {
-    &.padding-bottom-none {
+    &.padding-bottom-sm {
       padding-bottom: 50px;
     }
   }
