@@ -1,3 +1,8 @@
+.st-lifthero-0 {
+  @include rule();
+  fill: $white;
+}
+
 .st-quote-0 {
   fill: $santas-gray;
 }
@@ -29,7 +34,6 @@
 
 .st-selecthub-5 {
   clip-path: url('#SVGID_10_');
-
 }
 
 .st-selecthub-6 {
@@ -42,15 +46,13 @@
 }
 
 .st-sportslion-1 {
-  clip-rule: evenodd;
+  @include rule();
   fill: $light-gray;
-  fill-rule: evenodd;
 }
 
 .st-foundersuite-0,
 .st-soothe-0,
 .st-eqipia-0,
-.st-taptera-0,
 .st-soal-0 {
   fill: $white;
 }
