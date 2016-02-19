@@ -53,6 +53,42 @@
         @include button-with-color-states($damask-red);
       }
 
+      &.gray-aquamarine-blue {
+        @include button-with-color-states(
+          $light-gray,
+          $color-hover: $aquamarine-blue);
+      }
+
+      &.gray-damask-red {
+        @include button-with-color-states(
+          $light-gray,
+          $color-hover: $damask-red);
+      }
+
+      &.gray-indian-yellow {
+        @include button-with-color-states(
+          $light-gray,
+          $color-hover: $indian-yellow);
+      }
+
+      &.gray-indian-yellow-2 {
+        @include button-with-color-states(
+          $light-gray,
+          $color-hover: $indian-yellow-2);
+      }
+
+      &.gray-martinique_dark {
+        @include button-with-color-states(
+          $light-gray,
+          $color-hover: $martinique-dark);
+      }
+
+      &.gray-valencia-red {
+        @include button-with-color-states(
+          $light-gray,
+          $color-hover: $valencia-red);
+      }
+
       &.martinique_dark {
         @include button-with-color-states($martinique-dark);
       }
