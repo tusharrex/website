@@ -12,13 +12,17 @@
     width: 218px;
   }
 
+  &.martinique_dark {
+    @include button-with-color($martinique-dark);
+   }
+
   &.permanent_color {
     @include button-with-color;
   }
 
   @media #{$breakpoint-tablet} {
-    &.with_color {
-      @include button-with-color;
+    &.damask_red {
+      @include button-with-color($damask-red);
     }
   }
 }
@@ -44,9 +48,13 @@
     }
 
     @media #{$breakpoint-tablet} {
-      &.with_color,
+      &.damask_red ,
       &.permanent_color {
-        @include button-with-color-states;
+        @include button-with-color-states($damask-red);
+      }
+
+      &.martinique_dark {
+        @include button-with-color-states($martinique-dark);
       }
     }
   }
@@ -96,6 +104,11 @@
   outline: none;
 }
 
-.green-link-btn {
-  @include link-button(18px, capitalize, none, $deep-sea-green, $alega-bold);
+.link-btn {
+  @include link-button(18px, capitalize, none, $alega-bold);
+
+  &.red {
+    @include link-states($brick-red, $crown-of-thorns, $brick-red);
+    color: $valencia;
+  }
 }

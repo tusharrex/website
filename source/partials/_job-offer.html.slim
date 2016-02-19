@@ -1,9 +1,9 @@
-.m-grid-element.m-job-offer-element class=bcg_class
-  a(href='#')
-    .container
+.m-grid-element.m-job-offer-element class=bcg_class class=temporary_styles
+  .container
+    a.send-mail-link(href='mailto:jobs@codequest.com?subject=#{title}')
       .table
         .row.job-position class=bcg_class
           h4.job-title = title
           .hash-tag class=hash_class = hash_tags
         .row.job-apply
-          .btn.small.btn-apply.with_color class=btn_class Apply Now
+          .btn.small.btn-apply.damask_red class=btn_class Apply Now

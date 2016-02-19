@@ -1,4 +1,5 @@
 .m-content-heading {
+  color: $martinique-dark;
   font-family: $alega-bold;
   font-size: 26px;
   margin-bottom: 20px;
@@ -6,5 +7,17 @@
 
   &.smaller-margin {
     margin-bottom: 5px;
+  }
+
+  &.large {
+    font-size: 24px;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-content-heading {
+    &.large {
+      font-size: 36px;
+    }
   }
 }

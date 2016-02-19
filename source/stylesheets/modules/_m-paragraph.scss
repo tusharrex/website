@@ -1,15 +1,27 @@
 .m-paragraph {
-  color: inherit;
+  color: $martinique-dark;
   font-family: $courier;
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 66px;
   text-align: center;
+
+  &.margin-medium {
+    margin-bottom: 52px;
+  }
+
+  &.margin-sm {
+    margin-bottom: 34px;
+  }
 }
 
 @media #{$breakpoint-tablet} {
   .m-paragraph {
     font-size: 22px;
     line-height: 29px;
+
+    &.margin-sm {
+      margin-bottom: 66px;
+    }
   }
 }

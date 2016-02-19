@@ -9,12 +9,16 @@
 
   .icon-pin-map,
   .btn-text {
-    display: table-cell;
-    vertical-align: middle;
+    float: left;
   }
 
   .icon-pin-map {
-    padding-right: 10px;
+    @include size(30px, 20px);
+    margin-right: 5px;
+  }
+
+  .btn-text {
+    padding-top: 9px;
   }
 }
 
@@ -34,6 +38,7 @@
 }
 
 .contact-address {
+  color: $martinique-dark;
   font-family: $courier;
   font-size: 19px;
   font-style: normal;
@@ -44,9 +49,11 @@
   display: inline-block;
   margin-top: 15px;
 
-  svg {
-    margin-right: 10px;
-    width: 21px;
+  &:hover,
+  &:active, {
+    .st-pin-map-0 {
+      fill: $brick-red;
+    }
   }
 }
 
@@ -65,9 +72,7 @@
   .contact-offices-element {
     max-width: 100%;
   }
-}
 
-@media #{$only-mobile-large} {
   .contact-office-img {
     display: inline-block;
     padding-left: 10%;
@@ -85,18 +90,17 @@
 
 @media #{$breakpoint-tablet} {
   .contact-offices {
-    margin: 112px 0 0;
+    margin: 0;
     padding: 0;
   }
 
   .contact-offices-element {
     display: inline-block;
-    margin: 0 10px;
-    max-width: 220px;
+    max-width: 100%;
   }
 
   .contact-office-name {
-    font-size: 26px;
+    font-size: 3.1vw;
     margin: 21px 0 17px;
   }
 
@@ -109,38 +113,51 @@
     margin-top: 10px;
   }
 
-  .contact-description {
-    padding-left: 10%;
-    width: 100%;
+  .contact-office-img {
+    padding-left: 0;
   }
 
-  .contact-office-img {
-    width: auto;
+  .contact-offices-element {
+    max-width: 50%;
   }
 }
 
 @media #{$breakpoint-desktop} {
   .contact-offices-element {
-    margin: 0 10px;
-    max-width: 300px;
+    max-width: 44%;
   }
 
-  .contact-description {
-    padding-left: 15%;
+  .contact-office-name {
+    font-size: 26px;
   }
 }
 
 @media #{$breakpoint-desktop-large} {
-  .contact-offices-element {
-    margin: 0 27px;
-    max-width: 324px;
-  }
-
   .contact-office-name {
     font-size: 30px;
   }
 
   .contact-address {
     font-size: 19px;
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .contact-offices-element {
+    width: 36%;
+  }
+
+  .contact-offices {
+    margin-top: 112px;
+  }
+
+  .contact-office-img {
+    display: block;
+    width: 280px;
+  }
+
+  .contact-description {
+    display: block;
+    width: 60%;
   }
 }

@@ -4,15 +4,19 @@ footer.m-footer
       .header Menu
       ul.menu
         li.menu-item
-          a(href='/work') Work
+          a(href='/work') Client Work
           .arrow
             = partial 'svg/main_menu/main_menu_arrow'
         li.menu-item
-          a(href='#') Products
+          a(href='/ventures') Ventures
           .arrow
             = partial 'svg/main_menu/main_menu_arrow'
         li.menu-item
-          a(href='#') Team
+          a(href='/team') Our Crew
+          .arrow
+            = partial 'svg/main_menu/main_menu_arrow'
+        li.menu-item
+          a(href='/join-our-crew') Join Us
           .arrow
             = partial 'svg/main_menu/main_menu_arrow'
         li.menu-item
@@ -26,7 +30,7 @@ footer.m-footer
 
     aside.element.get-in-touch
       h1.header Get in touch
-      = mail_to 'hello@codequest.com', nil
+      = mail_to 'hello@codequest.com', nil, class: 'contact-link'
       br
       | &#43;48 602 123 249
 
@@ -62,9 +66,9 @@ footer.m-footer
             | Poland
 
           address.address
-            | Sukienna 4/49
+            | Sienkiewicza 3 lokal 7/2
             br
-            | 15-881, Białystok
+            | 15-432, Białystok
             br
             | Poland
 
