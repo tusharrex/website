@@ -1,98 +1,62 @@
 .wrapper.padding-none
   .m-cq-work-portfolio.m-grid-collection
 
-    .m-grid-element.small.soothe.bcg-companies-soothe
-      .logo.medium
-        = partial 'svg/work_logos/soothe'
-      = partial 'partials/cq_work_portfolio_content'
+    .m-grid-element.small.foundersuite.bcg-companies-foundersuite
+      .logo.large
+        = partial 'svg/work_logos/foundersuite'
+      = partial 'partials/cq_work_portfolio_content', locals: \
+        {element: data.foundersuite}
 
     .m-grid-element.large.testimonial.light-grey-bcg
-      .container
-        .table
-          .cell
-            blockquote
-              .m-quote.quote-start
-                = partial 'svg/work/quote'
-              p
-                |
-                  code quest is a true foundational partner of Foundersuite.
-                  We couldn't have achieved the success we've had without them.
-              p We look forward to many more years of working together.
-              .m-quote.quote-end
-                = partial 'svg/work/quote'
-            .quote-author
-              | Nathan Beckord,
-              span.quote-author-sign &nbsp;Co-founder and CEO
+      = partial 'partials/cq_work_portfolio_testimonial', locals: \
+        {element: data.testimonial_1}
 
     .m-grid-element.large.dawanda.bcg-companies-dawanda
       .logo.large.tablet-small
         = partial 'svg/work_logos/dawanda'
-      = partial 'partials/cq_work_portfolio_content'
+      = partial 'partials/cq_work_portfolio_content', locals: \
+        {element: data.dawanda}
 
     .m-grid-element.small.eqipia.bcg-companies-eqipia
       .logo.x-small.tablet-x-small
         = partial 'svg/work_logos/eqipia'
-      = partial 'partials/cq_work_portfolio_content'
+      = partial 'partials/cq_work_portfolio_content', locals: \
+        {element: data.eqipia}
 
     .m-grid-element.large.testimonial.damask-red-bcg.font-light-grey
-      .container
-        .table
-          .cell
-            blockquote
-              .m-quote.quote-start.valencia-red
-                = partial 'svg/work/quote'
-              p
-                |
-                  A Soal is born! We now have a beautiful baby beta!
-                  Magda &#43; Filip &#43; Tomek &#64;codequest =
-                  best&#43;team&#43;ever.
-              .m-quote.quote-end.valencia-red
-                = partial 'svg/work/quote'
-            .quote-author.font-martinique-dark
-              | Nathan Brakke,
-              span.quote-author-sign.light-grey &nbsp;soalmate
-
-    .m-grid-element.small.foundersuite.bcg-companies-foundersuite
-      .logo.large.to-top
-        = partial 'svg/work_logos/foundersuite'
-      = partial 'partials/cq_work_portfolio_content'
-
-    .m-grid-element.small.sports-lion.bcg-companies-sportslion
-      .logo.medium
-        = partial 'svg/work_logos/sportslion'
-      = partial 'partials/cq_work_portfolio_content'
+      = partial 'partials/cq_work_portfolio_testimonial', locals: \
+        {element: data.testimonial_2}
 
     .m-grid-element.small.selecthub.bcg-companies-selecthub
       .logo.medium
         = partial 'svg/work_logos/selecthub'
-      = partial 'partials/cq_work_portfolio_content'
+      = partial 'partials/cq_work_portfolio_content', locals: \
+        {element: data.selecthub}
 
     .m-grid-element.small.soal.bcg-companies-soal
       .logo.small
         = partial 'svg/work_logos/soal'
-      = partial 'partials/cq_work_portfolio_content'
+      = partial 'partials/cq_work_portfolio_content', locals: \
+        {element: data.soal}
+
+    .m-grid-element.small.soothe.bcg-companies-soothe
+      .logo.medium
+        = partial 'svg/work_logos/soothe'
+      = partial 'partials/cq_work_portfolio_content', locals: \
+        {element: data.soothe}
 
     .m-grid-element.small.taptera.bcg-companies-taptera
       .logo.medium.tablet-x-small
         = partial 'svg/work_logos/taptera'
-      = partial 'partials/cq_work_portfolio_content'
+      = partial 'partials/cq_work_portfolio_content', locals: \
+        {element: data.lifthero}
+
+    .m-grid-element.small.sports-lion.bcg-companies-sportslion
+      .logo.medium
+        = partial 'svg/work_logos/sportslion'
+      = partial 'partials/cq_work_portfolio_content', locals: \
+        {element: data.sportslion}
 
     .m-grid-element.large.testimonial.breaker-bay-green-bcg.font-light-grey
-      .container
-        .table
-          .cell
-            blockquote
-              .m-quote.quote-start.deep-sea-green
-                = partial 'svg/work/quote'
-              p
-                |
-                  Professionalism and enthusiasm are the main qualities of
-                  code quest engineers. They have been up to the challenge and
-                  have worked with our team shoulder to shoulder to ensure the
-                  success of our project.
-              .m-quote.quote-end.deep-sea-green
-                = partial 'svg/work/quote'
-            .quote-author.font-martinique-dark
-              | Luis Hernando Blanco,
-              span.quote-author-sign.light-grey.display
-                | &nbsp;Co-founder and VP - Product Engineering
+      = partial 'partials/cq_work_portfolio_testimonial', locals: \
+       {element: data.testimonial_3}
