@@ -124,10 +124,11 @@ $base-font-size: 12px;
 
 @mixin button-with-color-states($base-color: $damask-red,
               $supplementary-color: $maroon-red,
-              $shadow-color: '') {
+              $shadow-color: '',
+              $color-hover: $light-gray) {
   &:hover {
     background-color: $base-color;
-    color: $light-gray;
+    color: $color-hover;
   }
 
   &:active {
