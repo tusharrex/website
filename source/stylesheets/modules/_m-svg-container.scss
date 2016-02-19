@@ -10,7 +10,13 @@
 
 @media #{$breakpoint-tablet} {
   .m-svg-container {
-    height: 18.4vw;
-    max-width: 100%;
+    height: 390px;
+    max-width: 767px;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-svg-container {
+    max-width: 997px;
   }
 }

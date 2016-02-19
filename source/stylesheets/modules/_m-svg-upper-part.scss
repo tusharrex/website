@@ -23,51 +23,103 @@
 @media #{$breakpoint-tablet} {
   .m-svg-upper-part {
     .diver {
-      @include place-svg(240, 143, 41, 4);
+      @include place-svg-normal(252px, 37%, -4%);
     }
 
     .cloud-diver {
-      @include place-svg(80, 52, 13, 56);
+      @include place-svg-normal(91px, .5%, 54%);
     }
 
     .cloud-ruby {
-      @include place-svg(77, 52, 51.5, 69);
+      @include place-svg-normal(90px, 55%, 61%);
     }
 
     .fishes {
-      @include place-svg(118, 82, 67, 42);
+      @include place-svg-normal(122px, 73%, 34%);
     }
 
     .gopher {
-      @include place-svg(112, 104, 18.5, 29);
+      @include place-svg-normal(122px, 10.5%, 31%);
     }
 
     .octopus {
-      @include place-svg(67, 85, 88.5, 33);
+      @include place-svg-normal(72px, 91.5%, 56%);
     }
 
     .wave-1 {
-      @include place-svg(90, 20, 31.5, 66);
+      @include place-svg-normal(96px, 25%, 84.5%);
     }
 
     .wave-2 {
-      @include place-svg(90, 20, 58.5, 57);
+      @include place-svg-normal(96px, 67.5%, 58%);
     }
 
     .wave-3 {
-      @include place-svg(90, 20, 35.5, 10);
+      @include place-svg-normal(96px, 27%, 14%);
     }
 
     .wave-4 {
-      @include place-svg(90, 20, 7, 41.5);
+      @include place-svg-normal(96px, 1%, 23.5%);
     }
 
     .wave-5 {
-      @include place-svg(90, 20, 72.5, 8);
+      @include place-svg-normal(96px, 87%, 13.5%);
     }
 
     .wave-6 {
-      @include place-svg(90, 20, 80, 64);
+      @include place-svg-normal(96px, 76%, 82.5%);
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-svg-upper-part {
+    .diver {
+      left: 40%;
+    }
+
+    .cloud-diver {
+      left: 10%;
+    }
+
+    .cloud-ruby {
+      left: 54%;
+    }
+
+    .fishes {
+      left: 73%;
+    }
+
+    .gopher {
+      left: 17.5%;
+    }
+
+    .octopus {
+      left: 93.5%;
+    }
+
+    .wave-1 {
+      left: 32%;
+    }
+
+    .wave-2 {
+      left: 65%;
+    }
+
+    .wave-3 {
+      left: 33%;
+    }
+
+    .wave-4 {
+      left: 5%;
+    }
+
+    .wave-5 {
+      left: 82.5%;
+    }
+
+    .wave-6 {
+      left: 72%;
     }
   }
 }

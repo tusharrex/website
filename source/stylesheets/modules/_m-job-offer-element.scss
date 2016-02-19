@@ -49,6 +49,12 @@
   }
 }
 
+@media #{$only-mobile-large} {
+  .m-job-offer-element {
+    width: 50%;
+  }
+}
+
 @media #{$breakpoint-mobile-landscape} {
   .m-job-offer-element {
 
