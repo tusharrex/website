@@ -1,6 +1,5 @@
 .m-burger-button {
-  height: 39px;
-  width: 52px;
+  @include size(37px, 40px);
 
   .normal-state {
     @include size(37px, 40px);
