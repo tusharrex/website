@@ -1,0 +1,56 @@
+.m-header-elements {
+  @include flex-flow(row, nowrap);
+  @include justify-content(space-between);
+  margin: 20px 20px 0;
+
+  .hello-mail {
+    color: $martinique-dark;
+    font-family: $alega-bold;
+    font-size: 19px;
+    text-decoration: none;
+
+    &:hover {
+      color: $damask-red;
+    }
+
+    &:active {
+      color: $martinique-dark;
+    }
+  }
+
+  .o-shaped-submarine {
+    @include size(45px, 45px);
+    color: $light-gray;
+    display: block;
+    position: relative;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+@media #{$mobile} {
+  .m-header-elements {
+    .o-shaped-submarine {
+      @include size(30px, 30px);
+    }
+  }
+}
+
+@media #{$only-mobile-large} {
+  .m-header-elements {
+    .hello-mail {
+      font-size: 25px;
+      letter-spacing: .2px;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-header-elements {
+    .hello-mail {
+      font-size: 26px;
+    }
+  }
+}

@@ -11,7 +11,7 @@ $ ->
   menuNav = document.getElementsByClassName('main-menu')[0]
   menu = new Hammer(menuNav)
 
-  $('.main-menu-open-button').click ->
+  $('.m-burger-button').click ->
     openMainMenu()
 
   $('.main-menu-close-button, .overlay').click ->

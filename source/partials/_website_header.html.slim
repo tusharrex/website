@@ -1,5 +1,8 @@
 .m-header data-js= 'random-background-color'
-  = link_to '/' do
-    .m-cq-mobile-logo.from_header
-      = partial 'svg/logo_mobile'
+  .m-header-elements
+    = link_to '/' do
+      .o-shaped-submarine
+        = partial 'svg/logo_mobile'
+
+    = partial 'partials/main_menu_button'
   .m-page-title = title

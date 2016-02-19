@@ -1,5 +1,7 @@
 .l-landing-page.upper-part
-  = mail_to 'hello@codequest.com', nil, class: 'hello-mail'
+  .m-header-elements
+    = mail_to 'hello@codequest.com', nil, class: 'hello-mail'
+    = partial 'partials/main_menu_button'
   .cq-logo-wrapper
     = partial 'partials/main_logo'
   .cq-mobile-logo-wrapper
