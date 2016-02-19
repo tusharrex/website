@@ -3,8 +3,7 @@
   width: 52px;
 
   .normal-state {
-    height: 37px;
-    width: 40px;
+    @include size(37px, 40px);
 
     .small {
       display: none;
@@ -12,20 +11,17 @@
   }
 
   .clicked-state {
-    height: 4px;
-    width: 4px;
+    @include size(4px, 4px);
   }
 
   .hover-state {
-    height: 28px;
-    width: 38px;
+    @include size(28px, 38px);
   }
 }
 
 @media #{$smaller--than-main-menu} {
   .m-burger-button {
-    height: 30px;
-    width: 40px;
+    @include size(30px, 40px);
 
     .normal-state .normal {
       display: none;

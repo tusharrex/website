@@ -19,11 +19,10 @@
   }
 
   .o-shaped-submarine {
+    @include size(45px, 45px);
     color: $light-gray;
     display: block;
-    height: 45px;
     position: relative;
-    width: 45px;
 
     &:hover {
       opacity: .8;
@@ -34,8 +33,7 @@
 @media #{$mobile} {
   .m-header-elements {
     .o-shaped-submarine {
-      height: 30px;
-      width: 30px;
+      @include size(30px, 30px);
     }
   }
 }
