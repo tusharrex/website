@@ -1,0 +1,19 @@
+.l-not-found-page
+  .m-header-elements
+    = link_to '/' do
+      .o-shaped-submarine
+        = partial 'svg/logo_mobile'
+    = partial 'partials/main_menu_button'
+  .m-not-found-content
+    ' Uh-oh!
+    br
+    ' This page doesn't exist.
+    .let-us-know
+      ' Please
+      = mail_to 'hello@codequest.com', 'let us know', class: 'm-hello-mail'
+      '
+      | if you believe this is an error.
+    a.btn.permanent_color.check-our-work(href='/work')
+      | Check our work
+    a.btn.permanent_color.back-to-homepage(href='/')
+      | Back to homepage

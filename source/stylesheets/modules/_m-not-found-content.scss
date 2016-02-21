@@ -1,0 +1,45 @@
+.m-not-found-content {
+  font-family: $alega;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 44px;
+  margin: 0 auto;
+  margin-top: -7px;
+  text-align: center;
+  width: 90%;
+
+  .let-us-know {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 8px 0 14px;
+  }
+
+  .m-hello-mail {
+    color: $valencia-red;
+
+    &:hover {
+      color: $damask-red;
+    }
+  }
+
+  .back-to-homepage {
+    display: none;
+  }
+
+  .back-to-homepage,
+  .check-our-work {
+    padding: 10px;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-not-found-content {
+    .back-to-homepage {
+      display: inline-block;
+    }
+
+    .check-our-work {
+      display: none;
+    }
+  }
+}
