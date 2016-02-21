@@ -1,0 +1,14 @@
+.m-hello-mail {
+  color: $martinique-dark;
+  font-family: $alega-bold;
+  font-size: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: $damask-red;
+  }
+
+  &:active {
+    color: $martinique-dark;
+  }
+}
