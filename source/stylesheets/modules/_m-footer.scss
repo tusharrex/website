@@ -59,10 +59,12 @@
 
 
   .social-link {
+    margin-left: 0;
     max-width: 30px;
   }
 
   .social-links {
+    @include align-items(flex-start);
     @include flex-flow(row, wrap);
     @include flex-justify-content(space-between);
     margin-top: 30px;
@@ -219,11 +221,6 @@
     .menu-item:hover .arrow {
       display: inline-block;
     }
-
-
-    .social-links {
-      @include flex-flow(column, wrap);
-    }
   }
 }
 
@@ -247,6 +244,11 @@
 
     .get-in-touch {
       width: 20%;
+    }
+
+    .social-links {
+      @include flex-flow(column, wrap);
+      @include align-items(flex-start);
     }
   }
 }
