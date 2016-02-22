@@ -218,11 +218,17 @@
       }
     }
 
-    .menu-item:hover .arrow {
-      display: inline-block;
+    .menu-item {
+      &:hover .arrow {
+        display: inline-block;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
     }
   }
-}
+}   
 
 @media #{$breakpoint-desktop-large} {
   .m-footer {
