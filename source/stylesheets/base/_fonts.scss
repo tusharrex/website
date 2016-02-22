@@ -7,7 +7,7 @@
 @include font-face('CourierPrime-Bold-Italic', 'CourierPrime-Italic-Bold');
 @include font-face('Baskerville', 'Baskerville');
 @include font-face('Baskerville-Bold', 'Baskerville-Bold');
-@include font-face('Baskerville-Italic-Bold', 'Baskerville-Italic-Bold');
+@include font-face('Baskerville-Italic', 'Baskerville-Italic');
 
 $alega: 'AlegaWeb', sans-serif;
 $alega-bold: 'AlegaWeb-Bold', sans-serif;
@@ -20,4 +20,4 @@ $courier-italic-bold: 'CourierPrime-Bold-Italic', serif;
 
 $baskerville: 'Baskerville', sans-serif;
 $baskerville-bold: 'Baskerville-Bold', sans-serif;
-$baskerville-italic-bold: 'Baskerville-Italic-Bold', sans-serif;
+$baskerville-italic: 'Baskerville-Italic', sans-serif;

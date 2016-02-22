@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title= title_helper
+
+    meta name="description" content=description_helper
+    meta content=('text/html; charset=UTF-8') http-equiv="Content-Type"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="initial-scale=1.0, user-scalable=no,\
+      maximum-scale=1, width=device-width, minimal-ui"
+
+
+    = stylesheet_link_tag 'normalize', 'application'
+    = javascript_include_tag 'application'
+
+  body.website-page class=page_classes
+    = partial 'partials/menu'
+    .m-blog-header
+      .m-header-elements
+        = link_to '/' do
+          .o-shaped-submarine
+            = partial 'svg/logo_mobile'
+        = partial 'partials/main_menu_button'
+      .details
+        .tags
+          = current_article.tags.map { |tag| "##{tag}" }.join(' ')
+        .title
+          = current_article.title
+        .info
+          .author
+            | Posted by
+            =< current_article.data.author
+          .date
+            = current_article.date.strftime('%B %e, %Y')
+    .blog_content
+      = yield
+    = partial 'partials/footer'
