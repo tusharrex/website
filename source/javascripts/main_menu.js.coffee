@@ -5,8 +5,8 @@ closeMainMenu = ->
   $('.main-menu').removeClass('bouncedIn').addClass('bouncedOut')
 
 $ ->
-  $('.m-burger-button').click ->
+  $('.m-burger-button').on 'touchstart click', ->
     openMainMenu()
 
-  $('.main-menu-close-button, .overlay').click ->
+  $('.main-menu-close-button').on 'touchstart click', ->
     closeMainMenu()

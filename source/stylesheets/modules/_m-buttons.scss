@@ -96,44 +96,6 @@
   }
 }
 
-
-.three-states-button {
-  position: relative;
-  z-index: 201;
-
-  > div {
-    position: relative;
-    z-index: -1;
-  }
-
-  .hover-state,
-  .clicked-state {
-    display: none;
-  }
-}
-
-.three-states-button:hover {
-  .normal-state,
-  .clicked-state {
-    display: none;
-  }
-
-  .hover-state {
-    display: block;
-  }
-}
-
-.three-states-button:active {
-  .normal-state,
-  .hover-state {
-    display: none;
-  }
-
-  .clicked-state {
-    display: block;
-  }
-}
-
 .no-button {
   background: transparent;
   border: 0;
