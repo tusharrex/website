@@ -16,7 +16,7 @@ html
     = javascript_include_tag 'lib/modernizr-custom'
     = javascript_include_tag 'application'
 
-  body class=page_classes
+  body.website-page class=page_classes
     = partial('partials/menu', locals: {modifier: 'from_header'})
     = yield
     = partial 'partials/footer'

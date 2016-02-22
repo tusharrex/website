@@ -1,0 +1,37 @@
+.m-burger-button {
+  @include size(37px, 40px);
+
+  .normal-state {
+    @include size(37px, 40px);
+
+    .small {
+      display: none;
+    }
+  }
+
+  .clicked-state {
+    @include size(4px, 4px);
+  }
+
+  .hover-state {
+    @include size(28px, 38px);
+  }
+}
+
+@media #{$smaller--than-main-menu} {
+  .m-burger-button {
+    @include size(30px, 40px);
+
+    .normal-state .normal {
+      display: none;
+    }
+
+    .normal-state .small {
+      display: block;
+    }
+
+    .hover-state {
+      width: 27px;
+    }
+  }
+}

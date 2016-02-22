@@ -1,0 +1,11 @@
+button.no-button.three-states-button.m-burger-button(
+  type="button" class="#{locals[:modifier] if locals}")
+  .normal-state
+    .normal
+      = partial 'svg/main_menu/humburgerbutton'
+    .small
+      = partial 'svg/main_menu/humburgerbutton_mobile'
+  .hover-state
+    = partial 'svg/main_menu/humburgerbutton_arrow'
+  .clicked-state
+    = partial 'svg/main_menu/humburgerbutton_dot'

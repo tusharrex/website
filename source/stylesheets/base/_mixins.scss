@@ -14,6 +14,11 @@
   stroke-dasharray: $dasharray;
 }
 
+@mixin rule($fillrule: evenodd, $cliprule: evenodd) {
+  fill-rule: $fillrule;
+  clip-rule: $cliprule;
+}
+
 $letters-width: 1146.4;
 $letters-height: 168.9;
 
@@ -119,10 +124,11 @@ $base-font-size: 12px;
 
 @mixin button-with-color-states($base-color: $damask-red,
               $supplementary-color: $maroon-red,
-              $shadow-color: '') {
+              $shadow-color: '',
+              $color-hover: $light-gray) {
   &:hover {
     background-color: $base-color;
-    color: $light-gray;
+    color: $color-hover;
   }
 
   &:active {
@@ -207,7 +213,7 @@ $base-font-size: 12px;
 
 $images:
   dawanda, eqipia, foundersuite, selecthub,
-  soothe, sportslion, taptera, soal, kotel,
+  soothe, sportslion, lifthero, soal, kotel,
   adam1, adam2, adam3, adam4;
 
 $folder-name: companies, team;

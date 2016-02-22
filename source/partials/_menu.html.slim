@@ -1,14 +1,3 @@
-button.no-button.three-states-button.main-menu-open-button(
-  class="#{locals[:modifier] if locals}")
-  .normal-state
-    .normal
-      = partial 'svg/main_menu/humburgerbutton'
-    .small
-      = partial 'svg/main_menu/humburgerbutton_mobile'
-  .hover-state
-    = partial 'svg/main_menu/humburgerbutton_arrow'
-  .clicked-state
-    = partial 'svg/main_menu/humburgerbutton_dot'
 nav.main-menu
   button.main-menu-close-button.three-states-button.no-button
     .normal-state
@@ -43,16 +32,16 @@ nav.main-menu
       .arrow
         = partial 'svg/main_menu/main_menu_arrow'
   ul.social-links
-    li
-      a.facebook-link(href='https://www.facebook.com/codequest.eu'
-       target='_blank' rel='nofollow')
-        = partial 'svg/main_menu/facebook_icon'
-    li
+    li.social-link
+      a.twitter-link(href='https://twitter.com/codequest'
+        target='_blank' rel='nofollow')
+          = partial 'svg/main_menu/twitter_icon'
+    li.social-link
       a.github-link(href='https://github.com/codequest-eu'
         target='_blank' rel='nofollow')
         = partial 'svg/main_menu/github_icon'
-    li
-      a.twitter-link(href='https://twitter.com/codequest'
-       target='_blank' rel='nofollow')
-        = partial 'svg/main_menu/twitter_icon'
+    li.social-link
+      a.facebook-link(href='https://www.facebook.com/codequest.eu'
+        target='_blank' rel='nofollow')
+          = partial 'svg/main_menu/facebook_icon'
 .overlay
