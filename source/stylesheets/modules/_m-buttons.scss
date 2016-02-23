@@ -92,7 +92,8 @@
       &.martinique_dark {
         @include button-with-color-states(
           $base-color: $martinique-dark,
-          $supplementary-color: $martinique-dark);
+          $supplementary-color: $santas-gray,
+          $shadow-color: $mirage-dark);
       }
     }
   }
