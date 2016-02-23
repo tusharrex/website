@@ -71,6 +71,7 @@
     background: $light-gray;
     display: block;
     margin: 0 auto;
+    width: 100%;
   }
 
   .form-legend,
@@ -154,6 +155,10 @@
       .dash {
         margin: 0 2%;
       }
+    }
+
+    .form-button {
+      width: 290px;
     }
 
     .form-legend {
