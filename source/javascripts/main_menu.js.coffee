@@ -8,5 +8,5 @@ $ ->
   $('.m-burger-button').on 'touchstart click', ->
     openMainMenu()
 
-  $('.main-menu-close-button').on 'touchstart click', ->
+  $('.main-menu-close-button, .overlay').on 'touchstart click', ->
     closeMainMenu()

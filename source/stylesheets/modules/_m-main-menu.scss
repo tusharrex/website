@@ -1,5 +1,42 @@
 // scss-lint:disable SelectorFormat
 
+@include keyframes(mainMenuBounceIn) {
+  0% {
+    @include transform(translate3d(0, 0, 0));
+    opacity: 0;
+  }
+
+  50% {
+    @include transform(translate3d(-30vw, 0, 0));
+    opacity: 1;
+  }
+
+  75% {
+    @include transform(translate3d(-27vw, 0, 0));
+    opacity: 1;
+  }
+
+  100% {
+    @include transform(translate3d(-30vw, 0, 0));
+  }
+}
+
+@include keyframes(mainMenuBounceOut) {
+  0% {
+    @include transform(translate3d(-30vw, 0, 0));
+  }
+
+  20% {
+    @include transform(translate3d(-33vw, 0, 0));
+    opacity: 1;
+  }
+
+  100% {
+    @include transform(translate3d(0, 0, 0));
+    opacity: 0;
+  }
+}
+
 @include keyframes(mainMenuBounceInMobile) {
   0% {
     @include transform(translate3d(0, 0, 0));
@@ -32,8 +69,19 @@
   }
 }
 
+.overlay {
+  @include position(0, 0, 0, 0);
+  background: $main-menu-bg;
+  display: none;
+  opacity: .2;
+  overflow: hidden;
+  position: fixed;
+  z-index: 201;
+}
+
+
 .main-menu {
-  @include position(0, -100vw, 0, 100vw);
+  @include position(0, -110vw, 0, 100vw);
   background: $main-menu-bg;
   color: $white;
   overflow: hidden;
@@ -51,7 +99,23 @@
 
   &.bouncedOut {
     @include animation(mainMenuBounceOutMobile .5s both);
-    max-width: 110vw;
-    right: -110vw;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .main-menu {
+    @include position(0, -33vw, 0, 100vw);
+
+    &.bouncedIn {
+      @include animation(mainMenuBounceIn .5s both);
+
+      + .overlay {
+        display: block;
+      }
+    }
+
+    &.bouncedOut {
+      @include animation(mainMenuBounceOut .5s both);
+    }
   }
 }
