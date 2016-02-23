@@ -1,8 +1,7 @@
 .m-job-offer-element {
 
   &:hover {
-    @include transition(opacity .2s ease-in-out);
-    opacity: .8;
+    @include filter(brightness(85%));
   }
 
   // This class define temporary styles for blocks.
