@@ -67,7 +67,8 @@
     @include font(5.8vw, 9vw);
 
     color: $martinique-dark;
-    font-family: $baskerville-italic;
+    font-family: $baskerville-bold;
+    font-style: italic;
     text-indent: 20px;
 
     &.light-grey-bcg {
