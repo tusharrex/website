@@ -44,7 +44,6 @@
     }
 
     @media #{$breakpoint-tablet} {
-      
       &.damask-red-light-gray {
         @include button-with-color(
           $base-color: $damask-red);
@@ -54,7 +53,7 @@
           $shadow-color: $valencia-red,
           $color-hover: $light-gray);
       }
-      
+
       &.gray-aquamarine-blue {
         @include button-with-color-states(
           $base-color: $light-gray,
@@ -83,7 +82,7 @@
         @include button-with-color-states(
           $base-color: $light-gray,
           $supplementary-color: $docker-blue,
-          $shadow-color: $light-gray-2,  
+          $shadow-color: $light-gray-2,
           $color-hover: $indian-yellow-2);
       }
 
@@ -91,7 +90,7 @@
         @include button-with-color-states(
           $base-color: $light-gray,
           $supplementary-color: $mirage-dark,
-          $shadow-color: $light-gray-2, 
+          $shadow-color: $light-gray-2,
           $color-hover: $martinique-dark);
       }
 
@@ -110,7 +109,8 @@
           $shadow-color: $light-gray-2,
           $color-hover: $breaker-bay-green);
       }
-     &.martinique_dark {
+
+      &.martinique_dark {
         @include button-with-color-states(
           $base-color: $martinique-dark,
           $supplementary-color: $santas-gray,
