@@ -44,7 +44,17 @@
     }
 
     @media #{$breakpoint-tablet} {
-
+      
+      &.damask-red-light-gray {
+        @include button-with-color(
+          $base-color: $damask-red);
+        @include button-with-color-states(
+          $base-color: $damask-red,
+          $supplementary-color: $valencia-red,
+          $shadow-color: $valencia-red,
+          $color-hover: $light-gray);
+      }
+      
       &.gray-aquamarine-blue {
         @include button-with-color-states(
           $base-color: $light-gray,
@@ -93,29 +103,18 @@
           $color-hover: $valencia-red);
       }
 
-      &.martinique_dark {
-        @include button-with-color-states(
-          $base-color: $martinique-dark,
-          $supplementary-color: $santas-gray,
-          $shadow-color: $mirage-dark);
-      }
-
       &.gray-breaker-bay-green {
         @include button-with-color-states(
           $base-color: $light-gray,
           $supplementary-color: $deep-sea-green,
           $shadow-color: $light-gray-2,
           $color-hover: $breaker-bay-green);
-      }      
-      
-      &.damask-red-light-gray {
-        @include button-with-color(
-          $base-color: $damask-red);
+      }
+     &.martinique_dark {
         @include button-with-color-states(
-          $base-color: $damask-red,
-          $supplementary-color: $valencia-red,
-          $shadow-color: $valencia-red,
-          $color-hover: $light-gray);
+          $base-color: $martinique-dark,
+          $supplementary-color: $santas-gray,
+          $shadow-color: $mirage-dark);
       }
     }
   }
