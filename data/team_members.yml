@@ -1,5 +1,5 @@
 members:
-  - 
+  -
     name: Tomasz
     color: indian-yellow-2
     description: Founder and CEO
@@ -137,13 +137,13 @@ members:
     description: Full Stack Engineer
     position: Full Stack Engineer
     image: lukasz
-  -   
+  -
     name: Przemek
     color: martinique-dark
     description: RoR Developer
     position: RoR Developer
     image: przemek
-  -   
+  -
     name: CatQuest
     color: martinique-dark
     description: VP of entertainment
