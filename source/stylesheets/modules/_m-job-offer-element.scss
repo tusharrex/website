@@ -1,8 +1,7 @@
 .m-job-offer-element {
 
   &:hover {
-    @include transition(opacity .2s ease-in-out);
-    opacity: .8;
+    @include filter(brightness(85%));
   }
 
   // This class define temporary styles for blocks.
@@ -32,7 +31,7 @@
     padding-top: 18vw;
   }
 
-  .hash-tag {
+  .requirements {
     font-size: 16px;
 
     &.damask-red {
@@ -103,7 +102,7 @@
       padding-top: 58px;
     }
 
-    .hash-tag {
+    .requirements {
       font-size: 21px;
     }
   }

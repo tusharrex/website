@@ -69,6 +69,10 @@
     .codebeat-logo {
       max-width: 410px;
       width: 88%;
+
+      &:hover {
+        @include filter(brightness(92%));
+      }
     }
 
     .codebeat-slogan {

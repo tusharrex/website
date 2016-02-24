@@ -67,7 +67,8 @@
     @include font(5.8vw, 9vw);
 
     color: $martinique-dark;
-    font-family: $baskerville-italic-bold;
+    font-family: $baskerville-bold;
+    font-style: italic;
     text-indent: 20px;
 
     &.light-grey-bcg {
@@ -88,7 +89,7 @@
 
     .table {
       margin: 0 auto;
-      padding-top: 34px;
+      padding-top: 15px;
       width: 80%;
     }
   }
@@ -103,6 +104,7 @@
 
     color: $damask-red;
     font-family: $alega-bold;
+    font-style: normal;
     text-align: right;
 
     &.font-martinique-dark {
@@ -139,11 +141,11 @@
     }
 
     .eqipia {
-      @include background-hover($aquamarine-blue);
+      @include background-hover($breaker-bay-green);
     }
 
     .foundersuite {
-      @include background-hover($indian-yellow-2);
+      @include background-hover($indian-yellow);
     }
 
     .selecthub {
@@ -163,7 +165,7 @@
     }
 
     .lifthero {
-      @include background-hover($aquamarine-blue);
+      @include background-hover($breaker-bay-green);
     }
   }
 }
