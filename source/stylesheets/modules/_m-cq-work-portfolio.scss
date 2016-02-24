@@ -141,11 +141,11 @@
     }
 
     .eqipia {
-      @include background-hover($aquamarine-blue);
+      @include background-hover($breaker-bay-green);
     }
 
     .foundersuite {
-      @include background-hover($indian-yellow-2);
+      @include background-hover($indian-yellow);
     }
 
     .selecthub {
@@ -165,7 +165,7 @@
     }
 
     .lifthero {
-      @include background-hover($aquamarine-blue);
+      @include background-hover($breaker-bay-green);
     }
   }
 }
