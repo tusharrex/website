@@ -49,9 +49,9 @@
           $base-color: $damask-red);
         @include button-with-color-states(
           $base-color: $damask-red,
+          $color-hover: $light-gray,
           $supplementary-color: $valencia-red,
-          $shadow-color: $valencia-red,
-          $color-hover: $light-gray);
+          $shadow-color: $valencia-red);
       }
 
       &.gray-aquamarine-blue {
