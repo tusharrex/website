@@ -57,64 +57,64 @@
       &.gray-aquamarine-blue {
         @include button-with-color-states(
           $base-color: $light-gray,
-          $supplementary-color: $docker-blue,
+          $color-hover: $aquamarine-blue,
           $shadow-color: $light-gray-2,
-          $color-hover: $aquamarine-blue);
+          $supplementary-color: $docker-blue);
       }
 
       &.gray-damask-red {
         @include button-with-color-states(
           $base-color: $light-gray,
-          $supplementary-color: $valencia-red,
+          $color-hover: $damask-red,
           $shadow-color: $light-gray-2,
-          $color-hover: $damask-red);
+          $supplementary-color: $valencia-red);
       }
 
       &.gray-indian-yellow {
         @include button-with-color-states(
           $base-color: $light-gray,
-          $supplementary-color: $indian-yellow-2,
+          $color-hover: $indian-yellow,
           $shadow-color: $light-gray-2,
-          $color-hover: $indian-yellow);
+          $supplementary-color: $indian-yellow-2);
       }
 
       &.gray-indian-yellow-2 {
         @include button-with-color-states(
           $base-color: $light-gray,
-          $supplementary-color: $docker-blue,
+          $color-hover: $indian-yellow-2,
           $shadow-color: $light-gray-2,
-          $color-hover: $indian-yellow-2);
+          $supplementary-color: $docker-blue);
       }
 
       &.gray-martinique_dark {
         @include button-with-color-states(
           $base-color: $light-gray,
-          $supplementary-color: $mirage-dark,
+          $color-hover: $martinique-dark,
           $shadow-color: $light-gray-2,
-          $color-hover: $martinique-dark);
+          $supplementary-color: $mirage-dark);
       }
 
       &.gray-valencia-red {
         @include button-with-color-states(
           $base-color: $light-gray,
-          $supplementary-color: $maroon-red,
+          $color-hover: $valencia-red,
           $shadow-color: $light-gray-2,
-          $color-hover: $valencia-red);
+          $supplementary-color: $maroon-red);
       }
 
       &.gray-breaker-bay-green {
         @include button-with-color-states(
           $base-color: $light-gray,
-          $supplementary-color: $deep-sea-green,
+          $color-hover: $breaker-bay-green,
           $shadow-color: $light-gray-2,
-          $color-hover: $breaker-bay-green);
+          $supplementary-color: $deep-sea-green);
       }
 
       &.martinique_dark {
         @include button-with-color-states(
           $base-color: $martinique-dark,
-          $supplementary-color: $santas-gray,
-          $shadow-color: $mirage-dark);
+          $shadow-color: $mirage-dark,
+          $supplementary-color: $santas-gray);
       }
     }
   }
