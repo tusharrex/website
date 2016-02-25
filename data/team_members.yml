@@ -14,38 +14,38 @@ members:
   -
     name: Marcin
     color: martinique-dark
-    description: RoR, GO Engineer
-    position: RoR, GO Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: marcin
   -
     name: Bartek
     color: damask-red
-    description: Full Stack Engineer
-    position: Full Stack Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: bartek
   -
     name: Mikołaj
     color: indian-yellow
-    description: Full Stack Engineer
-    position: Full Stack Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: mikolaj
   -
     name: Ania
     color: damask-red
-    description: Frontend Engineer
-    position: Frontend Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: ania
   -
     name: Patryk
     color: aquamarine-blue
-    description: Full Stack Engineer
-    position: Full Stack Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: patryk
   -
     name: Piotrek
     color: deep-sea-green
-    description: RoR Engineer
-    position: RoR Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: piotrek
   -
     name: Adam
@@ -62,56 +62,56 @@ members:
   -
     name: Magda
     color: valencia-red
-    description: RoR Engineer
-    position: RoR Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: magda
   -
     name: Beata
     color: breaker-bay-green
-    description: Frontend Engineer
-    position: Frontend Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: beata
   -
     name: Rafał
     color: indian-yellow-2
-    description: Full Stack Engineer
-    position: Full Stack Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: rafal
   -
     name: Basia
     color: martinique-dark
-    description: RoR Engineer
-    position: RoR Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: basia
   -
     name: Andrzej
     color: breaker-bay-green
-    description: RoR Engineer
-    position: RoR Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: andrzej
   -
     name: Bartek
     color: aquamarine-blue
-    description: Full Stack Engineer
-    position: Full Stack Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: barteks
   -
     name: Irene
     color: deep-sea-green
-    description: Frontend Engineer
-    position: Frontend Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: irene
   -
     name: Jarek
     color: damask-red
-    description: Full Stack Engineer
-    position: Full Stack Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: jarek
   -
     name: Łukasz
     color: indian-yellow-2
-    description: iOS, RoR Engineer
-    position: iOS, RoR Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: lukasz
   -
     name: Mariusz
@@ -134,14 +134,14 @@ members:
   -
     name: Paweł
     color: indian-yellow-2
-    description: Full Stack Engineer
-    position: Full Stack Engineer
+    description: Software Engineer
+    position: Software Engineer
     image: lukasz
   -
     name: Przemek
     color: valencia-red
-    description: RoR Developer
-    position: RoR Developer
+    description: Software Engineer
+    position: Software Engineer
     image: przemek
   -
     name: CatQuest
@@ -149,3 +149,4 @@ members:
     description: VP of entertainment
     position: VP of entertainment
     image: kotel
+  
