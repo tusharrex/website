@@ -2,66 +2,150 @@ members:
   -
     name: Tomasz
     color: indian-yellow-2
-    description: mój Booże..
-    position: mój Booże..
-    image: kotel
-  -
-    name: Bartosz
-    color: valencia-red
-    description: niemiec
-    position: niemiec
-    image: adam1
-  -
-    name: Magda
-    color: breaker-bay-green
-    description: malinozbieracz
-    position: malinozbieracz
-    image: adam2
-  -
-    name: Andrzej
-    color: fountain-blue
-    description: Andrzej
-    position: Andrzej
-    image: adam3
-  -
-    name: Mikołaj
-    color: maroon-red
-    description: loczek koczek
-    position: loczek koczek
-    image: adam4
-  -
-    name: Łukasz
-    color: indian-yellow
-    description: chomiczek
-    position: chomiczek
-    image: kotel
+    description: Founder and CEO
+    position: Founder and CEO
+    image: Tomasz
   -
     name: Filip
+    color: valencia-red
+    description: COO
+    position: COO
+    image: filip
+  -
+    name: Marcin
+    color: martinique-dark
+    description: RoR, GO Engineer
+    position: RoR, GO Engineer
+    image: marcin
+  -
+    name: Bartek
+    color: damask-red
+    description: Full Stack Engineer
+    position: Full Stack Engineer
+    image: bartek
+  -
+    name: Mikołaj
+    color: indian-yellow
+    description: Full Stack Engineer
+    position: Full Stack Engineer
+    image: mikolaj
+  -
+    name: Ania
+    color: damask-red
+    description: Frontend Engineer
+    position: Frontend Engineer
+    image: ania
+  -
+    name: Patryk
     color: aquamarine-blue
-    description: ktos od czegos
-    position: ktos od czegos
-    image: kotel
+    description: Full Stack Engineer
+    position: Full Stack Engineer
+    image: patryk
   -
     name: Piotrek
     color: deep-sea-green
-    description: schabowy <3
-    position: schabowy <3
-    image: kotel
+    description: RoR Engineer
+    position: RoR Engineer
+    image: piotrek
   -
-    name: Patryk
-    color: damask-red
-    description: gosc malinowy
-    position: gosc malinowy
-    image: kotel
+    name: Adam
+    color: deep-sea-green
+    description: Project Manager
+    position: Project Manager
+    image: maniek
   -
-    name: Michał
+    name: Magda
+    color: maroon-red
+    description: UX Designer
+    position: UX Designer
+    image: magdap
+  -
+    name: Magda
+    color: valencia-red
+    description: RoR Engineer
+    position: RoR Engineer
+    image: magda
+  -
+    name: Beata
+    color: breaker-bay-green
+    description: Frontend Engineer
+    position: Frontend Engineer
+    image: beata
+  -
+    name: Rafał
     color: indian-yellow-2
-    description: daj mi chwilkę
-    position: daj mi chwilkę
-    image: kotel
+    description: Full Stack Engineer
+    position: Full Stack Engineer
+    image: rafal
   -
-    name: Ania
+    name: Basia
     color: martinique-dark
-    description: gifciarz
-    position: gifciarz
+    description: RoR Engineer
+    position: RoR Engineer
+    image: basia
+  -
+    name: Andrzej
+    color: breaker-bay-green
+    description: RoR Engineer
+    position: RoR Engineer
+    image: andrzej
+  -
+    name: Bartek
+    color: aquamarine-blue
+    description: Full Stack Engineer
+    position: Full Stack Engineer
+    image: barteks
+  -
+    name: Irene
+    color: deep-sea-green
+    description: Frontend Engineer
+    position: Frontend Engineer
+    image: irene
+  -
+    name: Jarek
+    color: damask-red
+    description: Full Stack Engineer
+    position: Full Stack Engineer
+    image: jarek
+  -
+    name: Łukasz
+    color: indian-yellow-2
+    description: iOS, RoR Engineer
+    position: iOS, RoR Engineer
+    image: lukasz
+  -
+    name: Mariusz
+    color: indian-yellow
+    description: Office Manager
+    position: Office Manager
+    image: mariusz
+  -
+    name: Iza
+    color: deep-sea-green
+    description: HR manager
+    position: HR manager
+    image: iza
+  -
+    name: Mareta
+    color: santas-gray
+    description: Artist
+    position: Artist
+    image: mareta
+  -
+    name: Paweł
+    color: indian-yellow-2
+    description: Full Stack Engineer
+    position: Full Stack Engineer
+    image: lukasz
+  -
+    name: Przemek
+    color: valencia-red
+    description: RoR Developer
+    position: RoR Developer
+    image: przemek
+  -
+    name: CatQuest
+    color: martinique-dark
+    description: VP of entertainment
+    position: VP of entertainment
     image: kotel
