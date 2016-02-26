@@ -7,7 +7,7 @@
 .main-menu-list {
   @include justify-content(space-between);
   @include flex-flow(column, nowrap);
-  height: 65vh;
+  height: 55vh;
   list-style-type: none;
   text-align: right;
 

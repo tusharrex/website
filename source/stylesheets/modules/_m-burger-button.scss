@@ -4,23 +4,12 @@
   @include size(40px, 40px);
   cursor: pointer;
 
-  .normal-state-small {
-    display: block;
-  }
-
-  .normal-state-normal {
-    display: none;
-  }
-
   .clicked-state,
   .hover-state {
     display: none;
   }
 
   &:active {
-    .normal-state-small {
-      display: none;
-    }
 
     .clicked-state {
       display: inline-block;
@@ -30,10 +19,6 @@
 
 .no-touchevents {
   .m-burger-button {
-
-    .normal-state-small {
-      display: none;
-    }
 
     .normal-state-normal {
       display: inline-block;
