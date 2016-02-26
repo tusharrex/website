@@ -1,9 +1,8 @@
 .m-not-found-content {
+  @include font(48px, 44px);
   font-family: $alega;
-  font-size: 48px;
   font-weight: 700;
   height: 490px;
-  line-height: 44px;
   margin: 0 auto;
   margin-top: -7px;
   max-width: 288px;
@@ -12,8 +11,7 @@
   width: 90%;
 
   .let-us-know {
-    font-size: 20px;
-    line-height: 23px;
+    @include font(20px, 23px);
     padding: 8px 0 14px;
   }
 
@@ -82,9 +80,8 @@
 
 @media #{$breakpoint-tablet} {
   .m-not-found-content {
-    font-size: 75px;
+    @include font(75px, 54px);
     height: 492px;
-    line-height: 54px;
     margin-top: -3px;
     max-width: 1210px;
 
@@ -158,8 +155,7 @@
 
 @media #{$breakpoint-desktop-large} {
   .m-not-found-content {
-    font-size: 97px;
-    line-height: 44px;
+    @include font(97px, 44px);
     min-width: 1210px;
 
     .let-us-know {
