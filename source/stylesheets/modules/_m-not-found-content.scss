@@ -82,12 +82,98 @@
 
 @media #{$breakpoint-tablet} {
   .m-not-found-content {
+    font-size: 75px;
+    height: 492px;
+    line-height: 54px;
+    margin-top: -3px;
+    max-width: 1210px;
+
+    .let-us-know {
+      font-size: 36px;
+      padding: 50px 0 30px;
+    }
+
     .back-to-homepage {
       display: inline-block;
+      line-height: 44px;
     }
 
     .check-our-work {
       display: none;
+    }
+
+    .elements-wrapper {
+      bottom: -2.6%;
+      height: 149px;
+      left: 39.6%;
+      position: absolute;
+      width: 335px;
+    }
+
+    .submarine {
+      @include place-svg-normal(200px, -.3%, 8.8%);
+    }
+
+    .four-zero-four {
+      @include place-svg-normal(335px, 0, 0);
+    }
+
+    .starfish {
+      @include place-svg-normal(22px, 50.9%, 38.5%);
+    }
+
+    .fish {
+      @include place-svg-normal(39px, 64.8%, 65.2%);
+    }
+
+    .computer {
+      @include place-svg-normal(64px, -22.5%, 1.2%);
+    }
+
+    .water-1 {
+      @include place-svg-normal(56px, -8.7%, 92%);
+    }
+
+    .water-2 {
+      @include place-svg-normal(46px, 39.3%, 9.6%);
+    }
+
+    .water-3 {
+      @include place-svg-normal(53px, 98.2%, 59%);
+    }
+
+    .plant-2 {
+      @include place-svg-normal(40px, 21.6%, .1%);
+    }
+
+    .plant-3 {
+      @include place-svg-normal(46px, 69.6%, .1%);
+    }
+
+    .plant-4 {
+      @include place-svg-normal(22.1px, 88.6%, .1%);
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-not-found-content {
+    font-size: 97px;
+    line-height: 44px;
+    min-width: 1210px;
+
+    .let-us-know {
+      font-size: 40px;
+      padding: 58px 0 57px;
+    }
+
+    .line-break {
+      display: none;
+    }
+
+    .elements-wrapper {
+      bottom: -.6%;
+      left: 35.6%;
     }
   }
 }

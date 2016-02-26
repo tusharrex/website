@@ -6,7 +6,7 @@
     = partial 'partials/main_menu_button'
   .m-not-found-content
     ' Uh-oh!
-    br
+    br.line-break
     ' This page doesn't exist.
     .let-us-know
       ' Please
@@ -17,25 +17,26 @@
       | Check our work
     a.btn.permanent_color.back-to-homepage(href='/')
       | Back to homepage
-    .starfish
-      = partial 'svg/starfish'
-    .fish
-      = partial 'svg/custom_404/fish'
-    .water-1
-      = partial 'svg/custom_404/water1'
-    .water-2
-      = partial 'svg/custom_404/water2'
-    .water-3
-      = partial 'svg/custom_404/water3'
     .submarine
       = partial 'svg/custom_404/submarine'
-    .four-zero-four
-      = partial 'svg/custom_404/404'
-    .computer
-      = partial 'svg/custom_404/computer'
-    .plant-2
-      = partial 'svg/custom_404/plant2'
-    .plant-3
-      = partial 'svg/custom_404/plant3'
-    .plant-4
-      = partial 'svg/custom_404/plant4'
+    .elements-wrapper
+      .starfish
+        = partial 'svg/starfish'
+      .fish
+        = partial 'svg/custom_404/fish'
+      .water-1
+        = partial 'svg/custom_404/water1'
+      .water-2
+        = partial 'svg/custom_404/water2'
+      .water-3
+        = partial 'svg/custom_404/water3'
+      .four-zero-four
+        = partial 'svg/custom_404/404'
+      .computer
+        = partial 'svg/custom_404/computer'
+      .plant-2
+        = partial 'svg/custom_404/plant2'
+      .plant-3
+        = partial 'svg/custom_404/plant3'
+      .plant-4
+        = partial 'svg/custom_404/plant4'
