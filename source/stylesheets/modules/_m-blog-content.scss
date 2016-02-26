@@ -2,11 +2,11 @@
   color: $martinique-dark;
   font-family: $baskerville;
   margin: 22px 12px;
-  text-align: justify;
 
   p {
     @include font(16px, 1.7);
     margin: 22px 0;
+    text-align: justify;
     text-indent: 23px;
   }
 
