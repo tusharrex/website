@@ -2,9 +2,12 @@
   font-family: $alega;
   font-size: 48px;
   font-weight: 700;
+  height: 490px;
   line-height: 44px;
   margin: 0 auto;
   margin-top: -7px;
+  max-width: 288px;
+  position: relative;
   text-align: center;
   width: 90%;
 
@@ -29,6 +32,51 @@
   .back-to-homepage,
   .check-our-work {
     padding: 10px;
+  }
+
+  .submarine {
+    @include place-svg-normal(130px, .7%, 25.8%);
+  }
+
+  .four-zero-four {
+    @include place-svg-normal(250px, 16.7%, -3%);
+  }
+
+  .starfish {
+    @include place-svg-normal(17px, 60.5%, 6%);
+    z-index: 1;
+  }
+
+  .fish {
+    @include place-svg-normal(29px, 72.5%, 11%);
+  }
+
+  .computer {
+    @include place-svg-normal(47px, -2.5%, -2.8%);
+  }
+
+  .water-1 {
+    @include place-svg-normal(42px, 9.5%, 17.5%);
+  }
+
+  .water-2 {
+    @include place-svg-normal(36px, 50%, -1%);
+  }
+
+  .water-3 {
+    @include place-svg-normal(42px, 47.4%, 25.3%);
+  }
+
+  .plant-2 {
+    @include place-svg-normal(30px, 35.5%, -2.8%);
+  }
+
+  .plant-3 {
+    @include place-svg-normal(35px, 77%, -2.8%);
+  }
+
+  .plant-4 {
+    @include place-svg-normal(16.3px, 93.5%, -2.8%);
   }
 }
 
