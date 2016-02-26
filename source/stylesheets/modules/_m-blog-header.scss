@@ -10,6 +10,7 @@
 
   &.red {
     background-color: $valencia-red;
+
     .info {
       color: $merlot-red;
     }
@@ -17,6 +18,7 @@
 
   &.yellow {
     background-color: $indian-yellow;
+
     .info {
       color: $crown-of-thorns;
     }
@@ -24,6 +26,7 @@
 
   &.sea-green {
     background-color: $deep-sea-green;
+
     .info {
       color: $martinique-dark;
     }
@@ -31,6 +34,7 @@
 
   &.light-green {
     background-color: $breaker-bay-green;
+
     .info {
       color: $deep-sea-green;
     }
@@ -60,7 +64,6 @@
 
   .info {
     margin-top: 12px;
-    color: $color;
   }
 
   .author {
