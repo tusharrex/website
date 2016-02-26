@@ -9,11 +9,13 @@
   padding: 0;
 
   .normal-state {
+    @include size(100%, 100%);
     display: inline-block;
   }
 
   .clicked-state,
   .hover-state {
+    @include size(100%, 100%);
     display: none;
   }
 

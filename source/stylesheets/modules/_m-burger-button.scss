@@ -6,6 +6,7 @@
 
   .clicked-state,
   .hover-state {
+    @include size(100%, 100%);
     display: none;
   }
 
@@ -21,6 +22,7 @@
   .m-burger-button {
 
     .normal-state-normal {
+      @include size(100%, 100%);
       display: inline-block;
     }
 
