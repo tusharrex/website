@@ -1,6 +1,7 @@
 .m-header-elements {
   @include flex-flow(row, nowrap);
   @include justify-content(space-between);
+  align-items: baseline;
   left: 0;
   padding: 20px 20px 0;
   position: absolute;
