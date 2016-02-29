@@ -1,0 +1,112 @@
+// scss-lint:disable NestingDepth
+
+.main-menu-container {
+  width: 85%;
+}
+
+.main-menu-list {
+  @include justify-content(space-between);
+  @include flex-flow(column, nowrap);
+  height: 55vh;
+  list-style-type: none;
+  text-align: right;
+
+  .item {
+    .arrow {
+      display: none;
+    }
+
+    .link {
+      font-family: $alega-bold;
+      font-size: 46px;
+    }
+  }
+}
+
+.social-links {
+  @include align-items(flex-end);
+  @include flex-flow(row, nowrap);
+  @include justify-content(flex-end);
+  height: 15vh;
+  list-style-type: none;
+  text-align: right;
+
+  .social-link {
+    margin-left: 50px;
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  .facebook-link {
+    @include size(50px, 50px);
+    display: inline-block;
+    overflow: hidden;
+
+    &:hover {
+      svg {
+        fill: $breaker-bay-green;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $deep-sea-green;
+      }
+    }
+  }
+
+  .github-link {
+    @include size(50px, 50px);
+    display: inline-block;
+    overflow: hidden;
+
+    &:hover {
+      svg {
+        fill: $indian-yellow;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $damask-red;
+      }
+    }
+  }
+
+  .twitter-link {
+    @include size(40px, 50px);
+    display: inline-block;
+    overflow: hidden;
+
+    &:hover {
+      svg {
+        fill: $aquamarine-blue;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $fountain-blue;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .main-menu-container {
+    width: 80%;
+  }
+
+  .main-menu-list {
+    .item:hover {
+      .arrow {
+        @include size(40px, 40px);
+        display: inline-block;
+        float: right;
+        margin-right: -50px;
+      }
+    }
+  }
+}
