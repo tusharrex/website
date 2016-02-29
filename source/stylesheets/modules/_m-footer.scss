@@ -26,6 +26,10 @@
     margin-bottom: 15px;
   }
 
+  .coffee {
+    max-width: 320px;
+  }
+
   .contact-link:hover {
     color: $damask-red;
   }
@@ -56,7 +60,6 @@
       display: none;
     }
   }
-
 
   .social-link {
     margin-left: 0;
@@ -105,12 +108,7 @@
 @media #{$breakpoint-tablet} {
   .m-footer {
     font-size: 24px;
-    padding-top: 108px;
-
-    .wrapper {
-      @include flex-flow(row, wrap);
-      @include flex-justify-content(space-between);
-    }
+    padding: 108px 0;
 
     .address {
       line-height: 1.3;
@@ -120,34 +118,15 @@
       }
     }
 
-    .addresses {
-      @include flex-flow(row, wrap);
-      @include flex-justify-content(space-between);
-      max-width: 500px;
-    }
-
     .coffee {
-      @include order(1);
-      width: 55%;
-    }
-
-    .coffee-and-address {
-      width: 100%;
-    }
-
-    .cq-address {
-      @include order(2);
-      width: 55%;
+      margin-bottom: 104px;
+      max-width: 400px;
     }
 
     .element {
       line-height: 1.7;
       margin-bottom: 8px;
-    }
-
-    .get-in-touch {
-      @include order(2);
-      width: 45%;
+      width: 50%;
     }
 
     .header {
@@ -167,8 +146,6 @@
     }
 
     .nav {
-      @include order(0);
-
       .header {
         display: block;
       }
@@ -177,6 +154,11 @@
     .social-links {
       max-height: 160px;
     }
+
+    .wrapper {
+      @include flex-flow(column, wrap);
+      height: 600px;
+    }
   }
 }
 
@@ -184,30 +166,25 @@
   .m-footer {
     padding: 100px 0 50px;
 
-    .wrapper {
-      @include flex-justify-content(flex-end);
-    }
-
-    .coffee,
-    .cq-address {
-      width: 62%;
-    }
-
-    .coffee-and-address {
-      @include flex-flex(3, 0, 0);
-    }
-
-    .get-in-touch {
-      @include flex-flex(2, 0, 0);
+    .addresses {
+      @include flex-flow(row, wrap);
     }
 
     .header {
       margin-bottom: 30px;
     }
 
-    .nav {
-      @include flex-flex(1.5, 0, 0);
+    .menu-item {
+      &:hover .arrow {
+        display: inline-block;
+      }
 
+      &:active {
+        opacity: .7;
+      }
+    }
+
+    .nav {
       .arrow {
         float: right;
         width: 20px;
@@ -217,44 +194,36 @@
         width: 140px;
       }
     }
-
-    .menu-item {
-      &:hover .arrow {
-        display: inline-block;
-      }
-
-      &:active {
-        opacity: 0.7;
-      }
-    }
   }
-}   
+}
 
 @media #{$breakpoint-desktop-large} {
   .m-footer {
-    .coffee,
-    .cq-address,
-    .get-in-touch,
-    .nav {
-      @include order(0);
+    .coffee {
+      margin-bottom: 60px;
+      max-width: 100%;
     }
 
-    .coffee,
-    .cq-address {
-      width: 44%;
-    }
-
-    .cq-address {
-      margin-top: -125px;
+    .contact {
+      width: 48%;
     }
 
     .get-in-touch {
+      width: 32%;
+    }
+
+    .nav {
       width: 20%;
     }
 
     .social-links {
       @include flex-flow(column, wrap);
       @include align-items(flex-start);
+    }
+
+    .wrapper {
+      @include flex-flow(row, wrap);
+      @include flex-justify-content(space-between);
     }
   }
 }
