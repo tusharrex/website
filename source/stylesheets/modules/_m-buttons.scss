@@ -3,6 +3,9 @@
 .btn {
 
   @include button;
+    &.damask-red-light-gray {
+    @include button-with-color($damask-red);
+  }
 
   &.yellow-bcg {
     background-color: $indian-yellow;
@@ -17,7 +20,7 @@
    }
 
   @media #{$breakpoint-tablet} {
-    &.damask_red {
+    &.damask-red-light-gray {
       @include button-with-color($damask-red);
     }
   }
