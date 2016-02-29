@@ -8,19 +8,8 @@
   top: 0;
   width: 100%;
 
-  .hello-mail {
-    color: $martinique-dark;
-    font-family: $alega-bold;
+  .m-hello-mail {
     font-size: 19px;
-    text-decoration: none;
-
-    &:hover {
-      color: $damask-red;
-    }
-
-    &:active {
-      color: $martinique-dark;
-    }
   }
 
   .o-shaped-submarine {
@@ -45,7 +34,7 @@
 
 @media #{$only-mobile-large} {
   .m-header-elements {
-    .hello-mail {
+    .m-hello-mail {
       font-size: 25px;
       letter-spacing: .2px;
     }
@@ -54,7 +43,7 @@
 
 @media #{$breakpoint-tablet} {
   .m-header-elements {
-    .hello-mail {
+    .m-hello-mail {
       font-size: 26px;
     }
   }

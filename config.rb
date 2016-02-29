@@ -12,6 +12,7 @@ activate :blog do |blog|
 end
 
 page '/index.html', layout: :landing_page
+page '/404.html', layout: :website
 
 with_layout :website do
   page '/about.html'
