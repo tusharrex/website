@@ -1,37 +1,51 @@
+// scss-lint:disable NestingDepth
+
 .m-burger-button {
-  @include size(37px, 40px);
+  @include size(40px, 40px);
+  cursor: pointer;
 
-  .normal-state {
-    @include size(37px, 40px);
-
-    .small {
-      display: none;
-    }
-  }
-
-  .clicked-state {
-    @include size(4px, 4px);
-  }
-
+  .clicked-state,
   .hover-state {
-    @include size(28px, 38px);
+    @include size(100%, 100%);
+    display: none;
+  }
+
+  &:active {
+
+    .clicked-state {
+      display: inline-block;
+    }
   }
 }
 
-@media #{$smaller--than-main-menu} {
+.no-touchevents {
   .m-burger-button {
-    @include size(30px, 40px);
 
-    .normal-state .normal {
-      display: none;
+    .normal-state-normal {
+      @include size(100%, 100%);
+      display: inline-block;
     }
 
-    .normal-state .small {
-      display: block;
+    &:hover {
+      .clicked-state,
+      .normal-state-normal {
+        display: none;
+      }
+
+      .hover-state {
+        display: inline-block;
+      }
     }
 
-    .hover-state {
-      width: 27px;
+    &:active {
+      .hover-state,
+      .normal-state-normal {
+        display: none;
+      }
+
+      .clicked-state {
+        display: inline-block;
+      }
     }
   }
 }

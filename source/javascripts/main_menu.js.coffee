@@ -5,18 +5,8 @@ closeMainMenu = ->
   $('.main-menu').removeClass('bouncedIn').addClass('bouncedOut')
 
 $ ->
-  doc = document.getElementsByTagName('body')[0]
-  cqm = new Hammer(doc, cssProps: userSelect: true)
-
-  menuNav = document.getElementsByClassName('main-menu')[0]
-  menu = new Hammer(menuNav)
-
-  $('.m-burger-button').click ->
+  $('.m-burger-button').on 'touchend click mouseup', ->
     openMainMenu()
 
-  $('.main-menu-close-button, .overlay').click ->
+  $('.main-menu-close-button, .overlay').on 'touchend click mouseup', ->
     closeMainMenu()
-
-  cqm.on 'swipeleft', openMainMenu
-
-  menu.on 'swiperight', closeMainMenu
