@@ -43,11 +43,11 @@
 
   .menu {
     @include flex-flow(row, wrap);
-    @include flex-justify-content(space-between);
+    @include flex-justify-content(space-around);
   }
 
   .menu-item {
-    margin-right: 10px;
+    margin: 0 13px;
   }
 
   .nav {
@@ -59,10 +59,12 @@
 
 
   .social-link {
+    margin-left: 0;
     max-width: 30px;
   }
 
   .social-links {
+    @include align-items(flex-start);
     @include flex-flow(row, wrap);
     @include flex-justify-content(space-between);
     margin-top: 30px;
@@ -79,9 +81,8 @@
   line-height: 10px;
 
   .color-space {
+    @include size(10px, 25%);
     display: inline-block;
-    height: 10px;
-    width: 25%;
 
     &.green {
       background-color: $breaker-bay-green;
@@ -104,7 +105,7 @@
 @media #{$breakpoint-tablet} {
   .m-footer {
     font-size: 24px;
-    padding-top: 50px;
+    padding-top: 108px;
 
     .wrapper {
       @include flex-flow(row, wrap);
@@ -113,6 +114,10 @@
 
     .address {
       line-height: 1.3;
+
+      &:nth-child(1) {
+        margin-right: 55px;
+      }
     }
 
     .addresses {
@@ -121,29 +126,52 @@
       max-width: 500px;
     }
 
+    .coffee {
+      @include order(1);
+      width: 55%;
+    }
+
     .coffee-and-address {
       width: 100%;
     }
 
+    .cq-address {
+      @include order(2);
+      width: 55%;
+    }
+
     .element {
       line-height: 1.7;
+      margin-bottom: 8px;
+    }
+
+    .get-in-touch {
+      @include order(2);
+      width: 45%;
     }
 
     .header {
       font-family: $alega;
       font-size: 26px;
+      margin-bottom: 30px;
     }
 
     .menu {
       @include flex-flow(column, wrap);
+      margin-top: 34px;
     }
 
     .menu-item {
-      margin-right: 0;
+      line-height: 38px;
+      margin: 0;
     }
 
-    .nav .header {
-      display: block;
+    .nav {
+      @include order(0);
+
+      .header {
+        display: block;
+      }
     }
 
     .social-links {
@@ -154,15 +182,23 @@
 
 @media #{$breakpoint-desktop} {
   .m-footer {
-    padding-bottom: 50px;
-    padding-top: 100px;
+    padding: 100px 0 50px;
+
+    .wrapper {
+      @include flex-justify-content(flex-end);
+    }
+
+    .coffee,
+    .cq-address {
+      width: 62%;
+    }
 
     .coffee-and-address {
-      @include flex-flex(3, 0, 0)
+      @include flex-flex(3, 0, 0);
     }
 
     .get-in-touch {
-      @include flex-flex(2, 0, 0)
+      @include flex-flex(2, 0, 0);
     }
 
     .header {
@@ -182,13 +218,43 @@
       }
     }
 
-    .menu-item:hover .arrow {
-      display: inline-block;
+    .menu-item {
+      &:hover .arrow {
+        display: inline-block;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+}   
+
+@media #{$breakpoint-desktop-large} {
+  .m-footer {
+    .coffee,
+    .cq-address,
+    .get-in-touch,
+    .nav {
+      @include order(0);
     }
 
+    .coffee,
+    .cq-address {
+      width: 44%;
+    }
+
+    .cq-address {
+      margin-top: -125px;
+    }
+
+    .get-in-touch {
+      width: 20%;
+    }
 
     .social-links {
       @include flex-flow(column, wrap);
+      @include align-items(flex-start);
     }
   }
 }

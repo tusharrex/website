@@ -6,7 +6,7 @@ pageable: true
   {subtitle: data.blog.subtitle}
 .m-grid-collection
   - page_articles.each do |article|
-    .m-grid-item
+    a.m-grid-item(href= article.url)
       .date
         = article.date.strftime('%B %e, %Y')
       h2.title
@@ -14,6 +14,6 @@ pageable: true
       .tags
         = article.tags.map { |tag| "##{tag}" }.join(' ')
       .summary
-        = article.summary(500)
+        = strip_tags article.summary(500)
   - 10.times do
     .m-grid-item.no-content

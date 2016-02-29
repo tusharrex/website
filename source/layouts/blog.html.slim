@@ -13,11 +13,27 @@ html
     link href="common/favicon.ico" rel="icon" type="image/ico"
 
     = stylesheet_link_tag 'normalize', 'application'
-    / It is only to recognize touch events:
-    = javascript_include_tag 'lib/modernizr-custom'
     = javascript_include_tag 'application'
 
   body.website-page class=page_classes
-    = partial('partials/menu', locals: {modifier: 'from_header'})
-    = yield
+    = partial 'partials/menu'
+    .m-blog-header
+      .m-header-elements
+        = link_to '/' do
+          .o-shaped-submarine
+            = partial 'svg/logo_mobile'
+        = partial 'partials/main_menu_button'
+      .details
+        .tags
+          = current_article.tags.map { |tag| "##{tag}" }.join(' ')
+        .title
+          = current_article.title
+        .info
+          .author
+            | Posted by
+            =< current_article.data.author
+          .date
+            = current_article.date.strftime('%B %e, %Y')
+    .blog_content
+      = yield
     = partial 'partials/footer'

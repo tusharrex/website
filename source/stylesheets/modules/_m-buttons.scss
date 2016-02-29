@@ -16,10 +16,6 @@
     @include button-with-color($martinique-dark);
    }
 
-  &.permanent_color {
-    @include button-with-color;
-  }
-
   @media #{$breakpoint-tablet} {
     &.damask_red {
       @include button-with-color($damask-red);
@@ -48,49 +44,77 @@
     }
 
     @media #{$breakpoint-tablet} {
-      &.damask_red ,
-      &.permanent_color {
-        @include button-with-color-states($damask-red);
+      &.damask-red-light-gray {
+        @include button-with-color(
+          $base-color: $damask-red);
+        @include button-with-color-states(
+          $base-color: $damask-red,
+          $color-hover: $light-gray,
+          $supplementary-color: $valencia-red,
+          $shadow-color: $valencia-red);
       }
 
       &.gray-aquamarine-blue {
         @include button-with-color-states(
-          $light-gray,
-          $color-hover: $aquamarine-blue);
+          $base-color: $light-gray,
+          $color-hover: $aquamarine-blue,
+          $shadow-color: $light-gray-2,
+          $supplementary-color: $docker-blue);
       }
 
       &.gray-damask-red {
         @include button-with-color-states(
-          $light-gray,
-          $color-hover: $damask-red);
+          $base-color: $light-gray,
+          $color-hover: $damask-red,
+          $shadow-color: $light-gray-2,
+          $supplementary-color: $valencia-red);
       }
 
       &.gray-indian-yellow {
         @include button-with-color-states(
-          $light-gray,
-          $color-hover: $indian-yellow);
+          $base-color: $light-gray,
+          $color-hover: $indian-yellow,
+          $shadow-color: $light-gray-2,
+          $supplementary-color: $indian-yellow-2);
       }
 
       &.gray-indian-yellow-2 {
         @include button-with-color-states(
-          $light-gray,
-          $color-hover: $indian-yellow-2);
+          $base-color: $light-gray,
+          $color-hover: $indian-yellow-2,
+          $shadow-color: $light-gray-2,
+          $supplementary-color: $docker-blue);
       }
 
       &.gray-martinique_dark {
         @include button-with-color-states(
-          $light-gray,
-          $color-hover: $martinique-dark);
+          $base-color: $light-gray,
+          $color-hover: $martinique-dark,
+          $shadow-color: $light-gray-2,
+          $supplementary-color: $mirage-dark);
       }
 
       &.gray-valencia-red {
         @include button-with-color-states(
-          $light-gray,
-          $color-hover: $valencia-red);
+          $base-color: $light-gray,
+          $color-hover: $valencia-red,
+          $shadow-color: $light-gray-2,
+          $supplementary-color: $maroon-red);
+      }
+
+      &.gray-breaker-bay-green {
+        @include button-with-color-states(
+          $base-color: $light-gray,
+          $color-hover: $breaker-bay-green,
+          $shadow-color: $light-gray-2,
+          $supplementary-color: $deep-sea-green);
       }
 
       &.martinique_dark {
-        @include button-with-color-states($martinique-dark);
+        @include button-with-color-states(
+          $base-color: $martinique-dark,
+          $shadow-color: $mirage-dark,
+          $supplementary-color: $santas-gray);
       }
     }
   }

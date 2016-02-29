@@ -44,3 +44,5 @@ $ ->
     return if formValid()
     e.preventDefault()
     $('.error')[0].focus()
+    offset = $('.error').offset()
+    window.scrollTo(offset.left, offset.top - 65)

@@ -1,0 +1,71 @@
+.blog_content {
+  font-family: $baskerville;
+  margin: 22px 12px;
+  text-align: justify;
+
+  p {
+    @include font(14px, 1.7);
+    margin: 22px 0;
+    text-indent: 23px;
+  }
+
+  a {
+    color: $valencia-red;
+    text-decoration: none;
+  }
+
+  code {
+    background-color: $light-gray-2;
+    border: 3px solid $santas-gray;
+    border-radius: 4px;
+    display: block;
+    font-family: $courier;
+    padding: 14px 18px;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .blog_content {
+    margin: 74px auto;
+
+    p {
+      font-size: 1.4vw;
+      margin: 30px auto;
+      text-indent: 1.4vw;
+      width: 60%;
+    }
+
+    .citation {
+      @include font(3.5vw, 1);
+      color: $martinique-dark;
+      font-family: $baskerville-italic;
+      margin: 0 auto 10vw;
+      quotes: '“' '”' '‘' '’';
+      text-indent: -1.7vw;
+      width: 45%;
+    }
+
+    .citation::before {
+      content: open-quote;
+      display: inline-block;
+      height: 1px;
+      right: 30px;
+      top: 56px;
+    }
+
+    .citation::after {
+      bottom: 30px;
+      content: close-quote;
+      display: block;
+      height: 1px;
+      left: 40vw;
+    }
+
+    .citation::after,
+    .citation::before {
+      color: $valencia-red;
+      font-size: 15vw;
+      position: relative;
+    }
+  }
+}
