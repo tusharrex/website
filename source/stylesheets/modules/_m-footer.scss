@@ -219,6 +219,8 @@
     .social-links {
       @include flex-flow(column, wrap);
       @include align-items(flex-start);
+      height: 210px;
+      max-height: 210px;
     }
 
     .wrapper {
