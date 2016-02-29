@@ -138,6 +138,8 @@ $base-font-size: 12px;
     } @else {
       box-shadow: 0 -4px $supplementary-color;
     }
+    border-top-width: 0;
+    margin-top: 4px;
   }
 }
 
