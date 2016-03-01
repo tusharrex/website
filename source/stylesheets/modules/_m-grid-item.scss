@@ -1,12 +1,11 @@
 $color: $breaker-bay-green;
 
 .m-grid-item {
+  @include size(360px, auto);
   font-family: $alega;
-  height: 360px;
   margin: 15px 0;
   padding: 0 10px;
   text-decoration: none;
-  width: auto;
 
   &:nth-of-type(4n) {
     color: $deep-sea-green;
@@ -33,9 +32,8 @@ $color: $breaker-bay-green;
   }
 
   .title {
+    @include font(34px, 122%);
     color: currentColor;
-    font-size: 34px;
-    line-height: 122%;
     margin: 0;
   }
 
@@ -46,10 +44,9 @@ $color: $breaker-bay-green;
   }
 
   .summary {
+    @include font(18px, 180%);
     color: $martinique-dark;
     font-family: $baskerville;
-    font-size: 18px;
-    line-height: 180%;
     margin: 12px 0;
     text-align: justify;
   }
@@ -57,10 +54,9 @@ $color: $breaker-bay-green;
 
 @media #{$breakpoint-tablet} {
   .m-grid-item {
-    height: 460px;
+    @include size(460px, 48%);
     margin-top: 54px;
-    padding: 0 5px;
-    width: 48%;  
+    padding: 0 5px; 
 
     &:nth-of-type(4n) {
       &:hover .date {
@@ -92,8 +88,7 @@ $color: $breaker-bay-green;
     }
 
     .title {
-      font-size: 38px;
-      line-height: 118%;
+      @include font(38px, 118%);
       margin: 3px 13px;
     }
 
@@ -103,8 +98,7 @@ $color: $breaker-bay-green;
     }
 
     .summary {
-      font-size: 19px;
-      line-height: 152%;
+      @include font(19px, 152%);
       margin: 19px 11px;
     }
   }
@@ -112,8 +106,7 @@ $color: $breaker-bay-green;
 
 @media #{$breakpoint-desktop} {
   .m-grid-item {
-    height: 470px;
-    width: 32%;
+    @include size(470px, 32%);
 
     .date {
       font-size: 16px;
@@ -131,8 +124,7 @@ $color: $breaker-bay-green;
     }
   
     .summary {
-      font-size: 20px;
-      line-height: 160%;
+      @include font(20px, 160%);
       margin: 20px 12px;
     }
   }
