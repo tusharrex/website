@@ -10,6 +10,39 @@
     text-indent: 23px;
   }
 
+    .citation {
+      @include font(4.7vw, 1);
+      color: $martinique-dark;
+      font-family: $baskerville-bold-italic;
+      margin: 0 auto 15px;
+      quotes: '“' '”' '‘' '’';
+      text-indent: -1.7vw;
+      width: 70%;
+    }
+
+    .citation::before {
+      content: open-quote;
+      display: inline-block;
+      height: 1px;
+      right: 18px;
+      top: 19px;
+    }
+
+    .citation::after {
+      bottom: 19px;
+      content: close-quote;
+      display: block;
+      height: 1px;
+      left: 66vw;
+    }
+
+    .citation::after,
+    .citation::before {
+      color: $valencia-red;
+      font-size: 15vw;
+      position: relative;
+    }
+
   a {
     color: $valencia-red;
     text-decoration: none;
@@ -40,17 +73,11 @@
 
     .citation {
       @include font(3.5vw, 1);
-      color: $martinique-dark;
-      font-family: $baskerville-bold-italic;
       margin: 0 auto 10vw;
-      quotes: '“' '”' '‘' '’';
-      text-indent: -1.7vw;
       width: 45%;
     }
 
     .citation::before {
-      content: open-quote;
-      display: inline-block;
       height: 1px;
       right: 30px;
       top: 56px;
@@ -58,8 +85,6 @@
 
     .citation::after {
       bottom: 30px;
-      content: close-quote;
-      display: block;
       height: 1px;
       left: 40vw;
     }
