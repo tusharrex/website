@@ -81,12 +81,12 @@
 @media #{$breakpoint-tablet} {
   .m-not-found-content {
     @include font(75px, 54px);
-    height: 492px;
+    height: 576px;
     margin-top: 120px;
     max-width: 1210px;
 
     .let-us-know {
-      font-size: 35px;
+      @include font(35px, 32px);
       padding: 50px 0 30px;
     }
 
@@ -150,6 +150,12 @@
     .plant-4 {
       @include place-svg-normal(22.1px, 88.6%, .1%);
     }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-not-found-content {
+    height: 492px;
   }
 }
 
