@@ -72,12 +72,21 @@
     @include flex-flow(row, wrap);
     @include flex-justify-content(space-between);
     margin-top: 30px;
-    max-height: 30px;
     width: 210px;
 
     li {
       margin-left: 0;
     }
+  }
+
+  .social-links,
+  .social-link-item,
+  .social-link {
+    max-height: 32px;
+  }
+
+  .twitter-link {
+    max-width: 34px;
   }
 
   .wrapper {
@@ -203,7 +212,7 @@
 
 @media #{$breakpoint-desktop-large} {
   .m-footer {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 
     .coffee {
       margin-bottom: 60px;
