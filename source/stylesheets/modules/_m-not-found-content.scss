@@ -1,0 +1,182 @@
+.m-not-found-content {
+  @include font(48px, 44px);
+  color: $martinique-dark;
+  font-family: $alega;
+  font-weight: 700;
+  height: 492px;
+  margin: 52px auto 0;
+  max-width: 288px;
+  position: relative;
+  text-align: center;
+  width: 90%;
+
+  .let-us-know {
+    @include font(20px, 23px);
+    padding: 8px 0 14px;
+  }
+
+  .m-hello-mail {
+    color: $valencia-red;
+
+    &:hover {
+      color: $damask-red;
+    }
+  }
+
+  .back-to-homepage {
+    display: none;
+  }
+
+  .back-to-homepage,
+  .check-our-work {
+    padding: 10px;
+  }
+
+  .submarine {
+    @include place-svg-normal(130px, .7%, 25.8%);
+  }
+
+  .four-zero-four {
+    @include place-svg-normal(250px, 16.7%, -3%);
+  }
+
+  .starfish {
+    @include place-svg-normal(17px, 60.5%, 6%);
+    z-index: 1;
+  }
+
+  .fish {
+    @include place-svg-normal(29px, 72.5%, 11%);
+  }
+
+  .computer {
+    @include place-svg-normal(47px, -2.5%, -2.8%);
+  }
+
+  .water-1 {
+    @include place-svg-normal(42px, 9.5%, 17.5%);
+  }
+
+  .water-2 {
+    @include place-svg-normal(36px, 50%, -1%);
+  }
+
+  .water-3 {
+    @include place-svg-normal(42px, 47.4%, 25.3%);
+  }
+
+  .plant-2 {
+    @include place-svg-normal(30px, 35.5%, -2.8%);
+  }
+
+  .plant-3 {
+    @include place-svg-normal(35px, 77%, -2.8%);
+  }
+
+  .plant-4 {
+    @include place-svg-normal(16.3px, 93.5%, -2.8%);
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-not-found-content {
+    @include font(75px, 54px);
+    height: 576px;
+    margin-top: 120px;
+    max-width: 1210px;
+
+    .let-us-know {
+      @include font(35px, 32px);
+      padding: 50px 0 30px;
+    }
+
+    .back-to-homepage {
+      display: inline-block;
+      line-height: 44px;
+    }
+
+    .check-our-work {
+      display: none;
+    }
+
+    .elements-wrapper {
+      bottom: -2.6%;
+      height: 149px;
+      left: 39.6%;
+      position: absolute;
+      width: 335px;
+    }
+
+    .submarine {
+      @include place-svg-normal(200px, -.3%, 8.8%);
+    }
+
+    .four-zero-four {
+      @include place-svg-normal(335px, 0, 0);
+    }
+
+    .starfish {
+      @include place-svg-normal(22px, 50.9%, 38.5%);
+    }
+
+    .fish {
+      @include place-svg-normal(39px, 64.8%, 65.2%);
+    }
+
+    .computer {
+      @include place-svg-normal(64px, -22.5%, 1.2%);
+    }
+
+    .water-1 {
+      @include place-svg-normal(56px, -8.7%, 92%);
+    }
+
+    .water-2 {
+      @include place-svg-normal(46px, 39.3%, 9.6%);
+    }
+
+    .water-3 {
+      @include place-svg-normal(53px, 98.2%, 59%);
+    }
+
+    .plant-2 {
+      @include place-svg-normal(40px, 21.6%, .1%);
+    }
+
+    .plant-3 {
+      @include place-svg-normal(46px, 69.6%, .1%);
+    }
+
+    .plant-4 {
+      @include place-svg-normal(22.1px, 88.6%, .1%);
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-not-found-content {
+    height: 492px;
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-not-found-content {
+    @include font(97px, 44px);
+    margin-top: 162px;
+    min-width: 1210px;
+
+    .let-us-know {
+      font-size: 40px;
+      padding: 58px 0 57px;
+    }
+
+    .line-break {
+      display: none;
+    }
+
+    .elements-wrapper {
+      bottom: -.6%;
+      left: 35.6%;
+    }
+  }
+}

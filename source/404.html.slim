@@ -1,0 +1,42 @@
+.l-not-found-page
+  .m-header-elements
+    = link_to '/' do
+      .o-shaped-submarine
+        = partial 'svg/logo_mobile'
+    = partial 'partials/main_menu_button'
+  .m-not-found-content
+    ' Uh-oh!
+    br.line-break
+    ' This page doesn't exist.
+    .let-us-know
+      ' Please
+      = mail_to 'hello@codequest.com', 'let us know', class: 'm-hello-mail'
+      '
+      | if you believe this is an error.
+    a.btn.damask-red-light-gray.check-our-work(href='/work')
+      | Check our work
+    a.btn.damask-red-light-gray.back-to-homepage(href='/')
+      | Back to homepage
+    .submarine
+      = partial 'svg/custom_404/submarine'
+    .elements-wrapper
+      .starfish
+        = partial 'svg/starfish'
+      .fish
+        = partial 'svg/custom_404/fish'
+      .water-1
+        = partial 'svg/custom_404/water1'
+      .water-2
+        = partial 'svg/custom_404/water2'
+      .water-3
+        = partial 'svg/custom_404/water3'
+      .four-zero-four
+        = partial 'svg/custom_404/404'
+      .computer
+        = partial 'svg/custom_404/computer'
+      .plant-2
+        = partial 'svg/custom_404/plant2'
+      .plant-3
+        = partial 'svg/custom_404/plant3'
+      .plant-4
+        = partial 'svg/custom_404/plant4'
