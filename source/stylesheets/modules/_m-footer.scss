@@ -168,7 +168,7 @@
 
 @media #{$breakpoint-desktop} {
   .m-footer {
-    padding: 100px 0 50px;
+    padding: 100px 0 0;
 
     .addresses {
       @include flex-flow(row, wrap);
@@ -203,6 +203,8 @@
 
 @media #{$breakpoint-desktop-large} {
   .m-footer {
+    padding-bottom: 50px;
+
     .coffee {
       margin-bottom: 60px;
       max-width: 100%;
@@ -230,6 +232,7 @@
     .wrapper {
       @include flex-flow(row, wrap);
       @include flex-justify-content(space-between);
+      height: auto;
     }
   }
 }
