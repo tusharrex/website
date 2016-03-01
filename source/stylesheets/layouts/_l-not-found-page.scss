@@ -2,7 +2,7 @@
   background-color: $light-gray;
 
   .m-header-elements {
-    margin: 30px 6px 0 14px;
+    padding: 31px 13px 0;
 
     .o-shaped-submarine {
       color: $martinique-dark;
@@ -17,7 +17,7 @@
 @media #{$breakpoint-tablet} {
   .l-not-found-page {
     .m-header-elements {
-      margin: 20px 46px 100px;
+      padding: 20px 43px 0;
     }
   }
 }
