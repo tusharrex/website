@@ -27,6 +27,7 @@
   }
 
   .coffee {
+    margin-bottom: 40px;
     max-width: 320px;
   }
 
@@ -77,6 +78,10 @@
     li {
       margin-left: 0;
     }
+  }
+
+  .wrapper {
+    @include flex-flow(column, wrap);
   }
 }
 
@@ -156,7 +161,6 @@
     }
 
     .wrapper {
-      @include flex-flow(column, wrap);
       height: 720px;
     }
   }
