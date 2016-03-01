@@ -2,6 +2,7 @@
 title: Communication tools that make remote work efficient
 date: 2015-02-17 13:19 UTC
 tags:
+color: sea-green
 ---
 
 In our previous article on remote working we wrote generally about the tools we use to keep our project management and development swift and flawless. Now let’s dive deeper into the topic and see what we use on a daily basis to keep in touch with our clients and teams.

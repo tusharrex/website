@@ -2,6 +2,7 @@
 title: Rails Girls Białystok
 date: 2015-03-10 13:18 UTC
 tags: Hacker'sLife, Ruby
+color: yellow
 ---
 Not long ago we were proud to announce that some members of our Warsaw crew took an active part in Rails Girls Warsaw February workshop. This time we would like to share with you our love and pride of the Bialystok branch.
 
