@@ -7,7 +7,6 @@
 .main-menu-list {
   @include justify-content(space-between);
   @include flex-flow(column, nowrap);
-  height: 55vh;
   list-style-type: none;
   text-align: right;
 
@@ -17,8 +16,8 @@
     }
 
     .link {
+      @include font(46px, 56px);
       font-family: $alega-bold;
-      font-size: 46px;
     }
   }
 }
@@ -27,7 +26,6 @@
   @include align-items(flex-end);
   @include flex-flow(row, nowrap);
   @include justify-content(flex-end);
-  height: 15vh;
   list-style-type: none;
   text-align: right;
 
@@ -91,6 +89,12 @@
         fill: $fountain-blue;
       }
     }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .main-menu-list .item .link {
+    @include font(60px, 80px);
   }
 }
 

@@ -3,9 +3,9 @@
 // scss-lint:disable NestingDepth
 
 .main-menu .main-menu-close-button {
-  @include size(28px, 28px);
+  @include size(31px, 31px);
   color: inherit;
-  margin: 20px 12px 0;
+  margin: 20px 30px 0;
   padding: 0;
 
   .normal-state {

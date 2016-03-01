@@ -8,5 +8,5 @@ $ ->
   $('.m-burger-button').on 'touchend click mouseup', ->
     openMainMenu()
 
-  $('.main-menu-close-button, .overlay').on 'touchend click mouseup', ->
+  $('.main-menu-close-button').on 'touchend click mouseup', ->
     closeMainMenu()
