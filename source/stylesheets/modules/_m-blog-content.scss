@@ -1,11 +1,12 @@
 .blog_content {
+  color: $martinique-dark;
   font-family: $baskerville;
   margin: 22px 12px;
-  text-align: justify;
 
   p {
-    @include font(14px, 1.7);
+    @include font(16px, 1.7);
     margin: 22px 0;
+    text-align: justify;
     text-indent: 23px;
   }
 
@@ -21,15 +22,17 @@
     display: block;
     font-family: $courier;
     padding: 14px 18px;
+    text-align: left;
   }
 }
 
-@media #{$breakpoint-desktop} {
+
+@media #{$breakpoint-tablet} {
   .blog_content {
     margin: 74px auto;
 
     p {
-      font-size: 1.4vw;
+      font-size: 20px;
       margin: 30px auto;
       text-indent: 1.4vw;
       width: 60%;
@@ -38,7 +41,7 @@
     .citation {
       @include font(3.5vw, 1);
       color: $martinique-dark;
-      font-family: $baskerville-italic;
+      font-family: $baskerville-bold-italic;
       margin: 0 auto 10vw;
       quotes: '“' '”' '‘' '’';
       text-indent: -1.7vw;
