@@ -52,7 +52,7 @@
   }
 }
 
-@media #{$breakpoint-tablet} {
+@media #{$breakpoint-desktop} {
   .m-codebeat {
     @include flex-flow(row, wrap);
 
