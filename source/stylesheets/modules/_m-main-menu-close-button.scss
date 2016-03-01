@@ -13,21 +13,13 @@
     display: inline-block;
   }
 
-  .clicked-state,
   .hover-state {
     @include size(100%, 100%);
+    @include flip-horizontal();
     display: none;
   }
 
-  .hover-state {
-    @include flip-horizontal();
-  }
-
   &:active {
-    .clicked-state {
-      display: inline-block;
-    }
-
     .hover-state,
     .normal-state {
       display: none;
@@ -42,7 +34,6 @@
     }
 
     &:hover {
-      .clicked-state,
       .normal-state {
         display: none;
       }

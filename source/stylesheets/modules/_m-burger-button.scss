@@ -4,17 +4,9 @@
   @include size(40px, 40px);
   cursor: pointer;
 
-  .clicked-state,
   .hover-state {
     @include size(100%, 100%);
     display: none;
-  }
-
-  &:active {
-
-    .clicked-state {
-      display: inline-block;
-    }
   }
 }
 
@@ -27,7 +19,6 @@
     }
 
     &:hover {
-      .clicked-state,
       .normal-state-normal {
         display: none;
       }
@@ -41,10 +32,6 @@
       .hover-state,
       .normal-state-normal {
         display: none;
-      }
-
-      .clicked-state {
-        display: inline-block;
       }
     }
   }
