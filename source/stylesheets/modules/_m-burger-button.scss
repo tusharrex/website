@@ -1,5 +1,17 @@
 // scss-lint:disable NestingDepth
 
+.landing-page {
+  .m-burger-button {
+    color: $martinique-dark;
+  }
+}
+
+.website-page {
+  .m-burger-button {
+    color: $light-gray;
+  }
+}
+
 .m-burger-button {
   @include size(23px, 26px);
   @include reset-styles();
