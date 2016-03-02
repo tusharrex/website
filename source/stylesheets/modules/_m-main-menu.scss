@@ -7,27 +7,27 @@
   }
 
   50% {
-    @include transform(translate3d(-75vw, 0, 0));
+    @include transform(translate3d(-600px, 0, 0));
     opacity: 1;
   }
 
   75% {
-    @include transform(translate3d(-72vw, 0, 0));
+    @include transform(translate3d(-550px, 0, 0));
     opacity: 1;
   }
 
   100% {
-    @include transform(translate3d(-75vw, 0, 0));
+    @include transform(translate3d(-600px, 0, 0));
   }
 }
 
 @include keyframes(mainMenuBounceOut) {
   0% {
-    @include transform(translate3d(-72vw, 0, 0));
+    @include transform(translate3d(-32vw, 0, 0));
   }
 
   20% {
-    @include transform(translate3d(-75vw, 0, 0));
+    @include transform(translate3d(-35vw, 0, 0));
     opacity: 1;
   }
 
@@ -105,7 +105,7 @@
 
 @media #{$breakpoint-tablet} {
   .main-menu {
-    @include position(0, -76vw, 0, 100vw);
+    width: 600px;
 
     &.bouncedIn {
       @include animation(mainMenuBounceIn .5s both);
@@ -118,23 +118,5 @@
     &.bouncedOut {
       @include animation(mainMenuBounceOut .5s both);
     }
-  }
-}
-
-@media #{$breakpoint-desktop} {
-  .main-menu {
-    @include position(0, -80vw, 0, 125vw);
-  }
-}
-
-@media #{$breakpoint-desktop-large} {
-  .main-menu {
-    @include position(0, -80vw, 0, 136vw);
-  }
-}
-
-@media #{$breakpoint-desktop-huge} {
-  .main-menu {
-    @include position(0, -80vw, 0, 145vw);
   }
 }
