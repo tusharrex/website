@@ -1,11 +1,10 @@
 
 .m-grid-item {
+  @include size(360px, auto);
   font-family: $alega;
-  height: 300px;
-  margin: 9px 0;
+  margin: 15px 0;
   padding: 0 10px;
   text-decoration: none;
-  width: 320px;
 
   &.red {
     color: $valencia-red;
@@ -27,28 +26,26 @@
     border-radius: 60px;
     color: $martinique-dark;
     font-family: $alega;
-    font-size: 12px;
+    font-size: 13px;
     padding: 7px 0;
   }
 
   .title {
+    @include font(34px, 122%);
     color: currentColor;
-    font-size: 30px;
-    line-height: 122%;
     margin: 0;
   }
 
   .tags {
     color: currentColor;
-    font-size: 16px;
+    font-size: 17px;
     margin: 12px 0 10px;
   }
 
   .summary {
+    @include font(18px, 180%);
     color: $martinique-dark;
     font-family: $baskerville;
-    font-size: 15px;
-    line-height: 180%;
     margin: 12px 0;
     text-align: justify;
   }
@@ -56,10 +53,9 @@
 
 @media #{$breakpoint-tablet} {
   .m-grid-item {
-    height: 470px;
+    @include size(460px, 48%);
     margin-top: 54px;
-    padding: 0 5px;
-    width: 370px;
+    padding: 0 5px; 
 
     &.red {
       &:hover .date {
@@ -87,25 +83,55 @@
 
 
     .date {
-      font-size: 16px;
-      padding: 11px;
+      font-size: 15px;
+      padding: 9px;
     }
 
     .title {
-      font-size: 40px;
-      line-height: 118%;
-      margin: 4px 14px;
+      @include font(38px, 118%);
+      margin: 3px 13px;
     }
 
     .tags {
       font-size: 18px;
-      margin: 20px 12px;
+      margin: 19px 11px;
     }
 
     .summary {
-      font-size: 20px;
-      line-height: 160%;
+      @include font(19px, 152%);
+      margin: 19px 11px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-grid-item {
+    @include size(470px, 32%);
+
+    .date {
+      font-size: 16px;
+      padding: 11px;
+    }
+  
+    .title {
+      font-size: 40px;
+      margin: 4px 14px;
+    }
+  
+    .tags {
+      font-size: 18px;
       margin: 20px 12px;
     }
+  
+    .summary {
+      @include font(20px, 160%);
+      margin: 20px 12px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .m-grid-item {
+    width: 24%;
   }
 }
