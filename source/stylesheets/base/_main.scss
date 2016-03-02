@@ -48,6 +48,10 @@
   display: none;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 @media #{$breakpoint-tablet} {
   .hidden-on-mobile {
     display: block;
