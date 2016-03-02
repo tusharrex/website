@@ -90,6 +90,10 @@
       width: 60%;
     }
 
+    a {
+      @include link-states($brick-red, $brick-red, $valencia-red);
+    }
+
     .citation {
       @include font(3.5vw, 1);
       color: $martinique-dark;
