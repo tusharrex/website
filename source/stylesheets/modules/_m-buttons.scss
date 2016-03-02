@@ -4,7 +4,7 @@
 
   @include button;
   &.damask-red-light-gray {
-  @include button-with-color($damask-red);
+    @include button-with-color($damask-red);
   }
 
   &.yellow-bcg {
