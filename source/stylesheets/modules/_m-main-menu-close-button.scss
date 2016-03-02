@@ -18,13 +18,6 @@
     @include flip-horizontal();
     display: none;
   }
-
-  &:active {
-    .hover-state,
-    .normal-state {
-      display: none;
-    }
-  }
 }
 
 .no-touchevents {
@@ -40,12 +33,6 @@
 
       .hover-state {
         display: inline-block;
-      }
-    }
-
-    &:active {
-      .hover-state {
-        display: none;
       }
     }
   }
