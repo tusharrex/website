@@ -1,3 +1,22 @@
+.add-to-any-placement {
+  @include flex-flow(row, wrap);
+  @include flex-justify-content(flex-end);
+  align-items: center;
+  background-color: $light-gray-2;
+  height: 72px;
+  padding-right: 7px;
+  position: relative;
+
+  .mobile-text {
+    color: $santas-gray;
+    font-family: $alega;
+    font-size: 26px;
+    left: 10px;
+    position: absolute;
+    top: 24px;
+  }
+}
+
 .blog_content {
   font-family: $baskerville;
   margin: 22px 12px;
@@ -24,7 +43,43 @@
   }
 }
 
+@media #{$breakpoint-mobile-landscape} {
+  .add-to-any-placement {
+    height: 88px;
+    padding-right: 10px;
+
+    a {
+      width: 50px;
+    }
+
+    .mobile-text {
+      font-size: 30x;
+      left: 18px;
+      top: 30px;
+    }
+  }
+}
+
 @media #{$breakpoint-desktop} {
+  .add-to-any-placement {
+    @include flex-flow(column, nowrap);
+    background-color: $light-gray;
+    height: 185px;
+    padding-right: 0px;
+    position: fixed;
+    right: 18vw;
+    top: 27vw;
+
+    a {
+      height: 46px;
+      width: 0px;
+    }
+
+    .mobile-text {
+      display: none;
+    }
+  }
+
   .blog_content {
     margin: 74px auto;
 

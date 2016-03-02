@@ -36,4 +36,13 @@ html
             = current_article.date.strftime('%B %e, %Y')
     .blog_content
       = yield
+    .a2a_kit.a2a_kit_size_35.a2a_default_style.add-to-any-placement(
+                                      data-a2a-icon-color='#2b304b')
+      p.mobile-text Like? Share it.
+      a.a2a_button_facebook
+      a.a2a_button_twitter
+      a.a2a_button_google_plus
+      a.a2a_dd href="https://www.addtoany.com/share"
     = partial 'partials/footer'
+
+script async="" src="https://static.addtoany.com/menu/page.js"
