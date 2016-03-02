@@ -17,8 +17,8 @@ html
 
   body.website-page class=page_classes
     = partial 'partials/menu'
-    .m-blog-header
-      .m-header-elements
+    .m-blog-header(class= current_article.metadata[:page]['color'])
+      .m-header-elements.blog-post
         = link_to '/' do
           .o-shaped-submarine
             = partial 'svg/logo_mobile'
