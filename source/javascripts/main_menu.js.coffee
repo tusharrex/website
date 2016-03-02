@@ -1,10 +1,10 @@
 openMainMenu = ->
   $('.main-menu').removeClass('bouncedOut').addClass('bouncedIn')
-  $('html').addClass('overflow-hidden')
+  $('html, body').addClass('disable-scroll')
 
 closeMainMenu = ->
   $('.main-menu').removeClass('bouncedIn').addClass('bouncedOut')
-  $('html').removeClass('overflow-hidden')
+  $('html, body').removeClass('disable-scroll')
 
 $ ->
   $('.m-burger-button').on 'touchend click mouseup', ->

@@ -48,8 +48,10 @@
   display: none;
 }
 
-.overflow-hidden {
+.disable-scroll {
+  height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 @media #{$breakpoint-tablet} {
