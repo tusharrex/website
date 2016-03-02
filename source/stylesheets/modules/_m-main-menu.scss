@@ -73,7 +73,7 @@
   @include position(0, -110vw, 0, 100vw);
   background: $main-menu-bg;
   color: $white;
-  overflow: hidden;
+  overflow: auto;
   position: fixed;
   z-index: 1000;
 
