@@ -69,6 +69,14 @@
   }
 }
 
+.overlay {
+  @include position(0, 0, 0, 0);
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  z-index: 201;
+}
+
 .main-menu {
   @include position(0, -110vw, 0, 100vw);
   background: $main-menu-bg;
@@ -101,6 +109,10 @@
 
     &.bouncedIn {
       @include animation(mainMenuBounceIn .5s both);
+
+      + .overlay {
+        display: block;
+      }
     }
 
     &.bouncedOut {

@@ -1,6 +1,8 @@
-button.no-button.three-states-button.m-burger-button(
+.m-burger-button.bcg-transparent(
   type="button" class="#{locals[:modifier] if locals}")
-  .normal-state-normal
+  .desktop-burger-btn
     = partial 'svg/main_menu/humburgerbutton'
-  .hover-state
+  .mobile-burger-btn
+    = partial 'svg/main_menu/humburgerbutton_mobile'
+  .hover-arrow-btn
     = partial 'svg/main_menu/humburgerbutton_arrow'

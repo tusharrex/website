@@ -1,30 +1,68 @@
 // scss-lint:disable NestingDepth
 
 .m-burger-button {
-  @include size(40px, 40px);
+  @include size(23px, 26px);
+  @include reset-styles();
   cursor: pointer;
 
-  .hover-state {
+  .desktop-burger-btn {
     @include size(100%, 100%);
     display: none;
+  }
+
+  .hover-arrow-btn {
+    @include size(100%, 100%);
+    display: none;
+  }
+
+  .mobile-burger-btn {
+    display: inline-block;
   }
 }
 
 .no-touchevents {
   .m-burger-button {
-
-    .normal-state-normal {
-      @include size(100%, 100%);
-      display: inline-block;
+    .desktop-burger-btn {
+      display: none;
     }
 
     &:hover {
-      .normal-state-normal {
+      .desktop-burger-btn {
         display: none;
       }
 
-      .hover-state {
-        display: inline-block;
+      .hover-arrow-btn {
+        display: none;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-burger-button {
+    @include size(40px, 36px);
+
+    .desktop-burger-btn {
+      display: block;
+    }
+
+    .mobile-burger-btn {
+      display: none;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .no-touchevents {
+    .m-burger-button {
+      .desktop-burger-btn {
+        display: block;
+      }
+
+      &:hover {
+        .hover-arrow-btn {
+          display: block;
+        }
       }
     }
   }
