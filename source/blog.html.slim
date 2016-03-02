@@ -6,7 +6,7 @@ pageable: true
   {subtitle: data.blog.subtitle}
 .m-grid-collection
   - page_articles.each do |article|
-    a.m-grid-item(href= article.url)
+    a.m-grid-item(href= article.url class= article.metadata[:page]['color'])
       .date
         = article.date.strftime('%B %e, %Y')
       h2.title
