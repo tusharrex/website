@@ -2,6 +2,7 @@
 title: How to brief a software agency
 date: 2015-02-19 13:19 UTC
 tags:
+color: light-green
 ---
 Every day we are approached by entrepreneurs with great ideas for new products asking us for a quote. Yes, we do work on T&M basis (we explain here why we do so), but nonetheless, the clients want a ballpark figure to have something to refer to when planning their budget. But giving them such a ballpark quote is not an easy thing if we do not have sufficient data to base our estimates on. A good brief helps a lot and although some of the clients in the past came with great briefs, most startups do not know how to prepare them.
 

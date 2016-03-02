@@ -2,6 +2,7 @@
 title: The power of code review2
 date: 2015-02-10 13:19 UTC
 tags:
+color: light-green
 ---
 Developing products for clients puts a huge responsibility on all of us at code quest. Our goal is to deliver the best product, look-and-feel-wise as well as the quality-wise. And while the look-and-feel can be done with the client and users, asssuring that our quality standards are met would not be possible without the proper code review procedure we use for all our projects - big and small alike.
 
