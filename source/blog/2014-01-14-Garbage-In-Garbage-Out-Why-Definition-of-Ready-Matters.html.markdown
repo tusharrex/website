@@ -1,5 +1,5 @@
 ---
-title: Garbage In, Garbage Out; Why Definition of Ready Matters
+title: Garbage In, Garbage Out; <br>Why Definition of Ready Matters
 date: 2014-01-14
 tags: Consulting, Scrum
 author: Tomasz Korzeniowski

@@ -1,7 +1,46 @@
+.add-to-any-placement {
+  @include flex-flow(row, wrap);
+  @include flex-justify-content(flex-end);
+  align-items: center;
+  background-color: $light-gray-2;
+  height: 72px;
+  width: 107%;
+  padding-right: 7px;
+  position: relative;
+  margin: -22px -12px;
+
+  .mobile-text {
+    color: $santas-gray;
+    font-family: $alega;
+    font-size: 26px;
+    left: -6px;
+    position: absolute;
+    top: -4px;
+  }
+}
+
 .blog_content {
   color: $martinique-dark;
   font-family: $baskerville;
   margin: 22px 12px;
+
+  h2 {
+    font-size: 34px;
+    font-weight: 900;
+    margin: 25px 23px;
+  }
+
+  h3 {
+    font-size: 27px;
+    font-weight: 700;
+    margin: 22px 15px;
+    text-indent: 8px;
+  }
+
+  ul {
+    @include font(16px, 1.7);
+
+  }
 
   p {
     @include font(16px, 1.7);
@@ -59,10 +98,51 @@
   }
 }
 
+@media #{$breakpoint-mobile-landscape} {
+  .add-to-any-placement {
+    height: 88px;
+    padding-right: 10px;
+    width: 104%;
+
+    a {
+      width: 50px;
+    }
+
+    .mobile-text {
+      font-size: 30px;
+      left: -6px;
+      top: 1px;
+    }
+  }
+}
 
 @media #{$breakpoint-tablet} {
+    .add-to-any-placement {
+    height: 88px;
+    margin-bottom: -74px;
+    margin-top: 30px;    
+    padding-right: 23px;
+    width: 104%;
+
+    a {
+      width: 50px;
+    }
+
+    .mobile-text {
+      font-size: 30px;
+      left: 47px;
+      top: -9px;
+    }
+  }
+
   .blog_content {
     margin: 74px auto;
+
+    ul {
+      font-size: 20px;
+      margin: 30px auto;
+      width: 60%;
+    }    
 
     p {
       font-size: 20px;
@@ -70,9 +150,86 @@
       text-indent: 1.4vw;
       width: 60%;
     }
+  
+    h2 {
+      font-size: 42px;
+      font-weight: 900;
+      margin: 35px auto;
+      width: 60%;
+    }
+  
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 33px auto;
+      text-indent: 1.4vw;
+      width: 60%;
+    }
+
 
     blockquote {
-      @include font(3.5vw, 100%);
+      @include font(3.5vw, 1);
+      color: $martinique-dark;
+      font-family: $baskerville-italic;
+      margin: 0 auto 10vw;
+      width: 45%;
+    }
+
+    blockquote::before {
+      height: 1px;
+      right: 30px;
+      top: 56px;
+    }
+
+    blockquote::after {
+      bottom: 30px;
+      height: 1px;
+      left: 40vw;
+    }
+
+    blockquote::after,
+    blockquote::before {
+      color: $valencia-red;
+      font-size: 15vw;
+      position: relative;
+    }
+  }
+}
+
+
+@media #{$breakpoint-desktop} {
+  .add-to-any-placement {
+    @include flex-flow(column, nowrap);
+    background-color: $light-gray;
+    height: 180px;
+    width: 40px;
+    padding-right: 0px;
+    position: absolute;
+    right: 18vw;
+    top: -3vw;
+
+    a {
+      height: 46px;
+      width: 0px;
+    }
+
+    .mobile-text {
+      display: none;
+    }
+  }
+
+  .blog_content {
+    margin: 74px auto;
+    position: relative;
+
+    a {
+      @include link-states($brick-red, $brick-red, $valencia-red);
+    }
+
+    blockquote {
+      @include font(3.5vw, 1);
+      color: $martinique-dark;
+      font-family: $baskerville-italic;
       margin: 0 auto 10vw;
       width: 45%;
     }
