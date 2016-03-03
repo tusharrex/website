@@ -23,11 +23,11 @@
 
 @include keyframes(mainMenuBounceOut) {
   0% {
-    @include transform(translate3d(-32vw, 0, 0));
+    @include transform(translate3d(-550px, 0, 0));
   }
 
   20% {
-    @include transform(translate3d(-35vw, 0, 0));
+    @include transform(translate3d(-600px, 0, 0));
     opacity: 1;
   }
 
