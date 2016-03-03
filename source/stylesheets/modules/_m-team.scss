@@ -142,7 +142,7 @@
     }
 
     .description {
-      font-size: 2vw;
+      @include font(25px, 1);
     }
 
     .join-us-element {
@@ -160,10 +160,6 @@
     .flipping-front ,
     .flipping-back {
       @include size(250px, 250px);
-    }
-
-    .description {
-      font-size: 28px;
     }
 
     .join-us-element {

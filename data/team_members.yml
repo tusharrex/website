@@ -4,7 +4,7 @@ members:
     color: indian-yellow-2
     description: Founder and CEO
     position: Founder and CEO
-    image: Tomasz
+    image: tomek
   -
     name: Filip
     color: valencia-red
@@ -136,7 +136,7 @@ members:
     color: indian-yellow-2
     description: Software Engineer
     position: Software Engineer
-    image: lukasz
+    image: pawel
   -
     name: Przemek
     color: valencia-red
