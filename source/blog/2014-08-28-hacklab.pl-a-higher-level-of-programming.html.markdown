@@ -1,0 +1,33 @@
+---
+title: hacklab.pl - a higher level of programming
+date: 2014-08-28
+tags: Hacker's Life
+author: Magda Piechota
+color: sea-green
+---
+
+Ladies and gentlemen **hacklab has launched!**
+
+On Saturday, 26th July, hacklab.pl, our secret pet project was officially launched. It is a training course of Ruby on Rails, aiming at the people who already know something about Ruby and Rails but want to learn more so that they can become professional developers. It is not a short nor shallow course. It's going to last 3 months with meetings taking up full Saturday and Sunday, happening every other weekend. It will end with a hackathon where the students will have to demonstrate their newly acquired skills by producing a real app. So, fasten your seatbelts students, this ship is going to take you places you have never seen before!
+
+### How did it come to life?
+The idea for hacklab was born when we noticed a shortage of RoR workforce on the market. Good Ruby on Rails developers are hard to find and if one appears on the market they are quickly grabbed by always-hungry-for-people development companies. Sure, there are some schools offering Ruby on Rails courses, but they do not necessarily focus on training people who later work well in teams. So we thought that with our knowledge and vast experience in RoR and teaching we could offer a competitive, highly task-focused course which would prepare people for the real-life, in-team developer work.
+
+It was not an easy task to accomplish, our team was large and transversed several fields, RoR development, front-end development, coaching/training, marketing, you name it. We selected our best and most experienced RoR developers to create a course tailored to what we thought were the key elements of a perfect junior RoR developer. Other equally great people on our team made sure it would work by taking care of the always-underestimated administrative part of the venture.
+
+### The course
+The 3-month course is designed so that the participants get a hands-on experience in building a full social application from scratch. It involves integration with outside services using OAuth protocol, creating an API, app testing using RSpec, app security and efficiency, background processing and multithreading, good practices and design patterns, advanced object-programming with functional elements, and quite a chunk on SCRUM. After practising and acquiring it all the students will be ready to start work as full-fledged Ruby on Rails developers.
+
+### The team
+The student-facing, training team consists of four people: Olga - our star RoR engineer with more than 10 years of development experience behind her belt, who is also an experienced teacher and ran software trainings in the past; Tomek K - the brains behind the project, who enjoys teaching as much as developing awesome products; Tomek W - code quest's chief engineer who can solve any development problem in no time, and who is a walking wikipedia when it comes to software development; and last, but not least, Michal - our Ruby jewel in the crown, the best Ruby on Rails developer/coach code quest has, and the most patient teacher who has already trained a handful of our team.
+
+The program creation was supervised by Olga but there is one other man behind it. Our own Janek was the brain of the application. A brilliant Ruby on Rails developer, experienced in social app development, he knew best what potential the application had and how to use it to the fullest to teach the most important parts in an easy and interesting way.
+
+While they were hard at work writing the course, another team worked even harder organizing advertising campaign, networking, collecting applications, interviewing the applicants and handpicking the most promising ones.
+
+The beautiful minds behind it all belonged to two equally beautiful women of the code: Magda and Ania. The former is our yet another fantastic Ruby on Rails developer, who, due to her experience with Rails Girls' courses, and her enthusiasm for anything Ruby, was a natural choice for taking over the organization and administration of the hacklab enterprise. The latter, a brilliant front-end developer, and a strong artistic soul, was Magda's equal in enthusiasm and dedication to the project. Together they made a perfect team proving they were indeed the right women in the right place excelling in everything, from the course preparation, to website and mailings creation, to covering all the legal aspects of the course, to candidate screening, interviews, recommendations and selection. Magda and Ania are the invisible heroes of our hacklab enterprise and we all appreciate their hard work and dedication and are thankful for having them on our team.
+
+### The students
+Six promising Ruby on Rails enthusiasts coming from various backgrounds and different parts of Poland were handpicked for the first edition of hacklab. The task ahead of them is not an easy one, and they will have to sweat a lot to accomplish the goals our training team have set for them. The journey will be long and bumpy, but we promise that it will be equally fruitful and entertaining.
+
+We do hope that this will be the beginning of a really awesome Ruby on Rails teaching space in Warsaw, if not in Poland, and hacklab will become a foundry for great developers who will make great cooperative and highly reliable teams.
