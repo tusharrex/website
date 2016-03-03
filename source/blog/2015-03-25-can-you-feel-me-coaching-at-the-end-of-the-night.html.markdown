@@ -22,7 +22,9 @@ It all started on Saturday - my team (shout out to Ania, Maja and Paula) only kn
 
 On the second day we finished the basic functionality of our app. We've allowed creating, updating, showing and deleting of our Diary Entries. Than we've added some awesome style with CSS and Comments with the second database model.
 In about 10 hours of the programming sessions we covered basics of HTML, CSS, Ruby, Rails, HTTP, REST, Programming principles, MVC, Databases, Errors, Gems, Migration etc. That's a lot of stuff!
-<p class='citation'>Rails Girls is not a training camp, it is an event meant to spread the passion for programming to new people </p>
+
+> Rails Girls is not a training camp, it is an event meant to spread the passion for programming to new people
+
 , to show people who were not in the programming community what it's all about. Hence the atmosphere was very relaxed - we all had a great time even though we've covered so much.
 
 I knew coaching would bring new challenges. But I was surprised by what was actually challenging. I found that explaining a programming term comprehensively without introducing fifty other new words was very difficult. I'm quite good with metaphors and that definitely helps. Also, when you are moving through the guide time flies by and before you even know it's time to wrap things up. On the second day I was glancing at my watch more often to make sure I am in the spot I want to be.

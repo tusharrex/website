@@ -10,38 +10,38 @@
     text-indent: 23px;
   }
 
-    .citation {
-      @include font(4.7vw, 1);
-      color: $martinique-dark;
-      font-family: $baskerville-bold-italic;
-      margin: 0 auto 15px;
-      quotes: '“' '”' '‘' '’';
-      text-indent: -1.7vw;
-      width: 70%;
-    }
+  blockquote {
+    @include font(4.7vw, 1);
+    color: $martinique-dark;
+    font-family: $baskerville-bold-italic;
+    margin: 0 auto 15px;
+    quotes: '“' '”' '‘' '’';
+    text-indent: -1.7vw;
+    width: 70%;
+  }
 
-    .citation::before {
-      content: open-quote;
-      display: inline-block;
-      height: 1px;
-      right: 18px;
-      top: 19px;
-    }
+  blockquote::before {
+    content: open-quote;
+    display: inline-block;
+    height: 1px;
+    right: 18px;
+    top: 19px;
+  }
 
-    .citation::after {
-      bottom: 19px;
-      content: close-quote;
-      display: block;
-      height: 1px;
-      left: 66vw;
-    }
+  blockquote::after {
+    bottom: 19px;
+    content: close-quote;
+    display: block;
+    height: 1px;
+    left: 66vw;
+  }
 
-    .citation::after,
-    .citation::before {
-      color: $valencia-red;
-      font-size: 15vw;
-      position: relative;
-    }
+  blockquote::after,
+  blockquote::before {
+    color: $valencia-red;
+    font-size: 15vw;
+    position: relative;
+  }
 
   a {
     color: $valencia-red;
@@ -71,26 +71,26 @@
       width: 60%;
     }
 
-    .citation {
-      @include font(3.5vw, 1);
+    blockquote {
+      @include font(3.5vw, 100%);
       margin: 0 auto 10vw;
       width: 45%;
     }
 
-    .citation::before {
+    blockquote::before {
       height: 1px;
       right: 30px;
       top: 56px;
     }
 
-    .citation::after {
+    blockquote::after {
       bottom: 30px;
       height: 1px;
       left: 40vw;
     }
 
-    .citation::after,
-    .citation::before {
+    blockquote::after,
+    blockquote::before {
       color: $valencia-red;
       font-size: 15vw;
       position: relative;
