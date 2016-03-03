@@ -123,12 +123,6 @@
   }
 }
 
-.no-button {
-  background: transparent;
-  border: 0;
-  outline: none;
-}
-
 .link-btn {
   @include link-button(18px, capitalize, none, $alega-bold);
 

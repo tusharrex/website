@@ -1,9 +1,9 @@
 .m-header-elements {
   @include flex-flow(row, nowrap);
   @include justify-content(space-between);
-  align-items: baseline;
+  align-items: center;
   height: 50px;
-  padding: 20px 20px 0;
+  padding: 20px 15px 0;
   position: relative;
   width: 100%;
 
@@ -46,6 +46,8 @@
 
 @media #{$breakpoint-tablet} {
   .m-header-elements {
+    padding: 20px 20px 0;
+
     .m-hello-mail {
       font-size: 26px;
     }

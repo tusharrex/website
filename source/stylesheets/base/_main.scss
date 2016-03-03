@@ -1,19 +1,6 @@
 // here should be the main styles of the project
 @include bcg-images;
 
-.landing-page {
-  .three-states-button {
-    color: $martinique-dark;
-  }
-}
-
-.website-page {
-  .three-states-button {
-    color: $light-gray;
-  }
-}
-
-
 .fill-white {
   fill: $white;
 }
@@ -46,6 +33,12 @@
 
 .hidden-on-mobile {
   display: none;
+}
+
+.disable-scroll {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 @media #{$breakpoint-tablet} {
