@@ -141,6 +141,7 @@
     padding-bottom: 185px;
 
     .amount-inputs {
+      display: block;
       margin: 0 0 100px;
 
       .form-input,
@@ -176,15 +177,17 @@
     }
   }
 
-  .m-form {
-    .amount-inputs {
-      display: none;
-    }
-  }
-
   .no-touchevents {
     .m-form {
       .amount {
+        display: block;
+      }
+
+      .amount-inputs {
+        display: none;
+      }
+
+      .m-slider {
         display: block;
       }
     }
