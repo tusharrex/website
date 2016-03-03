@@ -1,5 +1,5 @@
 ---
-title: How to report bugs?
+title: How to report bugs
 date: 2014-10-13
 tags: Consulting, Development
 author: Magda Piechota
