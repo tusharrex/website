@@ -19,7 +19,7 @@
   }
 }
 
-.blog_content {
+.blog-content {
   color: $martinique-dark;
   font-family: $baskerville;
   margin: 22px 12px 0;
@@ -44,42 +44,44 @@
 
   p {
     @include font(16px, 1.7);
-    margin: 22px 0;
     text-align: justify;
     text-indent: 23px;
   }
 
   blockquote {
-    @include font(4.7vw, 1);
-    color: $martinique-dark;
-    font-family: $baskerville-bold-italic;
     margin: 0 auto 15px;
+    padding: 100px 300px;
+    position: relative;
     quotes: '“' '”' '‘' '’';
     text-indent: -1.7vw;
-    width: 70%;
+
+    p {
+      @include font(3vw, 4vw);
+      color: $martinique-dark;
+      font-family: $baskerville;
+      font-style: italic;
+      font-weight: bold;
+      text-align: initial;
+    }
   }
 
   blockquote::before {
     content: open-quote;
-    display: inline-block;
-    height: 1px;
-    right: 18px;
-    top: 19px;
+    left: 0;
+    top: 0;
   }
 
   blockquote::after {
-    bottom: 19px;
     content: close-quote;
-    display: block;
-    height: 1px;
-    left: 66vw;
+    right: 0;
   }
 
   blockquote::after,
   blockquote::before {
     color: $valencia-red;
     font-size: 15vw;
-    position: relative;
+    display: block;
+    position: absolute;
   }
 
   a {
@@ -116,7 +118,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-    
+
     a {
       width: 50px;
     }
@@ -128,27 +130,23 @@
     }
   }
 
-  .blog_content {
-    margin: 74px auto 0;
+  .blog-content {
+    margin: 74px auto;
 
     ul {
       font-size: 20px;
       margin: 30px auto;
-      width: 60%;
     }
 
     p {
       font-size: 20px;
-      margin: 30px auto;
       text-indent: 1.4vw;
-      width: 60%;
     }
 
     h2 {
       font-size: 42px;
       font-weight: 900;
       margin: 35px auto;
-      width: 60%;
     }
 
     h3 {
@@ -156,7 +154,6 @@
       font-weight: 700;
       margin: 33px auto;
       text-indent: 1.4vw;
-      width: 60%;
     }
 
 
@@ -164,27 +161,12 @@
       @include font(3.5vw, 1);
       color: $martinique-dark;
       font-family: $baskerville-italic;
-      margin: 0 auto 10vw;
-      width: 45%;
-    }
-
-    blockquote::before {
-      height: 1px;
-      right: 30px;
-      top: 56px;
-    }
-
-    blockquote::after {
-      bottom: 30px;
-      height: 1px;
-      left: 40vw;
     }
 
     blockquote::after,
     blockquote::before {
       color: $valencia-red;
       font-size: 15vw;
-      position: relative;
     }
   }
 }
@@ -200,7 +182,7 @@
     right: 18vw;
     top: -3vw;
     width: 40px;
-    
+
     a {
       height: 46px;
       width: 0;
@@ -211,7 +193,7 @@
     }
   }
 
-  .blog_content {
+  .blog-content {
     margin: 74px auto;
     position: relative;
 
@@ -223,27 +205,12 @@
       @include font(3.5vw, 1);
       color: $martinique-dark;
       font-family: $baskerville-italic;
-      margin: 0 auto 10vw;
-      width: 45%;
-    }
-
-    blockquote::before {
-      height: 1px;
-      right: 30px;
-      top: 56px;
-    }
-
-    blockquote::after {
-      bottom: 30px;
-      height: 1px;
-      left: 40vw;
     }
 
     blockquote::after,
     blockquote::before {
       color: $valencia-red;
       font-size: 15vw;
-      position: relative;
     }
   }
 }

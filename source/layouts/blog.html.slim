@@ -24,18 +24,20 @@ html
             = partial 'svg/logo_mobile'
         = partial 'partials/main_menu_button'
       .details
-        .tags
-          = current_article.tags.map { |tag| "##{tag}" }.join(' ')
-        .title
-          = current_article.title
-        .info
-          .author
-            | Posted by
-            =< current_article.data.author
-          .date
-            = current_article.date.strftime('%B %e, %Y')
-    .blog_content
-      = yield
+        .wrapper
+          .tags
+            = current_article.tags.map { |tag| "##{tag}" }.join(' ')
+          .title
+            = current_article.title
+          .info
+            .author
+              | Posted by
+              =< current_article.data.author
+            .date
+              = current_article.date.strftime('%B %e, %Y')
+    .blog-content
+      .wrapper
+        = yield
       .a2a_kit.a2a_kit_size_35.a2a_default_style.add-to-any-placement(
                                         data-a2a-icon-color='#2b304b')
         .mobile-text Like? Share it.
