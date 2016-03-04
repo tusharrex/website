@@ -200,11 +200,24 @@ $base-font-size: 12px;
   -webkit-align-content: $alignment;
 }
 
+@mixin flex-align-items($alignment) {
+  -webkit-align-items: $alignment;
+  align-items: $alignment;
+}
+
 @mixin flex-flex($grow, $shrink, $base) {
   -webkit-box-flex: $grow $shrink $base;
   -webkit-flex: $grow $shrink $base;
   -ms-flex: $grow $shrink $base;
   flex: $grow $shrink $base;
+}
+
+@mixin flex-order($ordinal) {
+  -webkit-box-ordinal-group: $ordinal;
+  -moz-box-ordinal-group: $ordinal;
+  -ms-flex-order: $ordinal;
+  -webkit-order: $ordinal;
+  order: $ordinal;
 }
 
 @mixin background-hover($bcg-hover) {

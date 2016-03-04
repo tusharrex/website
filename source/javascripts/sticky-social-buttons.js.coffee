@@ -1,2 +1,2 @@
 $ ->
-  $(".add-to-any-placement").stick_in_parent();
+  $(".m-social-buttons-addtoany").stick_in_parent();
