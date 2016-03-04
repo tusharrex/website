@@ -1,34 +1,28 @@
 .add-to-any-placement {
   background-color: $light-gray-2;
   height: 72px;
-  padding: 22px 12px;
   margin-left: -12px;
   margin-right: -12px;
-  /*width: auto;*/
-  /*margin: -22px -12px;*/
-/*  padding-right: 7px;*/
-  /*position: relative;*/
-  width: 100%;
+  width: auto;
+  padding: 18px 12px 0;
 
   .mobile-text {
     color: $santas-gray;
     font-family: $alega;
     font-size: 26px;
+    line-height: 40px;
     float: left;
-/*    left: -6px;
-    position: absolute;
-    top: -4px;*/
   }
 
-/*  .social-media {
+  .social-media {
     float: right;
-  }*/
+  }
 }
 
 .blog_content {
   color: $martinique-dark;
   font-family: $baskerville;
-  margin: 22px 12px;
+  margin: 22px 12px 0;
 
   h2 {
     font-size: 34px;
@@ -107,17 +101,11 @@
 @media #{$breakpoint-mobile-landscape} {
   .add-to-any-placement {
     height: 88px;
-/*    padding-right: 10px;*/
-    width: 100%;
-
-    a {
-      width: 50px;
-    }
+    padding-top: 26px;
+    width: auto;
 
     .mobile-text {
       font-size: 30px;
-      /*left: -6px;
-      top: 1px;*/
     }
   }
 }
@@ -125,9 +113,8 @@
 @media #{$breakpoint-tablet} {
   .add-to-any-placement {
     height: 88px;
-/*    margin-bottom: -74px;
-    margin-top: 30px;   */ 
-/*    padding-right: 23px;*/
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
     
     a {
@@ -142,7 +129,7 @@
   }
 
   .blog_content {
-    margin: 74px auto;
+    margin: 74px auto 0;
 
     ul {
       font-size: 20px;
