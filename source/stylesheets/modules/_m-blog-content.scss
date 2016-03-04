@@ -4,10 +4,10 @@
   align-items: center;
   background-color: $light-gray-2;
   height: 72px;
-  width: 107%;
+  margin: -22px -12px;
   padding-right: 7px;
   position: relative;
-  margin: -22px -12px;
+  width: 107%;
 
   .mobile-text {
     color: $santas-gray;
@@ -117,13 +117,13 @@
 }
 
 @media #{$breakpoint-tablet} {
-    .add-to-any-placement {
+  .add-to-any-placement {
     height: 88px;
     margin-bottom: -74px;
     margin-top: 30px;    
     padding-right: 23px;
     width: 104%;
-
+    
     a {
       width: 50px;
     }
@@ -142,7 +142,7 @@
       font-size: 20px;
       margin: 30px auto;
       width: 60%;
-    }    
+    }
 
     p {
       font-size: 20px;
@@ -150,14 +150,14 @@
       text-indent: 1.4vw;
       width: 60%;
     }
-  
+
     h2 {
       font-size: 42px;
       font-weight: 900;
       margin: 35px auto;
       width: 60%;
     }
-  
+
     h3 {
       font-size: 32px;
       font-weight: 700;
@@ -202,15 +202,15 @@
     @include flex-flow(column, nowrap);
     background-color: $light-gray;
     height: 180px;
-    width: 40px;
-    padding-right: 0px;
+    padding-right: 0;
     position: absolute;
     right: 18vw;
     top: -3vw;
-
+    width: 40px;
+    
     a {
       height: 46px;
-      width: 0px;
+      width: 0;
     }
 
     .mobile-text {
