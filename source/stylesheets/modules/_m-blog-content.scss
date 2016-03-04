@@ -1,22 +1,28 @@
 .add-to-any-placement {
-  @include flex-flow(row, wrap);
-  @include flex-justify-content(flex-end);
-  align-items: center;
   background-color: $light-gray-2;
   height: 72px;
-  margin: -22px -12px;
-  padding-right: 7px;
-  position: relative;
-  width: 107%;
+  padding: 22px 12px;
+  margin-left: -12px;
+  margin-right: -12px;
+  /*width: auto;*/
+  /*margin: -22px -12px;*/
+/*  padding-right: 7px;*/
+  /*position: relative;*/
+  width: 100%;
 
   .mobile-text {
     color: $santas-gray;
     font-family: $alega;
     font-size: 26px;
-    left: -6px;
+    float: left;
+/*    left: -6px;
     position: absolute;
-    top: -4px;
+    top: -4px;*/
   }
+
+/*  .social-media {
+    float: right;
+  }*/
 }
 
 .blog_content {
@@ -101,8 +107,8 @@
 @media #{$breakpoint-mobile-landscape} {
   .add-to-any-placement {
     height: 88px;
-    padding-right: 10px;
-    width: 104%;
+/*    padding-right: 10px;*/
+    width: 100%;
 
     a {
       width: 50px;
@@ -110,8 +116,8 @@
 
     .mobile-text {
       font-size: 30px;
-      left: -6px;
-      top: 1px;
+      /*left: -6px;
+      top: 1px;*/
     }
   }
 }
@@ -119,10 +125,10 @@
 @media #{$breakpoint-tablet} {
   .add-to-any-placement {
     height: 88px;
-    margin-bottom: -74px;
-    margin-top: 30px;    
-    padding-right: 23px;
-    width: 104%;
+/*    margin-bottom: -74px;
+    margin-top: 30px;   */ 
+/*    padding-right: 23px;*/
+    width: 100%;
     
     a {
       width: 50px;
@@ -130,8 +136,8 @@
 
     .mobile-text {
       font-size: 30px;
-      left: 47px;
-      top: -9px;
+/*      left: 47px;
+      top: -9px;*/
     }
   }
 
