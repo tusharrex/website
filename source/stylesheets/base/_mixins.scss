@@ -132,13 +132,13 @@ $base-font-size: 12px;
   }
 
   &:active {
-    color: $supplementary-color;
     @if $shadow-color != '' {
       box-shadow: 0 -4px $shadow-color;
     } @else {
       box-shadow: 0 -4px $supplementary-color;
     }
     border-top-width: 0;
+    color: $supplementary-color;
     margin-top: 4px;
   }
 }
@@ -218,7 +218,9 @@ $images:
   soothe, sportslion, lifthero, soal, kotel,
   bartek, basia, beata, filip, magda, maniek,
   marcin, mareta, mariusz, mikolaj, przemek,
-  ania, irene, magdap, andrzej, rafal;
+  ania, irene, magdap, andrzej, rafal, tomek,
+  barteks, iza, jarek, patryk, piotrek, pawel,
+  lukasz;
 
 $folder-name: companies, team;
 
@@ -261,4 +263,10 @@ $folder-name: companies, team;
 @mixin font($size, $lineheight) {
   font-size: $size;
   line-height: $lineheight;
+}
+
+@mixin reset-styles($padding: 0, $border: 0, $outline: 0) {
+  padding: $padding;
+  border: $border;
+  outline: $outline;
 }

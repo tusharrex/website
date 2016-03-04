@@ -1,50 +1,78 @@
 // scss-lint:disable NestingDepth
 
+.landing-page {
+  .m-burger-button {
+    color: $martinique-dark;
+  }
+}
+
+.website-page {
+  .m-burger-button {
+    color: $light-gray;
+  }
+}
+
 .m-burger-button {
-  @include size(40px, 40px);
+  @include size(23px, 26px);
+  @include reset-styles();
   cursor: pointer;
 
-  .clicked-state,
-  .hover-state {
+  .desktop-burger-btn {
     @include size(100%, 100%);
     display: none;
   }
 
-  &:active {
+  .hover-arrow-btn {
+    @include size(100%, 100%);
+    display: none;
+  }
 
-    .clicked-state {
-      display: inline-block;
-    }
+  .mobile-burger-btn {
+    display: inline-block;
   }
 }
 
 .no-touchevents {
   .m-burger-button {
-
-    .normal-state-normal {
-      @include size(100%, 100%);
-      display: inline-block;
+    .desktop-burger-btn {
+      display: none;
     }
 
     &:hover {
-      .clicked-state,
-      .normal-state-normal {
+      .desktop-burger-btn {
         display: none;
       }
 
-      .hover-state {
-        display: inline-block;
+      .hover-arrow-btn {
+        display: none;
       }
     }
+  }
+}
 
-    &:active {
-      .hover-state,
-      .normal-state-normal {
-        display: none;
+@media #{$breakpoint-tablet} {
+  .m-burger-button {
+    @include size(40px, 36px);
+
+    .desktop-burger-btn {
+      display: block;
+    }
+
+    .mobile-burger-btn {
+      display: none;
+    }
+  }
+
+  .no-touchevents {
+    .m-burger-button {
+      .desktop-burger-btn {
+        display: block;
       }
 
-      .clicked-state {
-        display: inline-block;
+      &:hover {
+        .hover-arrow-btn {
+          display: block;
+        }
       }
     }
   }

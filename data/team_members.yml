@@ -1,10 +1,10 @@
 members:
   -
     name: Tomasz
-    color: indian-yellow-2
+    color: santas-gray
     description: Founder and CEO
     position: Founder and CEO
-    image: Tomasz
+    image: tomek
   -
     name: Filip
     color: valencia-red
@@ -31,19 +31,19 @@ members:
     image: mikolaj
   -
     name: Ania
-    color: damask-red
+    color: aquamarine-blue
     description: Software Engineer
     position: Software Engineer
     image: ania
   -
     name: Patryk
-    color: aquamarine-blue
+    color: breaker-bay-green
     description: Software Engineer
     position: Software Engineer
     image: patryk
   -
     name: Piotrek
-    color: deep-sea-green
+    color: valencia-red
     description: Software Engineer
     position: Software Engineer
     image: piotrek
@@ -67,7 +67,7 @@ members:
     image: magda
   -
     name: Beata
-    color: breaker-bay-green
+    color: aquamarine-blue
     description: Software Engineer
     position: Software Engineer
     image: beata
@@ -79,7 +79,7 @@ members:
     image: rafal
   -
     name: Basia
-    color: martinique-dark
+    color: breaker-bay-green
     description: Software Engineer
     position: Software Engineer
     image: basia
@@ -91,7 +91,7 @@ members:
     image: andrzej
   -
     name: Bartek
-    color: aquamarine-blue
+    color: valencia-red
     description: Software Engineer
     position: Software Engineer
     image: barteks
@@ -103,13 +103,13 @@ members:
     image: irene
   -
     name: Jarek
-    color: damask-red
+    color: martinique-dark
     description: Software Engineer
     position: Software Engineer
     image: jarek
   -
     name: Łukasz
-    color: indian-yellow-2
+    color: deep-sea-green
     description: Software Engineer
     position: Software Engineer
     image: lukasz
@@ -121,7 +121,7 @@ members:
     image: mariusz
   -
     name: Iza
-    color: deep-sea-green
+    color: aquamarine-blue
     description: HR manager
     position: HR manager
     image: iza
@@ -133,10 +133,10 @@ members:
     image: mareta
   -
     name: Paweł
-    color: indian-yellow-2
+    color: martinique-dark
     description: Software Engineer
     position: Software Engineer
-    image: lukasz
+    image: pawel
   -
     name: Przemek
     color: valencia-red
@@ -146,7 +146,7 @@ members:
   -
     name: CatQuest
     color: martinique-dark
-    description: VP of entertainment
-    position: VP of entertainment
+    description: Entertainment Associate Executive
+    position: Entertainment Associate Executive
     image: kotel
   
