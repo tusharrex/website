@@ -214,14 +214,15 @@
       }
     }
 
-    .testimonial {
-      @include font(2vw, 3.5vw);
-
-      .table {
-        padding-top: 44px;
-        width: 75%;
-      }
+    .portfolio-hover {
+      @include font(1.7vw, 30px);
     }
+
+    .table {
+      padding-top: 44px;
+      width: 75%;
+    }
+
 
     .see-more-btn {
       width: 230px;
@@ -264,6 +265,7 @@
     }
 
     .testimonial {
+      font-size: 2.3vw;
       text-indent: 44px;
     }
   }

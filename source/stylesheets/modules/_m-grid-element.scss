@@ -65,10 +65,14 @@
   .m-grid-element {
     height: 50vw;
     width: 50vw;
+
+    &:last-child:nth-child(odd) {
+      width: 100vw;
+    }
   }
 }
 
-@media #{$breakpoint-tablet} {
+@media #{$breakpoint-desktop} {
   .m-grid-element {
     height: 33.3vw;
 
@@ -77,6 +81,10 @@
     }
 
     &.large {
+      width: 66.7vw;
+    }
+
+    &:last-child:nth-child(odd) {
       width: 66.7vw;
     }
   }
