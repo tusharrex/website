@@ -65,10 +65,11 @@
   .m-grid-element {
     height: 50vw;
     width: 50vw;
-
+    
     &:last-child:nth-child(odd) {
       width: 100vw;
     }
+
   }
 }
 
@@ -100,6 +101,10 @@
 
     &.large {
       width: 832px;
+
+    &:last-child:nth-child(odd) {
+      width: 832px;
+    }
     }
   }
 }
