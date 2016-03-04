@@ -53,14 +53,6 @@
   }
 }
 
-@media #{$mobile} {
-  .m-grid-element {
-    &:last-child:nth-child(odd) {
-      width: 100vw;
-    }
-  }
-}
-
 @media #{$breakpoint-mobile-landscape} {
   .m-grid-element {
     height: 50vw;
