@@ -1,36 +1,34 @@
 nav.main-menu
-  button.main-menu-close-button.three-states-button.no-button type='button'
-    .normal-state
+  button.m-close-button.bcg-transparent type='button'
+    .arrow-btn
       = partial 'svg/main_menu/main_menu_close_button'
-    .hover-state
+    .hover-arrow-btn
       = partial 'svg/main_menu/humburgerbutton_arrow'
-    .clicked-state
-      = partial 'svg/main_menu/humburgerbutton_dot'
   .main-menu-container
     ul.main-menu-list
       li.item
         a.link(href='/work') Client Work
-        .arrow
+        .arrow.menu-arrow
           = partial 'svg/main_menu/main_menu_arrow'
       li.item
         a.link(href='/ventures') Ventures
-        .arrow
+        .arrow.menu-arrow
           = partial 'svg/main_menu/main_menu_arrow'
       li.item
         a.link(href='/team') Our Crew
-        .arrow
+        .arrow.menu-arrow
           = partial 'svg/main_menu/main_menu_arrow'
       li.item
         a.link(href='/join-our-crew') Join Us
-        .arrow
+        .arrow.menu-arrow
           = partial 'svg/main_menu/main_menu_arrow'
       li.item
         a.link(href='/blog') Blog
-        .arrow
+        .arrow.menu-arrow
           = partial 'svg/main_menu/main_menu_arrow'
       li.item
         a.link(href='/contact') Contact
-        .arrow
+        .arrow.menu-arrow
           = partial 'svg/main_menu/main_menu_arrow'
     ul.social-links
       li.social-link

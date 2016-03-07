@@ -157,7 +157,8 @@
     }
 
     .description {
-      font-size: 2vw;
+      @include font(25px, 2.7vw);
+      margin-top: 10px;
     }
 
     .join-us-element {
@@ -182,10 +183,6 @@
 
     .m-flipping {
       height: 250px;
-    }
-
-    .description {
-      font-size: 28px;
     }
 
     .join-us-element {

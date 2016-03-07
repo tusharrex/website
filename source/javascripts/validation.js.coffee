@@ -2,6 +2,7 @@ $ ->
 
   emailField = $('[data-js=email]')
   nameField = $('[data-js=name]')
+  formFields = '[data-js=email], [data-js=name], [data-js=description]'
 
   handleError = (field) ->
     field.addClass('error')
@@ -33,6 +34,17 @@ $ ->
       handleError(emailField)
     else
       removeError(emailField)
+
+  hideKeyboard = ->
+    document.activeElement.blur()
+    return
+
+  $('html').on 'touchend', (e)->
+    if $(e.target).is(formFields)
+      $(e.target).focus()
+      e.stopPropagation()
+      return false
+    hideKeyboard()
 
   emailField.focusout ->
     validEmail()
