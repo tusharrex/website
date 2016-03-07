@@ -73,6 +73,15 @@
       height: 138px;
     }
   }
+
+  // Styles here apply to touchscreen devices only.
+  .touchevents {
+    .m-star-your-project {
+      .submarine {
+        @include place-svg-normal(144px, 0, 65%);
+      }
+    }
+  }
 }
 
 @media #{$breakpoint-desktop} {
