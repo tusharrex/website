@@ -17,11 +17,7 @@
   @include reset-styles();
   cursor: pointer;
 
-  .desktop-burger-btn {
-    @include size(100%, 100%);
-    display: none;
-  }
-
+  .desktop-burger-btn,
   .hover-arrow-btn {
     @include size(100%, 100%);
     display: none;
@@ -39,10 +35,7 @@
     }
 
     &:hover {
-      .desktop-burger-btn {
-        display: none;
-      }
-
+      .desktop-burger-btn,
       .hover-arrow-btn {
         display: none;
       }
