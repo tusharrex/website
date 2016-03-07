@@ -24,7 +24,7 @@ html
             = partial 'svg/logo_mobile'
         = partial 'partials/main_menu_button'
       .details
-        .wrapper
+        .wrapper.medium
           .tags
             = current_article.tags.map { |tag| "##{tag}" }.join(' ')
           .title
@@ -36,7 +36,7 @@ html
             .date
               = current_article.date.strftime('%B %e, %Y')
     .blog-content
-      .wrapper
+      .wrapper.medium
         = yield
 
       .a2a_kit.a2a_kit_size_30.a2a_default_style.m-social-buttons-addtoany(
