@@ -95,8 +95,7 @@
   }
 
   .contact-offices-element {
-    display: inline-block;
-    max-width: 100%;
+    max-width: 80%;
   }
 
   .contact-office-name {
@@ -116,15 +115,16 @@
   .contact-office-img {
     padding-left: 0;
   }
-
-  .contact-offices-element {
-    max-width: 50%;
-  }
 }
 
 @media #{$breakpoint-desktop} {
+  .contact-address {
+    font-size: 14px;
+  }
+
   .contact-offices-element {
-    max-width: 44%;
+    display: inline-block;
+    max-width: 50%;
   }
 
   .contact-office-name {
@@ -144,7 +144,7 @@
 
 @media #{$breakpoint-desktop-larger} {
   .contact-offices-element {
-    width: 36%;
+    width: 44%;
   }
 
   .contact-offices {
