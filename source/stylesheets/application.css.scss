@@ -11,6 +11,8 @@
 @import 'base/backgrounds';
 @import 'base/font_colors';
 
+@import 'icons/icon-pin-map';
+
 @import 'layouts/l-landing-page';
 @import 'layouts/l-work-page';
 @import 'layouts/l-not-found-page';
@@ -57,6 +59,7 @@
 @import 'modules/m-svg-container';
 @import 'modules/m-svg-upper-part';
 @import 'modules/m-blog-header';
+@import 'modules/m-contact-offices';
 
 @import 'states/s-cq-main-logo';
 @import 'states/s-cq-mobile-logo';

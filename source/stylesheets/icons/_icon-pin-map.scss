@@ -1,0 +1,13 @@
+.icon-pin-map {
+
+  .st-pin-map-0 {
+    fill: $valencia;
+  }
+
+  &:hover,
+  &:active, {
+    .st-pin-map-0 {
+      fill: $brick-red;
+    }
+  }
+}

@@ -1,0 +1,159 @@
+.m-contact-offices {
+  margin-top: 50px;
+  padding: 0;
+
+  .address {
+    @include font(19px, 25px);
+    color: $martinique-dark;
+    font-family: $courier;
+    font-style: normal;
+  }
+
+  .btn-text,
+  .icon-pin-map {
+    float: left;
+  }
+
+  .btn-text {
+    padding-top: 9px;
+  }
+
+  .description {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .description,
+  .img {
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  .element {
+    display: block;
+    margin: 0 auto 72px;
+    padding: 0 10px;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  .icon-pin-map {
+    @include size(30px, 20px);
+    margin-right: 5px;
+  }
+
+  .office-name {
+    color: $valencia-red;
+    font-family: $alega-bold;
+    font-size: 30px;
+    margin: 20px 0 30px;
+  }
+
+  .show-map-btn {
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-contact-offices {
+    .description {
+      width: 55%;
+    }
+
+    .description,
+    .img {
+      display: inline-block;
+      padding-left: 10%;
+      vertical-align: middle;
+    }
+
+    .element {
+      max-width: 100%;
+    }
+
+    .img {
+      width: 45%;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-contact-offices {
+    margin: 0;
+    padding: 0;
+
+    .address {
+      @include font(17px, 27px);
+    }
+
+    .element {
+      max-width: 80%;
+    }
+
+    .img {
+      padding-left: 0;
+    }
+
+    .office-name {
+      font-size: 3.1vw;
+      margin: 21px 0 17px;
+    }
+
+    .show-map-btn {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-contact-offices {
+    .address {
+      font-size: 14px;
+    }
+
+    .element {
+      display: inline-block;
+      max-width: 50%;
+    }
+
+    .office-name {
+      font-size: 26px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-contact-offices {
+    .address {
+      font-size: 19px;
+    }
+
+    .office-name {
+      font-size: 30px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .m-contact-offices {
+    margin-top: 112px;
+
+    .description {
+      width: 60%;
+    }
+
+    .description,
+    .img {
+      display: block;
+    }
+
+    .element {
+      width: 44%;
+    }
+
+    .img {
+      width: 280px;
+    }
+  }
+}
