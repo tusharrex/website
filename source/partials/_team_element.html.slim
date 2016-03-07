@@ -1,12 +1,11 @@
 .team-element class=element.type
-  figure
-    .m-flipping
-      .flipping-container
-        .team-member.flipping-front(class="bcg-team-#{element.image}"
-                                    class="color-#{element.color}")
-        .team-member-back.flipping-back class="bcg-#{element.color}"
-          .description = element.description
-          .filler
-    figcaption
-      .caption class="color-#{element.caption_color}" = element.name
-      .position = element.position
+  .m-flipping
+    .flipping-container
+      .team-member.flipping-front(class="bcg-team-#{element.image}"
+                                  class="color-#{element.color}")
+      .team-member-back.flipping-back class="bcg-#{element.color}"
+        .description = element.description
+        .filler
+  figcaption.figcaption
+    .caption class="color-#{element.caption_color}" = element.name
+    .position = element.position
