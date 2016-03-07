@@ -3,18 +3,19 @@
   font-family: $baskerville;
   margin-top: 22px;
 
+  h2,
+  h3 {
+    font-family: $baskerville-bold;
+  }
+
   h2 {
-    font-size: 34px;
-    font-weight: 900;
-    margin: 25px 23px;
+    font-size: 22px;
+    margin: 22px 0;
   }
 
   h3 {
-    display: none;
-    //font-size: 27px;
-    //font-weight: 700;
-    //margin: 22px 15px;
-    //text-indent: 8px;
+    font-size: 18px;
+    margin: 10px 0;
   }
 
   ul {
@@ -104,19 +105,14 @@
     }
 
     h2 {
-      font-size: 42px;
-      font-weight: 900;
-      margin: 35px auto;
+      font-size: 26px;
+      margin: 28px 0;
     }
 
     h3 {
-      display: none;
-      //font-size: 32px;
-      //font-weight: 700;
-      //margin: 33px auto;
-      //text-indent: 1.4vw;
+      font-size: 22px;
+      margin: 16px auto;
     }
-
 
     blockquote {
       @include font(3.5vw, 1);
