@@ -218,11 +218,11 @@
 
   .join-us-element {
     .description {
-      height: 70%;
+      height: auto;
     }
 
     .filler {
-      height: 30%;
+      display: none;
     }
   }
 }
