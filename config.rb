@@ -1,5 +1,6 @@
 require 'slim'
 require 'lib/custom_helpers'
+require 'builder'
 
 activate :directory_indexes
 activate :blog do |blog|
@@ -13,9 +14,9 @@ end
 
 page '/index.html', layout: :landing_page
 page '/404.html', layout: :website
+page '/sitemap.xml', layout: false
 
 with_layout :website do
-  page '/about.html'
   page '/blog.html'
   page '/contact.html'
   page '/join-our-crew.html'
