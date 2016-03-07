@@ -53,6 +53,13 @@
     display: inline-block;
     margin-top: 15px;
   }
+
+  .show-map-btn:hover,
+  .show-map-btn:active {
+    .st-pin-map-0 {
+      fill: $brick-red;
+    }
+  }
 }
 
 @media #{$breakpoint-mobile-landscape} {
