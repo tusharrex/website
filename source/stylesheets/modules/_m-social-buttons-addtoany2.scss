@@ -1,4 +1,10 @@
+// scss-lint:disable SelectorFormat SelectorDepth NestingDepth
+
 .m-social-buttons-addtoany {
+  background-color: $light-gray-2;
+  padding: 18px 0 10px;
+  width: auto;
+
   &.a2a_kit_size_30 {
     display: block;
   }
@@ -7,21 +13,15 @@
     display: none;
   }
 
-
-  background-color: $light-gray-2;
-  width: auto;
-  padding: 18px 0 10px;
-
   .social-container {
     @include flex-flow(row, nowrap);
     @include flex-justify-content(space-between);
   }
 
   .mobile-text {
+    @include font(24px, 35px);
     color: $santas-gray;
     font-family: $alega;
-    font-size: 24px;
-    line-height: 35px;
   }
 
   .social-media {
@@ -40,9 +40,8 @@
 
 @media #{$breakpoint-mobile-landscape} {
   .m-social-buttons-addtoany {
-    height: 88px;
+    @include size(88px, auto);
     padding-top: 26px;
-    width: auto;
 
     &.a2a_kit_size_30 {
       display: none;
@@ -53,8 +52,7 @@
     }
 
     .mobile-text {
-      font-size: 30px;
-      line-height: 35px;
+      @include font(30px, 35px);
 
     }
   }
@@ -62,10 +60,7 @@
 
 @media #{$breakpoint-tablet} {
   .m-social-buttons-addtoany {
-    height: 88px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
+    @include size(88px, 100%);
 
     a {
       margin-left: 15px;
@@ -76,17 +71,19 @@
 @media #{$breakpoint-desktop} {
   .m-social-buttons-addtoany {
     @include flex-flow(column, nowrap);
+    @include size(180px, 40px);
     background-color: $light-gray;
-    height: 180px;
     padding-right: 0;
     position: absolute;
-    right: 18vw;
+    right: 38px;
     top: -3vw;
-    width: 40px;
 
     a {
-      height: 46px;
-      width: 0;
+      @include size(46px, 0);
+    }
+
+    .mobile-text {
+      display: none;
     }
   }
 }
