@@ -1,0 +1,39 @@
+// scss-lint:disable SelectorFormat
+// scss-lint:disable SelectorDepth
+// scss-lint:disable NestingDepth
+
+.m-close-button {
+  @include size(31px, 31px);
+  @include reset-styles();
+  color: inherit;
+  margin: 20px 30px 0;
+
+  .arrow-btn {
+    @include size(100%, 100%);
+    display: inline-block;
+  }
+
+  .hover-arrow-btn {
+    @include size(100%, 100%);
+    @include flip-horizontal();
+    display: none;
+  }
+}
+
+.no-touchevents {
+  .m-close-button {
+    &:hover {
+      .arrow-btn {
+        display: none;
+      }
+
+      .hover-arrow-btn {
+        display: inline-block;
+      }
+    }
+
+    .hover-arrow-btn {
+      display: none;
+    }
+  }
+}
