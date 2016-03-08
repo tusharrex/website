@@ -129,13 +129,13 @@
     }
 
     .description {
-      font-size: 3vw;
+      font-size: 22px;
     }
 
     .join-us-element {
       .description {
-        font-size: 4vw;
-        line-height: 4.3vw;
+        font-size: 30px;
+        line-height: 35px;
       }
     }
   }
@@ -157,15 +157,8 @@
     }
 
     .description {
-      @include font(25px, 2.7vw);
+      @include font(22px, 30px);
       margin-top: 10px;
-    }
-
-    .join-us-element {
-      .description {
-        font-size: 3vw;
-        line-height: 3.3vw;
-      }
     }
   }
 }
@@ -183,6 +176,10 @@
 
     .m-flipping {
       height: 250px;
+    }
+
+    .description {
+      font-size: 25px;
     }
 
     .join-us-element {
