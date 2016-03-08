@@ -24,16 +24,29 @@ html
             = partial 'svg/logo_mobile'
         = partial 'partials/main_menu_button'
       .details
-        .tags
-          = current_article.tags.map { |tag| "##{tag}" }.join(' ')
-        .title
-          = current_article.title
-        .info
-          .author
-            | Posted by
-            =< current_article.data.author
-          .date
-            = current_article.date.strftime('%B %e, %Y')
-    .blog_content
-      = yield
+        .wrapper.medium
+          .tags
+            = current_article.tags.map { |tag| "##{tag}" }.join(' ')
+          .title
+            = current_article.title
+          .info
+            .author
+              | Posted by
+              =< current_article.data.author
+            .date
+              = current_article.date.strftime('%B %e, %Y')
+    .blog-content
+      .wrapper.medium
+        = yield
+
+      .a2a_kit.a2a_kit_size_30.a2a_default_style.m-social-buttons-addtoany(
+       data-a2a-icon-color='#2b304b')
+        = partial 'partials/social_media'
+
+      .a2a_kit.a2a_kit_size_35.a2a_default_style.m-social-buttons-addtoany(
+        data-a2a-icon-color='#2b304b')
+        = partial 'partials/social_media'
+
     = partial 'partials/footer'
+
+script async="" src="https://static.addtoany.com/menu/page.js"

@@ -6,3 +6,5 @@
         = partial 'partials/team_element', locals: {element: m}
       a.join-us-link(href='/join-our-crew')
         = partial 'partials/team_element', locals: {element: data.team_join_us}
+      - 10.times do
+        .m-grid-item.no-content

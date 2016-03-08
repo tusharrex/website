@@ -1,13 +1,35 @@
+@import 'm-flipping';
+
 .m-team {
   @include flex-justify-content(space-between);
   margin: 0;
 
   .team-element {
+    @include flex-flow(row, wrap);
+    @include flex-justify-content(center);
     color: $martinique-dark;
     font-family: $alega-bold;
     font-size: 30px;
-    margin-bottom: 42px;
+    margin-bottom: 30px;
     text-align: center;
+    width: 40vw;
+  }
+
+  .figcaption,
+  .m-flipping {
+    width: 100%;
+  }
+
+  .figcaption {
+    height: 30vw;
+  }
+
+  .m-flipping {
+    height: 40vw;
+  }
+
+  .flipping-container {
+    @include size(100%, 100%);
   }
 
   .join-us-element {
@@ -30,11 +52,10 @@
     text-decoration: none;
   }
 
-  .m-flipping,
-  .flipping-front ,
+
+  .flipping-front,
   .flipping-back {
-    @include size(40vw, 40vw);
-    border-radius: 50%;
+    @include size(100%, 100%);
   }
 
   .team-member {
@@ -43,17 +64,15 @@
   }
 
   .team-member-back {
+    border-radius: 50%;
     color: $light-gray;
     display: none;
     font-family: $alega;
     font-size: 28px;
-    padding-top: 38%;
   }
 
   .description {
     border-bottom: 2px solid $light-gray;
-    line-height: 40px;
-    margin: 0 auto;
     width: 75%;
   }
 
@@ -66,21 +85,19 @@
   }
 }
 
-// Styles here apply to non-touchscreen devices only.
-.no-touchevents {
-  .m-team {
-    .team-member-back {
-      display: none;
-    }
-  }
-}
-
 @media #{$breakpoint-mobile-landscape} {
   .m-team {
-    .m-flipping,
-    .flipping-front ,
-    .flipping-back {
-      @include size(44vw, 44vw);
+    .team-element {
+      margin-bottom: 20px;
+      width: 44vw;
+    }
+
+    .figcaption {
+      height: 15vw;
+    }
+
+    .m-flipping {
+      height: 44vw;
     }
 
     .join-us-element {
@@ -94,73 +111,75 @@
 @media #{$breakpoint-tablet} {
   .m-team {
     .team-element {
-      margin-bottom: 112px;
+      margin-bottom: 30px;
+      width: 25vw;
     }
 
-    .m-flipping,
-    .flipping-front ,
-    .flipping-back {
-      @include size(25vw, 25vw);
+    .figcaption {
+      height: 15vw;
     }
+
+    .m-flipping {
+      height: 25vw;
+    }
+
 
     .caption {
       margin-top: 20px;
     }
 
     .description {
-      font-size: 3vw;
+      font-size: 22px;
     }
 
     .join-us-element {
       .description {
-        font-size: 4vw;
-        line-height: 4.3vw;
+        font-size: 30px;
+        line-height: 35px;
       }
-    }
-  }
-
-  // Styles here apply to non-touchscreen devices only.
-  .no-touchevents {
-    .m-team {
-      .team-member-back {
-        display: block;
-      }
-    }
-
-    .position {
-      display: none;
     }
   }
 }
 
 @media #{$breakpoint-desktop} {
   .m-team {
-    .m-flipping,
-    .flipping-front ,
-    .flipping-back {
-      @include size(20vw, 20vw);
+    .figcaption {
+      height: 10vw;
+    }
+
+    .team-element {
+      margin-bottom: 30px;
+      width: 20vw;
+    }
+
+    .m-flipping {
+      height: 20vw;
     }
 
     .description {
-      @include font(25px, 2.7vw);
+      @include font(22px, 30px);
       margin-top: 10px;
-    }
-
-    .join-us-element {
-      .description {
-        font-size: 3vw;
-        line-height: 3.3vw;
-      }
     }
   }
 }
 
 @media #{$breakpoint-desktop-large} {
   .m-team {
-    .m-flipping,
-    .flipping-front ,
-    .flipping-back {
-      @include size(250px, 250px);
+    .team-element {
+      margin-bottom: 50px;
+      width: 250px;
+    }
+
+    .figcaption {
+      height: 90px;
+    }
+
+    .m-flipping {
+      height: 250px;
+    }
+
+    .description {
+      font-size: 25px;
     }
 
     .join-us-element {
@@ -168,6 +187,39 @@
         font-size: 40px;
         line-height: 44px;
       }
+    }
+  }
+}
+
+.no-touchevents {
+  .m-team {
+    .team-member-back {
+      @include flex-flow(column, nowrap);
+      @include flex-justify-content(center);
+      @include flex-align-items(center);
+    }
+
+    .description {
+      @include flex-flow(column-reverse, nowrap);
+      height: 55%;
+    }
+
+    .filler {
+      height: 45%;
+    }
+  }
+
+  .position {
+    display: none;
+  }
+
+  .join-us-element {
+    .description {
+      height: auto;
+    }
+
+    .filler {
+      display: none;
     }
   }
 }

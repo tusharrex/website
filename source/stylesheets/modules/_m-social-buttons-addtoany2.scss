@@ -1,0 +1,90 @@
+// Disable scss-lint here because we overwrite plugin
+// scss-lint:disable SelectorFormat SelectorDepth NestingDepth
+
+.m-social-buttons-addtoany {
+  background-color: $light-gray-2;
+  padding: 18px 0 10px;
+  width: auto;
+
+  &.a2a_kit_size_30 {
+    display: block;
+  }
+
+  &.a2a_kit_size_35 {
+    display: none;
+  }
+
+  .social-container {
+    @include flex-flow(row, nowrap);
+    @include flex-justify-content(space-between);
+  }
+
+  .mobile-text {
+    @include font(24px, 35px);
+    color: $santas-gray;
+    font-family: $alega;
+  }
+
+  .social-media {
+    @include flex-order(3);
+
+    a {
+      margin-left: 8px;
+      padding: 0;
+
+      span {
+        @include size(20px, 20px);
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-social-buttons-addtoany {
+    @include size(88px, auto);
+    padding-top: 26px;
+
+    &.a2a_kit_size_30 {
+      display: none;
+    }
+
+    &.a2a_kit_size_35 {
+      display: block;
+    }
+
+    .mobile-text {
+      @include font(30px, 35px);
+
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-social-buttons-addtoany {
+    @include size(88px, 100%);
+
+    a {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-social-buttons-addtoany {
+    @include flex-flow(column, nowrap);
+    @include size(180px, 40px);
+    background-color: $light-gray;
+    padding-right: 0;
+    position: absolute;
+    right: 38px;
+    top: -3vw;
+
+    a {
+      @include size(46px, 0);
+    }
+
+    .mobile-text {
+      display: none;
+    }
+  }
+}
