@@ -14,6 +14,10 @@
     }
   }
 
+  &.m-grid-element::before {
+    display: none;
+  }
+
   .send-mail-link {
     color: $light-gray;
     font-family: $alega;
