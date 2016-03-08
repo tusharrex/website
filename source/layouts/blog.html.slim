@@ -24,7 +24,7 @@ html
             = partial 'svg/logo_mobile'
         = partial 'partials/main_menu_button'
       .details
-        .wrapper
+        .wrapper.medium
           .tags
             = current_article.tags.map { |tag| "##{tag}" }.join(' ')
           .title
@@ -36,28 +36,17 @@ html
             .date
               = current_article.date.strftime('%B %e, %Y')
     .blog-content
-      .wrapper
+      .wrapper.medium
         = yield
 
       .a2a_kit.a2a_kit_size_30.a2a_default_style.m-social-buttons-addtoany(
-                                        data-a2a-icon-color='#2b304b')
-        .social-container.wrapper
-          .mobile-text Like? Share it.
-          .social-media
-            a.a2a_button_facebook
-            a.a2a_button_twitter
-            a.a2a_button_google_plus
-            a.a2a_dd href="https://www.addtoany.com/share"
+       data-a2a-icon-color='#2b304b')
+        = partial 'partials/social_media'
 
       .a2a_kit.a2a_kit_size_35.a2a_default_style.m-social-buttons-addtoany(
         data-a2a-icon-color='#2b304b')
-        .social-container.wrapper
-          .mobile-text Like? Share it.
-          .social-media
-            a.a2a_button_facebook
-            a.a2a_button_twitter
-            a.a2a_button_google_plus
-            a.a2a_dd href="https://www.addtoany.com/share"
+        = partial 'partials/social_media'
+
     = partial 'partials/footer'
 
 script async="" src="https://static.addtoany.com/menu/page.js"

@@ -1,37 +1,35 @@
 .m-contact.m-content-padding
   .wrapper
     .m-paragraph = data.contact.description
-    ul.contact-offices
-      li.contact-offices-element
-        .contact-office-img
+    ul.m-contact-offices
+      li.element
+        .img
           = partial 'svg/contact/warsaw'
-        .contact-description
-          h3.contact-office-name Warsaw Office
-          address.contact-address
+        .description
+          h3.office-name Warsaw Office
+          address.address
             | KEN 55/64
             br
             | 02-797, Warszawa
             br
             | Poland
-          a.link-btn.red.contact-show-map-btn(
+          a.link-btn.red.show-map-btn(
           href="https://goo.gl/8RShUJ" target="_blank" rel="nofollow")
             .icon-pin-map
               = partial 'svg/pin_map'
             .btn-text Show on Map
-      li.contact-offices-element
-        .contact-office-img
+      li.element
+        .img
           = partial 'svg/contact/bialystok'
-        .contact-description
-          h3.contact-office-name Białystok Office
-          address.contact-address
-            | Sienkiewicza 3
-            br
-            | lokal 7/2
+        .description
+          h3.office-name Białystok Office
+          address.address
+            | Sienkiewicza 3 lok 7/2
             br
             | 15-432, Białystok
             br
             | Poland
-          a.link-btn.red.contact-show-map-btn(
+          a.link-btn.red.show-map-btn(
           href="https://goo.gl/maps/YiiFRmZYm432"
           target="_blank" rel="nofollow")
             .icon-pin-map

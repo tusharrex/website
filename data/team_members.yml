@@ -43,10 +43,10 @@ members:
     image: patryk
   -
     name: Piotrek
-    color: valencia-red
+    color: damask-red
     description: Software Engineer
     position: Software Engineer
-    image: piotrek
+    image: placeholder-orange
   -
     name: Adam
     color: deep-sea-green
@@ -58,7 +58,7 @@ members:
     color: maroon-red
     description: UX Designer
     position: UX Designer
-    image: magdap
+    image: placeholder-red
   -
     name: Magda
     color: valencia-red
@@ -76,7 +76,7 @@ members:
     color: indian-yellow-2
     description: Software Engineer
     position: Software Engineer
-    image: rafal
+    image: placeholder-yellow
   -
     name: Basia
     color: breaker-bay-green
@@ -88,7 +88,7 @@ members:
     color: breaker-bay-green
     description: Software Engineer
     position: Software Engineer
-    image: andrzej
+    image: placeholder-green
   -
     name: Bartek
     color: valencia-red
@@ -100,13 +100,13 @@ members:
     color: deep-sea-green
     description: Software Engineer
     position: Software Engineer
-    image: irene
+    image: placeholder-dark-green
   -
     name: Jarek
-    color: martinique-dark
+    color: maroon-red
     description: Software Engineer
     position: Software Engineer
-    image: jarek
+    image: placeholder-red
   -
     name: Łukasz
     color: deep-sea-green
@@ -143,6 +143,12 @@ members:
     description: Software Engineer
     position: Software Engineer
     image: przemek
+  -
+    name: Janek
+    color: deep-sea-green
+    description: Software Engineer
+    position: Software Engineer
+    image: janek
   -
     name: CatQuest
     color: martinique-dark
