@@ -12,11 +12,11 @@ At first you may think that the fixed price model will protect you against extra
 
 But if there is no trust in the first place, would the fixed price basis help you to save money? Won’t it just limit the project’s potential instead?
 
-Software loves when it’s handled with care and it always pays you back. I think that with time and material both of us get the most out of it. We avoid misunderstandings, build up trust, and team up to turn a great idea into an amazing product. Let me explain you how it works.
+Software loves when it’s handled with care and it always pays you back. I think that with time and material both of us get the most out of it. We avoid misunderstandings, build up trust, and team up to turn a great idea into an amazing product. Let me explain to you how it works.
 
-Quite often the way the client and developer understand the same concept is completely different. This may include differences in deadline estimations, amount of efforts to be spent on this or that task, or any emergencies.
+Quite often the way the client and developer understand the same concept is completely different. This may include differences in deadline estimations, amount of effort to be spent on this or that task, or any emergencies.
 
-What does it mean? There will definitely be numerous omissions or ambiguities in the technical specifications. Good specs only set the project off during the initial stage of development.
+What does it mean? There will definitely be numerous omissions or ambiguities in the technical specifications. Good specs only set the project up during the initial stage of development.
 
 Change is constant in software development and the secret lies in prioritizing and doing things that need to be done here and now. The more we work on the project to make it better, the more new things and terrific ideas will be storming our heads; old ideas will fade into the background or simply die away. Everything changes and it is perfectly natural.
 
