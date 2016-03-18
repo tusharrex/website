@@ -8,6 +8,8 @@ color: red
 
 Not long ago we were proud to announce that some members of our Warsaw crew took an active part in [Rails Girls Warsaw](http://railsgirls.com/warsaw "Rails Girls Warsaw") February workshop. This time we would like to share with you our love and pride of the Bialystok branch.
 
+> we would like to propagate the Rails technology among the technical community in Białystok, and encourage its female members to become Rails specialists
+
 [Rails Girls Bialystok](http://railsgirls.com/bialystok "Rails Girls Bialystok") will be organized for the very first time in that lovely place in the east of Poland. code quest has extended its patronage over this event as we would like to propagate the Rails technology among the technical community in Białystok, and encourage its female members to become Rails specialists, quietly hoping to soon have some girls in our all-male Białystok office.
 
 Not only do we sponsor the event but our Białystok crew members, Piotr Protas and Michał Samluk, will be mentoring the participants of the event.
