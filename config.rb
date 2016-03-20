@@ -2,7 +2,6 @@ require 'slim'
 require 'lib/custom_helpers'
 require 'builder'
 
-activate :directory_indexes
 activate :blog do |blog|
   blog.permalink = 'blog/{title}.html'
   blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
@@ -11,6 +10,7 @@ activate :blog do |blog|
   blog.per_page = 30
   blog.new_article_template = 'source/blog/template.html.erb'
 end
+activate :directory_indexes
 
 page '/index.html', layout: :landing_page
 page '/404.html', layout: :website
