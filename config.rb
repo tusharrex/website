@@ -15,6 +15,7 @@ activate :directory_indexes
 page '/index.html', layout: :landing_page
 page '/404.html', layout: :website
 page '/sitemap.xml', layout: false
+page '/google9e4f1bcdcf77d753.html', layout: false, directory_index: false
 
 with_layout :website do
   page '/blog.html'

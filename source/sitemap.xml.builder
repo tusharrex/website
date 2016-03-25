@@ -36,7 +36,7 @@ class SitemapBuilder
   end
 
   def disabled_paths
-    /(^\/svg)|(\/blog\/template\/$)/
+    /(^\/svg)|(\/blog\/template\/$)|(google9e4f1bcdcf77d753)/
   end
 
   def is_blog_post?
