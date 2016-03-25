@@ -55,7 +55,7 @@
 
 @media #{$breakpoint-tablet} {
   .m-start-project {
-    padding: 175px 0 138px;
+    padding-top: 75px;
   }
 
   .start-project-laptop,
@@ -64,15 +64,15 @@
   }
 
   .start-project-laptop {
-    @include place-svg(150, 20, 76, 0);
+    @include place-svg-normal(61.5px, 77%, -4.5%);
   }
 
   .start-project-ruby {
-    @include place-svg(49, 69, 77.3, 53);
+    @include place-svg-normal(33px, 77.5%, 77%);
   }
 
   .start-project-gofer {
-    @include place-svg(76, 46, 18.5, 71);
+    @include place-svg-normal(51px, 18%, 70%);
   }
 
   .start-project-ruby-small {
@@ -95,8 +95,61 @@
   }
 }
 
+@media #{$breakpoint-desktop} {
+  .m-start-project {
+    padding-top: 90px;
+  }
+
+  .start-project-laptop {
+    @include place-svg-normal(65px, 78%, -4%);
+  }
+
+  .start-project-ruby {
+    @include place-svg-normal(45px, 77.5%, 75%);
+  }
+
+  .start-project-gofer {
+    @include place-svg-normal(60px, 19%, 70%);
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-start-project {
+    padding-top: 110px;
+  }
+
+  .start-project-laptop {
+    @include place-svg-normal(75px, 78%, -3%);
+  }
+
+  .start-project-ruby {
+    @include place-svg-normal(4%, 77.4%, 71.5%);
+  }
+
+  .start-project-gofer {
+    @include place-svg-normal(75px, 19%, 68%);
+  }
+}
+
 @media #{$breakpoint-desktop-retina} {
   .start-project-title {
     font-size: 6.7vw;
+  }
+
+  .m-start-project {
+    padding-bottom: 130px;
+    padding-top: 175px;
+  }
+
+  .start-project-laptop {
+    @include place-svg-normal(110px, 78%, -.8%);
+  }
+
+  .start-project-ruby {
+    @include place-svg-normal(4%, 71%, 65%);
+  }
+
+  .start-project-gofer {
+    @include place-svg-normal(100px, 25%, 66%);
   }
 }
