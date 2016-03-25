@@ -10,6 +10,8 @@ So your dev team have created this new app for your client. You are very proud o
 
 At code quest we use a template for inputting bug descriptions into our JIRA spaces. It is very precise and if you only stick to it, anybody really can become fluent in reporting the bugs. Even that non-technical client of yours.
 
+> You will soon gain good reporting skills describing the bugs to your dev team with easiness and swiftness you never suspected yourself to have.
+
 ### How to report bugs?
 So, how do we do it? Here is a little walkthrough:
 

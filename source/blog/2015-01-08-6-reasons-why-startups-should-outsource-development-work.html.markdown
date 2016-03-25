@@ -10,6 +10,8 @@ If you are thinking of putting this great idea for an app that you have in your 
 
 Well, it is not.
 
+> Outsourcing saves your time, money and energy, and let’s you focus on the marketing of the product itself.
+
 Actually, if you are an entrepreneur building your company from scratch, working hard on that idea you have and trying to make it happen, outsourcing is a perfect solution for you. There are many reasons for that, but let me keep it simple: outsourcing saves your time, money and energy, and let’s you focus on the marketing of the product itself. How? Let me explain…
 
 ## No need to dive into the unknown to hire an in-house team
