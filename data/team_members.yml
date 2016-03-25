@@ -6,12 +6,6 @@ members:
     position: Founder and CEO
     image: tomek
   -
-    name: Filip
-    color: valencia-red
-    description: COO
-    position: COO
-    image: filip
-  -
     name: Marcin
     color: martinique-dark
     description: Software Engineer
