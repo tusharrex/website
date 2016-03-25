@@ -30,9 +30,9 @@
         .form-legend
           | Description
           .subtitle Describe the project, requirements and objectives.
-        textarea.form-textarea(data-js='description' type='textarea'
-          name='description' placeholder='Share with us any information that \
-            might help us to respond to your request.')
+        textarea.form-textarea(data-js='description' name='description'
+          placeholder='Share with us any information that might help us to\
+            respond to your request.')
 
       fieldset.form-fieldset
         .form-legend
@@ -40,8 +40,7 @@
           .subtitle Providing a budget will help us ensure expectations are met.
         .amount $5,000 - $20,000
         .amount-inputs
-          select.form-input.form-select(data-js='select-min' type='text'
-          name='budget-min' placeholder='$2,000')
+          select.form-input.form-select data-js='select-min' name='budget-min'
             option value='0' $0
             option value='2000' $2,000
             option value='5000' $5,000
@@ -51,8 +50,7 @@
             option value='50000' $50,000
             option value='80000' $80,000
           .dash
-          select.form-input.form-select(data-js='select-max' type='text'
-          name='budget-max' placeholder='$70,000')
+          select.form-input.form-select data-js='select-max' name='budget-max'
             option value='2000' $2,000
             option value='5000' $5,000
             option value='8000' $8,000

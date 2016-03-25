@@ -6,6 +6,7 @@
   @include size(31px, 31px);
   @include reset-styles();
   color: inherit;
+  cursor: pointer;
   margin: 20px 30px 0;
 
   .arrow-btn {
