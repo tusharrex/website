@@ -45,7 +45,7 @@ class SitemapBuilder
 
   def last_mod
     if is_blog_post?
-      File.mtime(page.source_file).to_time
+      File.mtime(page.source_file).to_time.iso8601
     else
       Date.today.to_time.iso8601
     end

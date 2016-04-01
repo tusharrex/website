@@ -1,10 +1,10 @@
 @include font-face('AlegaWeb', 'AlegaWeb');
 @include font-face('AlegaWeb-Bold', 'AlegaWeb-Bold');
 @include font-face('AlegaWeb-Light', 'AlegaWeb-Light');
-@include font-face('CourierPrime', 'CourierPrime');
-@include font-face('CourierPrime-Bold', 'CourierPrime-Bold');
-@include font-face('CourierPrime-Italic', 'CourierPrime-Italic');
-@include font-face('CourierPrime-Bold-Italic', 'CourierPrime-Italic-Bold');
+@include font-face('CourierPrime', 'CourierPrime', 'ttf');
+@include font-face('CourierPrime-Bold', 'CourierPrime-Bold', 'ttf');
+@include font-face('CourierPrime-Italic', 'CourierPrime-Italic', 'ttf');
+@include font-face('CourierPrime-Bold-Italic', 'CourierPrime-Italic-Bold', 'ttf');
 @include font-face('Baskerville', 'Baskerville');
 @include font-face('Baskerville-Bold', 'Baskerville-Bold');
 @include font-face('Baskerville-Italic', 'Baskerville-Italic');
