@@ -4,7 +4,7 @@
 
   @include button;
   &.damask-red-light-gray {
-    @include button-with-color($damask-red);
+    @include button($damask-red);
   }
 
   &.yellow-bcg {
@@ -16,12 +16,12 @@
   }
 
   &.martinique_dark {
-    @include button-with-color($martinique-dark);
+    @include button($martinique-dark);
    }
 
   @media #{$breakpoint-tablet} {
     &.damask-red-light-gray {
-      @include button-with-color($damask-red);
+      @include button($damask-red);
     }
   }
 }
@@ -30,32 +30,30 @@
 .no-touchevents {
 
   .btn {
+
+    @include button-wave-hover;
+
     &.btn-grey-sea-green {
-      @include button-hover($deep-sea-green);
+      @include button-wave-hover($viridian-green);
     }
 
     &.btn-maroon-red {
-      @include button-hover($maroon-red);
+      @include button-wave-hover($crail-red);
     }
 
     &.btn-indian-yellow {
-      @include button-hover($indian-yellow-2);
+      @include button-wave-hover($diserria-yellow);
     }
 
     &.btn-breaker-bay-green {
-      @include button-hover($breaker-bay-green);
+      @include button-wave-hover($viridian-green);
     }
 
 
     @media #{$breakpoint-tablet} {
       &.damask-red-light-gray {
-        @include button-with-color(
-          $base-color: $damask-red);
-        @include button-with-color-states(
-          $base-color: $damask-red,
-          $color-hover: $light-gray,
-          $supplementary-color: $valencia-red,
-          $shadow-color: $valencia-red);
+        @include button(
+          $damask-red);
       }
 
       &.breaker-bay-green-martinique-dark {
@@ -69,59 +67,31 @@
       }
 
       &.gray-aquamarine-blue {
-        @include button-with-color-states(
-          $base-color: $light-gray,
-          $color-hover: $aquamarine-blue,
-          $shadow-color: $light-gray-2,
-          $supplementary-color: $docker-blue);
+        @include button-wave-hover($fiord-blue);
       }
 
       &.gray-damask-red {
-        @include button-with-color-states(
-          $base-color: $light-gray,
-          $color-hover: $damask-red,
-          $shadow-color: $light-gray-2,
-          $supplementary-color: $valencia-red);
+        @include button-wave-hover($crail-red);
       }
 
       &.gray-indian-yellow {
-        @include button-with-color-states(
-          $base-color: $light-gray,
-          $color-hover: $indian-yellow,
-          $shadow-color: $light-gray-2,
-          $supplementary-color: $indian-yellow-2);
+        @include button-wave-hover($diserria-yellow);
       }
 
       &.gray-indian-yellow-2 {
-        @include button-with-color-states(
-          $base-color: $light-gray,
-          $color-hover: $indian-yellow-2,
-          $shadow-color: $light-gray-2,
-          $supplementary-color: $docker-blue);
+        @include button-wave-hover($diserria-yellow);
       }
 
       &.gray-martinique_dark {
-        @include button-with-color-states(
-          $base-color: $light-gray,
-          $color-hover: $martinique-dark,
-          $shadow-color: $light-gray-2,
-          $supplementary-color: $mirage-dark);
+        @include button-wave-hover($fiord-blue);
       }
 
       &.gray-valencia-red {
-        @include button-with-color-states(
-          $base-color: $light-gray,
-          $color-hover: $valencia-red,
-          $shadow-color: $light-gray-2,
-          $supplementary-color: $maroon-red);
+        @include button-wave-hover($mojo-red);
       }
 
       &.gray-breaker-bay-green {
-        @include button-with-color-states(
-          $base-color: $light-gray,
-          $color-hover: $breaker-bay-green,
-          $shadow-color: $light-gray-2,
-          $supplementary-color: $deep-sea-green);
+        @include button-wave-hover($viridian-green);
       }
 
       &.indian-yellow-martinique-dark {
@@ -135,10 +105,7 @@
       }
 
       &.martinique_dark {
-        @include button-with-color-states(
-          $base-color: $martinique-dark,
-          $shadow-color: $mirage-dark,
-          $supplementary-color: $santas-gray);
+        @include button-wave-hover($fiord-blue);
       }
     }
   }

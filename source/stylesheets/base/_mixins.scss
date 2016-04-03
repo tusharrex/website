@@ -94,10 +94,10 @@ $base-font-size: 12px;
   }
 }
 
-@mixin button {
+@mixin button($color: $light-gray) {
   border: 4px solid $light-gray;
   border-radius: 10px;
-  color: $light-gray;
+  color: $color;
   cursor: pointer;
   display: inline-block;
   font-size: 30px;
@@ -107,43 +107,35 @@ $base-font-size: 12px;
   text-align: center;
   text-decoration: none;
   width: 290px;
-}
+  overflow: hidden;
 
-@mixin button-hover($base-color,
-                  $color: $light-gray,
-                  $border: 4px solid $light-gray) {
-  &:hover {
-    background-color: $color;
-    color: $base-color;
+  .text {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .wave {
+    display: none;
   }
 }
 
-@mixin button-with-color($base-color: $damask-red) {
-  border-color: $base-color;
-  border-top-width: 0;
-  box-shadow: 0 -4px $base-color;
-  color: $base-color;
-  margin-top: 4px;
-}
+@mixin button-wave-hover($color: $martinique-dark) {
 
-@mixin button-with-color-states($base-color: $damask-red,
-              $supplementary-color: $maroon-red,
-              $shadow-color: '',
-              $color-hover: $light-gray) {
-  &:hover {
-    background-color: $base-color;
-    color: $color-hover;
+  .wave {
+    color: $color;
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 70px;
+    transition: top 1s, left 1s;
+    width: 500px;
   }
 
-  &:active {
-    @if $shadow-color != '' {
-      box-shadow: 0 -4px $shadow-color;
-    } @else {
-      box-shadow: 0 -4px $supplementary-color;
+  &:hover {
+    .wave {
+      left: -50px;
+      top: -20px;
     }
-    border-top-width: 0;
-    color: $supplementary-color;
-    margin-top: 4px;
   }
 }
 
