@@ -127,13 +127,13 @@ $base-font-size: 12px;
     left: 0;
     position: absolute;
     top: 70px;
-    transition: top 1s, left 1s;
+    transition: top 0.8s, left 0.8s;
     width: 500px;
   }
 
   &:hover {
     .wave {
-      left: -50px;
+      left: -100px;
       top: -20px;
     }
   }
