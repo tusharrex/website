@@ -11,8 +11,10 @@
     = partial 'partials/main_signature'
   .button-wrapper
     a.btn.breaker-bay-green-martinique-dark.landing-button(
-      href='/start-your-project') Hire Us
+      href='/start-your-project')
+      = button_content('Hire Us')
     a.btn.indian-yellow-martinique-dark.landing-button(
-      href='/join-our-crew') Get on Board
+      href='/join-our-crew')
+      = button_content('Get on Board')
   .bottom-logo-wrapper
     = partial 'svg/logo'

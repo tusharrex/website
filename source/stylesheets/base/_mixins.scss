@@ -95,7 +95,7 @@ $base-font-size: 12px;
 }
 
 @mixin button($color: $light-gray) {
-  border: 4px solid $light-gray;
+  border: 4px solid $color;
   border-radius: 10px;
   color: $color;
   cursor: pointer;

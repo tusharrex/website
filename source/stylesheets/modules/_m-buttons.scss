@@ -57,17 +57,11 @@
       }
 
       &.breaker-bay-green-martinique-dark {
-        @include button-with-color(
-          $base-color: $breaker-bay-green);
-        @include button-with-color-states(
-          $base-color: $breaker-bay-green,
-          $color-hover: $martinique-dark,
-          $shadow-color: $deep-sea-green,
-          $supplementary-color: $martinique-dark);
+        @include button-wave-hover($viridian-green);
       }
 
       &.gray-aquamarine-blue {
-        @include button-wave-hover($fiord-blue);
+        @include button-wave-hover($mirage);
       }
 
       &.gray-damask-red {
@@ -83,7 +77,7 @@
       }
 
       &.gray-martinique_dark {
-        @include button-wave-hover($fiord-blue);
+        @include button-wave-hover($mirage);
       }
 
       &.gray-valencia-red {
@@ -95,17 +89,11 @@
       }
 
       &.indian-yellow-martinique-dark {
-        @include button-with-color(
-          $base-color: $indian-yellow);
-        @include button-with-color-states(
-          $base-color: $indian-yellow,
-          $color-hover: $martinique-dark,
-          $shadow-color: $indian-yellow-2,
-          $supplementary-color: $martinique-dark);
+        @include button-wave-hover($diserria-yellow);
       }
 
       &.martinique_dark {
-        @include button-wave-hover($fiord-blue);
+        @include button-wave-hover($mirage);
       }
     }
   }
