@@ -57,7 +57,8 @@
       }
 
       &.breaker-bay-green-martinique-dark {
-        @include button-wave-hover($viridian-green);
+        @include button($breaker-bay-green);
+        @include button-wave-hover($mirage);
       }
 
       &.gray-aquamarine-blue {
@@ -89,7 +90,8 @@
       }
 
       &.indian-yellow-martinique-dark {
-        @include button-wave-hover($diserria-yellow);
+        @include button($indian-yellow);
+        @include button-wave-hover($mirage);
       }
 
       &.martinique_dark {
