@@ -15,7 +15,7 @@ module CustomHelpers
   def button_content(text)
     content_tag(:div, text, class: 'text') +
     content_tag(:div, class: 'wave') do
-      partial 'svg/wave'
+      partial 'svg/button_wave'
     end
   end
 end
