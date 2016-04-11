@@ -54,6 +54,35 @@
 
 @media #{$breakpoint-desktop} {
   .m-codebeat {
+
+    .codebeat-logo {
+      max-width: 410px;
+      width: 88%;
+    }
+
+    .codebeat-slogan {
+      font-size: 26px;
+      line-height: 26px;
+      padding-top: 42px;
+    }
+  
+    .codebeat-description {
+      font-size: 20px;
+      letter-spacing: .5px;
+      line-height: 29px;
+      padding-left: 0;
+      text-indent: 23px;
+      width: 88%;
+      
+      &:first-of-type {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .m-codebeat {
     @include flex-flow(row, wrap);
 
     .column-left,
@@ -75,7 +104,7 @@
       }
     }
 
-    .codebeat-slogan {
+/*    .codebeat-slogan {
       font-size: 26px;
       line-height: 26px;
       padding-top: 42px;
@@ -94,7 +123,7 @@
       &:first-of-type {
         padding-top: 20px;
       }
-    }
+    }*/
 
     .codebeat-dashboard {
       background-position: 0 27px;
@@ -104,10 +133,10 @@
   }
 }
 
-@media #{$breakpoint-desktop-large} {
+@media #{$breakpoint-desktop-larger} {
   .m-codebeat {
     .codebeat-description {
       text-align: justify;
     }
   }
-}
+} 
