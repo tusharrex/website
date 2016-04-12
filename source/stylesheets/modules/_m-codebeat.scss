@@ -15,8 +15,7 @@
   .codebeat-slogan {
     color: $docker-blue;
     font-family: $alega;
-    font-size: 18px;
-    line-height: 20px;
+    @include font(18px, 20px);
     padding-bottom: 26px;
     text-align: center;
     width: 90%;
@@ -25,9 +24,8 @@
   .codebeat-description {
     color: $martinique-dark;
     font-family: $courier;
-    font-size: 16px;
+    @include font(16px, 22px);
     font-weight: 700;
-    line-height: 22px;
     padding-left: 2px;
     text-align: center;
   }
@@ -61,15 +59,13 @@
     }
 
     .codebeat-slogan {
-      font-size: 26px;
-      line-height: 26px;
+      @include font(26px, 26px);
       padding-top: 42px;
     }
   
     .codebeat-description {
-      font-size: 20px;
+      @include font(20px, 29px);
       letter-spacing: .5px;
-      line-height: 29px;
       padding-left: 0;
       text-indent: 23px;
       width: 88%;
