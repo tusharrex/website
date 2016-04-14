@@ -263,6 +263,10 @@
       width: 290px;
     }
 
+    .table {
+      padding: 0;
+    }
+    
     .testimonial {
       font-size: 2.3vw;
       text-indent: 44px;
@@ -270,7 +274,7 @@
   }
 }
 
-@media #{$breakpoint-desktop-large} {
+@media #{$breakpoint-desktop-larger} {
   .m-cq-work-portfolio {
     .testimonial {
       @include font(28px, 44px);
