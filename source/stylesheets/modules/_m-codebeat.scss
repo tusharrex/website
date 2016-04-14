@@ -15,8 +15,7 @@
   .codebeat-slogan {
     color: $docker-blue;
     font-family: $alega;
-    font-size: 18px;
-    line-height: 20px;
+    @include font(18px, 20px);
     padding-bottom: 26px;
     text-align: center;
     width: 90%;
@@ -25,9 +24,8 @@
   .codebeat-description {
     color: $martinique-dark;
     font-family: $courier;
-    font-size: 16px;
+    @include font(16px, 22px);
     font-weight: 700;
-    line-height: 22px;
     padding-left: 2px;
     text-align: center;
   }
@@ -54,6 +52,33 @@
 
 @media #{$breakpoint-desktop} {
   .m-codebeat {
+
+    .codebeat-logo {
+      max-width: 410px;
+      width: 88%;
+    }
+
+    .codebeat-slogan {
+      @include font(26px, 26px);
+      padding-top: 42px;
+    }
+  
+    .codebeat-description {
+      @include font(20px, 29px);
+      letter-spacing: .5px;
+      padding-left: 0;
+      text-indent: 23px;
+      width: 88%;
+      
+      &:first-of-type {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .m-codebeat {
     @include flex-flow(row, wrap);
 
     .column-left,
@@ -76,20 +101,14 @@
     }
 
     .codebeat-slogan {
-      font-size: 26px;
-      line-height: 26px;
-      padding-top: 42px;
       text-align: initial;
     }
 
     .codebeat-description {
-      font-size: 19px;
-      letter-spacing: .5px;
-      line-height: 29px;
-      padding-left: 0;
       text-align: left;
       text-indent: 23px;
-      width: 88%;
+
+      text-align: justify;
 
       &:first-of-type {
         padding-top: 20px;
@@ -104,10 +123,10 @@
   }
 }
 
-@media #{$breakpoint-desktop-large} {
+@media #{$breakpoint-desktop-larger} {
   .m-codebeat {
     .codebeat-description {
       text-align: justify;
     }
   }
-}
+} 
