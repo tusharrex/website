@@ -1,9 +1,6 @@
 .m-join-us.m-content-padding
   .wrapper
     .m-paragraph.margin-medium = data.join_our_crew.description
-    = partial 'partials/svg_upper_part'
-    h3.m-content-heading.large.color-martinique-dark Current Job Openings
-    .m-paragraph.margin-sm Let's dive into code together. Come join our crew!
+    = partial 'partials/job-offers'
     h3.m-content-heading.large.color-martinique-dark Apply now!
     = mail_to 'jobs@codequest.com', nil, class: 'link-btn red apply-link'
-  = partial 'partials/job-offers'

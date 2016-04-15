@@ -18,3 +18,14 @@ svg {
   height: 100%;
   width: 100%;
 }
+
+a,
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+}
+
+a::selection {
+  background-color: inherit;
+}

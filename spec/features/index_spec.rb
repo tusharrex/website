@@ -6,6 +6,6 @@ feature 'Landing page', type: :feature do
   end
 
   scenario 'displays content' do
-    expect(page).to have_selector 'h1'
+    expect(page).to have_selector '.l-landing-page'
   end
 end
