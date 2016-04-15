@@ -230,23 +230,8 @@ $base-font-size: 12px;
   }
 }
 
-$team-faces:
-  ania, basia, bartek, barteks, beata, iza, janek, kotel, lukasz, magda,
-  maniek, marcin, mareta, mariusz, mikolaj, placeholder-dark-green,
-  placeholder-red, placeholder-green, placeholder-yellow, placeholder-orange,
-  przemek, patryk, pawel, tomek;
-
-@mixin bcg-team-images {
-  @each $image in $team-faces {
-    .bcg-team-#{$image} {
-      background: image-url('team/#{$image}.png') center center, no-repeat;
-    }
-  }
-}
-
 $company-logos:
-  dawanda, eqipia, foundersuite, lifthero, selecthub,
-  soal, soothe, sportslion;
+  dawanda, eqipia, foundersuite, lifthero, selecthub, soal, soothe, sportslion;
 
 @mixin bcg-company-images {
   @each $image in $company-logos {
