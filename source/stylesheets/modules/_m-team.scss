@@ -1,7 +1,6 @@
 @import 'm-flipping';
 
 .m-team {
-  @include bcg-team-images;
   @include flex-justify-content(space-between);
   margin: 0;
 
