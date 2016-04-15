@@ -17,9 +17,9 @@ noindex: true
       '
       | if you believe this is an error.
     a.btn.damask-red-light-gray.check-our-work(href='/work')
-      | Check our work
+      = button_content('Check our work')
     a.btn.damask-red-light-gray.back-to-homepage(href='/')
-      | Back to homepage
+      = button_content('Back to homepage')
     .submarine
       = partial 'svg/custom_404/submarine'
     .elements-wrapper

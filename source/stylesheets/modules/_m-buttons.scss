@@ -18,12 +18,6 @@
   &.martinique_dark {
     @include button($martinique-dark);
    }
-
-  @media #{$breakpoint-tablet} {
-    &.damask-red-light-gray {
-      @include button($damask-red);
-    }
-  }
 }
 
 // Styles here apply to non-touchscreen devices only.
@@ -49,12 +43,12 @@
       @include button-wave-hover($viridian-green);
     }
 
+    &.damask-red-light-gray {
+      @include button-wave-hover($mercury-gray);
+    }
+
 
     @media #{$breakpoint-tablet} {
-      &.damask-red-light-gray {
-        @include button(
-          $damask-red);
-      }
 
       &.breaker-bay-green-martinique-dark {
         @include button($breaker-bay-green);

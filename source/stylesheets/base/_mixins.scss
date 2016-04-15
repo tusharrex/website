@@ -1,10 +1,10 @@
 // scss-lint:disable DuplicateProperty, VendorPrefix, TrailingSemicolon
 @mixin stroke(
-  $stroke: $martinique-dark,
-  $width: 4,
-  $miterlimit: 10,
-  $linecap: null,
-  $linejoin: null,
+  $stroke: $martinique-dark, 
+  $width: 4, 
+  $miterlimit: 10, 
+  $linecap: null, 
+  $linejoin: null, 
   $dasharray: null) {
   stroke: $stroke;
   stroke-width: $width;
@@ -88,7 +88,7 @@ $base-font-size: 12px;
     @if $format == 'ttf' {
       src: url($filepath + '.ttf') format('truetype');
     } @else {
-      src: url($filepath + '.woff') format('woff'),
+      src: url($filepath + '.woff') format('woff'), 
       url($filepath + '.ttf') format('truetype');
     }
   }
@@ -111,7 +111,7 @@ $base-font-size: 12px;
 
   .text {
     position: relative;
-    z-index: 1000;
+    z-index: 10;
   }
 
   .wave {
@@ -127,7 +127,7 @@ $base-font-size: 12px;
     left: 0;
     position: absolute;
     top: 70px;
-    transition: top 0.8s, left 0.8s;
+    transition: top .8s, left .8s;
     width: 500px;
   }
 
@@ -139,7 +139,7 @@ $base-font-size: 12px;
   }
 }
 
-@mixin link-button($font-size, $text-transform,
+@mixin link-button($font-size, $text-transform, 
                    $text-decoration, $font-family) {
   font-size: $font-size;
   text-transform: $text-transform;
@@ -223,10 +223,10 @@ $base-font-size: 12px;
 }
 
 $images:
-  ania, basia, bartek, barteks, beata, dawanda, eqipia, filip, foundersuite,
-  iza, janek, kotel, lukasz, lifthero, magda, maniek, marcin, mareta, mariusz,
-  mikolaj, placeholder-dark-green, placeholder-red, placeholder-green,
-  placeholder-yellow, placeholder-orange, przemek, patryk, pawel, selecthub,
+  ania, basia, bartek, barteks, beata, dawanda, eqipia, filip, foundersuite, 
+  iza, janek, kotel, lukasz, lifthero, magda, maniek, marcin, mareta, mariusz, 
+  mikolaj, placeholder-dark-green, placeholder-red, placeholder-green, 
+  placeholder-yellow, placeholder-orange, przemek, patryk, pawel, selecthub, 
   soal, soothe, sportslion, tomek;
 
 $folder-name: companies, team;

@@ -98,15 +98,14 @@
             #slider-range.slider-range
 
       fieldset.form-fieldset.relative
-        input.btn.form-button.damask-red-light-gray(
-          data-js='submit' type='submit'
-          value='Start Your Project')
+        .btn.form-button.damask-red-light-gray(data-js='submit')
+          = button_content('Start your project')
+          input(type='submit' value= '')
         input type='hidden' name='_next' value='/thank-you'
         input(type='hidden' name='_subject'
           value='Start project with codequest!')
         input.hidden type='text' name='_gotcha'
         .paper-plane
           = partial 'svg/start_project/paper_plane'
-
       .station
         = partial 'svg/station'
