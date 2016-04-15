@@ -1,32 +1,32 @@
 // Styles here apply to non-touchscreen devices only.
 .no-touchevents {
-  .m-flipping {
-    @include perspective(1000);
+  // .m-flipping {
+  //   @include perspective(1000);
 
-    &:hover .flipping-container {
-      @include transform(rotateY(180deg));
-    }
+  //   &:hover .flipping-container {
+  //     @include transform(rotateY(180deg));
+  //   }
 
-    .flipping-container {
-      @include transform-style(preserve-3d);
-      @include transition(.75s);
-    }
+  //   .flipping-container {
+  //     @include transform-style(preserve-3d);
+  //     @include transition(.75s);
+  //   }
 
-    .flipping-front,
-    .flipping-back {
-      @include backface-visibility(hidden);
+  //   .flipping-front,
+  //   .flipping-back {
+  //     @include backface-visibility(hidden);
 
-      left: 0;
-      position: absolute;
-      top: 0;
-    }
+  //     left: 0;
+  //     position: absolute;
+  //     top: 0;
+  //   }
 
-    .flipping-front {
-      z-index: 2;
-    }
+  //   .flipping-front {
+  //     z-index: 2;
+  //   }
 
-    .flipping-back {
-      @include transform(rotateY(180deg));
-    }
-  }
+  //   .flipping-back {
+  //     @include transform(rotateY(180deg));
+  //   }
+  // }
 }
