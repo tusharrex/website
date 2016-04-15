@@ -117,10 +117,13 @@ $base-font-size: 12px;
   .wave {
     display: none;
   }
+
+  &:active {
+    background-color: $mercury-gray;
+  }  
 }
 
 @mixin button-wave-hover($color: $martinique-dark) {
-
   .wave {
     color: $color;
     display: block;
@@ -133,6 +136,14 @@ $base-font-size: 12px;
 
   &:hover {
     .wave {
+      left: -100px;
+      top: -20px;
+    }
+  }
+
+  &:active {
+    .wave {
+      color: darken($color, 5%);
       left: -100px;
       top: -20px;
     }
