@@ -20,4 +20,11 @@ server {
     location /404/index.html {
       internal;
     }
+
+    location ~* \.(jpg|jpeg|gif|css|png|js|ico|html|svg)$ {
+      expires max;
+    }
+
+    gzip_static on;
+    gzip_http_version 1.1;
 }

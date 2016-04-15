@@ -7,6 +7,7 @@ gem 'slim'
 gem 'middleman-blog'
 gem 'middleman-livereload'
 gem 'builder'
+gem 'middleman-imageoptim'
 
 group :development do
   gem 'codeguard'

@@ -81,12 +81,16 @@ $base-font-size: 12px;
   animation: #{$str};
 }
 
-@mixin font-face($style-name, $file) {
+@mixin font-face($style-name, $file, $format: 'woff') {
   $filepath: '/stylesheets/fonts/' + $file;
   @font-face {
     font-family: "#{$style-name}";
-    src: url($filepath + '.woff') format('woff'),
-    url($filepath + '.ttf') format('truetype');
+    @if $format == 'ttf' {
+      src: url($filepath + '.ttf') format('truetype');
+    } @else {
+      src: url($filepath + '.woff') format('woff'),
+      url($filepath + '.ttf') format('truetype');
+    }
   }
 }
 
@@ -226,21 +230,13 @@ $base-font-size: 12px;
   }
 }
 
-$images:
-  ania, basia, bartek, barteks, beata, dawanda, eqipia, filip, foundersuite,
-  iza, janek, kotel, lukasz, lifthero, magda, maniek, marcin, mareta, mariusz,
-  mikolaj, placeholder-dark-green, placeholder-red, placeholder-green,
-  placeholder-yellow, placeholder-orange, przemek, patryk, pawel, selecthub,
-  soal, soothe, sportslion, tomek;
+$company-logos:
+  dawanda, eqipia, foundersuite, lifthero, selecthub, soal, soothe, sportslion;
 
-$folder-name: companies, team;
-
-@mixin bcg-images {
-  @each $folder in $folder-name {
-    @each $image in $images {
-      .bcg-#{$folder}-#{$image} {
-        background: image-url('#{$folder}/#{$image}.png') center center, no-repeat;
-      }
+@mixin bcg-company-images {
+  @each $image in $company-logos {
+    .bcg-companies-#{$image} {
+      background: image-url('companies/#{$image}.png') center center, no-repeat;
     }
   }
 }
