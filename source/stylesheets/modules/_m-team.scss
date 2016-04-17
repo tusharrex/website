@@ -1,5 +1,3 @@
-@import 'm-flipping';
-
 .m-team {
   @include flex-justify-content(space-between);
   margin: 0;
@@ -37,6 +35,7 @@
       background: image-url('svg/team/guy.svg') no-repeat 52% 66%;
       background-size: 63%;
       border: 4px solid;
+      border-radius: 50%;
     }
 
     .caption {
@@ -60,6 +59,7 @@
 
   .team-member {
     @include background-size(cover);
+    @include size(100%, 100%);
     border-radius: 50%;
   }
 
