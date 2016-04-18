@@ -3,7 +3,7 @@ $ ->
     figcaption = el.parent().children().last()
     caption = figcaption.children().first()
     caption.text(el.attr(text))
-    unless el.attr('data-image').match /(placeholder)|(join)/
+    unless el.attr('data-image').match /(placeholder)/
       el.attr('src', el.attr(path))
 
   $('.team-member').hover ->
