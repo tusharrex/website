@@ -5,6 +5,7 @@
 @import 'base/config';
 @import 'base/functions';
 @import 'base/mixins';
+@import 'base/button_mixins';
 @import 'base/fonts';
 @import 'base/main';
 @import 'base/wrapper';
@@ -54,7 +55,6 @@
 @import 'modules/m-blog-content';
 @import 'modules/m-face';
 @import 'modules/m-svg-container';
-@import 'modules/m-svg-upper-part';
 @import 'modules/m-blog-header';
 @import 'modules/m-contact-offices';
 @import 'modules/m-social-buttons-addtoany2';
@@ -64,6 +64,5 @@
 @import 'states/s-contact-section';
 @import 'states/s-work';
 @import 'states/s-start-your-project';
-@import 'states/s-join-us';
 
 @import 'plugins/jquery-ui.min';
