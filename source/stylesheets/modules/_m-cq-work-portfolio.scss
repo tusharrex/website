@@ -1,4 +1,5 @@
 .m-cq-work-portfolio {
+  @include bcg-company-images;
   &.m-grid-collection {
     @include flex-justify-content(center);
     margin: 0;
