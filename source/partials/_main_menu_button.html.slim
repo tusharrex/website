@@ -1,7 +1,7 @@
 .m-burger-button.bcg-transparent
   .desktop-burger-btn
-    = partial 'svg/main_menu/humburgerbutton'
+    .burger-btn-animation-wrapper
+      = partial 'partials/burger_button_elements', locals: {animated: true}
   .mobile-burger-btn
-    = partial 'svg/main_menu/humburgerbutton_mobile'
-  .hover-arrow-btn
-    = partial 'svg/main_menu/humburgerbutton_arrow'
+    .burger-btn-animation-wrapper
+      = partial 'partials/burger_button_elements'
