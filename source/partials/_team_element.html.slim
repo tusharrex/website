@@ -1,11 +1,12 @@
 figure.team-element class=element.type
-  .m-flipping
-    .flipping-container
-      .team-member.flipping-front(class="bcg-team-#{element.image}"
-                                  class="color-#{element.color}")
-      .team-member-back.flipping-back class="bcg-#{element.color}"
-        .description = element.description
-        .filler
+  img.team-member(class="color-#{element.color}"
+    width="340" height="340"
+    src=asset_path(:images, "team/#{element.image}.png")
+    data-orig=asset_path(:images, "team/#{element.image}.png")
+    data-gif=asset_path(:images, "team/#{element.image}.gif")
+    data-image=element.image
+    data-name=element.name
+    data-position=element.position
+  )
   figcaption.figcaption
     .caption class="color-#{element.caption_color}" = element.name
-    .position = element.position

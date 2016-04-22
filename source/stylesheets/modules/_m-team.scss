@@ -1,5 +1,3 @@
-@import 'm-flipping';
-
 .m-team {
   @include flex-justify-content(space-between);
   margin: 0;
@@ -7,37 +5,21 @@
   .team-element {
     @include flex-flow(row, wrap);
     @include flex-justify-content(center);
+    @include size(100%, 40vw);
     color: $martinique-dark;
     font-family: $alega-bold;
     font-size: 30px;
     margin-bottom: 30px;
     text-align: center;
-    width: 40vw;
-  }
-
-  .figcaption,
-  .m-flipping {
-    width: 100%;
   }
 
   .figcaption {
     height: 30vw;
-  }
-
-  .m-flipping {
-    height: 40vw;
-  }
-
-  .flipping-container {
-    @include size(100%, 100%);
+    width: 100%;
   }
 
   .join-us-element {
-    .flipping-front {
-      background: image-url('svg/team/guy.svg') no-repeat 52% 66%;
-      background-size: 63%;
-      border: 4px solid;
-    }
+    height: initial;
 
     .caption {
       font-size: 19px;
@@ -52,23 +34,10 @@
     text-decoration: none;
   }
 
-
-  .flipping-front,
-  .flipping-back {
-    @include size(100%, 100%);
-  }
-
   .team-member {
     @include background-size(cover);
+    @include size(100%, 100%);
     border-radius: 50%;
-  }
-
-  .team-member-back {
-    border-radius: 50%;
-    color: $light-gray;
-    display: none;
-    font-family: $alega;
-    font-size: 28px;
   }
 
   .description {
@@ -96,10 +65,6 @@
       height: 15vw;
     }
 
-    .m-flipping {
-      height: 44vw;
-    }
-
     .join-us-element {
       .caption {
         font-size: 30px;
@@ -118,11 +83,6 @@
     .figcaption {
       height: 15vw;
     }
-
-    .m-flipping {
-      height: 25vw;
-    }
-
 
     .caption {
       margin-top: 20px;
@@ -152,10 +112,6 @@
       width: 20vw;
     }
 
-    .m-flipping {
-      height: 20vw;
-    }
-
     .description {
       @include font(22px, 30px);
       margin-top: 10px;
@@ -174,10 +130,6 @@
       height: 90px;
     }
 
-    .m-flipping {
-      height: 250px;
-    }
-
     .description {
       font-size: 25px;
     }
@@ -193,12 +145,6 @@
 
 .no-touchevents {
   .m-team {
-    .team-member-back {
-      @include flex-flow(column, nowrap);
-      @include flex-justify-content(center);
-      @include flex-align-items(center);
-    }
-
     .description {
       @include flex-flow(column-reverse, nowrap);
       height: 55%;
