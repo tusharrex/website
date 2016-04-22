@@ -1,3 +1,8 @@
+.join-our-crew {
+  .m-footer {
+    margin-top: 20px;
+  }
+}
 .m-join-us {
   .apply-link {
     @include link-button(24px, none, none, $alega-bold);
