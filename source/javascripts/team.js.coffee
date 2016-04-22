@@ -1,12 +1,16 @@
 $ ->
-  onHover = (el, text, path) ->
-    figcaption = el.parent().children().last()
+  onHover = (el, text) ->
+    figcaption = el.parent().parent().children().last()
     caption = figcaption.children().first()
     caption.text(el.attr(text))
-    unless el.attr('data-image').match /(placeholder)/
-      el.attr('src', el.attr(path))
 
-  $('.team-member').hover ->
-    onHover $(this), 'data-position', 'data-gif'
+  $(".video-container").hover ->
+    teamMember = $(this).children().first()
+    onHover teamMember, 'data-position'
+    unless teamMember.attr('data-image').match /(placeholder)/
+      $('video', this).get(0).play()
   , ->
-    onHover $(this), 'data-name', 'data-orig'
+    teamMember = $(this).children().first()
+    onHover teamMember, 'data-name'
+    unless teamMember.attr('data-image').match /(placeholder)/
+      $('video', this).get(0).load()

@@ -1,12 +1,19 @@
 figure.team-element class=element.type
-  img.team-member(class="color-#{element.color}"
-    width="340" height="340"
-    src=asset_path(:images, "team/#{element.image}.png")
-    data-orig=asset_path(:images, "team/#{element.image}.png")
-    data-gif=asset_path(:images, "team/#{element.image}.gif")
-    data-image=element.image
-    data-name=element.name
-    data-position=element.position
-  )
+  .video-container
+    video.team-member(class="color-#{element.color}"
+      preload="none" loop
+      poster=asset_path(:images, "team/#{element.image}.png")
+      data-image=element.image
+      data-name=element.name
+      data-position=element.position
+    )
+      source(
+        src=asset_path(:images, "team/#{element.image}.mp4")
+        type="video/mp4"
+      )
+      source(
+        src=asset_path(:images, "team/#{element.image}.webm")
+        type="video/webm"
+      )
   figcaption.figcaption
     .caption class="color-#{element.caption_color}" = element.name
