@@ -38,6 +38,7 @@
     @include background-size(cover);
     @include size(100%, 100%);
     border-radius: 50%;
+    display: block;
   }
 
   .description {
