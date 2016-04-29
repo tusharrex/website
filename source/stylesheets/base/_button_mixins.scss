@@ -80,6 +80,7 @@ $wave-colors: (
   }
 
   &:active {
+    background-color:rgba(0, 0, 0, 0);
     .wave {
       color: darken($color, 5%);
       left: -100px;
