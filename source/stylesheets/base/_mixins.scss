@@ -94,65 +94,6 @@ $base-font-size: 12px;
   }
 }
 
-<<<<<<< HEAD
-@mixin button($color: $light-gray) {
-  border: 4px solid $color;
-  border-radius: 10px;
-  color: $color;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 30px;
-  font-family: $alega;
-  padding: 15px 5px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  width: 290px;
-  overflow: hidden;
-
-  .text {
-    position: relative;
-    z-index: 10;
-  }
-
-  .wave {
-    display: none;
-  }
-
-  &:active {
-    background-color: $mercury-gray;
-  }
-}
-
-@mixin button-wave-hover($color: $martinique-dark) {
-  .wave {
-    color: $color;
-    display: block;
-    left: 0;
-    position: absolute;
-    top: 70px;
-    transition: top .8s, left .8s;
-    width: 500px;
-  }
-
-  &:hover {
-    .wave {
-      left: -100px;
-      top: -20px;
-    }
-  }
-
-  &:active {
-    .wave {
-      color: darken($color, 5%);
-      left: -100px;
-      top: -20px;
-    }
-  }
-}
-
-=======
->>>>>>> 8bd988e46f5fb5965146bb81001677c19241c78d
 @mixin link-button($font-size, $text-transform,
                    $text-decoration, $font-family) {
   font-size: $font-size;

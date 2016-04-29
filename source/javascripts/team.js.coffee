@@ -14,10 +14,5 @@ $ ->
     onHover teamMember(this), 'data-position'
     $('video', this).get(0).play()
   , ->
-<<<<<<< HEAD
-    onHover $(this), 'data-name', 'data-orig'
-    
-=======
     onHover teamMember(this), 'data-name'
     $('video', this).get(0).load()
->>>>>>> 8bd988e46f5fb5965146bb81001677c19241c78d
