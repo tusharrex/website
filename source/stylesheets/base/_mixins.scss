@@ -94,6 +94,7 @@ $base-font-size: 12px;
   }
 }
 
+<<<<<<< HEAD
 @mixin button($color: $light-gray) {
   border: 4px solid $color;
   border-radius: 10px;
@@ -150,6 +151,8 @@ $base-font-size: 12px;
   }
 }
 
+=======
+>>>>>>> 8bd988e46f5fb5965146bb81001677c19241c78d
 @mixin link-button($font-size, $text-transform,
                    $text-decoration, $font-family) {
   font-size: $font-size;

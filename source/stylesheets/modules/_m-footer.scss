@@ -64,7 +64,10 @@
 
   .social-link {
     margin-left: 0;
-    max-width: 30px;
+  }
+  
+  .footer-social-text {
+    display: none;
   }
 
   .social-links {
@@ -72,7 +75,7 @@
     @include flex-flow(row, wrap);
     @include flex-justify-content(space-between);
     margin-top: 30px;
-    width: 210px;
+    width: 280px;
 
     li {
       margin-left: 0;
@@ -83,10 +86,6 @@
   .social-link-item,
   .social-link {
     max-height: 32px;
-  }
-
-  .twitter-link {
-    max-width: 34px;
   }
 
   .wrapper {
@@ -235,8 +234,62 @@
       @include flex-flow(column, wrap);
       @include align-items(flex-start);
       height: 210px;
-      max-height: 210px;
+      width: initial;
     }
+
+    .footer-social-text {
+      display: inline-block;
+      margin-left: 15px;
+      vertical-align: top;
+    }
+
+    .facebook-footer {
+      &:hover {
+        color: $breaker-bay-green;
+          svg {
+            fill: $breaker-bay-green;
+          } 
+      }
+
+      &:active {
+        color: $deep-sea-green; 
+          svg {
+            fill: $deep-sea-green;
+          }
+      }
+    }
+
+    .github-footer {
+      &:hover {
+        color: $indian-yellow ;
+          svg {
+            fill: $indian-yellow;
+          }
+      }
+
+      &:active {
+        color: $damask-red;
+          svg {
+            fill: $damask-red;
+          }
+      }
+    }
+
+    .twitter-footer {
+      &:hover {
+        color: $aquamarine-blue;
+          svg {
+            fill: $aquamarine-blue;
+          }
+      }
+
+    &:active {
+      color: $fountain-blue; 
+        svg {
+          fill: $fountain-blue;
+        }
+    }
+  }
 
     .wrapper {
       @include flex-flow(row, wrap);

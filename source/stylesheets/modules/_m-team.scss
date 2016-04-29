@@ -5,12 +5,12 @@
   .team-element {
     @include flex-flow(row, wrap);
     @include flex-justify-content(center);
+    @include size(100%, 40vw);
     color: $martinique-dark;
     font-family: $alega-bold;
     font-size: 30px;
     margin-bottom: 30px;
     text-align: center;
-    width: 40vw;
   }
 
   .figcaption {
@@ -19,6 +19,8 @@
   }
 
   .join-us-element {
+    height: initial;
+
     .caption {
       font-size: 19px;
     }
@@ -36,14 +38,7 @@
     @include background-size(cover);
     @include size(100%, 100%);
     border-radius: 50%;
-  }
-
-  .team-member-back {
-    border-radius: 50%;
-    color: $light-gray;
-    display: none;
-    font-family: $alega;
-    font-size: 28px;
+    display: block;
   }
 
   .description {
@@ -151,12 +146,6 @@
 
 .no-touchevents {
   .m-team {
-    .team-member-back {
-      @include flex-flow(column, nowrap);
-      @include flex-justify-content(center);
-      @include flex-align-items(center);
-    }
-
     .description {
       @include flex-flow(column-reverse, nowrap);
       height: 55%;

@@ -2,6 +2,7 @@
 .btn {
 
   @include button;
+<<<<<<< HEAD
 
   &.damask-red {
     @include button($damask-red);
@@ -9,11 +10,27 @@
 
   &.crail-red-bcg {
     @include btn-click($crail-red);
+=======
+
+  &.damask-red {
+    @include button($damask-red);
+>>>>>>> 8bd988e46f5fb5965146bb81001677c19241c78d
+  }
+
+  &.martinique-dark {
+    @include button($martinique-dark);
+  }
+<<<<<<< HEAD
+=======
+
+  &.crail-red-wave {
+    @include btn-click($crail-red);
   }
 
   &.small {
     width: 218px;
   }
+>>>>>>> 8bd988e46f5fb5965146bb81001677c19241c78d
 }
 
 // Styles here apply to non-touchscreen devices only.
@@ -21,9 +38,16 @@
 
   .btn {
 
+<<<<<<< HEAD
     @include btn-background;
 
     @media #{$breakpoint-tablet} {
+=======
+    @include btn-wave;
+
+    @media #{$breakpoint-tablet} {
+
+>>>>>>> 8bd988e46f5fb5965146bb81001677c19241c78d
       &.indian-yellow {
         @include button($indian-yellow);
       }
@@ -31,7 +55,12 @@
       &.breaker-bay-green {
         @include button($breaker-bay-green);
       }
+<<<<<<< HEAD
       @include btn-background;
+=======
+
+      @include btn-wave;
+>>>>>>> 8bd988e46f5fb5965146bb81001677c19241c78d
     }
   }
 }

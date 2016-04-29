@@ -1,11 +1,7 @@
-a.join-us-link(href='/join-our-crew')
-  figure.team-element class=element.type
-    img.team-member(class="color-#{element.color}"
-      src=asset_path(:images, "team/#{element.image}.png")
-      data-orig=asset_path(:images, "team/#{element.image}.png")
-      data-image=element.image
-      data-name=element.name
-      data-position=element.position
-    )
-    figcaption.figcaption
-      .caption class="color-#{element.caption_color}" = element.name
+img.team-member.join-us(class="color-#{element.color}"
+  src=asset_path(:images, "team/#{element.image}.png")
+  data-orig=asset_path(:images, "team/#{element.image}.png")
+  data-image=element.image
+  data-name=element.name
+  data-position=element.position
+)

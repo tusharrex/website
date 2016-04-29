@@ -17,14 +17,94 @@
   @include reset-styles();
   cursor: pointer;
 
-  .desktop-burger-btn,
-  .hover-arrow-btn {
+  .burger-btn-animation-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .burger-element-center,
+    .burger-element-up,
+    .burger-element-down {
+      position: absolute;
+      height: 4px;
+      background-color: currentColor;
+      border-radius: 25px;
+    }
+  }
+
+  .desktop-burger-btn {
     @include size(100%, 100%);
     display: none;
+    .burger-element-center {
+      width: 36px;
+      top: 16px;
+      left: 0;
+    }
+    .burger-element-up {
+      width: 28px;
+      top: 4px;
+      left: 6px;
+      transition: all 0.3s ease;
+    }
+    .burger-element-down {
+      width: 15px;
+      top: 28px;
+      left: 6px;
+      transition: all 0.3s ease;
+    }
+    .burger-element-dot {
+      position: absolute;
+      height: 1px;
+      width: 1px;
+      top: 24px;
+      left: 6px;
+      background-color: currentColor;
+      opacity: 0;
+      border-radius: 25px;
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      .burger-element-up {
+        width: 22px;
+        top: 9px;
+        left: -3px;
+        transform: rotate(-45deg);
+        transition: all 0.5s ease-out;
+      }
+      .burger-element-down {
+        width: 15px;
+        top: 20px;
+        left: -2px;
+        transform: rotate(45deg);
+        transition: all 0.5s ease-out;
+      }
+      .burger-element-dot {
+        opacity: 1;
+        height: 4px;
+        width: 4px;
+        top: 28px;
+        left: 12px;
+        transition: all 0.4s ease-in 0.1s;
+      }
+    }
   }
 
   .mobile-burger-btn {
-    display: inline-block;
+    display: block;
+    .burger-element-center {
+      width: 24px;
+      top: 8px;
+      left: 0;
+    }
+    .burger-element-up {
+      width: 18px;
+      top: 0;
+      left: 4px;
+    }
+    .burger-element-down {
+      width: 10px;
+      top: 16px;
+      left: 4px;
+    }
   }
 }
 
@@ -33,39 +113,23 @@
     .desktop-burger-btn {
       display: none;
     }
-
-    &:hover {
-      .desktop-burger-btn,
-      .hover-arrow-btn {
-        display: none;
-      }
-    }
   }
 }
 
 @media #{$breakpoint-tablet} {
   .m-burger-button {
     @include size(40px, 36px);
-
     .desktop-burger-btn {
       display: block;
     }
-
     .mobile-burger-btn {
       display: none;
     }
   }
-
   .no-touchevents {
     .m-burger-button {
       .desktop-burger-btn {
         display: block;
-      }
-
-      &:hover {
-        .hover-arrow-btn {
-          display: block;
-        }
       }
     }
   }
