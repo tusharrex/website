@@ -8,6 +8,12 @@ module CustomHelpers
     data.page.description ? data.page.description : ''
   end
 
+  def facebook_meta_data_url
+    path = request['path'].split('/')
+    path.pop
+    [root_url, path].flatten.join('/')
+  end
+
   def blog?
     current_page.path == 'blog.html'
   end
