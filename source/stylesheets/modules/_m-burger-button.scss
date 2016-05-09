@@ -43,13 +43,13 @@
       width: 28px;
       top: 4px;
       left: 6px;
-      transition: all 0.3s ease;
+      transition: all 0.07s ease-out;
     }
     .burger-element-down {
       width: 15px;
       top: 28px;
       left: 6px;
-      transition: all 0.3s ease;
+      transition: all 0.07s ease-out;
     }
     .burger-element-dot {
       position: absolute;
@@ -60,7 +60,7 @@
       background-color: currentColor;
       opacity: 0;
       border-radius: 25px;
-      transition: all 0.2s ease;
+      transition: all 0.1s ease-out;
     }
     &:hover {
       .burger-element-up {
@@ -68,14 +68,14 @@
         top: 9px;
         left: -3px;
         transform: rotate(-45deg);
-        transition: all 0.5s ease-out;
+        transition: all 0.1s ease-in;
       }
       .burger-element-down {
         width: 15px;
         top: 20px;
         left: -2px;
         transform: rotate(45deg);
-        transition: all 0.5s ease-out;
+        transition: all 0.1s ease-in;
       }
       .burger-element-dot {
         opacity: 1;
@@ -83,7 +83,7 @@
         width: 4px;
         top: 28px;
         left: 12px;
-        transition: all 0.4s ease-in 0.1s;
+        transition: all 0.2s ease-out 0.1s;
       }
     }
   }

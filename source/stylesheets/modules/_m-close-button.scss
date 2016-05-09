@@ -11,30 +11,115 @@
 
   .arrow-btn {
     @include size(100%, 100%);
-    display: inline-block;
-  }
+    display: block;
+    position: relative;
 
-  .hover-arrow-btn {
-    @include size(100%, 100%);
-    @include flip-horizontal();
-    display: none;
+    .burger-close-line-1,
+    .burger-close-line-2,
+    .burger-close-dot,
+    .burger-close-arrow-center,
+    .burger-close-arrow-blade-1,
+    .burger-close-arrow-blade-2,
+    .burger-close-arrow-dot {
+      background: currentColor;
+      height: 4px;
+      border-radius: 4px;
+      position: absolute;
+      transition: all 0.1s ease-in-out
+    }
+    .burger-close-line-1,
+    .burger-close-line-2,
+    .burger-close-dot {
+      transition-delay: 0.1s;
+    }
+    .burger-close-line-1 {
+      width: 39px;
+      transform: rotate(-45deg);
+      top: 14px;
+      right: -4px;
+    }
+    .burger-close-line-2 {
+      width: 32px;
+      transform: rotate(45deg);
+      top: 12px;
+      right: 2px;
+    }
+    .burger-close-dot {
+      width: 4px;
+      transform: rotate(-45deg);
+      top: 27px;
+      right: 1px;
+    }
+    .burger-close-arrow-center {
+      width: 4px;
+      top: 15px;
+      right: 13px;
+    }
+    .burger-close-arrow-blade-1,
+    .burger-close-arrow-blade-2,
+    .burger-close-arrow-dot {
+      width: 4px;
+      top: 15px;
+      right: -4px;
+      opacity: 0;
+    }
   }
 }
 
 .no-touchevents {
   .m-close-button {
-    &:hover {
-      .arrow-btn {
-        display: none;
+    .arrow-btn {
+      &:hover {
+        .burger-close-line-1,
+        .burger-close-line-2 {
+          width: 4px;
+          top: 15px;
+          right: 13px;
+        }
+        .burger-close-arrow-center,
+        .burger-close-arrow-blade-1,
+        .burger-close-arrow-blade-2,
+        .burger-close-arrow-dot,
+        .burger-close-line-1,
+        .burger-close-line-2 {
+          transition: all 0.07s ease-in-out;
+        }
+        .burger-close-arrow-blade-1,
+        .burger-close-arrow-blade-2,
+        .burger-close-arrow-dot {
+          opacity: 1;
+        }
+        .burger-close-dot {
+          top: 15px;
+          right: 13px;
+          transition: all 0.035s ease-in-out;
+        }
+        .burger-close-arrow-center {
+          width: 36px;
+          top: 15px;
+          right: -3px;
+          transition-delay: 0.07s;
+        }
+        .burger-close-arrow-blade-1 {
+          width: 22px;
+          top: 9px;
+          right: -7px;
+          transform: rotate(45deg);
+          transition-delay: 0.14s;
+        }
+        .burger-close-arrow-blade-2 {
+          width: 15px;
+          top: 19px;
+          right: -6px;
+          transform: rotate(-45deg);
+          transition-delay: 0.14s;
+        }
+        .burger-close-arrow-dot {
+          top: 28px;
+          right: 8px;
+          transition-delay: 0.2s;
+        }
       }
-
-      .hover-arrow-btn {
-        display: inline-block;
-      }
-    }
-
-    .hover-arrow-btn {
-      display: none;
     }
   }
 }
