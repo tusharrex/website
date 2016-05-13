@@ -149,10 +149,9 @@ members:
     description: Entertainment Associate Executive
     position: Entertainment Associate Executive
     image: kotel
-  -
+join_us:
     name: Want to join us?
     color: damask-red
     position: Apply now!
-    type: join-us-element
     caption_color: damask-red
-    image: placeholder-red
+    image: placeholder-join-us

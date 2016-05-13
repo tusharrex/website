@@ -1,0 +1,14 @@
+video.team-member.media-video(class="color-#{element.color}"
+  preload="none" loop
+  poster=asset_path(:images, "team/#{element.image}.png")
+  data-name=element.name
+  data-position=element.position
+)
+  source(
+    src=asset_path(:images, "team/#{element.image}.mp4")
+    type="video/mp4"
+  )
+  source(
+    src=asset_path(:images, "team/#{element.image}.webm")
+    type="video/webm"
+  )

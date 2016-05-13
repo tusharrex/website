@@ -1,26 +1,9 @@
-figure.team-element class=element.type
-  - if element.image.match(/(placeholder)/)
-    - if element.position.match(/(Apply)/)
-      a.join-us-link(href='/join-our-crew')
-        = partial 'partials/team_join_us', locals: {element: element}
-    - else
-      = partial 'partials/team_join_us', locals: {element: element}
-  - else
-    .video-container
-      video.team-member(class="color-#{element.color}"
-        preload="none" loop
-        poster=asset_path(:images, "team/#{element.image}.png")
-        data-image=element.image
-        data-name=element.name
-        data-position=element.position
-      )
-        source(
-          src=asset_path(:images, "team/#{element.image}.mp4")
-          type="video/mp4"
-        )
-        source(
-          src=asset_path(:images, "team/#{element.image}.webm")
-          type="video/webm"
-        )
+figure.team-element
+  .media-container(
+    class="#{'placeholder' if element.image.match(/(placeholder)/)}"
+  )
+    = partial 'partials/team_image', locals: {element: element}
+    - unless element.image.match(/(placeholder)/)
+      = partial 'partials/team_video', locals: {element: element}
   figcaption.figcaption
     .caption class="color-#{element.caption_color}" = element.name

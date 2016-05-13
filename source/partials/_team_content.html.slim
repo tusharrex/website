@@ -4,5 +4,7 @@
     .m-team.m-grid-collection
       - data.team_members.members.each do |m|
         = partial 'partials/team_element', locals: {element: m}
-      - 10.times do
+      = partial 'partials/team_join_us',
+        locals: {element: data.team_members.join_us}
+      - 3.times do
         .m-grid-item.no-content

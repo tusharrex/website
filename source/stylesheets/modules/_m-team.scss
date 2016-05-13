@@ -53,6 +53,16 @@
   .position {
     font-size: 19px;
   }
+
+  .media-container {
+    .media-video {
+      display: none;
+    }
+  }
+
+  .no-content {
+    width: 40vw;
+  }
 }
 
 @media #{$breakpoint-mobile-landscape} {
@@ -70,6 +80,10 @@
       .caption {
         font-size: 30px;
       }
+    }
+
+    .no-content {
+      width: 44vw;
     }
   }
 }
@@ -99,6 +113,20 @@
         line-height: 35px;
       }
     }
+
+    .media-container:not(.placeholder) {
+      .media-image {
+        display: none;
+      }
+
+      .media-video {
+        display: block;
+      }
+    }
+
+    .no-content {
+      width: 25vw;
+    }
   }
 }
 
@@ -116,6 +144,10 @@
     .description {
       @include font(22px, 30px);
       margin-top: 10px;
+    }
+
+    .no-content {
+      width: 20vw;
     }
   }
 }
@@ -140,6 +172,10 @@
         font-size: 40px;
         line-height: 44px;
       }
+    }
+
+    .no-content {
+      width: 250px;
     }
   }
 }
