@@ -90,6 +90,12 @@ members:
     position: Software Engineer
     image: barteks
   -
+    name: Monika
+    color: valencia-red
+    description: Software Engineer
+    position: Software Engineer
+    image: monika
+  -
     name: Irene
     color: deep-sea-green
     description: Software Engineer
