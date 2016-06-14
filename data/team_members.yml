@@ -72,12 +72,6 @@ members:
     position: Software Engineer
     image: placeholder-yellow
   -
-    name: Basia
-    color: breaker-bay-green
-    description: Software Engineer
-    position: Software Engineer
-    image: basia
-  -
     name: Andrzej
     color: breaker-bay-green
     description: Software Engineer
