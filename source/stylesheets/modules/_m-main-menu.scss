@@ -23,11 +23,11 @@
 
 @include keyframes(mainMenuBounceOut) {
   0% {
-    @include transform(translate3d(-550px, 0, 0));
+    @include transform(translate3d(-600px, 0, 0));
   }
 
   20% {
-    @include transform(translate3d(-600px, 0, 0));
+    @include transform(translate3d(-650px, 0, 0));
     opacity: 1;
   }
 
@@ -105,7 +105,8 @@
 
 @media #{$breakpoint-tablet} {
   .main-menu {
-    width: 600px;
+    padding-right: 50px;
+    width: 650px;
 
     &.bouncedIn {
       @include animation(mainMenuBounceIn .5s both);

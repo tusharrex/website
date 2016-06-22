@@ -4,6 +4,10 @@
   width: 85%;
 }
 
+.m-desktop-close-button {
+  display: none;
+}
+
 .main-menu-list {
   @include justify-content(space-between);
   @include flex-flow(column, nowrap);
@@ -20,6 +24,7 @@
       font-family: $alega-bold;
     }
   }
+
 }
 
 .social-links {
@@ -95,6 +100,14 @@
 @media #{$breakpoint-tablet} {
   .main-menu-list .item .link {
     @include font(60px, 80px);
+  }
+  .no-touchevents {
+    .m-desktop-close-button {
+      display: block;
+    }
+    .m-mobile-close-button {
+      display: none;
+    }
   }
 }
 

@@ -1,7 +1,12 @@
 nav.main-menu
-  .m-close-button.bcg-transparent
-    .arrow-btn
-      = partial 'partials/burger_button_close_elements'
+  .m-desktop-close-button
+    .m-close-button.bcg-transparent
+      .arrow-btn
+        = partial 'partials/burger_button_close_elements'
+  .m-mobile-close-button
+    .m-close-button.bcg-transparent
+      .arrow-btn
+        = partial 'svg/main_menu/menu_mobile_close'
   .main-menu-container
     ul.main-menu-list
       li.item
