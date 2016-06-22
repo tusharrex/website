@@ -1,5 +1,4 @@
 class SitemapBuilder
-
   attr_accessor :page, :sitemap, :xml
 
   def initialize(sitemap, xml)

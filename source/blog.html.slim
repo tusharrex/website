@@ -17,3 +17,7 @@ pageable: true
         = strip_tags article.summary(500)
   - 10.times do
     .m-grid-item.no-content
+
+link(rel='alternate' type="application/atom+xml" title='code quest blog'
+  href="#{root_url}/feed.xml"
+)

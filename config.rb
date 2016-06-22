@@ -14,6 +14,7 @@ activate :directory_indexes
 
 page '/index.html', layout: :landing_page
 page '/404.html', layout: :website
+page '/feed.xml', layout: false
 page '/sitemap.xml', layout: false
 page '/google9e4f1bcdcf77d753.html', layout: false, directory_index: false
 
@@ -28,9 +29,9 @@ with_layout :website do
   page '/team.html'
 end
 
-# Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  activate :pry
 end
 
 set :css_dir, 'stylesheets'
