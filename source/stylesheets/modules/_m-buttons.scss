@@ -15,8 +15,16 @@
     @include btn-click($crail-red);
   }
 
+  &.breaker-bay-green {
+    @include button($breaker-bay-green);
+  }
+
   &.small {
     width: 218px;
+  }
+
+  &.medium {
+    width: 100%;
   }
 }
 

@@ -1,0 +1,110 @@
+.l-elixir
+  .m-header-elements
+    = link_to '/' do
+      .o-shaped-submarine
+        = partial 'svg/logo_mobile'
+    = partial 'partials/main_menu_button'
+  .wrapper
+    .title
+      .color-white.title-white.font-alega-bold We are looking for an
+      h1.job-title.color-maroon-red.font-alega-bold Elixir / Phoenix
+      .color-maroon-red.title-maroon-red.font-alega-bold Programmer
+  img.phoenix src="../svg/elixir/phoenix.svg"
+  .wrapper
+    .main-text
+      h2.subtitle.font-baskerville-bold Dear Rails programmer,
+      p
+        '
+          You've been churning out CRUDs for years now and witnessed a
+          vibrant community grow increasingly silent. How long has it
+          been since you got excited about a new library? How come you
+          can't get excited about Rails 5 when 3 and 4 brought so much
+          joy? You've started looking for alternatives and Phoenix
+          looks really cool but no one would let you use it in production,
+          or?
+      br
+      br
+        '
+          In fact, we would. Come join us here at codequest and build
+          state-of-the-art real-time apps using Phoenix/Elixir, Go,
+          Angular 2, TypeScript, RabbitMQ, Docker, etcd and all these
+          new exciting things you've heard about but never had a chance
+          to actually implement in a real project.
+      br
+      br
+      span.text-bold Looking forward to hearing from you!
+  img.saturn src="../svg/elixir/saturn.svg"
+  .wrapper
+    .job-description
+      h3.job-list-title You
+      ul.job-list
+        li Expert in Ruby and Ruby on Rails
+        li Clean code and best practices focus
+        li Team player
+        li Independent problem-solving skills
+        li Fluent Git knowledge
+        li Agile programming know-how
+        li Knowledge of PostgreSQ and Redis
+        li Automated testing experience
+        li Communicative English
+      h3.job-list-title We
+      ul.job-list
+        li
+          '
+            Attractive salary, tailored to your skills
+            and involvement (8500+ PLN netto)
+        li Private medical care
+        li Sports benefit system
+        li A job agreement per your choice
+        li Flexible hours, with occasional remote work possibility
+        li Interesting projects for international clients
+        li Great and experienced team
+        li Work with latest technologies
+        li Office in Warsaw next to the
+        li Imielin metro station
+  .form-apply
+    .wrapper
+      - action_url = 'https://getsimpleform.com/messages\
+?form_api_token=54d9f634cb4db5851eba00ef4747587c'
+      form#contact-form.m-form.relative(
+        action= action_url
+        method='POST' enctype='multipart/form-data')
+        fieldset.form-fieldset
+          .form-legend.color-white About You
+          .relative
+            label.form-label.color-white Name:
+            input.form-input.bcg-mirage-blue(
+              data-js='name' type='text'
+              name='name' placeholder='Type your name here')
+            .error-msg.hidden Name is invalid.
+          .relative
+            label.form-label.color-white Email address:
+            input.form-input.bcg-mirage-blue(
+              data-js='email' type='text' name='_reply_to'
+              placeholder='We will keep it safe. We promise!')
+              .error-msg.hidden Email is invalid.
+          label.form-label.color-white About you:
+          textarea.form-textarea.bcg-mirage-blue(
+            data-js='description' name='description'
+            placeholder='...')
+          label.from-textarea.color-white Add Your CV
+          .upload-area
+            .btn.breaker-bay-green.medium.mirage-wave.landing-button(
+              data-js='upload-trigger')
+              = button_content('Upload CV')
+            p.upload(data-js='upload-info') You don't load any file
+          input.hidden type= 'file' name= 'cv' data-js='upload'
+        fieldset.form-fieldset.relative
+          .btn.form-button.damask-red.mirage-blue-wave(data-js='submit')
+            = button_content('Send')
+            input.form-input-hidden(type='submit' value= '')
+          input(type='hidden' name='redirect_to'
+                value='http://codequest.com/thank-you')
+          input(type='hidden' name='subject'
+            value='Start project with codequest!')
+          input.hidden type='text' name='gotcha'
+        h3.apply Aplly now!
+        a.apply-link.link-btn.red href="mailto:jobs@codequest.com"
+          | jobs@codequest.com
+  .strap-small
+  .strap

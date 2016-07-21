@@ -1,0 +1,224 @@
+.l-elixir {
+  background: $mirage-blue;
+  background-image: url('../svg/elixir/bcg_elixir.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  color: $white;
+  font-family: $baskerville;
+  font-size: 22px;
+
+  .apply {
+    @include font(50px, 10px);
+    font-family: $alega-bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .apply-link {
+    @include font(34px, 0px);
+    text-transform: lowercase;
+    text-align: center;
+    display: block;
+  }
+
+  .form-apply {
+    background-color: #1e2333;
+    padding-top: 80px;
+  }
+
+  .job-title {
+    @include font(89px, 90px);
+  }
+
+  .job-list-title {
+    @include font(78px, 0px);
+    font-family: $alega-bold;
+  }
+
+  .job-list li {
+    @include font(18px, 26px);
+  }
+
+  .job-description {
+    padding-bottom: 80px;
+  }
+
+  .main-text {
+    line-height: 34px;
+  }
+
+  .phoenix {
+    position: relative;
+    left: -85px;
+    width: 100%;
+    margin-top: 5%;
+    max-height: 400px;
+  }
+
+  .strap-small {
+    height: 30px;
+    background-color: #20253a;
+  }
+
+  .strap {
+    height: 40px;
+    background-color: #24293f;
+  }
+
+  .subtitle {
+    margin-top: 5%;
+    font-size: 30px;
+  }
+
+  .saturn {
+    height: 100px;
+  }
+
+  .title-white {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .title-maroon-red {
+    @include font(34px, 9px);
+    float: right;
+  }
+
+  .text-bold {
+    font-family: $baskerville-bold;
+  }
+
+  .title {
+    width: 283px;
+    margin: 0 auto;
+  }
+
+  .upload-area {
+    vertical-align: middle; 
+    background-color: #181b28;
+    padding: 7px;
+    margin: 15px 0px 15px 0px;
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  .upload {
+    margin: auto;
+    margin: 10px 10px;
+    color: $santas-gray;
+    width: 250px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .l-elixir {
+    background-image: url('../svg/elixir/bcg_elixir_tablet.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .apply {
+      margin-top: 130px;
+    }
+
+    .job-description {
+      margin: 0 auto;
+      max-width: 805px;
+    }
+
+    .job-title {
+      @include font(96px, 130px);
+      text-align: right;
+    }
+
+    .job-list-title {
+      line-height: 0px;
+    }
+
+    .main-text {
+      margin: 0 auto;
+      max-width: 805px;
+    }
+
+    .phoenix {
+      height: 500px;
+    }
+
+    .saturn {
+      height: 300px;
+    }
+
+    .title {
+      width: 655px;
+      margin-top: 35px;
+    }
+
+    .title-white {
+      font-size: 40px;
+    }
+    .upload-area {
+      display: flex;
+      height: 78px;
+    }
+
+    .upload {
+      margin: auto;
+      margin-left: 15px;
+      width: 380px;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .l-elixir {
+    background-image: url('../svg/elixir/bcg_elixir_web.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .job-title {
+      @include font(153px, 170px);
+      text-align: right;
+    }
+
+    .job-description {
+      margin-top: 20%;
+    }
+    
+    .job-list li {
+      @include font(22px, 30px);
+    }
+
+    .saturn {
+      display: none;
+    }
+
+    .title {
+      width: 958px;
+      margin-top: 35px;
+    }
+    
+    .upload {
+      margin: auto;
+      margin-left: 15px;
+      width: 465px;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    .upload-area {
+      display: flex;
+      height: 78px;
+    }
+  }
+}

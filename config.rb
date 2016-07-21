@@ -27,6 +27,7 @@ with_layout :website do
   page '/start-your-project.html'
   page '/ventures.html'
   page '/team.html'
+  page '/join-our-crew/elixir.html'
 end
 
 configure :development do

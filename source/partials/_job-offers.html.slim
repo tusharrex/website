@@ -3,32 +3,40 @@
 
     = partial 'partials/job-offer', locals: \
       {title: 'Ruby on Rails Developer',
+      only_email: true,
       requirements_tags: 'ruby rails rspec',
       bcg_class: 'bcg-maroon-red',
       requirements_class: 'damask-red',
       btn_class: 'crail-red-wave',
-      temporary_styles: 'temporary-styles'}
+      temporary_styles: 'temporary-styles',
+      job_position_link: 'mailto:jobs@codequest.com?subject='}
 
     = partial 'partials/job-offer', locals: \
       {title: 'Frontend Developer',
+      only_email: true,
       requirements_tags: 'html5 css3 coffeescript sass',
       bcg_class: 'bcg-deep-sea-green',
       requirements_class: 'breaker-bay-green',
       btn_class: 'viridian-green-wave',
-      temporary_styles: 'temporary-styles'}
+      temporary_styles: 'temporary-styles',
+      job_position_link: 'mailto:jobs@codequest.com?subject='}
 
     = partial 'partials/job-offer', locals: \
       {title: 'iOS Developer',
+      only_email: true,
       requirements_tags: 'swift tdd',
       bcg_class: 'bcg-indian-yellow-2',
       requirements_class: 'damask-red',
       btn_class: 'diserria-yellow-wave',
-      temporary_styles: 'temporary-styles'}
+      temporary_styles: 'temporary-styles',
+      job_position_link: 'mailto:jobs@codequest.com?subject='}
 
     = partial 'partials/job-offer', locals: \
-      {title: 'Go Developer',
-      requirements_tags: 'go go go',
+      {title: 'Elixir/Phoenix&nbsp;Developer'.html_safe,
+      only_email: false,
+      requirements_tags: 'elixir phoenix',
       bcg_class: 'bcg-breaker-bay-green',
       requirements_class: 'deep-sea-green',
       btn_class: 'viridian-green-wave',
-      temporary_styles: 'temporary-styles'}
+      temporary_styles: 'temporary-styles',
+      job_position_link: 'join-our-crew/elixir'}

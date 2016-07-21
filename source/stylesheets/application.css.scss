@@ -11,10 +11,12 @@
 @import 'base/wrapper';
 @import 'base/backgrounds';
 @import 'base/font_colors';
+@import 'base/font_family';
 
 @import 'layouts/l-landing-page';
 @import 'layouts/l-work-page';
 @import 'layouts/l-not-found-page';
+@import 'layouts/l-landing-elixir';
 
 @import 'modules/m-burger-button';
 @import 'modules/m-header-elements';

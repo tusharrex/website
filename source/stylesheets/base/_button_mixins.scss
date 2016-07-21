@@ -41,6 +41,7 @@
 //&.mirage-wave
 //&.mojo-red-wave
 //&.viridian-green-wave
+//&.mirage-blue-wave
 
 $wave-colors: (
   crail-red: $crail-red,
@@ -49,6 +50,7 @@ $wave-colors: (
   mirage: $mirage,
   mojo-red: $mojo-red,
   viridian-green: $viridian-green,
+  mirage-blue: $mirage-blue,
 );
 
 @mixin btn-wave {

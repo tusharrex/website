@@ -1,7 +1,7 @@
 .m-grid-element.m-job-offer-element class=bcg_class class=temporary_styles
   .container
     a.send-mail-link(
-      href="mailto:jobs@codequest.com?subject=#{URI.escape(title)}")
+      href="#{job_position_link}#{URI.escape(title) if only_email}")
       .table
         .row.job-position class=bcg_class
           h4.job-title = title
