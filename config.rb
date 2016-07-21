@@ -28,6 +28,7 @@ with_layout :website do
   page '/ventures.html'
   page '/team.html'
   page '/join-our-crew/elixir.html'
+  page '/join-our-crew/tutor.html'
 end
 
 configure :development do
