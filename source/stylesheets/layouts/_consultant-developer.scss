@@ -1,0 +1,48 @@
+.consulatant-page {
+  font-size: 16px;
+  line-height: 20px;
+
+  .admission {
+    @include font(18px, 22px);
+    text-align: center;
+  }
+
+  .clause {
+    @include font(18px, 24px);
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .date {
+    margin-top: 15px;
+    margin-left: 42px;
+  }
+
+  .description {
+    margin-top: 15px;
+    margin-left: 42px;
+  }
+
+  .job-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .task {
+    font-size: 16px;
+  }
+
+  .title-list {
+    margin-top: 15px;
+  }
+
+  .wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

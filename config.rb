@@ -29,6 +29,7 @@ with_layout :website do
   page '/team.html'
   page '/join-our-crew/elixir.html'
   page '/join-our-crew/tutor.html'
+  page '/join-our-crew/consultant-developer.html'
 end
 
 configure :development do
