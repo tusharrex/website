@@ -49,7 +49,7 @@
     line-height: 34px;
   }
 
-  .phoenix {
+  .phoenix svg {
     position: relative;
     left: -85px;
     width: 100%;
@@ -72,8 +72,9 @@
     font-size: 30px;
   }
 
-  .saturn {
+  .saturn svg {
     height: 100px;
+    width: 79px;
   }
 
   .title-white {
@@ -145,12 +146,13 @@
       max-width: 805px;
     }
 
-    .phoenix {
+    .phoenix svg {
       height: 500px;
     }
 
-    .saturn {
+    .saturn svg {
       height: 300px;
+      width: 236px;
     }
 
     .title {
@@ -197,7 +199,7 @@
       @include font(22px, 30px);
     }
 
-    .saturn {
+    .saturn svg {
       display: none;
     }
 
