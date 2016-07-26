@@ -1,3 +1,14 @@
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
 .m-contact-offices {
   margin-top: 50px;
   padding: 0;
@@ -127,6 +138,98 @@
     .office-name {
       font-size: 26px;
     }
+  }
+
+  //*************** Animal & mermaid ****************
+
+  .st-bialystok-5,
+  .st-warsaw-2,
+  .st-warsaw-3,
+  .st-warsaw-4 {
+    @include stroke-dasharray-dashoffset(1000, 1000);
+    animation: dash 1s linear 3s forwards;
+  }
+
+  .st-bialystok-5-fill,
+  .st-warsaw-2-fill,
+  .st-warsaw-3-fill,
+  .st-warsaw-4-fill,
+  .st-warsaw-dot {
+    animation: opacity .1s linear 3.5s forwards;
+    opacity: 0;
+  }
+
+  .st-bialystok-4,
+  .st-bialystok-6 {
+    @include stroke-dasharray-dashoffset(1000, 1000);
+    animation: dash 3s linear 3.8s forwards;
+  }
+
+  .st-warsaw-5,
+  .st-warsaw-6 {
+    @include stroke-dasharray-dashoffset(1000, 1000);
+    animation: dash .5s linear 3.8s forwards;
+  }
+
+  .st-bialystok-4-fill,
+  .st-warsaw-5-fill,
+  .st-warsaw-6-fill {
+    animation: opacity .1s linear 3.9s forwards;
+    opacity: 0;
+  }
+
+  //*************** trees ****************
+
+  .st-bialystok-2,
+  .st-bialystok-3 {
+    @include stroke-dasharray-dashoffset(1000, 1000);
+    animation: dash 1.5s linear 2.2s forwards;
+  }
+
+  .st-bialystok-2-fill,
+  .st-bialystok-3-fill {
+    animation: opacity .1s linear 2.7s forwards;
+    opacity: 0;
+  }
+
+  .st-bialystok-1 {
+    @include stroke-dasharray-dashoffset(1000, 1000);
+    animation: dash 1s linear 2.9s forwards;
+  }
+
+  //*************** Circle ****************
+
+  .st-bialystok-0,
+  .st-warsaw-0 {
+    @include stroke-dasharray-dashoffset(1000, 1000);
+    animation: dash 1s linear 1s forwards;
+  }
+
+  .st-warsaw-1 {
+    @include stroke-dasharray-dashoffset(1000, 1000);
+    animation: dash 1s linear forwards;
+  }
+
+  //*************** Wawes ****************
+
+  .st-warsaw-11 {
+    animation-delay: 2s;
+  }
+
+  .st-warsaw-12 {
+    animation-delay: 2.1s;
+  }
+
+  .st-warsaw-13 {
+    animation-delay: 2.2s;
+  }
+
+  .st-warsaw-14 {
+    animation-delay: 2.3s;
+  }
+
+  .st-warsaw-15 {
+    animation-delay: 2.4s;
   }
 }
 

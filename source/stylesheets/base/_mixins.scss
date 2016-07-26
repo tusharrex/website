@@ -224,3 +224,8 @@ $company-logos:
   border: $border;
   outline: $outline;
 }
+
+@mixin stroke-dasharray-dashoffset($dasharray, $dashoffset) {
+  stroke-dasharray: $dasharray;
+  stroke-dashoffset: $dashoffset;
+}
