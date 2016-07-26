@@ -47,7 +47,12 @@ h1 {
     position: absolute;
     width: 47%;
   }
-  .landing-button{
+
+  .landing-button {
+    display: none;
+  }
+
+  .button-wrapper {
     display: none;
   }
 }

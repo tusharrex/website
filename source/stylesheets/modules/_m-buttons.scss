@@ -19,6 +19,10 @@
     @include button($breaker-bay-green);
   }
 
+  &.indian-yellow {
+    @include button($indian-yellow);
+  }
+
   &.small {
     width: 218px;
   }
@@ -27,19 +31,11 @@
     width: 100%;
   }
 }
+.btn {
 
-// Styles here apply to non-touchscreen devices only.
-.no-touchevents {
-
-  .btn {
-
-    @include btn-wave;
+  @include btn-wave;
 
     @media #{$breakpoint-tablet} {
-
-      &.indian-yellow {
-        @include button($indian-yellow);
-      }
 
       &.breaker-bay-green {
         @include button($breaker-bay-green);
@@ -47,7 +43,6 @@
 
       @include btn-wave;
     }
-  }
 }
 
 .link-btn {
