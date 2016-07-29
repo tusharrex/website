@@ -1,11 +1,15 @@
 .m-job-offers {
   &.m-grid-collection {
-    margin: 54px 0 0;
+    margin: 36px 0 40px 0;
     max-width: 1248px;
   }
 
   .m-grid-element {
     height: 90vw;
+  }
+
+  .subtitle {
+    font-size: 20px;
   }
 }
 
@@ -21,7 +25,7 @@
   .m-job-offers {
     &.m-grid-collection {
       justify-content: space-between;
-      margin-top: 80px;
+      margin: 40px 0 40px 0;
     }
 
     .m-grid-element {
