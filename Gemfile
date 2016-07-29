@@ -11,8 +11,8 @@ gem 'middleman-imageoptim'
 gem 'middleman-autoprefixer'
 
 group :development do
-  gem 'codeguard'
   gem 'rspec'
   gem 'capybara'
   gem 'middleman-pry'
+  gem 'scss_lint', require: false
 end
