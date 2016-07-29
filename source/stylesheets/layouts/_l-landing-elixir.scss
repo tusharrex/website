@@ -23,6 +23,19 @@
     display: block;
   }
 
+  .arrow {
+    height: 110px;
+    width: 100%;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .arrow-down {
+    height: 60px;
+    padding-bottom: 15px;
+  }
+
   .form-apply {
     background-color: #1e2333;
     padding-top: 80px;
@@ -100,7 +113,7 @@
     vertical-align: middle; 
     background-color: #181b28;
     padding: 7px;
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px 40px 0px;
     border-radius: 15px;
     width: 100%;
   }

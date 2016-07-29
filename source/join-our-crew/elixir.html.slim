@@ -11,6 +11,9 @@
       .color-maroon-red.title-maroon-red.font-alega-bold Programmer
   .phoenix
     = partial 'svg/elixir/phoenix.svg'
+  .arrow data-js='scroll-down-arrow'
+    .arrow-down
+      = partial 'svg/elixir/arrow.svg'
   .wrapper
     .main-text
       h2.subtitle.font-baskerville-bold Dear Rails programmer,
@@ -40,30 +43,31 @@
     .job-description
       h3.job-list-title You
       ul.job-list
-        li Expert in Ruby and Ruby on Rails
-        li Clean code and best practices focus
+        li Expert in at least one web development framework
+        li Focused on clean code and best practices
         li Team player
-        li Independent problem-solving skills
-        li Fluent Git knowledge
-        li Agile programming know-how
-        li Knowledge of PostgreSQL and Redis
-        li Automated testing experience
-        li Communicative English
+        li Independent problem solver
+        li Fluent in Git
+        li Familiar with Agile methodology
+        li Experienced with PostgreSQL and Redis
+        li
+          '
+            Feel comfortable with Continuous Integration
+            and Continuous Deployment
       h3.job-list-title We
       ul.job-list
         li
           '
-            Attractive salary, tailored to your skills
-            and involvement (8500+ PLN net)
-        li Private medical care
-        li Sports benefit system
-        li A job agreement per your choice
-        li Flexible hours, with occasional remote work possibility
+            Attractive salary, tailored to your skills and
+            involvement (8000+ PLN net)
+        li Private medical insurance
+        li Sports benefits system
+        li Employment form of your choice
+        li Flexible hours, with occasional possibility of remote work
         li Interesting projects for international clients
-        li Great and experienced team
-        li Work with latest technologies
-        li Office in Warsaw next to the
-        li Imielin metro station
+        li Experienced, diverse team
+        li Thoroughly modern stack, with room for experimentation
+        li Office in Warsaw next to the Imielin metro station
   .form-apply
     .wrapper
       - action_url = 'https://getsimpleform.com/messages\
@@ -88,7 +92,8 @@
           label.form-label.color-white About you:
           textarea.form-textarea.bcg-mirage-blue(
             data-js='description' name='description'
-            placeholder='...')
+            placeholder='Share with us a story of your life or\
+link to your GitHub profile...')
           label.from-textarea.color-white Add Your CV
           .upload-area
             .btn.breaker-bay-green.medium.mirage-wave.landing-button(
