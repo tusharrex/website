@@ -4,7 +4,8 @@ pageable: true
 = partial 'partials/website_header', locals: {title: data.blog.title}
 = partial 'partials/header_subtitle', locals: \
   {subtitle: data.blog.subtitle}
-.m-grid-collection
+.m-grid-collection#posts
+  .page(data-page-no= page_number)
   - page_articles.each do |article|
     a.m-grid-item(href= article.url class= article.metadata[:page]['color'])
       .date
@@ -17,7 +18,8 @@ pageable: true
         = strip_tags article.summary(500)
   - 10.times do
     .m-grid-item.no-content
-
+#total_pages.hidden
+  = num_pages
 link(rel='alternate' type="application/atom+xml" title='code quest blog'
   href="#{root_url}/feed.xml"
 )

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title Blog
+
+    meta name="description" content=description_helper
+    meta content=('text/html; charset=UTF-8') http-equiv="Content-Type"
+    meta name="viewport" content="initial-scale=1.0, user-scalable=no,\
+      maximum-scale=1, width=device-width, minimal-ui"
+
+    = favicon_tag 'common/favicon.ico'
+
+    = stylesheet_link_tag 'normalize', 'application'
+    / It is only to recognize touch events:
+    = javascript_include_tag 'lib/modernizr-custom'
+    = javascript_include_tag 'application'
+    - if prev_page
+      link(href= prev_page.url rel= 'prev')
+    - if next_page
+      link(href= next_page.url rel= 'next')
+
+  body.website-page class=page_classes
+    = yield
+    = partial 'partials/footer'

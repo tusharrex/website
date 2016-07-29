@@ -17,9 +17,10 @@ page '/404.html', layout: :website
 page '/feed.xml', layout: false
 page '/sitemap.xml', layout: false
 page '/google9e4f1bcdcf77d753.html', layout: false, directory_index: false
+page '/blog_posts.html'
+proxy 'blog_posts/page/1.html', '/blog_posts.html'
 
 with_layout :website do
-  page '/blog.html'
   page '/contact.html'
   page '/join-our-crew.html'
   page '/thank-you.html'
@@ -30,6 +31,10 @@ with_layout :website do
   page '/join-our-crew/elixir.html'
   page '/join-our-crew/tutor.html'
   page '/join-our-crew/consultant-developer.html'
+end
+
+with_layout :posts do
+  page '/blog.html'
 end
 
 configure :development do
