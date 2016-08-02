@@ -1,0 +1,14 @@
+.m-open-source.m-content-padding
+  .wrapper
+    .m-paragraph.margin-medium = data.open_source.description
+    .m-open-source
+    .open-source-highlighted-wrapper
+      - data.open_source_highlighted.projects.each do |m|
+          = partial 'partials/open-source-highlighted', locals: {element: m}
+    .open-source-normal-wrapper
+      - data.open_source_normal.projects.each do |m|
+          = partial 'partials/open-source-normal', locals: {element: m}
+    .open-source-button-wrapper
+      a.btn.damask-red.mercury-gray-wave.initial.open-source-button(
+        href= 'https://github.com/codequest-eu')
+        = button_content('See more on Github', 'svg/main_menu/github_icon')

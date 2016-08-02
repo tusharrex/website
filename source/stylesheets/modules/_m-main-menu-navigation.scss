@@ -20,7 +20,7 @@
     }
 
     .link {
-      @include font(46px, 56px);
+      @include font(40px, 45px);
       font-family: $alega-bold;
     }
   }
@@ -38,7 +38,7 @@
     margin-left: 50px;
 
     svg {
-      fill: $white;
+      color: $white;
     }
   }
 
@@ -49,13 +49,13 @@
 
     &:hover {
       svg {
-        fill: $breaker-bay-green;
+        color: $breaker-bay-green;
       }
     }
 
     &:active {
       svg {
-        fill: $deep-sea-green;
+        color: $deep-sea-green;
       }
     }
   }
@@ -67,13 +67,13 @@
 
     &:hover {
       svg {
-        fill: $indian-yellow;
+        color: $indian-yellow;
       }
     }
 
     &:active {
       svg {
-        fill: $damask-red;
+        color: $damask-red;
       }
     }
   }
@@ -85,13 +85,13 @@
 
     &:hover {
       svg {
-        fill: $aquamarine-blue;
+        color: $aquamarine-blue;
       }
     }
 
     &:active {
       svg {
-        fill: $fountain-blue;
+        color: $fountain-blue;
       }
     }
   }

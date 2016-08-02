@@ -3,30 +3,9 @@ footer.m-footer
     nav.nav.element
       .header Menu
       ul.menu
-        li.menu-item
-          a(href='/work') Client Work
-          .arrow
-            = partial 'svg/main_menu/main_menu_arrow'
-        li.menu-item
-          a(href='/ventures') Ventures
-          .arrow
-            = partial 'svg/main_menu/main_menu_arrow'
-        li.menu-item
-          a(href='/team') Our Crew
-          .arrow
-            = partial 'svg/main_menu/main_menu_arrow'
-        li.menu-item
-          a(href='/join-our-crew') Join Us
-          .arrow
-            = partial 'svg/main_menu/main_menu_arrow'
-        li.menu-item
-          a(href='/blog') Blog
-          .arrow
-            = partial 'svg/main_menu/main_menu_arrow'
-        li.menu-item
-          a(href='/contact') Contact
-          .arrow
-            = partial 'svg/main_menu/main_menu_arrow'
+        - data.footer_menu.objects.each do |m|
+            = partial 'partials/footer_menu', locals: {element: m}
+      / / = partial 'partials/footer_menu.html.slim'
 
     aside.element.get-in-touch
       h1.header Get in touch

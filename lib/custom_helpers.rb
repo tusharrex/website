@@ -18,10 +18,17 @@ module CustomHelpers
     current_page.path == 'blog.html'
   end
 
-  def button_content(text)
+  def button_content(text, icon = nil)
     content_tag(:div, text, class: 'text') +
       content_tag(:div, class: 'wave') do
         partial 'svg/button_wave'
-      end
+      end +
+      icon_content(icon)
+  end
+
+  def icon_content(icon)
+    content_tag(:div, class: 'button-icon') do
+      partial icon
+    end if icon
   end
 end

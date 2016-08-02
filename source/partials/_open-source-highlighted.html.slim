@@ -1,0 +1,14 @@
+.open-source-highlighted-container
+  a.irregular-btn.open-source-highlighted-logo href= element.link
+    .wave
+      = partial 'svg/button_wave_big.html'
+    .logo-wrapper (class= element.logo_small_class)
+      = partial element.logo_small
+  	.logo-wrapper (class= element.logo_big_class)
+      = partial element.logo_big
+  .open-source-highlighted-desc
+    .open-source-highlighted-text
+      = element.desc
+    .open-source-highlighted-badge
+      a href= element.badge
+        img alt= (element.badge_img_alt) src= element.badge_src

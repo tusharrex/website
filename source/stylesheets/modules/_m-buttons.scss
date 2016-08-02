@@ -30,6 +30,10 @@
   &.medium {
     width: 100%;
   }
+
+  &.initial {
+    width: initial;
+  }
 }
 .btn {
 
@@ -52,4 +56,8 @@
     @include link-states($brick-red, $crown-of-thorns, $brick-red);
     color: $valencia;
   }
+}
+
+.irregular-btn {
+  @include button-wave-hover;
 }

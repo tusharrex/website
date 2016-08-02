@@ -1,0 +1,62 @@
+projects:
+  -
+    link: https://github.com/codequest-eu/SublimeLinter-contrib-reek
+    title: SublimeLinter-contrib-reek
+    desc: SublimeLinter 3 plugins for Ruby using reek
+  -
+    link: https://github.com/codequest-eu/range_squasher
+    title: Range_squahser
+    desc: Ruby utility for squashing Ranges
+  -
+    link: https://github.com/codequest-eu/octopussy
+    title: Octopussy
+    desc: RMQP to websockets bridge in Go
+  -
+    link: https://github.com/codequest-eu/CQGoogleDirections
+    title: CQGoogleDirections
+    desc: Google Direction API helper for iOS
+  -
+    link: https://github.com/codequest-eu/gitssh
+    title: Gitssh
+    desc: Git SSH wrapper for Go
+  -
+    link: https://github.com/codequest-eu/busy_bunny
+    title: Busy_bunny
+    desc: Useful abstractions for RMQP workflows in Ruby
+  -
+    link: https://github.com/codequest-eu/directoryservice
+    title: Directoryservice
+    desc: Useful Go abstractions for managing directories
+  -
+    link: https://github.com/codequest-eu/phoenix-alpine
+    title: Phoenix-alipe
+    desc: Phoenix on Docker, oh my
+  -
+    link: https://github.com/codequest-eu/ruby-golang-java
+    title: Ruby-golang-java
+    desc: Docker image with newest Ruby, Go and OpenJDK8
+  -
+    link: https://github.com/codequest-eu/gi
+    title: Gi
+    desc: .gitignore template
+  -
+    link: https://github.com/codequest-eu/burnafterreading
+    title: Burnafterreading
+    desc: Microframework for one-off HTTP message passing in Go
+  -
+    link: https://github.com/codequest-eu/immutablestack
+    title: Immutablestack
+    desc: Immutable stack implementation in Go
+  -
+    link: https://github.com/codequest-eu/ruby-golang-java-nodejs
+    title: Ruby-golang-java-nodejs
+    desc: Docker base image with newest Ruby, Go, OpenJDK8 and Node.js
+  -
+    link: https://github.com/codequest-eu/ctxcmd
+    title: ctcxmd
+    desc: os/exec wrapper with contexts
+  -
+    link: https://github.com/codequest-eu/teleport
+    title: Teleport
+    desc: Like ngrok but reverse
+

@@ -1,0 +1,32 @@
+projects:
+  -
+    logo_small: svg/open_source/pipes_logo
+    logo_small_class: pipes
+    logo_big: svg/open_source/pipes_logo
+    logo_big_class: pipes-big
+    link: https://github.com/codequest-eu/codequest_pipes
+    desc: Unix-like way to chain business objects (interactors)    
+    badge: https://codebeat.co/projects/codequest_pipes-master-ab1a7c5f-ad5f-425a-a0f0-e56e13a04876
+    badge_img_alt: codebeat badge
+    badge_src: https://codebeat.co/badges/73f1bb7f-516f-4fc5-b241-daea42c7badd
+  -
+    logo_small: svg/open_source/squashme_logo_small.html
+    logo_small_class: squashme-small
+    logo_big: svg/open_source/squashme_logo_big.html
+    logo_big_class: squashme-big
+    link: https://github.com/codequest-eu/pleasesquash.me
+    desc: Server to subcribe to GitHub pull requests to make sure commits are squashed
+    badge: https://codebeat.co/projects/github-com-codequest-eu-pleasesquash-me
+    badge_img_alt: codebeat badge
+    badge_src: https://codebeat.co/badges/8bad5d2c-9664-46f7-8499-fb745005bb70
+  -
+    logo_small: svg/open_source/octopussy_logo.html
+    logo_small_class: octopussy
+    logo_big: svg/open_source/octopussy_logo.html
+    logo_big_class: octopussy-big
+    link: https://github.com/codequest-eu/octopussy
+    desc: RMQP to websockets bridge in Go
+    badge: https://codebeat.co/projects/octopussy-master-f729f8ce-16bb-42a6-b6b1-73af52ec1db4
+    badge_img_alt: codebeat badge
+    badge_src: https://codebeat.co/badges/7bb1aa12-a68b-4ac5-adcc-86e0bb30ef8e
+    

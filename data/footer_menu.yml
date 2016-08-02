@@ -1,0 +1,22 @@
+objects:
+  -
+    text: Client Work
+    link: /work
+  -
+    text: Ventures
+    link: /ventures
+  -
+    text: Open-source
+    link: /open-source
+  -
+    text: Our Crew
+    link: /team
+  -
+    text: Join Us
+    link: /join-our-crew
+  -
+    text: Blog
+    link: /blog
+  -
+    text: Contact
+    link: /contact

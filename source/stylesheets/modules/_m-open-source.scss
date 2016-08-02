@@ -1,0 +1,305 @@
+.open-source-highlighted-container {
+  border: solid 4px;
+  border-color: $light-gray-2;
+  border-radius: 2%;
+  height: 270px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.open-source-highlighted-logo {
+  display: block;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+
+  .wave {
+    display: none;
+  }
+} 
+
+.logo-wrapper {
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+
+  &.octopussy {
+    @include size( 146px, 243px);
+    color: $martinique-dark;
+  }
+
+  &.octopussy-big {
+    display: none;
+  }
+
+  &.pipes {
+    @include size( 138px, 171px);
+  }
+  
+  &.pipes-big {
+    display: none;
+  }
+
+  &.squashme-small {
+    @include size( 138px, 205px);
+  }
+
+  &.squashme-big {
+    display: none;
+  }
+}
+
+.open-source-highlighted-desc {
+  background-color: $white;
+  border-radius: 0%;
+  display: block;
+  height: 50%;
+  text-align: center;
+}
+
+.open-source-highlighted-text {
+  @include font(18px, 21px);
+  color: $martinique-dark;
+  font-family: $alega-bold;
+  min-height: 100px;
+  padding: 15px 22px 0;
+  letter-spacing: 1px;
+}
+
+.open-source-highlighted-badge {
+  display: block;
+} 
+
+.open-source-normal-container {
+  display: none;
+}
+
+.open-source-button-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.open-source-button {
+  margin-bottom: 15px;
+
+  .text{
+    display: inline-block;
+  }
+}
+
+.button-icon {
+  display: none;
+}
+
+.open-source-normal-container {
+  .wave {
+    display: none;
+  }
+}
+
+.no-touchevents {
+  .open-source-highlighted-logo.irregular-btn {
+    .wave {
+      @include size( 300px, 1200px);
+      color: $mercury-gray;
+      display: initial;
+      top: 155px;
+      transition: top 1.6s, left 1.6s;
+    }
+    
+    &:hover {
+      .wave {
+        left: -300px;
+        top: -149px;
+      }
+    }
+
+    &:active {
+      .wave {
+          color: $darker-gray;
+        }
+    }
+      
+  }
+
+  .open-source-normal-container.irregular-btn {
+    .wave {
+      @include size( 300px, 1200px);
+      color: $mercury-gray;
+      display: initial;
+      top: 155px;
+      transition: top 1.6s, left 1.6s;
+    }
+    
+    &:hover {
+      .wave {
+        left: -300px;
+        top: -135px;
+      }
+    }
+
+    &:active {
+      .wave {
+          color: $darker-gray;
+        }
+    }  
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .open-source-normal-wrapper {
+    @include flex-flow(row, wrap);
+    @include flex-justify-content (space-between);
+  }
+  
+  .open-source-highlighted-container {
+    height: 260px;
+  }
+
+  .open-source-highlighted-logo {
+    height: 60%;
+  }
+
+    .logo-wrapper {
+  
+      &.octopussy {
+        @include size( 150px, 316px);
+      }
+  
+      &.pipes {
+        @include size( 142px, 248px);
+      }
+  
+      &.squashme-small {
+        display: none;
+      }
+
+      &.squashme-big {
+        @include size( 158px, 416px);
+        display: block;
+      }
+    }
+
+  .open-source-highlighted-desc {
+    height: 40%;
+  }
+
+  .open-source-highlighted-text {
+    font-size: 25px;
+    min-height: 74px;
+    padding-top: 10px;
+  }
+
+  .open-source-normal-container {
+    border: solid 4px;
+    border-color: $light-gray-2;
+    border-radius: 2%;
+    display: block;
+    height: 160px;
+    margin-bottom: 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;width: 49%;
+  }
+
+  .open-source-normal-title {
+    @include font(29px, 1.1);
+    color: $martinique-dark;
+    font-family: $alega-bold;
+    font-size: 29px;
+    height: 60%;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .open-source-normal-desc {
+    @include font(21px, 26px);
+    color: $santas-gray;
+    font-family: $alega;
+    height: 40%;
+    margin: 0 35px;
+    padding-top: 4px;
+    position: relative;
+  }
+
+  .btn {
+  
+    &.open-source-button {
+      margin-top: 20px;
+      padding: 15px 15px;
+    }
+  }
+
+  .button-icon {
+    @include size( 35px, 35px);
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    vertical-align: bottom;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+
+  .open-source-highlighted-wrapper {
+    @include flex-flow(row, wrap);
+    @include flex-justify-content (space-between);
+  }
+
+  .open-source-highlighted-container {
+    @include size( 290px, 32%);
+  }
+
+  .open-source-highlighted-logo {
+    height: 50%;
+  }
+  
+  .logo-wrapper {
+    margin: 0 auto;
+  
+    &.octopussy {
+      width: 245px;
+    }
+  
+    &.pipes {
+      @include size( 158px, 172px);
+    }
+  
+    &.squashme-small {
+      @include size( 142px, 206px);
+      display: block;
+    }
+  
+    &.squashme-big {
+      display: none;
+    }
+  }
+
+  .open-source-highlighted-desc {
+    border-radius: 0%;
+    height: 50%;
+  }   
+
+  .open-source-highlighted-text {
+    @include font(20px, 24px);
+    letter-spacing: 0px;
+    min-height: 100px;
+    padding-top: 20px;
+  }
+
+  .open-source-normal-container {
+    width: 32%;
+  }
+
+  .open-source-normal-title {
+    height: 50%;
+    padding-top: 28px;
+  }
+
+  .open-source-normal-desc {
+    height: 50%;
+    line-height: 22px;
+    padding-top: 13px;
+  }
+} 

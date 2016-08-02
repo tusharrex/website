@@ -28,6 +28,7 @@ with_layout :website do
   page '/start-your-project.html'
   page '/ventures.html'
   page '/team.html'
+  page '/open-source.html'
   page '/join-our-crew/elixir.html'
   page '/join-our-crew/tutor.html'
   page '/join-our-crew/consultant-developer.html'
