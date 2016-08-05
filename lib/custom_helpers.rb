@@ -18,6 +18,10 @@ module CustomHelpers
     current_page.path == 'blog.html'
   end
 
+  def elixir?
+    current_page.path == 'join-our-crew/elixir.html'
+  end
+
   def button_content(text, icon = nil)
     content_tag(:div, text, class: 'text') +
       content_tag(:div, class: 'wave') do
