@@ -1,73 +1,76 @@
 .l-elixir
-  .m-header-elements
-    = link_to '/' do
-      .o-shaped-submarine
-        = partial 'svg/logo_mobile'
-    = partial 'partials/main_menu_button'
-  .wrapper
-    .title
-      .color-white.title-white.font-alega-bold We are looking for an
-      h1.job-title.color-maroon-red.font-alega-bold Elixir / Phoenix
-      .color-maroon-red.title-maroon-red.font-alega-bold Programmer
-  .phoenix
-    = partial 'svg/elixir/phoenix.svg'
-  .arrow data-js='scroll-down-arrow'
-    .arrow-down
-      = partial 'svg/elixir/arrow.svg'
-  .wrapper
-    .main-text
-      h2.subtitle.font-baskerville-bold Dear Rails programmer,
-      p
-        '
-          You've been churning out CRUDs for years now and witnessed a
-          vibrant community grow increasingly silent. How long has it
-          been since you got excited about a new library? How come you
-          can't get excited about Rails 5 when 3 and 4 brought so much
-          joy? You've started looking for alternatives and Phoenix
-          looks really cool but no one would let you use it in production,
-          or?
-      br
-      br
-        '
-          In fact, we would. Come join us here at codequest and build
-          state-of-the-art real-time apps using Phoenix/Elixir, Go,
-          Angular 2, TypeScript, RabbitMQ, Docker, etcd and all these
-          new exciting things you've heard about but never had a chance
-          to actually implement in a real project.
-      br
-      br
-      span.text-bold Looking forward to hearing from you!
-  .saturn
-    = partial 'svg/elixir/saturn.svg'
-  .wrapper
-    .job-description
-      h3.job-list-title You
-      ul.job-list
-        li Expert in at least one web development framework
-        li Focused on clean code and best practices
-        li Team player
-        li Independent problem solver
-        li Fluent in Git
-        li Familiar with Agile methodology
-        li Experienced with PostgreSQL and Redis
-        li
-          '
-            Feel comfortable with Continuous Integration
-            and Continuous Deployment
-      h3.job-list-title We
-      ul.job-list
-        li
-          '
-            Attractive salary, tailored to your skills and
-            involvement (8000+ PLN net)
-        li Private medical insurance
-        li Sports benefits system
-        li Employment form of your choice
-        li Flexible hours, with occasional possibility of remote work
-        li Interesting projects for international clients
-        li Experienced, diverse team
-        li Thoroughly modern stack, with room for experimentation
-        li Office in Warsaw next to the Imielin metro station
+  .job-wrapper
+    .job-bcg(data-ibg-bg='/svg/elixir/bcg_elixir_web.svg')
+      .job-offer
+        .m-header-elements
+          = link_to '/' do
+            .o-shaped-submarine
+              = partial 'svg/logo_mobile'
+          = partial 'partials/main_menu_button'
+        .wrapper
+          .title
+            .color-white.title-white.font-alega-bold We are looking for an
+            h1.job-title.color-maroon-red.font-alega-bold Elixir / Phoenix
+            .color-maroon-red.title-maroon-red.font-alega-bold Programmer
+        .phoenix
+          = partial 'svg/elixir/phoenix.svg'
+        .arrow data-js='scroll-down-arrow'
+          .arrow-down
+            = partial 'svg/elixir/arrow.svg'
+        .wrapper
+          .main-text
+            h2.subtitle.font-baskerville-bold Dear Rails programmer,
+            p
+              '
+                You've been churning out CRUDs for years now and witnessed a
+                vibrant community grow increasingly silent. How long has it
+                been since you got excited about a new library? How come you
+                can't get excited about Rails 5 when 3 and 4 brought so much
+                joy? You've started looking for alternatives and Phoenix
+                looks really cool but no one would let you use it in production,
+                or?
+            br
+            br
+              '
+                In fact, we would. Come join us here at codequest and build
+                state-of-the-art real-time apps using Phoenix/Elixir, Go,
+                Angular 2, TypeScript, RabbitMQ, Docker, etcd and all these
+                new exciting things you've heard about but never had a chance
+                to actually implement in a real project.
+            br
+            br
+            span.text-bold Looking forward to hearing from you!
+        .saturn
+          = partial 'svg/elixir/saturn.svg'
+        .wrapper
+          .job-description
+            h3.job-list-title You
+            ul.job-list
+              li Expert in at least one web development framework
+              li Focused on clean code and best practices
+              li Team player
+              li Independent problem solver
+              li Fluent in Git
+              li Familiar with Agile methodology
+              li Experienced with PostgreSQL and Redis
+              li
+                '
+                  Feel comfortable with Continuous Integration
+                  and Continuous Deployment
+            h3.job-list-title We
+            ul.job-list
+              li
+                '
+                  Attractive salary, tailored to your skills and
+                  involvement (8000+ PLN net)
+              li Private medical insurance
+              li Sports benefits system
+              li Employment form of your choice
+              li Flexible hours, with occasional possibility of remote work
+              li Interesting projects for international clients
+              li Experienced, diverse team
+              li Thoroughly modern stack, with room for experimentation
+              li Office in Warsaw next to the Imielin metro station
   .form-apply
     .wrapper
       - action_url = 'https://getsimpleform.com/messages\

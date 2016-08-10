@@ -16,15 +16,12 @@
     margin-top: 80px;
   }
 
-  .apply-link {
-    @include font(34px, 0px);
-    text-transform: lowercase;
-    text-align: center;
-    display: block;
+  .ibg-bg {
+    display: none;
   }
 
   .arrow {
-    height: 110px;
+    display: none;
     width: 100%;
     clear: both;
     position: fixed;
@@ -34,6 +31,13 @@
   .arrow-down {
     height: 60px;
     padding-bottom: 15px;
+  }
+
+  .apply-link {
+    @include font(34px, 0px);
+    text-transform: lowercase;
+    text-align: center;
+    display: block;
   }
 
   .form-apply {
@@ -110,10 +114,10 @@
   }
 
   .upload-area {
-    vertical-align: middle; 
+    vertical-align: middle;
     background-color: #181b28;
     padding: 7px;
-    margin: 15px 0px 40px 0px;
+    margin: 15px 0 15px;
     border-radius: 15px;
     width: 100%;
   }
@@ -195,21 +199,41 @@
 
 @media #{$breakpoint-desktop} {
   .l-elixir {
-    background-image: url('../svg/elixir/bcg_elixir_web.svg');
     background-repeat: no-repeat;
     background-size: 100%;
+    background-image: none;
+
+    .ibg-bg {
+      display: block;
+      position: absolute;
+    }
+
+    .job-offer {
+      position: relative;
+    }
+
+    .job-bcg {
+      position: absolute;
+      height: 2466px;
+      width: 100%;
+      z-index: 0;
+    }
 
     .job-title {
-      @include font(153px, 170px);
+      @include font(148px, 170px);
       text-align: right;
     }
 
     .job-description {
       margin-top: 20%;
     }
-    
+
     .job-list li {
       @include font(22px, 30px);
+    }
+
+    .job-wrapper {
+      height: 2466px;
     }
 
     .saturn svg {
@@ -220,7 +244,7 @@
       width: 958px;
       margin-top: 35px;
     }
-    
+
     .upload {
       margin: auto;
       margin-left: 15px;
@@ -230,7 +254,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    
+
     .upload-area {
       display: flex;
       height: 78px;
