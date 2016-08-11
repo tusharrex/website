@@ -1,12 +1,19 @@
-.l-elixir {
+.l-job-offers {
   background: $mirage-blue;
-  background-image: url('../svg/elixir/bcg_elixir.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
   color: $white;
   font-family: $baskerville;
   font-size: 22px;
+
+  &.m-bcg-elixir {
+    background-image: url('../svg/elixir/bcg_elixir.svg');
+  }
+
+  &.m-bcg-ruby {
+    background-image: url('../svg/ruby-on-rails/bcg-ruby-mobile.svg');
+  }
 
   .apply {
     @include font(50px, 10px);
@@ -16,15 +23,12 @@
     margin-top: 80px;
   }
 
-  .apply-link {
-    @include font(34px, 0px);
-    text-transform: lowercase;
-    text-align: center;
-    display: block;
+  .ibg-bg {
+    display: none;
   }
 
   .arrow {
-    height: 110px;
+    display: none;
     width: 100%;
     clear: both;
     position: fixed;
@@ -34,6 +38,13 @@
   .arrow-down {
     height: 60px;
     padding-bottom: 15px;
+  }
+
+  .apply-link {
+    @include font(34px, 0px);
+    text-transform: lowercase;
+    text-align: center;
+    display: block;
   }
 
   .form-apply {
@@ -62,12 +73,25 @@
     line-height: 34px;
   }
 
-  .phoenix svg {
-    position: relative;
-    left: -85px;
-    width: 100%;
-    margin-top: 5%;
-    max-height: 400px;
+  .main-img {
+    svg {
+      position: relative;
+      width: 100%;
+      margin-top: 5%;
+      max-height: 400px;
+    }
+
+    &.m-elixir {
+      svg {
+        left: -85px;
+      }
+    }
+
+    &.m-ruby {
+      svg {
+        left: 30px;
+      }
+    }
   }
 
   .strap-small {
@@ -110,10 +134,10 @@
   }
 
   .upload-area {
-    vertical-align: middle; 
+    vertical-align: middle;
     background-color: #181b28;
     padding: 7px;
-    margin: 15px 0px 40px 0px;
+    margin: 15px 0 15px;
     border-radius: 15px;
     width: 100%;
   }
@@ -131,10 +155,17 @@
 }
 
 @media #{$breakpoint-tablet} {
-  .l-elixir {
-    background-image: url('../svg/elixir/bcg_elixir_tablet.svg');
+  .l-job-offers {
     background-repeat: no-repeat;
     background-size: 100%;
+
+    &.m-bcg-elixir {
+      background-image: url('../svg/elixir/bcg_elixir_tablet.svg');
+    }
+
+    &.m-bcg-ruby {
+      background-image: url('../svg/ruby-on-rails/bcg-ruby-tablet.svg');
+    }
 
     .apply {
       margin-top: 130px;
@@ -159,8 +190,12 @@
       max-width: 805px;
     }
 
-    .phoenix svg {
-      height: 500px;
+    .main-img {
+      &.m-elixir {
+        svg {
+          height: 500px;
+        }
+      }
     }
 
     .saturn svg {
@@ -194,33 +229,63 @@
 }
 
 @media #{$breakpoint-desktop} {
-  .l-elixir {
-    background-image: url('../svg/elixir/bcg_elixir_web.svg');
+  .l-job-offers {
     background-repeat: no-repeat;
     background-size: 100%;
 
+    &.m-bcg-elixir {
+      background-image: none;
+    }
+
+    &.m-bcg-ruby {
+      background-image: none;
+    }
+
+    .ibg-bg {
+      display: block;
+      position: absolute;
+    }
+
+    .job-offer {
+      position: relative;
+    }
+
+    .job-bcg {
+      position: absolute;
+      height: 2466px;
+      width: 100%;
+      z-index: 0;
+    }
+
     .job-title {
-      @include font(153px, 170px);
       text-align: right;
+
+      &.m-title-elixir {
+        @include font(148px, 170px);
+      }
+
+      &.m-title-ruby {
+        @include font(173px, 195px);
+      }
     }
 
     .job-description {
       margin-top: 20%;
     }
-    
+
     .job-list li {
       @include font(22px, 30px);
     }
 
-    .saturn svg {
-      display: none;
+    .job-wrapper {
+      height: 2466px;
     }
 
     .title {
       width: 958px;
       margin-top: 35px;
     }
-    
+
     .upload {
       margin: auto;
       margin-left: 15px;
@@ -230,7 +295,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    
+
     .upload-area {
       display: flex;
       height: 78px;

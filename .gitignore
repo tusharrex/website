@@ -5,3 +5,5 @@
 .DS_Store
 .idea
 Ruby-Slim.tmbundle
+.bash_profile
+bash

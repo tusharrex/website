@@ -138,6 +138,12 @@ members:
     position: Software Engineer
     image: janek
   -
+    name: Mario
+    color: deep-sea-green
+    description: Growth Specialist
+    position: Growth Specialist
+    image: placeholder-red
+  -
     name: CatQuest
     color: martinique-dark
     description: Entertainment Associate Executive
