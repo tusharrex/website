@@ -1,12 +1,19 @@
-.l-elixir {
+.l-job-offers {
   background: $mirage-blue;
-  background-image: url('../svg/elixir/bcg_elixir.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
   color: $white;
   font-family: $baskerville;
   font-size: 22px;
+
+  &.m-bcg-elixir {
+    background-image: url('../svg/elixir/bcg_elixir.svg');
+  }
+
+  &.m-bcg-ruby {
+    background-image: url('../svg/ruby-on-rails/bcg-ruby-mobile.svg');
+  }
 
   .apply {
     @include font(50px, 10px);
@@ -66,12 +73,25 @@
     line-height: 34px;
   }
 
-  .phoenix svg {
-    position: relative;
-    left: -85px;
-    width: 100%;
-    margin-top: 5%;
-    max-height: 400px;
+  .main-img {
+    svg {
+      position: relative;
+      width: 100%;
+      margin-top: 5%;
+      max-height: 400px;
+    }
+
+    &.m-elixir {
+      svg {
+        left: -85px;
+      }
+    }
+
+    &.m-ruby {
+      svg {
+        left: 30px;
+      }
+    }
   }
 
   .strap-small {
@@ -135,10 +155,17 @@
 }
 
 @media #{$breakpoint-tablet} {
-  .l-elixir {
-    background-image: url('../svg/elixir/bcg_elixir_tablet.svg');
+  .l-job-offers {
     background-repeat: no-repeat;
     background-size: 100%;
+
+    &.m-bcg-elixir {
+      background-image: url('../svg/elixir/bcg_elixir_tablet.svg');
+    }
+
+    &.m-bcg-ruby {
+      background-image: url('../svg/ruby-on-rails/bcg-ruby-tablet.svg');
+    }
 
     .apply {
       margin-top: 130px;
@@ -163,8 +190,12 @@
       max-width: 805px;
     }
 
-    .phoenix svg {
-      height: 500px;
+    .main-img {
+      &.m-elixir {
+        svg {
+          height: 500px;
+        }
+      }
     }
 
     .saturn svg {
@@ -198,10 +229,17 @@
 }
 
 @media #{$breakpoint-desktop} {
-  .l-elixir {
+  .l-job-offers {
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: none;
+
+    &.m-bcg-elixir {
+      background-image: none;
+    }
+
+    &.m-bcg-ruby {
+      background-image: none;
+    }
 
     .ibg-bg {
       display: block;
@@ -220,8 +258,15 @@
     }
 
     .job-title {
-      @include font(148px, 170px);
       text-align: right;
+
+      &.m-title-elixir {
+        @include font(148px, 170px);
+      }
+
+      &.m-title-ruby {
+        @include font(173px, 195px);
+      }
     }
 
     .job-description {
@@ -234,10 +279,6 @@
 
     .job-wrapper {
       height: 2466px;
-    }
-
-    .saturn svg {
-      display: none;
     }
 
     .title {
