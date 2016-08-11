@@ -19,6 +19,10 @@
     background-image: url('../svg/frontend/bcg-frontend-mobile.svg');
   }
 
+  &.m-bcg-ios {
+    background-image: url('../svg/ios/bcg-ios-mobile.svg');
+  }
+
   .apply {
     @include font(50px, 10px);
     font-family: $alega-bold;
@@ -59,6 +63,23 @@
   .job-title {
     font-family: $alega-bold;
     @include font(89px, 90px);
+
+    &.m-title-ruby {
+      @include font(89px, 90px);
+    }
+
+    &.m-title-elixir {
+      @include font(89px, 90px);
+    }
+
+    &.m-title-frontend {
+      @include font(89px, 90px);
+    }
+
+    &.m-title-ios {
+      @include font(73px, 59px);
+      margin-top: 18px
+    }
   }
 
   .job-list-title {
@@ -94,11 +115,19 @@
 
     &.m-ruby {
       svg {
-        left: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
       }
     }
 
     &.m-frontend {
+      svg {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+
+    &.m-ios {
       svg {
         padding-right: 15px;
         padding-left: 15px;
@@ -183,6 +212,10 @@
       background-image: url('../svg/frontend/bcg-frontend-tablet.svg');
     }
 
+    &.m-bcg-ios {
+      background-image: url('../svg/ios/bcg-ios-tablet.svg');
+    }
+
     .apply {
       margin-top: 130px;
     }
@@ -205,6 +238,10 @@
 
       &.m-title-frontend {
         @include font(121px, 130px);
+      }
+
+      &.m-title-ios {
+        @include font(113px, 130px);
       }
     }
 
@@ -272,6 +309,10 @@
       background-image: none;
     }
 
+    &.m-bcg-ios {
+      background-image: none;
+    }
+
     .ibg-bg {
       display: block;
       position: absolute;
@@ -301,6 +342,10 @@
 
       &.m-title-frontend {
         @include font(177px, 195px);
+      }
+
+      &.m-title-ios {
+        @include font(166px, 195px);
       }
     }
 

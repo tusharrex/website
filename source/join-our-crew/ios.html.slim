@@ -1,0 +1,118 @@
+.l-job-offers.m-bcg-ios
+  .job-wrapper
+    .job-bcg(data-ibg-bg='/svg/ios/bcg-ios.svg')
+      .job-offer
+        .m-header-elements
+          = link_to '/' do
+            .o-shaped-submarine
+              = partial 'svg/logo_mobile'
+          = partial 'partials/main_menu_button'
+        .wrapper
+          .title
+            .color-white.title-white.font-alega-bold We are looking for an
+            h1.job-title.color-valencia-red.m-title-ios
+              | iOS Developer
+        .main-img.m-ios
+          = partial 'svg/ios/img-ios.svg'
+        .arrow data-js='scroll-down-arrow'
+          .arrow-down
+            = partial 'svg/shared/arrow.svg'
+        .wrapper
+          .main-text
+            h2.subtitle.font-baskerville-bold Dear Rails programmer,
+            p
+              '
+                You've been churning out CRUDs for years now and witnessed a
+                vibrant community grow increasingly silent. How long has it
+                been since you got excited about a new library? How come you
+                can't get excited about Rails 5 when 3 and 4 brought so much
+                joy? You've started looking for alternatives and Phoenix
+                looks really cool but no one would let you use it in production,
+                or?
+            br
+            br
+              '
+                In fact, we would. Come join us here at codequest and build
+                state-of-the-art real-time apps using Phoenix/Elixir, Go,
+                Angular 2, TypeScript, RabbitMQ, Docker, etcd and all these
+                new exciting things you've heard about but never had a chance
+                to actually implement in a real project.
+            br
+            br
+            span.text-bold Looking forward to hearing from you!
+        .wrapper
+          .job-description
+            h3.job-list-title You
+            ul.job-list
+              li Expert in at least one web development framework
+              li Focused on clean code and best practices
+              li Team player
+              li Independent problem solver
+              li Fluent in Git
+              li Familiar with Agile methodology
+              li Experienced with PostgreSQL and Redis
+              li
+                '
+                  Feel comfortable with Continuous Integration
+                  and Continuous Deployment
+            h3.job-list-title We
+            ul.job-list
+              li
+                '
+                  Attractive salary, tailored to your skills and
+                  involvement (8000+ PLN net)
+              li Private medical insurance
+              li Sports benefits system
+              li Employment form of your choice
+              li Flexible hours, with occasional possibility of remote work
+              li Interesting projects for international clients
+              li Experienced, diverse team
+              li Thoroughly modern stack, with room for experimentation
+              li Office in Warsaw next to the Imielin metro station
+  .form-apply
+    .wrapper
+      - action_url = 'https://getsimpleform.com/messages\
+?form_api_token=54d9f634cb4db5851eba00ef4747587c'
+      form#contact-form.m-form.relative(
+        action= action_url
+        method='POST' enctype='multipart/form-data')
+        fieldset.form-fieldset
+          .form-legend.color-white About You
+          .relative
+            label.form-label.color-white Name:
+            input.form-input.bcg-mirage-blue(
+              data-js='name' type='text'
+              name='name' placeholder='Type your name here')
+            .error-msg.hidden Name is invalid.
+          .relative
+            label.form-label.color-white Email address:
+            input.form-input.bcg-mirage-blue(
+              data-js='email' type='text' name='_reply_to'
+              placeholder='We will keep it safe. We promise!')
+              .error-msg.hidden Email is invalid.
+          label.form-label.color-white About you:
+          textarea.form-textarea.bcg-mirage-blue(
+            data-js='description' name='description'
+            placeholder='Share with us a story of your life or\
+link to your GitHub profile...')
+          label.from-textarea.color-white Add Your CV
+          .upload-area
+            .btn.breaker-bay-green.medium.mirage-wave.landing-button(
+              data-js='upload-trigger')
+              = button_content('Upload CV')
+            p.upload(data-js='upload-info') You haven’t uploaded any file yet
+          input.hidden type= 'file' name= 'cv' data-js='upload'
+        fieldset.form-fieldset.relative
+          .btn.form-button.damask-red.mirage-blue-wave(data-js='submit')
+            = button_content('Send')
+            input.form-input-hidden(type='submit' value= '')
+          input(type='hidden' name='redirect_to'
+                value='http://codequest.com/thank-you')
+          input(type='hidden' name='subject'
+            value='Start project with codequest!')
+          input.hidden type='text' name='gotcha'
+        h3.apply Apply now!
+        a.apply-link.link-btn.red href="mailto:jobs@codequest.com"
+          | jobs@codequest.com
+  .strap-small
+  .strap
