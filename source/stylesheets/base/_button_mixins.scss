@@ -56,7 +56,6 @@ $wave-colors: (
 @mixin btn-wave {
   @each $color-name, $color in $wave-colors {
 
-
     &.#{$color-name}-wave {
       @include button-wave-hover($color);
     }
@@ -71,7 +70,7 @@ $wave-colors: (
     position: absolute;
     top: 70px;
     transition: top .8s, left .8s;
-    width: 600px;
+    width: 500px;
   }
 
   &:hover {
@@ -90,23 +89,21 @@ $wave-colors: (
     }
   }
 
-  @media #{$breakpoint-desktop-large} {
+  @media #{$breakpoint-desktop-retina} {
     .wave {
-      top: 80px;
+      top: 110px;
+      width: 800px;
     }
 
     &:hover {
       .wave {
-        left: -50px;
-        top: -20px;
+        top: -30px;
       }
     }
 
     &:active {
-      background-color:rgba(0, 0, 0, 0);
       .wave {
-        left: -50px;
-        top: -20px;
+        top: -30px;
       }
     }
   }
