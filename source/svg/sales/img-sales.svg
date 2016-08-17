@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 708 506.9" style="enable-background:new 0 0 708 506.9;" xml:space="preserve">
+<style type="text/css">
+	.img-sales0{fill:none;stroke:#24737A;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;}
+	.img-sales1{fill:#50AE98;}
+</style>
+<title>Zasób 1</title>
+<g id="Warstwa_2">
+	<g id="Warstwa_3">
+		<polyline class="img-sales0" points="3,10.9 3,503.9 705,503.9 		"/>
+		<path class="img-sales1" d="M31.5,433.5h75.8c2.8,0,5,2.2,5,5v41c0,2.8-2.2,5-5,5H31.5c-2.8,0-5-2.2-5-5v-41
+			C26.5,435.7,28.7,433.5,31.5,433.5z"/>
+		<path class="img-sales1" d="M139.1,406.9h75.8c2.8,0,5,2.2,5,5v67.6c0,2.8-2.2,5-5,5h-75.8c-2.8,0-5-2.2-5-5v-67.6
+			C134.1,409.1,136.4,406.9,139.1,406.9z"/>
+		<path class="img-sales1" d="M244.6,358.4h75.8c2.8,0,5,2.2,5,5v116.1c0,2.8-2.2,5-5,5h-75.8c-2.8,0-5-2.2-5-5V363.4
+			C239.6,360.6,241.8,358.4,244.6,358.4z"/>
+		<path class="img-sales1" d="M353.1,278.7h75.8c2.8,0,5,2.2,5,5v195.8c0,2.8-2.2,5-5,5h-75.8c-2.8,0-5-2.2-5-5V283.7
+			C348.1,280.9,350.4,278.7,353.1,278.7z"/>
+		<path class="img-sales1" d="M464.9,161.8h75.8c2.8,0,5,2.2,5,5v312.6c0,2.8-2.2,5-5,5h-75.8c-2.8,0-5-2.2-5-5V166.8
+			C459.9,164.1,462.1,161.8,464.9,161.8z"/>
+		<path class="img-sales1" d="M572.9,58.6h75.8c2.8,0,5,2.2,5,5v415.9c0,2.8-2.2,5-5,5h-75.8c-2.8,0-5-2.2-5-5V63.6
+			C567.9,60.9,570.1,58.6,572.9,58.6z"/>
+		<path class="img-sales0" d="M26.5,402.2c0,0,368.5-111,519.1-390.9"/>
+		<polyline class="img-sales0" points="505.8,27.3 548.6,5 556.8,49.9 		"/>
+	</g>
+</g>
+</svg>

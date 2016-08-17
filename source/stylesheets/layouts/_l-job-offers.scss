@@ -23,6 +23,14 @@
     background-image: url('../svg/ios/bcg-ios-mobile.svg');
   }
 
+  &.m-bcg-sales {
+    background-image: url('../svg/sales/bcg-sales-mobile.svg');
+  }
+
+  &.m-bcg-growth {
+    background-image: url('../svg/growth/bcg-growth-mobile.svg');
+  }
+
   .apply {
     @include font(50px, 10px);
     font-family: $alega-bold;
@@ -80,6 +88,11 @@
       @include font(73px, 59px);
       margin-top: 18px
     }
+
+    &.m-title-sales {
+      @include font(54px, 58px);
+      margin: 20px 0 12px 0;
+    }
   }
 
   .job-list-title {
@@ -131,6 +144,20 @@
       svg {
         padding-right: 15px;
         padding-left: 15px;
+      }
+    }
+    &.m-sales {
+      svg {
+        max-height: 320px;
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+    }
+      &.m-growth {
+      svg {
+        max-height: 320px;
+        padding-right: 30px;
+        padding-left: 30px;
       }
     }
   }
@@ -216,6 +243,14 @@
       background-image: url('../svg/ios/bcg-ios-tablet.svg');
     }
 
+    &.m-bcg-sales {
+      background-image: url('../svg/sales/bcg-sales-tablet.svg');
+    }
+
+    &.m-bcg-growth {
+      background-image: url('../svg/growth/bcg-growth-tablet.svg');
+    }
+
     .apply {
       margin-top: 130px;
     }
@@ -242,6 +277,16 @@
 
       &.m-title-ios {
         @include font(113px, 130px);
+      }
+
+      &.m-title-sales {
+        text-align: left;
+        @include font(120px, 114px);
+      }
+
+      &.m-title-growth {
+        text-align: left;
+        @include font(106px, 116px);
       }
     }
 
@@ -301,15 +346,11 @@
       background-image: none;
     }
 
-    &.m-bcg-ruby {
-      background-image: none;
-    }
-
-     &.m-bcg-frontend {
-      background-image: none;
-    }
-
-    &.m-bcg-ios {
+    &.m-bcg-ruby,
+    &.m-bcg-frontend,
+    &.m-bcg-ios,
+    &.m-bcg-sales,
+    &.m-bcg-growth {
       background-image: none;
     }
 
@@ -346,6 +387,14 @@
 
       &.m-title-ios {
         @include font(166px, 195px);
+      }
+
+      &.m-title-sales {
+        @include font(120px, 140px);
+      }
+
+      &.m-title-growth {
+        @include font(155px, 160px);
       }
     }
 

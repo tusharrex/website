@@ -9,7 +9,7 @@
           = partial 'partials/main_menu_button'
         .wrapper
           .title
-            .color-white.title-white.font-alega-bold We are looking for an
+            .color-white.title-white.font-alega-bold We are looking for a
             h1.job-title.color-fountain-blue.m-title-frontend
               | Frontend Dev
         .main-img.m-frontend
@@ -62,57 +62,13 @@
               /     Attractive salary, tailored to your skills and
               /     involvement (8000+ PLN net)
               li Private medical insurance
-              li Sports benefits system
+              li Multisport benefit system
               li Employment form of your choice
               li Flexible hours, with occasional possibility of remote work
               li Interesting projects for international clients
               li Experienced, diverse team
               li Thoroughly modern stack, with room for experimentation
               li Office in Warsaw next to the Imielin metro station
-  .form-apply
-    .wrapper
-      - action_url = 'https://getsimpleform.com/messages\
-?form_api_token=54d9f634cb4db5851eba00ef4747587c'
-      form#contact-form.m-form.relative(
-        action= action_url
-        method='POST' enctype='multipart/form-data')
-        fieldset.form-fieldset
-          .form-legend.color-white About You
-          .relative
-            label.form-label.color-white Name:
-            input.form-input.bcg-mirage-blue(
-              data-js='name' type='text'
-              name='name' placeholder='Type your name here')
-            .error-msg.hidden Name is invalid.
-          .relative
-            label.form-label.color-white Email address:
-            input.form-input.bcg-mirage-blue(
-              data-js='email' type='text' name='_reply_to'
-              placeholder='We will keep it safe. We promise!')
-              .error-msg.hidden Email is invalid.
-          label.form-label.color-white About you:
-          textarea.form-textarea.bcg-mirage-blue(
-            data-js='description' name='description'
-            placeholder='Share with us a story of your life or\
-link to your GitHub profile...')
-          label.from-textarea.color-white Add Your CV
-          .upload-area
-            .btn.breaker-bay-green.medium.mirage-wave.landing-button(
-              data-js='upload-trigger')
-              = button_content('Upload CV')
-            p.upload(data-js='upload-info') You haven’t uploaded any file yet
-          input.hidden type= 'file' name= 'cv' data-js='upload'
-        fieldset.form-fieldset.relative
-          .btn.form-button.damask-red.mirage-blue-wave(data-js='submit')
-            = button_content('Send')
-            input.form-input-hidden(type='submit' value= '')
-          input(type='hidden' name='redirect_to'
-                value='http://codequest.com/thank-you')
-          input(type='hidden' name='subject'
-            value='Start project with codequest!')
-          input.hidden type='text' name='gotcha'
-        h3.apply Apply now!
-        a.apply-link.link-btn.red href="mailto:jobs@codequest.com"
-          | jobs@codequest.com
+  = partial '/join-our-crew/apply-form.html.slim'
   .strap-small
   .strap
