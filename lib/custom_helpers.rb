@@ -1,4 +1,13 @@
 module CustomHelpers
+  FB_TAGS_PARTIALS = [
+    'elixir',
+    'frontend',
+    'growth',
+    'ios',
+    'ruby-on-rails',
+    'sales',
+  ]
+
   def title_helper
     return data.page.title if data.page.title && !blog?
     'code quest is a Ruby on Rails and iOS development studio.'
@@ -18,8 +27,13 @@ module CustomHelpers
     current_page.path == 'blog.html'
   end
 
-  def elixir?
-    current_page.path == 'join-our-crew/elixir.html'
+  def render_fb_tags_partial
+    page_name = current_page.path.split('/').last.split('.').first
+    if page_name.in? FB_TAGS_PARTIALS
+      partial "partials/fb_tags_#{page_name}"
+    else
+      partial 'partials/fb_tags'
+    end
   end
 
   def button_content(text, icon = nil)
