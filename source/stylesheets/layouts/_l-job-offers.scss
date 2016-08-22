@@ -173,7 +173,7 @@
   }
 
   .subtitle {
-    margin-top: 5%;
+    margin-top: 7%;
     font-size: 30px;
   }
 
@@ -365,9 +365,42 @@
 
     .job-bcg {
       position: absolute;
-      height: 2466px;
       width: 100%;
       z-index: 0;
+
+      &.m-job-bcg-elixir
+      &.m-job-bcg-sales,
+      &.m-job-bcg-growth {
+        height: 2466px;
+      }
+
+      &.m-job-bcg-ruby,
+      &.m-job-bcg-ios {
+        height: 2100px;
+      }
+
+      &.m-job-bcg-frontend{
+        height: 2300px;
+      }
+    }
+
+    .job-wrapper {
+
+      &.m-job-wrapper-elixir,
+      &.m-job-wrapper-sales,
+      &.m-job-wrapper-growth {
+        height: 2466px;
+      }
+
+      &.m-job-wrapper-ruby,
+      &.m-job-wrapper-ios {
+        height: 2100px;
+      }
+
+      &.m-job-wrapper-frontend {
+        height: 2300px;
+      }
+
     }
 
     .job-title {
@@ -399,15 +432,11 @@
     }
 
     .job-description {
-      margin-top: 20%;
+      margin-top: 10%;
     }
 
     .job-list li {
       @include font(22px, 30px);
-    }
-
-    .job-wrapper {
-      height: 2466px;
     }
 
     .title {
