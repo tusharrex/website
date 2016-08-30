@@ -84,12 +84,6 @@ members:
     position: Software Engineer
     image: monika
   -
-    name: Irene
-    color: deep-sea-green
-    description: Software Engineer
-    position: Software Engineer
-    image: placeholder-dark-green
-  -
     name: Jarek
     color: maroon-red
     description: Software Engineer
