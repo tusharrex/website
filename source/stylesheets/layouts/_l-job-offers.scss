@@ -381,7 +381,7 @@
       }
 
       &.m-job-bcg-sales {
-        height: 3700px;
+        height: 4200px;
       }
 
       &.m-job-bcg-growth {
@@ -405,7 +405,7 @@
       }
 
       &.m-job-wrapper-sales {
-        height: 3700px;
+        height: 4200px;
       }
 
       &.m-job-wrapper-growth {
@@ -424,7 +424,7 @@
     }
 
     .job-list-title {
-      @include font(78px, 0px);
+      @include font(78px, 82px);
     }
 
     .job-title {
@@ -447,7 +447,7 @@
       }
 
       &.m-title-sales {
-        @include font(120px, 140px);
+        @include font(110px, 140px);
       }
 
       &.m-title-growth {

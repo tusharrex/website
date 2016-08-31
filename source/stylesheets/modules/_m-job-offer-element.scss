@@ -1,19 +1,4 @@
 .m-job-offer-element {
-
-  &:hover {
-    @include filter(brightness(85%));
-  }
-
-  // This class define temporary styles for blocks.
-  // Remove this when pages with job offers will be ready.
-  &.temporary-styles {
-    height: 45vw;
-
-    .job-apply {
-      display: none;
-    }
-  }
-
   &.m-grid-element::before {
     display: none;
   }
@@ -26,11 +11,15 @@
   }
 
   .btn-apply {
-    margin-top: 22px;
+    margin-top: 10%;
+  }
+
+  .job-apply {
+    text-align: center;
   }
 
   .job-title {
-    font-size: 26px;
+    font-size: 24px;
     margin: 0 0 30px;
     padding-top: 18vw;
   }
@@ -60,21 +49,15 @@
 
 @media #{$breakpoint-mobile-landscape} {
   .m-job-offer-element {
-
-    // This class define temporary styles for blocks.
-    // Remove this when pages with job offers will be ready.
-    &.temporary-styles {
-      height: 28vw;
-    }
-
     .job-position,
     .job-apply {
       height: auto;
       margin-top: 0;
+      text-align: center;
     }
 
     .job-title {
-      font-size: 4.6vw;
+      font-size: 4.4vw;
       margin-bottom: 10px;
       padding-top: 10vw;
     }
@@ -86,24 +69,14 @@
     margin-bottom: 2%;
     width: 49%;
 
-    // This class define temporary styles for blocks.
-    // Remove this when pages with job offers will be ready.
-    &.temporary-styles {
-      height: 146px;
-    }
-
-    &.m-grid-element {
-      background: none;
-    }
-
-    .job-apply {
-      background: $white;
-    }
-
     .job-title {
-      font-size: 30px;
+      font-size: 26px;
       margin-bottom: 23px;
       padding-top: 58px;
+    }
+
+    .btn-apply {
+      margin-top: 50px;
     }
 
     .requirements {

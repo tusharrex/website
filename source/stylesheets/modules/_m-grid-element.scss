@@ -35,10 +35,6 @@
     display: table-cell;
     vertical-align: middle;
   }
-
-  .row {
-    display: table-row;
-  }
 }
 
 // Styles here apply to non-touchscreen devices only.
@@ -57,7 +53,7 @@
   .m-grid-element {
     height: 50vw;
     width: 50vw;
-    
+
     &:last-child:nth-child(odd) {
       width: 100vw;
     }
