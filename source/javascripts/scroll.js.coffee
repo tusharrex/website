@@ -4,7 +4,7 @@ $ ->
   url = window.location.href
   urlArr = url.split('/')
 
-  if 'blog' in urlArr
+  if /.+\/blog\/?(page\/\d*)?$/.test(url)
     pageNumber = parseInt(urlArr.pop()) || 1
     numPages = + $('#total_pages').text()
     isLoading = 0
