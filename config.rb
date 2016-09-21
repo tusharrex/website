@@ -36,6 +36,7 @@ with_layout :website do
   page '/join-our-crew/sales.html'
   page '/join-our-crew/growth.html'
   page '/join-our-crew/tutor.html'
+  page '/join-our-crew/content-writer.html'
   page '/join-our-crew/consultant-developer.html'
 end
 

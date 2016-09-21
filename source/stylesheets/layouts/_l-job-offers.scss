@@ -31,6 +31,10 @@
     background-image: url('../svg/growth/bcg-growth-mobile.svg');
   }
 
+  &.m-bcg-content {
+    background-image: url('../svg/content-writer/bcg-content-mobile.svg');
+  }
+
   .apply {
     @include font(50px, 10px);
     font-family: $alega-bold;
@@ -65,8 +69,12 @@
       text-align: center;
     }
 
-    &.m-small-link {
+    &.m-sm {
       @include font(22px, 34px);
+    }
+
+    &.m-normal {
+      text-transform: none;
     }
   }
 
@@ -135,6 +143,10 @@
 
     &.m-ruby {
       width: 320px;
+    }
+
+    &.m-content {
+      width: 300px;
     }
   }
 
@@ -223,6 +235,10 @@
       background-image: url('../svg/growth/bcg-growth-tablet.svg');
     }
 
+    &.m-bcg-content {
+      background-image: url('../svg/content-writer/bcg-content-tablet.svg');
+    }
+
     .apply {
       margin-top: 130px;
     }
@@ -260,6 +276,11 @@
         text-align: left;
         @include font(106px, 116px);
       }
+
+      &.m-title-content {
+        text-align: left;
+        @include font(146px, 170px);
+      }
     }
 
     .job-list-title {
@@ -287,6 +308,10 @@
 
       &.m-ruby {
         width: 600px;
+      }
+
+      &.m-content {
+        width: 550px;
       }
     }
 
@@ -334,7 +359,8 @@
     &.m-bcg-frontend,
     &.m-bcg-ios,
     &.m-bcg-sales,
-    &.m-bcg-growth {
+    &.m-bcg-growth,
+    &.m-bcg-content {
       background-image: none;
     }
 
@@ -372,6 +398,10 @@
       &.m-job-bcg-frontend{
         height: 2300px;
       }
+
+      &.m-job-bcg-content{
+        height: 2500px;
+      }
     }
 
     .job-wrapper {
@@ -395,6 +425,10 @@
 
       &.m-job-wrapper-frontend {
         height: 2300px;
+      }
+
+      &.m-job-wrapper-content{
+        height: 2500px;
       }
 
     }

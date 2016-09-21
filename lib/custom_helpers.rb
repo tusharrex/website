@@ -6,6 +6,7 @@ module CustomHelpers
     'ios',
     'ruby-on-rails',
     'sales',
+    'content-writer',
   ]
 
   def title_helper
