@@ -80,24 +80,24 @@
     @include font(89px, 90px);
 
     &.m-title-ruby {
-      @include font(89px, 90px);
+      @include font(80px, 84px);
     }
 
     &.m-title-elixir {
-      @include font(89px, 90px);
+      @include font(80px, 84px);
     }
 
     &.m-title-frontend {
-      @include font(89px, 90px);
+      @include font(74px, 78px);
     }
 
     &.m-title-ios {
-      @include font(73px, 59px);
+      @include font(65px, 69px);
       margin-top: 18px
     }
 
     &.m-title-sales {
-      @include font(54px, 58px);
+      @include font(50px, 54px);
       margin: 20px 0 12px 0;
     }
   }
@@ -120,52 +120,21 @@
   }
 
   .main-img {
-    svg {
-      position: relative;
-      width: 100%;
-      margin-top: 20px;
-      max-height: 400px;
+    position: relative;
+    width: 230px;
+    margin: 0 auto;
+    display: block;
+
+    &.m-ios {
+      width: 300px;
     }
 
-    &.m-elixir {
-      svg {
-        left: -85px;
-      }
+    &.m-growth {
+      @include size(180px, 300px);
     }
 
     &.m-ruby {
-      svg {
-        padding-right: 15px;
-        padding-left: 15px;
-      }
-    }
-
-    &.m-frontend {
-      svg {
-        padding-right: 15px;
-        padding-left: 15px;
-      }
-    }
-
-    &.m-ios {
-      svg {
-        padding-right: 15px;
-        padding-left: 15px;
-      }
-    }
-    &.m-sales {
-      svg {
-        max-height: 320px;
-        padding-right: 30px;
-        padding-left: 30px;
-      }
-    }
-      &.m-growth {
-      svg {
-        max-height: 320px;
-        padding-right: 30px;
-        padding-left: 30px;
-      }
+      width: 320px;
     }
   }
 
@@ -184,19 +153,15 @@
     font-size: 24px;
   }
 
-  .saturn svg {
-    height: 100px;
-    width: 79px;
-  }
-
   .title-white {
     font-size: 28px;
     margin-top: 20px;
   }
 
   .title-maroon-red {
-    @include font(34px, 9px);
+    @include font(34px, 34px);
     float: right;
+    margin-bottom: 30px;
   }
 
   .text-bold {
@@ -307,10 +272,21 @@
     }
 
     .main-img {
-      &.m-elixir {
-        svg {
-          height: 500px;
-        }
+      position: relative;
+      width: 400px;
+      display: block;
+      margin: 0 auto;
+
+      &.m-ios {
+        width: 500px;
+      }
+
+      &.m-growth {
+        width: 570px;
+      }
+
+      &.m-ruby {
+        width: 600px;
       }
     }
 
@@ -461,6 +437,21 @@
 
     .job-list li {
       @include font(22px, 30px);
+    }
+
+    .main-img {
+      position: relative;
+      width: 600px;
+      display: block;
+      margin: 0 auto;
+
+      &.m-ios {
+        width: 600px;
+      }
+
+      &.m-ruby {
+        width: 800px;
+      }
     }
 
     .subtitle {
