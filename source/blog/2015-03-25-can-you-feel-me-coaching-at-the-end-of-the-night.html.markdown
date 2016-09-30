@@ -1,9 +1,12 @@
 ---
 title: Can you feel me coaching at the end of the night
 date: 2015-03-25 12:48 UTC
-tags: Hacker'sLife, RailsGirls, WarsawCoaching
+tags: Rails Girls Warsaw |
+subtitle: Rails Girls Warsaw |
 author: Bartek Kruszczyński
 color: red
+image: 'blog/post01.png'
+imageauthor: 'team/bartek.png'
 ---
 
 As you might have read, code quest team was involved in Rails Girls Warsaw this year. code quest's own Magda was part of the organising team there and late December last year she asked me to participate as a coach. I gave it a thought and figured I'd give it a try.

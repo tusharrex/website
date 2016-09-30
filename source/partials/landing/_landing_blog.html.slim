@@ -1,0 +1,34 @@
+.m-separator-big.separator-opposite-red-left
+.m-landing.bcg-valencia-red
+  .m-landing-wrapper
+    h2.title.color-white.font-alega-bold.m-blog
+      | We write about clean code, project management and startups
+    .description.color-white.m-blog
+      | We are a team of creative, open minded, skilled and fun loving
+        engineers. What brings us together is a love of good quality code.
+        Would You like to embark with us on our quest to excellence?
+  .m-separator-big.separator-light-gray-bottom-left
+.blog-posts-container
+  - blog.articles[0..1].each do |article|
+    .m-blog-post
+      .posts
+        a.article(href= article.url class= article.metadata[:page]['color'])
+          .m-separator.m-separator-post
+          .image
+            = image_tag article.data.image
+          .post-detail
+            .detail
+              .subtitle
+                = article.data.subtitle
+              .date
+                = article.date.strftime('%B %e, %Y')
+            h2.title
+              = article.title
+            .summary
+              = strip_tags article.summary(500)
+            .info-author
+              .image-author
+                = image_tag article.data.imageauthor
+              .author
+                = article.data.author
+= partial 'partials/footer'

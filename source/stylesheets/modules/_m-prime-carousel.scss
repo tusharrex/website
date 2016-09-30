@@ -1,0 +1,90 @@
+// scss-lint:disable all
+
+.m-prime-carousel {
+  margin-top: 45px;
+
+  // Overwrite owl-carousel styles
+  .owl-theme {
+    .owl-controls {
+      margin-top: -30px;
+
+      .owl-page span {
+        background: none;
+        border: 2px solid $white;
+        height: 15px;
+        opacity: .9;
+        width: 15px;
+      }
+
+      .owl-page.active span,
+      &.clickable .owl-page:hover span {
+        opacity: .9;
+      }
+
+      .owl-buttons div {
+        background: $light-gray;
+        border-radius: 0;
+        height: 338px;
+        position: absolute;
+        top: -4px;
+        opacity: 1;
+      }
+
+      .owl-buttons .owl-prev {
+        background: url('./icons-svg/arrow_left.svg') 50% 50% no-repeat;
+        left: -49px;
+      }
+
+      .owl-buttons .owl-next {
+        background: url('./icons-svg/arrow_right.svg') 50% 50% no-repeat;
+        right: -49px;
+      }
+    }
+
+    .owl-page.active span {
+      background: $white;
+      opacity: .9;
+    }
+  }
+
+  .owl-buttons {
+    display: none;
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-prime-carousel {
+    .m-grid-element:last-child:nth-child(odd) {
+      width: 50vw;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-prime-carousel {
+    margin-top: 55px;
+
+    .m-grid-element:last-child:nth-child(odd) {
+      height: auto;
+      width: auto;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-prime-carousel {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 1448px) {
+  .m-prime-carousel {
+    .owl-controls .owl-pagination {
+      display: none;
+    }
+
+    .owl-buttons {
+      display: block;
+    }
+  }
+}

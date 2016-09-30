@@ -4,78 +4,6 @@
   fill: $martinique-dark;
 }
 
-.st-mobile-0 {
-  @include stroke();
-  fill: $breaker-bay-green;
-}
-
-.st-mobile-1 {
-  @include stroke();
-  fill: $deep-sea-green;
-}
-
-.st-mobile-3 {
-  @include stroke();
-  fill: $indian-yellow;
-}
-
-.st-gopher-0 {
-  @include stroke();
-  fill: $deep-sea-green;
-}
-
-.st-gopher-1 {
-  @include stroke();
-  fill: $breaker-bay-green;
-}
-
-.st-gopher-2 {
-  @include stroke($width: 8);
-  fill: $aquamarine-blue;
-}
-
-.st-gopher-3 {
-  fill: $sand-yellow;
-}
-
-.st-gopher-4 {
-  fill: $aquamarine-blue;
-}
-
-.st-gopher-5 {
-  fill: $gray;
-}
-
-.st-fish_in_c-0 {
-  @include stroke($linecap: round, $linejoin: round);
-  fill: $breaker-bay-green;
-}
-
-.st-fish_in_c-2 {
-  @include stroke($linecap: round, $linejoin: round);
-  fill: none;
-}
-
-.st-bubbles1-0 {
-  @include stroke();
-  fill: $deep-sea-green;
-}
-
-.st-bubbles1-1 {
-  @include stroke();
-  fill: $breaker-bay-green;
-}
-
-.st-bubles2-0 {
-  @include stroke();
-  fill: $breaker-bay-green;
-}
-
-.st-bubles2-1 {
-  @include stroke();
-  fill: $deep-sea-green;
-}
-
 .st-fish-0 {
   @include stroke();
   fill: $deep-sea-green;
@@ -134,21 +62,6 @@
 .st-fish-in-u-2 {
   @include stroke($linecap: round, $linejoin: round);
   fill: none;
-}
-
-.st-octopus-0 {
-  @include stroke();
-  fill: $deep-sea-green;
-}
-
-.st-octopus-1 {
-  @include stroke();
-  fill: $breaker-bay-green;
-}
-
-.st-octopus-2 {
-  @include stroke($linecap: round, $linejoin: round);
-  fill: $breaker-bay-green;
 }
 
 .st-octopus2-0 {
@@ -214,44 +127,7 @@
   fill: $breaker-bay-green;
 }
 
-.st-shark-0 {
-  @include stroke();
-  fill: $breaker-bay-green;
-}
-
-.st-shark-1 {
-  @include stroke();
-  fill: $deep-sea-green;
-}
-
-.st-shark-2 {
-  @include stroke($linecap: round, $linejoin: round);
-  fill: $valencia-red;
-}
-
-.st-shark-3 {
-  @include stroke($linecap: round, $linejoin: round);
-  fill: $breaker-bay-green;
-}
-
-.st-apple-0 {
-  @include stroke($linecap: round, $linejoin: round);
-  fill: $deep-sea-green;
-}
-
 .st-starfish-0 {
-  fill: $indian-yellow;
-}
-
-.st-starfish2-0 {
-  fill: $damask-red;
-}
-
-.st-plant1-0 {
-  fill: $deep-sea-green;
-}
-
-.st-plant1-2 {
   fill: $indian-yellow;
 }
 
@@ -298,37 +174,9 @@
   fill: $sand-yellow;
 }
 
-.st-ufo-0 {
-  @include stroke($linecap: round);
-  fill: $breaker-bay-green;
-}
-
-.st-ufo-1 {
-  @include stroke();
-  fill: $sand-yellow;
-}
-
-.st-ufo-2 {
-  @include stroke();
-  fill: none;
-}
-
 .st-ruby-0 {
   @include stroke($linecap: round, $linejoin: round);
   fill: $maroon-red;
-}
-
-.st-server-0 {
-  fill: $breaker-bay-green;
-}
-
-.st-server-2 {
-  @include stroke();
-  fill: $damask-red;
-}
-
-.st-server-3 {
-  fill: $deep-sea-green;
 }
 
 .st-station-0 {
@@ -349,18 +197,4 @@
 .st-station-4 {
   @include stroke();
   fill: $breaker-bay-green;
-}
-
-.st-docker-0 {
-  @include stroke();
-  fill: $deep-sea-green;
-}
-
-.st-docker-1 {
-  @include stroke();
-  fill: $breaker-bay-green;
-}
-
-.st-docker-2 {
-  fill: $docker-blue;
 }

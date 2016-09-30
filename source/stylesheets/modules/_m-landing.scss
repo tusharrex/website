@@ -1,0 +1,164 @@
+.m-landing {
+  .description {
+    font-family: 'Courier New';
+    font-size: 16px;
+    margin-top: 7px;
+    text-align: center;
+
+    &.m-blog {
+      margin: 15px 15px;
+      padding-bottom: 20px;
+    }
+
+    &.m-products {
+      font-family: 'Courier New';
+      font-size: 16px;
+      margin: 35px 15px;
+      position: relative;
+    }
+  }
+
+  .title {
+    font-size: 35px;
+    line-height: 38px;
+    margin: 0 auto;
+    max-width: 80vw;
+    position: relative;
+    text-align: center;
+    top: -17px;
+
+    &.m-blog {
+      padding-top: 35px;
+    }
+
+    &.m-team {
+      margin-top: 40px;
+    }
+
+    &.m-products {
+      top: 20px;
+    }
+  }
+
+  .subtitle {
+    font-size: 35px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 80px;
+  }
+
+  .button-center {
+    display: block;
+    margin: 130px auto 80px auto;
+  }
+
+  .love-passion-code-img {
+    background-size: contain;
+    background-image: url('../svg/landing/love-passion-code-mobile.svg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 310px;
+    margin: 30px auto;
+    max-width: 260px;
+  }
+
+  .bcg-element-img-right {
+    max-width: 200px;
+    margin: 0 0 0 auto;
+    text-align: right;
+  }
+
+  .img-codebeat {
+    display: block;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .bcg-element-img-left {
+    position: absolute;
+    width: 200px;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-landing {
+    .description {
+      font-size: 18px;
+      line-height: 26px;
+      margin: 30px auto 0;
+      max-width: 60vw;
+
+      &.m-blog {
+        margin: 30px auto 0;
+      }
+
+      &.m-products {
+        margin: 30px auto 0;
+      }
+    }
+
+    .title {
+      font-size: 37px;
+      top: 7px;
+      max-width: 80vw;
+
+      &.m-team {
+        margin-top: 120px;
+      }
+    }
+
+    .love-passion-code-img {
+      background-image: url('../svg/landing/love-passion-code.svg');
+      height: 150px;
+      margin: 30px 50px;
+      max-width: 1150px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-landing {
+    .description {
+      font-size: 22px;
+      line-height: 32px;
+      margin: 100px auto 126px;
+      max-width: 64%;
+
+      &.m-blog {
+        margin: 100px auto 46px;
+        max-width: 64%;
+      }
+
+      &.m-products {
+        font-size: 22px;
+        margin: 50px auto 46px;
+      }
+    }
+
+    .title {
+      font-size: 70px;
+      top: 54px;
+      line-height: 80px;
+
+      &.m-team {
+        margin-top: 150px;
+      }
+    }
+
+    .bcg-element-img-right {
+      max-width: 300px;
+    }
+
+    .love-passion-code-img {
+      background-image: url('../svg/landing/love-passion-code.svg');
+      margin: 30px auto;
+    }
+
+    .bcg-element-img-left {
+      position: absolute;
+      width: 350px;
+    }
+  }
+}

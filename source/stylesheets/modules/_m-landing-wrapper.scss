@@ -1,0 +1,22 @@
+.m-landing-wrapper {
+  padding: 0 10px;
+  width: 100%;
+
+  &.m-padding-none {
+    padding: 0;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-landing-wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media #{$breakpoint-desktop-largest} {
+  .m-landing-wrapper {
+    margin: 0 auto;
+    max-width: 1354px;
+    padding: 0;
+  }
+}

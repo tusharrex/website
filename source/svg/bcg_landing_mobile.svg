@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 267.63 401.23">
+  <defs>
+    <style>
+      .bcg-landing-mobile-1{opacity:0.2;}
+      .bcg-landing-mobile-2{fill:none;stroke:#3f4c6c;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}
+      .bcg-landing-mobile-3{fill:#2b304b;}
+   </style>
+  </defs>
+  <title>bcg-mobile-logo</title>
+  <g class="bcg-landing-mobile-1">
+    <circle class="bcg-landing-mobile-2" cx="106.56" cy="6.72" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="168.23" cy="82.77" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="180.03" cy="94.07" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="214.5" cy="94.76" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="216" cy="205.82" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="193.88" cy="232.78" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="184.5" cy="243.33" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="172.65" cy="254.71" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="226.07" cy="47.3" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="238.46" cy="205.05" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="89.49" cy="6.72" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="74.3" cy="6.72" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="26.39" cy="64.88" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="158.03" cy="308.14" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="156.41" cy="325.15" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="100.49" cy="274.27" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="87.77" cy="301.71" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="75.3" cy="288.94" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="153.31" cy="271.72" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="25.39" cy="199.87" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="6.72" cy="52.01" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="260.91" cy="136.28" r="4.72"/>
+    <circle class="bcg-landing-mobile-2" cx="260.91" cy="394.51" r="4.72"/>
+    <line class="bcg-landing-mobile-2" x1="260.91" y1="141" x2="260.91" y2="387.62"/>
+    <polyline class="bcg-landing-mobile-2" points="132.84 201.76 132.84 271.72 148.68 271.72"/>
+    <polyline class="bcg-landing-mobile-2" points="115.98 196.71 115.98 258.41 115.98 284.16 153.09 321.27"/>
+    <polyline class="bcg-landing-mobile-2" points="127.45 83.15 127.45 45.72 93.15 11.44"/>
+    <polyline class="bcg-landing-mobile-2" points="115.98 83.15 115.98 49.68 77.74 11.44"/>
+    <polyline class="bcg-landing-mobile-2" points="137.84 83.15 137.84 40.15 109.13 11.44"/>
+    <polyline class="bcg-landing-mobile-2" points="59.93 140.9 6.72 140.9 6.72 57.71"/>
+    <polyline class="bcg-landing-mobile-2" points="124.45 197.65 124.45 274.96 153.31 303.81"/>
+    <line class="bcg-landing-mobile-2" x1="100.49" y1="228.7" x2="100.49" y2="268.69"/>
+    <line class="bcg-landing-mobile-2" x1="75.3" y1="217.64" x2="75.3" y2="282.25"/>
+    <line class="bcg-landing-mobile-2" x1="87.77" y1="220" x2="87.77" y2="297.19"/>
+    <line class="bcg-landing-mobile-2" x1="173.18" y1="212.26" x2="189.49" y2="228.57"/>
+    <line class="bcg-landing-mobile-2" x1="163.07" y1="222.22" x2="179.51" y2="238.66"/>
+    <line class="bcg-landing-mobile-2" x1="154.07" y1="234.67" x2="168.19" y2="248.79"/>
+    <polyline class="bcg-landing-mobile-2" points="75.84 120.39 26.39 120.39 26.39 70.71"/>
+    <polyline class="bcg-landing-mobile-2" points="59.93 155.85 25.39 155.85 25.39 195.15"/>
+    <polyline class="bcg-landing-mobile-2" points="182.13 144.28 226.07 144.28 226.07 52.02"/>
+    <polyline class="bcg-landing-mobile-2" points="177.99 133.49 214.5 133.49 214.5 101.4"/>
+    <polyline class="bcg-landing-mobile-2" points="185.87 153.72 238.46 153.72 238.46 199.87"/>
+    <polyline class="bcg-landing-mobile-2" points="174.99 174.15 216.45 174.15 216.45 201.86"/>
+    <line class="bcg-landing-mobile-2" x1="147.69" y1="102.95" x2="164.72" y2="85.92"/>
+    <line class="bcg-landing-mobile-2" x1="159.72" y1="114.47" x2="176.75" y2="97.44"/>
+  </g>
+  <path class="bcg-landing-mobile-3" d="M180.6,130a18.82,18.82,0,0,0-3.16.27,56.3,56.3,0,0,0-34.56-34.45,18.72,18.72,0,1,0-36.86,0A56.3,56.3,0,0,0,71.47,130.3a18.72,18.72,0,1,0-.1,36.91,56.22,56.22,0,0,0,16.14,24L71,207.64a9.36,9.36,0,0,0,0,13.23l18.72,18.72A9.36,9.36,0,0,0,103,226.35l-12.1-12.1s12.69-12.75,13-13.1a56.36,56.36,0,0,0,41.2,0c.26.35,13,13.1,13,13.1l-12.1,12.1a9.36,9.36,0,1,0,13.23,13.23l18.72-18.72a9.36,9.36,0,0,0,0-13.23L161.4,191.18a56.22,56.22,0,0,0,16.14-24A18.72,18.72,0,1,0,180.6,130Zm-56.15,56.3a37.43,37.43,0,1,1,37.43-37.43A37.43,37.43,0,0,1,124.45,186.34Z"/>
+</svg>

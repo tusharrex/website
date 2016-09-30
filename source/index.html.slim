@@ -1,20 +1,6 @@
-.l-landing-page.upper-part
-  .m-header-elements
-    = mail_to 'hello@codequest.com', nil, class: 'm-hello-mail'
-    = partial 'partials/main_menu_button'
-  .cq-logo-wrapper
-    = partial 'partials/main_logo'
-  .cq-mobile-logo-wrapper
-    = partial 'partials/mobile_logo'
-.l-landing-page.lower-part
-  .signature-wrapper
-    = partial 'partials/main_signature'
-  .button-wrapper
-    a.landing-button.btn.breaker-bay-green.mirage-wave(
-      href='/start-your-project')
-      = button_content('Hire Us')
-    a.landing-button.btn.indian-yellow.mirage-wave(
-      href='/join-our-crew')
-      = button_content('Get on Board')
-  .bottom-logo-wrapper
-    = partial 'svg/logo'
+= partial 'partials/landing/landing_big_logo'
+= partial 'partials/landing/landing_phrase_with_cta_buttons'
+= partial 'partials/landing/landing_portfolio'
+= partial 'partials/landing/landing_own_products'
+= partial 'partials/landing/landing_team'
+= partial 'partials/landing/landing_blog'

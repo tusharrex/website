@@ -1,0 +1,289 @@
+<svg id="landing-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1428.48 1017.63">
+    <defs>
+        <style>.bcg-landing-1{opacity:0.2;}.bcg-landing-2{opacity:0.98;}.bcg-landing-3{fill:none;stroke:#3f4c6c;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}.bcg-landing-4{fill:#2b304b;}</style>
+    </defs>
+    <title>bcg-landing-logo</title>
+        <g class="bcg-landing-1">
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="680.45" cy="6.72" r="4.72"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="229.05" y1="187.94" x2="229.05" y2="112.44"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="229.05" cy="106.72" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="244.55" cy="79.22" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="276.27" cy="124.41" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="309.65" cy="408.68" r="4.72"/>
+            <circle class="bcg-landing-3" cx="200.16" cy="424.4" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="6.72" cy="247.4" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="258.05" cy="242.01" r="4.72"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="244.55 197.44 244.55 155.44 271.55 128.44"/>
+            <line data-start="0" data-duration="200" class="bcg-landing-3" x1="244.55" y1="83.94" x2="244.55" y2="155.44"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="474.01" cy="487.2" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="485.55" cy="501.27" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="670.27" cy="369.32" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="708.65" cy="343.7" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="691.55" cy="146.05" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="698.54" cy="38.72" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="795.23" cy="34" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="816.23" cy="131.19" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="825.46" cy="365.82" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="833.44" cy="391.71" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="861.38" cy="423.16" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="876.72" cy="451.08" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="960.41" cy="363.99" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="965.13" cy="343.44" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="975.46" cy="329.23" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="870.1" cy="242.01" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="888.91" cy="228.44" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="902.35" cy="160.66" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="850.05" cy="110.28" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="899.21" cy="65.31" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="934.05" cy="119.6" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="939.55" cy="38.72" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="963.49" cy="38.72" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1041.32" cy="102" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="1084.63" cy="72.61" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="1084.63" cy="155.22" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="1077.95" cy="295.94" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1219.05" cy="151.22" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1234.05" cy="131.19" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="1319.45" cy="97.28" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1275.52" cy="183.22" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="1337.48" cy="87.84" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1392.55" cy="207.94" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1421.76" cy="236.38" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1399.09" cy="254.16" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="1105.15" cy="351.36" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="1064.99" cy="316.22" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1136.05" cy="119.72" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1150.55" cy="97.28" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="1113.34" cy="419.04" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="1004.72" cy="359.22" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="1091.15" cy="419.04" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="754.72" cy="135.91" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="691.55" cy="271.94" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="759.8" cy="236.38" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="674.99" cy="156.22" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="576.05" cy="140.94" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="560.55" cy="140.81" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="608.32" cy="79.22" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="591.13" cy="52.79" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="578.26" cy="70.03" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="638.3" cy="348.16" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="385.76" cy="102.25" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="330.44" cy="95.01" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="392.11" cy="171.05" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="403.9" cy="182.36" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="420.19" cy="183.05" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="423.19" cy="281.11" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="417.75" cy="321.07" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="408.37" cy="331.62" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="396.52" cy="343" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="431.77" cy="170.02" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="436.64" cy="293.34" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="313.37" cy="95.01" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="298.18" cy="95.01" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="275.55" cy="182.36" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="381.91" cy="396.43" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="380.28" cy="413.44" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="324.37" cy="362.55" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="311.65" cy="390" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="299.18" cy="377.23" r="4.72"/>
+            <circle class="bcg-landing-3" cx="377.19" cy="360.01" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="269.57" cy="288.16" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="262.77" cy="192.78" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="462.48" cy="79.47" r="4.72"/>
+            <circle data-start="200" data-duration="30" class="bcg-landing-3" cx="274.29" cy="29.28" r="4.72"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="506.8" y1="188.19" x2="506.8" y2="112.69"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="506.8" cy="106.97" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="522.3" cy="79.47" r="4.72"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="522.3" y1="84.19" x2="522.3" y2="197.44"/>
+            <line class="bcg-landing-3" x1="166.05" y1="237.19" x2="202.55" y2="237.19"/>
+            <line class="bcg-landing-3" x1="166.05" y1="248.94" x2="130.05" y2="248.94"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="98.33" cy="229.94" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="76.83" cy="207.94" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="125.33" cy="248.94" r="4.72"/>
+            <circle class="bcg-landing-3" cx="207.27" cy="237.29" r="4.72"/>
+            <line class="bcg-landing-3" x1="173.38" y1="223.06" x2="226.94" y2="223.06"/>
+            <circle class="bcg-landing-3" cx="231.66" cy="223.06" r="4.72"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="162.55 229.94 132.8 229.94 103.05 229.94"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="142.58 229.91 120.61 207.94 81.55 207.94"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="166.05" cy="136.22" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="166.05" cy="187.94" r="4.72"/>
+            <line class="bcg-landing-3" x1="166.05" y1="140.94" x2="166.05" y2="183.05"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="181.83" cy="119.72" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="181.83" cy="171.44" r="4.72"/>
+            <line class="bcg-landing-3" x1="181.83" y1="124.44" x2="181.83" y2="166.55"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="439.44" cy="323.24" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="439.44" cy="392.01" r="4.72"/>
+            <line class="bcg-landing-3" x1="439.44" y1="327.96" x2="439.44" y2="385.12"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="455.22" cy="298.33" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="455.22" cy="417.33" r="4.72"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="455.22" y1="303.05" x2="455.22" y2="410.44"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="124.91" cy="313.01" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="124.91" cy="364.73" r="4.72"/>
+            <line class="bcg-landing-3" x1="124.91" y1="317.73" x2="124.91" y2="357.83"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3"  cx="140.69" cy="296.51" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="140.69" cy="348.23" r="4.72"/>
+            <line class="bcg-landing-3" x1="140.69" y1="301.23" x2="140.69" y2="341.33"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="544.32" cy="361.69" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="596.04" cy="361.69" r="4.72"/>
+            <line class="bcg-landing-3" x1="549.04" y1="361.69" x2="589.14" y2="361.69"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="527.82" cy="345.91" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="579.54" cy="345.91" r="4.72"/>
+            <line class="bcg-landing-3" x1="532.54" y1="345.91" x2="572.64" y2="345.91"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="544.32" cy="321.71" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="596.04" cy="321.71" r="4.72"/>
+            <line class="bcg-landing-3" x1="549.04" y1="321.71" x2="589.14" y2="321.71"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="527.82" cy="305.93" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="579.54" cy="305.93" r="4.72"/>
+            <line class="bcg-landing-3" x1="532.54" y1="305.93" x2="572.64" y2="305.93"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="1178.27" cy="118.3" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="1178.27" cy="170.02" r="4.72"/>
+            <line class="bcg-landing-3" x1="1178.27" y1="123.02" x2="1178.27" y2="163.12"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="1194.05" cy="101.8" r="4.72"/>
+            <circle data-start="150" data-duration="30" class="bcg-landing-3" cx="1194.05" cy="153.52" r="4.72"/>
+            <line class="bcg-landing-3" x1="1194.05" y1="106.52" x2="1194.05" y2="146.62"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="158.16" cy="317.35" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="158.16" cy="477.76" r="4.72"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="158.16" y1="322.07" x2="158.16" y2="470.86"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="173.94" cy="300.85" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="173.94" cy="461.26" r="4.72"/>
+            <circle data-start="100" data-duration="30" class="bcg-landing-3" cx="1257.55" cy="111.6" r="4.72"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="173.94" y1="305.57" x2="173.94" y2="454.36"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="472.55 194.93 449.7 172.07 449.7 102.25 390.98 102.25"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="485.55 187.94 462.48 164.87 462.48 84.19"/>
+            <polyline class="bcg-landing-3" points="456.55 260.94 511.52 260.94 511.52 197.44"/>
+            <line data-start="0" data-duration="200" class="bcg-landing-3" x1="474.01" y1="271.94" x2="474.01" y2="482.52"/>
+            <line data-start="0" data-duration="200" class="bcg-landing-3" x1="485.55" y1="283.44" x2="485.55" y2="496.55"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="200.16" y1="283.44" x2="200.16" y2="419.68"/>
+            <polyline class="bcg-landing-3" points="219.05 283.44 219.05 317.9 305.11 403.96"/>
+            <polyline class="bcg-landing-3" points="234.99 274.63 234.99 313.82 258.05 313.82 258.05 248.4"/>
+            <line class="bcg-landing-3" x1="550.54" y1="274.63" x2="594.55" y2="274.63"/>
+            <line class="bcg-landing-3" x1="582.55" y1="239.5" x2="548.05" y2="239.5"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="600.55 197.44 600.55 144.49 578.26 122.2 578.26 74.5"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="611.05 189.69 611.05 133.19 591.13 113.27 591.13 57.51"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="625.55 187.94 625.55 124.44 608.32 107.2 608.32 83.94"/>
+            <polyline class="bcg-landing-3" points="665.55 207.94 691.55 207.94 691.55 151.22"/>
+            <polyline class="bcg-landing-3" points="648.05 190.66 675.05 190.66 675.05 162.17"/>
+            <polyline class="bcg-landing-3" points="625.55 280.11 625.55 234.66 645.05 234.66 645.05 197.44"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="652.55 277.15 652.55 343.7 703.93 343.7"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="625.55 284.44 625.55 369.32 665.55 369.32"/>
+            <line class="bcg-landing-3" x1="638.3" y1="284.44" x2="638.3" y2="343.44"/>
+            <line class="bcg-landing-3" x1="625.55" y1="190.66" x2="625.55" y2="237.04"/>
+            <polyline class="bcg-landing-3" points="545.05 189.69 576.05 189.69 576.05 146.05"/>
+            <polyline class="bcg-landing-3" points="545.05 176.16 560.55 176.16 560.55 146.05"/>
+            <line class="bcg-landing-3" x1="754.72" y1="187.94" x2="754.72" y2="141.33"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="766.72 189.69 766.72 115 795.23 86.49 795.23 40.11"/>
+            <rect class="bcg-landing-3   " x="780.97" y="119.72" width="16.54" height="36.5"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="784.05 194.93 784.05 171.44 816.23 171.44 816.23 135.94"/>
+            <line class="bcg-landing-3" x1="741.38" y1="192.66" x2="741.38" y2="280.11"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="760.08 242.01 760.08 283.44 760.08 391.09 828.72 391.09"/>
+            <line class="bcg-landing-3" x1="661.55" y1="271.94" x2="686.83" y2="271.94"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="713.37 221.77 713.37 114.9 680.45 81.98 680.45 11.44"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="728.05 199.76 728.05 102 698.54 72.48 698.54 43.44"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="356.71 290.04 356.71 360.01 372.55 360.01"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="339.86 284.99 339.86 346.7 339.86 372.45 376.96 409.56"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="861.38" y1="274.63" x2="861.38" y2="417.09"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="876.72" y1="281.99" x2="876.72" y2="445.69"/>
+            <line class="bcg-landing-3" x1="844.05" y1="253.66" x2="806.87" y2="253.66"/>
+            <line class="bcg-landing-3" x1="936.05" y1="229.19" x2="893.63" y2="229.19"/>
+            <line class="bcg-landing-3" x1="942.05" y1="242.01" x2="875.38" y2="242.01"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="773.38 281.99 773.38 365.82 820.95 365.82"/>
+            <line data-start="0" data-duration="200" class="bcg-landing-3   " x1="850.05" y1="218.34" x2="850.05" y2="115"/>
+            <polyline class="bcg-landing-3" points="861.38 202.5 861.38 160.66 896.44 160.66"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3   " points="927.38 207.94 927.38 138.66 899.21 110.48 899.21 70.03"/>
+            <polyline class="bcg-landing-3" points="913.3 276.66 913.3 318.54 954.35 359.59"/>
+            <polyline class="bcg-landing-3" points="927.38 261.97 927.38 305.36 960.41 338.38"/>
+            <polyline class="bcg-landing-3" points="940.72 244.13 940.72 294.94 970.74 324.97"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="244.55 112.44 274.29 82.7 274.29 34"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="988.72 202.5 988.72 149 939.55 99.83 939.55 43.44"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="969.85 225.22 969.85 156.22 938.75 125.13"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="1010.72 188.19 1010.72 137.97 963.49 90.75 963.49 43.44"/>
+            <polyline class="bcg-landing-3" points="1021.91 236.38 1021.91 277.15 1037.38 280.11 1037.38 238.77"/>
+            <line class="bcg-landing-3" x1="1004.72" y1="283.44" x2="1004.72" y2="352.11"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="1018.72 284.55 1018.72 348.16 1086.43 415.87"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="1035.86 288.16 1035.86 341.41 1109.01 414.57"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="1052.99 202.5 1052.99 144.49 1084.63 112.86 1084.63 77.33"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="1041.32" y1="183.22" x2="1041.32" y2="106.97"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="1136.05" y1="199.76" x2="1136.05" y2="126.47"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="1150.55" y1="190.66" x2="1150.55" y2="102.25"/>
+            <polyline class="bcg-landing-3" points="1115.55 202.5 1084.63 202.5 1084.63 160.66"/>
+            <line class="bcg-landing-3" x1="1110.54" y1="215.94" x2="1068.81" y2="215.94"/>
+            <polyline class="bcg-landing-3" points="1150.55 194.93 1150.55 239.5 1183.55 239.5"/>
+            <polyline class="bcg-landing-3" points="1154.06 283.44 1154.06 350.9 1110.54 350.9"/>
+            <polyline class="bcg-landing-3" points="1138.05 281.99 1138.05 316.22 1071.05 316.22"/>
+            <polyline class="bcg-landing-3" points="1121.05 271.94 1121.05 295.94 1084.63 295.94"/>
+            <polyline class="bcg-landing-3" points="1197.55 258.25 1254.05 258.25 1254.05 269.44 1187.55 269.44 1187.55 280.11 1259.55 280.11"/>
+
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="1255.55 202.5 1234.05 202.5 1234.05 136.22"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="1255.55 218.34 1219.05 218.34 1219.05 156.22"/>
+            <polyline class="bcg-landing-3" points="1257.55 236.38 1293.49 236.38 1293.49 271.94 1259.55 271.94"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="1297.05 236.38 1313.55 236.38 1338.55 236.38 1356.19 254.02 1392.55 254.02"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="1310.5 234.99 1337.55 207.94 1386.55 207.94"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="1338.55" y1="236.38" x2="1413.55" y2="236.38"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="1257.55 253.66 1275.52 253.66 1275.52 189.69"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="1293.49 236.38 1293.49 199.76 1293.49 179.58 1319.45 153.62 1319.45 102"/>
+            <polyline class="bcg-landing-3" points="1294.18 200.45 1319.45 175.17 1337.48 157.15 1337.48 92.56"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="1257.55 284.55 1257.55 359.22 1173.55 359.22 1173.55 284.55"/>
+            <path class="bcg-landing-3" d="M1284.13,334.65"/>
+            <polyline data-start="0" data-duration="200" class="bcg-landing-3" points="177.11 277.15 93.61 277.15 63.59 247.13 13.05 247.13"/>
+            <line data-start="5" data-duration="100" class="bcg-landing-3" x1="1257.55" y1="190.66" x2="1257.55" y2="116.61"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="351.33 171.44 351.33 134.01 317.03 99.73"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="339.86 171.44 339.86 137.97 301.61 99.73"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="361.71 171.44 361.71 128.44 333 99.73"/>
+            <polyline class="bcg-landing-3" points="283.8 229.19 262.77 229.19 262.77 198.47"/>
+            <polyline data-start="5" data-duration="100" class="bcg-landing-3" points="348.33 285.94 348.33 363.25 377.19 392.1"/>
+            <line class="bcg-landing-3" x1="324.37" y1="316.99" x2="324.37" y2="356.97"/>
+            <line class="bcg-landing-3" x1="299.18" y1="305.93" x2="299.18" y2="370.54"/>
+            <line class="bcg-landing-3" x1="311.65" y1="308.29" x2="311.65" y2="385.47"/>
+            <line class="bcg-landing-3" x1="397.05" y1="300.54" x2="413.37" y2="316.86"/>
+            <line class="bcg-landing-3" x1="386.94" y1="310.51" x2="403.38" y2="326.95"/>
+            <line class="bcg-landing-3" x1="377.94" y1="322.96" x2="392.06" y2="337.07"/>
+            <polyline class="bcg-landing-3" points="290.72 221.67 275.55 221.67 275.55 188.19"/>
+            <polyline class="bcg-landing-3" points="283.8 244.13 269.57 244.13 269.57 283.44"/>
+            <polyline class="bcg-landing-3" points="406.01 232.57 431.77 232.57 431.77 174.74"/>
+            <polyline class="bcg-landing-3" points="401.86 221.77 420.19 221.77 420.19 189.69"/>
+            <polyline class="bcg-landing-3" points="409.74 242.01 436.64 242.01 436.64 288.16"/>
+            <polyline class="bcg-landing-3" points="407.86 249.44 423.64 249.44 423.64 277.15"/>
+            <line class="bcg-landing-3" x1="371.57" y1="191.24" x2="388.6" y2="174.21"/>
+            <line class="bcg-landing-3" x1="383.59" y1="202.76" x2="400.62" y2="185.73"/>
+        </g>
+        <g id="Warstwa_3" data-name="Warstwa 3">
+            <path class="bcg-landing-4" d="M245.39,261.37a9.43,9.43,0,0,0-6.44,2.45h0a37.44,37.44,0,1,1-.33-53.55,9.72,9.72,0,0,0,6.78,2.92,9.38,9.38,0,0,0,6.56-16.07h0a56.15,56.15,0,1,0-1,81.17,10,10,0,0,0,3.85-7.55A9.36,9.36,0,0,0,245.39,261.37Z"/>
+            <path class="bcg-landing-4" d="M760.08,181a56.15,56.15,0,1,0,56.15,56.15A56.15,56.15,0,0,0,760.08,181Zm0,93.58a37.43,37.43,0,1,1,37.43-37.43A37.43,37.43,0,0,1,760.08,274.63Z"/>
+            <circle class="bcg-landing-4" cx="806.87" cy="302.54" r="9.36"/>
+            <path class="bcg-landing-4" d="M545.45,161.71a9.48,9.48,0,0,0-9.5,9.36v24.28a56.15,56.15,0,1,0,0,83.69v4.79a9.5,9.5,0,0,0,19,0V171.06A9.48,9.48,0,0,0,545.45,161.71ZM498.06,274.63a37.43,37.43,0,1,1,37.43-37.43A37.43,37.43,0,0,1,498.06,274.63Z"/>
+            <path class="bcg-landing-4" d="M685.22,236.89A56.15,56.15,0,1,0,668,277.7a9.35,9.35,0,1,0-12.35-14l-.06-.06a37.49,37.49,0,1,1-26.47-64.08,37.91,37.91,0,0,1,36.21,27.74H620.08a9.63,9.63,0,0,0-9.61,7.92,9.42,9.42,0,0,0,9.24,10.92h56.11a9.26,9.26,0,0,0,9.4-9.06C685.22,237,685.22,237,685.22,236.89Z"/>
+            <path class="bcg-landing-4" d="M1077.95,236.18c0-31-25.05-55-56-55a56.09,56.09,0,1,0,39,96.52,10.12,10.12,0,0,0,3.71-7.45,9.44,9.44,0,0,0-16.1-6.6h0a37.32,37.32,0,1,1-26.47-63.52c17.39,0,32,12.3,36.21,28.3h-45.57a9.5,9.5,0,0,0,0,19h56.15c5.17,0,9-5.71,9-10.15Z"/>
+            <path class="bcg-landing-4" d="M930.72,197.41l0,0a9.35,9.35,0,0,0-12.78,13.65,37.43,37.43,0,1,1-53.63,0,9.35,9.35,0,0,0-12.78-13.65l0,0a56.15,56.15,0,1,0,79.25,0Z"/>
+            <path class="bcg-landing-4" d="M1295.07,227.81a9.36,9.36,0,1,0,7.64,7.64A9.37,9.37,0,0,0,1295.07,227.81Z"/>
+            <path class="bcg-landing-4" d="M1256.95,180.89a9.06,9.06,0,0,0-9,9.36v38.19h-10.6a9.5,9.5,0,0,0,0,19h10.6v36.39a9,9,0,1,0,18,0V190.25A9.06,9.06,0,0,0,1256.95,180.89Z"/>
+            <path class="bcg-landing-4" d="M1134.4,237.94a9.48,9.48,0,0,0-9.36-9.5h-8.13c4.21-16,18.82-28.3,36.21-28.3a37.13,37.13,0,0,1,26,10.32,9.24,9.24,0,0,0,6.77,2.81,9.4,9.4,0,0,0,6.77-15.88l0,0a56,56,0,0,0-39.54-16.3c-30.94,0-55.18,24.09-56.14,55,0,.28,0,.92,0,1.53-.08,5.17,4.18,9.87,9.35,9.87H1125A9.48,9.48,0,0,0,1134.4,237.94Z"/>
+            <circle class="bcg-landing-4" cx="1154.06" cy="237.04" r="9.36"/>
+            <path class="bcg-landing-4" d="M1209.95,236.85c0-5.17-4.87-8.42-10-8.42h-18.72a9.5,9.5,0,0,0,0,19h8.21a37.24,37.24,0,0,1-36.29,27.71,37.61,37.61,0,0,1-26.69-11.29h0a9.45,9.45,0,0,0-6.54-2.81,9.3,9.3,0,0,0-9.36,9.29,9.85,9.85,0,0,0,3.7,7.41,56.77,56.77,0,0,0,39.22,15.62c31,0,56.49-25.16,56.49-56.17Z"/>
+            <path class="bcg-landing-4"  d="M404.48,218.32a18.82,18.82,0,0,0-3.16.27,56.3,56.3,0,0,0-34.56-34.45,18.72,18.72,0,1,0-36.86,0,56.3,56.3,0,0,0-34.56,34.45,18.72,18.72,0,1,0-.1,36.91,56.22,56.22,0,0,0,16.14,24l-16.46,16.46a9.36,9.36,0,0,0,0,13.23l18.72,18.72a9.36,9.36,0,0,0,13.23-13.23l-12.1-12.1s12.69-12.75,13-13.1a56.36,56.36,0,0,0,41.2,0c.26.35,13,13.1,13,13.1l-12.1,12.1A9.36,9.36,0,1,0,383,327.88l18.72-18.72a9.36,9.36,0,0,0,0-13.23l-16.46-16.46a56.22,56.22,0,0,0,16.14-24,18.72,18.72,0,1,0,3.06-37.18Zm-56.15,56.3a37.43,37.43,0,1,1,37.43-37.43A37.43,37.43,0,0,1,348.33,274.63Z">
+        </g>
+        <svg id="long-lines-svg">
+            <defs>
+                <style>
+                    .hidden {display: none;}
+                </style>
+            </defs>
+            <g class="bcg-landing-1">
+                <g class="bcg-landing-2">
+                    <circle data-ignore="true" data-start="0" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1313.76" cy="275.77" r="4.72"/>
+                    <circle data-ignore="true" data-start="100" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1313.76" cy="841.29" r="4.72"/>
+                    <circle data-ignore="true" data-start="0" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1329.54" cy="259.27" r="4.72"/>
+                    <circle data-ignore="true" data-start="100" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1329.54" cy="824.79" r="4.72"/>
+                    <circle data-ignore="true" data-start="150" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1370.65" cy="795.69" r="4.72"/>
+                    <circle data-ignore="true" data-start="180" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1365.93" cy="974.52" r="4.72"/>
+                    <circle data-ignore="true" data-start="100" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1257.55" cy="624.29" r="4.72"/>
+                    <circle data-ignore="true" data-start="220" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1345.15" cy="1010.91" r="4.72"/>
+                    <line data-ignore="true" data-start="0" data-duration="80" class="bcg-landing-3 scroll-animate hidden" x1="1257.55" y1="360.61" x2="1257.55" y2="618.19"/>
+                    <line data-ignore="true" data-start="0" data-duration="80" class="bcg-landing-3 scroll-animate hidden" x1="1313.76" y1="280.49" x2="1313.76" y2="834.4"/>
+                    <line data-ignore="true" data-start="0" data-duration="80" class="bcg-landing-3 scroll-animate hidden" x1="1329.54" y1="263.99" x2="1329.54" y2="817.9"/>
+                    <line data-ignore="true" data-start="120" data-duration="30" class="bcg-landing-3 scroll-animate hidden" x1="1329.71" y1="753.19" x2="1367.18" y2="790.66"/>
+                    <polyline data-ignore="true" data-start="120" data-duration="60" class="bcg-landing-3 scroll-animate hidden" points="1329.71 779.19 1365.93 815.41 1365.93 967.19"/>
+                    <polyline data-ignore="true" data-start="180" data-duration="30" class="bcg-landing-3 scroll-animate hidden" points="1365.98 883.35 1344.93 904.24 1344.93 1006.19"/>
+                </g>
+            </g>
+        </svg>
+</svg>

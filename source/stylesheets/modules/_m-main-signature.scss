@@ -3,61 +3,51 @@
 .m-main-signature {
   color: $white;
   font-family: 'Courier New';
-  font-size: 26px;
+  font-size: 17px;
+  margin: 0 auto;
+  max-width: 300px;
 
   .underlined-words {
-    display: block;
+    display: inline-block;
     position: relative;
   }
 
   .line-wrapper {
-    display: none;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 77%;
+    width: 100%;
+    z-index: 200;
+  }
+
+  .st-line {
+    @include stroke($light-gray, $linecap: round, $linejoin: round);
+    fill: none;
   }
 }
 
 @media #{$only-mobile-large} {
   .m-main-signature {
-    font-size: 5.3vw;
-  }
-}
-
-@media #{$mobile-landscape} {
-  .m-main-signature {
-    font-size: 4.3vw;
+    font-size: 24px;
+    line-height: 34px;
+    max-width: 400px;
   }
 }
 
 @media #{$breakpoint-tablet} {
   .m-main-signature {
-    font-size: 2.45vw;
+    font-size: 25px;
+    max-width: 100%;
 
-    .underlined-words {
-      display: inline-block;
+    .break-text {
+      display: none;
     }
+  }
+}
 
-    .line-wrapper {
-      display: block;
-      height: 100%;
-      position: absolute;
-      top: 77%;
-      width: 100%;
-
-      @include keyframes(dash) {
-        to {
-          stroke-dashoffset: 0;
-        }
-      }
-    }
-
-    .is-underlined {
-      @include animation(dash 1s cubic-bezier(.60, .25, .25, .9) forwards);
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 1000;
-    }
-
-    .st-line {
-      @include stroke($light-gray, $linecap: round, $linejoin: round);
-      fill: none;
-    }
+@media #{$breakpoint-desktop} {
+  .m-main-signature {
+    font-size: 34px;
   }
 }

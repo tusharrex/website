@@ -1,0 +1,11 @@
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+     x="0px" y="0px" width="21.4px" height="37.2px" viewBox="0 0 21.4 37.2" style="enable-background:new 0 0 21.4 37.2;"
+     xml:space="preserve">
+<style type="text/css">
+    .arrow-left-0{fill:none;stroke:#3F4C6C;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<defs>
+</defs>
+<polyline class="arrow-left-0" points="19.4,2 2.8,18.8 19.4,35.2 "/>
+</svg>

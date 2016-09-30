@@ -1,5 +1,5 @@
 doctype html
-html.full-height-page class=page_classes
+html class=page_classes
   head
     meta charset="utf-8"
     title= title_helper
@@ -15,6 +15,6 @@ html.full-height-page class=page_classes
     = stylesheet_link_tag 'normalize', 'application'
     = javascript_include_tag 'application'
 
-  body.full-height-page.landing-page class=page_classes
+  body.landing-page class=page_classes
     = partial 'partials/menu'
     = yield
