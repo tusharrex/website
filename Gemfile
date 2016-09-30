@@ -15,4 +15,6 @@ group :development do
   gem 'capybara'
   gem 'middleman-pry'
   gem 'scss_lint', require: false
+  gem 'coffeelint', require: false
+  gem 'slim_lint', require: false
 end
