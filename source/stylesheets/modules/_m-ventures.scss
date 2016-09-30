@@ -1,5 +1,13 @@
 .m-ventures {
+  background: linear-gradient(-10deg, $indian-yellow 64%, $light-gray 36%);
+  height: 100%;
   &.m-content-padding {
     padding-bottom: 0;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-ventures {
+    background: linear-gradient(-3deg, $indian-yellow 64%, $light-gray 36%);
   }
 }

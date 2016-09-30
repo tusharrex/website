@@ -40,6 +40,19 @@
   }
 }
 
+.m-osx-bottom {
+  background: #dedee0;
+  border-bottom: 1px solid #dedee0;
+  border-top: 1px solid #dedee0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: default;
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+}
+
 @media #{$only-mobile-large} {
   .m-osx-window {
     height: 20px;
@@ -67,5 +80,8 @@
       height: 11px;
       width: 11px;
     }
+  }
+  .m-osx-bottom {
+    height: 25px;
   }
 }

@@ -1,136 +1,108 @@
 .m-codebeat {
-  .column-left,
-  .column-right {
-    @include flex-flow(column, wrap);
-    align-items: center;
-  }
-
-  .codebeat-logo {
-    background: url('/images/ventures/codebeat_logo.svg') no-repeat;
-    background-size: contain;
-    height: 68px;
-    width: 272.6px;
-  }
+  margin: 0 auto;
+  width: 100%;
 
   .codebeat-slogan {
-    color: $docker-blue;
+    color: $martinique-dark;
+    display: block;
     font-family: $alega;
-    @include font(18px, 20px);
-    padding-bottom: 26px;
+    @include font(30px, 36px);
+    margin-bottom: 20px;
     text-align: center;
-    width: 90%;
+    width: 95%;
   }
 
-  .codebeat-description {
-    color: $martinique-dark;
-    font-family: $courier;
-    @include font(16px, 22px);
-    font-weight: 700;
-    padding-left: 2px;
-    text-align: center;
+  .codebeat-views {
+    display: block;
+    height: 392px;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
   }
 
   .codebeat-dashboard {
-    background: url('/images/ventures/codebeat_dashboard.png') no-repeat;
-    background-position: 0 15px;
-    background-size: cover;
-    height: 300px;
-    margin-top: 40px;
-    max-height: 819px;
-    max-width: 630px;
-    width: 100%;
+    display: none;
+  }
+
+  .btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 20px 5px;
   }
 }
 
-@media #{$only-mobile-large} {
+@media #{$breakpoint-tablet} {
   .m-codebeat {
     .codebeat-dashboard {
-      background-position: 0 20px;
+      display: block;
+      background: url('/images/ventures/codebeat_dashboard.png') no-repeat;
+      background-position: 0 15px;
+      background-size: cover;
+      height: 250px;
+      max-height: 408px;
+      max-width: 315px;
+      position: absolute;
+      top: 10%;
+      width: 100%;
+    }
+
+    .codebeat-views {
+      .codebeat-dashboard:first-child {
+        left: 1%;
+      }
+      .codebeat-dashboard:nth-child(2) {
+        background: url('/images/ventures/codebeat_landing.png') no-repeat;
+        background-position: 0 15px;
+        background-size: 100%;
+        height: 328px;
+        margin: 0 auto;
+        max-width: 400px;
+        position: relative;
+        top: 0%;
+        z-index: 1;
+      }
+      .codebeat-dashboard:last-child {
+        right: 1%;
+      }
+    }
+
+    .codebeat-slogan {
+      margin: 20px auto;
+      width: 50%;
     }
   }
 }
 
 @media #{$breakpoint-desktop} {
   .m-codebeat {
+    margin: 80px auto;
 
-    .codebeat-logo {
-      max-width: 410px;
-      width: 88%;
-    }
+    .codebeat-views {
+      height: 635px;
 
-    .codebeat-slogan {
-      @include font(26px, 26px);
-      padding-top: 42px;
-    }
-  
-    .codebeat-description {
-      @include font(20px, 29px);
-      letter-spacing: .5px;
-      padding-left: 0;
-      text-indent: 23px;
-      width: 88%;
-      
-      &:first-of-type {
-        padding-top: 20px;
+      .codebeat-dashboard {
+        background-position: 0 27px;
+        height: 444px;
+        max-height: 816px;
+        max-width: 630px;
       }
-    }
 
-    .codebeat-dashboard {
-      background-position: 0 27px;
-    }
-  }
-}
-
-@media #{$breakpoint-desktop-larger} {
-  .m-codebeat {
-    @include flex-flow(row, wrap);
-
-    .column-left,
-    .column-right {
-      align-items: flex-start;
-      width: 50%;
-    }
-
-    .column-left {
-      padding-bottom: 100px;
-    }
-
-    .codebeat-logo {
-      max-width: 410px;
-      width: 88%;
-
-      &:hover {
-        @include filter(brightness(92%));
+      .codebeat-dashboard:nth-child(2) {
+        background-position: 0 27px;
+        height: 580px;
+        max-width: 756px;
       }
     }
 
     .codebeat-slogan {
-      text-align: initial;
+      @include font(36px, 46px);
+      margin: 30px auto;
+      width: 35%;
     }
 
-    .codebeat-description {
-      text-align: left;
-      text-indent: 23px;
-
-      text-align: justify;
-
-      &:first-of-type {
-        padding-top: 20px;
-      }
-    }
-
-    .codebeat-dashboard {
-      background-position: 0 27px;
-      flex: 1;
-      margin: 0;
+    .m-paragraph {
+      margin: 40px auto;
+      width: 70%;
     }
   }
 }
-
-@media #{$breakpoint-desktop-larger} {
-  .m-codebeat {
-    .codebeat-description {
-      text-align: justify;
-    }
-  }
-} 
