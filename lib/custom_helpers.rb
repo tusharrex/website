@@ -10,7 +10,7 @@ module CustomHelpers
   ]
 
   def title_helper
-    return data.page.title if data.page.title && !blog?
+    return data.page.title if data.page.title && !containing_blog_posts?
     'code quest is a Ruby on Rails and iOS development studio.'
   end
 
@@ -24,8 +24,8 @@ module CustomHelpers
     [root_url, path].flatten.join('/')
   end
 
-  def blog?
-    current_page.path == 'blog.html'
+  def containing_blog_posts?
+    current_page.path.in? ['blog.html', 'index.html']
   end
 
   def render_fb_tags_partial

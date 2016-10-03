@@ -72,10 +72,6 @@ h1 {
       height: 355px;
     }
 
-    &.big-logo {
-      padding: 36px 10px 104px;
-    }
-
     .cq-logo-wrapper {
       bottom: -105%;
       display: block;
@@ -101,7 +97,7 @@ h1 {
 @media #{$breakpoint-desktop} {
   .l-landing-page {
     &.big-logo {
-      height: 460px;
+      height: 400px;
     }
 
     &.lower-part {
@@ -109,7 +105,7 @@ h1 {
     }
 
     .cq-logo-wrapper {
-      bottom: -100%;
+      bottom: -115%;
       max-width: 950px;
     }
 
@@ -122,7 +118,7 @@ h1 {
 @media #{$breakpoint-desktop-large} {
   .l-landing-page {
     .cq-logo-wrapper {
-      bottom: -126.5%;
+      bottom: -145.3%;
       max-width: 1200px;
     }
   }
