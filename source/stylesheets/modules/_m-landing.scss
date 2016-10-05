@@ -2,7 +2,7 @@
   .description {
     font-family: 'Courier New';
     font-size: 16px;
-    margin-top: 7px;
+    margin: 30px auto 40px;
     text-align: center;
 
     &.m-blog {
@@ -25,7 +25,6 @@
     max-width: 80vw;
     position: relative;
     text-align: center;
-    top: -17px;
 
     &.m-blog {
       padding-top: 35px;
@@ -42,15 +41,13 @@
 
   .subtitle {
     font-size: 35px;
-    margin: 0 auto;
-    position: relative;
     text-align: center;
     top: 80px;
   }
 
   .button-center {
     display: block;
-    margin: 130px auto 80px auto;
+    margin: 0px auto 80px auto;
   }
 
   .love-passion-code-img {
@@ -87,7 +84,7 @@
     .description {
       font-size: 18px;
       line-height: 26px;
-      margin: 30px auto 0;
+      margin: 30px auto 40px;
       max-width: 60vw;
 
       &.m-blog {
@@ -101,7 +98,6 @@
 
     .title {
       font-size: 37px;
-      top: 7px;
       max-width: 80vw;
 
       &.m-team-section {
@@ -123,7 +119,7 @@
     .description {
       font-size: 22px;
       line-height: 32px;
-      margin: 100px auto 126px;
+      margin: 50px auto 60px;
       max-width: 64%;
 
       &.m-blog {
@@ -139,11 +135,10 @@
 
     .title {
       font-size: 70px;
-      top: 54px;
       line-height: 80px;
 
       &.m-team-section {
-        margin-top: 150px;
+        margin-top: 110px;
       }
     }
 

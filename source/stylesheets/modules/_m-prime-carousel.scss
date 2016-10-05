@@ -1,7 +1,7 @@
 // scss-lint:disable all
 
 .m-prime-carousel {
-  margin-top: 45px;
+  margin: 45px 0 80px;
 
   // Overwrite owl-carousel styles
   .owl-theme {
@@ -28,16 +28,17 @@
         position: absolute;
         top: -4px;
         opacity: 1;
+        width: 80px;
       }
 
       .owl-buttons .owl-prev {
         background: url('./icons-svg/arrow_left.svg') 50% 50% no-repeat;
-        left: -49px;
+        left: -5px;
       }
 
       .owl-buttons .owl-next {
         background: url('./icons-svg/arrow_right.svg') 50% 50% no-repeat;
-        right: -49px;
+        right: -5px;
       }
     }
 
@@ -62,18 +63,11 @@
 
 @media #{$breakpoint-tablet} {
   .m-prime-carousel {
-    margin-top: 55px;
 
     .m-grid-element:last-child:nth-child(odd) {
       height: auto;
       width: auto;
     }
-  }
-}
-
-@media #{$breakpoint-desktop} {
-  .m-prime-carousel {
-    margin-top: 80px;
   }
 }
 

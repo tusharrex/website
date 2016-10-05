@@ -1,4 +1,10 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.4px" height="37.2px" viewBox="0 0 21.4 37.2" style="enable-background:new 0 0 21.4 37.2;" xml:space="preserve">
- <style type="text/css">.arrow-right-0 {fill:none;stroke:#3F4C6C;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}</style>
- <polyline class="arrow-right-0" points="2,35.2 18.6,18.3 2,2"/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.arrow-right-0{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.arrow-right-1{opacity:0.2;fill:#FFFFFF;}
+</style>
+<polyline class="arrow-right-0" points="31,56.2 47.6,39.3 31,23 "/>
+<rect class="arrow-right-1" width="80" height="80"/>
 </svg>
