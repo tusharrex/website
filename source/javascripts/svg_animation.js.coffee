@@ -1,12 +1,15 @@
 $ ->
 
   animateSvg = (el, duration) ->
-    myVivus = new Vivus(el, {
-      type: 'scenario',
-      duration: duration,
-    })
+    try
+      myVivus = new Vivus(el, {
+        type: 'scenario',
+        duration: duration,
+      })
 
-    myVivus.play(2)
+      myVivus.play(2)
+    catch e
+      console.log("Animation failed")
 
   animateLongLines = ->
     svgEl = $('.scroll-animate')
@@ -16,6 +19,7 @@ $ ->
     })
     animateSvg('long-lines-svg', 50)
 
+  # TODO(anyone) Do not run landing animation not on landing page
   animateSvg('landing-svg', 200)
   animateSvg('line-svg', 70)
 
