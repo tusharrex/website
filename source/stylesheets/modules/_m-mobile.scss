@@ -1,13 +1,13 @@
 .m-mobile {
   background-color: $white;
-  border: 2px solid $darker-gray;
-  border-radius: 15px;
+  border: 3px solid $darker-gray;
+  border-radius: 20px;
   box-shadow: -10px 10px 0 0px $black-transparent;
   height: 300px;
   margin: auto;
   position: relative;
   transform: rotate(-18deg);
-  width: 150px;
+  width: 155px;
 
   .dot {
     background: $santas-gray;
@@ -15,35 +15,35 @@
     position: absolute;
 
     &.m-small {
-      height: 3px;
+      height: 5px;
       left: 49%;
       top: 2%;
-      width: 3px;
+      width: 5px;
     }
 
     &.m-medium {
-      height: 4px;
-      left: 36%;
+      height: 6px;
+      left: 33%;
       top: 5%;
-      width: 4px;
+      width: 6px;
     }
   }
 
   .line {
-    background: $santas-gray;
-    border-radius: 3px;
-    height: 1px;
+    background: #9fa4b7;
+    border-radius: 6px;
+    height: 3px;
     left: 43%;
     position: absolute;
-    top: 5%;
+    top: 5.7%;
     width: 16%;
   }
 
   .window {
     background: url('/images/ventures/codebeat_mobile.png') no-repeat;
     background-size: cover;
-    border: 1px solid $santas-gray;
-    border-radius: 1px;
+    border: 2px solid $santas-gray;
+    border-radius: 3px;
     height: 79%;
     left: 5%;
     position: absolute;
@@ -65,13 +65,14 @@
 
 @media #{$breakpoint-tablet} {
   .m-mobile {
+    border: 2px solid $darker-gray;
     box-shadow: none;
     height: 245px;
     position: absolute;
     right: 20%;
     top: 27%;
     transform: none;
-    width: 110px;
+    width: 120px;
     z-index: 2;
 
     .button {
@@ -79,6 +80,23 @@
       height: 18px;
       left: 42%;
       width: 18px;
+    }
+
+    .dot {
+      &.m-small {
+        height: 3px;
+        width: 3px;
+      }
+
+      &.m-medium {
+        height: 4px;
+        width: 4px;
+      }
+    }
+
+    .line {
+      height: 2px;
+      top: 5.5%;
     }
   }
 }
@@ -90,12 +108,29 @@
     left: 70%;
     top: 180px;
     width: 210px;
+    border: 3px solid $darker-gray;
 
     .button {
       bottom: 2%;
       height: 28px;
       left: 44%;
       width: 28px;
+    }
+
+    .dot {
+      &.m-small {
+        height: 5px;
+        width: 5px;
+      }
+
+      &.m-medium {
+        height: 7px;
+        width: 7px;
+      }
+    }
+
+    .line {
+      height: 3px;
     }
   }
 }
