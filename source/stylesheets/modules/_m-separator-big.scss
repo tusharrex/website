@@ -18,6 +18,17 @@
     }
   }
 
+  &.separator-opposite-ventures {
+    border-width: 0 0 22px 100vw;
+    border-color: transparent transparent $indian-yellow transparent;
+    margin-top: -300px;
+
+    @media screen and (min-width: 950px) {
+      border-top-width: 50px;
+      margin-top: -500px;
+    }
+  }
+
   &.separator-light-gray {
     border-width: 0 0 22px 100vw;
     border-color: transparent transparent $light-gray transparent;
