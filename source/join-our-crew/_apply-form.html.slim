@@ -25,11 +25,11 @@
           placeholder='Share with us a story of your life or\
 link to your GitHub profile...')
         label.from-textarea.color-white Add Your CV
-        .upload-area
-          .btn.viridian-green-dark(
+        .upload-area.m-grid-collection
+          .btn.viridian-green-dark.job-offers-btn(
             data-js='upload-trigger')
             = button_content('Upload CV')
-          p.upload(data-js='upload-info') You haven’t uploaded any file yet
+          .upload(data-js='upload-info') You haven’t uploaded any file yet
         input.hidden type= 'file' name= 'cv' data-js='upload'
       fieldset.form-fieldset.relative
         .btn.form-button.red-dark(data-js='submit')

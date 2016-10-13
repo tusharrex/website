@@ -186,7 +186,6 @@
   }
 
   .upload-area {
-    vertical-align: middle;
     background-color: #181b28;
     padding: 7px;
     margin: 15px 0 15px;
@@ -195,14 +194,17 @@
   }
 
   .upload {
-    margin: auto;
-    margin: 10px 10px;
     color: $santas-gray;
+    margin: 15px auto 15px;
     width: 250px;
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .job-offers-btn {
+    width: 100%;
   }
 }
 
@@ -329,10 +331,6 @@
     .title-white {
       font-size: 40px;
     }
-    .upload-area {
-      display: flex;
-      height: 78px;
-    }
 
     .upload {
       margin: auto;
@@ -342,6 +340,10 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+
+    .job-offers-btn {
+      width: 290px;
     }
   }
 }
@@ -506,11 +508,6 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-    }
-
-    .upload-area {
-      display: flex;
-      height: 78px;
     }
   }
 }
