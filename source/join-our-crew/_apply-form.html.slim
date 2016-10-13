@@ -26,13 +26,13 @@
 link to your GitHub profile...')
         label.from-textarea.color-white Add Your CV
         .upload-area
-          .btn.breaker-bay-green.medium.mirage-wave.landing-button(
+          .btn.viridian-green-dark(
             data-js='upload-trigger')
             = button_content('Upload CV')
           p.upload(data-js='upload-info') You haven’t uploaded any file yet
         input.hidden type= 'file' name= 'cv' data-js='upload'
       fieldset.form-fieldset.relative
-        .btn.form-button.damask-red.mirage-blue-wave(data-js='submit')
+        .btn.form-button.red-dark(data-js='submit')
           = button_content('Send')
           input.form-input-hidden(type='submit' value= '')
         input(type='hidden' name='redirect_to'

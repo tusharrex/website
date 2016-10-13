@@ -12,11 +12,7 @@
   height: 50%;
   position: relative;
   overflow: hidden;
-
-  .wave {
-    display: none;
-  }
-} 
+}
 
 .logo-wrapper {
   margin: 0 auto;
@@ -35,7 +31,7 @@
   &.pipes {
     @include size( 138px, 171px);
   }
-  
+
   &.pipes-big {
     display: none;
   }
@@ -68,7 +64,7 @@
 
 .open-source-highlighted-badge {
   display: block;
-} 
+}
 
 .open-source-normal-container {
   display: none;
@@ -91,67 +87,12 @@
   display: none;
 }
 
-.open-source-normal-container {
-  .wave {
-    display: none;
-  }
-}
-
-.no-touchevents {
-  .open-source-highlighted-logo.irregular-btn {
-    .wave {
-      @include size( 300px, 1200px);
-      color: $mercury-gray;
-      display: initial;
-      top: 155px;
-      transition: top 1.6s, left 1.6s;
-    }
-    
-    &:hover {
-      .wave {
-        left: -300px;
-        top: -149px;
-      }
-    }
-
-    &:active {
-      .wave {
-          color: $darker-gray;
-        }
-    }
-      
-  }
-
-  .open-source-normal-container.irregular-btn {
-    .wave {
-      @include size( 300px, 1200px);
-      color: $mercury-gray;
-      display: initial;
-      top: 155px;
-      transition: top 1.6s, left 1.6s;
-    }
-    
-    &:hover {
-      .wave {
-        left: -300px;
-        top: -135px;
-      }
-    }
-
-    &:active {
-      .wave {
-          color: $darker-gray;
-        }
-    }  
-  }
-}
-
 @media #{$breakpoint-tablet} {
   .open-source-normal-wrapper {
     @include flex-flow(row, wrap);
     @include flex-justify-content (space-between);
   }
-  
+
   .open-source-highlighted-container {
     height: 260px;
   }
@@ -161,15 +102,15 @@
   }
 
     .logo-wrapper {
-  
+
       &.octopussy {
         @include size( 150px, 316px);
       }
-  
+
       &.pipes {
         @include size( 142px, 248px);
       }
-  
+
       &.squashme-small {
         display: none;
       }
@@ -224,7 +165,7 @@
   }
 
   .btn {
-  
+
     &.open-source-button {
       margin-top: 20px;
       padding: 15px 15px;
@@ -254,23 +195,23 @@
   .open-source-highlighted-logo {
     height: 50%;
   }
-  
+
   .logo-wrapper {
     margin: 0 auto;
-  
+
     &.octopussy {
       width: 245px;
     }
-  
+
     &.pipes {
       @include size( 158px, 172px);
     }
-  
+
     &.squashme-small {
       @include size( 142px, 206px);
       display: block;
     }
-  
+
     &.squashme-big {
       display: none;
     }
@@ -279,7 +220,7 @@
   .open-source-highlighted-desc {
     border-radius: 0%;
     height: 50%;
-  }   
+  }
 
   .open-source-highlighted-text {
     @include font(20px, 24px);
@@ -302,4 +243,4 @@
     line-height: 22px;
     padding-top: 13px;
   }
-} 
+}

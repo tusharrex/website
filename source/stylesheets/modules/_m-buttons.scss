@@ -1,26 +1,24 @@
 // scss-lint:disable SelectorFormat
 .btn {
-  @include button;
-
-  &.damask-red {
-    @include button($damask-red);
-  }
-
-  &.martinique-dark {
-    @include button($martinique-dark);
-  }
-
-  &.crail-red-wave {
-    @include btn-click($crail-red);
-  }
-
-  &.breaker-bay-green {
-    @include button($breaker-bay-green);
-  }
-
-  &.indian-yellow {
-    @include button($indian-yellow);
-  }
+  cursor: pointer;
+  background-color: none;
+  font-size: 30px;
+  border: 4px solid;
+  color: white;
+  display: inline-block;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: $alega;
+  padding: 15px 5px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 290px;
+  overflow: hidden;
+  background-color: none;
 
   &.small {
     width: 218px;
@@ -33,19 +31,154 @@
   &.initial {
     width: initial;
   }
-}
-.btn {
 
-  @include btn-wave;
+  .text {
+    position: relative;
+  }
 
-    @media #{$breakpoint-tablet} {
+  &.green-dark {
+    color: $breaker-bay-green;
+    border-color: $breaker-bay-green;
 
-      &.breaker-bay-green {
-        @include button($breaker-bay-green);
-      }
-
-      @include btn-wave;
+    &:hover {
+      background-color: $breaker-bay-green;
+      color: $martinique-dark;
     }
+  }
+
+  &.yellow-dark {
+    color: $indian-yellow;
+    border-color: $indian-yellow;
+
+    &:hover {
+      background-color: $indian-yellow;
+      color: $martinique-dark;
+    }
+  }
+
+  &.yellow-gray {
+    color: $indian-yellow;
+    border-color: $indian-yellow;
+
+    &:hover {
+      background-color: $indian-yellow;
+      color: $light-gray;
+    }
+  }
+
+  &.gray-dark {
+    color: $light-gray;
+    border-color: $light-gray;
+
+    &:hover {
+      background-color: $light-gray;
+      color: $martinique-dark;
+    }
+  }
+
+  &.red-gray {
+    color: $valencia-red;
+    border-color: $valencia-red;
+
+    &:hover {
+      background-color: $valencia-red;
+      color: $light-gray;
+    }
+  }
+
+  &.viridian-green-dark {
+    color: $viridian-green;
+    border-color: $viridian-green;
+
+    &:hover {
+      background-color: $viridian-green;
+      color: $martinique-dark;
+    }
+  }
+
+  &.red-dark {
+    color: $damask-red;
+    border-color: $damask-red;
+
+    &:hover {
+      background-color: $damask-red;
+      color: $martinique-dark;
+    }
+  }
+
+  &.dark-yellow {
+    color: $martinique-dark;
+    border-color: $martinique-dark;
+
+    &:hover {
+      background-color: $martinique-dark;
+      color: $indian-yellow;
+    }
+  }
+
+  &.gray-red {
+    color: $light-gray;
+    border-color: $light-gray;
+
+    &:hover {
+      background-color: $light-gray;
+      color: $maroon-red;
+    }
+  }
+
+  &.gray-green {
+    color: $light-gray;
+    border-color: $light-gray;
+
+    &:hover {
+      background-color: $light-gray;
+      color: $deep-sea-green;
+    }
+  }
+
+  &.gray-yellow {
+    color: $light-gray;
+    border-color: $light-gray;
+
+    &:hover {
+      background-color: $light-gray;
+      color: $indian-yellow;
+    }
+  }
+
+  &.gray-bay-green {
+    color: $light-gray;
+    border-color: $light-gray;
+
+    &:hover {
+      background-color: $light-gray;
+      color: $breaker-bay-green;
+    }
+  }
+
+  &.gray-blue {
+    color: $light-gray;
+    border-color: $light-gray;
+
+    &:hover {
+      background-color: $light-gray;
+      color: $aquamarine-blue;
+    }
+  }
+
+  &.dark-gray {
+    color: $martinique-dark;
+    border-color: $martinique-dark;
+
+    &:hover {
+      background-color: $martinique-dark;
+      color: $light-gray;
+    }
+  }
+}
+
+.btn-light-gray:hover {
+  background-color: $light-gray-2;
 }
 
 .link-btn {
@@ -59,8 +192,4 @@
   &.m-font-baskerville-bold {
     font-family: $baskerville-bold;
   }
-}
-
-.irregular-btn {
-  @include button-wave-hover;
 }

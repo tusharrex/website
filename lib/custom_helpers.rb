@@ -39,9 +39,6 @@ module CustomHelpers
 
   def button_content(text, icon = nil)
     content_tag(:div, text, class: 'text') +
-      content_tag(:div, class: 'wave') do
-        partial 'svg/button_wave'
-      end +
       icon_content(icon)
   end
 
