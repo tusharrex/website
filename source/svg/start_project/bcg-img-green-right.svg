@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 405 140.5" style="enable-background:new 0 0 405 140.5;" xml:space="preserve">
+<style type="text/css">
+	.bcg-img-green-right0{fill:none;stroke:#419E86;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<title>bcg-img-green-right</title>
+<g id="Warstwa_2">
+	<g id="Warstwa_11">
+		<line class="bcg-img-green-right0" x1="405" y1="133.5" x2="261.1" y2="133.5"/>
+		<circle class="bcg-img-green-right0" cx="255.2" cy="133.8" r="4.7"/>
+		<circle class="bcg-img-green-right0" cx="138.8" cy="99.2" r="4.7"/>
+		<circle class="bcg-img-green-right0" cx="173.1" cy="6.7" r="4.7"/>
+		<polyline class="bcg-img-green-right0" points="405,99.5 264.9,99.5 176.2,10.8 		"/>
+		<line class="bcg-img-green-right0" x1="143.1" y1="99.5" x2="265.1" y2="99.5"/>
+		<circle class="bcg-img-green-right0" cx="6.7" cy="69.5" r="4.7"/>
+		<polyline class="bcg-img-green-right0" points="221.8,99.3 192.2,69.5 11.1,69.5 		"/>
+	</g>
+</g>
+</svg>

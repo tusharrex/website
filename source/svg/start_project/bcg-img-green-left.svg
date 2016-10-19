@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 346.3 168.6" style="enable-background:new 0 0 346.3 168.6;" xml:space="preserve">
+<style type="text/css">
+	.bcg-img-green-left0{fill:none;stroke:#419E86;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<title>bcg-img-green-left</title>
+<g id="Warstwa_2">
+	<g id="Warstwa_11">
+		<line class="bcg-img-green-left0" x1="0" y1="114.4" x2="172" y2="114.4"/>
+		<circle class="bcg-img-green-left0" cx="177.8" cy="114.7" r="4.7"/>
+		<circle class="bcg-img-green-left0" cx="339.6" cy="99.2" r="4.7"/>
+		<circle class="bcg-img-green-left0" cx="305.2" cy="6.7" r="4.7"/>
+		<polyline class="bcg-img-green-left0" points="0,99.4 213.4,99.4 302,10.7 		"/>
+		<line class="bcg-img-green-left0" x1="335" y1="99.4" x2="213" y2="99.4"/>
+		<circle class="bcg-img-green-left0" cx="339.6" cy="69.5" r="4.7"/>
+		<path class="bcg-img-green-left0" d="M167.8,177.7"/>
+		<circle class="bcg-img-green-left0" cx="189" cy="161.9" r="4.7"/>
+		<line class="bcg-img-green-left0" x1="184" y1="161.4" x2="0" y2="161.4"/>
+		<polyline class="bcg-img-green-left0" points="256.5,99.2 286.2,69.4 335,69.4 		"/>
+	</g>
+</g>
+</svg>

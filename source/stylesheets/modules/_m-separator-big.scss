@@ -38,6 +38,7 @@
       margin-top: -105px;
     }
   }
+
   &.separator-light-gray-bottom-left {
     border-width: 22px 0 0 100vw;
     border-color: transparent transparent transparent $light-gray;
@@ -46,12 +47,22 @@
       border-top-width: 40px;
     }
   }
+
     &.separator-opposite-red-left {
     border-width: 22px 0 0 100vw;
     border-color: transparent transparent transparent $valencia-red;
 
     @media screen and (min-width: 950px) {
       border-top-width: 50px;
+    }
+  }
+
+  &.separator-opposite-green-right {
+    border-width: 0 0 50px 100vw;
+    border-color: transparent transparent $breaker-bay-green #f6f6f6;
+
+    @media screen and (min-width: 950px) {
+      border-top-width: 0px;
     }
   }
 }

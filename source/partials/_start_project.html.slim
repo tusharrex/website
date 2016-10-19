@@ -1,16 +1,14 @@
-.wrapper
-  .start-project-ruby-small
-    = partial 'svg/contact/ruby_small'
-  .start-project-ruby
-    = partial 'svg/ruby'
-  .start-project-title
-    span work with us
-    br
-    | Start Your Project
-  .m-paragraph = data.contact.start_project
-  a.btn.dark-gray (href= '/start-your-project')
-    = button_content('Start Your Project')
-  .start-project-gofer
-    = partial 'svg/contact/gofer'
-  .start-project-laptop
-    = partial 'svg/contact/laptop'
+.m-separator-big.separator-opposite-green-right
+.m-start-project
+  .bcg-image-right
+    = partial 'svg/start_project/bcg-img-green-right.svg'
+  .wrapper
+    .start-project-title
+      span work with us
+      br
+      | Start Your Project
+    .m-paragraph = data.contact.start_project
+    a.btn.dark-gray (href= '/start-your-project')
+      = button_content('Start Your Project')
+  .bcg-image-left
+    = partial 'svg/start_project/bcg-img-green-left.svg'
