@@ -1,6 +1,5 @@
 .m-team {
   @include flex-justify-content(space-between);
-  margin: 0;
 
   .team-element {
     @include flex-flow(row, wrap);
