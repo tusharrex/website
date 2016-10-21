@@ -1,12 +1,14 @@
+$shadow-color: rgba(0, 0, 0, .2);
+
 .m-codebeat {
   margin: 0 auto;
   width: 100%;
 
   .codebeat-slogan {
+    @include font(30px, 36px);
     color: $martinique-dark;
     display: block;
     font-family: $alega;
-    @include font(30px, 36px);
     margin-bottom: 20px;
     text-align: center;
     width: 95%;
@@ -30,30 +32,74 @@
     margin: 30px auto 0;
     padding: 20px 5px;
   }
+
+  .slide-to-right {
+    @include animation(slideToRight 2s infinite);
+    @include animation-iteration-count(1);
+  }
+
+  .slide-to-left {
+    @include animation(slideToLeft 2s infinite);
+    @include animation-iteration-count(1);
+  }
+
+  @keyframes slideToRight {
+    0% {
+      @include transform(translate(-100px, 30px));
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    50%, 80%, 100% {
+      @include transform(translate(0, 0));
+    }
+  }
+
+  @keyframes slideToLeft {
+    0% {
+      @include transform(translate(100px, 30px));
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    50%, 80%, 100% {
+      @include transform(translate(0, 0));
+    }
+  }
 }
 
 @media #{$breakpoint-tablet} {
   .m-codebeat {
     .codebeat-dashboard {
-      display: block;
+      @include box-shadow(0 0 20px 0 $shadow-color);
       background: url('/images/ventures/codebeat_dashboard.png') no-repeat;
       background-position: 0 15px;
       background-size: cover;
+      border-radius: 6px;
+      display: block;
       height: 250px;
       max-height: 408px;
       max-width: 315px;
       position: absolute;
       top: 10%;
       width: 100%;
-      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
-      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
-      border-radius: 6px;
+
+      &.m-hidden {
+        display: none;
+      }
     }
 
     .codebeat-views {
       .codebeat-dashboard:first-child {
         left: 3%;
       }
+
       .codebeat-dashboard:nth-child(2) {
         background: url('/images/ventures/codebeat_landing.png') no-repeat;
         background-position: 0 15px;
@@ -65,6 +111,7 @@
         top: 0%;
         z-index: 1;
       }
+
       .codebeat-dashboard:last-child {
         right: 3%;
       }
@@ -85,13 +132,12 @@
       height: 635px;
 
       .codebeat-dashboard {
+        @include box-shadow(0 0 20px 0 $shadow-color);
         background-position: 0 27px;
+        border-radius: 6px;
         height: 444px;
         max-height: 816px;
         max-width: 630px;
-        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
-        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
-        border-radius: 6px;
       }
 
       .codebeat-dashboard:nth-child(2) {

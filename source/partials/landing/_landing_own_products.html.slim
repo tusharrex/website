@@ -1,5 +1,5 @@
 .m-separator-big.separator-opposite
-.m-landing.bcg-indian-yellow
+#own-products.m-landing.bcg-indian-yellow
   .m-landing-wrapper
   .bcg-element-img-left
     = partial 'svg/landing/bcg-element.svg'
@@ -11,12 +11,11 @@
       your eyes peeled.
   .m-codebeat
     .codebeat-views
-      .codebeat-dashboard
+      .codebeat-dashboard.m-hidden(data-js='browser-left')
         = partial 'partials/osx_window'
       .codebeat-dashboard
         = partial 'partials/osx_window'
       = partial 'partials/mobile'
-      .codebeat-dashboard
+      .codebeat-dashboard.m-hidden(data-js='browser-right')
         = partial 'partials/osx_window'
   .m-separator-big.separator-light-gray
-

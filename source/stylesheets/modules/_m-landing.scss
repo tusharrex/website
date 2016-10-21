@@ -47,13 +47,13 @@
 
   .button-center {
     display: block;
-    margin: 0px auto 80px auto;
+    margin: 0 auto 80px;
   }
 
   .love-passion-code-img {
-    background-size: contain;
     background-image: url('../svg/landing/love-passion-code-mobile.svg');
     background-repeat: no-repeat;
+    background-size: contain;
     display: block;
     height: 310px;
     margin: 30px auto;
@@ -61,16 +61,9 @@
   }
 
   .bcg-element-img-right {
-    max-width: 200px;
     margin: 0 0 0 auto;
+    max-width: 200px;
     text-align: right;
-  }
-
-  .img-codebeat {
-    display: block;
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 100%;
   }
 
   .bcg-element-img-left {
@@ -153,7 +146,7 @@
 
     .bcg-element-img-left {
       position: absolute;
-      width: 350px;
+      width: 270px;
     }
   }
 }
