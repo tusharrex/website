@@ -21,7 +21,8 @@
     }
   }
 
-  .m-separator {
+  .m-decorator {
+    bottom: 0;
     left: 0;
     position: absolute;
     right: 0;
@@ -129,12 +130,14 @@
 
 @media #{$breakpoint-tablet} {
   .m-blog-post {
-    &:hover .title {
-      text-decoration: underline;
+    .m-decorator {
+      top: 120px;
     }
 
-    .m-separator {
-      top: 138px;
+    &:hover {
+      .read-more {
+        text-decoration: underline;
+      }
     }
 
     .author {
@@ -161,6 +164,8 @@
     }
 
     .post-detail {
+      top: -30px;
+
       &.m-big-post {
         width: 100%;
       }
@@ -174,6 +179,19 @@
       @include font(24px, 122%);
     }
   }
+
+  .no-touchevents {
+    .m-blog-post {
+      .m-decorator {
+        @include transition(all 1s cubic-bezier(.16, .53, .15, .99) 0s);
+      }
+
+      &:hover .m-decorator {
+        @include transform(skewY(5deg));
+        @include transition(all 1s cubic-bezier(.16, .53, .15, .99) 0s);
+      }
+    }
+  }
 }
 
 @media #{$breakpoint-desktop} {
@@ -182,16 +200,16 @@
       margin: 80px 0 100px;
     }
 
+    .m-decorator {
+      top: 142px;
+    }
+
     .date {
       font-size: 16px;
 
       &.m-big-post {
         font-size: 20px;
       }
-    }
-
-    .m-separator {
-      top: 184px;
     }
 
     .author {
@@ -221,6 +239,7 @@
     }
 
     .post-detail {
+      top: -56px;
       width: 300px;
     }
 

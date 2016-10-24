@@ -48,6 +48,10 @@ h1 {
     padding-top: 90px;
     text-align: center;
   }
+
+  .m-decorator {
+    bottom: -96px;
+  }
 }
 
 @media #{$mobile-landscape} {
@@ -91,6 +95,10 @@ h1 {
     .btn.landing-button {
       margin: 19px;
     }
+
+    .m-decorator {
+      bottom: -105px;
+    }
   }
 }
 
@@ -127,7 +135,7 @@ h1 {
 @media #{$breakpoint-desktop-largest} {
   .l-landing-page {
     .cq-logo-wrapper {
-      bottom: -167%;;
+      bottom: -167%;
       max-width: 1380px;
     }
   }

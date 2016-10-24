@@ -1,0 +1,32 @@
+.m-decorator {
+  border-color: transparent $light-gray $light-gray transparent;
+  border-style: solid;
+  border-width: 15px 87vw 0 0;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  width: 0;
+
+  &.small {
+    border-width: 15px 270px 0 0;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-decorator {
+    &.small {
+      border-width: 15px 280px 0 0;
+      height: 100px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-decorator {
+    border-width: 28px 74vw 0 0;
+
+    &.small {
+      border-width: 15px 350px 0 0;
+    }
+  }
+}
