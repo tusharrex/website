@@ -65,7 +65,7 @@
   .social-link {
     margin-left: 0;
   }
-  
+
   .footer-social-text {
     display: none;
   }
@@ -243,53 +243,53 @@
       vertical-align: top;
     }
 
-    .facebook-footer {
-      &:hover {
-        color: $breaker-bay-green;
-          svg {
-            fill: $breaker-bay-green;
-          } 
-      }
+    .facebook-footer:hover {
+      color: $breaker-bay-green;
 
-      &:active {
-        color: $deep-sea-green; 
-          svg {
-            fill: $deep-sea-green;
-          }
+      svg {
+        fill: $breaker-bay-green;
       }
     }
 
-    .github-footer {
-      &:hover {
-        color: $indian-yellow ;
-          svg {
-            fill: $indian-yellow;
-          }
-      }
+    .facebook-footer:active {
+      color: $deep-sea-green;
 
-      &:active {
-        color: $damask-red;
-          svg {
-            fill: $damask-red;
-          }
+      svg {
+        fill: $deep-sea-green;
       }
     }
 
-    .twitter-footer {
-      &:hover {
-        color: $aquamarine-blue;
-          svg {
-            fill: $aquamarine-blue;
-          }
-      }
+    .github-footer:hover {
+      color: $indian-yellow;
 
-    &:active {
-      color: $fountain-blue; 
-        svg {
-          fill: $fountain-blue;
-        }
+      svg {
+        fill: $indian-yellow;
+      }
     }
-  }
+
+    .github-footer:active {
+      color: $damask-red;
+
+      svg {
+        fill: $damask-red;
+      }
+    }
+
+    .twitter-footer:hover {
+      color: $aquamarine-blue;
+
+      svg {
+        fill: $aquamarine-blue;
+      }
+    }
+
+    .twitter-footer:active {
+      color: $fountain-blue;
+
+      svg {
+        fill: $fountain-blue;
+      }
+    }
 
     .wrapper {
       @include flex-flow(row, wrap);

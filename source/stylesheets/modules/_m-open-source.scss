@@ -10,8 +10,8 @@
 .open-source-highlighted-logo {
   display: block;
   height: 50%;
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 .logo-wrapper {
@@ -20,7 +20,7 @@
   z-index: 10;
 
   &.octopussy {
-    @include size( 146px, 243px);
+    @include size(146px, 243px);
     color: $martinique-dark;
   }
 
@@ -29,7 +29,7 @@
   }
 
   &.pipes {
-    @include size( 138px, 171px);
+    @include size(138px, 171px);
   }
 
   &.pipes-big {
@@ -37,7 +37,7 @@
   }
 
   &.squashme-small {
-    @include size( 138px, 205px);
+    @include size(138px, 205px);
   }
 
   &.squashme-big {
@@ -57,9 +57,9 @@
   @include font(18px, 21px);
   color: $martinique-dark;
   font-family: $alega-bold;
+  letter-spacing: 1px;
   min-height: 100px;
   padding: 15px 22px 0;
-  letter-spacing: 1px;
 }
 
 .open-source-highlighted-badge {
@@ -78,7 +78,7 @@
 .open-source-button {
   margin-bottom: 15px;
 
-  .text{
+  .text {
     display: inline-block;
   }
 }
@@ -101,25 +101,25 @@
     height: 60%;
   }
 
-    .logo-wrapper {
+  .logo-wrapper {
 
-      &.octopussy {
-        @include size( 150px, 316px);
-      }
-
-      &.pipes {
-        @include size( 142px, 248px);
-      }
-
-      &.squashme-small {
-        display: none;
-      }
-
-      &.squashme-big {
-        @include size( 158px, 416px);
-        display: block;
-      }
+    &.octopussy {
+      @include size(150px, 316px);
     }
+
+    &.pipes {
+      @include size(142px, 248px);
+    }
+
+    &.squashme-small {
+      display: none;
+    }
+
+    &.squashme-big {
+      @include size(158px, 416px);
+      display: block;
+    }
+  }
 
   .open-source-highlighted-desc {
     height: 40%;
@@ -138,10 +138,11 @@
     display: block;
     height: 160px;
     margin-bottom: 16px;
+    overflow: hidden;
     position: relative;
     text-align: center;
     text-decoration: none;
-    overflow: hidden;width: 49%;
+    width: 49%;
   }
 
   .open-source-normal-title {
@@ -165,15 +166,14 @@
   }
 
   .btn {
-
     &.open-source-button {
       margin-top: 20px;
-      padding: 15px 15px;
+      padding: 15px;
     }
   }
 
   .button-icon {
-    @include size( 35px, 35px);
+    @include size(35px, 35px);
     display: inline-block;
     margin-left: 15px;
     position: relative;
@@ -189,7 +189,7 @@
   }
 
   .open-source-highlighted-container {
-    @include size( 290px, 32%);
+    @include size(290px, 32%);
   }
 
   .open-source-highlighted-logo {
@@ -204,11 +204,11 @@
     }
 
     &.pipes {
-      @include size( 158px, 172px);
+      @include size(158px, 172px);
     }
 
     &.squashme-small {
-      @include size( 142px, 206px);
+      @include size(142px, 206px);
       display: block;
     }
 
@@ -224,7 +224,7 @@
 
   .open-source-highlighted-text {
     @include font(20px, 24px);
-    letter-spacing: 0px;
+    letter-spacing: 0;
     min-height: 100px;
     padding-top: 20px;
   }

@@ -2,7 +2,7 @@
   background-color: $white;
   border: 3px solid $darker-gray;
   border-radius: 20px;
-  box-shadow: -10px 10px 0 0px $black-transparent;
+  box-shadow: -10px 10px 0 0 $black-transparent;
   height: 300px;
   margin: auto;
   position: relative;
@@ -30,7 +30,7 @@
   }
 
   .line {
-    background: #9fa4b7;
+    background: $santas-gray;
     border-radius: 6px;
     height: 3px;
     left: 43%;
@@ -53,9 +53,9 @@
 
   .button {
     background: $light-gray;
+    border: solid 2px $darker-gray;
     border-radius: 50%;
     bottom: 1.5%;
-    border: solid 2px $darker-gray;
     height: 23px;
     left: 43%;
     position: absolute;
@@ -103,12 +103,12 @@
 
 @media #{$breakpoint-desktop} {
   .m-mobile {
+    border: 3px solid $darker-gray;
     border-radius: 33px;
     height: 430px;
     left: 70%;
     top: 180px;
     width: 210px;
-    border: 3px solid $darker-gray;
 
     .button {
       bottom: 2%;

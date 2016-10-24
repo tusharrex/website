@@ -9,8 +9,8 @@
 
   .clause {
     @include font(18px, 24px);
-    text-align: center;
     margin-top: 15px;
+    text-align: center;
   }
 
   .date {
@@ -27,8 +27,8 @@
   }
 
   .subtitle {
-    margin-bottom: 15px;
     font-size: 16px;
+    margin-bottom: 15px;
   }
 
   .task {
@@ -40,6 +40,6 @@
   }
 
   .wrapper {
-    padding: 30px 0 30px 0;
+    padding: 30px 0;
   }
 }

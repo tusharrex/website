@@ -70,19 +70,19 @@
     &:-webkit-autofill {
       transition: background-color 5000s ease-in-out 0s;
     }
+  }
 
-    &.bcg-mirage-blue {
-      background: $mirage-blue;
-      color: $light-gray-2;
-      border-color: $light-gray-2;
+  .bcg-mirage-blue {
+    background: $mirage-blue;
+    border-color: $light-gray-2;
+    color: $light-gray-2;
 
-      &:focus {
-        border-color: $deep-sea-green;
-      }
+    &:focus {
+      border-color: $deep-sea-green;
+    }
 
-      &.error {
-        border-color: $damask-red;
-      }
+    &.error {
+      border-color: $damask-red;
     }
   }
 

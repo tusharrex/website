@@ -10,8 +10,8 @@
   }
 
   &.separator-opposite {
-    border-width: 22px 0 0 100vw;
     border-color: transparent transparent transparent $indian-yellow;
+    border-width: 22px 0 0 100vw;
 
     @media screen and (min-width: 950px) {
       border-top-width: 50px;
@@ -19,8 +19,8 @@
   }
 
   &.separator-opposite-ventures {
+    border-color: transparent transparent $indian-yellow;
     border-width: 0 0 22px 100vw;
-    border-color: transparent transparent $indian-yellow transparent;
     margin-top: -300px;
 
     @media screen and (min-width: 950px) {
@@ -30,27 +30,27 @@
   }
 
   &.separator-light-gray {
+    border-color: transparent transparent $light-gray;
     border-width: 0 0 22px 100vw;
-    border-color: transparent transparent $light-gray transparent;
 
     @media screen and (min-width: 950px) {
-      border-top-width: 0px;
+      border-top-width: 0;
       margin-top: -105px;
     }
   }
 
   &.separator-light-gray-bottom-left {
-    border-width: 22px 0 0 100vw;
     border-color: transparent transparent transparent $light-gray;
+    border-width: 22px 0 0 100vw;
 
     @media screen and (min-width: 950px) {
       border-top-width: 40px;
     }
   }
 
-    &.separator-opposite-red-left {
-    border-width: 22px 0 0 100vw;
+  &.separator-opposite-red-left {
     border-color: transparent transparent transparent $valencia-red;
+    border-width: 22px 0 0 100vw;
 
     @media screen and (min-width: 950px) {
       border-top-width: 50px;
@@ -58,11 +58,11 @@
   }
 
   &.separator-opposite-green-right {
+    border-color: transparent transparent $breaker-bay-green $light-gray;
     border-width: 0 0 50px 100vw;
-    border-color: transparent transparent $breaker-bay-green #f6f6f6;
 
     @media screen and (min-width: 950px) {
-      border-top-width: 0px;
+      border-top-width: 0;
     }
   }
 }

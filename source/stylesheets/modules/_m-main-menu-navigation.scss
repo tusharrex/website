@@ -101,10 +101,12 @@
   .main-menu-list .item .link {
     @include font(60px, 80px);
   }
+
   .no-touchevents {
     .m-desktop-close-button {
       display: block;
     }
+
     .m-mobile-close-button {
       display: none;
     }
