@@ -7,7 +7,7 @@ activate :blog do |blog|
   blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
   blog.layout = 'layouts/blog.html.slim'
   blog.paginate = true
-  blog.per_page = 7
+  blog.per_page = 20
   blog.new_article_template = 'source/blog/template.html.erb'
 end
 activate :directory_indexes
