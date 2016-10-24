@@ -1,0 +1,14 @@
+- name: Test
+  type: serial
+  service: website
+  steps:
+    - name: Slim Lint
+      command: bundle exec slim-lint source
+    - name: Rubocop
+      command: bundle exec ruby -W0 -S rubocop lib spec
+    - name: Coffee Lint
+      command: coffeelint -f coffeelint.json source
+    - name: SCSS Lint
+      command: bundle exec scss-lint -c .scss-lint.yml
+    - name: Will it build?
+      command: bundle exec middleman build --verbose
