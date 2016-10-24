@@ -4,6 +4,8 @@ date: 2014-08-28
 tags: Hacker's Life
 author: Magda Piechota
 color: sea-green
+image: 'blog/lifebuoy.png'
+imageauthor: 'team/placeholder-green.png'
 ---
 
 Ladies and gentlemen **hacklab has launched!**

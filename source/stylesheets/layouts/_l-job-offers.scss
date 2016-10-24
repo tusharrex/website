@@ -1,7 +1,6 @@
 .l-job-offers {
   background: $mirage-blue;
   background-repeat: no-repeat;
-  background-size: cover;
   background-size: 100%;
   color: $white;
   font-family: $baskerville;
@@ -37,10 +36,10 @@
 
   .apply {
     @include font(50px, 10px);
+    color: $white;
     font-family: $alega-bold;
-    color: #fff;
-    text-align: center;
     margin-top: 80px;
+    text-align: center;
   }
 
   .ibg-bg {
@@ -48,11 +47,11 @@
   }
 
   .arrow {
-    display: none;
-    width: 100%;
-    clear: both;
-    position: fixed;
     bottom: 0;
+    clear: both;
+    display: none;
+    position: fixed;
+    width: 100%;
   }
 
   .arrow-down {
@@ -61,7 +60,7 @@
   }
 
   .red-link {
-    @include font(34px, 0px);
+    @include font(34px, 0);
     text-transform: lowercase;
 
     &.m-center {
@@ -79,13 +78,13 @@
   }
 
   .form-apply {
-    background-color: #1e2333;
+    background-color: $mirage;
     padding-top: 80px;
   }
 
   .job-title {
-    font-family: $alega-bold;
     @include font(89px, 90px);
+    font-family: $alega-bold;
 
     &.m-title-ruby {
       @include font(80px, 84px);
@@ -101,12 +100,12 @@
 
     &.m-title-ios {
       @include font(65px, 69px);
-      margin-top: 18px
+      margin-top: 18px;
     }
 
     &.m-title-sales {
       @include font(50px, 54px);
-      margin: 20px 0 12px 0;
+      margin: 20px 0 12px;
     }
   }
 
@@ -128,10 +127,10 @@
   }
 
   .main-img {
+    display: block;
+    margin: 0 auto;
     position: relative;
     width: 230px;
-    margin: 0 auto;
-    display: block;
 
     &.m-ios {
       width: 300px;
@@ -151,18 +150,18 @@
   }
 
   .strap-small {
+    background-color: $ebony-clay;
     height: 30px;
-    background-color: #20253a;
   }
 
   .strap {
+    background-color: $ebony-clay2;
     height: 40px;
-    background-color: #24293f;
   }
 
   .subtitle {
-    margin-top: 7%;
     font-size: 24px;
+    margin-top: 7%;
   }
 
   .title-white {
@@ -181,26 +180,26 @@
   }
 
   .title {
-    width: 283px;
     margin: 0 auto;
+    width: 283px;
   }
 
   .upload-area {
-    background-color: #181b28;
-    padding: 7px;
-    margin: 15px 0 15px;
+    background-color: $mirage-blue;
     border-radius: 15px;
+    margin: 15px 0;
+    padding: 7px;
     width: 100%;
   }
 
   .upload {
     color: $santas-gray;
-    margin: 15px auto 15px;
-    width: 250px;
     display: block;
+    margin: 15px auto;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 250px;
   }
 
   .job-offers-btn {
@@ -270,18 +269,18 @@
       }
 
       &.m-title-sales {
-        text-align: left;
         @include font(120px, 114px);
+        text-align: left;
       }
 
       &.m-title-growth {
-        text-align: left;
         @include font(106px, 116px);
+        text-align: left;
       }
 
       &.m-title-content {
-        text-align: left;
         @include font(146px, 170px);
+        text-align: left;
       }
     }
 
@@ -295,10 +294,10 @@
     }
 
     .main-img {
-      position: relative;
-      width: 400px;
       display: block;
       margin: 0 auto;
+      position: relative;
+      width: 400px;
 
       &.m-ios {
         width: 500px;
@@ -318,14 +317,12 @@
     }
 
     .subtitle {
-      margin-top: 7%;
       font-size: 26px;
     }
 
-
     .title {
-      width: 655px;
       margin-top: 35px;
+      width: 655px;
     }
 
     .title-white {
@@ -333,13 +330,8 @@
     }
 
     .upload {
-      margin: auto;
-      margin-left: 15px;
+      margin: auto auto auto 15px;
       width: 380px;
-      display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
     }
 
     .job-offers-btn {
@@ -351,7 +343,6 @@
 @media #{$breakpoint-desktop} {
   .l-job-offers {
     background-repeat: no-repeat;
-    background-size: 100%;
 
     &.m-bcg-elixir {
       background-image: none;
@@ -397,11 +388,11 @@
         height: 2100px;
       }
 
-      &.m-job-bcg-frontend{
+      &.m-job-bcg-frontend {
         height: 2300px;
       }
 
-      &.m-job-bcg-content{
+      &.m-job-bcg-content {
         height: 2500px;
       }
     }
@@ -429,7 +420,7 @@
         height: 2300px;
       }
 
-      &.m-job-wrapper-content{
+      &.m-job-wrapper-content {
         height: 2500px;
       }
 
@@ -476,10 +467,10 @@
     }
 
     .main-img {
-      position: relative;
-      width: 600px;
       display: block;
       margin: 0 auto;
+      position: relative;
+      width: 600px;
 
       &.m-ios {
         width: 600px;
@@ -491,23 +482,16 @@
     }
 
     .subtitle {
-      margin-top: 7%;
       font-size: 30px;
     }
 
     .title {
-      width: 958px;
       margin-top: 35px;
+      width: 958px;
     }
 
     .upload {
-      margin: auto;
-      margin-left: 15px;
       width: 465px;
-      display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
     }
   }
 }

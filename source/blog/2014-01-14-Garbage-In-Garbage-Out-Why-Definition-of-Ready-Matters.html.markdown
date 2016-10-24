@@ -4,6 +4,8 @@ date: 2014-01-14
 tags: Consulting, Scrum
 author: Tomasz Korzeniowski
 color: yellow
+image: 'blog/lifebuoy.png'
+imageauthor: 'team/tomek.png'
 ---
 
 > By failing to prepare, you are preparing to fail.

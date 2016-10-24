@@ -2,6 +2,10 @@
   @include flex-flow(row, wrap);
   @include flex-justify-content(space-around);
 
+  &.m-space-between {
+    @include flex-justify-content(space-between);
+  }
+
   .no-content {
     height: 0;
     margin: 0;

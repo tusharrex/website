@@ -4,6 +4,8 @@ date: 2014-10-11
 tags: Ruby, Success Stories
 author: Tomasz Warkocki
 color: red
+image: 'blog/duck.png'
+imageauthor: 'team/placeholder-red.png'
 ---
 
 [Contentful](https://www.contentful.com/ "Contentful") is an API-first content management platform for web and mobile applications and the first cloud-based service to allow content to be distributed across any device, application or platform, with one single input.

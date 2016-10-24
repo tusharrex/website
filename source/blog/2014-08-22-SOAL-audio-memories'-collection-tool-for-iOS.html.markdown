@@ -4,6 +4,8 @@ date: 2014-08-22
 tags: Success Stories
 author: Magda Piechota
 color: light-green
+image: 'blog/lifebuoy.png'
+imageauthor: 'team/placeholder-green.png'
 ---
 
 There comes a time when nostalgia hits each one of us and we yearn for the things of the past, be it our crazy adventures during college years or hearing our grandmother's voice, or listening to that tune that was on when you met your significant other. It is natural and nothing to be ashamed of.

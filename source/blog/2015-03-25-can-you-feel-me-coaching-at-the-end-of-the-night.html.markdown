@@ -5,7 +5,7 @@ tags: Rails Girls Warsaw |
 subtitle: Rails Girls Warsaw |
 author: Bartek Kruszczyński
 color: red
-image: 'blog/post01.png'
+image: 'blog/duck.png'
 imageauthor: 'team/bartek.png'
 ---
 

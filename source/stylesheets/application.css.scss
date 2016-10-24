@@ -18,6 +18,7 @@
 @import 'layouts/tutor';
 @import 'layouts/consultant-developer';
 @import 'layouts/l-job-offers';
+@import 'layouts/l-blog-posts-page';
 
 @import 'modules/m-burger-button';
 @import 'modules/m-header-elements';
@@ -68,11 +69,15 @@
 @import 'modules/m-prime-carousel';
 @import 'modules/m-hover-carousel';
 @import 'modules/m-mobile';
+@import 'modules/m-separator-line';
+@import 'modules/m-blog-posts-container';
+
 @import 'states/s-cq-main-logo';
 @import 'states/s-contact-section';
 @import 'states/s-work';
 @import 'states/s-start-your-project';
 @import 'states/s-open-source';
+
 @import 'plugins/jquery-ui.min';
 @import 'plugins/owl.carousel';
 @import 'plugins/owl.theme';

@@ -1,0 +1,30 @@
+.l-blog-posts-page {
+  .separator {
+    height: 50px;
+  }
+
+  .m-separator-line {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .l-blog-posts-page {
+    .separator {
+      height: 100px;
+    }
+
+    .m-separator-line {
+      width: 100%;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .l-blog-posts-page {
+    .separator {
+      height: 160px;
+    }
+  }
+}

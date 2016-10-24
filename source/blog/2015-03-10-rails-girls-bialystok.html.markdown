@@ -5,8 +5,8 @@ tags: Hacker's Life, Ruby
 subtitle: Rails Girls Warsaw |
 author: Magda Piechota
 color: light-green
-image: 'blog/post02.png'
-imageauthor: 'team/placeholder-red.png'
+image: 'blog/lifebuoy.png'
+imageauthor: 'team/placeholder-green.png'
 ---
 
 Not long ago we were proud to announce that some members of our Warsaw crew took an active part in [Rails Girls Warsaw](http://railsgirls.com/warsaw "Rails Girls Warsaw") February workshop. This time we would like to share with you our love and pride of the Bialystok branch.

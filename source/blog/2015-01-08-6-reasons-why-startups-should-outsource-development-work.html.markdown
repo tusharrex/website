@@ -4,6 +4,8 @@ date: 2015-01-08
 tags: Consulting
 author: Magda Piechota
 color: light-green
+image: 'blog/shark.png'
+imageauthor: 'team/placeholder-green.png'
 ---
 
 If you are thinking of putting this great idea for an app that you have in your head into life, but have no technical skills and no technical partners by your side, there are just two things you can do to make it happen: hire people to work for you as an in-house team, or outsource the development to a software house to build it for you. Most of the people think that having an in-house team is a safer and better business decision. You have a full control over the product and the team, and you are able to make sure everything is going as you planned.

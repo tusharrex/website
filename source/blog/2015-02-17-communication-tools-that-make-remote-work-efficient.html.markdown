@@ -4,6 +4,8 @@ date: 2015-02-17
 tags: Consulting, Scrum, Hacker's Life
 author: Magda Piechota
 color: yellow
+image: 'blog/underwater_station.png'
+imageauthor: 'team/placeholder-yellow.png'
 ---
 
 In our previous article on remote working we wrote generally about the tools we use to keep our project management and development swift and flawless. Now let’s dive deeper into the topic and see what we use on a daily basis to keep in touch with our clients and teams.

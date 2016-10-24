@@ -4,6 +4,8 @@ date: 2014-10-13
 tags: Consulting, Development
 author: Magda Piechota
 color: light-green
+image: 'blog/lifebuoy.png'
+imageauthor: 'team/placeholder-green.png'
 ---
 
 So your dev team have created this new app for your client. You are very proud of it and want to show it the entire world. But before you tell the client the good news you have to test the app to find the bugs and have your team fix them. Finding bugs is relatively easy, you just use the app with every possible scenario and check whether it works as it is supposed to be working. What you are really interested in are the misbehaviors of the app, the failures, the crashes, and so on. The things that were not planned for the app. And certainly you find them, but what next? How to show them to the team? How to tell them what and when went wrong? You can run to your devs each time you find a bug and show it to them telling them how you encountered the thing. Sometimes this even works. But with dev teams spread over the globe it may be slightly inconvenient or even impossible. You need an easy and detailed way to put the descriptions of the bugs along with the step-by-step guide on how to recreate them.

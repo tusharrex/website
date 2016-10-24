@@ -4,6 +4,8 @@ date: 2014-11-10
 tags: Scrum
 author: Magda Piechota
 color: yellow
+image: 'blog/ruby_underwater.png'
+imageauthor: 'team/placeholder-yellow.png'
 ---
 
 People suck at estimating things, especially when it comes to the time required to complete a task. And developers, who are people, in case you forgot, suck at estimating the time required to code a feature or the feature’s difficulty. We must be born optimists as we usually underestimate and very rarely overestimate, and we are so bad at estimating that in 1979 a new term was coined by Daniel Kahneman and Amos Tversky to describe this phenomenon. We all fall victims to the infamous Planning Fallacy.

@@ -4,6 +4,8 @@ date: 2013-12-10
 tags: Consulting
 author: Tomasz Korzeniowski
 color: red
+image: 'blog/lifebuoy.png'
+imageauthor: 'team/tomek.png'
 ---
 
 I have been helping people to turn their ideas into software products for almost 12 years. Often clients ask me to give project quotes on a fixed price basis, but I always try to encourage them to go time and material. Why? I am glad you asked :)

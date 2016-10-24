@@ -4,22 +4,58 @@ pageable: true
 = partial 'partials/website_header', locals: {title: data.blog.title}
 = partial 'partials/header_subtitle', locals: \
   {subtitle: data.blog.subtitle}
-.m-grid-collection#posts
-  .page(data-page-no= page_number)
-  - page_articles.each do |article|
-    a.m-grid-item(href= article.url class= article.metadata[:page]['color'])
-      .date
-        = article.date.strftime('%B %e, %Y')
-      h2.title
-        = article.title
-      .tags
-        = article.tags.map { |tag| "##{tag}" }.join(' ')
-      .summary
-        = strip_tags article.summary(500)
-  - 10.times do
-    .m-grid-item.no-content
-#total_pages.hidden
-  = num_pages
-link(rel='alternate' type="application/atom+xml" title='code quest blog'
-  href="#{root_url}/feed.xml"
-)
+.l-blog-posts-page
+  .m-blog-posts-container.m-large
+    - blog.articles[0..0].each do |article|
+      article.m-blog-post.m-big-post
+        .posts.m-big-post
+          a.article(href= article.url class= article.metadata[:page]['color'])
+            .post-detail.m-big-post
+              header.detail
+                span.subtitle.m-big-post
+                  = article.data.subtitle
+                span.date.m-big-post
+                  = article.date.strftime('%B %e, %Y')
+                h2.title.m-big-post
+                  = article.title
+              .summary.m-big-post
+                = strip_tags article.summary(500)
+              .read-more.color-valencia-red Read more...
+              footer.info-author
+                .image-author.m-big-post
+                  = image_tag article.data.imageauthor
+                  span.author.m-big-post
+                    = article.data.author
+    .m-separator-line.m-light-gray-2
+    .m-separator-line.m-white
+  #posts.m-grid-collection.m-space-between.m-blog-posts-container
+    .page(data-page-no= page_number)
+    - page_articles.drop(1).each do |article|
+      article.m-blog-post
+        .posts
+          a.article(href= article.url class= article.metadata[:page]['color'])
+            .image
+              = image_tag article.data.image
+              .m-separator.m-separator-post
+            .post-detail
+              header.detail
+                span.subtitle
+                  = article.data.subtitle
+                span.date
+                  = article.date.strftime('%B %e, %Y')
+                h2.title
+                  = article.title
+              .summary
+                = strip_tags article.summary(240)
+              .read-more.color-valencia-red Read more...
+              footer.info-author
+                .image-author
+                  = image_tag article.data.imageauthor
+                  span.author
+                    = article.data.author
+    .no-content
+  #total_pages.hidden
+    = num_pages
+  link(rel='alternate' type="application/atom+xml" title='code quest blog'
+    href="#{root_url}/feed.xml")
+  .separator

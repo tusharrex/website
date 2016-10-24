@@ -3,12 +3,25 @@ pageable: true
 ---
 .page(data-page-no= page_number)
 - page_articles.each do |article|
-  a.m-grid-item(href= article.url class= article.metadata[:page]['color'])
-    .date
-      = article.date.strftime('%B %e, %Y')
-    h2.title
-      = article.title
-    .tags
-      = article.tags.map { |tag| "##{tag}" }.join(' ')
-    .summary
-      = strip_tags article.summary(500)
+  article.m-blog-post(class=(article == blog.articles[0] ? 'hidden' : ''))
+    .posts
+      a.article(href= article.url class= article.metadata[:page]['color'])
+        .image
+          = image_tag article.data.image
+          .m-separator.m-separator-post
+        .post-detail
+          header.detail
+            span.subtitle
+              = article.data.subtitle
+            span.date
+              = article.date.strftime('%B %e, %Y')
+            h2.title
+              = article.title
+          .summary
+            = strip_tags article.summary(240)
+          .read-more.color-valencia-red Read more...
+          footer.info-author
+            .image-author
+              = image_tag article.data.imageauthor
+              span.author
+                = article.data.author

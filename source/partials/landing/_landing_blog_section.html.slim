@@ -8,28 +8,29 @@
         engineers. What brings us together is the love of good quality code.
         Would you like to embark with us on our quest to excellence?
   .m-separator-big.separator-light-gray-bottom-left
-.blog-posts-container
+#posts.m-grid-collection.m-blog-posts-container
   - blog.articles[0..1].each do |article|
-    .m-blog-post
+    article.m-blog-post
       .posts
         a.article(href= article.url class= article.metadata[:page]['color'])
-          .m-separator.m-separator-post
           .image
             = image_tag article.data.image
+            .m-separator.m-separator-post
           .post-detail
-            .detail
-              .subtitle
+            header.detail
+              span.subtitle
                 = article.data.subtitle
-              .date
+              span.date
                 = article.date.strftime('%B %e, %Y')
-            h2.title
-              = article.title
+              h2.title
+                = article.title
             .summary
               = strip_tags article.summary(500)
             .read-more.color-valencia-red Read more...
-            .info-author
+            footer.info-author
               .image-author
                 = image_tag article.data.imageauthor
-              .author
-                = article.data.author
+                span.author
+                  = article.data.author
+.separator
 = partial 'partials/footer'

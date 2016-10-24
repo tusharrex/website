@@ -4,6 +4,8 @@ date: 2015-01-22
 tags: Hacker's Life, Ruby
 author: Magda Piechota
 color: red
+image: 'blog/underwater_world.png'
+imageauthor: 'team/placeholder-red.png'
 ---
 
 Have you heard of Rails Girls?

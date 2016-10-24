@@ -13,8 +13,8 @@ $ ->
     if 'scrollRestoration' of history
       history.scrollRestoration = 'manual'
 
-    headerHeight =
-      $('.m-header').outerHeight(true) + $('.m-subtitle').outerHeight(true)
+    separatorHeight =
+      $('.m-separator-line').position().top
     unless pageNumber == 1
       $divToScroll = $('.page').data('page-no',pageNumber)
       window.scrollTo(0, $divToScroll.position().top)
@@ -52,7 +52,7 @@ $ ->
           addContentCallback()
 
     shouldLoadPrev = (scrollPos) ->
-      scrollPos <= headerHeight && isLoading == 0 && pageNumber > 1
+      scrollPos <= (separatorHeight + 40) && isLoading == 0 && pageNumber > 1
 
     shouldLoadNext = (scrollPos) ->
       scrollPos >= 0.5 * maxHeight() && isLoading == 0 && pageNumber < numPages
@@ -73,7 +73,7 @@ $ ->
     addContentBefore = (data) ->
       scrollPos = $win.scrollTop()
       $prev = ($('.page').first()).before(data)
-      $(document).scrollTop(scrollPos+$prev.outerHeight())
+      $(document).scrollTop(scrollPos+$prev.position().top)
 
     addContentCallback = ->
       truncate()

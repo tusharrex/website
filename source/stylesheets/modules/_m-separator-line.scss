@@ -1,0 +1,12 @@
+.m-separator-line {
+  border-radius: 10px;
+  height: 2px;
+
+  &.m-light-gray-2 {
+    background-color: $light-gray-2;
+  }
+
+  &.m-white {
+    background-color: $white;
+  }
+}
