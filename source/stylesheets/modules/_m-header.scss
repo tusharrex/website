@@ -7,3 +7,15 @@
   position: relative;
   width: 100%;
 }
+
+@media #{$breakpoint-desktop} {
+  .m-header {
+    height: 140px;
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .m-header {
+    height: 200px;
+  }
+}

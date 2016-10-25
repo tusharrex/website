@@ -13,3 +13,15 @@
     margin-top: 7px;
   }
 }
+
+@media #{$breakpoint-desktop} {
+  .m-subtitle {
+    font-size: 28px;
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .m-subtitle {
+    font-size: 32px;
+  }
+}

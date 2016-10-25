@@ -8,11 +8,27 @@
   position: absolute;
   right: 0;
   text-align: center;
+}
 
-  @media #{$mobile} {
+@media #{$mobile} {
+  .m-page-title {
     bottom: -8px;
     font-size: 48px;
     line-height: 85%;
     margin: 0 20px;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-page-title {
+    font-size: 120px;
+    top: 52px;
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .m-page-title {
+    font-size: 205px;
+    top: 48px;
   }
 }
