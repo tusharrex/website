@@ -23,10 +23,16 @@
 
 @media #{$breakpoint-desktop} {
   .m-decorator {
-    border-width: 28px 74vw 0 0;
+    border-width: 22px 74vw 0 0;
 
     &.small {
       border-width: 15px 350px 0 0;
     }
+  }
+}
+
+@media #{$breakpoint-desktop-largest} {
+  .m-decorator {
+    border-width: 25px 1200px 0 0;
   }
 }
