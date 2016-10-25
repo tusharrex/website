@@ -12,10 +12,10 @@
      <polyline data-ignore="true" data-start="0" data-duration="180" class="bcg-element-gray-1 scroll-animate-right-svg hidden" points="276.84 99.2 132.88 99.2 44.1 10.42"/>
      <line data-ignore="true" data-start="100" data-duration="40" class="bcg-element-gray-1 scroll-animate-right-svg hidden" x1="11.44" y1="99.2" x2="132.88" y2="99.2"/>
      <circle data-ignore="true" data-start="200" data-duration="30" class="bcg-element-gray-1 scroll-animate-right-svg hidden" cx="6.72" cy="69.47" r="4.72"/>
-     <circle data-ignore="true" data-start="0" data-duration="30" class="bcg-element-gray-1 scroll-animate-right-svg hidden" cx="173.75" cy="177.7" r="4.72"/>
-     <line data-ignore="true" data-start="30" data-duration="150" class="bcg-element-gray-1 scroll-animate-right-svg hidden" x1="178.47" y1="177.7" x2="276.84" y2="177.7"/>
-     <circle data-ignore="true" data-start="0" data-duration="30" class="bcg-element-gray-1 scroll-animate-right-svg hidden" cx="157.25" cy="161.92" r="4.72"/>
-     <line data-ignore="true" data-start="30" data-duration="150" class="bcg-element-gray-1 scroll-animate-right-svg hidden" x1="161.97" y1="161.92" x2="276.84" y2="161.92"/>
+     <circle data-ignore="true" data-start="245" data-duration="30" class="bcg-element-gray-1 scroll-animate-right-svg hidden" cx="173.75" cy="177.7" r="4.72"/>
+     <line data-ignore="true" data-start="50" data-duration="200" class="bcg-element-gray-1 scroll-animate-right-svg hidden" x2="178.47" y1="177.7" x1="276.84" y2="177.7"/>
+     <circle data-ignore="true" data-start="245" data-duration="30" class="bcg-element-gray-1 scroll-animate-right-svg hidden" cx="157.25" cy="161.92" r="4.72"/>
+     <line data-ignore="true" data-start="50" data-duration="200" class="bcg-element-gray-1 scroll-animate-right-svg hidden" x2="161.97" y1="161.92" x1="276.84" y2="161.92"/>
      <polyline data-ignore="true" data-start="160" data-duration="40" class="bcg-element-gray-1 scroll-animate-right-svg hidden" points="89.88 99.2 60.14 69.47 11.44 69.47"/>
    </g>
  </g>
