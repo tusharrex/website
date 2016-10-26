@@ -5,18 +5,18 @@
   </style>
   <defs>
   </defs>
-  <line data-ignore="true" class="bcg-element-yellow-0 scroll-animate-left-svg hidden" data-start="30" data-duration="50" x1="34" y1="7" x2="74" y2="7"/>
-  <circle data-ignore="true" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" data-start="80" data-duration="30" cx="80.7" cy="7" r="5"/>
-  <circle data-ignore="true" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" data-start="0" data-duration="30" cx="29.1" cy="7" r="5"/>
-  <line data-ignore="true" class="bcg-element-yellow-0 scroll-animate-left-svg hidden" data-start="30" data-duration="50" x1="55" y1="27" x2="95" y2="27"/>
-  <circle data-ignore="true" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" data-start="80" data-duration="30" cx="101.7" cy="27" r="5"/>
-  <circle data-ignore="true" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" data-start="0" data-duration="30" cx="50.1" cy="27" r="5"/>
-  <line data-ignore="true" data-start="0" data-duration="100" class="bcg-element-yellow-0 scroll-animate-left-svg hidden" x1="2" y1="72" x2="164" y2="72"/>
-  <circle data-ignore="true" data-start="100" data-duration="30" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" cx="170.7" cy="72" r="5"/>
-  <circle data-ignore="true" data-start="100" data-duration="30" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" cx="196" cy="87.2" r="5"/>
-  <line data-ignore="true" data-start="0" data-duration="100" class="bcg-element-yellow-0 scroll-animate-left-svg hidden" x1="2" y1="87" x2="191" y2="87"/>
-  <circle data-ignore="true" data-start="190" data-duration="30" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" cx="152.7" cy="118.9" r="5"/>
-  <circle data-ignore="true" data-start="200" data-duration="30" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" cx="247.8" cy="116.9" r="5"/>
-  <polyline data-ignore="true" data-start="150" data-duration="50" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" points="165.8,87.1 195,117 243,117 "/>
-  <line data-ignore="true" data-start="120" data-duration="50" class="bcg-element-yellow-1 scroll-animate-left-svg hidden" x1="122.7" y1="87.2" x2="151.6" y2="116.1"/>
+  <line data-js="left-lines" data-ignore="true" class="bcg-element-yellow-0 scroll-animate-left-svg" data-start="30" data-duration="50" x1="34" y1="7" x2="74" y2="7"/>
+  <circle data-js="left-lines" data-ignore="true" class="bcg-element-yellow-1 scroll-animate-left-svg" data-start="80" data-duration="30" cx="80.7" cy="7" r="5"/>
+  <circle data-js="left-lines" data-ignore="true" class="bcg-element-yellow-1 scroll-animate-left-svg" data-start="0" data-duration="30" cx="29.1" cy="7" r="5"/>
+  <line data-js="left-lines" data-ignore="true" class="bcg-element-yellow-0 scroll-animate-left-svg" data-start="30" data-duration="50" x1="55" y1="27" x2="95" y2="27"/>
+  <circle data-js="left-lines" data-ignore="true" class="bcg-element-yellow-1 scroll-animate-left-svg" data-start="80" data-duration="30" cx="101.7" cy="27" r="5"/>
+  <circle data-js="left-lines" data-ignore="true" class="bcg-element-yellow-1 scroll-animate-left-svg" data-start="0" data-duration="30" cx="50.1" cy="27" r="5"/>
+  <line data-js="left-lines" data-ignore="true" data-start="0" data-duration="100" class="bcg-element-yellow-0 scroll-animate-left-svg" x1="2" y1="72" x2="164" y2="72"/>
+  <circle data-js="left-lines" data-ignore="true" data-start="100" data-duration="30" class="bcg-element-yellow-1 scroll-animate-left-svg" cx="170.7" cy="72" r="5"/>
+  <circle data-js="left-lines" data-ignore="true" data-start="100" data-duration="30" class="bcg-element-yellow-1 scroll-animate-left-svg" cx="196" cy="87.2" r="5"/>
+  <line data-js="left-lines" data-ignore="true" data-start="0" data-duration="100" class="bcg-element-yellow-0 scroll-animate-left-svg" x1="2" y1="87" x2="191" y2="87"/>
+  <circle data-js="left-lines" data-ignore="true" data-start="190" data-duration="30" class="bcg-element-yellow-1 scroll-animate-left-svg" cx="152.7" cy="118.9" r="5"/>
+  <circle data-js="left-lines" data-ignore="true" data-start="200" data-duration="30" class="bcg-element-yellow-1 scroll-animate-left-svg" cx="247.8" cy="116.9" r="5"/>
+  <polyline data-js="left-lines" data-ignore="true" data-start="150" data-duration="50" class="bcg-element-yellow-1 scroll-animate-left-svg" points="165.8,87.1 195,117 243,117"/>
+  <line data-js="left-lines" data-ignore="true" data-start="120" data-duration="50" class="bcg-element-yellow-1 scroll-animate-left-svg" x1="122.7" y1="87.2" x2="151.6" y2="116.1"/>
 </svg>

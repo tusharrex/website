@@ -89,10 +89,6 @@ $shadow-color: rgba(0, 0, 0, .2);
       position: absolute;
       top: 10%;
       width: 100%;
-
-      &.m-hidden {
-        display: none;
-      }
     }
 
     .codebeat-views {
@@ -120,6 +116,14 @@ $shadow-color: rgba(0, 0, 0, .2);
     .codebeat-slogan {
       margin: 30px auto;
       width: 50%;
+    }
+  }
+
+  .no-touchevents {
+    .m-codebeat {
+      .codebeat-dashboard.m-hidden {
+        display: none;
+      }
     }
   }
 }

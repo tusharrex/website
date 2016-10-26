@@ -1,6 +1,9 @@
 $ ->
+  isNonTouchScreen = $('.no-touchevents')
+
   animateSvg = (el, duration) ->
-    return unless window.location.pathname == '/'
+    return unless(window.location.pathname == '/' \
+                  && isNonTouchScreen.length > 0)
     myVivus = new Vivus(el, {
       type: 'scenario',
       duration: duration,
@@ -18,10 +21,17 @@ $ ->
   animateSvg('landing-svg', 200)
   animateSvg('line-svg', 70)
 
-  return unless window.location.pathname == '/'
+  return unless(window.location.pathname == '/' && isNonTouchScreen.length > 0)
+  longLines =  $("[data-js='long-lines']")
+  leftLines =  $("[data-js='left-lines']")
+  rightLines = $("[data-js='right-lines']")
   $window = $(window)
   ownProducts = '#own-products'
   team = '#team'
+
+  leftLines.attr('class', 'bcg-element-yellow-0 scroll-animate-left-svg hidden')
+  rightLines.attr('class', 'bcg-element-gray-1 scroll-animate-right-svg hidden')
+  longLines.attr('class', 'bcg-landing-3 scroll-animate hidden')
 
   $window.one 'animateLongLines', ->
     animateDelaySvg('.scroll-animate', 'bcg-landing-3 scroll-animate')

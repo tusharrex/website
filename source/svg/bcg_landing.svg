@@ -269,20 +269,20 @@
             </defs>
             <g class="bcg-landing-1">
                 <g class="bcg-landing-2">
-                    <circle data-ignore="true" data-start="0" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1313.76" cy="275.77" r="4.72"/>
-                    <circle data-ignore="true" data-start="100" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1313.76" cy="841.29" r="4.72"/>
-                    <circle data-ignore="true" data-start="0" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1329.54" cy="259.27" r="4.72"/>
-                    <circle data-ignore="true" data-start="100" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1329.54" cy="824.79" r="4.72"/>
-                    <circle data-ignore="true" data-start="150" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1370.65" cy="795.69" r="4.72"/>
-                    <circle data-ignore="true" data-start="180" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1365.93" cy="974.52" r="4.72"/>
-                    <circle data-ignore="true" data-start="100" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1257.55" cy="624.29" r="4.72"/>
-                    <circle data-ignore="true" data-start="220" data-duration="30" class="bcg-landing-3 scroll-animate hidden" cx="1345.15" cy="1010.91" r="4.72"/>
-                    <line data-ignore="true" data-start="0" data-duration="80" class="bcg-landing-3 scroll-animate hidden" x1="1257.55" y1="360.61" x2="1257.55" y2="618.19"/>
-                    <line data-ignore="true" data-start="0" data-duration="80" class="bcg-landing-3 scroll-animate hidden" x1="1313.76" y1="280.49" x2="1313.76" y2="834.4"/>
-                    <line data-ignore="true" data-start="0" data-duration="80" class="bcg-landing-3 scroll-animate hidden" x1="1329.54" y1="263.99" x2="1329.54" y2="817.9"/>
-                    <line data-ignore="true" data-start="120" data-duration="30" class="bcg-landing-3 scroll-animate hidden" x1="1329.71" y1="753.19" x2="1367.18" y2="790.66"/>
-                    <polyline data-ignore="true" data-start="120" data-duration="60" class="bcg-landing-3 scroll-animate hidden" points="1329.71 779.19 1365.93 815.41 1365.93 967.19"/>
-                    <polyline data-ignore="true" data-start="180" data-duration="30" class="bcg-landing-3 scroll-animate hidden" points="1365.98 883.35 1344.93 904.24 1344.93 1006.19"/>
+                    <circle data-js="long-lines" data-ignore="true" data-start="0" data-duration="30" class="bcg-landing-3 scroll-animate" cx="1313.76" cy="275.77" r="4.72"/>
+                    <circle data-js="long-lines" data-ignore="true" data-start="100" data-duration="30" class="bcg-landing-3 scroll-animate" cx="1313.76" cy="841.29" r="4.72"/>
+                    <circle data-js="long-lines" data-ignore="true" data-start="0" data-duration="30" class="bcg-landing-3 scroll-animate" cx="1329.54" cy="259.27" r="4.72"/>
+                    <circle data-js="long-lines" data-ignore="true" data-start="100" data-duration="30" class="bcg-landing-3 scroll-animate" cx="1329.54" cy="824.79" r="4.72"/>
+                    <circle data-js="long-lines" data-ignore="true" data-start="150" data-duration="30" class="bcg-landing-3 scroll-animate" cx="1370.65" cy="795.69" r="4.72"/>
+                    <circle data-js="long-lines" data-ignore="true" data-start="180" data-duration="30" class="bcg-landing-3 scroll-animate" cx="1365.93" cy="974.52" r="4.72"/>
+                    <circle data-js="long-lines" data-ignore="true" data-start="100" data-duration="30" class="bcg-landing-3 scroll-animate" cx="1257.55" cy="624.29" r="4.72"/>
+                    <circle data-js="long-lines" data-ignore="true" data-start="220" data-duration="30" class="bcg-landing-3 scroll-animate" cx="1345.15" cy="1010.91" r="4.72"/>
+                    <line data-js="long-lines" data-ignore="true" data-start="0" data-duration="80" class="bcg-landing-3 scroll-animate" x1="1257.55" y1="360.61" x2="1257.55" y2="618.19"/>
+                    <line data-js="long-lines" data-ignore="true" data-start="0" data-duration="80" class="bcg-landing-3 scroll-animate" x1="1313.76" y1="280.49" x2="1313.76" y2="834.4"/>
+                    <line data-js="long-lines" data-ignore="true" data-start="0" data-duration="80" class="bcg-landing-3 scroll-animate" x1="1329.54" y1="263.99" x2="1329.54" y2="817.9"/>
+                    <line data-js="long-lines" data-ignore="true" data-start="120" data-duration="30" class="bcg-landing-3 scroll-animate" x1="1329.71" y1="753.19" x2="1367.18" y2="790.66"/>
+                    <polyline data-js="long-lines" data-ignore="true" data-start="120" data-duration="60" class="bcg-landing-3 scroll-animate" points="1329.71 779.19 1365.93 815.41 1365.93 967.19"/>
+                    <polyline data-js="long-lines" data-ignore="true" data-start="180" data-duration="30" class="bcg-landing-3 scroll-animate" points="1365.98 883.35 1344.93 904.24 1344.93 1006.19"/>
                 </g>
             </g>
         </svg>
