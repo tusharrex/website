@@ -3,7 +3,8 @@
 .m-main-signature {
   color: $white;
   font-family: $courier-new;
-  font-size: 17px;
+  font-size: 27px;
+  line-height: 36px;
   margin: 0 auto;
   max-width: 300px;
 
@@ -13,7 +14,7 @@
   }
 
   .line-wrapper {
-    display: block;
+    display: none;
     height: 100%;
     position: absolute;
     top: 77%;
@@ -42,6 +43,14 @@
     font-size: 24px;
     line-height: 34px;
     max-width: 400px;
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-main-signature {
+    .line-wrapper {
+      display: block;
+    }
   }
 }
 
