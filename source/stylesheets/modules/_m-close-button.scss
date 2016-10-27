@@ -3,7 +3,7 @@
 // scss-lint:disable NestingDepth
 
 .m-close-button {
-  @include size(31px, 31px);
+  @include size(23px, 23px);
   @include reset-styles();
   color: inherit;
   cursor: pointer;
