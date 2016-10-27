@@ -72,6 +72,10 @@ $shadow-color: rgba(0, 0, 0, .2);
       @include transform(translate(0, 0));
     }
   }
+
+  .m-paragraph {
+    margin: 40px auto 0;
+  }
 }
 
 @media #{$breakpoint-tablet} {
@@ -158,7 +162,6 @@ $shadow-color: rgba(0, 0, 0, .2);
     }
 
     .m-paragraph {
-      margin: 40px auto;
       width: 70%;
     }
   }
