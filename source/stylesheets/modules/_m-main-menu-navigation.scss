@@ -99,7 +99,7 @@
 
 @media #{$breakpoint-tablet} {
   .main-menu-list .item .link {
-    @include font(60px, 80px);
+    @include font(54px, 72px);
   }
 
   .no-touchevents {
@@ -126,6 +126,14 @@
         float: right;
         margin-right: -50px;
       }
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .main-menu-list {
+    .item .link {
+      @include font(60px, 80px);
     }
   }
 }
