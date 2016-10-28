@@ -44,7 +44,7 @@ $ ->
 
     loadPage = (pageNumber, direction) ->
       $.ajax
-        url: '/blog_posts/page/'+ pageNumber
+        url: '/blog_posts/page/'+ pageNumber + '/'
         dataType: 'html'
         success: (html) ->
           addContent(html, direction)
