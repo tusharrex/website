@@ -1,0 +1,82 @@
+.m-social-buttons {
+  @include align-items(flex-end);
+  @include flex-flow(row, nowrap);
+  @include justify-content(flex-end);
+  list-style-type: none;
+  text-align: right;
+
+  .social-icon {
+    @include size(50px, 50px);
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+
+    &.sm {
+      @include size(40px, 50px);
+    }
+
+    .is-current-color {
+      fill: $white;
+    }
+  }
+
+  .social-text {
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+  }
+}
+
+.no-touchevents {
+  .social-item:hover {
+    .twitter {
+      color: $aquamarine-blue;
+    }
+
+    .facebook {
+      color: $breaker-bay-green;
+    }
+
+    .github {
+      color: $indian-yellow;
+    }
+
+    .facebook-icon {
+      fill: $breaker-bay-green;
+    }
+
+    .github-icon {
+      fill: $indian-yellow;
+    }
+
+    .twitter-icon {
+      fill: $aquamarine-blue;
+    }
+  }
+
+  .social-item:active {
+    .facebook {
+      color: $deep-sea-green;
+    }
+
+    .github {
+      color: $damask-red;
+    }
+
+    .twitter {
+      color: $fountain-blue;
+    }
+
+    .facebook-icon {
+      fill: $deep-sea-green;
+    }
+
+    .github-icon {
+      fill: $damask-red;
+    }
+
+    .twitter-icon {
+      fill: $fountain-blue;
+    }
+  }
+}

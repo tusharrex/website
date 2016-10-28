@@ -1,20 +1,19 @@
 // scss-lint:disable NestingDepth
+.main-menu {
+  .main-menu-container {
+    width: 85%;
+  }
 
-.main-menu-container {
-  width: 85%;
-}
+  .m-desktop-close-button {
+    display: none;
+  }
 
-.m-desktop-close-button {
-  display: none;
-}
+  .main-menu-list {
+    @include justify-content(space-between);
+    @include flex-flow(column, nowrap);
+    list-style-type: none;
+    text-align: right;
 
-.main-menu-list {
-  @include justify-content(space-between);
-  @include flex-flow(column, nowrap);
-  list-style-type: none;
-  text-align: right;
-
-  .item {
     .arrow {
       display: none;
     }
@@ -25,74 +24,24 @@
     }
   }
 
+  .social-icon {
+    margin-left: 50px;
+  }
 }
 
-.social-links {
-  @include align-items(flex-end);
-  @include flex-flow(row, nowrap);
-  @include justify-content(flex-end);
-  list-style-type: none;
-  text-align: right;
 
-  .social-link {
-    margin-left: 50px;
-
-    svg {
-      color: $white;
-    }
-  }
-
-  .facebook-link {
-    @include size(50px, 50px);
-    display: inline-block;
-    overflow: hidden;
-
-    &:hover {
-      svg {
-        color: $breaker-bay-green;
-      }
+@media #{$breakpoint-tablet} {
+  .main-menu {
+    .item .link {
+      @include font(60px, 80px);
     }
 
-    &:active {
-      svg {
-        color: $deep-sea-green;
-      }
-    }
-  }
-
-  .github-link {
-    @include size(50px, 50px);
-    display: inline-block;
-    overflow: hidden;
-
-    &:hover {
-      svg {
-        color: $indian-yellow;
-      }
+    .m-mobile-close-button {
+      display: none;
     }
 
-    &:active {
-      svg {
-        color: $damask-red;
-      }
-    }
-  }
-
-  .twitter-link {
-    @include size(40px, 50px);
-    display: inline-block;
-    overflow: hidden;
-
-    &:hover {
-      svg {
-        color: $aquamarine-blue;
-      }
-    }
-
-    &:active {
-      svg {
-        color: $fountain-blue;
-      }
+    .m-desktop-close-button {
+      display: block;
     }
   }
 }
@@ -103,22 +52,6 @@
   }
 
   .no-touchevents {
-    .m-desktop-close-button {
-      display: block;
-    }
-
-    .m-mobile-close-button {
-      display: none;
-    }
-  }
-}
-
-@media #{$breakpoint-desktop} {
-  .main-menu-container {
-    width: 80%;
-  }
-
-  .main-menu-list {
     .item:hover {
       .arrow {
         @include size(40px, 40px);

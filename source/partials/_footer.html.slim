@@ -13,22 +13,25 @@ footer.m-footer
       br
       | &#43;48 602 123 249
 
-      ul.social-links
-        a.facebook-footer(href='https://facebook.com/codequest.eu'
-                            target='_blank' rel='nofollow')
-          li.social-link-item
-            .social-link.facebook-link = partial 'svg/main_menu/facebook_icon'
-            .social-link.footer-social-text Like us on Facebook
-        a.github-footer(href='https://github.com/codequest-eu'
+      ul.m-social-buttons
+        li.social-item
+          a.facebook(href='https://facebook.com/codequest.eu'
+                              target='_blank' rel='nofollow')
+            .social-icon
+              = partial 'svg/social/facebook_icon'
+            .social-text Like us on Facebook
+        li.social-item
+          a.github(href='https://github.com/codequest-eu'
+                          target='_blank' rel='nofollow')
+            .social-icon
+              = partial 'svg/social/github_icon'
+            .social-text Fork us on GitHub
+        li.social-item
+          a.twitter(href='https://twitter.com/codequest'
                         target='_blank' rel='nofollow')
-          li.social-link-item
-            .social-link.github-link = partial 'svg/main_menu/github_icon'
-            .social-link.footer-social-text Fork us on GitHub
-        a.twitter-footer(href='https://twitter.com/codequest'
-                      target='_blank' rel='nofollow')
-          li.social-link-item
-            .social-link.twitter-link = partial 'svg/main_menu/twitter_icon'
-            .social-link.footer-social-text Follow us on Twitter
+            .social-icon.sm
+              = partial 'svg/social/twitter_icon'
+            .social-text Follow us on Twitter
     .element.contact
       aside.coffee
         h1.header Hey, come in for a coffee

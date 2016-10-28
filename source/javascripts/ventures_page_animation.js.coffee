@@ -1,7 +1,7 @@
 $ ->
   isNonTouchScreen = $('.no-touchevents')
 
-  return unless(window.location.pathname == '/ventures' \
+  return unless(window.location.pathname == '/ventures/' \
                 && isNonTouchScreen.length > 0)
   $("[data-js='browser-left']").toggleClass('slide-to-left m-hidden')
   setTimeout ( ->

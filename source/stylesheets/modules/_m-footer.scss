@@ -62,15 +62,7 @@
     }
   }
 
-  .social-link {
-    margin-left: 0;
-  }
-
-  .footer-social-text {
-    display: none;
-  }
-
-  .social-links {
+  .m-social-buttons {
     @include align-items(flex-start);
     @include flex-flow(row, wrap);
     @include flex-justify-content(space-between);
@@ -82,10 +74,13 @@
     }
   }
 
-  .social-links,
-  .social-link-item,
-  .social-link {
+  .social-icon {
+    margin-left: 0;
     max-height: 32px;
+  }
+
+  .social-text {
+    display: none;
   }
 
   .wrapper {
@@ -164,7 +159,7 @@
       }
     }
 
-    .social-links {
+    .m-social-buttons {
       max-height: 160px;
     }
 
@@ -230,65 +225,15 @@
       width: 20%;
     }
 
-    .social-links {
+    .m-social-buttons {
       @include flex-flow(column, wrap);
       @include align-items(flex-start);
       height: 210px;
       width: initial;
     }
 
-    .footer-social-text {
+    .social-text {
       display: inline-block;
-      margin-left: 15px;
-      vertical-align: top;
-    }
-
-    .facebook-footer:hover {
-      color: $breaker-bay-green;
-
-      svg {
-        fill: $breaker-bay-green;
-      }
-    }
-
-    .facebook-footer:active {
-      color: $deep-sea-green;
-
-      svg {
-        fill: $deep-sea-green;
-      }
-    }
-
-    .github-footer:hover {
-      color: $indian-yellow;
-
-      svg {
-        fill: $indian-yellow;
-      }
-    }
-
-    .github-footer:active {
-      color: $damask-red;
-
-      svg {
-        fill: $damask-red;
-      }
-    }
-
-    .twitter-footer:hover {
-      color: $aquamarine-blue;
-
-      svg {
-        fill: $aquamarine-blue;
-      }
-    }
-
-    .twitter-footer:active {
-      color: $fountain-blue;
-
-      svg {
-        fill: $fountain-blue;
-      }
     }
 
     .wrapper {
