@@ -222,6 +222,7 @@ DEPENDENCIES
   middleman-livereload
   middleman-pry
   rspec
+  rubocop
   scss_lint
   slim
   slim_lint

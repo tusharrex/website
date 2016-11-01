@@ -28,10 +28,6 @@ AllCops:
     - 'vendor/**/*'
   # By default, the rails cops are not run. Override in project or home
   # directory .rubocop.yml files, or by giving the -R/--rails option.
-  RunRailsCops: false
-  # Cop names are not displayed in offense messages by default. Change behavior
-  # by overriding DisplayCopNames, or by giving the -D/--display-cop-names
-  # option.
   DisplayCopNames: false
   # Style guide URLs are not displayed in offense messages by default. Change
   # behavior by overriding DisplayStyleGuide, or by giving the
@@ -626,12 +622,6 @@ Style/SpaceAroundEqualsInParameterDefault:
     - space
     - no_space
 
-Style/SpaceAroundOperators:
-  MultiSpaceAllowedForOperators:
-    - '='
-    - '=>'
-    - '|' # for codequest_pipes
-
 Style/SpaceBeforeBlockBraces:
   EnforcedStyle: space
   SupportedStyles:
@@ -674,19 +664,6 @@ Style/TrailingBlankLines:
   SupportedStyles:
     - final_newline
     - final_blank_line
-
-Style/TrailingComma:
-  # If EnforcedStyleForMultiline is comma, the cop requires a comma after the
-  # last item of a list, but only for lists where each item is on its own line.
-  # If EnforcedStyleForMultiline is consistent_comma, the cop requires a comma
-  # after the last item of a list, for all lists.
-  #
-  # NOTE(marcinw): this is Google style - makes moving individual lines easier.
-  EnforcedStyleForMultiline: comma
-  SupportedStyles:
-    - comma
-    - consistent_comma
-    - no_comma
 
 # TrivialAccessors requires exact name matches and doesn't allow
 # predicated methods by default.
@@ -836,10 +813,6 @@ Rails/Date:
   SupportedStyles:
     - strict
     - flexible
-
-Rails/DefaultScope:
-  Include:
-    - app/models/**/*.rb
 
 Rails/FindBy:
   Include:

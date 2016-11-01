@@ -17,4 +17,5 @@ group :development do
   gem 'scss_lint', require: false
   gem 'coffeelint', require: false
   gem 'slim_lint', require: false
+  gem 'rubocop', require: false
 end
