@@ -21,6 +21,10 @@
     }
   }
 
+  .content {
+    height: 360px;
+  }
+
   .m-decorator {
     bottom: 0;
     left: 0;
@@ -93,13 +97,9 @@
 
   .summary {
     @include font(14px, 180%);
-    -webkit-box-orient: vertical;
     color: $martinique-dark;
-    display: -webkit-box;
     font-family: $baskerville;
-    -webkit-line-clamp: 7;
     margin: 12px 0;
-    overflow: hidden;
     text-align: justify;
 
     &.m-big-post {

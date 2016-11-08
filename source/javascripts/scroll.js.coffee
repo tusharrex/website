@@ -5,10 +5,19 @@ $ ->
   urlArr = url.split('/')
 
   if /.+\/blog\/?(page\/\d*)?$/.test(url)
+    truncate = ->
+      $(".content").dotdotdot
+        ellipsis: '...',
+        wrap: 'word',
+        watch: true
+
     pageNumber = parseInt(urlArr.pop()) || 1
     numPages = + $('#total_pages').text()
     isLoading = 0
     previousScroll = 0
+    lastPageLoaded = 0
+
+    truncate()
 
     if 'scrollRestoration' of history
       history.scrollRestoration = 'manual'
@@ -21,7 +30,6 @@ $ ->
 
     $win.scroll ->
       scrollPos = $win.scrollTop()
-
       if scrollPos > previousScroll
         setPageNumber('down')
         adjustUrl()
@@ -50,12 +58,15 @@ $ ->
           addContent(html, direction)
           setPageNumber(direction)
           addContentCallback()
+      lastPageLoaded = pageNumber
 
     shouldLoadPrev = (scrollPos) ->
-      scrollPos <= (separatorHeight + 40) && isLoading == 0 && pageNumber > 1
+      scrollPos <= (separatorHeight + 40) && isLoading == 0 &&
+      pageNumber > 1 && pageNumber - 1 != lastPageLoaded
 
     shouldLoadNext = (scrollPos) ->
-      scrollPos >= 0.5 * maxHeight() && isLoading == 0 && pageNumber < numPages
+      scrollPos >= 0.5 * maxHeight() && isLoading == 0 &&
+      pageNumber < numPages && pageNumber + 1 != lastPageLoaded
 
     maxHeight = ->
       bottomMargin = $('footer').height() + $('.m-grid-item').height()
@@ -97,8 +108,4 @@ $ ->
         history.pushState({},
           "page #{pageNumber}", pageUrl())
 
-  truncate = ->
-    $(".m-grid-item").dotdotdot
-      ellipsis: '...',
-      wrap: 'word',
-      watch: 'true',
+
