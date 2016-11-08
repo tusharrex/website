@@ -66,12 +66,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  activate :imageoptim do |options|
-    options.manifest = true
-    options.skip_missing_workers = true
-    options.threads = true
-    options.image_extensions = %w(.png .jpg .gif .svg)
-  end
   activate :gzip
 end
 
