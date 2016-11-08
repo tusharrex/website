@@ -1,40 +1,72 @@
 .m-separator {
-  border-color: transparent $light-gray $light-gray transparent;
   border-style: solid;
-  border-width: 15px 87vw 0 0;
-  bottom: -96px;
-  height: 50px;
-  margin: 0 auto;
-  position: relative;
+  border-width: 0 0 22px 100vw;
+  bottom: 0;
+  height: 0;
   width: 0;
 
-  &.m-separator-post {
-    border-width: 15px 270px 0 0;
-    height: 50px;
-    top: 172px;
+  @media screen and (min-width: 950px) {
+    border-bottom-width: 50px;
   }
-}
 
-@media #{$breakpoint-tablet} {
-  .m-separator {
-    bottom: -105px;
+  &.separator-opposite {
+    border-width: 22px 0 0 100vw;
 
-    &.m-separator-post {
-      border-width: 15px 280px 0 0;
-      height: 45px;
-      top: 183px;
+    @media screen and (min-width: 950px) {
+      border-top-width: 50px;
     }
   }
-}
 
-@media #{$breakpoint-desktop} {
-  .m-separator {
-    border-width: 28px 74vw 0 0;
+  &.separator-opposite-ventures {
+    border-color: transparent transparent $indian-yellow;
+    border-width: 0 0 22px 100vw;
+    margin-top: -300px;
 
-    &.m-separator-post {
-      border-width: 15px 350px 0 0;
-      height: 45px;
-      top: 228px;
+    @media screen and (min-width: 950px) {
+      border-top-width: 50px;
+      margin-top: -500px;
     }
   }
+
+  &.separator-light-gray {
+    border-color: transparent transparent $light-gray;
+    border-width: 0 0 22px 100vw;
+
+    @media screen and (min-width: 950px) {
+      border-top-width: 0;
+      margin-top: -105px;
+    }
+  }
+
+  &.separator-light-gray-bottom-left {
+    border-color: transparent transparent transparent $light-gray;
+    border-width: 22px 0 0 100vw;
+
+    @media screen and (min-width: 950px) {
+      border-top-width: 40px;
+    }
+  }
+
+  &.separator-opposite-red-left {
+    border-color: transparent transparent transparent $valencia-red;
+    border-width: 22px 0 0 100vw;
+
+    @media screen and (min-width: 950px) {
+      border-top-width: 50px;
+    }
+  }
+
+  &.separator-opposite-green-right {
+    border-color: transparent transparent $breaker-bay-green $light-gray;
+    border-width: 0 0 50px 100vw;
+
+    @media screen and (min-width: 950px) {
+      border-top-width: 0;
+    }
+  }
+
+  &.separator-indian-yellow {
+    border-color: transparent transparent transparent $indian-yellow;
+  }
 }
+
