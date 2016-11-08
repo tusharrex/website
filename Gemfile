@@ -8,6 +8,7 @@ gem 'middleman-blog'
 gem 'middleman-livereload'
 gem 'builder'
 gem 'middleman-imageoptim'
+gem 'middleman-autoprefixer'
 
 group :development do
   gem 'codeguard'

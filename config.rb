@@ -12,6 +12,11 @@ activate :blog do |blog|
 end
 activate :directory_indexes
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 11', 'Safari >= 6']
+  config.ignore   = ['/stylesheets/hacks.css']
+end
+
 page '/index.html', layout: :landing_page
 page '/404.html', layout: :website
 page '/feed.xml', layout: false

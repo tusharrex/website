@@ -7,8 +7,8 @@ closeMainMenu = ->
   $('html, body').removeClass('disable-scroll')
 
 $ ->
-  $('.m-burger-button').on 'touchend click mouseup', ->
+  $('.m-burger-button').on 'click', ->
     openMainMenu()
 
-  $('.m-close-button, .overlay').on 'touchend click mouseup', ->
+  $('.m-close-button, .overlay').on 'click', ->
     closeMainMenu()

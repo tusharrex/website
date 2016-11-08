@@ -15,6 +15,8 @@ GEM
     ast (2.1.0)
     astrolabe (1.3.1)
       parser (~> 2.2)
+    autoprefixer-rails (6.5.2)
+      execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -116,6 +118,9 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-autoprefixer (2.7.0)
+      autoprefixer-rails (>= 6.3.1, < 7.0.0)
+      middleman-core (>= 3.3.3)
     middleman-blog (3.5.3)
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
@@ -271,6 +276,7 @@ DEPENDENCIES
   capybara
   codeguard
   middleman
+  middleman-autoprefixer
   middleman-blog
   middleman-imageoptim
   middleman-livereload
@@ -282,4 +288,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.13.5
+   1.13.6
