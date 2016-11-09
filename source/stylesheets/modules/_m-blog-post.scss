@@ -21,10 +21,6 @@
     }
   }
 
-  .content {
-    height: 360px;
-  }
-
   .m-decorator {
     bottom: 0;
     left: 0;
@@ -197,7 +193,7 @@
 @media #{$breakpoint-desktop} {
   .m-blog-post {
     &.m-big-post {
-      margin: 80px 0 100px;
+      margin: 80px 0 50px;
     }
 
     .m-decorator {

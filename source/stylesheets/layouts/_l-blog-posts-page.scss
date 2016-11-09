@@ -9,6 +9,11 @@
   }
 }
 
+.blog-pagination {
+  @include flex-flow(row, wrap);
+  @include flex-justify-content(space-around);
+}
+
 @media #{$breakpoint-tablet} {
   .l-blog-posts-page {
     .separator {
@@ -26,5 +31,10 @@
     .separator {
       height: 160px;
     }
+  }
+
+  .blog-pagination {
+    max-width: 950px;
+    margin: 30px auto;
   }
 }

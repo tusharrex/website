@@ -1,39 +1,45 @@
 ---
 pageable: true
+per_page: 7
 ---
 = partial 'partials/website_header', locals: {title: data.blog.title}
 = partial 'partials/header_subtitle', locals: \
   {subtitle: data.blog.subtitle}
 .l-blog-posts-page
   .m-blog-posts-container.m-large
-    - blog.articles[0..0].each do |article|
+    - blog.articles[0..0].each do |art|
       article.m-blog-post.m-big-post
-        .posts.m-big-post
-          a.article(href= article.url class= article.metadata[:page]['color'])
+        .post.m-big-post
+          a.article(href= art.url class= art.metadata[:page]['color'])
             .post-detail.m-big-post
               .content
                 header.detail
                   span.subtitle.m-big-post
-                    = article.data.subtitle
+                    = art.data.subtitle
                   span.date.m-big-post
-                    = article.date.strftime('%B %e, %Y')
+                    = art.date.strftime('%B %e, %Y')
                   h2.title.m-big-post
-                    = article.title
+                    = art.title
                 .summary.m-big-post
-                  = strip_tags article.summary(500)
+                  = strip_tags art.summary(500)
               .read-more.color-valencia-red Read more...
               footer.info-author
                 .image-author.m-big-post
-                  = image_tag article.data.imageauthor
+                  = image_tag art.data.imageauthor
                   span.author.m-big-post
-                    = article.data.author
+                    = art.data.authorx
     .m-separator-line.m-light-gray-2
     .m-separator-line.m-white
+  .blog-pagination
+    - if paginate
+      - if prev_page
+        = link_to 'Poprzednia', prev_page, {:class => 'poprzednia-strona'}
+      - if next_page
+        = link_to 'Nastepna', next_page, {:class => 'nastepna-strona'}
   #posts.m-grid-collection.m-space-between.m-blog-posts-container
-    .page(data-page-no= page_number)
     - page_articles.drop(1).each do |article|
       article.m-blog-post
-        .posts
+        .post
           a.article(href= article.url class= article.metadata[:page]['color'])
             .image
               = image_tag article.data.image
@@ -55,9 +61,6 @@ pageable: true
                   = image_tag article.data.imageauthor
                   span.author
                     = article.data.author
-    .no-content
-  #total_pages.hidden
-    = num_pages
   link(rel='alternate' type="application/atom+xml" title='code quest blog'
     href="#{root_url}/feed.xml")
   .separator
