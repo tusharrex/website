@@ -4,7 +4,7 @@ pageable: true
 .page(data-page-no= page_number)
 - page_articles.each do |article|
   article.m-blog-post(class=(article == blog.articles[0] ? 'hidden' : ''))
-    .posts
+    .post
       a.article(href= article.url class= article.metadata[:page]['color'])
         .image
           = image_tag article.data.image

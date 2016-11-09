@@ -8,7 +8,7 @@ pageable: true
   .m-blog-posts-container.m-large
     - blog.articles[0..0].each do |article|
       article.m-blog-post.m-big-post
-        .posts.m-big-post
+        .post.m-big-post
           a.article(href= article.url class= article.metadata[:page]['color'])
             .post-detail.m-big-post
               .content
@@ -33,7 +33,7 @@ pageable: true
     .page(data-page-no= page_number)
     - page_articles.drop(1).each do |article|
       article.m-blog-post
-        .posts
+        .post
           a.article(href= article.url class= article.metadata[:page]['color'])
             .image
               = image_tag article.data.image
