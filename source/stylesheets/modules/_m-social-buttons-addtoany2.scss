@@ -65,6 +65,10 @@
   .m-social-buttons-addtoany {
     @include size(88px, 100%);
 
+    &.a2a_kit_size_35 {
+      margin-top: 74px;
+    }
+
     a {
       margin-left: 15px;
     }

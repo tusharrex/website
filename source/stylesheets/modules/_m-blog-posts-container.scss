@@ -1,31 +1,37 @@
 .m-blog-posts-container {
-  margin: 20px auto 0;
+  margin: 10px auto 0;
   max-width: 300px;
 
   &.m-large {
     margin: 0 auto;
     max-width: 320px;
   }
+
+  .page {
+    position: absolute;
+  }
 }
 
 @media #{$breakpoint-tablet} {
   .m-blog-posts-container {
-    margin-top: 50px;
+    margin-top: 20px;
     max-width: 740px;
 
     &.m-large {
       max-width: 726px;
+      padding: 0 10px;
     }
   }
 }
 
 @media #{$breakpoint-desktop} {
   .m-blog-posts-container {
-    margin-top: 80px;
+    margin-top: 50px;
     max-width: 950px;
 
     &.m-large {
       max-width: 948px;
+      padding: 0 30px;
     }
   }
 }
