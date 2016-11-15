@@ -6,17 +6,16 @@
   border-radius: 10px;
   color: $white;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-family: $alega;
   font-size: 30px;
-  margin: 4px 2px;
+  margin: 0 auto;
   overflow: hidden;
   padding: 15px 5px;
   position: relative;
   text-align: center;
   text-decoration: none;
   transition-duration: .3s;
-  width: 290px;
 
   &.small {
     width: 218px;
@@ -189,5 +188,13 @@
 
   &.m-font-baskerville-bold {
     font-family: $baskerville-bold;
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .btn {
+    display: inline-block;
+    margin: 4px 2px;
+    width: 290px;
   }
 }

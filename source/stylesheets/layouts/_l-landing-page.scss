@@ -14,7 +14,7 @@ h1 {
 
   &.phrase-with-cta-buttons {
     background-color: $martinique-dark;
-    padding: 22px 10px 95px;
+    padding: 22px 15px 95px;
     z-index: -1;
   }
 
@@ -39,14 +39,14 @@ h1 {
     text-align: center;
   }
 
-  .landing-button {
-    margin-bottom: 32px;
-  }
-
   .button-wrapper {
     margin: 0 auto;
     padding-top: 90px;
     text-align: center;
+
+    .btn-landing {
+      margin-bottom: 32px;
+    }
   }
 
   .m-decorator {
@@ -59,12 +59,8 @@ h1 {
     .signature-wrapper {
       line-height: initial;
     }
-  }
-}
 
-@media #{$breakpoint-mobile-landscape} {
-  .l-landing-page {
-    .landing-button {
+    .btn-landing {
       margin: 0 10% 32px;
     }
   }
@@ -90,10 +86,10 @@ h1 {
       @include flex-flow(row, wrap);
       @include justify-content(center);
       padding-top: 42px;
-    }
 
-    .btn.landing-button {
-      margin: 19px;
+      .btn-landing {
+        margin: 19px;
+      }
     }
 
     .m-decorator {

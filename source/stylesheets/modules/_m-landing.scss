@@ -45,11 +45,6 @@
     top: 80px;
   }
 
-  .button-center {
-    display: block;
-    margin: 0 auto 80px;
-  }
-
   .love-passion-code-img {
     background-image: url('../svg/landing/love-passion-code-mobile.svg');
     background-repeat: no-repeat;
@@ -69,6 +64,11 @@
   .bcg-element-img-left {
     position: absolute;
     width: 200px;
+  }
+
+  .btn-center {
+    display: block;
+    margin: 0 15px 80px;
   }
 }
 
@@ -104,6 +104,11 @@
       margin: 30px 50px;
       max-width: 1150px;
     }
+
+    .btn-center {
+      margin: 0 auto 80px;
+    }
+
   }
 }
 
