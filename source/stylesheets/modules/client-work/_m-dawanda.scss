@@ -1,0 +1,118 @@
+.m-dawanda {
+  .logo {
+    width: 200px;
+  }
+
+  .m-browsers {
+    z-index: 0;
+  }
+
+  .m-window-browser {
+    bottom: -10vw;
+    display: block;
+    width: 90vw;
+
+    &.right {
+      background: url('/images/work/dawanda02.png') 0 15px no-repeat;
+      background-size: 100%;
+      display: none;
+    }
+
+    &.left {
+      background: url('/images/work/dawanda03.png') 0 15px no-repeat;
+      background-size: 100%;
+      display: none;
+    }
+
+    &.middle {
+      background: url('/images/work/dawanda01.png') 0 15px no-repeat;
+      background-size: 100%;
+      height: 60vw;
+      max-width: 92vw;
+    }
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-dawanda {
+    .m-window-browser {
+      background-position: 0 20px;
+      height: 50vw;
+      max-width: 90vw;
+
+      &.middle {
+        background-position: 0 20px;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-dawanda {
+    .m-browsers {
+      height: 40vw;
+    }
+
+    .m-window-browser {
+      display: block;
+      max-width: 50vw;
+
+      &.left,
+      &.right {
+        display: block;
+        position: absolute;
+      }
+
+      &.middle {
+        background-position: 0 15px;
+        height: 50vw;
+        max-width: 50vw;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-dawanda {
+    padding-top: 30px;
+
+    .m-browsers {
+      height: 30vw;
+      max-width: 90vw;
+    }
+
+    .m-window-browser {
+      max-width: 40vw;
+
+      &.right,
+      &.left,
+      &.middle {
+        background-position: 0 27px;
+      }
+
+      &.middle {
+        height: 580px;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-largest} {
+  .m-dawanda {
+    padding-top: 50px;
+
+    .m-browsers {
+      height: 450px;
+    }
+
+    .m-window-browser {
+      height: 444px;
+      max-height: 816px;
+
+      &.middle {
+        height: 502px;
+        max-width: 680px;
+      }
+    }
+  }
+}

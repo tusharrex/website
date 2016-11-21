@@ -1,0 +1,224 @@
+.m-work-section {
+  position: relative;
+
+  .description {
+    @include font (16px, 24px);
+    margin: 20px 15px;
+  }
+
+  .logo {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 250px;
+  }
+
+  .icons {
+    margin: 0 auto;
+    max-width: 300px;
+
+    svg {
+      height: 40px;
+      margin: 10px;
+      width: 50px;
+    }
+  }
+
+  .icon-dark {
+    .fixed-colors-svg {
+      fill: $mirage-dark;
+    }
+  }
+
+  .icon-grey {
+    .fixed-colors-svg {
+      fill: $dark-gray;
+    }
+  }
+
+  .icon-green {
+    .fixed-colors-svg {
+      fill: $breaker-bay-green-dark;
+    }
+  }
+
+  .icon-red {
+    .fixed-colors-svg {
+      fill: $valencia-dark;
+    }
+  }
+
+  .icon-orange {
+    .fixed-colors-svg {
+      fill: $damask-red-dark;
+    }
+  }
+
+  .icon-yellow {
+    .fixed-colors-svg {
+      fill: $indian-yellow-dark;
+    }
+  }
+
+  .icon-degoo-blue {
+    .fixed-colors-svg {
+      fill: $degoo-blue;
+    }
+  }
+
+  .info-project {
+    height: 600px;
+    max-width: 300px;
+  }
+
+  .mobile-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .m-window-browser {
+    border-radius: 6px;
+    position: relative;
+
+    &.from-the-bottom {
+      bottom: -30px;
+      height: 66vw;
+      right: -8vw;
+      width: 84vw;
+    }
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-work-section {
+    .info-project {
+      height: 430px;
+      max-width: 440px;
+    }
+
+    .icons {
+      max-width: 440px;
+    }
+
+    .description {
+      &.text-center {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-work-section {
+    .icons {
+      &.icons-center {
+        margin: 20px auto;
+        max-width: 500px;
+      }
+
+      svg {
+        margin: 8px;
+      }
+    }
+
+    .info-project {
+      height: 620px;
+      max-width: 300px;
+
+      &.eqipia {
+        height: 710px;
+        max-width: 330px;
+      }
+    }
+
+    .m-window-browser {
+      &.from-the-bottom {
+        bottom: -120px;
+        height: 42vw;
+        right: -5vw;
+        width: 50vw;
+      }
+    }
+
+    .description {
+      &.text-center {
+        margin: 30px auto;
+        max-width: 70vw;
+      }
+    }
+
+    .mobile-container {
+      width: 57%;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-work-section {
+    .description {
+      @include font (18px, 26px);
+
+      &.text-center {
+        max-width: 60vw;
+      }
+    }
+
+    .logo {
+      margin: 0 auto;
+      width: 270px;
+      z-index: 1;
+    }
+
+    .icons {
+      max-width: 380px;
+
+      &.icons-center {
+        max-width: 80vw;
+      }
+    }
+
+    .info-project {
+      margin-top: 20px;
+      max-width: 370px;
+
+      &.eqipia {
+        max-width: 450px;
+      }
+    }
+
+    .m-window-browser {
+      &.from-the-bottom {
+        bottom: -30px;
+        height: 430px;
+        margin-top: 70px;
+        max-width: 700px;
+        right: -5vw;
+      }
+    }
+
+    .mobile-container {
+      width: 50%;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-work-section {
+    .work-container {
+      margin: 0 auto;
+      max-width: 1352px;
+      position: relative;
+    }
+
+    .mobile-container {
+      width: 18%;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-retina-sm} {
+  .m-work-section {
+    .mobile-container {
+      width: 33.3%;
+    }
+  }
+}

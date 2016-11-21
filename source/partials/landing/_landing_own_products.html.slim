@@ -9,13 +9,13 @@
     | Apart from client work we are creating our own pieces of
       awesomeness. This side of our company is only gonna grow so keep
       your eyes peeled.
-  .m-codebeat
-    .codebeat-views
-      .codebeat-dashboard.m-hidden(data-js='browser-left')
-        = partial 'partials/osx_window'
-      .codebeat-dashboard
-        = partial 'partials/osx_window'
+  .m-browsers
+    .m-window-browser.m-hidden(data-js='browser-left')
+      = partial 'partials/window-browser'
+    .m-window-browser
+      = partial 'partials/window-browser'
+    .m-mobile
       = partial 'partials/mobile'
-      .codebeat-dashboard.m-hidden(data-js='browser-right')
-        = partial 'partials/osx_window'
+    .m-window-browser.m-hidden(data-js='browser-right')
+      = partial 'partials/window-browser'
   .m-separator-big.separator-light-gray

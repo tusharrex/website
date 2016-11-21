@@ -1,0 +1,15 @@
+<svg version="1.1"
+   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   x="0px" y="0px" width="163.3px" height="203px" viewBox="0 0 163.3 203" style="enable-background:new 0 0 163.3 203;"
+   xml:space="preserve">
+<defs>
+</defs>
+<g>
+  <path class="backbone-0 fixed-colors-svg" d="M82.5,78.2l-55.2,31.9c0,0,0.2,35.3,0.2,46c3.6-2.1,54.8-31.5,54.8-31.5v31.5L0,203L0.7,93.5l82.2-47"/>
+  <polygon class="backbone-0 fixed-colors-svg" points="163.3,0 163.3,93.6 136.3,77.7 136.2,47.2 109.3,61.9 82.7,46.5  "/>
+  <polygon class="backbone-0 fixed-colors-svg" points="82.3,156.2 82.3,124.7 133.3,155.8 133.3,110 82.5,78.2 82.7,46.5 163.3,93.6 163.3,202.9   "/>
+  <path class="backbone-0 fixed-colors-svg" d="M55.2,62.3L26.3,46.7v32L0.6,93.5L0,0.4c0,0,56.7,31.1,82.8,46.1L55.2,62.3z"/>
+  <polygon class="backbone-0 fixed-colors-svg" points="41.2,101.7 82.5,124.7 54.6,140.8 26.7,124.8 26.7,110.2   "/>
+  <polygon class="backbone-0 fixed-colors-svg" points="82.5,124.7 120.8,102.2 133.3,110 133.3,126.6 108.8,140.5   "/>
+</g>
+</svg>

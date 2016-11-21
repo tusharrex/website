@@ -1,5 +1,9 @@
 .m-content-padding {
   padding-top: 35px;
+
+  .m-paragraph {
+    padding-bottom: 30px;
+  }
 }
 
 @media #{$breakpoint-tablet} {
@@ -7,6 +11,10 @@
     padding: 50px 0 70px;
 
     &.padding-bottom-sm {
+      padding-bottom: 0;
+    }
+
+    &.pb-0 {
       padding-bottom: 0;
     }
   }

@@ -1,0 +1,95 @@
+.m-foundersuite {
+  .bcg-grey-left-svg {
+    height: 30px;
+    position: absolute;
+    width: 130px;
+  }
+
+  .bcg-grey-right-svg {
+    height: 36vw;
+    left: 2vw;
+    position: absolute;
+    top: 600px;
+    width: 51vw;
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+
+  .m-window-browser {
+    background: url('/images/work/fs.png') 0 15px no-repeat;
+    background-size: cover;
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-foundersuite {
+    .bcg-grey-left-svg {
+      height: 4vw;
+      width: 20vw;
+    }
+
+    .bcg-grey-right-svg {
+      top: 419px;
+      width: 52vw;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-foundersuite {
+    .bcg-grey-left-svg {
+      height: 3vw;
+      top: 554px;
+      width: 13vw;
+    }
+
+    .bcg-grey-right-svg {
+      height: 18vw;
+      left: initial;
+      right: 0;
+      top: 13px;
+      width: 22vw;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-foundersuite {
+    .bcg-grey-left-svg {
+      height: 36px;
+      top: 552px;
+      width: 150px;
+    }
+
+    .bcg-grey-right-svg {
+      height: 12vw;
+      right: 48vw;
+      top: 4vw;
+      width: 16vw;
+      z-index: -1;
+    }
+
+    .m-window-browser {
+      background-position: 0 26px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-largest} {
+  .m-foundersuite {
+    .bcg-grey-left-svg {
+      height: 36px;
+      top: 535px;
+      width: 160px;
+    }
+
+    .bcg-grey-right-svg {
+      height: 166px;
+      right: 50%;
+      width: 221px;
+      z-index: -1;
+    }
+  }
+}

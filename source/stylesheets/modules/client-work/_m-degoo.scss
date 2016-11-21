@@ -1,0 +1,121 @@
+.m-degoo {
+  padding-top: 45px;
+
+  .mobile-degoo {
+    .window {
+      background: url('/images/work/degoo.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .deego-icons-container {
+    left: -100px;
+    max-width: 400px;
+    position: relative;
+    top: 315px;
+  }
+
+  .degoo-icon {
+    background: url('/images/work/degoo-icon.png') no-repeat;
+    background-size: cover;
+    display: none;
+
+    &.small {
+      height: 100px;
+      margin-right: 30px;
+      width: 100px;
+    }
+
+    &.large {
+      height: 160px;
+      width: 160px;
+    }
+  }
+
+  .logo {
+    width: 200px;
+  }
+}
+
+@media #{$mobile} {
+  .m-degoo {
+    .mobile-degoo {
+      border-radius: 40px;
+      height: 457px;
+
+      .window {
+        top: 12%;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-degoo {
+    padding-bottom: 194px;
+
+    .info-degoo {
+      max-width: 350px;
+    }
+
+    .logo { // common
+      margin-left: 15px;
+      width: 240px;
+    }
+
+    .mobile-container {
+      width: 54%;
+    }
+
+    .m-mobile {
+      left: 80px;
+      top: 34px;
+    }
+
+    .mobile-with-after::after {
+      background: url('../svg/work/degoo-cloud.svg') no-repeat;
+      content: '';
+      height: 308px;
+      position: absolute;
+      right: 0;
+      top: -56px;
+      width: 302px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-degoo {
+    .mobile-with-after::after {
+      right: 11%;
+      top: -95px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-largest} {
+  .m-degoo {
+    padding: 158px 0 260px;
+
+    .degoo-icon {
+      display: block;
+    }
+
+    .logo {
+      width: 300px;
+    }
+
+    .info-degoo {
+      max-width: 530px;
+    }
+
+    .mobile-with-after::after {
+      right: -16px;
+      top: -150px;
+    }
+
+    .m-mobile {
+      left: 280px;
+    }
+  }
+}

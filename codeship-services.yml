@@ -1,4 +1,4 @@
 website:
   build:
-    dockerfile_path: Dockerfile
+    dockerfile_path: Dockerfile.ci
   cached: true

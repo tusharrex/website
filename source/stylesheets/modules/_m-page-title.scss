@@ -4,10 +4,14 @@
   font-family: $alega;
   font-size: 11vw;
   left: 0;
-  margin: 0 auto;
+  margin: 4px auto;
   position: absolute;
   right: 0;
   text-align: center;
+
+  &.m-0-auto {
+    margin: 0 auto;
+  }
 }
 
 @media #{$mobile} {

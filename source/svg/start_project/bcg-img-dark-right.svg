@@ -1,0 +1,23 @@
+<svg version="1.1"
+   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   x="0px" y="0px" width="275.1px" height="66.8px" viewBox="0 0 275.1 66.8" style="enable-background:new 0 0 275.1 66.8;"
+   xml:space="preserve">
+<style type="text/css">
+  .bcg-img-dark-0{fill:none;stroke:#22273D;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<defs>
+</defs>
+<g>
+  <g>
+    <circle class="bcg-img-dark-0" cx="6.7" cy="6.7" r="4.7"/>
+    <line class="bcg-img-dark-0" x1="11.1" y1="6.3" x2="275.1" y2="6.3"/>
+  </g>
+  <g>
+    <line class="bcg-img-dark-0" x1="275.1" y1="60.3" x2="82.1" y2="60.3"/>
+    <circle class="bcg-img-dark-0" cx="76" cy="60.1" r="4.7"/>
+    <path class="bcg-img-dark-0" d="M138,46.1"/>
+    <circle class="bcg-img-dark-0" cx="116.8" cy="30.3" r="4.7"/>
+    <line class="bcg-img-dark-0" x1="121.1" y1="30.3" x2="275.1" y2="30.3"/>
+  </g>
+</g>
+</svg>

@@ -11,6 +11,7 @@
 @import 'base/backgrounds';
 @import 'base/font_colors';
 @import 'base/font_family';
+@import 'base/paddings';
 
 @import 'layouts/l-landing-page';
 @import 'layouts/l-work-page';
@@ -41,11 +42,12 @@
 @import 'modules/m-contact';
 @import 'modules/m-start-project';
 @import 'modules/m-ventures';
-@import 'modules/m-osx-window';
+@import 'modules/m-window-browser';
+@import 'modules/m-browsers';
 @import 'modules/m-codebeat';
-@import 'modules/m-cq-work-portfolio';
+@import 'modules/m-cq-portfolio';
+@import 'modules/m-testimonial';
 @import 'modules/m-grid-element';
-@import 'modules/m-quote';
 @import 'modules/m-footer';
 @import 'modules/m-join-us';
 @import 'modules/m-job-offers';
@@ -70,8 +72,20 @@
 @import 'modules/m-prime-carousel';
 @import 'modules/m-hover-carousel';
 @import 'modules/m-mobile';
+@import 'modules/m-animations';
 @import 'modules/m-separator-line';
 @import 'modules/m-blog-posts-container';
+
+//CLIENT WORK
+@import 'modules/client-work/m-work-section';
+@import 'modules/client-work/m-foundersuite';
+@import 'modules/client-work/m-selecthub';
+@import 'modules/client-work/m-soothe';
+@import 'modules/client-work/m-dawanda';
+@import 'modules/client-work/m-eqipia';
+@import 'modules/client-work/m-soal';
+@import 'modules/client-work/m-degoo';
+@import 'modules/client-work/m-kredytmarket';
 
 @import 'states/s-cq-main-logo';
 @import 'states/s-contact-section';

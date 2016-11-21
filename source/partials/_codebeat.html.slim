@@ -1,12 +1,13 @@
 .m-codebeat
-  .codebeat-views
-    .codebeat-dashboard.m-hidden(data-js='browser-left')
-      = partial 'partials/osx_window'
-    .codebeat-dashboard
-      = partial 'partials/osx_window'
-    = partial 'partials/mobile'
-    .codebeat-dashboard.m-hidden(data-js='browser-right')
-      = partial 'partials/osx_window'
+  .m-browsers
+    .m-window-browser.m-hidden(data-js='browser-left')
+      = partial 'partials/window-browser'
+    .m-window-browser
+      = partial 'partials/window-browser'
+    .m-mobile
+      = partial 'partials/mobile'
+    .m-window-browser.m-hidden(data-js='browser-right')
+      = partial 'partials/window-browser'
   .m-separator-big.separator-opposite-ventures
   .m-ventures.m-yellow-bcg
     .codebeat-slogan Automated code review for mobile and web applications

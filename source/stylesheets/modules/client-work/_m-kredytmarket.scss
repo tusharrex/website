@@ -1,0 +1,25 @@
+.m-kredytmarket {
+  padding-top: 38px;
+
+  .info-project {
+    margin-bottom: 58px;
+  }
+
+  .logo {
+    width: 268px;
+  }
+
+  .m-window-browser {
+    background: url('/images/work/kredytmarket.png') 0 15px no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-kredytmarket {
+    .m-window-browser {
+      background-position: 0 28px;
+    }
+  }
+}

@@ -6,6 +6,10 @@
   padding: 0;
   position: relative;
   width: 100%;
+
+  &.m-header-work {
+    background-color: $breaker-bay-green;
+  }
 }
 
 @media #{$breakpoint-desktop} {

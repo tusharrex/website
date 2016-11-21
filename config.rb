@@ -68,4 +68,6 @@ configure :build do
   end
 end
 
+Slim::Engine.disable_option_validator!
+
 helpers CustomHelpers

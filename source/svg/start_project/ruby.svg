@@ -1,0 +1,27 @@
+<svg version="1.1"
+   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   x="0px" y="0px" width="40px" height="35.2px" viewBox="0 0 40 35.2" style="enable-background:new 0 0 40 35.2;"
+   xml:space="preserve">
+<defs>
+</defs>
+<g>
+  <ellipse transform="matrix(0.8895 -0.457 0.457 0.8895 -1.94 8.5226)" class="fixed-colors-svg" cx="16.6" cy="8.3" rx="13.7" ry="6.1"/>
+  <polygon class="fixed-colors-svg" points="13,17.3 24.8,11.7 23.9,24.9  "/>
+  <polygon class="fixed-colors-svg" points="25.4,11.2 30.3,4.5 37,14.3   "/>
+  <polygon class="fixed-colors-svg" points="30.4,3.5 28.1,0.2 35.3,2.3   "/>
+  <path class="fixed-colors-svg" d="M31,3.9l5.2-1.3c0,0,2.1,0.8,3.2,2.6C40.2,6.8,40,8.3,40,8.3L31,3.9z"/>
+  <path class="fixed-colors-svg" d="M37.6,14.2c0,0,2-3,2.2-5.3l-9-4.4L37.6,14.2z"/>
+  <path class="fixed-colors-svg" d="M32.3,19.8c0,0,3.5-2.9,4.8-5l-11.5-2.9L32.3,19.8z"/>
+  <path class="fixed-colors-svg" d="M24.4,25.3c0,0,4.5-2,7.4-5.1l-6.6-8L24.4,25.3z"/>
+  <path class="fixed-colors-svg" d="M23.8,25.5l-10.8-7.7l1.9,10.8C14.9,28.6,19,27.9,23.8,25.5z"/>
+  <polygon class="fixed-colors-svg" points="12.3,17.4 5.1,27.9 4.4,16.7  "/>
+  <path class="fixed-colors-svg" d="M5,28.9c0,0,3.4,1.4,9.3-0.1L12.6,18L5,28.9z"/>
+  <path class="fixed-colors-svg" d="M4.7,28.8l-0.8-12l-3.3,8.8C0.6,25.6,1.6,27.7,4.7,28.8z"/>
+  <path class="fixed-colors-svg" d="M3.3,17.3l-3,7.8c0,0-0.9-1.6,0.4-5.2L3.3,17.3z"/>
+  <polygon class="fixed-colors-svg" points="0.9,19.2 3.7,16.3 3.7,12.2   "/>
+  <path class="fixed-colors-svg" d="M24.6,25.8c0,0,4.4-1.8,7.4-5l-1.8,13.9L24.6,25.8z"/>
+  <path class="fixed-colors-svg" d="M32.5,20.5c0,0,4.4-3.5,6-6.6l-7.8,20.7L32.5,20.5z"/>
+  <path class="fixed-colors-svg" d="M24.1,25.9l5.8,8.9l-14.7-5.8C15.2,29.1,21,27.9,24.1,25.9z"/>
+  <path class="fixed-colors-svg" d="M14.5,29.3l15,5.9L7.7,29.9C7.7,29.9,10.7,30.5,14.5,29.3z"/>
+</g>
+</svg>

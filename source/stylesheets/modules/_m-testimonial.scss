@@ -1,0 +1,186 @@
+.m-testimonial {
+  padding-bottom: 30px;
+  position: relative;
+
+  .img-face {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid $light-gray;
+    border-radius: 100px;
+    display: block;
+    height: 80px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -52px;
+    width: 80px;
+
+    &.img-fs {
+      background-image: url('../svg/start_project/nathan.png');
+    }
+
+    &.img-selecthub {
+      background-image: url('../svg/start_project/hernando.png');
+    }
+
+    &.img-soal {
+      background-image: url('../svg/start_project/nathan-b.png');
+    }
+
+    &.img-kredytmarket {
+      background-image: url('../svg/start_project/aleksander.png');
+    }
+  }
+
+  .section {
+    position: relative;
+  }
+
+  .signature {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .quote {
+    @include font (20px, 30px);
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 30px 20px;
+    position: relative;
+    quotes: '“' '”' '‘' '’';
+    text-align: center;
+    text-indent: 30px;
+    z-index: 2;
+
+    &.martinique-dark {
+      color: $martinique-dark;
+    }
+
+    &::before {
+      content: open-quote;
+      left: -10px;
+      top: 54px;
+    }
+
+    &::after {
+      content: close-quote;
+      right: 50px;
+    }
+
+    &::after,
+    &::before {
+      color: $santas-gray;
+      display: block;
+      font-size: 100px;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &.right-0::after {
+      right: 0;
+    }
+
+    &.quote-martinique::after,
+    &.quote-martinique::before {
+      color: $martinique-dark;
+    }
+
+    &.quote-yellow::after,
+    &.quote-yellow::before {
+      color: $indian-yellow;
+    }
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-testimonial {
+    .quote {
+      @include font (22px, 34px);
+      max-width: 460px;
+      padding: 30px 20px 70px;
+    }
+
+    .img-face {
+      height: 100px;
+      top: -61px;
+      width: 100px;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-testimonial {
+    padding-bottom: 0;
+
+    .section {
+      padding-top: 47px;
+    }
+
+    .quote {
+      max-width: 500px;
+      padding-bottom: 100px;
+
+      &::after {
+        bottom: 84px;
+        right: 50px;
+      }
+
+      &.right-0::after {
+        right: 50px;
+      }
+    }
+
+    .img-face {
+      height: 110px;
+      top: -67px;
+      width: 110px;
+    }
+
+    .signature {
+      font-size: 18px;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-testimonial {
+    padding-bottom: 50px;
+
+    .quote {
+      @include font (26px, 38px);
+      max-width: 600px;
+
+      &::after {
+        right: 22%;
+      }
+    }
+
+    .img-face {
+      height: 125px;
+      top: -112px;
+      width: 125px;
+    }
+
+    .signature {
+      font-size: 20px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-largest} {
+  .m-testimonial {
+    .quote {
+      @include font (30px, 42px);
+      max-width: 700px;
+    }
+  }
+
+  .signature {
+    font-size: 20px;
+  }
+}

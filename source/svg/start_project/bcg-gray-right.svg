@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 263 184.4" style="enable-background:new 0 0 263 184.4;" xml:space="preserve">
+<style type="text/css">
+ .st-bcg-gray-right-0{fill:none;stroke:#CCCCCC;stroke-width:4;stroke-miterlimit:10;}
+</style>
+ <g>
+  <line class="st-bcg-gray-right-0" x1="263" y1="114.7" x2="174.5" y2="114.7"/>
+  <circle class="st-bcg-gray-right-0" cx="168.5" cy="114.7" r="4.7"/>
+  <circle class="st-bcg-gray-right-0" cx="6.7" cy="99.2" r="4.7"/>
+  <circle class="st-bcg-gray-right-0" cx="41.1" cy="6.7" r="4.7"/>
+  <polyline class="st-bcg-gray-right-0" points="263,99.7 132.9,99.7 44,10.9 	"/>
+  <line class="st-bcg-gray-right-0" x1="11.5" y1="99.7" x2="132.5" y2="99.7"/>
+  <circle class="st-bcg-gray-right-0" cx="6.7" cy="69.5" r="4.7"/>
+  <circle class="st-bcg-gray-right-0" cx="173.8" cy="177.7" r="4.7"/>
+  <line class="st-bcg-gray-right-0" x1="178.5" y1="177.7" x2="263" y2="177.7"/>
+  <circle class="st-bcg-gray-right-0" cx="157.3" cy="161.9" r="4.7"/>
+  <line class="st-bcg-gray-right-0" x1="161.5" y1="161.7" x2="263" y2="161.7"/>
+  <polyline class="st-bcg-gray-right-0" points="89.9,99.4 60.1,69.7 11.5,69.7 	"/>
+ </g>
+</svg>

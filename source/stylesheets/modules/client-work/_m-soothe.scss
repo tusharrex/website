@@ -1,0 +1,99 @@
+.m-soothe {
+  .products-presentation {
+    position: relative;
+    width: 100%;
+  }
+
+  .mobile-soothe {
+    display: none;
+
+    .window {
+      background: url('/images/work/soothe-mobile01.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .m-window-browser {
+    background: url('/images/work/soothe.png') 0 15px no-repeat;
+    background-size: 190%;
+    bottom: -30px;
+    height: 100vw;
+    right: -16vw;
+    width: 84vw;
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-soothe {
+    .m-window-browser {
+      background-size: 150%;
+      bottom: -64px;
+      height: 75vw;
+      width: 84vw;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-soothe {
+    padding-bottom: 80px;
+
+    .products-presentation {
+      width: auto;
+    }
+
+    .m-window-browser {
+      background-size: 100%;
+      bottom: -120px;
+      height: 45vw;
+      right: -5vw;
+      width: 50vw;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-soothe {
+    .m-window-browser {
+      background-position: 0 25px;
+      height: 394px;
+      right: -5vw;
+      width: 517px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-largest} {
+  .m-soothe {
+    padding-bottom: 200px;
+
+    .mobile-soothe {
+      display: block;
+      left: 20px;
+      margin: 0;
+      top: 200px;
+    }
+
+    .m-window-browser {
+      background-position: 0 25px;
+      bottom: -76px;
+      height: 590px;
+      left: 155px;
+      width: 696px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-retina-sm} {
+  .m-soothe {
+    .m-window-browser {
+      height: 600px;
+      left: 155px;
+      width: 906px;
+    }
+  }
+}

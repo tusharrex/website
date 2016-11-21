@@ -7,6 +7,14 @@
   text-align: center;
   z-index: 1;
 
+  &.deep-sea-green {
+    color: $deep-sea-green;
+  }
+
+  &.mt-0 {
+    margin-top: 0;
+  }
+
   @media #{$mobile} {
     font-size: 20px;
     line-height: 116%;

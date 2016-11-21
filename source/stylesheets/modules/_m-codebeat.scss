@@ -1,9 +1,4 @@
-$shadow-color: rgba(0, 0, 0, .2);
-
 .m-codebeat {
-  margin: 0 auto;
-  width: 100%;
-
   .codebeat-slogan {
     @include font(30px, 36px);
     color: $martinique-dark;
@@ -14,63 +9,10 @@ $shadow-color: rgba(0, 0, 0, .2);
     width: 95%;
   }
 
-  .codebeat-views {
-    display: block;
-    height: 392px;
-    margin: 40px auto 0;
-    max-width: 1600px;
-    position: relative;
-    width: 100%;
-  }
-
-  .codebeat-dashboard {
-    display: none;
-  }
-
   .btn {
     display: block;
     margin: 30px auto 0;
     padding: 20px 5px;
-  }
-
-  .slide-to-right {
-    @include animation(slideToRight 2s infinite);
-    @include animation-iteration-count(1);
-  }
-
-  .slide-to-left {
-    @include animation(slideToLeft 2s infinite);
-    @include animation-iteration-count(1);
-  }
-
-  @keyframes slideToRight {
-    0% {
-      @include transform(translate(-100px, 30px));
-      opacity: 0;
-    }
-
-    20% {
-      opacity: 1;
-    }
-
-    50%, 80%, 100% {
-      @include transform(translate(0, 0));
-    }
-  }
-
-  @keyframes slideToLeft {
-    0% {
-      @include transform(translate(100px, 30px));
-      opacity: 0;
-    }
-
-    20% {
-      opacity: 1;
-    }
-
-    50%, 80%, 100% {
-      @include transform(translate(0, 0));
-    }
   }
 
   .m-paragraph {
@@ -134,27 +76,6 @@ $shadow-color: rgba(0, 0, 0, .2);
 
 @media #{$breakpoint-desktop} {
   .m-codebeat {
-    margin: 0 auto;
-
-    .codebeat-views {
-      height: 635px;
-
-      .codebeat-dashboard {
-        @include box-shadow(0 0 20px 0 $shadow-color);
-        background-position: 0 27px;
-        border-radius: 6px;
-        height: 444px;
-        max-height: 816px;
-        max-width: 630px;
-      }
-
-      .codebeat-dashboard:nth-child(2) {
-        background-position: 0 27px;
-        height: 580px;
-        max-width: 680px;
-      }
-    }
-
     .codebeat-slogan {
       @include font(36px, 46px);
       margin: 0 auto;

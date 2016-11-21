@@ -1,7 +1,8 @@
 .l-work-page
-  = partial 'partials/website_header', locals: {title: 'Client Work'}
-  = partial 'partials/header_subtitle', locals: \
-    {subtitle: 'We are proud of what we do'}
-  = partial 'partials/cq_work'
-  .m-start-project.damask-red
+  = partial 'partials/website_header_work', locals: {title: 'Client Work'}
+  .m-subtitle.deep-sea-green.mt-0.bcg-breaker-bay-green
+    |
+      We are proud of what we do
+  = partial 'partials/cq_client_work'
+  .m-start-project
     = partial 'partials/start_project'

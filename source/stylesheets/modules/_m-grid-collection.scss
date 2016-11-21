@@ -6,6 +6,22 @@
     @include flex-justify-content(space-between);
   }
 
+  &.justify-center {
+    @include flex-justify-content(center);
+  }
+
+  &.justify-end {
+    @include flex-justify-content(flex-end);
+  }
+
+  &.align-center {
+    @include align-items(center);
+  }
+
+  &.flex-direction {
+    @include flex-direction(row-reverse)
+  }
+
   .no-content {
     height: 0;
     margin: 0;

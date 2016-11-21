@@ -1,17 +1,21 @@
 .m-paragraph {
   color: $martinique-dark;
-  font-family: $courier;
+  font-family: $courier-new;
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 66px;
   text-align: center;
 
-  &.margin-medium {
+  &.mb-52 {
     margin-bottom: 52px;
   }
 
-  &.margin-sm {
-    margin-bottom: 34px;
+  &.deep-sea-green {
+    color: $deep-sea-green;
+  }
+
+  &.mb-0 {
+    margin-bottom: 0;
   }
 }
 

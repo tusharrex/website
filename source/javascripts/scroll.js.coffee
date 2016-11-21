@@ -107,5 +107,3 @@ $ ->
       if $('#posts').find($('.page:in-viewport'))
         history.pushState({},
           "page #{pageNumber}", pageUrl())
-
-

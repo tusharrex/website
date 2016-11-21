@@ -1,0 +1,305 @@
+.m-cq-portfolio {
+  @include bcg-company-images;
+  &.m-grid-collection {
+    @include flex-justify-content(center);
+    margin: 0;
+  }
+
+  &.m-flex-start {
+    @include flex-justify-content(flex-start);
+  }
+
+  .logo {
+    @include position(0, 0, 0, 0);
+    margin: 0 auto;
+    position: absolute;
+
+    &.x-small {
+      width: 44%;
+    }
+
+    &.small {
+      width: 58%;
+    }
+
+    &.medium {
+      width: 50%;
+    }
+
+    &.large {
+      width: 83%;
+    }
+  }
+
+  .m-grid-element {
+    @include background-size(cover);
+  }
+
+  .m-quote {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .portfolio-hover {
+    @include font(18px, 30px);
+
+    color: $light-gray;
+    font-family: $baskerville;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .portfolio-blockquote {
+    margin: 0 auto 10px;
+    position: relative;
+  }
+
+  .portfolio-description {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .portfolio-footer {
+    bottom: 1.6vw;
+    font-family: $alega;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+  }
+
+  .testimonial {
+    @include font(5.8vw, 9vw);
+
+    color: $martinique-dark;
+    font-family: $baskerville-bold;
+    font-style: italic;
+    text-indent: 20px;
+
+    &.light-grey-bcg {
+      background: $light-gray-2;
+    }
+
+    &.damask-red-bcg {
+      background: $damask-red;
+    }
+
+    &.breaker-bay-green-bcg {
+      background: $breaker-bay-green;
+    }
+
+    &.font-light-grey {
+      color: $light-gray;
+    }
+
+    .table {
+      margin: 0 auto;
+      padding-top: 15px;
+      width: 80%;
+    }
+  }
+
+  .see-more-btn {
+    width: 80%;
+  }
+
+  .quote-author {
+    @include font(4vw, 5.5vw);
+
+    color: $damask-red;
+    font-family: $alega-bold;
+    font-style: normal;
+    text-align: right;
+
+    &.font-martinique-dark {
+      color: $martinique-dark;
+    }
+  }
+
+  .quote-end {
+    @include position(auto, 20px, -8px, auto);
+  }
+
+  .quote-author-sign {
+    color: $martinique-dark;
+    display: block;
+    font-family: $alega;
+
+    &.light-grey {
+      color: $light-gray;
+    }
+  }
+
+  .quote-start {
+    @include position(-8px, auto, auto, -9%);
+  }
+}
+
+// Styles here apply to non-touchscreen devices only.
+.no-touchevents {
+
+  .m-cq-portfolio {
+
+    .dawanda {
+      @include background-hover($valencia-red);
+    }
+
+    .eqipia {
+      @include background-hover($breaker-bay-green);
+    }
+
+    .foundersuite {
+      @include background-hover($indian-yellow);
+    }
+
+    .selecthub {
+      @include background-hover($valencia-red);
+    }
+
+    .soal {
+      @include background-hover($indian-yellow);
+    }
+
+    .soothe {
+      @include background-hover($damask-red);
+    }
+
+    .sports-lion {
+      @include background-hover($martinique-dark);
+    }
+
+    .lifthero {
+      @include background-hover($breaker-bay-green);
+    }
+  }
+}
+
+@media #{$breakpoint-mobile-landscape} {
+  .m-cq-portfolio {
+    .portfolio-blockquote {
+      margin-bottom: 22px;
+    }
+
+    .portfolio-description {
+      width: 90%;
+    }
+
+    .portfolio-hover {
+      @include font(14px, 19px);
+    }
+
+    .testimonial {
+      @include font(2.8vw, 3.8vw);
+    }
+
+    .quote-author {
+      @include font(2vw, 2.5vw);
+    }
+
+    .quote-end {
+      @include position(auto, 16px, -18px, auto);
+    }
+
+    .quote-start {
+      @include position(-14px, auto, auto, -13%);
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-cq-portfolio {
+    .logo {
+      &.tablet-small {
+        width: 57%;
+      }
+
+      &.tablet-x-small {
+        width: 35%;
+      }
+    }
+
+    .portfolio-hover {
+      @include font(1.7vw, 30px);
+    }
+
+    .table {
+      padding-top: 44px;
+      width: 75%;
+    }
+
+    .see-more-btn {
+      width: 230px;
+    }
+
+    .quote-author {
+      font-size: 1.8vw;
+    }
+
+    .quote-author-sign {
+      display: inline;
+    }
+
+    .quote-end {
+      @include position(auto, 6%, -25px, auto);
+    }
+
+    .quote-start {
+      @include position(-10px, auto, auto, -6%);
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-cq-portfolio {
+
+    .m-quote {
+      width: 48px;
+    }
+
+    .portfolio-hover {
+      @include font(18px, 30px);
+    }
+
+    .portfolio-description {
+      width: 90%;
+    }
+
+    .see-more-btn {
+      width: 290px;
+    }
+
+    .table {
+      padding: 0;
+    }
+
+    .testimonial {
+      font-size: 2.3vw;
+      text-indent: 44px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-larger} {
+  .m-cq-portfolio {
+    .testimonial {
+      @include font(28px, 44px);
+
+      .table {
+        width: 70%;
+      }
+    }
+
+    .quote-author {
+      font-size: 18px;
+    }
+
+    .quote-end {
+      @include position(auto, 44px, 0, auto);
+    }
+
+    .quote-start {
+      @include position(-4px, auto, auto, -7%);
+    }
+  }
+}

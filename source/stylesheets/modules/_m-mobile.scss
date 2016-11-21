@@ -1,12 +1,11 @@
 .m-mobile {
+  @include box-shadow(0 0 20px 0 $shadow-color);
   background-color: $white;
-  border: 3px solid $darker-gray;
+  border: 3px solid $dark-gray;
   border-radius: 20px;
-  box-shadow: -10px 10px 0 0 $black-transparent;
   height: 300px;
   margin: auto;
   position: relative;
-  transform: rotate(-18deg);
   width: 155px;
 
   .dot {
@@ -40,7 +39,6 @@
   }
 
   .window {
-    background: url('/images/ventures/codebeat_mobile.png') no-repeat;
     background-size: cover;
     border: 2px solid $santas-gray;
     border-radius: 3px;
@@ -53,7 +51,7 @@
 
   .button {
     background: $light-gray;
-    border: solid 2px $darker-gray;
+    border: solid 2px $dark-gray;
     border-radius: 50%;
     bottom: 1.5%;
     height: 23px;
@@ -63,15 +61,42 @@
   }
 }
 
+@media #{$mobile} {
+  .m-mobile {
+    &.mobile-large {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      height: 332px;
+      top: 44px;
+      width: 265px;
+
+      .dot.m-small {
+        top: 4%;
+      }
+
+      .dot.m-medium {
+        top: 7%;
+      }
+
+      .line {
+        top: 7.7%;
+      }
+
+      .window {
+        top: 16%;
+      }
+    }
+  }
+}
+
 @media #{$breakpoint-tablet} {
   .m-mobile {
-    border: 2px solid $darker-gray;
+    border: 2px solid $dark-gray;
     box-shadow: none;
     height: 245px;
     position: absolute;
     right: 20%;
     top: 27%;
-    transform: none;
     width: 120px;
     z-index: 2;
 
@@ -98,12 +123,39 @@
       height: 2px;
       top: 5.5%;
     }
+
+    &.mobile-large {
+      border-radius: 30px;
+      height: 538px;
+      width: 260px;
+
+      .dot.m-small {
+        height: 5px;
+        top: 2.8%;
+        width: 5px;
+      }
+
+      .dot.m-medium {
+        height: 7px;
+        width: 7px;
+      }
+
+      .line {
+        height: 4px;
+        top: 5%;
+      }
+
+      .button {
+        height: 37px;
+        width: 37px;
+      }
+    }
   }
 }
 
 @media #{$breakpoint-desktop} {
   .m-mobile {
-    border: 3px solid $darker-gray;
+    border: 3px solid $dark-gray;
     border-radius: 33px;
     height: 430px;
     left: 70%;

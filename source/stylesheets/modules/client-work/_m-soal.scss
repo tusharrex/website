@@ -1,0 +1,162 @@
+.m-soal {
+  .mobile-soal {
+    @include transform(rotate(90deg));
+    left: -8vw;
+    position: absolute;
+    top: -40px;
+
+    .window {
+      background: url('/images/work/soal-share.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .mobile-soal-login {
+    .window {
+      background: url('/images/work/soal-mainscreen.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .mobile-soal-menu {
+    display: none;
+
+    .window {
+      background: url('/images/work/soal-menu.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .bcg-yellow-multiple-lines {
+    left: 14px;
+    position: relative;
+    top: 15px;
+    width: 300px;
+  }
+
+  .bcg-yellow-lines {
+    bottom: 294px;
+    position: absolute;
+    right: 0;
+  }
+
+  .logo {
+    padding-top: 120px;
+    width: 190px;
+  }
+}
+
+@media #{$mobile} {
+  .m-soal {
+    .mobile-soal {
+      top: -45px;
+      width: 155px;
+    }
+
+    .mobile-soal-login {
+      border-radius: 40px;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .m-soal {
+    .bcg-yellow-multiple-lines {
+      left: -5px;
+      top: 80px;
+      width: 383px;
+    }
+
+    .bcg-yellow-lines {
+      bottom: 70px;
+    }
+
+    .info-soal {
+      max-width: 330px;
+      padding-bottom: 250px;
+    }
+
+    .mobile-soal {
+      @include transform(none);
+      left: -23vw;
+      top: 84px;
+      z-index: 0;
+    }
+
+    .mobile-soal-login {
+      left: -24vw;
+      top: 400px;
+      z-index: 0;
+    }
+
+    .logo {
+      padding-top: 78px;
+      width: 232px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .m-soal {
+    .bcg-yellow-lines {
+      bottom: 110px;
+    }
+
+    .info-soal {
+      max-width: 450px;
+    }
+
+    .mobile-soal {
+      left: -28vw;
+    }
+
+    .mobile-soal-login {
+      left: -8vw;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-soal {
+    .mobile-soal-menu {
+      display: block;
+      left: 7%;
+      top: 0;
+    }
+
+    .mobile-soal {
+      left: -167px;
+      top: 27px;
+    }
+
+    .mobile-soal-login {
+      bottom: 70px;
+      left: -38%;
+    }
+
+    .info-soal {
+      padding-bottom: 155px;
+    }
+
+    .bcg-yellow-multiple-lines {
+      left: -65px;
+    }
+
+    .logo {
+      padding-top: 140px;
+      width: 280px;
+    }
+  }
+}
+
+@media #{$breakpoint-desktop-largest} {
+  .m-soal {
+    .mobile-soal {
+      left: -378px;
+    }
+
+    .bcg-yellow-multiple-lines {
+      left: -32px;
+    }
+  }
+}
