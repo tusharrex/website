@@ -1,5 +1,28 @@
-web:
-  build: .
-  ports:
-    - "3000:80"
-  command: nginx
+version: '2'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.ci
+    command: bundle exec middleman server
+    ports:
+      - "4567:4567"
+    volumes:
+      - "bundler:/bundle"
+      - "unison:/srv/www"
+    depends_on:
+      - unison
+
+  unison:
+    image: onnimonni/unison
+    environment:
+      - UNISON_DIR=/srv/www
+    ports:
+      - "5000:5000"
+    volumes:
+      - "unison:/srv/www"
+
+volumes:
+  bundler:
+  unison:
