@@ -34,9 +34,7 @@ codequest is a venture studio; we help our customers turn ideas into excellent s
 
 [codebeat.co](https://codebeat.co/) is an automated static code review tool for developers. It supports nine languages. It's integrated with Slack, GitHub, and Bitbucket - including Pull Requests.
 
-
-<a href="https://codebeat.co" target="_blank">![codebeat.co](images/blog/codebeat-cta.png)</a>
-
+<a href="https://codebeat.co" target="_blank">![codebeat.co](blog/codebeat-cta.png)</a>
 
 Hackathon is a perfect opportunity for our developers to start new ventures. Who knows? Maybe a prototype created during the event will become the next big thing?
 
