@@ -47,4 +47,26 @@ module CustomHelpers
       partial icon
     end if icon
   end
+
+  def related_post?(article, current_article)
+    (article.tags - current_article.tags).length != article.tags.length
+  end
+
+  def find_related(blog, current_article, count)
+    result = blog.articles.each_with_object([]) do |article, res|
+      if article.title != current_article.title
+        res.push(article) if related_post?(article, current_article)
+      end
+    end
+    suggested_posts(result, count)
+  end
+
+  def suggested_posts(result, count)
+    if result.length >= count
+      result.sample(count)
+    else
+      result.push(blog.articles - result).sample(count - result.length)
+      result.flatten.sample(count)
+    end
+  end
 end
