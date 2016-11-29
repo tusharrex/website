@@ -3,7 +3,7 @@ title: Why Hackathons Are Important For Software Companies' Culture
 date: 2016-11-23
 tags: Hackathon
 author: Tomasz Korzeniowski
-color: blue
+color: yellow
 image: 'blog/lifebuoy.png'
 imageauthor: 'team/tomek.png'
 ---
@@ -34,7 +34,24 @@ codequest is a venture studio; we help our customers turn ideas into excellent s
 
 [codebeat.co](https://codebeat.co/) is an automated static code review tool for developers. It supports nine languages. It's integrated with Slack, GitHub, and Bitbucket - including Pull Requests.
 
-<a href="https://codebeat.co" target="_blank">![codebeat.co](blog/codebeat-cta.png)</a>
+<div class="m-post-banner">
+  <div class="m-post-banner__wrapper">
+    <div class="m-post-banner__logo">
+      <img src="/images/blog/codebeat_logo.svg">
+    </div>
+    <div class="m-post-banner__content color-very-dark-blue font-lato-regular">
+    Automated code review for
+    <span class="m-post-banner__content--newline font-lato-bold">
+    &nbsp;web and mobile
+    </span>
+    </div>
+    <a href="https://codebeat.co/?utm_source=codequest_blog&utm_medium=cta" target="_blank">
+      <div class="m-post-banner__button">
+          Review my code now!
+      </div>
+    </a>
+  </div>
+</div>
 
 Hackathon is a perfect opportunity for our developers to start new ventures. Who knows? Maybe a prototype created during the event will become the next big thing?
 
