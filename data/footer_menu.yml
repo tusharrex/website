@@ -12,6 +12,9 @@ objects:
     text: Our Crew
     link: /team
   -
+    text: Hire Us
+    link: /start-your-project
+  -
     text: Join Us
     link: /join-our-crew
   -
