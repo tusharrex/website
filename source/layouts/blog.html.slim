@@ -1,6 +1,8 @@
 doctype html
 html
   head
+    - if environment != :development
+      = partial 'partials/m-google-tag-manager-head'
     meta charset="utf-8"
     title= title_helper
 
@@ -17,6 +19,8 @@ html
     = javascript_include_tag 'application'
 
   body.website-page class=page_classes
+    - if environment != :development
+      = partial 'partials/m-google-tag-manager-body'
     = partial 'partials/menu'
     .m-blog-header(class= current_article.metadata[:page]['color'])
       .m-header-elements.blog-post
