@@ -59,4 +59,4 @@ Hackathon is a perfect opportunity for our developers to start new ventures. Who
 
 However, with all that being said, our hackathon’s key aspect is simply to have fun. I want our teams to play with their ideas, be creative when it comes to execution and experiment with various technologies. Don’t be afraid to break stuff. Coding is fun, creating new things is fun. And that’s why our hackathons will always be about having fun.
 
-We’re hosting our first hackathon on December, 12th - 16th, 2016. Follow us on Facebook and Twitter to stay up to date with codequest’s news and events.
+We’re hosting our first hackathon on December, 12th - 16th, 2016. Follow us on [Facebook](https://www.facebook.com/codequest.eu/) and [Twitter](https://twitter.com/codequest) to stay up to date with codequest’s news and events.
