@@ -73,7 +73,7 @@
   .m-social-buttons-addtoany {
     @include flex-flow(column, nowrap);
     @include size(180px, 40px);
-    background-color: $light-gray;
+    background-color: transparent;
     padding-right: 0;
     position: absolute;
     right: 38px;
