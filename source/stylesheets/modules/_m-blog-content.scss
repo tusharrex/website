@@ -1,7 +1,6 @@
 .blog-content {
   color: $martinique-dark;
   font-family: $baskerville;
-  margin-top: 22px;
 
   h2,
   h3 {
@@ -27,6 +26,10 @@
     @include font(16px, 1.7);
     text-align: justify;
     text-indent: 23px;
+
+    img {
+      display: none;
+    }
   }
 
   blockquote {
@@ -99,7 +102,7 @@
     }
 
     p {
-      font-size: 20px;
+      font-size: 22px;
       text-indent: 1.4vw;
     }
 
@@ -133,11 +136,16 @@
 
 @media #{$breakpoint-desktop} {
   .blog-content {
-    margin: 74px auto;
+    margin: 74px auto 0;
     position: relative;
 
     a {
       @include link-states($brick-red, $brick-red, $valencia-red);
+    }
+
+    p img {
+      display: block;
+      margin: 1.7vw auto;
     }
 
     blockquote {
@@ -150,6 +158,7 @@
       p {
         @include font(44px, 56px);
       }
+
     }
   }
 }

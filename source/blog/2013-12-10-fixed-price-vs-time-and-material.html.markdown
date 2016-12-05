@@ -1,7 +1,7 @@
 ---
 title: Fixed Price vs Time and Material
 date: 2013-12-10
-tags: Consulting
+tags: Consulting, Software Development
 author: Tomasz Korzeniowski
 color: red
 image: 'blog/lifebuoy.png'

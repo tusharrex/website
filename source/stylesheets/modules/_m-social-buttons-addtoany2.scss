@@ -8,7 +8,6 @@
 
   &.a2a_kit_size_30 {
     display: block;
-    margin-top: 74px;
   }
 
   &.a2a_kit_size_35 {
@@ -51,7 +50,6 @@
 
     &.a2a_kit_size_35 {
       display: block;
-      margin-top: 74px;
     }
 
     .mobile-text {
@@ -65,10 +63,6 @@
   .m-social-buttons-addtoany {
     @include size(88px, 100%);
 
-    &.a2a_kit_size_35 {
-      margin-top: 74px;
-    }
-
     a {
       margin-left: 15px;
     }
@@ -79,7 +73,7 @@
   .m-social-buttons-addtoany {
     @include flex-flow(column, nowrap);
     @include size(180px, 40px);
-    background-color: $light-gray;
+    background-color: transparent;
     padding-right: 0;
     position: absolute;
     right: 38px;

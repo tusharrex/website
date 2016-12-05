@@ -1,7 +1,7 @@
 ---
 title: Playing the Planning Poker. Is it worth it?
 date: 2014-11-10
-tags: Scrum
+tags: Scrum, Software Development
 author: Magda Piechota
 color: yellow
 image: 'blog/ruby_underwater.png'

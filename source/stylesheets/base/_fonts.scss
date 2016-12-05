@@ -9,6 +9,8 @@
 @include font-face('Baskerville-Bold', 'Baskerville-Bold');
 @include font-face('Baskerville-Italic', 'Baskerville-Italic');
 @include font-face('Baskerville-Italic-Bold', 'Baskerville-Italic-Bold');
+@include font-face('Lato-Regular', 'Lato-Regular', 'ttf');
+@include font-face('Lato-Bold', 'Lato-Bold', 'ttf');
 
 $alega: 'AlegaWeb', sans-serif;
 $alega-bold: 'AlegaWeb-Bold', sans-serif;
@@ -25,3 +27,6 @@ $baskerville: 'Baskerville', sans-serif;
 $baskerville-bold: 'Baskerville-Bold', sans-serif;
 $baskerville-italic: 'Baskerville-Italic', sans-serif;
 $baskerville-bold-italic: 'Baskerville-Italic-Bold', sans-serif;
+
+$lato-regular: 'Lato-Regular', sans-serif;
+$lato-bold: 'Lato-Bold', sans-serif;

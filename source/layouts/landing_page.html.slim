@@ -1,6 +1,8 @@
 doctype html
 html class=page_classes
   head
+    - if environment != :development
+      = partial 'partials/m-google-tag-manager-head'
     meta charset="utf-8"
     title= title_helper
 
@@ -16,5 +18,7 @@ html class=page_classes
     = javascript_include_tag 'application'
 
   body.landing-page class=page_classes
+    - if environment != :development
+      = partial 'partials/m-google-tag-manager-body'
     = partial 'partials/menu'
     = yield

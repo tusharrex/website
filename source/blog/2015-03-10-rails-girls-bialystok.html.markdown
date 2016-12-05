@@ -1,7 +1,7 @@
 ---
 title: Rails Girls Białystok
 date: 2015-03-10
-tags: Hacker's Life, Ruby
+tags: Community, Ruby
 subtitle: Rails Girls Warsaw |
 author: Magda Piechota
 color: light-green

@@ -1,4 +1,4 @@
-.m-blog-post {
+.m-suggested-post {
   font-family: $alega;
 
   .article {
@@ -27,6 +27,10 @@
     position: absolute;
     right: 0;
     top: 122px;
+
+    &.small {
+      border-width: 15px 300px 0 0;
+    }
   }
 
   .read-more {
@@ -46,13 +50,13 @@
     color: $martinique-dark;
     font-family: $alega-bold;
     font-size: 13px;
+    margin-left: 10px;
     z-index: 1;
 
     &.m-big-post {
       font-size: 16px;
     }
   }
-
 
   .image {
     position: relative;
@@ -67,13 +71,12 @@
     border-radius: 50%;
   }
 
-  .post {
+  .posts {
     display: block;
     margin: 10px 0;
     width: 300px;
 
     &.m-big-post {
-      margin-bottom: 20px;
       margin-left: 0;
       margin-top: 50px;
       width: 320px;
@@ -83,6 +86,7 @@
   .post-detail {
     margin: 0 auto;
     position: relative;
+    text-align: left;
     top: -20px;
     width: 240px;
 
@@ -123,13 +127,15 @@
       font-size: 30px;
     }
   }
+
+  .m-suggested-post:last-child {
+    display: none;
+  }
 }
 
 @media #{$breakpoint-tablet} {
-  .m-blog-post {
-    &.m-big-post {
-      margin: 80px 0 20px;
-    }
+  .m-suggested-post {
+    margin: 0 16px;
 
     .m-decorator {
       top: 120px;
@@ -147,16 +153,16 @@
     }
 
     .image img {
-      max-width: 320px;
+      max-width: 300px;
     }
 
     .image-author img {
       @include size(60px, 60px);
     }
 
-    .post {
-      margin: 0 20px;
-      width: 316px;
+    .posts {
+      margin: 0;
+      width: 300px;
 
       &.m-big-post {
         margin-top: 30px;
@@ -165,7 +171,8 @@
     }
 
     .post-detail {
-      top: -30px;
+      top: -35px;
+      width: 260px;
 
       &.m-big-post {
         width: 100%;
@@ -173,16 +180,16 @@
     }
 
     .summary {
-      @include font(16px, 180%);
+      @include font(15px, 180%);
     }
 
     .title {
-      @include font(24px, 122%);
+      @include font(20px, 122%);
     }
   }
 
   .no-touchevents {
-    .m-blog-post {
+    .m-suggested-post {
       .m-decorator {
         @include transition(all 1s cubic-bezier(.16, .53, .15, .99) 0s);
       }
@@ -196,13 +203,20 @@
 }
 
 @media #{$breakpoint-desktop} {
-  .m-blog-post {
+  .m-suggested-post {
+    margin: 0 16px 30px;
+
     &.m-big-post {
-      margin: 80px 0 30px;
+      margin: 80px 0 100px;
     }
 
     .m-decorator {
-      top: 144px;
+      left: -1px;
+      top: 100px;
+
+      &.small {
+        border-width: 15px 262px 0 0;
+      }
     }
 
     .date {
@@ -214,8 +228,8 @@
     }
 
     .author {
-      font-size: 20px;
-      margin-top: 26px;
+      font-size: 15px;
+      margin-top: 13px;
 
       &.m-big-post {
         font-size: 26px;
@@ -223,16 +237,16 @@
     }
 
     .image img {
-      max-width: 400px;
+      max-width: 260px;
     }
 
     .image-author img {
-      @include size(70px, 70px);
+      @include size(40px, 40px);
     }
 
-    .post {
-      margin: 0 30px;
-      width: 400px;
+    .posts {
+      margin: 0;
+      width: 260px;
 
       &.m-big-post {
         margin-top: 0;
@@ -240,14 +254,15 @@
     }
 
     .post-detail {
-      top: -56px;
-      width: 300px;
+      top: -25px;
+      width: 240px;
     }
 
     .summary {
-      @include font(18px, 180%);
+      @include font(16px, 180%);
       color: $martinique-dark;
       font-family: $baskerville;
+      line-height: 150%;
 
       &.m-big-post {
         font-size: 22px;
@@ -263,7 +278,7 @@
     }
 
     .title {
-      @include font(34px, 122%);
+      @include font(23px, 122%);
 
       &.m-big-post {
         font-size: 44px;
@@ -271,8 +286,12 @@
     }
 
     .read-more {
-      font-size: 20px;
-      margin: 15px 0 20px;
+      font-size: 15px;
+      margin: 10px 0 15px;
     }
+  }
+
+  .m-suggested-post:last-child {
+    display: block;
   }
 }

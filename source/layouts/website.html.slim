@@ -1,6 +1,8 @@
 doctype html
 html
   head
+    - if environment != :development
+      = partial 'partials/m-google-tag-manager-head'
     meta charset="utf-8"
     title= title_helper
     = render_fb_tags_partial
@@ -18,6 +20,8 @@ html
     = javascript_include_tag 'application'
 
   body.website-page class=page_classes
+    - if environment != :development
+      = partial 'partials/m-google-tag-manager-body'
     = partial('partials/menu', locals: {modifier: 'from_header'})
     = yield
     = partial 'partials/footer'

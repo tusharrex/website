@@ -6,5 +6,6 @@
 #= require plugins/jquery.viewport.js
 #= require plugins/vivus.js
 #= require plugins/owl.carousel.js
+#= require plugins/webforms.min.js
 
 #= require 'main_menu'

@@ -1,6 +1,8 @@
 doctype html
 html
   head
+    - if environment != :development
+      = partial 'partials/m-google-tag-manager-head'
     meta charset="utf-8"
     title Blog
 
@@ -21,6 +23,8 @@ html
       link(href= next_page.url rel= 'next')
 
   body.website-page class=page_classes
+    - if environment != :development
+      = partial 'partials/m-google-tag-manager-body'
     = partial 'partials/menu'
     = yield
     = partial 'partials/footer'

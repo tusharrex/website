@@ -1,7 +1,7 @@
 ---
 title: hacklab.pl - a higher level of programming
 date: 2014-08-28
-tags: Hacker's Life
+tags: Software Development, Education
 author: Magda Piechota
 color: sea-green
 image: 'blog/lifebuoy.png'

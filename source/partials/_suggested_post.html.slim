@@ -1,0 +1,17 @@
+article.m-suggested-post
+  .posts
+    a.article(href= article.url
+      class= article.metadata[:page]['color'])
+        .image
+          = image_tag article.data.image
+          .m-decorator.small
+        .post-detail
+          .content
+            header.detail
+              span.subtitle
+                = article.data.subtitle
+              h2.title
+                = article.title
+            .summary
+              = strip_tags article.summary(150)
+          .read-more.color-valencia-red Read more...

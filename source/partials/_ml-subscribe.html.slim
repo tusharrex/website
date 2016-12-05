@@ -1,0 +1,26 @@
+.m-separator-big.separator-opposite-red-left
+.m-ml-subscribe.bcg-valencia
+	.m-ml-subscribe-title.font-alega-regular.color-light-gray
+		| Tech blogs and start-up ideas
+		span.m-ml-subscribe-title--newline
+			| delivered directly to your inbox.
+		br
+		| Interested?
+	#mlb2-3591027.ml-subscribe-form.ml-subscribe-form-3591027
+		.ml-block-success.font-alega-regular.color-light-gray style="display: none;"
+			p Thank you! You have successfully subscribed to our newsletter.
+		form.ml-block-form(action="//app.mailerlite.com/webforms/submit/i0u2n1"
+		data-code="i0u2n1" data-id="229541" method="POST" target="_blank"
+		autocomplete="off")
+			.ml-form-wrapper.ml-field-email.ml-validate-required.ml-validate-email
+				input.subscription-input.email(name="fields[email]"
+				placeholder="Enter your email here" type="text" value="")
+				button.primary.subscription-input.submit.color-light-gray(type="submit")
+					| Subscribe
+				button.subscription-input.loading(disabled="disabled"
+				style=('display: none;') type='button')
+					img.ml-loading-img src="//static.mailerlite.com/images/rolling.gif"
+				span.ml-error-msg.font-alega-regular.color-light-gray
+					| Niepoprawny email!
+			input name="ml-submit" type="hidden" value="1"
+	.m-separator-big.separator-left-light-gray
