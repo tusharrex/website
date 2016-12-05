@@ -45,7 +45,7 @@ with_layout :posts do
 end
 
 configure :development do
-  activate :livereload
+  activate :livereload, host: 'localhost'
   activate :pry
 end
 

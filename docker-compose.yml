@@ -7,7 +7,8 @@ services:
       dockerfile: Dockerfile.ci
     command: bundle exec middleman server
     ports:
-      - "4567:4567"
+      - "4567:4567"   # Middleman server
+      - "35729:35729" # Live reload
     volumes:
       - "bundler:/bundle"
       - "unison:/srv/www"
