@@ -49,34 +49,12 @@ html
           .container-title.color-martinique-dark.font-alega-bold
             = 'Related Posts'
           .m-grid-collection.justify-center
-            - suggested_posts_list = find_related(blog, current_article, 2)
+            - suggested_posts_list = find_related(blog, current_article, 3)
             - suggested_posts_list.each do |article|
-              article.m-suggested-post
-                      .posts
-                        a.article(href= article.url
-                          class= article.metadata[:page]['color'])
-                            .image
-                              = image_tag article.data.image
-                              .m-decorator.small
-                            .post-detail
-                              .content
-                                header.detail
-                                  span.subtitle
-                                    = article.data.subtitle
-                                  h2.title
-                                    = article.title
-                                .summary
-                                  = strip_tags article.summary(250)
-                              .read-more.color-valencia-red Read more...
-                              footer.info-author
-                                .image-author
-                                  = image_tag article.data.imageauthor
-                                  span.author
-                                    = article.data.author
+              = partial 'partials/suggested_post', locals: {article: article}
         .a2a_kit.a2a_kit_size_30.a2a_default_style.m-social-buttons-addtoany(
             data-a2a-icon-color='#2b304b')
             = partial 'partials/social_media'
-
         .a2a_kit.a2a_kit_size_35.a2a_default_style.m-social-buttons-addtoany(
           data-a2a-icon-color='#2b304b')
           = partial 'partials/social_media'
