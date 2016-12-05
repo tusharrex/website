@@ -1,7 +1,7 @@
 ---
 title: Why Hackathons Are Important For Software Companies' Culture
 date: 2016-11-23
-tags: Hackathon
+tags: Hackathon, Education, Software Developments
 author: Tomasz Korzeniowski
 color: yellow
 image: 'blog/lifebuoy.png'

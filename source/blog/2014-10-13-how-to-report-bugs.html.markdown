@@ -1,7 +1,7 @@
 ---
 title: How to report bugs
 date: 2014-10-13
-tags: Consulting, Development
+tags: Consulting, Software Development
 author: Magda Piechota
 color: light-green
 image: 'blog/lifebuoy.png'

@@ -1,7 +1,7 @@
 ---
 title: The power of code review
 date: 2015-02-10
-tags: Consulting, Hacker's Life
+tags: Consulting, Software Development
 author: Magda Piechota
 color: light-green
 image: 'blog/submarine.png'

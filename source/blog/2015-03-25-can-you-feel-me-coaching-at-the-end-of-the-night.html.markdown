@@ -1,7 +1,7 @@
 ---
 title: Can you feel me coaching at the end of the night
 date: 2015-03-25 12:48 UTC
-tags: Rails Girls Warsaw |
+tags: Community, Educations
 subtitle: Rails Girls Warsaw |
 author: Bartek Kruszczyński
 color: red

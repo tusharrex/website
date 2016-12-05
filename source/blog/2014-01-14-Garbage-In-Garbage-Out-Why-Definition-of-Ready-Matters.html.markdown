@@ -1,7 +1,7 @@
 ---
 title: Garbage In, Garbage Out; <br>Why Definition of Ready Matters
 date: 2014-01-14
-tags: Consulting, Scrum
+tags: Scrum, Software Development
 author: Tomasz Korzeniowski
 color: yellow
 image: 'blog/lifebuoy.png'

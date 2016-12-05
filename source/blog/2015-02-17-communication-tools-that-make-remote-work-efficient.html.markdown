@@ -1,7 +1,7 @@
 ---
 title: Communication tools that make remote work efficient
 date: 2015-02-17
-tags: Consulting, Scrum, Hacker's Life
+tags: Consulting, Scrum, Success Stories
 author: Magda Piechota
 color: yellow
 image: 'blog/underwater_station.png'

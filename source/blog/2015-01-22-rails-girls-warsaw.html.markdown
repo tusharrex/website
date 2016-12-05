@@ -1,7 +1,7 @@
 ---
 title: Rails Girls Warsaw
 date: 2015-01-22
-tags: Hacker's Life, Ruby
+tags: Education, Ruby, Community
 author: Magda Piechota
 color: red
 image: 'blog/underwater_world.png'
