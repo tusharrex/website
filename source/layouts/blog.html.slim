@@ -44,19 +44,20 @@ html
       .blog-content
         .wrapper.blog-desktop
           = yield
-        = partial 'partials/ml-subscribe'
-        .m-suggested-posts-container.wrapper.blog-desktop
+        = partial 'partials/ml-subscribe', \
+        locals: {bcgcolor: current_article.metadata[:page]['color']}
+        .m-suggested-posts-container.wrapper
           .container-title.color-martinique-dark.font-alega-bold
             = 'Related Posts'
-          .m-grid-collection.justify-center
+          .m-grid-collection.m-space-between
             - suggested_posts_list = find_related(blog, current_article, 3)
             - suggested_posts_list.each do |article|
               = partial 'partials/suggested_post', locals: {article: article}
         .a2a_kit.a2a_kit_size_30.a2a_default_style.m-social-buttons-addtoany(
-            data-a2a-icon-color='#2b304b')
-            = partial 'partials/social_media'
+          data-a2a-icon-color='#2b304b')
+          = partial 'partials/social_media'
         .a2a_kit.a2a_kit_size_35.a2a_default_style.m-social-buttons-addtoany(
           data-a2a-icon-color='#2b304b')
           = partial 'partials/social_media'
-      = partial 'partials/start_project_blog'
+    = partial 'partials/start_project_blog'
     = partial 'partials/footer'

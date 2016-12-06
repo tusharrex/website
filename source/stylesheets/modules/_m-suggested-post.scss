@@ -1,5 +1,6 @@
 .m-suggested-post {
   font-family: $alega;
+  margin: 0 auto;
 
   .article {
     text-decoration: none;
@@ -87,7 +88,7 @@
     margin: 0 auto;
     position: relative;
     text-align: left;
-    top: -20px;
+    top: -25px;
     width: 240px;
 
     &.m-big-post {
@@ -121,6 +122,7 @@
   .title {
     @include font(20px, 122%);
     color: currentColor;
+    font-family: $alega;
     margin: 10px 0;
 
     &.m-big-post {
@@ -128,14 +130,14 @@
     }
   }
 
-  .m-suggested-post:last-child {
+  &:last-child {
     display: none;
   }
 }
 
 @media #{$breakpoint-tablet} {
   .m-suggested-post {
-    margin: 0 16px;
+    margin: 0 auto;
 
     .m-decorator {
       top: 120px;
@@ -171,7 +173,7 @@
     }
 
     .post-detail {
-      top: -35px;
+      top: -30px;
       width: 260px;
 
       &.m-big-post {
@@ -204,7 +206,7 @@
 
 @media #{$breakpoint-desktop} {
   .m-suggested-post {
-    margin: 0 16px 30px;
+    margin: 0 15px 30px;
 
     &.m-big-post {
       margin: 80px 0 100px;
@@ -237,7 +239,7 @@
     }
 
     .image img {
-      max-width: 260px;
+      max-width: 100%;
     }
 
     .image-author img {
@@ -246,7 +248,7 @@
 
     .posts {
       margin: 0;
-      width: 260px;
+      width: 250px;
 
       &.m-big-post {
         margin-top: 0;
@@ -255,7 +257,101 @@
 
     .post-detail {
       top: -25px;
-      width: 240px;
+      width: 90%;
+    }
+
+    .summary {
+      @include font(16px, 180%);
+      color: $martinique-dark;
+      font-family: $baskerville;
+      line-height: 150%;
+
+      &.m-big-post {
+        font-size: 22px;
+      }
+    }
+
+    .subtitle {
+      font-size: 16px;
+
+      &.m-big-post {
+        font-size: 20px;
+      }
+    }
+
+    .title {
+      @include font(23px, 122%);
+
+      &.m-big-post {
+        font-size: 44px;
+      }
+    }
+
+    .read-more {
+      font-size: 15px;
+      margin: 10px 0 15px;
+    }
+  }
+
+  .m-suggested-post:last-child {
+    display: block;
+  }
+}
+
+@media #{$breakpoint-desktop-large} {
+  .m-suggested-post {
+    margin: 0 16px 10px;
+
+    &.m-big-post {
+      margin: 80px 0 100px;
+    }
+
+    .m-decorator {
+      left: -1px;
+      top: 125px;
+
+      &.small {
+        border-width: 15px 322px 0 0;
+      }
+    }
+
+    .date {
+      font-size: 16px;
+
+      &.m-big-post {
+        font-size: 20px;
+      }
+    }
+
+    .author {
+      font-size: 15px;
+      margin-top: 13px;
+
+      &.m-big-post {
+        font-size: 26px;
+      }
+    }
+
+    .image img {
+      max-width: 100%;
+    }
+
+    .image-author img {
+      @include size(40px, 40px);
+    }
+
+    .posts {
+      margin: 0;
+      width: 320px;
+
+      &.m-big-post {
+        margin-top: 0;
+      }
+    }
+
+    .post-detail {
+      top: -40px;
+      width: 90%;
     }
 
     .summary {

@@ -5,6 +5,10 @@
   &.m-padding-none {
     padding: 0;
   }
+
+  &.m-padding-landing {
+    padding: 0 15px;
+  }
 }
 
 @media #{$breakpoint-tablet} {

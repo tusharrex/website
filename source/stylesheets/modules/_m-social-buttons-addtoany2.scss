@@ -2,7 +2,7 @@
 // scss-lint:disable SelectorFormat SelectorDepth NestingDepth
 
 .m-social-buttons-addtoany {
-  background-color: $light-gray-2;
+  background-color: $light-gray;
   padding: 18px 0 10px;
   width: auto;
 
@@ -66,6 +66,10 @@
     a {
       margin-left: 15px;
     }
+
+    &div {
+      height: 0;
+    }
   }
 }
 
@@ -74,9 +78,10 @@
     @include flex-flow(column, nowrap);
     @include size(180px, 40px);
     background-color: transparent;
+    margin-top: 30px;
     padding-right: 0;
     position: absolute;
-    right: 38px;
+    right: 54px;
     top: -3vw;
 
     a {

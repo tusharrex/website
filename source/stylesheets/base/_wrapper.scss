@@ -12,6 +12,10 @@
     padding: 0;
   }
 
+  &.blog-desktop {
+    margin: 20px auto 30px;
+  }
+
   &.m-pb-20 {
     padding-bottom: 20px;
   }
@@ -26,6 +30,7 @@
     }
 
     &.blog-desktop {
+      margin-bottom: 30px;
       width: 50%;
     }
 

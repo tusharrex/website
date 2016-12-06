@@ -1,7 +1,11 @@
 .m-suggested-posts-container {
-  margin: 0 auto;
+  margin: 80px auto;
   text-align: center;
   width: 90%;
+
+  .m-grid-collection {
+    flex-direction: column;
+  }
 
   .container-title {
     font-size: 35px;
@@ -12,22 +16,26 @@
 @media #{$breakpoint-tablet} {
   .m-suggested-posts-container {
 
-    .m-suggested-posts-wrapper {
-      display: inline-block;
+    .m-grid-collection {
+      flex-direction: row;
     }
 
     .container-title {
       font-size: 40px;
       margin-bottom: 30px;
-      margin-left: 16px;
-      text-align: left;
+      text-align: center;
     }
   }
 }
 
 @media #{$breakpoint-desktop} {
   .m-suggested-posts-container {
+    margin: 130px auto 40px;
     width: 90%;
+
+    .m-grid-collection {
+      flex-direction: row;
+    }
 
     .container-title {
       font-size: 47px;

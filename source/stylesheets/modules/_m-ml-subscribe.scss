@@ -1,17 +1,82 @@
+@mixin subscribe-section-background($color) {
+  background-color: $color;
+
+  .submit {
+    &:hover {
+      color: $color;
+    }
+  }
+
+  .email {
+    background-color: rgba($black, .15);
+
+    @include input-placeholder {
+      color: $color;
+      font-size: 35px;
+    }
+  }
+
+  @media #{$breakpoint-mobile-landscape} {
+    .email {
+      @include input-placeholder {
+        color: $color;
+        font-size: 35px;
+      }
+    }
+  }
+
+  @media #{$breakpoint-tablet} {
+    .email {
+      @include input-placeholder {
+        color: $color;
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media #{$breakpoint-desktop} {
+    .email {
+      @include input-placeholder {
+        color: $color;
+        font-size: 29px;
+      }
+    }
+  }
+}
+
 .m-ml-subscribe {
   margin-bottom: 30px;
-  padding-top: 50px;
+  padding-top: 85px;
   width: 100%;
 
-  .m-ml-subscribe-title {
-    font-size: 25px;
-    margin-bottom: 10px;
-    text-align: center;
+  input,
+  button:focus {
+    outline: none;
   }
 
-  .m-ml-subscribe-title--newline {
-    display: block;
+  .m-ml-subscribe-title {
+    font-size: 45px;
+    line-height: 120%;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    text-align: center;
   }
+}
+
+.red {
+  @include subscribe-section-background($valencia-red);
+}
+
+.yellow {
+  @include subscribe-section-background($indian-yellow);
+}
+
+.sea-green {
+  @include subscribe-section-background($deep-sea-green);
+}
+
+.light-green {
+  @include subscribe-section-background($breaker-bay-green);
 }
 
 .ml-block-success {
@@ -25,14 +90,13 @@
   @include flex-justify-content(center);
   margin: 0 auto;
   padding-bottom: 35px;
-  width: 90%;
+  width: 100%;
 
   .ml-form-wrapper {
-    background: $merlot-red;
-    border-radius: 5px;
-    padding: 2px;
+    border-radius: 13px;
+    padding: 15px;
     position: relative;
-    width: 90%;
+    width: 100%;
   }
 
   .ml-error-msg {
@@ -42,89 +106,216 @@
   .ml-error .ml-error-msg {
     display: block;
     font-size: 15px;
-    left: 5px;
+    left: 22px;
     position: absolute;
-    top: 40px;
+    top: 96px;
   }
 
   .subscription-input {
     display: inline-block;
 
     &.email {
-      background: $merlot-red;
       border: 0;
+      border-radius: 10px;
       color: $light-gray;
       flex: 1;
-      font-size: 17px;
-      margin: 0 5px 5px;
-      outline: none;
-      padding: 5px 5px 0;
-      width: 65%;
-
-      @include input-placeholder {
-        color: $valencia;
-        font-size: 17px;
-      }
+      font-size: 35px;
+      margin: 0 auto;
+      padding: 21px 22px 19px;
+      width: 100%;
     }
 
     &.submit {
-      background-color: $merlot-red;
-      border: solid 3px $light-gray;
-      border-radius: 3px;
-      float: right;
-      font-size: 17px;
-      margin: 0 auto;
-      padding: 2px 5px;
-      width: 30%;
+      @include transition-duration(.3s);
+      background-color: transparent;
+      border: solid 4px $light-gray;
+      border-radius: 10px;
+      display: block;
+      font-size: 30px;
+      margin: 23px auto;
+      padding: 17px 0 13px;
+      width: 100%;
     }
 
-    &.submit:focus {
+    &.submit:hover {
+      background-color: $light-gray;
+    }
+
+    button:focus {
       outline: 0;
     }
 
     &.loading {
-      background-color: $merlot-red;
+      background-color: transparent;
       border: 0;
-      border-radius: 3px;
-      float: right;
-      font-size: 17px;
-      margin: 0 auto;
-      padding: 5px 5px 0;
-      width: 30%;
+      border-radius: 10px;
+      display: block;
+      font-size: 42px;
+      margin: 23px auto;
+      padding: 15px 0 11px;
+      width: 100%;
     }
 
     .ml-loading-img {
-      float: right;
       height: 20px;
       width: 20px;
     }
   }
 }
 
+@media #{$breakpoint-mobile-landscape} {
+  .ml-block-form {
+    .ml-error .ml-error-msg {
+      display: block;
+      font-size: 15px;
+      left: 50%;
+      position: absolute;
+      top: 96px;
+      transform: translateX(-50%);
+    }
+
+    .subscription-input {
+      display: inline-block;
+
+      &.email {
+        border: 0;
+        border-radius: 10px;
+        color: $light-gray;
+        display: block;
+        flex: 1;
+        font-size: 35px;
+        margin: 0 auto;
+        padding: 21px 22px 19px;
+        width: 425px;
+      }
+
+      &.submit {
+        border: solid 4px $light-gray;
+        border-radius: 10px;
+        display: block;
+        font-size: 30px;
+        margin: 23px auto;
+        padding: 16px 0 14px;
+        width: 290px;
+      }
+    }
+  }
+}
+
 @media #{$breakpoint-tablet} {
   .m-ml-subscribe {
-    .m-ml-subscribe-title--newline {
-      display: inline;
+    padding-top: 66px;
+
+    .m-ml-subscribe-title {
+      font-size: 30px;
+      margin-bottom: 18px;
+      padding: 0 115px;
     }
   }
 
   .ml-block-form {
+    padding-bottom: 50px;
+
     .ml-form-wrapper {
-      width: 70%;
+      background-color: rgba($black, .15);
+      padding: 3px;
+      width: 466px;
+    }
+
+    .ml-error .ml-error-msg {
+      display: block;
+      font-size: 15px;
+      left: 110px;
+      position: absolute;
+      top: 57px;
+    }
+
+    .subscription-input {
+      &.email {
+        background: transparent;
+        display: inline-block;
+        font-size: 24px;
+        padding: 14px 9px 5px;
+        width: 250px;
+      }
+
+      &.submit {
+        border: solid 4px $light-gray;
+        border-radius: 10px;
+        display: inline-block;
+        float: right;
+        font-size: 24px;
+        margin: 0 auto;
+        padding: 9px 0 6px;
+        width: 195px;
+      }
+
+      &.loading {
+        border: 0;
+        display: inline-block;
+        float: right;
+        margin: 7px auto 6px;
+        padding: 5px 5px 0;
+        width: 104px;
+      }
+
+      .ml-loading-img {
+        float: right;
+        height: 20px;
+        width: 20px;
+      }
     }
   }
 }
 
 @media #{$breakpoint-desktop} {
   .m-ml-subscribe {
+    padding-top: 98px;
+
     .m-ml-subscribe-title {
       font-size: 40px;
+      margin-bottom: 21px;
     }
   }
 
   .ml-block-form {
+    padding-bottom: 93px;
+
     .ml-form-wrapper {
-      width: 500px;
+      padding: 3px;
+      width: 480px;
+    }
+
+    .ml-error .ml-error-msg {
+      top: 65px;
+    }
+
+    .subscription-input {
+      display: inline-block;
+
+      &.email {
+        font-size: 29px;
+        padding: 14px 14px 10px;
+        width: 280px;
+      }
+
+      &.submit {
+        border: solid 4px $light-gray;
+        display: block;
+        font-size: 29px;
+        padding: 10px 0 6px;
+        width: 180px;
+      }
+
+      &.loading {
+        border: 0;
+        border-radius: 3px;
+        float: right;
+        font-size: 17px;
+        margin: 0 auto;
+        padding: 16px 5px 0;
+        width: 30%;
+      }
     }
   }
 }

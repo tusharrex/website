@@ -147,6 +147,10 @@
     border-color: transparent transparent transparent $light-gray;
     border-width: 22px 0 0 100vw;
 
+    &.ml-subscribe {
+      border-width: 17px 0 0 100vw;
+    }
+
     @media screen and (min-width: 950px) {
       border-top-width: 40px;
     }
@@ -158,6 +162,27 @@
 
     @media screen and (min-width: 950px) {
       border-top-width: 50px;
+    }
+  }
+
+  &.subscribe-section-top-separator {
+    border-color: $light-gray;
+    border-width: 10px 0 0 100vw;
+
+    &.red {
+      border-left-color: $valencia-red;
+    }
+
+    &.yellow {
+      border-left-color: $indian-yellow;
+    }
+
+    &.sea-green {
+      border-left-color: $deep-sea-green;
+    }
+
+    &.light-green {
+      border-left-color: $breaker-bay-green;
     }
   }
 
