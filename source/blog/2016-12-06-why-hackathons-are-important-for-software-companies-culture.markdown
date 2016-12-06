@@ -3,9 +3,9 @@ title: Why Hackathons Are Important For Software Companies' Culture
 date: 2016-12-06
 tags: Hackathon, Education, Software Development
 author: Albert Pałka
-color: yellow
+color: red
 image: 'blog/hackathon.png'
-imageauthor: 'team/albert.png'
+imageauthor: 'team/placeholder-yellow.png'
 ---
 
 As we’re getting ready to host codequest’s first in-house hackathon on December 12th-16th, which we will cover in-depth soon, I thought it's a good time to tell you why I believe hackathons are crucial for a software company like ours and why they might be substantial for yours too.
