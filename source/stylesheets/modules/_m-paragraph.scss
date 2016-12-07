@@ -3,7 +3,8 @@
   font-family: $courier-new;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 66px;
+  margin: 0 auto 66px;
+  max-width: 1300px;
   text-align: center;
 
   &.mb-52 {

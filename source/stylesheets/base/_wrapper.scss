@@ -7,11 +7,6 @@
     padding: 0;
   }
 
-  &.small {
-    max-width: 830px;
-    padding: 0;
-  }
-
   &.blog-desktop {
     margin: 20px auto 30px;
   }
@@ -24,10 +19,6 @@
 @media #{$breakpoint-tablet} {
   .wrapper {
     padding: 0 26px;
-
-    &.small {
-      padding: 0 15px;
-    }
 
     &.blog-desktop {
       margin-bottom: 30px;

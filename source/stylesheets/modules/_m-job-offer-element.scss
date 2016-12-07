@@ -43,7 +43,7 @@
 
 @media #{$only-mobile-large} {
   .m-job-offer-element {
-    width: 50%;
+    width: 49%;
   }
 }
 
@@ -68,6 +68,10 @@
   .m-job-offer-element {
     margin-bottom: 2%;
     width: 49%;
+
+    &:last-child:nth-child(odd) {
+      width: 99%;
+    }
 
     .job-title {
       font-size: 26px;
