@@ -61,22 +61,22 @@
     padding: 0 15px;
     text-align: center;
   }
-}
 
-.red {
-  @include subscribe-section-background($valencia-red);
-}
+  &.red {
+    @include subscribe-section-background($valencia-red);
+  }
 
-.yellow {
-  @include subscribe-section-background($indian-yellow);
-}
+  &.yellow {
+    @include subscribe-section-background($indian-yellow);
+  }
 
-.sea-green {
-  @include subscribe-section-background($deep-sea-green);
-}
+  &.sea-green {
+    @include subscribe-section-background($deep-sea-green);
+  }
 
-.light-green {
-  @include subscribe-section-background($breaker-bay-green);
+  &.light-green {
+    @include subscribe-section-background($breaker-bay-green);
+  }
 }
 
 .ml-block-success {
