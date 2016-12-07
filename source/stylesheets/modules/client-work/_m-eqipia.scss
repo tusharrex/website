@@ -5,6 +5,10 @@
     }
   }
 
+  .info-project {
+    height: auto;
+  }
+
   .info-text-logo {
     margin-left: 10px;
     max-width: 100px;
@@ -60,6 +64,10 @@
       left: -5vw;
       margin: 0;
       width: 530px;
+    }
+
+    .info-project {
+      margin-bottom: 80px;
     }
   }
 }
