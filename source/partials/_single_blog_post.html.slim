@@ -1,0 +1,23 @@
+article.m-blog-post
+        .post
+          a.article(href= article.url class= article.metadata[:page]['color'])
+            .image
+              = image_tag article.data.image
+              .m-decorator.small
+            .post-detail
+              .content
+                header.detail
+                  span.subtitle
+                    = article.data.subtitle
+                  span.date
+                    = article.date.strftime('%B %e, %Y')
+                  h2.title
+                    = article.title
+                .summary
+                  = strip_tags article.summary(350)
+              .read-more.color-valencia-red Read more...
+              footer.info-author
+                .image-author
+                  = image_tag article.data.imageauthor
+                  span.author
+                    = article.data.author

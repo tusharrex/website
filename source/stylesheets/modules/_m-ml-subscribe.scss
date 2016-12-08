@@ -44,6 +44,18 @@
   }
 }
 
+.placeholder {
+  min-height: 410px;
+  width: 100%;
+}
+
+.sb-wrapper {
+  .subscribe-section {
+    left: 0;
+    position: absolute;
+  }
+}
+
 .m-ml-subscribe {
   margin-bottom: 30px;
   padding-top: 85px;

@@ -17,10 +17,6 @@ html
     / It is only to recognize touch events:
     = javascript_include_tag 'lib/modernizr-custom'
     = javascript_include_tag 'application'
-    - if prev_page
-      link(href= prev_page.url rel= 'prev')
-    - if next_page
-      link(href= next_page.url rel= 'next')
 
   body.website-page class=page_classes
     - if environment != :development

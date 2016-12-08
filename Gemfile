@@ -8,10 +8,10 @@ gem 'middleman-blog'
 gem 'middleman-livereload'
 gem 'builder'
 gem 'middleman-autoprefixer'
+gem 'middleman-pry'
 
 group :development do
   gem 'codeguard'
   gem 'rspec'
   gem 'capybara'
-  gem 'middleman-pry'
 end

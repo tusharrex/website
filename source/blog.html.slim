@@ -1,5 +1,5 @@
 ---
-pageable: true
+pageable: false
 ---
 = partial 'partials/website_header', locals: {title: data.blog.title}
 = partial 'partials/header_subtitle', locals: \
@@ -30,34 +30,14 @@ pageable: true
     .m-separator-line.m-light-gray-2
     .m-separator-line.m-white
   #posts.m-grid-collection.m-space-between.m-blog-posts-container
-    .page(data-page-no= page_number)
-    - page_articles.drop(1).each do |article|
-      article.m-blog-post
-        .post
-          a.article(href= article.url class= article.metadata[:page]['color'])
-            .image
-              = image_tag article.data.image
-              .m-decorator.small
-            .post-detail
-              .content
-                header.detail
-                  span.subtitle
-                    = article.data.subtitle
-                  span.date
-                    = article.date.strftime('%B %e, %Y')
-                  h2.title
-                    = article.title
-                .summary
-                  = strip_tags article.summary(350)
-              .read-more.color-valencia-red Read more...
-              footer.info-author
-                .image-author
-                  = image_tag article.data.imageauthor
-                  span.author
-                    = article.data.author
+    - blog.articles[1..4].each do |article|
+      = partial 'partials/single_blog_post', locals: {article: article}
+  = partial 'partials/ml-subscribe', \
+      locals: {bcgcolor: 'red'}
+  #posts.m-grid-collection.m-space-between.m-blog-posts-container
+    - blog.articles[5..-1].each do |article|
+      = partial 'partials/single_blog_post', locals: {article: article}
     .no-content
-  #total_pages.hidden
-    = num_pages
   link(rel='alternate' type="application/atom+xml" title='code quest blog'
     href="#{root_url}/feed.xml")
   .separator
