@@ -4,6 +4,7 @@
   .description {
     @include font (16px, 24px);
     margin: 20px 15px;
+    text-align: center;
   }
 
   .logo {
@@ -66,8 +67,9 @@
   }
 
   .info-project {
-    height: 600px;
-    max-width: 300px;
+    max-height: 600px;
+    min-width: 300px;
+    text-align: center;
   }
 
   .mobile-container {
@@ -92,7 +94,6 @@
   .m-work-section {
     .info-project {
       height: 430px;
-      max-width: 440px;
     }
 
     .icons {
@@ -122,6 +123,7 @@
 
     .info-project {
       height: 620px;
+      margin-bottom: -40px;
       max-width: 300px;
 
       &.eqipia {

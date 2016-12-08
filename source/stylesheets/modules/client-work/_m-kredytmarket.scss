@@ -12,10 +12,12 @@
   }
 }
 
-@media #{$breakpoint-mobile-landscape} {
+@media #{$breakpoint-tablet} {
   .m-kredytmarket {
+    padding-top: 38px;
+
     .info-project {
-      margin-bottom: 30px;
+      margin-bottom: 58px;
     }
   }
 }
