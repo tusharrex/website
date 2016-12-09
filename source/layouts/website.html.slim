@@ -25,3 +25,4 @@ html
     = partial('partials/menu', locals: {modifier: 'from_header'})
     = yield
     = partial 'partials/footer'
+    = yield_content(:extra_js)

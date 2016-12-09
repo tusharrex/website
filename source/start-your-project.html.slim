@@ -3,3 +3,6 @@
 = partial 'partials/header_subtitle', locals: \
   {subtitle: data.start_your_project.subtitle}
 = partial 'partials/start-your-project'
+- content_for :extra_js
+    javascript:
+      $(initSlider)

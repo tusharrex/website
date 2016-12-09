@@ -1,4 +1,4 @@
-$ ->
+window.initSlider = ->
   PRICES = [5000, 8000, 10000, 20000, 50000, 80000, 100000]
   sliderElement = $('#slider-range')
 
