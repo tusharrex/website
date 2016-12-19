@@ -44,11 +44,6 @@
   }
 }
 
-.placeholder {
-  min-height: 410px;
-  width: 100%;
-}
-
 .sb-wrapper {
   .subscribe-section {
     left: 0;
@@ -109,6 +104,11 @@
     padding: 15px;
     position: relative;
     width: 100%;
+
+    .placeholder {
+      min-height: 410px;
+      width: 100%;
+    }
   }
 
   .ml-error-msg {
