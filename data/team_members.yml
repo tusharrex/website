@@ -49,12 +49,6 @@ members:
     image: maniek
   -
     name: Magda
-    color: maroon-red
-    description: UX Designer
-    position: UX Designer
-    image: placeholder-red
-  -
-    name: Magda
     color: valencia-red
     description: Software Engineer
     position: Software Engineer
