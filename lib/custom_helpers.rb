@@ -69,4 +69,11 @@ module CustomHelpers
       result.flatten.sample(count)
     end
   end
+
+  def summary_open_graph(article_summary)
+    article_summary
+      .gsub(%r{<\/?[^>]*>}, '')
+      .gsub('\n\n', ' ')
+      .gsub('&amp;', '&')
+  end
 end

@@ -6,7 +6,7 @@ html
     meta charset="utf-8"
     title= title_helper
 
-    = partial 'partials/fb_tags'
+    = partial 'partials/fb_tags', locals: {blog_article: current_article}
     meta name="description" content=description_helper
     meta content=('text/html; charset=UTF-8') http-equiv="Content-Type"
     meta name="viewport" content="initial-scale=1.0, user-scalable=no,\
