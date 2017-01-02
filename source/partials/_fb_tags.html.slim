@@ -7,7 +7,7 @@
 - if defined?(blog_article)
   meta (content="article"
   property="og:type")
-  meta (content=root_url + blog_article.url
+  meta (content="#{root_url_ssl}#{blog_article.url}"
   property="og:url")
 - else
   meta (content="website"
@@ -22,5 +22,3 @@ property="fb:app_id")
   property="og:description")
 meta (content="#{root_url}#{asset_path(:images, 'common/logo-fb.png')}"
 property="og:image")
-meta (content="#{facebook_meta_data_url}"
-property="og:url")

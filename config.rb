@@ -56,6 +56,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 set :root_url, 'http://codequest.com'
+set :root_url_ssl, 'https://codequest.com'
 
 configure :build do
   activate :minify_css
