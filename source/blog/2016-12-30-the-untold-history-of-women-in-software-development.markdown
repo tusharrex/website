@@ -4,7 +4,7 @@ date: 2016-12-30
 tags: Education, Software Development
 author: Urszula Humienik
 color: red
-image: 'blog/duck.png'
+image: 'blog/womenit.png'
 imageauthor: 'team/placeholder-red.png'
 ---
  
