@@ -3,9 +3,9 @@ title: The Untold History of Women in Software Development
 date: 2016-12-30
 tags: Education, Software Development
 author: Urszula Humienik
-color: red
+color: light-green
 image: 'blog/womenit.png'
-imageauthor: 'team/placeholder-red.png'
+imageauthor: 'team/placeholder-green.png'
 ---
  
 We know IT has a diversity problem. According to the National Center for Women & Information Technology (NCWIT), women hold only 25% of U.S. professional computing occupations. The situation is not much different worldwide. You’d think IT was a male-dominated field, and you’d be right. But if you’d believe that women had no place in this field, you’d be wrong.
