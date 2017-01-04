@@ -1,24 +1,31 @@
 - if defined?(blog_article)
   meta (content=blog_article.title
-  property="og:title")
+    property="og:title")
+  meta (content=summary_open_graph(blog_article.summary(250))
+    property="og:description")
+  meta (content="article"
+    property="og:type")
+  meta (content="#{root_url_ssl}#{blog_article.url}"
+    property="og:url")
+  -if blog_article.title.include? 'Untold'
+    meta (content="
+      #{root_url_ssl}
+      #{asset_path(:images, "#{blog_article.data.image_fb}")}"
+      property="og:image")
+    meta (content="1200"
+      property="og:image:width")
+    meta (content="630"
+      property="og:image:height")
 - else
   meta (content="codequest is a software development studio."
-  property="og:title")
-- if defined?(blog_article)
-  meta (content="article"
-  property="og:type")
-  meta (content="#{root_url_ssl}#{blog_article.url}"
-  property="og:url")
-- else
-  meta (content="website"
-  property="og:type")
-meta (content="1028261210595998"
-property="fb:app_id")
-- if defined?(blog_article)
-  meta (content=summary_open_graph(blog_article.summary(150))
-  property="og:description")
-- else
+    property="og:title")
   meta (content="We help turn ideas into awesome software."
-  property="og:description")
-meta (content="#{root_url}#{asset_path(:images, 'common/logo-fb.png')}"
-property="og:image")
+    property="og:description")
+  meta (content="website"
+    property="og:type")
+  meta (content="
+    #{root_url}
+    #{asset_path(:images, 'common/logo-fb.png')}"
+    property="og:image")
+meta (content="1028261210595998"
+  property="fb:app_id")

@@ -5,6 +5,7 @@ tags: Education, Software Development
 author: Urszula Humienik
 color: light-green
 image: 'blog/womenit.png'
+image_fb: 'blog/womenit_fb.png'
 imageauthor: 'team/placeholder-green.png'
 ---
  
