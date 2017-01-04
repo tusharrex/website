@@ -6,6 +6,7 @@ subtitle: Rails Girls Warsaw |
 author: Bartek Kruszczyński
 color: red
 image: 'blog/duck.png'
+image_fb: 'blog/logo_fb.png'
 imageauthor: 'team/bartek.png'
 ---
 

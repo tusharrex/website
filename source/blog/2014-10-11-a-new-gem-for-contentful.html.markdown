@@ -5,6 +5,7 @@ tags: Ruby, Success Stories
 author: Tomasz Warkocki
 color: red
 image: 'blog/duck.png'
+image_fb: 'blog/logo_fb.png'
 imageauthor: 'team/placeholder-red.png'
 ---
 

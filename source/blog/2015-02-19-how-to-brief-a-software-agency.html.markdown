@@ -5,6 +5,7 @@ tags: Consulting
 author: Magda Piechota
 color: sea-green
 image: 'blog/diver.png'
+image_fb: 'blog/logo_fb.png'
 imageauthor: 'team/placeholder-green.png'
 ---
 

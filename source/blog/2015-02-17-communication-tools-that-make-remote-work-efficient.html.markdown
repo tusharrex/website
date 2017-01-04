@@ -5,6 +5,7 @@ tags: Consulting, Scrum, Success Stories
 author: Magda Piechota
 color: yellow
 image: 'blog/underwater_station.png'
+image_fb: 'blog/logo_fb.png'
 imageauthor: 'team/placeholder-yellow.png'
 ---
 

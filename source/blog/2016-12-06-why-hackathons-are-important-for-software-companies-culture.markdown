@@ -5,6 +5,7 @@ tags: Hackathon, Education, Software Development
 author: Albert Pałka
 color: red
 image: 'blog/hackathon.png'
+image_fb: 'blog/hackathon_fb.png'
 imageauthor: 'team/placeholder-yellow.png'
 ---
 

@@ -5,6 +5,7 @@ tags: Education, Ruby, Community
 author: Magda Piechota
 color: red
 image: 'blog/underwater_world.png'
+image_fb: 'blog/logo_fb.png'
 imageauthor: 'team/placeholder-red.png'
 ---
 

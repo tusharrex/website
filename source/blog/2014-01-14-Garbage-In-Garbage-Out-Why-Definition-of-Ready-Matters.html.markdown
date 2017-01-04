@@ -5,6 +5,7 @@ tags: Scrum, Software Development
 author: Tomasz Korzeniowski
 color: yellow
 image: 'blog/lifebuoy.png'
+image_fb: 'blog/logo_fb.png'
 imageauthor: 'team/tomek.png'
 ---
 

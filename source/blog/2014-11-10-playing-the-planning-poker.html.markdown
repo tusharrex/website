@@ -5,6 +5,7 @@ tags: Scrum, Software Development
 author: Magda Piechota
 color: yellow
 image: 'blog/ruby_underwater.png'
+image_fb: 'blog/logo_fb.png'
 imageauthor: 'team/placeholder-yellow.png'
 ---
 
