@@ -8,9 +8,8 @@
   meta (content="#{root_url_ssl}#{blog_article.url}"
     property="og:url")
   -if blog_article.title.include? 'Untold'
-    meta (content="
-      #{root_url_ssl}
-      #{asset_path(:images, "#{blog_article.data.image_fb}")}"
+    meta (content="#{root_url_ssl}#{asset_path(:images,
+      "#{blog_article.data.image_fb}")}"
       property="og:image")
     meta (content="1200"
       property="og:image:width")
@@ -23,9 +22,8 @@
     property="og:description")
   meta (content="website"
     property="og:type")
-  meta (content="
-    #{root_url}
-    #{asset_path(:images, 'common/logo-fb.png')}"
+  meta (content="#{root_url}#{asset_path(:images,
+    'common/logo-fb.png')}"
     property="og:image")
 meta (content="1028261210595998"
   property="fb:app_id")
