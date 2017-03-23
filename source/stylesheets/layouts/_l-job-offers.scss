@@ -247,6 +247,10 @@
     .job-description {
       margin: 0 auto;
       max-width: 805px;
+
+      &.large {
+        max-width: 950px;
+      }
     }
 
     .job-title {
