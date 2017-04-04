@@ -1,0 +1,40 @@
+version: '1.0'
+
+steps:
+
+  build_image:
+    title: 'Build image'
+    type: build
+    image_name: codequest/website
+    dockerfile: Dockerfile.ci
+
+  lint_slim: &test_step
+    title: 'Lint Slim'
+    image: ${{build_image}}
+    working_directory: /srv/www
+    commands:
+      - bundle exec slim-lint source
+
+  run_rubocop:
+    <<: *test_step
+    title: 'Run Rubocop'
+    commands:
+      - bundle exec ruby -W0 -S rubocop lib spec
+
+  lint_coffeescript:
+    <<: *test_step
+    title: 'Lint CoffeeScript'
+    commands:
+      - coffeelint -f coffeelint.json source
+
+  lint_scss:
+    <<: *test_step
+    title: 'Lint SCSS'
+    commands:
+      - bundle exec scss-lint -c .scss-lint.yml
+
+  try_building:
+    <<: *test_step
+    title: 'Try building'
+    commands:
+      - bundle exec middleman build --verbose
