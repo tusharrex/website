@@ -6,7 +6,6 @@ steps:
     title: 'Build image'
     type: build
     image_name: codequest/website
-    dockerfile: Dockerfile.ci
 
   lint_slim: &test_step
     title: 'Lint Slim'

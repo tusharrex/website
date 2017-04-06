@@ -1,0 +1,48 @@
+version: '1.0'
+
+steps:
+
+  build_image:
+    title: 'Build image'
+    type: build
+    image_name: codequest/website
+
+  copy_assets:
+    title: 'Copy compiled assets'
+    image: ${{build_image}}
+    working_directory: /srv/www
+    commands:
+      - cp -rf /srv/www/build /codefresh/volume/${{CF_BUILD_ID}}
+
+  delete_old_s3_resources: &aws_step
+    title: 'Delete old S3 resources'
+    image: codeship/aws-deployment:latest
+    working_directory: /codefresh/volume/${{CF_BUILD_ID}}
+    commands:
+      - bash -c "aws s3 rm s3://${AWS_S3_BUCKET_NAME}/ --recursive"
+
+  deploy_assets:
+    <<: *aws_step
+    title: 'Deploy assets'
+    commands:
+      - bash -c "aws s3 cp . s3://${AWS_S3_BUCKET_NAME} --recursive --acl public-read --cache-control max-age=604800 --exclude index.html"
+
+  depoy_index_html:
+    <<: *aws_step
+    title: 'Deploy index.html'
+    commands:
+      - bash -c "aws s3 cp index.html s3://${AWS_S3_BUCKET_NAME}/index.html --acl public-read --cache-control max-age=0"
+
+  invalidate_cloudfront:
+    <<: *aws_step
+    title: 'Invalidate Cloudfront'
+    commands:
+      - bash -c "aws configure set preview.cloudfront true"
+      - bash -c "aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} --paths '/*'"
+
+  clean_up:
+    title: 'Remove build artifacts'
+    image: codeship/aws-deployment:latest
+    working_directory: /codefresh/volume
+    commands:
+      - rm -rf /codefresh/volume/${{CF_BUILD_ID}}
