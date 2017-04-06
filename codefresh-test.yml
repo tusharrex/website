@@ -31,9 +31,3 @@ steps:
     title: 'Lint SCSS'
     commands:
       - bundle exec scss-lint -c .scss-lint.yml
-
-  try_building:
-    <<: *test_step
-    title: 'Try building'
-    commands:
-      - bundle exec middleman build --verbose

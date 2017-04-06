@@ -15,7 +15,3 @@ WORKDIR $APP_SERVER_PATH
 # that only invalidates in case of changes in the Gemfile
 COPY Gemfile* ${APP_SERVER_PATH}/
 RUN bundle install --jobs 8 --retry 5
-
-ADD . $APP_SERVER_PATH
-
-RUN bundle exec middleman build --verbose

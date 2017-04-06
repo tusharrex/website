@@ -4,26 +4,14 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile.ci
+      dockerfile: Dockerfile.dev
     command: bundle exec middleman server
     ports:
       - "4567:4567"   # Middleman server
       - "35729:35729" # Live reload
     volumes:
       - "bundler:/bundle"
-      - "unison:/srv/www"
-    depends_on:
-      - unison
-
-  unison:
-    image: onnimonni/unison
-    environment:
-      - UNISON_DIR=/srv/www
-    ports:
-      - "5000:5000"
-    volumes:
-      - "unison:/srv/www"
+      - .:/srv/www
 
 volumes:
   bundler:
-  unison:
