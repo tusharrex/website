@@ -432,6 +432,10 @@
 
     .job-list-title {
       @include font(78px, 82px);
+
+      &.ios-fixed {
+        @include font(43px, 0)
+      }
     }
 
     .job-title {
