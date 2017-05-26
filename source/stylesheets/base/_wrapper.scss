@@ -14,6 +14,10 @@
   &.m-pb-20 {
     padding-bottom: 20px;
   }
+
+  &.fixed-size {
+    margin: -5% auto 0%;
+  }
 }
 
 @media #{$breakpoint-tablet} {

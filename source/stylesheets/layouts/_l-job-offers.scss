@@ -436,6 +436,10 @@
       &.ios-fixed {
         @include font(43px, 0)
       }
+
+      &.fixed-height {
+        @include font(70px, 60px)
+      }
     }
 
     .job-title {
