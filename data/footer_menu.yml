@@ -23,3 +23,6 @@ objects:
   -
     text: Contact
     link: /contact
+  -
+    text: Tender
+    link: /tender
