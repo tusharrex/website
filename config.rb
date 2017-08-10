@@ -27,7 +27,6 @@ with_layout :website do
   page '/work.html'
   page '/start-your-project.html'
   page '/ventures.html'
-  page '.html'
   page '/open-source.html'
   page '/join-our-crew/elixir.html'
   page '/join-our-crew/frontend.html'
@@ -39,6 +38,7 @@ with_layout :website do
   page '/join-our-crew/content-writer.html'
   page '/join-our-crew/consultant-developer.html'
   page '/tender.html'
+  page '/team.html'
 end
 
 with_layout :posts do
