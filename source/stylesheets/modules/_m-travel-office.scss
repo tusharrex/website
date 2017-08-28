@@ -1,6 +1,7 @@
 .tender-wrapper {
   color: $martinique-dark;
   font-family: $baskerville;
+  margin: 0 20px;
 
   h2,
   h3,
@@ -8,12 +9,27 @@
     font-family: $baskerville-bold;
   }
 
+  .buttons {
+    @media #{$breakpoint-tablet} {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  .separator-vertical {
+    background-color: $light-gray-2;
+    height: 2px;
+    margin: 50px auto;
+    max-width: 800px;
+  }
+
   h2 {
     display: flex;
-    font-size: 22px;
+    font-size: 16px;
     justify-content: center;
+    line-height: 26px;
     margin: 22px 0;
-    text-align: center;
+    text-align: justify;
   }
 
   h3 {
@@ -112,7 +128,8 @@
     }
 
     h2 {
-      font-size: 26px;
+      font-size: 20px;
+      line-height: 30px;
       margin: 28px 0;
     }
 
@@ -131,6 +148,8 @@
 
 @media #{$breakpoint-desktop} {
   .tender-wrapper {
+    margin: 100px auto;
+    max-width: 800px;
     position: relative;
 
     a {
